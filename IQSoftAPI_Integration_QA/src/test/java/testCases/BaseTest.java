@@ -33,8 +33,8 @@ public class BaseTest {
     }
 
     //region <Request and Response Variables Integration>
-    IqSoft_01_APIVariables_GetProductUrl_Request iqSoft02ApiVariables_getProductUrl_request = new IqSoft_01_APIVariables_GetProductUrl_Request();
-    IqSoft_01_APIVariables_GetProductUrl_Response iqSoft01ApiVariables_getProductUrl_response = new IqSoft_01_APIVariables_GetProductUrl_Response();
+    IqSoft_01_APIVariables_OpenGame_Request iqSoft02ApiVariables_getProductUrl_request = new IqSoft_01_APIVariables_OpenGame_Request();
+    IqSoft_01_APIVariables_OpenGame_Response iqSoft01ApiVariables_getProductUrl_response = new IqSoft_01_APIVariables_OpenGame_Response();
 
     IqSoft_02_APISVariables_Authorization_Request iqSoft02ApisVariables_authorization_request = new IqSoft_02_APISVariables_Authorization_Request();
     IqSoft_02_APISVariables_Authorization_Response iqSoft_02_apisVariables_authorization_response = new IqSoft_02_APISVariables_Authorization_Response();

@@ -3,7 +3,7 @@ package testData;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class IqSoft_01_APIVariables_GetProductUrl_Request {
+public class IqSoft_01_APIVariables_OpenGame_Request {
     @SerializedName("ActivationKey")
     @Expose
     private String ActivationKey = null;

@@ -7,13 +7,12 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.json.JSONObject;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 
-public class IqSoft_API_1_GetUrl_Negative_Test extends BaseTest {
+public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
 
     JSONObject jsonObjectBody;
     int statusCod;
