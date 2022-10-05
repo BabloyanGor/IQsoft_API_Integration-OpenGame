@@ -21,7 +21,7 @@ public class IqSoft_06_APIVariables_RollBack_Request {
     @Expose
     private String TransactionId;
 
-    @SerializedName("ProductId")
+    @SerializedName("OperationTypeId")
     @Expose
     private int OperationTypeId ;  //3-Bet, 4-Win, 15-BetRollback, 17-WinRollback.
 

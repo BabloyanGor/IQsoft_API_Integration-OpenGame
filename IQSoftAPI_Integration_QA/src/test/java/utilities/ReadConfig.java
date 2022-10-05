@@ -20,7 +20,7 @@ public class ReadConfig {
     }
 
 
-    public String OpenGameURL() {
+    public String getOpenGameURL() {
         return pro.getProperty("OpenGameURL");
     }
     public String getCallbackUrl() {
