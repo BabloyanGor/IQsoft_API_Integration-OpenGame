@@ -6,28 +6,6 @@ import org.apache.commons.lang3.RandomStringUtils;
 
 public class IqSoft_04_APIVariables_Credit_Request {
 
-
-
-
-    @SerializedName("RoundId")
-    @Expose
-    private String RoundId;
-
-    @SerializedName("TransactionId")
-    @Expose
-    private String TransactionId;
-
-    @SerializedName("CreditTransactionId")
-    @Expose
-    private String CreditTransactionId;
-    @SerializedName("ProductId")
-    @Expose
-    private int ProductId = 4;
-
-    @SerializedName("Amount")
-    @Expose
-    private double Amount;
-
     @SerializedName("Token")
     @Expose
     private String Token ;
@@ -36,37 +14,26 @@ public class IqSoft_04_APIVariables_Credit_Request {
     @Expose
     private String CurrencyId ;
 
-    public String getRoundId() {
-        return RoundId;
-    }
+    @SerializedName("GameId")
+    @Expose
+    private int GameId ;
 
-    public void setRoundId(String roundId) {
-        RoundId = roundId;
-    }
+    @SerializedName("OperationTypeId")
+    @Expose
+    private int OperationTypeId  ;
 
-    public String getTransactionId() {
-        return TransactionId;
-    }
+    @SerializedName("TransactionId")
+    @Expose
+    private String TransactionId;
 
-    public void setTransactionId(String transactionId) {
-        TransactionId = transactionId;
-    }
+    @SerializedName("BetState")
+    @Expose
+    private int BetState ;
 
-    public int getProductId() {
-        return ProductId;
-    }
+    @SerializedName("Amount")
+    @Expose
+    private double Amount;
 
-    public void setProductId(int productId) {
-        ProductId = productId;
-    }
-
-    public double getAmount() {
-        return Amount;
-    }
-
-    public void setAmount(double amount) {
-        Amount = amount;
-    }
 
     public String getToken() {
         return Token;
@@ -84,24 +51,12 @@ public class IqSoft_04_APIVariables_Credit_Request {
         CurrencyId = currencyId;
     }
 
-    @SerializedName("TypeId")
-    @Expose
-    private int TypeId;
-
-    @SerializedName("OperationTypeId")
-    @Expose
-    private int OperationTypeId = 3 ;
-
-    @SerializedName("BetState")
-    @Expose
-    private int BetState ;
-
-    public int getTypeId() {
-        return TypeId;
+    public int getGameId() {
+        return GameId;
     }
 
-    public void setTypeId(int typeId) {
-        TypeId = typeId;
+    public void setGameId(int gameId) {
+        GameId = gameId;
     }
 
     public int getOperationTypeId() {
@@ -112,11 +67,27 @@ public class IqSoft_04_APIVariables_Credit_Request {
         OperationTypeId = operationTypeId;
     }
 
+    public String getTransactionId() {
+        return TransactionId;
+    }
+
+    public void setTransactionId(String transactionId) {
+        TransactionId = transactionId;
+    }
+
     public int getBetState() {
         return BetState;
     }
 
     public void setBetState(int betState) {
         BetState = betState;
+    }
+
+    public double getAmount() {
+        return Amount;
+    }
+
+    public void setAmount(double amount) {
+        Amount = amount;
     }
 }

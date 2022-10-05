@@ -5,9 +5,17 @@ import com.google.gson.annotations.SerializedName;
 
 public class IqSoft_05_APIVariables_Debit_Request {
 
-    @SerializedName("RoundId")
+    @SerializedName("ClientId")
     @Expose
-    private String RoundId;
+    private String ClientId;
+
+    @SerializedName("CurrencyId")
+    @Expose
+    private String CurrencyId ;
+
+    @SerializedName("GameId")
+    @Expose
+    private int GameId;
 
     @SerializedName("TransactionId")
     @Expose
@@ -17,57 +25,45 @@ public class IqSoft_05_APIVariables_Debit_Request {
     @Expose
     private String CreditTransactionId;
 
-    @SerializedName("ProductId")
-    @Expose
-    private int ProductId ;
-
     @SerializedName("Amount")
     @Expose
     private double Amount ;
-
-    @SerializedName("Token")
-    @Expose
-    private String Token ;
-
-    @SerializedName("CurrencyId")
-    @Expose
-    private String CurrencyId ;
-
-
-
 
     @SerializedName("BetState")
     @Expose
     private int BetState;
 
-    @SerializedName("ClientId")
-    @Expose
-    private int ClientId ;
-
-    @SerializedName("UserName")
-    @Expose
-    private String UserName;
-
-    @SerializedName("GameId")
-    @Expose
-    private int GameId;
-
     @SerializedName("OperationTypeId")
     @Expose
     private int OperationTypeId;
-// "ClientId":51,
-// "UserName":"radian",
-// "GameId":21002,
-// "OperationTypeId":4,
-// "BetState":2,
+
+    @SerializedName("Token")
+    @Expose
+    private String Token ;
 
 
-    public String getRoundId() {
-        return RoundId;
+    public String getClientId() {
+        return ClientId;
     }
 
-    public void setRoundId(String roundId) {
-        RoundId = roundId;
+    public void setClientId(String clientId) {
+        ClientId = clientId;
+    }
+
+    public String getCurrencyId() {
+        return CurrencyId;
+    }
+
+    public void setCurrencyId(String currencyId) {
+        CurrencyId = currencyId;
+    }
+
+    public int getGameId() {
+        return GameId;
+    }
+
+    public void setGameId(int gameId) {
+        GameId = gameId;
     }
 
     public String getTransactionId() {
@@ -86,36 +82,12 @@ public class IqSoft_05_APIVariables_Debit_Request {
         CreditTransactionId = creditTransactionId;
     }
 
-    public int getProductId() {
-        return ProductId;
-    }
-
-    public void setProductId(int productId) {
-        ProductId = productId;
-    }
-
     public double getAmount() {
         return Amount;
     }
 
     public void setAmount(double amount) {
         Amount = amount;
-    }
-
-    public String getToken() {
-        return Token;
-    }
-
-    public void setToken(String token) {
-        Token = token;
-    }
-
-    public String getCurrencyId() {
-        return CurrencyId;
-    }
-
-    public void setCurrencyId(String currencyId) {
-        CurrencyId = currencyId;
     }
 
     public int getBetState() {
@@ -126,35 +98,19 @@ public class IqSoft_05_APIVariables_Debit_Request {
         BetState = betState;
     }
 
-    public int getClientId() {
-        return ClientId;
-    }
-
-    public void setClientId(int clientId) {
-        ClientId = clientId;
-    }
-
-    public String getUserName() {
-        return UserName;
-    }
-
-    public void setUserName(String userName) {
-        UserName = userName;
-    }
-
-    public int getGameId() {
-        return GameId;
-    }
-
-    public void setGameId(int gameId) {
-        GameId = gameId;
-    }
-
     public int getOperationTypeId() {
         return OperationTypeId;
     }
 
     public void setOperationTypeId(int operationTypeId) {
         OperationTypeId = operationTypeId;
+    }
+
+    public String getToken() {
+        return Token;
+    }
+
+    public void setToken(String token) {
+        Token = token;
     }
 }

@@ -14,6 +14,7 @@ public class IqSoft_06_APIVariables_RollBack_Response {
     private String Description;
 
 
+
     public int getResponseCode() {
         return ResponseCode;
     }

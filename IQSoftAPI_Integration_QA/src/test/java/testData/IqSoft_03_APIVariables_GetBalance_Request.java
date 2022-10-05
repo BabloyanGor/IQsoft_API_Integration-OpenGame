@@ -9,10 +9,10 @@ public class IqSoft_03_APIVariables_GetBalance_Request {
     @SerializedName("Token")
     @Expose
     private String Token;
-    @SerializedName("ProductId")
-    @Expose
-    private int ProductId;
 
+    @SerializedName("CurrencyId")
+    @Expose
+    private String CurrencyId;
 
     public String getToken() {
         return Token;
@@ -22,13 +22,11 @@ public class IqSoft_03_APIVariables_GetBalance_Request {
         Token = token;
     }
 
-    public int getProductId() {
-        return ProductId;
+    public String getCurrencyId() {
+        return CurrencyId;
     }
 
-    public void setProductId(int productId) {
-        ProductId = productId;
+    public void setCurrencyId(String currencyId) {
+        CurrencyId = currencyId;
     }
-
-
 }

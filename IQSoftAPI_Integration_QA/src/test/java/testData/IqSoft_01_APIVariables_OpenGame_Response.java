@@ -15,16 +15,6 @@ public class IqSoft_01_APIVariables_OpenGame_Response {
     private String ResponseObject;
 
 
-    private static String Token;
-
-    public String getAuthorizationToken() {
-        return Token;
-    }
-
-    public void setAuthorizationToken(String authorizationToken) {
-        this.Token = authorizationToken;
-    }
-
     public int getResponseCode() {
         return ResponseCode;
     }

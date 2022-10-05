@@ -5,37 +5,18 @@ import com.google.gson.annotations.SerializedName;
 
 public class IqSoft_03_APIVariables_GetBalance_Response {
 
-    @SerializedName("ClientId")
-    @Expose
-    private String ClientId;
-
     @SerializedName("CurrencyId")
     @Expose
     private String CurrencyId;
-
-    @SerializedName("Balance")
-    @Expose
-    private double Balance;
 
     @SerializedName("ResponseCode")
     @Expose
     private int ResponseCode;
 
-    @SerializedName("Description")
+    @SerializedName("AvailableBalance")
     @Expose
-    private String Description;
+    private int AvailableBalance;
 
-    @SerializedName("ResponseObject")
-    @Expose
-    private String ResponseObject;
-
-    public String getClientId() {
-        return ClientId;
-    }
-
-    public void setClientId(String clientId) {
-        ClientId = clientId;
-    }
 
     public String getCurrencyId() {
         return CurrencyId;
@@ -43,14 +24,6 @@ public class IqSoft_03_APIVariables_GetBalance_Response {
 
     public void setCurrencyId(String currencyId) {
         CurrencyId = currencyId;
-    }
-
-    public double getBalance() {
-        return Balance;
-    }
-
-    public void setBalance(double balance) {
-        Balance = balance;
     }
 
     public int getResponseCode() {
@@ -61,19 +34,11 @@ public class IqSoft_03_APIVariables_GetBalance_Response {
         ResponseCode = responseCode;
     }
 
-    public String getDescription() {
-        return Description;
+    public int getAvailableBalance() {
+        return AvailableBalance;
     }
 
-    public void setDescription(String description) {
-        Description = description;
-    }
-
-    public String getResponseObject() {
-        return ResponseObject;
-    }
-
-    public void setResponseObject(String responseObject) {
-        ResponseObject = responseObject;
+    public void setAvailableBalance(int availableBalance) {
+        AvailableBalance = availableBalance;
     }
 }
