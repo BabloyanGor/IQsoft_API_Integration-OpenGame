@@ -13,6 +13,10 @@ public class IqSoft_03_APIVariables_GetBalance_Response {
     @Expose
     private int ResponseCode;
 
+    @SerializedName("Description")
+    @Expose
+    private String Description;
+
     @SerializedName("AvailableBalance")
     @Expose
     private int AvailableBalance;
@@ -32,6 +36,14 @@ public class IqSoft_03_APIVariables_GetBalance_Response {
 
     public void setResponseCode(int responseCode) {
         ResponseCode = responseCode;
+    }
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String description) {
+        Description = description;
     }
 
     public int getAvailableBalance() {

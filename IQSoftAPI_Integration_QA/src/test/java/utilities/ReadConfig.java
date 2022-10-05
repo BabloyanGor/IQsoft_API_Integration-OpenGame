@@ -29,17 +29,20 @@ public class ReadConfig {
     
 
     //region <Getting Variables for gameLaunchURL API>
+    public String getDomain() {
+        return pro.getProperty("Domain");
+    }
     public int getPartnerID() {
         return Integer.parseInt(pro.getProperty("PartnerId"));
     }
     public int getClientId() {
         return Integer.parseInt(pro.getProperty("ClientId"));
     }
-    public int getProductID() {
+    public int getGameIdID() {
         return Integer.parseInt(pro.getProperty("ProductId"));
     }
-    public int getClientProductID() {
-        return Integer.parseInt(pro.getProperty("ClientProductId"));
+    public int getClientGameId() {
+        return Integer.parseInt(pro.getProperty("ClientGameId"));
     }
     public double getBetAmount() {
         return Double.parseDouble(pro.getProperty("BetAmount"));

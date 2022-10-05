@@ -20,14 +20,17 @@ public class BaseTest {
     public String openGameURL = readConfig.getOpenGameURL();
     public String callbackUrl = readConfig.getCallbackUrl();
 
-    public int partnerID = readConfig.getPartnerID();
-    public int clientId = readConfig.getClientId();
-    public int productID = readConfig.getProductID();
-    public int clientProductID = readConfig.getClientProductID();
-    public double betAmount = readConfig.getBetAmount();
-    public String currency = readConfig.getCurrency();
-    public String sessionToken = readConfig.getSessionToken();
-
+    public String domainConfig = readConfig.getDomain();
+    public int partnerIdConfig = readConfig.getPartnerID();
+    public int clientIdConfig = readConfig.getClientId();
+    public int gameIdConfig = readConfig.getGameIdID();
+    public int clientGameIdConfig = readConfig.getClientGameId();
+    public double betAmountConfig = readConfig.getBetAmount();
+    public String currencyConfig = readConfig.getCurrency();
+    public String sessionTokenConfig = readConfig.getSessionToken();
+    public static String AuthorizationTokenVar;
+    public final String languageIdConst = "en";
+    public final boolean isForMobileConst = false;
     public static Logger logger;
 
 
@@ -77,13 +80,13 @@ public class BaseTest {
 
     //endregion
 
-    public HttpResponse<String> OpenGameAPI(int PartnerID, int GameID, String UserToken, String LanguageId,
+    public HttpResponse<String> openGameAPI(int PartnerID, int GameID, String SessionToken, String LanguageId,
                                             boolean isForMobile, String Domain) throws UnirestException {
         Gson gson = new Gson();
         Unirest.setTimeouts(0, 0);
         iqSoft_01_apiVariables_openGame_request.setPartnerId(PartnerID);
         iqSoft_01_apiVariables_openGame_request.setGameId(GameID);
-        iqSoft_01_apiVariables_openGame_request.setToken(UserToken);
+        iqSoft_01_apiVariables_openGame_request.setToken(SessionToken);
         iqSoft_01_apiVariables_openGame_request.setLanguageId(LanguageId);
         iqSoft_01_apiVariables_openGame_request.setForMobile(isForMobile);
         iqSoft_01_apiVariables_openGame_request.setDomain(Domain);
@@ -114,10 +117,10 @@ public class BaseTest {
     }
 
 
-    public HttpResponse<String> getBalanceAPI(String SessionToken, String CurrencyId) throws UnirestException {
+    public HttpResponse<String> getBalanceAPI(String AuthorizationToken, String CurrencyId) throws UnirestException {
         Gson gson = new Gson();
         Unirest.setTimeouts(0, 0);
-        iqSoft_03_apiVariables_getBalance_request.setToken(SessionToken);
+        iqSoft_03_apiVariables_getBalance_request.setToken(AuthorizationToken);
         iqSoft_03_apiVariables_getBalance_request.setCurrencyId(CurrencyId);
         String getBalanceRequestBody = gson.toJson(iqSoft_03_apiVariables_getBalance_request);
         logger.info("GetBalanceRequestBody : " + getBalanceRequestBody);
