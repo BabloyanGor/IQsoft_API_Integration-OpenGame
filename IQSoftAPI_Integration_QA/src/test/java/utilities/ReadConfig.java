@@ -20,28 +20,26 @@ public class ReadConfig {
     }
 
 
-    public String getGameLaunchURL() {
-        return pro.getProperty("gameLaunchURL");
+    public String OpenGameURL() {
+        return pro.getProperty("OpenGameURL");
     }
     public String getCallbackUrl() {
         return pro.getProperty("callbackUrl");
     }
+    
 
     //region <Getting Variables for gameLaunchURL API>
     public int getPartnerID() {
         return Integer.parseInt(pro.getProperty("PartnerId"));
     }
-
+    public int getClientId() {
+        return Integer.parseInt(pro.getProperty("ClientId"));
+    }
     public int getProductID() {
         return Integer.parseInt(pro.getProperty("ProductId"));
     }
     public int getClientProductID() {
         return Integer.parseInt(pro.getProperty("ClientProductId"));
-    }
-
-
-    public int getClientId() {
-        return Integer.parseInt(pro.getProperty("ClientId"));
     }
     public double getBetAmount() {
         return Double.parseDouble(pro.getProperty("BetAmount"));
@@ -50,30 +48,13 @@ public class ReadConfig {
     public String getCurrency() {
         return pro.getProperty("CurrencyId");
     }
-    public String getUserToken() {
-        return pro.getProperty("UserToken");
+    public String getSessionToken() {
+        return pro.getProperty("SessionToken");
     }
 
     //endregion
 
-    //region <Getting Variables for Authorization API>
 
-    //endregion
 
-    //region <Getting Variables for getBalance API>
-
-    //endregion
-
-    //region <Getting Variables for Credit API>
-
-    //endregion
-
-    //region <Getting Variables for Debit API>
-
-    //endregion
-
-    //region <Getting Variables for RollBack API>
-
-    //endregion
 
 }
