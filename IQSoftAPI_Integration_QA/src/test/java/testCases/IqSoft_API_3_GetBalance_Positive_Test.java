@@ -20,6 +20,7 @@ public class IqSoft_API_3_GetBalance_Positive_Test extends BaseTest{
 
     @BeforeClass
     public void setUp() throws UnirestException, IOException {
+
         HttpResponse<String> getBalanceResponse = getBalanceAPI(AuthorizationTokenVar,currencyConfig);
         Unirest.shutdown();
         statusCod = getBalanceResponse.getStatus();
