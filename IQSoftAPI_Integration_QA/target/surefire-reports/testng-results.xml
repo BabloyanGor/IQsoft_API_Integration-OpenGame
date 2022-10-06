@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="10" total="28" passed="9" failed="9" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-06T14:01:14 AMT" name="IQsoft API Integration" finished-at="2022-10-06T14:01:20 AMT" duration-ms="5741">
+    <groups>
+    </groups>
+    <test started-at="2022-10-06T14:01:14 AMT" name="API Integration Automation Test" finished-at="2022-10-06T14:01:20 AMT" duration-ms="5741">
+      <class name="testCases.IqSoft_API_2_Authorization_Positive_Test">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_2_Authorization_Positive_Test@2ddc9a9f]" started-at="2022-10-06T14:01:16 AMT" name="setUp" finished-at="2022-10-06T14:01:17 AMT" duration-ms="507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AuthorizationAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_2_Authorization_Positive_Test@2ddc9a9f]" started-at="2022-10-06T14:01:17 AMT" name="AuthorizationAPIValidateStatusCod" finished-at="2022-10-06T14:01:17 AMT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AuthorizationAPIValidateStatusCod -->
+        <test-method signature="AuthorizationAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_2_Authorization_Positive_Test@2ddc9a9f]" started-at="2022-10-06T14:01:17 AMT" name="AuthorizationAPIValidatePositiveResponse" finished-at="2022-10-06T14:01:17 AMT" depends-on-methods="testCases.IqSoft_API_2_Authorization_Positive_Test.AuthorizationAPIValidateStatusCod" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AuthorizationAPIValidatePositiveResponse -->
+      </class> <!-- testCases.IqSoft_API_2_Authorization_Positive_Test -->
+      <class name="testCases.IqSoft_API_1_OpenGame_Positive_Test">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@3c77d488]" started-at="2022-10-06T14:01:14 AMT" name="setupSuite" finished-at="2022-10-06T14:01:14 AMT" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setUpTestCase()[pri:0, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@3c77d488]" started-at="2022-10-06T14:01:14 AMT" name="setUpTestCase" finished-at="2022-10-06T14:01:15 AMT" duration-ms="980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTestCase -->
+        <test-method signature="openGameAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@3c77d488]" started-at="2022-10-06T14:01:15 AMT" name="openGameAPIValidateStatusCod" finished-at="2022-10-06T14:01:15 AMT" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openGameAPIValidateStatusCod -->
+        <test-method signature="openGameAPIValidatePositiveResponse()[pri:3, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@3c77d488]" started-at="2022-10-06T14:01:15 AMT" name="openGameAPIValidatePositiveResponse" finished-at="2022-10-06T14:01:15 AMT" depends-on-methods="testCases.IqSoft_API_1_OpenGame_Positive_Test.openGameAPIValidateStatusCod" duration-ms="8" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [0] but found [21],
+Error Description: An error occurred while updating the entries. See the inner exception for details. expected [null] but found [An error occurred while updating the entries. See the inner exception for details.],
+did not expect [null] but found [null],
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [0] but found [21],
+Error Description: An error occurred while updating the entries. See the inner exception for details. expected [null] but found [An error occurred while updating the entries. See the inner exception for details.],
+did not expect [null] but found [null],
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testCases.IqSoft_API_1_OpenGame_Positive_Test.openGameAPIValidatePositiveResponse(IqSoft_API_1_OpenGame_Positive_Test.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openGameAPIValidatePositiveResponse -->
+        <test-method is-config="true" signature="tearDownTestCase()[pri:0, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@3c77d488]" started-at="2022-10-06T14:01:15 AMT" name="tearDownTestCase" finished-at="2022-10-06T14:01:15 AMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTestCase -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@3c77d488]" started-at="2022-10-06T14:01:20 AMT" name="tearDownSuite" finished-at="2022-10-06T14:01:20 AMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- testCases.IqSoft_API_1_OpenGame_Positive_Test -->
+      <class name="testCases.IqSoft_API_2_Authorization_Negative_Test">
+        <test-method signature="AuthorizationAPIValidateResponseWithExpiredToken()[pri:1, instance:testCases.IqSoft_API_2_Authorization_Negative_Test@298a5e20]" started-at="2022-10-06T14:01:17 AMT" name="AuthorizationAPIValidateResponseWithExpiredToken" finished-at="2022-10-06T14:01:17 AMT" duration-ms="474" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [29] but found [0],
+Error Description: null expected [SessionExpired] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [29] but found [0],
+Error Description: null expected [SessionExpired] but found [null]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithExpiredToken(IqSoft_API_2_Authorization_Negative_Test.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AuthorizationAPIValidateResponseWithExpiredToken -->
+        <test-method signature="AuthorizationAPIValidateResponseWithInvalidToken()[pri:2, instance:testCases.IqSoft_API_2_Authorization_Negative_Test@298a5e20]" started-at="2022-10-06T14:01:17 AMT" name="AuthorizationAPIValidateResponseWithInvalidToken" finished-at="2022-10-06T14:01:18 AMT" duration-ms="470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AuthorizationAPIValidateResponseWithInvalidToken -->
+        <test-method signature="AuthorizationAPIValidateResponseWithInvalidProductID()[pri:3, instance:testCases.IqSoft_API_2_Authorization_Negative_Test@298a5e20]" started-at="2022-10-06T14:01:18 AMT" name="AuthorizationAPIValidateResponseWithInvalidProductID" finished-at="2022-10-06T14:01:18 AMT" duration-ms="468" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [43] but found [0],
+Error Description: null expected [ProductNotFound] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [43] but found [0],
+Error Description: null expected [ProductNotFound] but found [null]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithInvalidProductID(IqSoft_API_2_Authorization_Negative_Test.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AuthorizationAPIValidateResponseWithInvalidProductID -->
+      </class> <!-- testCases.IqSoft_API_2_Authorization_Negative_Test -->
+      <class name="testCases.IqSoft_API_1_OpenGame_Negative_Test">
+        <test-method signature="getUrlAPIValidateResponseWithInvalidToken()[pri:1, instance:testCases.IqSoft_API_1_OpenGame_Negative_Test@2e385cce]" started-at="2022-10-06T14:01:15 AMT" name="getUrlAPIValidateResponseWithInvalidToken" finished-at="2022-10-06T14:01:15 AMT" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrlAPIValidateResponseWithInvalidToken -->
+        <test-method signature="getUrlAPIValidateResponseWithExpiredToken()[pri:2, instance:testCases.IqSoft_API_1_OpenGame_Negative_Test@2e385cce]" started-at="2022-10-06T14:01:15 AMT" name="getUrlAPIValidateResponseWithExpiredToken" finished-at="2022-10-06T14:01:16 AMT" duration-ms="329" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [22] but found [21],
+Error Description: An error occurred while updating the entries. See the inner exception for details. expected [Client not found] but found [An error occurred while updating the entries. See the inner exception for details.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [22] but found [21],
+Error Description: An error occurred while updating the entries. See the inner exception for details. expected [Client not found] but found [An error occurred while updating the entries. See the inner exception for details.]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testCases.IqSoft_API_1_OpenGame_Negative_Test.getUrlAPIValidateResponseWithExpiredToken(IqSoft_API_1_OpenGame_Negative_Test.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrlAPIValidateResponseWithExpiredToken -->
+        <test-method signature="getUrlAPIValidateResponseWithInvalidPartnerID()[pri:3, instance:testCases.IqSoft_API_1_OpenGame_Negative_Test@2e385cce]" started-at="2022-10-06T14:01:16 AMT" name="getUrlAPIValidateResponseWithInvalidPartnerID" finished-at="2022-10-06T14:01:16 AMT" duration-ms="425" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [22] but found [21],
+Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ClientNotFound ] but found [An error occurred while updating the entries. See the inner exception for details.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [22] but found [21],
+Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ClientNotFound ] but found [An error occurred while updating the entries. See the inner exception for details.]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testCases.IqSoft_API_1_OpenGame_Negative_Test.getUrlAPIValidateResponseWithInvalidPartnerID(IqSoft_API_1_OpenGame_Negative_Test.java:108)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrlAPIValidateResponseWithInvalidPartnerID -->
+        <test-method signature="getUrlAPIValidateResponseWithInvalidGameID()[pri:4, instance:testCases.IqSoft_API_1_OpenGame_Negative_Test@2e385cce]" started-at="2022-10-06T14:01:16 AMT" name="getUrlAPIValidateResponseWithInvalidGameID" finished-at="2022-10-06T14:01:16 AMT" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrlAPIValidateResponseWithInvalidGameID -->
+        <test-method signature="getUrlAPIValidateResponseWithInvalidDomain()[pri:5, instance:testCases.IqSoft_API_1_OpenGame_Negative_Test@2e385cce]" started-at="2022-10-06T14:01:16 AMT" name="getUrlAPIValidateResponseWithInvalidDomain" finished-at="2022-10-06T14:01:16 AMT" duration-ms="318" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [43] but found [21],
+Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ProductNotFound] but found [An error occurred while updating the entries. See the inner exception for details.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [43] but found [21],
+Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ProductNotFound] but found [An error occurred while updating the entries. See the inner exception for details.]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testCases.IqSoft_API_1_OpenGame_Negative_Test.getUrlAPIValidateResponseWithInvalidDomain(IqSoft_API_1_OpenGame_Negative_Test.java:169)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrlAPIValidateResponseWithInvalidDomain -->
+      </class> <!-- testCases.IqSoft_API_1_OpenGame_Negative_Test -->
+      <class name="testCases.IqSoft_API_3_GetBalance_Negative_Test">
+        <test-method signature="GetBalanceAPIValidateResponseWithExpiredToken()[pri:1, instance:testCases.IqSoft_API_3_GetBalance_Negative_Test@46cdf8bd]" started-at="2022-10-06T14:01:19 AMT" name="GetBalanceAPIValidateResponseWithExpiredToken" finished-at="2022-10-06T14:01:19 AMT" duration-ms="184" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [29] but found [0],
+Error Description: null expected [SessionExpired] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [29] but found [0],
+Error Description: null expected [SessionExpired] but found [null]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithExpiredToken(IqSoft_API_3_GetBalance_Negative_Test.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetBalanceAPIValidateResponseWithExpiredToken -->
+        <test-method signature="GetBalanceAPIValidateResponseWithInvalidToken()[pri:2, instance:testCases.IqSoft_API_3_GetBalance_Negative_Test@46cdf8bd]" started-at="2022-10-06T14:01:19 AMT" name="GetBalanceAPIValidateResponseWithInvalidToken" finished-at="2022-10-06T14:01:19 AMT" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetBalanceAPIValidateResponseWithInvalidToken -->
+        <test-method signature="GetBalanceAPIValidateResponseWithInvalidCurrencyID()[pri:3, instance:testCases.IqSoft_API_3_GetBalance_Negative_Test@46cdf8bd]" started-at="2022-10-06T14:01:19 AMT" name="GetBalanceAPIValidateResponseWithInvalidCurrencyID" finished-at="2022-10-06T14:01:19 AMT" duration-ms="182" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [20] but found [0],
+Error Description: error login expected [CurrencyNotExists] but found [error login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [20] but found [0],
+Error Description: error login expected [CurrencyNotExists] but found [error login]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithInvalidCurrencyID(IqSoft_API_3_GetBalance_Negative_Test.java:103)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetBalanceAPIValidateResponseWithInvalidCurrencyID -->
+        <test-method signature="GetBalanceAPIValidateResponseWithOtherCurrencyID()[pri:4, instance:testCases.IqSoft_API_3_GetBalance_Negative_Test@46cdf8bd]" started-at="2022-10-06T14:01:19 AMT" name="GetBalanceAPIValidateResponseWithOtherCurrencyID" finished-at="2022-10-06T14:01:20 AMT" duration-ms="372" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect [9900.0] but found [9900.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect [9900.0] but found [9900.0]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at org.testng.Assert.assertNotEquals(Assert.java:2055)
+at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithOtherCurrencyID(IqSoft_API_3_GetBalance_Negative_Test.java:126)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetBalanceAPIValidateResponseWithOtherCurrencyID -->
+      </class> <!-- testCases.IqSoft_API_3_GetBalance_Negative_Test -->
+      <class name="testCases.IqSoft_API_3_GetBalance_Positive_Test">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_3_GetBalance_Positive_Test@2a7f1f10]" started-at="2022-10-06T14:01:18 AMT" name="setUp" finished-at="2022-10-06T14:01:19 AMT" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="GetBalanceAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_3_GetBalance_Positive_Test@2a7f1f10]" started-at="2022-10-06T14:01:19 AMT" name="GetBalanceAPIValidateStatusCod" finished-at="2022-10-06T14:01:19 AMT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetBalanceAPIValidateStatusCod -->
+        <test-method signature="GetBalanceAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_3_GetBalance_Positive_Test@2a7f1f10]" started-at="2022-10-06T14:01:19 AMT" name="GetBalanceAPIValidatePositiveResponse" finished-at="2022-10-06T14:01:19 AMT" depends-on-methods="testCases.IqSoft_API_3_GetBalance_Positive_Test.GetBalanceAPIValidateStatusCod" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetBalanceAPIValidatePositiveResponse -->
+      </class> <!-- testCases.IqSoft_API_3_GetBalance_Positive_Test -->
+    </test> <!-- API Integration Automation Test -->
+  </suite> <!-- IQsoft API Integration -->
+</testng-results>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [IQsoft API Integration]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="API Integration Automation Test(failed)" verbose="0">
+    <classes>
+      <class name="testCases.IqSoft_API_1_OpenGame_Negative_Test">
+        <methods>
+          <include name="getUrlAPIValidateResponseWithInvalidPartnerID"/>
+          <include name="tearDownSuite"/>
+          <include name="getUrlAPIValidateResponseWithExpiredToken"/>
+          <include name="setupSuite"/>
+          <include name="getUrlAPIValidateResponseWithInvalidDomain"/>
+        </methods>
+      </class> <!-- testCases.IqSoft_API_1_OpenGame_Negative_Test -->
+      <class name="testCases.IqSoft_API_2_Authorization_Negative_Test">
+        <methods>
+          <include name="AuthorizationAPIValidateResponseWithInvalidProductID"/>
+          <include name="tearDownSuite"/>
+          <include name="AuthorizationAPIValidateResponseWithExpiredToken"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- testCases.IqSoft_API_2_Authorization_Negative_Test -->
+      <class name="testCases.IqSoft_API_3_GetBalance_Negative_Test">
+        <methods>
+          <include name="GetBalanceAPIValidateResponseWithInvalidCurrencyID"/>
+          <include name="GetBalanceAPIValidateResponseWithOtherCurrencyID"/>
+          <include name="tearDownSuite"/>
+          <include name="GetBalanceAPIValidateResponseWithExpiredToken"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- testCases.IqSoft_API_3_GetBalance_Negative_Test -->
+      <class name="testCases.IqSoft_API_1_OpenGame_Positive_Test">
+        <methods>
+          <include name="setUpTestCase"/>
+          <include name="tearDownSuite"/>
+          <include name="openGameAPIValidatePositiveResponse"/>
+          <include name="tearDownTestCase"/>
+          <include name="openGameAPIValidateStatusCod"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- testCases.IqSoft_API_1_OpenGame_Positive_Test -->
+    </classes>
+  </test> <!-- API Integration Automation Test(failed) -->
+</suite> <!-- Failed suite [IQsoft API Integration] -->

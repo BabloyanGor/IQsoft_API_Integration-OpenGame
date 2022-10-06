@@ -29,9 +29,13 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest{
         iqSoft_03_apiVariables_getBalance_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
         logger.info("GetBalance API Response ResponseCode : " + iqSoft_03_apiVariables_getBalance_response.getResponseCode());
 
-        iqSoft_03_apiVariables_getBalance_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("GetBalance API Response Description : " + iqSoft_03_apiVariables_getBalance_response.getDescription());
+        try{
+            iqSoft_03_apiVariables_getBalance_response.setDescription(jsonObjectBody.get("Description").toString());
+            logger.info("GetBalance API Response Description : " + iqSoft_03_apiVariables_getBalance_response.getDescription());
+        }
+        catch (Exception e){
 
+        }
         SoftAssert softAssert = new SoftAssert();
 
         softAssert.assertEquals(statusCod, 200);

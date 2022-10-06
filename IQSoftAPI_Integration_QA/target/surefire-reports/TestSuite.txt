@@ -1,0 +1,79 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 6.762 sec <<< FAILURE! - in TestSuite
+openGameAPIValidatePositiveResponse(testCases.IqSoft_API_1_OpenGame_Positive_Test)  Time elapsed: 0.017 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [0] but found [21],
+	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [null] but found [An error occurred while updating the entries. See the inner exception for details.],
+	did not expect [null] but found [null],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_1_OpenGame_Positive_Test.openGameAPIValidatePositiveResponse(IqSoft_API_1_OpenGame_Positive_Test.java:61)
+
+getUrlAPIValidateResponseWithExpiredToken(testCases.IqSoft_API_1_OpenGame_Negative_Test)  Time elapsed: 0.332 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [22] but found [21],
+	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [Client not found] but found [An error occurred while updating the entries. See the inner exception for details.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_1_OpenGame_Negative_Test.getUrlAPIValidateResponseWithExpiredToken(IqSoft_API_1_OpenGame_Negative_Test.java:77)
+
+getUrlAPIValidateResponseWithInvalidPartnerID(testCases.IqSoft_API_1_OpenGame_Negative_Test)  Time elapsed: 0.436 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [22] but found [21],
+	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ClientNotFound ] but found [An error occurred while updating the entries. See the inner exception for details.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_1_OpenGame_Negative_Test.getUrlAPIValidateResponseWithInvalidPartnerID(IqSoft_API_1_OpenGame_Negative_Test.java:108)
+
+getUrlAPIValidateResponseWithInvalidDomain(testCases.IqSoft_API_1_OpenGame_Negative_Test)  Time elapsed: 0.323 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [43] but found [21],
+	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ProductNotFound] but found [An error occurred while updating the entries. See the inner exception for details.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_1_OpenGame_Negative_Test.getUrlAPIValidateResponseWithInvalidDomain(IqSoft_API_1_OpenGame_Negative_Test.java:169)
+
+AuthorizationAPIValidateResponseWithExpiredToken(testCases.IqSoft_API_2_Authorization_Negative_Test)  Time elapsed: 0.477 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [29] but found [0],
+	Error Description: null expected [SessionExpired] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithExpiredToken(IqSoft_API_2_Authorization_Negative_Test.java:47)
+
+AuthorizationAPIValidateResponseWithInvalidProductID(testCases.IqSoft_API_2_Authorization_Negative_Test)  Time elapsed: 0.47 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [43] but found [0],
+	Error Description: null expected [ProductNotFound] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithInvalidProductID(IqSoft_API_2_Authorization_Negative_Test.java:106)
+
+GetBalanceAPIValidateResponseWithExpiredToken(testCases.IqSoft_API_3_GetBalance_Negative_Test)  Time elapsed: 0.186 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [29] but found [0],
+	Error Description: null expected [SessionExpired] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithExpiredToken(IqSoft_API_3_GetBalance_Negative_Test.java:46)
+
+GetBalanceAPIValidateResponseWithInvalidCurrencyID(testCases.IqSoft_API_3_GetBalance_Negative_Test)  Time elapsed: 0.184 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	expected [20] but found [0],
+	Error Description: error login expected [CurrencyNotExists] but found [error login]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithInvalidCurrencyID(IqSoft_API_3_GetBalance_Negative_Test.java:103)
+
+GetBalanceAPIValidateResponseWithOtherCurrencyID(testCases.IqSoft_API_3_GetBalance_Negative_Test)  Time elapsed: 0.373 sec  <<< FAILURE!
+java.lang.AssertionError: did not expect [9900.0] but found [9900.0]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failEquals(Assert.java:1417)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+	at org.testng.Assert.assertNotEquals(Assert.java:2033)
+	at org.testng.Assert.assertNotEquals(Assert.java:2055)
+	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithOtherCurrencyID(IqSoft_API_3_GetBalance_Negative_Test.java:126)
+

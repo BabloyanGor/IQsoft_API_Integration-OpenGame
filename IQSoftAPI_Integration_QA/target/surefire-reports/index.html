@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-IQsoft_API_Integration" class="navigator-link">
+              <span class="suite-name border-failed">IQsoft API Integration</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-IQsoft_API_Integration" class="navigator-link ">
+                    <span>C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-IQsoft_API_Integration" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-IQsoft_API_Integration" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-IQsoft_API_Integration" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-IQsoft_API_Integration" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-IQsoft_API_Integration" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-IQsoft_API_Integration" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods, 9 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-IQsoft_API_Integration" class="hide-methods failed suite-IQsoft_API_Integration"> (hide)</a> <!-- hide-methods failed suite-IQsoft_API_Integration -->
+                      <a href="#" panel-name="suite-IQsoft_API_Integration" class="show-methods failed suite-IQsoft_API_Integration"> (show)</a> <!-- show-methods failed suite-IQsoft_API_Integration -->
+                    </span>
+                    <div class="method-list-content failed suite-IQsoft_API_Integration">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_2_Authorization_Negative_Test" class="method navigator-link" hash-for-method="AuthorizationAPIValidateResponseWithExpiredToken">AuthorizationAPIValidateResponseWithExpiredToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_2_Authorization_Negative_Test" class="method navigator-link" hash-for-method="AuthorizationAPIValidateResponseWithInvalidProductID">AuthorizationAPIValidateResponseWithInvalidProductID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_3_GetBalance_Negative_Test" class="method navigator-link" hash-for-method="GetBalanceAPIValidateResponseWithExpiredToken">GetBalanceAPIValidateResponseWithExpiredToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_3_GetBalance_Negative_Test" class="method navigator-link" hash-for-method="GetBalanceAPIValidateResponseWithInvalidCurrencyID">GetBalanceAPIValidateResponseWithInvalidCurrencyID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_3_GetBalance_Negative_Test" class="method navigator-link" hash-for-method="GetBalanceAPIValidateResponseWithOtherCurrencyID">GetBalanceAPIValidateResponseWithOtherCurrencyID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_1_OpenGame_Negative_Test" class="method navigator-link" hash-for-method="getUrlAPIValidateResponseWithExpiredToken">getUrlAPIValidateResponseWithExpiredToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_1_OpenGame_Negative_Test" class="method navigator-link" hash-for-method="getUrlAPIValidateResponseWithInvalidDomain">getUrlAPIValidateResponseWithInvalidDomain</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_1_OpenGame_Negative_Test" class="method navigator-link" hash-for-method="getUrlAPIValidateResponseWithInvalidPartnerID">getUrlAPIValidateResponseWithInvalidPartnerID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_1_OpenGame_Positive_Test" class="method navigator-link" hash-for-method="openGameAPIValidatePositiveResponse">openGameAPIValidatePositiveResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-IQsoft_API_Integration -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-IQsoft_API_Integration" class="hide-methods passed suite-IQsoft_API_Integration"> (hide)</a> <!-- hide-methods passed suite-IQsoft_API_Integration -->
+                      <a href="#" panel-name="suite-IQsoft_API_Integration" class="show-methods passed suite-IQsoft_API_Integration"> (show)</a> <!-- show-methods passed suite-IQsoft_API_Integration -->
+                    </span>
+                    <div class="method-list-content passed suite-IQsoft_API_Integration">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_2_Authorization_Positive_Test" class="method navigator-link" hash-for-method="AuthorizationAPIValidatePositiveResponse">AuthorizationAPIValidatePositiveResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_2_Authorization_Negative_Test" class="method navigator-link" hash-for-method="AuthorizationAPIValidateResponseWithInvalidToken">AuthorizationAPIValidateResponseWithInvalidToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_2_Authorization_Positive_Test" class="method navigator-link" hash-for-method="AuthorizationAPIValidateStatusCod">AuthorizationAPIValidateStatusCod</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_3_GetBalance_Positive_Test" class="method navigator-link" hash-for-method="GetBalanceAPIValidatePositiveResponse">GetBalanceAPIValidatePositiveResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_3_GetBalance_Negative_Test" class="method navigator-link" hash-for-method="GetBalanceAPIValidateResponseWithInvalidToken">GetBalanceAPIValidateResponseWithInvalidToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_3_GetBalance_Positive_Test" class="method navigator-link" hash-for-method="GetBalanceAPIValidateStatusCod">GetBalanceAPIValidateStatusCod</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_1_OpenGame_Negative_Test" class="method navigator-link" hash-for-method="getUrlAPIValidateResponseWithInvalidGameID">getUrlAPIValidateResponseWithInvalidGameID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_1_OpenGame_Negative_Test" class="method navigator-link" hash-for-method="getUrlAPIValidateResponseWithInvalidToken">getUrlAPIValidateResponseWithInvalidToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IQsoft_API_Integration" title="testCases.IqSoft_API_1_OpenGame_Positive_Test" class="method navigator-link" hash-for-method="openGameAPIValidateStatusCod">openGameAPIValidateStatusCod</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-IQsoft_API_Integration -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-IQsoft_API_Integration" class="panel IQsoft_API_Integration">
+          <div class="suite-IQsoft_API_Integration-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.IqSoft_API_1_OpenGame_Negative_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUrlAPIValidateResponseWithExpiredToken">
+                  </a> <!-- getUrlAPIValidateResponseWithExpiredToken -->
+                  <span class="method-name">getUrlAPIValidateResponseWithExpiredToken</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [22] but found [21],
+	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [Client not found] but found [An error occurred while updating the entries. See the inner exception for details.]
+	at testCases.IqSoft_API_1_OpenGame_Negative_Test.getUrlAPIValidateResponseWithExpiredToken(IqSoft_API_1_OpenGame_Negative_Test.java:77)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUrlAPIValidateResponseWithInvalidDomain">
+                  </a> <!-- getUrlAPIValidateResponseWithInvalidDomain -->
+                  <span class="method-name">getUrlAPIValidateResponseWithInvalidDomain</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [43] but found [21],
+	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ProductNotFound] but found [An error occurred while updating the entries. See the inner exception for details.]
+	at testCases.IqSoft_API_1_OpenGame_Negative_Test.getUrlAPIValidateResponseWithInvalidDomain(IqSoft_API_1_OpenGame_Negative_Test.java:169)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUrlAPIValidateResponseWithInvalidPartnerID">
+                  </a> <!-- getUrlAPIValidateResponseWithInvalidPartnerID -->
+                  <span class="method-name">getUrlAPIValidateResponseWithInvalidPartnerID</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [22] but found [21],
+	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ClientNotFound ] but found [An error occurred while updating the entries. See the inner exception for details.]
+	at testCases.IqSoft_API_1_OpenGame_Negative_Test.getUrlAPIValidateResponseWithInvalidPartnerID(IqSoft_API_1_OpenGame_Negative_Test.java:108)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IQsoft_API_Integration-class-failed -->
+          <div class="suite-IQsoft_API_Integration-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.IqSoft_API_2_Authorization_Negative_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AuthorizationAPIValidateResponseWithExpiredToken">
+                  </a> <!-- AuthorizationAPIValidateResponseWithExpiredToken -->
+                  <span class="method-name">AuthorizationAPIValidateResponseWithExpiredToken</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [29] but found [0],
+	Error Description: null expected [SessionExpired] but found [null]
+	at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithExpiredToken(IqSoft_API_2_Authorization_Negative_Test.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AuthorizationAPIValidateResponseWithInvalidProductID">
+                  </a> <!-- AuthorizationAPIValidateResponseWithInvalidProductID -->
+                  <span class="method-name">AuthorizationAPIValidateResponseWithInvalidProductID</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [43] but found [0],
+	Error Description: null expected [ProductNotFound] but found [null]
+	at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithInvalidProductID(IqSoft_API_2_Authorization_Negative_Test.java:106)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IQsoft_API_Integration-class-failed -->
+          <div class="suite-IQsoft_API_Integration-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.IqSoft_API_3_GetBalance_Negative_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetBalanceAPIValidateResponseWithExpiredToken">
+                  </a> <!-- GetBalanceAPIValidateResponseWithExpiredToken -->
+                  <span class="method-name">GetBalanceAPIValidateResponseWithExpiredToken</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [29] but found [0],
+	Error Description: null expected [SessionExpired] but found [null]
+	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithExpiredToken(IqSoft_API_3_GetBalance_Negative_Test.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetBalanceAPIValidateResponseWithInvalidCurrencyID">
+                  </a> <!-- GetBalanceAPIValidateResponseWithInvalidCurrencyID -->
+                  <span class="method-name">GetBalanceAPIValidateResponseWithInvalidCurrencyID</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [20] but found [0],
+	Error Description: error login expected [CurrencyNotExists] but found [error login]
+	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithInvalidCurrencyID(IqSoft_API_3_GetBalance_Negative_Test.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetBalanceAPIValidateResponseWithOtherCurrencyID">
+                  </a> <!-- GetBalanceAPIValidateResponseWithOtherCurrencyID -->
+                  <span class="method-name">GetBalanceAPIValidateResponseWithOtherCurrencyID</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect [9900.0] but found [9900.0]
+	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithOtherCurrencyID(IqSoft_API_3_GetBalance_Negative_Test.java:126)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IQsoft_API_Integration-class-failed -->
+          <div class="suite-IQsoft_API_Integration-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.IqSoft_API_1_OpenGame_Positive_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openGameAPIValidatePositiveResponse">
+                  </a> <!-- openGameAPIValidatePositiveResponse -->
+                  <span class="method-name">openGameAPIValidatePositiveResponse</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [0] but found [21],
+	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [null] but found [An error occurred while updating the entries. See the inner exception for details.],
+	did not expect [null] but found [null],
+	expected [true] but found [false]
+	at testCases.IqSoft_API_1_OpenGame_Positive_Test.openGameAPIValidatePositiveResponse(IqSoft_API_1_OpenGame_Positive_Test.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IQsoft_API_Integration-class-failed -->
+          <div class="suite-IQsoft_API_Integration-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.IqSoft_API_2_Authorization_Positive_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AuthorizationAPIValidatePositiveResponse">
+                  </a> <!-- AuthorizationAPIValidatePositiveResponse -->
+                  <span class="method-name">AuthorizationAPIValidatePositiveResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AuthorizationAPIValidateStatusCod">
+                  </a> <!-- AuthorizationAPIValidateStatusCod -->
+                  <span class="method-name">AuthorizationAPIValidateStatusCod</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IQsoft_API_Integration-class-passed -->
+          <div class="suite-IQsoft_API_Integration-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.IqSoft_API_1_OpenGame_Negative_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUrlAPIValidateResponseWithInvalidGameID">
+                  </a> <!-- getUrlAPIValidateResponseWithInvalidGameID -->
+                  <span class="method-name">getUrlAPIValidateResponseWithInvalidGameID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUrlAPIValidateResponseWithInvalidToken">
+                  </a> <!-- getUrlAPIValidateResponseWithInvalidToken -->
+                  <span class="method-name">getUrlAPIValidateResponseWithInvalidToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IQsoft_API_Integration-class-passed -->
+          <div class="suite-IQsoft_API_Integration-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.IqSoft_API_2_Authorization_Negative_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AuthorizationAPIValidateResponseWithInvalidToken">
+                  </a> <!-- AuthorizationAPIValidateResponseWithInvalidToken -->
+                  <span class="method-name">AuthorizationAPIValidateResponseWithInvalidToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IQsoft_API_Integration-class-passed -->
+          <div class="suite-IQsoft_API_Integration-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.IqSoft_API_3_GetBalance_Negative_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetBalanceAPIValidateResponseWithInvalidToken">
+                  </a> <!-- GetBalanceAPIValidateResponseWithInvalidToken -->
+                  <span class="method-name">GetBalanceAPIValidateResponseWithInvalidToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IQsoft_API_Integration-class-passed -->
+          <div class="suite-IQsoft_API_Integration-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.IqSoft_API_3_GetBalance_Positive_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetBalanceAPIValidatePositiveResponse">
+                  </a> <!-- GetBalanceAPIValidatePositiveResponse -->
+                  <span class="method-name">GetBalanceAPIValidatePositiveResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetBalanceAPIValidateStatusCod">
+                  </a> <!-- GetBalanceAPIValidateStatusCod -->
+                  <span class="method-name">GetBalanceAPIValidateStatusCod</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IQsoft_API_Integration-class-passed -->
+          <div class="suite-IQsoft_API_Integration-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.IqSoft_API_1_OpenGame_Positive_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openGameAPIValidateStatusCod">
+                  </a> <!-- openGameAPIValidateStatusCod -->
+                  <span class="method-name">openGameAPIValidateStatusCod</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IQsoft_API_Integration-class-passed -->
+        </div> <!-- panel IQsoft_API_Integration -->
+        <div panel-name="test-xml-IQsoft_API_Integration" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;IQsoft API Integration&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;API Integration Automation Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.IqSoft_API_1_OpenGame_Positive_Test&quot;/&gt;
+      &lt;class name=&quot;testCases.IqSoft_API_1_OpenGame_Negative_Test&quot;/&gt;
+      &lt;class name=&quot;testCases.IqSoft_API_2_Authorization_Positive_Test&quot;/&gt;
+      &lt;class name=&quot;testCases.IqSoft_API_2_Authorization_Negative_Test&quot;/&gt;
+      &lt;class name=&quot;testCases.IqSoft_API_3_GetBalance_Positive_Test&quot;/&gt;
+      &lt;class name=&quot;testCases.IqSoft_API_3_GetBalance_Negative_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- API Integration Automation Test --&gt;
+&lt;/suite&gt; &lt;!-- IQsoft API Integration --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-IQsoft_API_Integration" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for IQsoft API Integration</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">API Integration Automation Test (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-IQsoft_API_Integration" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for IQsoft API Integration</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-IQsoft_API_Integration" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for IQsoft API Integration</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_IQsoft_API_Integration');
+function tableData_IQsoft_API_Integration() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'AuthorizationAPIValidateResponseWithExpiredToken')
+data.setCell(0, 2, 'testCases.IqSoft_API_2_Authorization_Negative_Test')
+data.setCell(0, 3, 474);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AuthorizationAPIValidateResponseWithInvalidToken')
+data.setCell(1, 2, 'testCases.IqSoft_API_2_Authorization_Negative_Test')
+data.setCell(1, 3, 470);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'AuthorizationAPIValidateResponseWithInvalidProductID')
+data.setCell(2, 2, 'testCases.IqSoft_API_2_Authorization_Negative_Test')
+data.setCell(2, 3, 468);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getUrlAPIValidateResponseWithInvalidPartnerID')
+data.setCell(3, 2, 'testCases.IqSoft_API_1_OpenGame_Negative_Test')
+data.setCell(3, 3, 425);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'GetBalanceAPIValidateResponseWithOtherCurrencyID')
+data.setCell(4, 2, 'testCases.IqSoft_API_3_GetBalance_Negative_Test')
+data.setCell(4, 3, 372);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getUrlAPIValidateResponseWithExpiredToken')
+data.setCell(5, 2, 'testCases.IqSoft_API_1_OpenGame_Negative_Test')
+data.setCell(5, 3, 329);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'getUrlAPIValidateResponseWithInvalidDomain')
+data.setCell(6, 2, 'testCases.IqSoft_API_1_OpenGame_Negative_Test')
+data.setCell(6, 3, 318);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'getUrlAPIValidateResponseWithInvalidToken')
+data.setCell(7, 2, 'testCases.IqSoft_API_1_OpenGame_Negative_Test')
+data.setCell(7, 3, 288);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'GetBalanceAPIValidateResponseWithExpiredToken')
+data.setCell(8, 2, 'testCases.IqSoft_API_3_GetBalance_Negative_Test')
+data.setCell(8, 3, 184);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'GetBalanceAPIValidateResponseWithInvalidCurrencyID')
+data.setCell(9, 2, 'testCases.IqSoft_API_3_GetBalance_Negative_Test')
+data.setCell(9, 3, 182);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'getUrlAPIValidateResponseWithInvalidGameID')
+data.setCell(10, 2, 'testCases.IqSoft_API_1_OpenGame_Negative_Test')
+data.setCell(10, 3, 180);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'GetBalanceAPIValidateResponseWithInvalidToken')
+data.setCell(11, 2, 'testCases.IqSoft_API_3_GetBalance_Negative_Test')
+data.setCell(11, 3, 180);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'openGameAPIValidateStatusCod')
+data.setCell(12, 2, 'testCases.IqSoft_API_1_OpenGame_Positive_Test')
+data.setCell(12, 3, 39);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'openGameAPIValidatePositiveResponse')
+data.setCell(13, 2, 'testCases.IqSoft_API_1_OpenGame_Positive_Test')
+data.setCell(13, 3, 8);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'AuthorizationAPIValidatePositiveResponse')
+data.setCell(14, 2, 'testCases.IqSoft_API_2_Authorization_Positive_Test')
+data.setCell(14, 3, 2);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'AuthorizationAPIValidateStatusCod')
+data.setCell(15, 2, 'testCases.IqSoft_API_2_Authorization_Positive_Test')
+data.setCell(15, 3, 2);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'GetBalanceAPIValidateStatusCod')
+data.setCell(16, 2, 'testCases.IqSoft_API_3_GetBalance_Positive_Test')
+data.setCell(16, 3, 2);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'GetBalanceAPIValidatePositiveResponse')
+data.setCell(17, 2, 'testCases.IqSoft_API_3_GetBalance_Positive_Test')
+data.setCell(17, 3, 2);
+window.suiteTableData['IQsoft_API_Integration']= { tableData: data, tableDiv: 'times-div-IQsoft_API_Integration'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <div id="times-div-IQsoft_API_Integration">
+              </div> <!-- times-div-IQsoft_API_Integration -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-IQsoft_API_Integration" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for IQsoft API Integration</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-IQsoft_API_Integration" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">10 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.IqSoft_API_2_Authorization_Positive_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.IqSoft_API_1_OpenGame_Negative_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.IqSoft_API_2_Authorization_Negative_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.IqSoft_API_3_GetBalance_Negative_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.IqSoft_API_3_GetBalance_Positive_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-IQsoft_API_Integration" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.IqSoft_API_1_OpenGame_Positive_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpTestCase</span>
+                <span class="method-start">68 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">openGameAPIValidateStatusCod</span>
+                <span class="method-start">1056 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">openGameAPIValidatePositiveResponse</span>
+                <span class="method-start">1150 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownTestCase</span>
+                <span class="method-start">1166 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.IqSoft_API_1_OpenGame_Negative_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getUrlAPIValidateResponseWithInvalidToken</span>
+                <span class="method-start">1168 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getUrlAPIValidateResponseWithExpiredToken</span>
+                <span class="method-start">1458 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getUrlAPIValidateResponseWithInvalidPartnerID</span>
+                <span class="method-start">1792 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getUrlAPIValidateResponseWithInvalidGameID</span>
+                <span class="method-start">2219 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getUrlAPIValidateResponseWithInvalidDomain</span>
+                <span class="method-start">2402 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.IqSoft_API_2_Authorization_Positive_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2725 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">AuthorizationAPIValidateStatusCod</span>
+                <span class="method-start">3233 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AuthorizationAPIValidatePositiveResponse</span>
+                <span class="method-start">3237 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.IqSoft_API_2_Authorization_Negative_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AuthorizationAPIValidateResponseWithExpiredToken</span>
+                <span class="method-start">3241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AuthorizationAPIValidateResponseWithInvalidToken</span>
+                <span class="method-start">3718 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AuthorizationAPIValidateResponseWithInvalidProductID</span>
+                <span class="method-start">4190 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.IqSoft_API_3_GetBalance_Positive_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">4660 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">GetBalanceAPIValidateStatusCod</span>
+                <span class="method-start">4848 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetBalanceAPIValidatePositiveResponse</span>
+                <span class="method-start">4852 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.IqSoft_API_3_GetBalance_Negative_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">GetBalanceAPIValidateResponseWithExpiredToken</span>
+                <span class="method-start">4858 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetBalanceAPIValidateResponseWithInvalidToken</span>
+                <span class="method-start">5044 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">GetBalanceAPIValidateResponseWithInvalidCurrencyID</span>
+                <span class="method-start">5229 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">GetBalanceAPIValidateResponseWithOtherCurrencyID</span>
+                <span class="method-start">5414 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.IqSoft_API_1_OpenGame_Positive_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownSuite</span>
+                <span class="method-start">5834 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
