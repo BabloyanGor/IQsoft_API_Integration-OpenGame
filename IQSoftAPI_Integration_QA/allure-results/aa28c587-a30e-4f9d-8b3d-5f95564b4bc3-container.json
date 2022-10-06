@@ -1,1 +1,0 @@
-{"uuid":"aa28c587-a30e-4f9d-8b3d-5f95564b4bc3","name":"testCases.IqSoft_API_3_GetBalance_Positive_Test","children":["f3b1bf39-d575-436a-9dcb-2692a5b72058"],"befores":[{"name":"setUp","status":"broken","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1665037916663,"stop":1665037916663}],"afters":[],"start":1665037916649,"stop":1665037916686}

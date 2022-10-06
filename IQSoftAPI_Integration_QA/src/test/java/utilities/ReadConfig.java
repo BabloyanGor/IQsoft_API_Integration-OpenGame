@@ -48,7 +48,7 @@ public class ReadConfig {
         return Double.parseDouble(pro.getProperty("BetAmount"));
     }
 
-    public String getCurrency() {
+    public String CurrencyId() {
         return pro.getProperty("CurrencyId");
     }
     public String getSessionToken() {

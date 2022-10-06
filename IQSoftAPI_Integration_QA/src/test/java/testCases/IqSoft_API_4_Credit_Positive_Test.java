@@ -22,11 +22,11 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
 
     @BeforeClass
     public void setUp() throws UnirestException, IOException {
-        HttpResponse<String> responseGetBalance = getBalanceAPI(AuthorizationTokenVar, currencyConfig);
+        HttpResponse<String> responseGetBalance = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalance.getBody());
         beforeCredit = Double.parseDouble(jsonObjectBody.get("Balance").toString());
 
-        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, currencyConfig, gameIdConfig, 1, ID+"C",betAmountConfig,1);
+        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1, ID+"C",betAmountConfig,1);
         Unirest.shutdown();
         statusCod = responseCredit.getStatus();
         jsonObjectBody = new JSONObject(responseCredit.getBody());

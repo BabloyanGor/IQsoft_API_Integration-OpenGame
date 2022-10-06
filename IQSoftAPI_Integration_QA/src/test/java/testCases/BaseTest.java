@@ -30,7 +30,7 @@ public class BaseTest {
     public int gameIdConfig = readConfig.getGameIdID();
     public int clientGameIdConfig = readConfig.getClientGameId();
     public double betAmountConfig = readConfig.getBetAmount();
-    public String currencyConfig = readConfig.getCurrency();
+    public String currencyIDConfig = readConfig.CurrencyId();
     public String sessionTokenConfig = readConfig.getSessionToken();
     public String expiredSessionTokenConfig = readConfig.getExpiredSessionToken();
 
