@@ -39,6 +39,11 @@ public class ReadConfig {
     public String getClientId() {
         return pro.getProperty("ClientId");
     }
+    public String getUserName() {
+        return pro.getProperty("UserName");
+    }
+
+
     public int getGameIdID() {
         return Integer.parseInt(pro.getProperty("GameId"));
     }

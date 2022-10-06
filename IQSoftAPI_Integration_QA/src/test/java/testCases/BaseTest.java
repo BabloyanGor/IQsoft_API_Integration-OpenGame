@@ -27,6 +27,7 @@ public class BaseTest {
     public String domainConfig = readConfig.getDomain();
     public int partnerIdConfig = readConfig.getPartnerID();
     public String clientIdConfig = readConfig.getClientId();
+    public String userNameConfig = readConfig.getUserName();
     public int gameIdConfig = readConfig.getGameIdID();
     public int clientGameIdConfig = readConfig.getClientGameId();
     public double betAmountConfig = readConfig.getBetAmount();
@@ -45,7 +46,8 @@ public class BaseTest {
 //    ArrayList<String> creditValidTransactionID = new ArrayList<>();
     public  static  String creditValidTransactionID = randomCreditTransactionID();
     public  static  String debitValidTransactionID = randomDebitTransactionID();
-    public  static  String rollBackValidTransactionID = randomRollBackTransactionID();
+    public  static  String rollBackValidTransactionIDCredit = randomRollBackTransactionID();
+    public  static  String rollBackValidTransactionIDDebit = randomRollBackTransactionID();
     static public String randomCreditTransactionID() {
         return "QA_Test-" + RandomStringUtils.randomAlphanumeric(20) + "_C";
     }
