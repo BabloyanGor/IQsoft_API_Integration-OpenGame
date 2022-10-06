@@ -26,7 +26,7 @@ public class ReadConfig {
     public String getCallbackUrl() {
         return pro.getProperty("callbackUrl");
     }
-    
+
 
     //region <Getting Variables for gameLaunchURL API>
     public String getDomain() {
