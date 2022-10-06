@@ -39,7 +39,7 @@ public class ReadConfig {
         return Integer.parseInt(pro.getProperty("ClientId"));
     }
     public int getGameIdID() {
-        return Integer.parseInt(pro.getProperty("ProductId"));
+        return Integer.parseInt(pro.getProperty("GameId"));
     }
     public int getClientGameId() {
         return Integer.parseInt(pro.getProperty("ClientGameId"));
@@ -54,6 +54,11 @@ public class ReadConfig {
     public String getSessionToken() {
         return pro.getProperty("SessionToken");
     }
+    public String getExpiredSessionToken() {
+        return pro.getProperty("ExpiredSessionToken");
+    }
+
+
 
     //endregion
 

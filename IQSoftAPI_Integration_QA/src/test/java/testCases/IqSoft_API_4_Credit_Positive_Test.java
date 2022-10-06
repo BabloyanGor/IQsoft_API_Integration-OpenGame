@@ -1,36 +1,36 @@
-//package testCases;
-//
-//import com.mashape.unirest.http.HttpResponse;
-//import com.mashape.unirest.http.Unirest;
-//import com.mashape.unirest.http.exceptions.UnirestException;
-//import io.qameta.allure.Description;
-//import io.qameta.allure.Severity;
-//import io.qameta.allure.SeverityLevel;
-//import org.json.JSONObject;
-//import org.testng.Assert;
-//import org.testng.annotations.BeforeClass;
-//import org.testng.annotations.Test;
-//import org.testng.asserts.SoftAssert;
-//
-//import java.io.IOException;
-//
-//public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
-//    JSONObject jsonObjectBody;
-//    double beforeCredit;
-//    int statusCod;
-//
-//
-//    @BeforeClass
-//    public void setUp() throws UnirestException, IOException {
-//        HttpResponse<String> responseGetBalance = getBalanceAPI(iqSoft01ApiVariables_getProductUrl_response.getAuthorizationToken(), clientProductID);
-//        jsonObjectBody = new JSONObject(responseGetBalance.getBody());
-//        beforeCredit = Double.parseDouble(jsonObjectBody.get("Balance").toString());
-//
-//        HttpResponse<String> response = creditAPI(iqSoft01ApiVariables_getProductUrl_response.getAuthorizationToken(), clientProductID, betAmount, ID, ID+"C",currency);
-//        Unirest.shutdown();
-//        statusCod = response.getStatus();
-//        jsonObjectBody = new JSONObject(response.getBody());
-//
+package testCases;
+
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.Unirest;
+import com.mashape.unirest.http.exceptions.UnirestException;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import org.json.JSONObject;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import java.io.IOException;
+
+public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
+    JSONObject jsonObjectBody;
+    double beforeCredit;
+    int statusCod;
+
+
+    @BeforeClass
+    public void setUp() throws UnirestException, IOException {
+        HttpResponse<String> responseGetBalance = getBalanceAPI(AuthorizationTokenVar, currencyConfig);
+        jsonObjectBody = new JSONObject(responseGetBalance.getBody());
+        beforeCredit = Double.parseDouble(jsonObjectBody.get("Balance").toString());
+
+        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, currencyConfig, gameIdConfig, 1, ID+"C",betAmountConfig,1);
+        Unirest.shutdown();
+        statusCod = responseCredit.getStatus();
+        jsonObjectBody = new JSONObject(responseCredit.getBody());
+
 //        iqSoft_04_apiVariables_credit_response.setBetId(jsonObjectBody.get("BetId").toString());
 //        logger.info("Credit API Response BetId : " + iqSoft_04_apiVariables_credit_response.getBetId());
 //
@@ -54,17 +54,16 @@
 //
 //        iqSoft_04_apiVariables_credit_response.setResponseObject((jsonObjectBody.get("ResponseObject").toString()));
 //        logger.info("Credit API Response ResponseObject : " + iqSoft_04_apiVariables_credit_response.getResponseObject());
-//
-//    }
-//
-//
-//    @Test(priority = 1)
-//    @Description("Verify Credit API_s Response Status Cod equals to 200")
-//    @Severity(SeverityLevel.BLOCKER)
-//    public void CreditAPIValidateStatusCod() {
-//        logger.info("Credit API Status Cod is Equal: " + statusCod);
-//        Assert.assertEquals(200, statusCod);
-//    }
+
+    }
+
+    @Test(priority = 1)
+    @Description("Verify Credit API_s Response Status Cod equals to 200")
+    @Severity(SeverityLevel.BLOCKER)
+    public void CreditAPIValidateStatusCod() {
+        logger.info("Credit API Status Cod is Equal: " + statusCod);
+        Assert.assertEquals(200, statusCod);
+    }
 //
 //    @Test(priority = 2, dependsOnMethods = {"CreditAPIValidateStatusCod"})
 //    @Description("Verify Credit API_s Validate Positive Response")
@@ -109,6 +108,6 @@
 //        double balanceAfterCredit = Double.parseDouble(jsonObjectBody.get("Balance").toString());
 //        Assert.assertEquals(balanceAfterCredit, balanceAfter);
 //    }
-//
-//
-//}
+
+
+}

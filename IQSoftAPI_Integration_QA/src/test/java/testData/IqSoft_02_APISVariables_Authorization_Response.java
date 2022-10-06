@@ -35,7 +35,7 @@ public class IqSoft_02_APISVariables_Authorization_Response {
 
     @SerializedName("CurrencyId")
     @Expose
-    private double CurrencyId;
+    private String CurrencyId;
 
     @SerializedName("Description")
     @Expose
@@ -101,11 +101,11 @@ public class IqSoft_02_APISVariables_Authorization_Response {
         FirstName = firstName;
     }
 
-    public double getCurrencyId() {
+    public String getCurrencyId() {
         return CurrencyId;
     }
 
-    public void setCurrencyId(double currencyId) {
+    public void setCurrencyId(String currencyId) {
         CurrencyId = currencyId;
     }
 

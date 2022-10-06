@@ -5,13 +5,21 @@ import com.google.gson.annotations.SerializedName;
 
 public class IqSoft_04_APIVariables_Credit_Response {
 
+    @SerializedName("ResponseCode")
+    @Expose
+    private int ResponseCode;
+
+    @SerializedName("Description")
+    @Expose
+    private String Description;
+
     @SerializedName("BetId")
     @Expose
     private String BetId;
 
-    @SerializedName("TransactionId")
+    @SerializedName("Balance")
     @Expose
-    private String TransactionId;
+    private double Balance;
 
     @SerializedName("ClientId")
     @Expose
@@ -21,21 +29,53 @@ public class IqSoft_04_APIVariables_Credit_Response {
     @Expose
     private String CurrencyId;
 
-    @SerializedName("Balance")
-    @Expose
-    private double Balance;
-
-    @SerializedName("ResponseCode")
-    @Expose
-    private int ResponseCode;
-
-    @SerializedName("Description")
-    @Expose
-    private String Description;
-
-    @SerializedName("ResponseObject")
-    @Expose
-    private String ResponseObject;
 
 
+    public int getResponseCode() {
+        return ResponseCode;
+    }
+
+    public void setResponseCode(int responseCode) {
+        ResponseCode = responseCode;
+    }
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String description) {
+        Description = description;
+    }
+
+    public String getBetId() {
+        return BetId;
+    }
+
+    public void setBetId(String betId) {
+        BetId = betId;
+    }
+
+    public double getBalance() {
+        return Balance;
+    }
+
+    public void setBalance(double balance) {
+        Balance = balance;
+    }
+
+    public String getClientId() {
+        return ClientId;
+    }
+
+    public void setClientId(String clientId) {
+        ClientId = clientId;
+    }
+
+    public String getCurrencyId() {
+        return CurrencyId;
+    }
+
+    public void setCurrencyId(String currencyId) {
+        CurrencyId = currencyId;
+    }
 }

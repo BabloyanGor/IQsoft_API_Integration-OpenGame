@@ -19,7 +19,7 @@ public class IqSoft_03_APIVariables_GetBalance_Response {
 
     @SerializedName("AvailableBalance")
     @Expose
-    private int AvailableBalance;
+    private double AvailableBalance;
 
 
     public String getCurrencyId() {
@@ -46,11 +46,11 @@ public class IqSoft_03_APIVariables_GetBalance_Response {
         Description = description;
     }
 
-    public int getAvailableBalance() {
+    public double getAvailableBalance() {
         return AvailableBalance;
     }
 
-    public void setAvailableBalance(int availableBalance) {
+    public void setAvailableBalance(double availableBalance) {
         AvailableBalance = availableBalance;
     }
 }

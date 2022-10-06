@@ -1,0 +1,9 @@
+2022-10-06 10:31:47,422 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+2022-10-06 10:31:47,576 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2022-10-06 10:31:48,460 - io.github.bonigarcia.wdm.online.Downloader -INFO - Downloading https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_win32.zip
+2022-10-06 10:31:56,292 - io.github.bonigarcia.wdm.online.Downloader -INFO - Extracting driver from compressed file chromedriver_win32.zip
+2022-10-06 10:31:56,487 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\Nerses Khachatryan\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+2022-10-06 10:31:56,579 - io.qameta.allure.AllureLifecycle -ERROR - Could not update test container: container with uuid bfafeb8d-5e19-4daf-8c04-755218d0bc68 not found
+2022-10-06 10:32:26,757 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 106.0.5249.61 (resolved driver for Chrome 106)
+2022-10-06 10:32:26,792 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\Nerses Khachatryan\.cache\selenium\chromedriver\win32\106.0.5249.61\chromedriver.exe
+2022-10-06 10:32:26,873 - io.qameta.allure.AllureLifecycle -ERROR - Could not update test container: container with uuid 0038d086-fefa-4126-a8a7-3868ca0cffe1 not found

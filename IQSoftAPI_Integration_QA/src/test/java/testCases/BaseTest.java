@@ -1,21 +1,25 @@
 package testCases;
 
+
 import com.google.gson.Gson;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.testng.annotations.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import testData.*;
 import utilities.ReadConfig;
 
-
-
+import java.util.logging.Logger;
 
 public class BaseTest {
-
+    public BaseTest() {
+    }
+    public static Logger logger;
     ReadConfig readConfig = new ReadConfig();
     public String openGameURL = readConfig.getOpenGameURL();
     public String callbackUrl = readConfig.getCallbackUrl();
@@ -28,10 +32,12 @@ public class BaseTest {
     public double betAmountConfig = readConfig.getBetAmount();
     public String currencyConfig = readConfig.getCurrency();
     public String sessionTokenConfig = readConfig.getSessionToken();
+    public String expiredSessionTokenConfig = readConfig.getExpiredSessionToken();
+
     public static String AuthorizationTokenVar;
     public final String languageIdConst = "en";
     public final boolean isForMobileConst = false;
-    public static Logger logger;
+
 
 
     static String ID = "QA_Test-" + RandomStringUtils.randomAlphanumeric(20);
@@ -61,13 +67,12 @@ public class BaseTest {
     IqSoft_06_APIVariables_RollBack_Request iqSoft_06_apiVariables_rollBack_request = new IqSoft_06_APIVariables_RollBack_Request();
     IqSoft_06_APIVariables_RollBack_Response iqSoft_06_apiVariables_rollBack_response = new IqSoft_06_APIVariables_RollBack_Response();
 
-    public BaseTest() {
-    }
+
 
     @BeforeSuite
-    public void setupSuite() throws InterruptedException {
-        logger = Logger.getLogger("API");
-        PropertyConfigurator.configure("Log4j.properties");
+    public void setupSuite()  {
+        logger = Logger.getLogger("ApiIntegration");
+        PropertyConfigurator.configure("log4j.properties");
     }
 
     @AfterSuite
