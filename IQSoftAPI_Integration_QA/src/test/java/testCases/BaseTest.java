@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeSuite;
 import testData.*;
 import utilities.ReadConfig;
 
+import java.util.ArrayList;
 import java.util.logging.Logger;
 
 public class BaseTest {
@@ -23,10 +24,9 @@ public class BaseTest {
     ReadConfig readConfig = new ReadConfig();
     public String openGameURL = readConfig.getOpenGameURL();
     public String callbackUrl = readConfig.getCallbackUrl();
-
     public String domainConfig = readConfig.getDomain();
     public int partnerIdConfig = readConfig.getPartnerID();
-    public int clientIdConfig = readConfig.getClientId();
+    public String clientIdConfig = readConfig.getClientId();
     public int gameIdConfig = readConfig.getGameIdID();
     public int clientGameIdConfig = readConfig.getClientGameId();
     public double betAmountConfig = readConfig.getBetAmount();
@@ -42,6 +42,10 @@ public class BaseTest {
 
     static String ID = "QA_Test-" + RandomStringUtils.randomAlphanumeric(20);
 
+//    ArrayList<String> creditValidTransactionID = new ArrayList<>();
+    public  static  String creditValidTransactionID = randomCreditTransactionID();
+    public  static  String debitValidTransactionID = randomDebitTransactionID();
+    public  static  String rollBackValidTransactionID = randomRollBackTransactionID();
     static public String randomCreditTransactionID() {
         return "QA_Test-" + RandomStringUtils.randomAlphanumeric(20) + "_C";
     }
@@ -140,6 +144,12 @@ public class BaseTest {
 
     public HttpResponse<String> creditAPI(String AuthorizationToken, String CurrencyID, int GameID, int OperationTypeId,
                                           String TransactionId, double Amount, int BetState) throws UnirestException {
+
+
+        // OperationTypeId  3_Bet, 4_Win, 15_BetRollBack,  17_WinRollBack
+        // BetStates  2_Won, 3_Lost, 4_Returned
+        // BetTypes  1_Single, 2_Multiple, 3_System
+
         Gson gson = new Gson();
         Unirest.setTimeouts(0, 0);
         iqSoft_04_apiVariables_credit_request.setToken(AuthorizationToken);
@@ -162,6 +172,11 @@ public class BaseTest {
 
     public HttpResponse<String> debitAPI(String ClientId, String CurrencyID, int GameID, String TransactionId, String CreditTransactionId,
                                          double Amount, int BetState, int OperationTypeId, String AuthorizationToken) throws UnirestException {  //if type = 1 one time else IDArrayList size
+
+        // OperationTypeId  3_Bet, 4_Win, 15_BetRollBack,  17_WinRollBack
+        // BetStates  2_Won, 3_Lost, 4_Returned
+        // BetTypes  1_Single, 2_Multiple, 3_System
+
         Gson gson = new Gson();
         Unirest.setTimeouts(0, 0);
         iqSoft_05_apiVariables_debit_request.setClientId(ClientId);
