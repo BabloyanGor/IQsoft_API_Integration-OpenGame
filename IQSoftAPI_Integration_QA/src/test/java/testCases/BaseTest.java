@@ -5,16 +5,13 @@ import com.google.gson.Gson;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import testData.*;
 import utilities.ReadConfig;
 
-import java.util.ArrayList;
 import java.util.logging.Logger;
 
 public class BaseTest {
@@ -30,7 +27,9 @@ public class BaseTest {
     public String userNameConfig = readConfig.getUserName();
     public int gameIdConfig = readConfig.getGameIdID();
     public int clientGameIdConfig = readConfig.getClientGameId();
-    public double betAmountConfig = readConfig.getBetAmount();
+
+    public double betAmountCreditConfig = readConfig.getBetAmountCredit();
+    public double betAmountDebitConfig = readConfig.getBetAmountDebit();
     public String currencyIDConfig = readConfig.CurrencyId();
     public String sessionTokenConfig = readConfig.getSessionToken();
     public String expiredSessionTokenConfig = readConfig.getExpiredSessionToken();
@@ -43,18 +42,16 @@ public class BaseTest {
 
     static String ID = "QA_Test-" + RandomStringUtils.randomAlphanumeric(20);
 
-//    ArrayList<String> creditValidTransactionID = new ArrayList<>();
-    public  static  String creditValidTransactionID = randomCreditTransactionID();
-    public  static  String debitValidTransactionID = randomDebitTransactionID();
-    public  static  String rollBackValidTransactionIDCredit = randomRollBackTransactionID();
-    public  static  String rollBackValidTransactionIDDebit = randomRollBackTransactionID();
-    static public String randomCreditTransactionID() {
+    public  static  String creditValidTransactionID = "QA_Test-" + RandomStringUtils.randomAlphanumeric(20) + "_C";
+    public  static  String debitValidTransactionID = "QA_Test-" + RandomStringUtils.randomAlphanumeric(20)+ "_D";
+
+      public String randomCreditTransactionID() {
         return "QA_Test-" + RandomStringUtils.randomAlphanumeric(20) + "_C";
     }
-    static public String randomDebitTransactionID() {
+     public String randomDebitTransactionID() {
         return "QA_Test-" + RandomStringUtils.randomAlphanumeric(20)+ "_D";
     }
-    static public String randomRollBackTransactionID() {
+     public String randomRollBackTransactionID() {
         return "QA_Test-" + RandomStringUtils.randomAlphanumeric(20)+ "_R";
     }
 

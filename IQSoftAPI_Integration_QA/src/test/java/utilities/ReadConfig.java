@@ -50,8 +50,11 @@ public class ReadConfig {
     public int getClientGameId() {
         return Integer.parseInt(pro.getProperty("ClientGameId"));
     }
-    public double getBetAmount() {
-        return Double.parseDouble(pro.getProperty("BetAmount"));
+    public double getBetAmountCredit() {
+        return Double.parseDouble(pro.getProperty("BetAmountCredit"));
+    }
+    public double getBetAmountDebit() {
+        return Double.parseDouble(pro.getProperty("BetAmountDebit"));
     }
     public String CurrencyId() {
         return pro.getProperty("CurrencyId");

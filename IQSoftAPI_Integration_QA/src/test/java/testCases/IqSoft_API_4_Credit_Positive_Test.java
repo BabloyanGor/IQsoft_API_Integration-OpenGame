@@ -30,7 +30,8 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
 
 
 
-        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1, creditValidTransactionID,betAmountConfig,1);
+        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
+                                                        creditValidTransactionID, betAmountCreditConfig,1);
         Unirest.shutdown();
         statusCod = responseCredit.getStatus();
         jsonObjectBody = new JSONObject(responseCredit.getBody());
@@ -38,8 +39,8 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
         iqSoft_04_apiVariables_credit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
         logger.info("Credit API Response ResponseCode : " + iqSoft_04_apiVariables_credit_response.getResponseCode());
 
-//        iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
-//        logger.info("Credit API Response Description : " + iqSoft_04_apiVariables_credit_response.getDescription());
+        iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
+        logger.info("Credit API Response Description : " + iqSoft_04_apiVariables_credit_response.getDescription());
 
         String OperationItems = String.valueOf(jsonObjectBody.getJSONObject("OperationItems"));
         JSONObject jsonObjectOperationItems = new JSONObject(OperationItems);
@@ -79,12 +80,12 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
         SoftAssert softAssert = new SoftAssert();
 
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getResponseCode(), 0);
-//        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "null");
+        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "null");
         softAssert.assertNotEquals(iqSoft_04_apiVariables_credit_response.getBetId(), "null");
-        double afterCredit = iqSoft_04_apiVariables_credit_response.getBalance();
-        softAssert.assertEquals(betAmountConfig , beforeCredit-afterCredit);
+        softAssert.assertEquals(betAmountCreditConfig , beforeCredit-afterCredit);
         softAssert.assertNotEquals(iqSoft_04_apiVariables_credit_response.getClientId(),null);
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getCurrencyId(), currencyIDConfig);
+        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getCurrencyId().length(), 3);
 
         softAssert.assertAll();
     }

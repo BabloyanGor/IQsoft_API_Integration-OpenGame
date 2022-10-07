@@ -28,7 +28,7 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest{
 
 
         HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitValidTransactionID,
-                                                creditValidTransactionID,betAmountConfig,2,4,AuthorizationTokenVar);
+                                                creditValidTransactionID,betAmountDebitConfig,2,4,AuthorizationTokenVar);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -37,8 +37,8 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest{
         iqSoft_05_apiVariables_debit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
         logger.info("Debit API Response ResponseCode : " + iqSoft_05_apiVariables_debit_response.getResponseCode());
 
-//        iqSoft_05_apiVariables_debit_response.setDescription(jsonObjectBody.get("Description").toString());
-//        logger.info("Debit API Response Description : " + iqSoft_05_apiVariables_debit_response.getDescription());
+        iqSoft_05_apiVariables_debit_response.setDescription(jsonObjectBody.get("Description").toString());
+        logger.info("Debit API Response Description : " + iqSoft_05_apiVariables_debit_response.getDescription());
 
         String OperationItems = String.valueOf(jsonObjectBody.getJSONObject("OperationItems"));
         JSONObject jsonObjectOperationItems = new JSONObject(OperationItems);
@@ -72,6 +72,7 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest{
         Assert.assertEquals(200, statusCod);
     }
 
+
     @Test(priority = 2, dependsOnMethods = {"DebitAPIValidateStatusCod"})
     @Description("Verify Debit API_s Validate Positive Response")
     @Severity(SeverityLevel.BLOCKER)
@@ -79,11 +80,12 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest{
         SoftAssert softAssert = new SoftAssert();
 
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 0);
-        //        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "null");
+        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "null");
         softAssert.assertNotEquals(iqSoft_05_apiVariables_debit_response.getBetId(), "null");
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getClientId(), iqSoft_05_apiVariables_debit_request.getClientId());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getCurrencyId(), currencyIDConfig);
-        softAssert.assertEquals(betAmountConfig , afterDebit-beforeDebit);
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getCurrencyId().length(), 3);
+        softAssert.assertEquals(betAmountDebitConfig , afterDebit-beforeDebit);
 
         softAssert.assertAll();
     }

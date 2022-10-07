@@ -21,6 +21,9 @@
 <!--            <class name="testCases.IqSoft_API_4_Credit_Negative_Test"/>-->
             <class name="testCases.IqSoft_API_5_Debit_Positive_Test"/>
 <!--            <class name="testCases.IqSoft_API_5_Debit_Negative_Test"/>-->
+            <class name="testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test"/>
+            <class name="testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test"/>
+            <class name="testCases.IqSoft_API_6_RollBackDebit_Positive_Test"/>
 
         </classes>
     </test>

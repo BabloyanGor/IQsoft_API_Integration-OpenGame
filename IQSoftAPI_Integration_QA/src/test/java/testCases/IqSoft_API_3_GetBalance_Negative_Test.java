@@ -13,7 +13,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 
-public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest{
+public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
     JSONObject jsonObjectBody;
     int statusCod;
 
@@ -29,18 +29,14 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest{
         iqSoft_03_apiVariables_getBalance_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
         logger.info("GetBalance API Response ResponseCode : " + iqSoft_03_apiVariables_getBalance_response.getResponseCode());
 
-        try{
-            iqSoft_03_apiVariables_getBalance_response.setDescription(jsonObjectBody.get("Description").toString());
-            logger.info("GetBalance API Response Description : " + iqSoft_03_apiVariables_getBalance_response.getDescription());
-        }
-        catch (Exception e){
+        iqSoft_03_apiVariables_getBalance_response.setDescription(jsonObjectBody.get("Description").toString());
+        logger.info("GetBalance API Response Description : " + iqSoft_03_apiVariables_getBalance_response.getDescription());
 
-        }
         SoftAssert softAssert = new SoftAssert();
 
         softAssert.assertEquals(statusCod, 200);
-        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(),29);
-        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getDescription(),"SessionExpired",
+        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(), 29);
+        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getDescription(), "SessionExpired",
                 "Error Description: " + iqSoft_03_apiVariables_getBalance_response.getDescription());
 
         softAssert.assertAll();
@@ -66,8 +62,8 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest{
 
         softAssert.assertEquals(statusCod, 200);
 
-        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(),22);
-        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getDescription(),"error login",
+        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(), 22);
+        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getDescription(), "error login",
                 "Error Description: " + iqSoft_03_apiVariables_getBalance_response.getDescription());
 
         softAssert.assertAll();
@@ -77,7 +73,7 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest{
     @Description("Verify GetBalance API_s response with invalid CurrencyID")
     @Severity(SeverityLevel.BLOCKER)
     public void GetBalanceAPIValidateResponseWithInvalidCurrencyID() throws UnirestException, IOException {
-        HttpResponse<String> response = getBalanceAPI(sessionTokenConfig , currencyIDConfig+"1");
+        HttpResponse<String> response = getBalanceAPI(sessionTokenConfig, currencyIDConfig + "1");
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -85,19 +81,15 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest{
         iqSoft_03_apiVariables_getBalance_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
         logger.info("GetBalance API Response ResponseCode : " + iqSoft_03_apiVariables_getBalance_response.getResponseCode());
 
-        try{
-            iqSoft_03_apiVariables_getBalance_response.setDescription(jsonObjectBody.get("Description").toString());
-            logger.info("GetBalance API Response Description : " + iqSoft_03_apiVariables_getBalance_response.getDescription());
-        }
-        catch(Exception e){
+        iqSoft_03_apiVariables_getBalance_response.setDescription(jsonObjectBody.get("Description").toString());
+        logger.info("GetBalance API Response Description : " + iqSoft_03_apiVariables_getBalance_response.getDescription());
 
-        }
         SoftAssert softAssert = new SoftAssert();
 
         softAssert.assertEquals(statusCod, 200);
 
-        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(),20);
-        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getDescription(),"CurrencyNotExists",
+        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(), 20);
+        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getDescription(), "CurrencyNotExists",
                 "Error Description: " + iqSoft_03_apiVariables_getBalance_response.getDescription());
 
         softAssert.assertAll();
@@ -107,7 +99,7 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest{
     @Description("Verify GetBalance API_s response with other CurrencyID")
     @Severity(SeverityLevel.BLOCKER)
     public void GetBalanceAPIValidateResponseWithOtherCurrencyID() throws UnirestException, IOException {
-        HttpResponse<String> response1 = getBalanceAPI(sessionTokenConfig , "USD");
+        HttpResponse<String> response1 = getBalanceAPI(sessionTokenConfig, "USD");
         Unirest.shutdown();
         statusCod = response1.getStatus();
         jsonObjectBody = new JSONObject(response1.getBody());
@@ -115,7 +107,7 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest{
         iqSoft_03_apiVariables_getBalance_response.setAvailableBalance(Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString()));
         double balanceUSD = iqSoft_03_apiVariables_getBalance_response.getAvailableBalance();
 
-        HttpResponse<String> response = getBalanceAPI(sessionTokenConfig , "EUR");
+        HttpResponse<String> response = getBalanceAPI(sessionTokenConfig, "EUR");
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -123,7 +115,7 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest{
         iqSoft_03_apiVariables_getBalance_response.setAvailableBalance(Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString()));
         double balanceEUR = iqSoft_03_apiVariables_getBalance_response.getAvailableBalance();
 
-        Assert.assertNotEquals(balanceUSD,balanceEUR);
+        Assert.assertNotEquals(balanceUSD, balanceEUR);
     }
 
 
