@@ -6,13 +6,13 @@ import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import testData.*;
 import utilities.ReadConfig;
 
-import java.util.logging.Logger;
 
 public class BaseTest {
     public BaseTest() {
