@@ -57,7 +57,8 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
                 "ResponseCode: " + iqSoft_04_apiVariables_credit_response.getResponseCode());
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "SessionExpired",
                         "Error Description: " + iqSoft_04_apiVariables_credit_response.getDescription());
-        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit);
+        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit,
+                "amountBeforeCredit = amountAfterCredit: " + amountBeforeCredit+" = " +amountAfterCredit);
 
         softAssert.assertAll();
     }
