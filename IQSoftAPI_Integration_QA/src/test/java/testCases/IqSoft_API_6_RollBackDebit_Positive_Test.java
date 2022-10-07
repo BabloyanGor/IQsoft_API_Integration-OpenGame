@@ -29,6 +29,7 @@ public class IqSoft_API_6_RollBackDebit_Positive_Test extends BaseTest{
         HttpResponse<String> responseGetBalanceBeforeRollBack = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceBeforeRollBack.getBody());
         beforeAll = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        Unirest.shutdown();
         logger.info("Balance Before Credit:" + beforeAll);
 
         creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1, CreditTransactionID,betAmountCreditConfig,1);
@@ -37,6 +38,7 @@ public class IqSoft_API_6_RollBackDebit_Positive_Test extends BaseTest{
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit.getBody());
         afterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        Unirest.shutdown();
         logger.info("Balance After Credit:" + afterCredit);
 
 
@@ -47,6 +49,7 @@ public class IqSoft_API_6_RollBackDebit_Positive_Test extends BaseTest{
         HttpResponse<String> responseGetBalanceAfterDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterDebit.getBody());
         afterDebit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        Unirest.shutdown();
         logger.info("Balance After Debit:" + afterDebit);
 
         HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, DebitTransactionID, randomRollBackTransactionID(), AuthorizationTokenVar,4);
@@ -65,6 +68,7 @@ public class IqSoft_API_6_RollBackDebit_Positive_Test extends BaseTest{
         HttpResponse<String> responseGetBalanceAfter = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfter.getBody());
         afterRollBackDebit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        Unirest.shutdown();
         logger.info("Balance After RollBackDebit:" + afterRollBackDebit);
 
     }

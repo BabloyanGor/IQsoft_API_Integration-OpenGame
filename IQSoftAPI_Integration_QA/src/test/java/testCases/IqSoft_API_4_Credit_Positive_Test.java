@@ -27,7 +27,7 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
         HttpResponse<String> responseGetBalanceBefore = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceBefore.getBody());
         beforeCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
-
+        Unirest.shutdown();
 
 
         HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
@@ -62,6 +62,7 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
         HttpResponse<String> responseGetBalanceAfter = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfter.getBody());
         afterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        Unirest.shutdown();
 
     }
 

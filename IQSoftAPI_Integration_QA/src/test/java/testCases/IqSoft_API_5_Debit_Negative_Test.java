@@ -59,6 +59,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         HttpResponse<String> responseGetBalanceAfterDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterDebit.getBody());
         double amountAfterDebit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        Unirest.shutdown();
 
         softAssert.assertEquals(statusCod, 200);
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 22);
@@ -110,6 +111,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         HttpResponse<String> responseGetBalanceAfterDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterDebit.getBody());
         double amountAfterDebit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        Unirest.shutdown();
 
         softAssert.assertEquals(statusCod, 200);
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 43);
@@ -224,6 +226,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         HttpResponse<String> responseGetBalanceAfterDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterDebit.getBody());
         double amountAfterDebit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        Unirest.shutdown();
 
         softAssert.assertEquals(statusCod, 200);
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 50);
@@ -273,6 +276,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         HttpResponse<String> responseGetBalanceAfterDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterDebit.getBody());
         double amountAfterDebit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        Unirest.shutdown();
 
         softAssert.assertEquals(statusCod, 200);
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 39);

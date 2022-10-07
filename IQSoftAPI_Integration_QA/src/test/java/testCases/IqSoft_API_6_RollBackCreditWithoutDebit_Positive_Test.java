@@ -30,6 +30,7 @@ public class IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test extends BaseT
         HttpResponse<String> responseGetBalanceBeforeRollBack = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceBeforeRollBack.getBody());
         beforeAll = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        Unirest.shutdown();
         logger.info("Balance Before Credit:" + beforeAll);
 
 
@@ -39,6 +40,7 @@ public class IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test extends BaseT
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit.getBody());
         afterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        Unirest.shutdown();
         logger.info("Balance After Credit:" + afterCredit);
 
 
@@ -58,6 +60,7 @@ public class IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test extends BaseT
         HttpResponse<String> responseGetBalanceAfter = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfter.getBody());
         afterRollBackCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        Unirest.shutdown();
         logger.info("Balance After RollBackCredit:" + afterRollBackCredit);
 
     }
