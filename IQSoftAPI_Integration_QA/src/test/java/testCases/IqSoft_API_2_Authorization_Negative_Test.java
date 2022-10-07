@@ -37,9 +37,10 @@ public class IqSoft_API_2_Authorization_Negative_Test extends  BaseTest{
         iqSoft_02_apisVariables_authorization_response.setDescription(jsonObjectBody.get("Description").toString());
         logger.info("Authorization API Response Description : " + iqSoft_02_apisVariables_authorization_response.getDescription());
 
-        softAssert.assertEquals(statusCod, 200);
+        softAssert.assertEquals(statusCod, 200,"StatusCod: "+statusCod);
 
-        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getResponseCode(),29);
+        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getResponseCode(),29,
+                "ResponseCode: "+ iqSoft_02_apisVariables_authorization_response.getResponseCode());
         softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getDescription(),"SessionExpired",
                 "Error Description: " + iqSoft_02_apisVariables_authorization_response.getDescription());
 
@@ -67,9 +68,10 @@ public class IqSoft_API_2_Authorization_Negative_Test extends  BaseTest{
         logger.info("Authorization API Response Description : " + iqSoft_02_apisVariables_authorization_response.getDescription());
 
 
-        softAssert.assertEquals(statusCod, 200);
+        softAssert.assertEquals(statusCod, 200,"StatusCod: "+statusCod);
 
-        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getResponseCode(),22);
+        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getResponseCode(),22,
+                "ResponseCode: "+iqSoft_02_apisVariables_authorization_response.getResponseCode());
         softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getDescription(),"error login",
                 "Error Description: " + iqSoft_02_apisVariables_authorization_response.getDescription());
 
@@ -97,9 +99,10 @@ public class IqSoft_API_2_Authorization_Negative_Test extends  BaseTest{
         iqSoft_02_apisVariables_authorization_response.setDescription(jsonObjectBody.get("Description").toString());
         logger.info("Authorization API Response Description : " + iqSoft_02_apisVariables_authorization_response.getDescription());
 
-        softAssert.assertEquals(statusCod, 200);
+        softAssert.assertEquals(statusCod, 200,"StatusCod: "+statusCod);
 
-        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getResponseCode(),43);
+        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getResponseCode(),43,
+                "ResponseCode: "+iqSoft_02_apisVariables_authorization_response.getResponseCode());
         softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getDescription(),"ProductNotFound",
                 "Error Description: " + iqSoft_02_apisVariables_authorization_response.getDescription());
 

@@ -2,8 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="IQsoft API Integration">
     <listeners>
-<!--        <listener class-name="utilities.ReportingExtent"/>-->
-<!--        <listener class-name="utilities.ReportingAllure"/>-->
+        <listener class-name="utilities.ReportingAllure"/>
     </listeners>
     <test name="API Integration Automation Test">
         <classes>

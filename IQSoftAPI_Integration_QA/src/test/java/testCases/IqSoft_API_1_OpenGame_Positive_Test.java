@@ -44,7 +44,7 @@ public class IqSoft_API_1_OpenGame_Positive_Test extends BaseTest {
     @Severity(SeverityLevel.BLOCKER)
     public void openGameAPIValidateStatusCod() {
         logger.info("openGame API Response Status Cod is Equal: " + statusCod);
-        Assert.assertEquals(statusCod, 200);
+        Assert.assertEquals(statusCod, 200,"StatusCod: " + statusCod);
     }
 
 
@@ -53,20 +53,17 @@ public class IqSoft_API_1_OpenGame_Positive_Test extends BaseTest {
     @Severity(SeverityLevel.BLOCKER)
     public void openGameAPIValidatePositiveResponse() {
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseCode(), 0);
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseCode(), 0,
+                "ResponseCode: " +iqSoft_01_apiVariables_openGame_response.getResponseCode());
         softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getDescription(), "null",
                 "Error Description: "+iqSoft_01_apiVariables_openGame_response.getDescription());
-        softAssert.assertNotEquals(iqSoft_01_apiVariables_openGame_response.getResponseObject(),"null");
-        softAssert.assertTrue(iqSoft_01_apiVariables_openGame_response.getResponseObject().contains("http://"));
+        softAssert.assertNotEquals(iqSoft_01_apiVariables_openGame_response.getResponseObject(),"null",
+                "ResponseObject: " + iqSoft_01_apiVariables_openGame_response.getResponseObject());
+        softAssert.assertTrue(iqSoft_01_apiVariables_openGame_response.getResponseObject().contains("http://"),"ResponseObject Don't Contain http://");
         softAssert.assertAll();
 
     }
 
 
-
-    @AfterClass
-    public void tearDownTestCase() {
-
-    }
 
 }

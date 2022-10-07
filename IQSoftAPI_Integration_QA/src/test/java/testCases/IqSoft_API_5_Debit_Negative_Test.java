@@ -22,7 +22,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
     int statusCod;
 
 
-    @Test(priority = 2)
+    @Test(priority = 1)
     @Description("Verify Debit API_s response with Invalid Token")
     @Severity(SeverityLevel.BLOCKER)
     public void DebitAPIValidateResponseWithInvalidToken() throws UnirestException, IOException {
@@ -73,7 +73,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
     }
 
 
-    @Test(priority = 3)
+    @Test(priority = 2)
     @Description("Verify Debit API_s response with Invalid ProductID")
     @Severity(SeverityLevel.BLOCKER)
     public void DebitAPIValidateResponseUsingInvalidProductID() throws UnirestException, IOException {
@@ -124,7 +124,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
     }
 
 
-    @Test(priority = 4)
+    @Test(priority = 3)
     @Description("Verify Debit API_s response using same DebitTransactionID twice")
     @Severity(SeverityLevel.BLOCKER)
     public void DebitAPIValidateResponseUsingTransactionIDTwice() throws UnirestException, IOException {
@@ -158,7 +158,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
 
-        debitAPI(clientIdConfig, currencyIDConfig, -10, debitTransactionID,
+        debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitTransactionID,
                 creditTransactionID1,betAmountDebitConfig,2,4, AuthorizationTokenVar);
         Unirest.shutdown();
 
@@ -167,7 +167,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         double amountAfterDebit1 = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, -10, debitTransactionID,
+        HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitTransactionID,
                 creditTransactionID2,betAmountDebitConfig,2,4, AuthorizationTokenVar);
         Unirest.shutdown();
         statusCod = response.getStatus();
@@ -185,19 +185,19 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         softAssert.assertEquals(statusCod, 200);
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 69);
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 69, "ResponseCode");
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "ClientDocumentAlreadyExists",
                 "Error Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
 
-        softAssert.assertEquals(amountBeforeCredit1, amountAfterCredit1+betAmountCreditConfig);
-        softAssert.assertEquals(amountAfterCredit1, amountAfterCredit2+betAmountCreditConfig);
-        softAssert.assertEquals(amountAfterCredit2, amountAfterDebit1-betAmountDebitConfig);
+        softAssert.assertEquals(amountBeforeCredit1, amountAfterCredit1+betAmountCreditConfig,"amountBeforeCredit1 = amountAfterCredit1+betAmountCreditConfig");
+        softAssert.assertEquals(amountAfterCredit1, amountAfterCredit2+betAmountCreditConfig,"amountAfterCredit1 = amountAfterCredit2+betAmountCreditConfig");
+        softAssert.assertEquals(amountAfterCredit2, amountAfterDebit1-betAmountDebitConfig,"amountAfterCredit2 = amountAfterCredit2+betAmountCreditConfig");
         softAssert.assertEquals(amountAfterDebit1, amountAfterDebit2);
 
         softAssert.assertAll();
     }
 
-    @Test(priority = 5)
+    @Test(priority = 4)
     @Description("Verify Debit API_s response using Invalid Amount")
     @Severity(SeverityLevel.BLOCKER)
     public void DebitAPIValidateResponseUsingInvalidCreditTransactionID() throws UnirestException, IOException {
@@ -238,7 +238,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
 
     }
 
-    @Test(priority = 6, dataProvider = "invalidAmount")
+    @Test(priority = 5, dataProvider = "invalidAmount")
     @Description("Verify Debit API_s response using Invalid Amount")
     @Severity(SeverityLevel.BLOCKER)
     public void DebitAPIValidateResponseUsingInvalidAmount(Double errorAmount) throws UnirestException, IOException {

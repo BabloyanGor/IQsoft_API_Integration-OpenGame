@@ -15,7 +15,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 
-public class IqSoft_API_2_Authorization_Positive_Test extends BaseTest{
+public class IqSoft_API_2_Authorization_Positive_Test extends BaseTest {
 
     JSONObject jsonObjectBody;
     int statusCod;
@@ -57,7 +57,7 @@ public class IqSoft_API_2_Authorization_Positive_Test extends BaseTest{
         iqSoft_02_apisVariables_authorization_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
         logger.info("Authorization API Response ResponseCode : " + iqSoft_02_apisVariables_authorization_response.getResponseCode());
 
-        AuthorizationTokenVar= iqSoft_02_apisVariables_authorization_response.getToken();
+        AuthorizationTokenVar = iqSoft_02_apisVariables_authorization_response.getToken();
     }
 
 
@@ -66,44 +66,39 @@ public class IqSoft_API_2_Authorization_Positive_Test extends BaseTest{
     @Severity(SeverityLevel.BLOCKER)
     public void AuthorizationAPIValidateStatusCod() {
         logger.info("Authorization API Status Cod is Equal: " + statusCod);
-        Assert.assertEquals(200,statusCod);
+        Assert.assertEquals(200, statusCod, "StatusCod: " + statusCod);
     }
 
 
-    @Test(priority = 2,dependsOnMethods = { "AuthorizationAPIValidateStatusCod" })
+    @Test(priority = 2, dependsOnMethods = {"AuthorizationAPIValidateStatusCod"})
     @Description("Verify Authorization API_s Validate Positive Response")
     @Severity(SeverityLevel.BLOCKER)
     public void AuthorizationAPIValidatePositiveResponse() {
         SoftAssert softAssert = new SoftAssert();
 
-        softAssert.assertNotEquals(iqSoft_02_apisVariables_authorization_response.getToken(),null);
+        softAssert.assertNotEquals(iqSoft_02_apisVariables_authorization_response.getToken(), null,
+                "AuthorizationToken: " + iqSoft_02_apisVariables_authorization_response.getToken());
 //        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getToken() instanceof String,true);
+        softAssert.assertNotEquals(iqSoft_02_apisVariables_authorization_response.getClientId(), null,
+                "ClientId: " + iqSoft_02_apisVariables_authorization_response.getClientId());
+        softAssert.assertNotEquals(iqSoft_02_apisVariables_authorization_response.getUserName(), null,
+                "UserName: " + iqSoft_02_apisVariables_authorization_response.getUserName());
+        softAssert.assertNotEquals(iqSoft_02_apisVariables_authorization_response.getBirthDate(), null,
+                "BirthDate: " + iqSoft_02_apisVariables_authorization_response.getBirthDate());
 
-        softAssert.assertNotEquals(iqSoft_02_apisVariables_authorization_response.getGender(),null);
-        softAssert.assertNotEquals(iqSoft_02_apisVariables_authorization_response.getClientId(),null);
-        softAssert.assertNotEquals(iqSoft_02_apisVariables_authorization_response.getLastName(),null);
-        softAssert.assertNotEquals(iqSoft_02_apisVariables_authorization_response.getUserName(), null);
-        softAssert.assertNotEquals(iqSoft_02_apisVariables_authorization_response.getBirthDate(),null);
-        softAssert.assertNotEquals(iqSoft_02_apisVariables_authorization_response.getFirstName(), null);
 
-        softAssert.assertNotEquals(iqSoft_02_apisVariables_authorization_response.getCurrencyId(), null);
-        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getCurrencyId().length(), 3);
+        softAssert.assertNotEquals(iqSoft_02_apisVariables_authorization_response.getCurrencyId(), null,
+                "CurrencyId: " + iqSoft_02_apisVariables_authorization_response.getCurrencyId());
+        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getCurrencyId().length(), 3,
+                "CurrencyIdLength: " + iqSoft_02_apisVariables_authorization_response.getCurrencyId().length());
 
-        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getDescription(), "null", "Description : " + iqSoft_02_apisVariables_authorization_response.getDescription());
-        softAssert.assertEquals( iqSoft_02_apisVariables_authorization_response.getResponseCode(),0);
+        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getDescription(), "null",
+                "Description : " + iqSoft_02_apisVariables_authorization_response.getDescription());
+        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getResponseCode(), 0,
+                "ResponseCode : " + iqSoft_02_apisVariables_authorization_response.getResponseCode());
 
         softAssert.assertAll();
     }
-
-
-
-
-
-
-
-
-
-
 
 
 }

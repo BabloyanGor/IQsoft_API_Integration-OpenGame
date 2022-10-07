@@ -45,7 +45,7 @@ public class IqSoft_API_3_GetBalance_Positive_Test extends BaseTest {
     @Severity(SeverityLevel.BLOCKER)
     public void GetBalanceAPIValidateStatusCod() {
         logger.info("GetBalance API Status Cod is Equal: " + statusCod);
-        Assert.assertEquals(200, statusCod);
+        Assert.assertEquals(200, statusCod, "StatusCod: " + statusCod);
     }
 
     @Test(priority = 2, dependsOnMethods = {"GetBalanceAPIValidateStatusCod"})
@@ -53,13 +53,16 @@ public class IqSoft_API_3_GetBalance_Positive_Test extends BaseTest {
     public void GetBalanceAPIValidatePositiveResponse() {
         SoftAssert softAssert = new SoftAssert();
 
-        softAssert.assertNotEquals(iqSoft_03_apiVariables_getBalance_response.getCurrencyId(), null);
-        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getCurrencyId().length(), 3);
-        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getCurrencyId(), iqSoft_03_apiVariables_getBalance_request.getCurrencyId());
-
+        softAssert.assertNotEquals(iqSoft_03_apiVariables_getBalance_response.getCurrencyId(), null,
+                "CurrencyId: " + iqSoft_03_apiVariables_getBalance_response.getCurrencyId());
+        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getCurrencyId().length(), 3,
+                "CurrencyIdLength: " + iqSoft_03_apiVariables_getBalance_response.getCurrencyId().length());
+        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getCurrencyId(), iqSoft_03_apiVariables_getBalance_request.getCurrencyId(),
+                "CurrencyIdRequest: " + iqSoft_03_apiVariables_getBalance_response.getCurrencyId() + "VS CurrencyIdResponse: " + iqSoft_03_apiVariables_getBalance_request.getCurrencyId());
         softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(), 0,
-                "Description : " + iqSoft_03_apiVariables_getBalance_response.getDescription());
-        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getDescription(), "null", "Description: " + iqSoft_03_apiVariables_getBalance_response.getDescription());
+                "ResponseCode : " + iqSoft_03_apiVariables_getBalance_response.getResponseCode());
+        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getDescription(), "null",
+                "Description: " + iqSoft_03_apiVariables_getBalance_response.getDescription());
 
         boolean balanceHigherOREqualZero = iqSoft_03_apiVariables_getBalance_response.getAvailableBalance() >= 0;
         softAssert.assertEquals(balanceHigherOREqualZero, true);

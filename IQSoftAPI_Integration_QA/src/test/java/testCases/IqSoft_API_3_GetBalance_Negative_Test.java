@@ -34,8 +34,9 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
 
         SoftAssert softAssert = new SoftAssert();
 
-        softAssert.assertEquals(statusCod, 200);
-        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(), 29);
+        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
+        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(), 29,
+                "ResponseCode: " +iqSoft_03_apiVariables_getBalance_response.getResponseCode());
         softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getDescription(), "SessionExpired",
                 "Error Description: " + iqSoft_03_apiVariables_getBalance_response.getDescription());
 
@@ -60,9 +61,10 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
 
         SoftAssert softAssert = new SoftAssert();
 
-        softAssert.assertEquals(statusCod, 200);
+        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
 
-        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(), 22);
+        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(), 22,
+                "ResponseCode: " + iqSoft_03_apiVariables_getBalance_response.getResponseCode());
         softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getDescription(), "error login",
                 "Error Description: " + iqSoft_03_apiVariables_getBalance_response.getDescription());
 
@@ -86,9 +88,10 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
 
         SoftAssert softAssert = new SoftAssert();
 
-        softAssert.assertEquals(statusCod, 200);
+        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
 
-        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(), 20);
+        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(), 20,
+                "ResponseCode: " + iqSoft_03_apiVariables_getBalance_response.getResponseCode());
         softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getDescription(), "CurrencyNotExists",
                 "Error Description: " + iqSoft_03_apiVariables_getBalance_response.getDescription());
 
@@ -115,7 +118,7 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
         iqSoft_03_apiVariables_getBalance_response.setAvailableBalance(Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString()));
         double balanceEUR = iqSoft_03_apiVariables_getBalance_response.getAvailableBalance();
 
-        Assert.assertNotEquals(balanceUSD, balanceEUR);
+        Assert.assertNotEquals(balanceUSD, balanceEUR,"balanceUSD VS balanceEUR");
     }
 
 

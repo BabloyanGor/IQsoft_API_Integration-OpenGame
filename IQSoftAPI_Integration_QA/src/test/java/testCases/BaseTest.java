@@ -25,11 +25,13 @@ public class BaseTest {
     public int partnerIdConfig = readConfig.getPartnerID();
     public String clientIdConfig = readConfig.getClientId();
     public String userNameConfig = readConfig.getUserName();
-    public int gameIdConfig = readConfig.getGameIdID();
-    public int clientGameIdConfig = readConfig.getClientGameId();
 
+    public int gameIdConfig = readConfig.getGameIdID();
+
+    public int clientGameIdConfig = readConfig.getClientGameId();
     public double betAmountCreditConfig = readConfig.getBetAmountCredit();
     public double betAmountDebitConfig = readConfig.getBetAmountDebit();
+
     public String currencyIDConfig = readConfig.CurrencyId();
     public String sessionTokenConfig = readConfig.getSessionToken();
     public String expiredSessionTokenConfig = readConfig.getExpiredSessionToken();
@@ -38,9 +40,6 @@ public class BaseTest {
     public final String languageIdConst = "en";
     public final boolean isForMobileConst = false;
 
-
-
-    static String ID = "QA_Test-" + RandomStringUtils.randomAlphanumeric(20);
 
     public  static  String creditValidTransactionID = "QA_Test-" + RandomStringUtils.randomAlphanumeric(20) + "_C";
     public  static  String debitValidTransactionID = "QA_Test-" + RandomStringUtils.randomAlphanumeric(20)+ "_D";
