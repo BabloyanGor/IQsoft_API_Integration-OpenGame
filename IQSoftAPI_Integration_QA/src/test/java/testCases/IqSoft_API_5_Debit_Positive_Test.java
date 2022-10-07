@@ -80,7 +80,7 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest{
         SoftAssert softAssert = new SoftAssert();
 
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 0);
-        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "null");
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "null","Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
         softAssert.assertNotEquals(iqSoft_05_apiVariables_debit_response.getBetId(), "null");
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getClientId(), iqSoft_05_apiVariables_debit_request.getClientId());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getCurrencyId(), currencyIDConfig);

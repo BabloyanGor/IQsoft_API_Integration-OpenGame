@@ -80,7 +80,7 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
         SoftAssert softAssert = new SoftAssert();
 
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getResponseCode(), 0);
-        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "null");
+        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "null","Description: " + iqSoft_04_apiVariables_credit_response.getDescription());
         softAssert.assertNotEquals(iqSoft_04_apiVariables_credit_response.getBetId(), "null");
         softAssert.assertEquals(betAmountCreditConfig , beforeCredit-afterCredit);
         softAssert.assertNotEquals(iqSoft_04_apiVariables_credit_response.getClientId(),null);
