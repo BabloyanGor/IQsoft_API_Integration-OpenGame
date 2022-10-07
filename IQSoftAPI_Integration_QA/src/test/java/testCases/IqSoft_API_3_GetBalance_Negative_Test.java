@@ -46,7 +46,7 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
     @Description("Verify GetBalance API_s response with invalid Token")
     @Severity(SeverityLevel.BLOCKER)
     public void GetBalanceAPIValidateResponseWithInvalidToken() throws UnirestException, IOException {
-        HttpResponse<String> response = getBalanceAPI(sessionTokenConfig + "1", currencyIDConfig);
+        HttpResponse<String> response = getBalanceAPI(AuthorizationTokenVar + "1", currencyIDConfig);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -73,7 +73,7 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
     @Description("Verify GetBalance API_s response with invalid CurrencyID")
     @Severity(SeverityLevel.BLOCKER)
     public void GetBalanceAPIValidateResponseWithInvalidCurrencyID() throws UnirestException, IOException {
-        HttpResponse<String> response = getBalanceAPI(sessionTokenConfig, currencyIDConfig + "1");
+        HttpResponse<String> response = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig + "1");
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -99,7 +99,7 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
     @Description("Verify GetBalance API_s response with other CurrencyID")
     @Severity(SeverityLevel.BLOCKER)
     public void GetBalanceAPIValidateResponseWithOtherCurrencyID() throws UnirestException, IOException {
-        HttpResponse<String> response1 = getBalanceAPI(sessionTokenConfig, "USD");
+        HttpResponse<String> response1 = getBalanceAPI(AuthorizationTokenVar, "USD");
         Unirest.shutdown();
         statusCod = response1.getStatus();
         jsonObjectBody = new JSONObject(response1.getBody());
@@ -107,7 +107,7 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
         iqSoft_03_apiVariables_getBalance_response.setAvailableBalance(Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString()));
         double balanceUSD = iqSoft_03_apiVariables_getBalance_response.getAvailableBalance();
 
-        HttpResponse<String> response = getBalanceAPI(sessionTokenConfig, "EUR");
+        HttpResponse<String> response = getBalanceAPI(AuthorizationTokenVar, "EUR");
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());

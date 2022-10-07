@@ -1,258 +1,307 @@
-2022-10-07 14:11:19,015 [main] INFO ApiIntegration - getURLRequestBody :{"PartnerId":61,"GameId":54351,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com"}
-2022-10-07 14:11:19,795 [main] INFO ApiIntegration - getGameUrl API ResponseCode is Equal: 21
-2022-10-07 14:11:19,795 [main] INFO ApiIntegration - getGameUrl API Description is Equal: An error occurred while updating the entries. See the inner exception for details.
-2022-10-07 14:11:19,795 [main] INFO ApiIntegration - getGameUrl API ResponseObject is Equal: null
-2022-10-07 14:11:19,843 [main] INFO ApiIntegration - openGame API Response Status Cod is Equal: 200
-2022-10-07 14:11:19,936 [main] INFO ApiIntegration - getURLRequestBody :{"PartnerId":61,"GameId":54351,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a81","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com"}
-2022-10-07 14:11:20,355 [main] INFO ApiIntegration - OpenGame API ResponseCode is Equal: 22
-2022-10-07 14:11:20,356 [main] INFO ApiIntegration - OpenGame API Description is Equal: Client not found
-2022-10-07 14:11:20,356 [main] INFO ApiIntegration - OpenGame API ResponseObject is Equal: null
-2022-10-07 14:11:20,356 [main] INFO ApiIntegration - OpenGame API Response Status Cod is Equal: 200
-2022-10-07 14:11:20,365 [main] INFO ApiIntegration - getURLRequestBody :{"PartnerId":61,"GameId":54351,"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com"}
-2022-10-07 14:11:20,721 [main] INFO ApiIntegration - OpenGame API ResponseCode is Equal: 21
-2022-10-07 14:11:20,721 [main] INFO ApiIntegration - OpenGame API Description is Equal: An error occurred while updating the entries. See the inner exception for details.
-2022-10-07 14:11:20,721 [main] INFO ApiIntegration - OpenGame API ResponseObject is Equal: null
-2022-10-07 14:11:20,721 [main] INFO ApiIntegration - OpenGame API Response Status Cod is Equal: 200
-2022-10-07 14:11:20,730 [main] INFO ApiIntegration - getURLRequestBody :{"PartnerId":-1,"GameId":54351,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com"}
-2022-10-07 14:11:21,006 [main] INFO ApiIntegration - OpenGame API ResponseCode is Equal: 21
-2022-10-07 14:11:21,007 [main] INFO ApiIntegration - OpenGame API Description is Equal: An error occurred while updating the entries. See the inner exception for details.
-2022-10-07 14:11:21,007 [main] INFO ApiIntegration - OpenGame API ResponseObject is Equal: null
-2022-10-07 14:11:21,007 [main] INFO ApiIntegration - OpenGame API Response Status Cod is Equal: 200
-2022-10-07 14:11:21,019 [main] INFO ApiIntegration - getURLRequestBody :{"PartnerId":61,"GameId":-1,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com"}
-2022-10-07 14:11:21,183 [main] INFO ApiIntegration - OpenGame API ResponseCode is Equal: 43
-2022-10-07 14:11:21,184 [main] INFO ApiIntegration - OpenGame API Description is Equal: Product not found
-2022-10-07 14:11:21,184 [main] INFO ApiIntegration - OpenGame API ResponseObject is Equal: null
-2022-10-07 14:11:21,184 [main] INFO ApiIntegration - OpenGame API Response Status Cod is Equal: 200
-2022-10-07 14:11:21,193 [main] INFO ApiIntegration - getURLRequestBody :{"PartnerId":61,"GameId":54351,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com1"}
-2022-10-07 14:11:21,497 [main] INFO ApiIntegration - OpenGame API ResponseCode is Equal: 21
-2022-10-07 14:11:21,498 [main] INFO ApiIntegration - OpenGame API Description is Equal: An error occurred while updating the entries. See the inner exception for details.
-2022-10-07 14:11:21,498 [main] INFO ApiIntegration - OpenGame API ResponseObject is Equal: null
-2022-10-07 14:11:21,498 [main] INFO ApiIntegration - OpenGame API Response Status Cod is Equal: 200
-2022-10-07 14:11:21,522 [main] INFO ApiIntegration - AuthorizationRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","ProductId":54351}
-2022-10-07 14:11:22,124 [main] INFO ApiIntegration - Authorization API Response Token : 424490bf-4609-11ed-b772-ecb1d7ae60a8
-2022-10-07 14:11:22,124 [main] INFO ApiIntegration - Authorization API Response Gender : 1
-2022-10-07 14:11:22,124 [main] INFO ApiIntegration - Authorization API Response ClientId : dazzabet10130
-2022-10-07 14:11:22,124 [main] INFO ApiIntegration - Authorization API Response LastName : 
-2022-10-07 14:11:22,125 [main] INFO ApiIntegration - Authorization API Response UserName : testuser
-2022-10-07 14:11:22,125 [main] INFO ApiIntegration - Authorization API Response BirthDate : 1998-12-29
-2022-10-07 14:11:22,125 [main] INFO ApiIntegration - Authorization API Response FirstName : 
-2022-10-07 14:11:22,125 [main] INFO ApiIntegration - Authorization API Response CurrencyId : TND
-2022-10-07 14:11:22,125 [main] INFO ApiIntegration - Authorization API Response Description : null
-2022-10-07 14:11:22,125 [main] INFO ApiIntegration - Authorization API Response ResponseCode : 0
-2022-10-07 14:11:22,127 [main] INFO ApiIntegration - Authorization API Status Cod is Equal: 200
-2022-10-07 14:11:22,139 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:22,324 [main] INFO ApiIntegration - GetBalance API Response CurrencyId : TND
-2022-10-07 14:11:22,324 [main] INFO ApiIntegration - GetBalance API Response ResponseCode : 0
-2022-10-07 14:11:22,325 [main] INFO ApiIntegration - GetBalance API Response Description : null
-2022-10-07 14:11:22,327 [main] INFO ApiIntegration - GetBalance API Response Description : 9871.0
-2022-10-07 14:11:22,328 [main] INFO ApiIntegration - GetBalance API Status Cod is Equal: 200
-2022-10-07 14:11:22,338 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:22,800 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-IZczT6MJpZGjeUk8Pkd6_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:23,277 [main] INFO ApiIntegration - Credit API Response ResponseCode : 0
-2022-10-07 14:11:23,277 [main] INFO ApiIntegration - Credit API Response Description : null
-2022-10-07 14:11:23,279 [main] INFO ApiIntegration - Credit API Response BetId : 454
-2022-10-07 14:11:23,279 [main] INFO ApiIntegration - Credit API Response Balance : 9870.0
-2022-10-07 14:11:23,279 [main] INFO ApiIntegration - Credit API Response ClientId : dazzabet10130
-2022-10-07 14:11:23,279 [main] INFO ApiIntegration - Credit API Response CurrencyId : TND
-2022-10-07 14:11:23,283 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:23,757 [main] INFO ApiIntegration - Credit API Status Cod is Equal: 200
-2022-10-07 14:11:23,767 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:23,944 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-DQpZcjRcSSb1kHGC67tF_D","CreditTransactionId":"QA_Test-IZczT6MJpZGjeUk8Pkd6_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:24,130 [main] INFO ApiIntegration - Debit API Response ResponseCode : 0
-2022-10-07 14:11:24,130 [main] INFO ApiIntegration - Debit API Response Description : null
-2022-10-07 14:11:24,130 [main] INFO ApiIntegration - Debit API Response BetId : 455
-2022-10-07 14:11:24,130 [main] INFO ApiIntegration - Debit API Response Balance : 9872.0
-2022-10-07 14:11:24,131 [main] INFO ApiIntegration - Debit API Response ClientId : dazzabet10130
-2022-10-07 14:11:24,131 [main] INFO ApiIntegration - Debit API Response CurrencyId : TND
-2022-10-07 14:11:24,135 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:24,320 [main] INFO ApiIntegration - Debit API Status Cod is Equal: 200
-2022-10-07 14:11:24,333 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:24,513 [main] INFO ApiIntegration - Balance Before Credit:9872.0
-2022-10-07 14:11:24,527 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-0bSFhy0ltf83xlZQPJOn_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:24,721 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:24,895 [main] INFO ApiIntegration - Balance After Credit:9871.0
-2022-10-07 14:11:24,900 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-tLuPIEJmoWVdBsWl2nEE_D","CreditTransactionId":"QA_Test-0bSFhy0ltf83xlZQPJOn_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:25,095 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:25,288 [main] INFO ApiIntegration - Balance After Debit:9873.0
-2022-10-07 14:11:25,294 [main] INFO ApiIntegration - RollBackRequestBody : {"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-0bSFhy0ltf83xlZQPJOn_C","TransactionId":"QA_Test-w9dyXEa7D9HXSd0zEYcd_R","OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:25,476 [main] INFO ApiIntegration - RollBackCredit API Response ResponseCode : 0
-2022-10-07 14:11:25,477 [main] INFO ApiIntegration - RollBackCredit API Response Description : null
-2022-10-07 14:11:25,480 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:25,655 [main] INFO ApiIntegration - Balance After RollBackCredit:9872.0
-2022-10-07 14:11:25,658 [main] INFO ApiIntegration - RollBackCredit API Status Cod is Equal: 200
-2022-10-07 14:11:25,674 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:25,861 [main] INFO ApiIntegration - Balance Before Credit:9872.0
-2022-10-07 14:11:25,867 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-ajuTDlxyWWlacjvpRm7Y_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:26,051 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:26,224 [main] INFO ApiIntegration - Balance After Credit:9871.0
-2022-10-07 14:11:26,230 [main] INFO ApiIntegration - RollBackRequestBody : {"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-ajuTDlxyWWlacjvpRm7Y_C","TransactionId":"QA_Test-ZBey1aPqjKY3cI6KPXRa_R","OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:26,407 [main] INFO ApiIntegration - RollBackCredit API Response ResponseCode : 0
-2022-10-07 14:11:26,408 [main] INFO ApiIntegration - RollBackCredit API Response Description : null
-2022-10-07 14:11:26,412 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:26,596 [main] INFO ApiIntegration - Balance After RollBackCredit:9872.0
-2022-10-07 14:11:26,598 [main] INFO ApiIntegration - RollBackCredit API Status Cod is Equal: 200
-2022-10-07 14:11:26,616 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:26,803 [main] INFO ApiIntegration - Balance Before Credit:9872.0
-2022-10-07 14:11:26,807 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-uGUt7YF5b9HfZFYPTq2n_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:27,007 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:27,181 [main] INFO ApiIntegration - Balance After Credit:9871.0
-2022-10-07 14:11:27,188 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-MODEaboP1CIBNtsdodwo_D","CreditTransactionId":"QA_Test-uGUt7YF5b9HfZFYPTq2n_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:27,369 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:27,541 [main] INFO ApiIntegration - Balance After Debit:9873.0
-2022-10-07 14:11:27,545 [main] INFO ApiIntegration - RollBackRequestBody : {"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-MODEaboP1CIBNtsdodwo_D","TransactionId":"QA_Test-YeOW6MSbIQTITpn4GrVD_R","OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:27,725 [main] INFO ApiIntegration - RollBack API Response ResponseCode : 0
-2022-10-07 14:11:27,726 [main] INFO ApiIntegration - RollBack API Response Description : null
-2022-10-07 14:11:27,729 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:27,904 [main] INFO ApiIntegration - Balance After RollBackDebit:9871.0
-2022-10-07 14:11:27,906 [main] INFO ApiIntegration - RollBack API Status Cod is Equal: 200
-2022-10-07 14:11:27,923 [main] INFO ApiIntegration - AuthorizationRequestBody : {"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","ProductId":54351}
-2022-10-07 14:11:28,119 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
-2022-10-07 14:11:28,120 [main] INFO ApiIntegration - Authorization API Response ResponseCode : 0
-2022-10-07 14:11:28,120 [main] INFO ApiIntegration - Authorization API Response Description : null
-2022-10-07 14:11:28,132 [main] INFO ApiIntegration - AuthorizationRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a81","ProductId":54351}
-2022-10-07 14:11:28,305 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
-2022-10-07 14:11:28,305 [main] INFO ApiIntegration - Authorization API Response ResponseCode : 22
-2022-10-07 14:11:28,305 [main] INFO ApiIntegration - Authorization API Response Description : error login
-2022-10-07 14:11:28,312 [main] INFO ApiIntegration - AuthorizationRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","ProductId":54351}
-2022-10-07 14:11:28,481 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
-2022-10-07 14:11:28,481 [main] INFO ApiIntegration - Authorization API Response ResponseCode : 0
-2022-10-07 14:11:28,481 [main] INFO ApiIntegration - Authorization API Response Description : null
-2022-10-07 14:11:28,488 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:28,661 [main] INFO ApiIntegration - GetBalance API Response ResponseCode : 0
-2022-10-07 14:11:28,662 [main] INFO ApiIntegration - GetBalance API Response Description : null
-2022-10-07 14:11:28,674 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a81","CurrencyId":"TND"}
-2022-10-07 14:11:28,842 [main] INFO ApiIntegration - GetBalance API Response ResponseCode : 22
-2022-10-07 14:11:28,842 [main] INFO ApiIntegration - GetBalance API Response Description : error login
-2022-10-07 14:11:28,849 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND1"}
-2022-10-07 14:11:29,021 [main] INFO ApiIntegration - GetBalance API Response ResponseCode : 0
-2022-10-07 14:11:29,021 [main] INFO ApiIntegration - GetBalance API Response Description : null
-2022-10-07 14:11:29,030 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"USD"}
-2022-10-07 14:11:29,216 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"EUR"}
-2022-10-07 14:11:29,405 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:29,593 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-EXgyFevVrZAV8C8GI1C3_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:29,773 [main] INFO ApiIntegration - Credit API Response ResponseCode : 0
-2022-10-07 14:11:29,773 [main] INFO ApiIntegration - Credit API Response Description : null
-2022-10-07 14:11:29,777 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:29,978 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:30,167 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a81","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-aLWF7EtBd6VyqCWVZzz1_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:30,344 [main] INFO ApiIntegration - Credit API Response ResponseCode : 22
-2022-10-07 14:11:30,345 [main] INFO ApiIntegration - Credit API Response Description : error login
-2022-10-07 14:11:30,348 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:30,525 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:30,710 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":-10,"OperationTypeId":1,"TransactionId":"QA_Test-PaCvLzBjVKapZ8yWbKNh_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:30,881 [main] INFO ApiIntegration - Credit API Response ResponseCode : 43
-2022-10-07 14:11:30,881 [main] INFO ApiIntegration - Credit API Response Description : game not avaible
-2022-10-07 14:11:30,886 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:31,078 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:31,257 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-Nth3zp2GHmcXXLQSbrvj_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:31,432 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:31,608 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-Nth3zp2GHmcXXLQSbrvj_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:31,779 [main] INFO ApiIntegration - Credit API Response ResponseCode : 0
-2022-10-07 14:11:31,780 [main] INFO ApiIntegration - Credit API Response Description : null
-2022-10-07 14:11:31,783 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:31,965 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:32,150 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-ZUdV6zw37EcWN9RGohZh_C","BetState":1,"Amount":9879.0}
-2022-10-07 14:11:32,326 [main] INFO ApiIntegration - Credit API Response ResponseCode : 63
-2022-10-07 14:11:32,326 [main] INFO ApiIntegration - Credit API Response Description : balance less then bet Amount
-2022-10-07 14:11:32,332 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:32,521 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:32,697 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-g7YsAMyBalFv724rioPr_C","BetState":1,"Amount":0.0}
-2022-10-07 14:11:32,871 [main] INFO ApiIntegration - Credit API Response ResponseCode : 0
-2022-10-07 14:11:32,875 [main] INFO ApiIntegration - Credit API Response Description : null
-2022-10-07 14:11:32,879 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:33,058 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:33,239 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-clQVBhTX0DT85NiPVJaU_C","BetState":1,"Amount":-1.0}
-2022-10-07 14:11:33,420 [main] INFO ApiIntegration - Credit API Response ResponseCode : 39
-2022-10-07 14:11:33,421 [main] INFO ApiIntegration - Credit API Response Description : WrongOperationAmount
-2022-10-07 14:11:33,425 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:33,618 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:33,807 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-BjfsljgNEPJ5yjsNISuE_C","BetState":1,"Amount":-1.5}
-2022-10-07 14:11:33,991 [main] INFO ApiIntegration - Credit API Response ResponseCode : 39
-2022-10-07 14:11:33,991 [main] INFO ApiIntegration - Credit API Response Description : WrongOperationAmount
-2022-10-07 14:11:33,996 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:34,172 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:34,350 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-KeQECASjXu5skp9vO4vZ_C","BetState":1,"Amount":-1.05}
-2022-10-07 14:11:34,518 [main] INFO ApiIntegration - Credit API Response ResponseCode : 39
-2022-10-07 14:11:34,519 [main] INFO ApiIntegration - Credit API Response Description : WrongOperationAmount
-2022-10-07 14:11:34,522 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:34,702 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:34,896 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-DgOBUdz54tjPX0HFOM6T_C","BetState":1,"Amount":-1.005}
-2022-10-07 14:11:35,277 [main] INFO ApiIntegration - Credit API Response ResponseCode : 39
-2022-10-07 14:11:35,277 [main] INFO ApiIntegration - Credit API Response Description : WrongOperationAmount
-2022-10-07 14:11:35,284 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:35,467 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:35,640 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-0SwoPKAO2ptvK726SSYv_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:35,823 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:36,016 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-N8DVXvuZv5hNf7OtEsE5_D","CreditTransactionId":"QA_Test-0SwoPKAO2ptvK726SSYv_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:36,193 [main] INFO ApiIntegration - Debit API Response ResponseCode : 0
-2022-10-07 14:11:36,193 [main] INFO ApiIntegration - Debit API Response Description : null
-2022-10-07 14:11:36,200 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:36,379 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:36,574 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-KIEYxvPC9LPRKi28vCNn_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:36,755 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:36,936 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-EIVN8OsKysQ2yLrCeAmu_D","CreditTransactionId":"QA_Test-KIEYxvPC9LPRKi28vCNn_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a81"}
-2022-10-07 14:11:37,110 [main] INFO ApiIntegration - Debit API Response ResponseCode : 22
-2022-10-07 14:11:37,111 [main] INFO ApiIntegration - Debit API Response Description : error login
-2022-10-07 14:11:37,124 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:37,313 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:37,501 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-VTz3UFPNBBQSlhbsxF8T_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:37,695 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:37,882 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":-10,"TransactionId":"QA_Test-YkuXgQpyIPtjkvvuCbzC_D","CreditTransactionId":"QA_Test-VTz3UFPNBBQSlhbsxF8T_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:38,056 [main] INFO ApiIntegration - Debit API Response ResponseCode : 43
-2022-10-07 14:11:38,057 [main] INFO ApiIntegration - Debit API Response Description : game not avaible
-2022-10-07 14:11:38,063 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:38,239 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:38,417 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-NOOm3FGQZabEujKOuXfp_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:38,598 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:38,784 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-UNux5I77WuLEOoKVd85d_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:38,957 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:39,146 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":-10,"TransactionId":"QA_Test-g2F5QHi3xtVgEbZli5Av_D","CreditTransactionId":"QA_Test-NOOm3FGQZabEujKOuXfp_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:39,325 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:39,501 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":-10,"TransactionId":"QA_Test-g2F5QHi3xtVgEbZli5Av_D","CreditTransactionId":"QA_Test-UNux5I77WuLEOoKVd85d_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:39,680 [main] INFO ApiIntegration - Debit API Response ResponseCode : 43
-2022-10-07 14:11:39,681 [main] INFO ApiIntegration - Debit API Response Description : game not avaible
-2022-10-07 14:11:39,686 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:39,867 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:40,048 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-bCGS6xHrtQPG88p1ncEu_D","CreditTransactionId":"QA_Test-YGJSOGz8yr0ChTYLobE8_C_ErrorID","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:40,225 [main] INFO ApiIntegration - Debit API Response ResponseCode : 0
-2022-10-07 14:11:40,226 [main] INFO ApiIntegration - Debit API Response Description : null
-2022-10-07 14:11:40,240 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:40,439 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:40,629 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-7Fpj0JXlujGHD7wvADcz_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:40,809 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:41,002 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-39FSjv6GQKcYDQfJuyu8_D","CreditTransactionId":"QA_Test-7Fpj0JXlujGHD7wvADcz_C","Amount":0.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:41,186 [main] INFO ApiIntegration - Debit API Response ResponseCode : 0
-2022-10-07 14:11:41,187 [main] INFO ApiIntegration - Debit API Response Description : null
-2022-10-07 14:11:41,201 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:41,391 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:41,578 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-PXbUALUFC8kdjvx31foo_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:41,767 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:41,942 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-5MbILZazLQCUqc7FO2r7_D","CreditTransactionId":"QA_Test-PXbUALUFC8kdjvx31foo_C","Amount":-1.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:42,115 [main] INFO ApiIntegration - Debit API Response ResponseCode : 39
-2022-10-07 14:11:42,116 [main] INFO ApiIntegration - Debit API Response Description : WrongOperationAmount
-2022-10-07 14:11:42,129 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:42,318 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:42,497 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-yVifzusbuqGPoXgBtZKL_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:42,687 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:42,890 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-K3QDbomT8BIn1KUcv0CE_D","CreditTransactionId":"QA_Test-yVifzusbuqGPoXgBtZKL_C","Amount":-1.5,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:43,096 [main] INFO ApiIntegration - Debit API Response ResponseCode : 39
-2022-10-07 14:11:43,097 [main] INFO ApiIntegration - Debit API Response Description : WrongOperationAmount
-2022-10-07 14:11:43,110 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:43,303 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:43,483 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-KqseoEF1F2czRRNg6IUU_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:43,665 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:43,849 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-GdDoXqPWdtp1TYwZbNHJ_D","CreditTransactionId":"QA_Test-KqseoEF1F2czRRNg6IUU_C","Amount":-1.05,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:44,026 [main] INFO ApiIntegration - Debit API Response ResponseCode : 39
-2022-10-07 14:11:44,027 [main] INFO ApiIntegration - Debit API Response Description : WrongOperationAmount
-2022-10-07 14:11:44,030 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:44,210 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:44,392 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-Fc0gkVGPBOPg6T9QwYRN_C","BetState":1,"Amount":1.0}
-2022-10-07 14:11:44,570 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:44,752 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-U0N6DUkfTgV79UpRJbYh_D","CreditTransactionId":"QA_Test-Fc0gkVGPBOPg6T9QwYRN_C","Amount":-1.005,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
-2022-10-07 14:11:44,939 [main] INFO ApiIntegration - Debit API Response ResponseCode : 39
-2022-10-07 14:11:44,939 [main] INFO ApiIntegration - Debit API Response Description : WrongOperationAmount
-2022-10-07 14:11:44,943 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
-2022-10-07 14:11:45,191 [main] INFO ApiIntegration - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
-2022-10-07 14:11:45,191 [main] INFO ApiIntegration - 
-2022-10-07 14:11:45,191 [main] INFO ApiIntegration - 
-2022-10-07 14:11:45,192 [main] INFO ApiIntegration - 
+2022-10-07 15:55:29,484 [main] INFO ApiIntegration - getURLRequestBody :{"PartnerId":61,"GameId":54351,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com"}
+2022-10-07 15:55:30,263 [main] INFO ApiIntegration - getGameUrl API ResponseCode is Equal: 21
+2022-10-07 15:55:30,264 [main] INFO ApiIntegration - getGameUrl API Description is Equal: An error occurred while updating the entries. See the inner exception for details.
+2022-10-07 15:55:30,264 [main] INFO ApiIntegration - getGameUrl API ResponseObject is Equal: null
+2022-10-07 15:55:30,311 [main] INFO ApiIntegration - openGame API Response Status Cod is Equal: 200
+2022-10-07 15:55:30,393 [main] INFO ApiIntegration - getURLRequestBody :{"PartnerId":61,"GameId":54351,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a81","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com"}
+2022-10-07 15:55:30,659 [main] INFO ApiIntegration - OpenGame API ResponseCode is Equal: 22
+2022-10-07 15:55:30,661 [main] INFO ApiIntegration - OpenGame API Description is Equal: Client not found
+2022-10-07 15:55:30,661 [main] INFO ApiIntegration - OpenGame API ResponseObject is Equal: null
+2022-10-07 15:55:30,662 [main] INFO ApiIntegration - OpenGame API Response Status Cod is Equal: 200
+2022-10-07 15:55:30,674 [main] INFO ApiIntegration - getURLRequestBody :{"PartnerId":61,"GameId":54351,"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com"}
+2022-10-07 15:55:30,944 [main] INFO ApiIntegration - OpenGame API ResponseCode is Equal: 21
+2022-10-07 15:55:30,945 [main] INFO ApiIntegration - OpenGame API Description is Equal: An error occurred while updating the entries. See the inner exception for details.
+2022-10-07 15:55:30,946 [main] INFO ApiIntegration - OpenGame API ResponseObject is Equal: null
+2022-10-07 15:55:30,947 [main] INFO ApiIntegration - OpenGame API Response Status Cod is Equal: 200
+2022-10-07 15:55:30,966 [main] INFO ApiIntegration - getURLRequestBody :{"PartnerId":-1,"GameId":54351,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com"}
+2022-10-07 15:55:31,260 [main] INFO ApiIntegration - OpenGame API ResponseCode is Equal: 21
+2022-10-07 15:55:31,261 [main] INFO ApiIntegration - OpenGame API Description is Equal: An error occurred while updating the entries. See the inner exception for details.
+2022-10-07 15:55:31,262 [main] INFO ApiIntegration - OpenGame API ResponseObject is Equal: null
+2022-10-07 15:55:31,262 [main] INFO ApiIntegration - OpenGame API Response Status Cod is Equal: 200
+2022-10-07 15:55:31,276 [main] INFO ApiIntegration - getURLRequestBody :{"PartnerId":61,"GameId":-1,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com"}
+2022-10-07 15:55:31,515 [main] INFO ApiIntegration - OpenGame API ResponseCode is Equal: 43
+2022-10-07 15:55:31,516 [main] INFO ApiIntegration - OpenGame API Description is Equal: Product not found
+2022-10-07 15:55:31,516 [main] INFO ApiIntegration - OpenGame API ResponseObject is Equal: null
+2022-10-07 15:55:31,517 [main] INFO ApiIntegration - OpenGame API Response Status Cod is Equal: 200
+2022-10-07 15:55:31,535 [main] INFO ApiIntegration - getURLRequestBody :{"PartnerId":61,"GameId":54351,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com1"}
+2022-10-07 15:55:31,873 [main] INFO ApiIntegration - OpenGame API ResponseCode is Equal: 21
+2022-10-07 15:55:31,873 [main] INFO ApiIntegration - OpenGame API Description is Equal: An error occurred while updating the entries. See the inner exception for details.
+2022-10-07 15:55:31,874 [main] INFO ApiIntegration - OpenGame API ResponseObject is Equal: null
+2022-10-07 15:55:31,874 [main] INFO ApiIntegration - OpenGame API Response Status Cod is Equal: 200
+2022-10-07 15:55:31,882 [main] INFO ApiIntegration - AuthorizationRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","ProductId":54351}
+2022-10-07 15:55:32,390 [main] INFO ApiIntegration - Authorization API Response Token : 424490bf-4609-11ed-b772-ecb1d7ae60a8
+2022-10-07 15:55:32,391 [main] INFO ApiIntegration - Authorization API Response Gender : 1
+2022-10-07 15:55:32,391 [main] INFO ApiIntegration - Authorization API Response ClientId : dazzabet10130
+2022-10-07 15:55:32,392 [main] INFO ApiIntegration - Authorization API Response LastName : 
+2022-10-07 15:55:32,392 [main] INFO ApiIntegration - Authorization API Response UserName : testuser
+2022-10-07 15:55:32,392 [main] INFO ApiIntegration - Authorization API Response BirthDate : 1998-12-29
+2022-10-07 15:55:32,392 [main] INFO ApiIntegration - Authorization API Response FirstName : 
+2022-10-07 15:55:32,393 [main] INFO ApiIntegration - Authorization API Response CurrencyId : TND
+2022-10-07 15:55:32,393 [main] INFO ApiIntegration - Authorization API Response Description : null
+2022-10-07 15:55:32,393 [main] INFO ApiIntegration - Authorization API Response ResponseCode : 0
+2022-10-07 15:55:32,397 [main] INFO ApiIntegration - Authorization API Status Cod is Equal: 200
+2022-10-07 15:55:32,411 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:32,605 [main] INFO ApiIntegration - GetBalance API Response CurrencyId : TND
+2022-10-07 15:55:32,606 [main] INFO ApiIntegration - GetBalance API Response ResponseCode : 0
+2022-10-07 15:55:32,606 [main] INFO ApiIntegration - GetBalance API Response Description : null
+2022-10-07 15:55:32,606 [main] INFO ApiIntegration - GetBalance API Response Description : 9835.0
+2022-10-07 15:55:32,609 [main] INFO ApiIntegration - GetBalance API Status Cod is Equal: 200
+2022-10-07 15:55:32,625 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:33,093 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-RoJN7MifdvxqZLj7szAQ_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:33,556 [main] INFO ApiIntegration - Credit API Response ResponseCode : 0
+2022-10-07 15:55:33,556 [main] INFO ApiIntegration - Credit API Response Description : null
+2022-10-07 15:55:33,558 [main] INFO ApiIntegration - Credit API Response BetId : 564
+2022-10-07 15:55:33,559 [main] INFO ApiIntegration - Credit API Response Balance : 9834.0
+2022-10-07 15:55:33,559 [main] INFO ApiIntegration - Credit API Response ClientId : dazzabet10130
+2022-10-07 15:55:33,559 [main] INFO ApiIntegration - Credit API Response CurrencyId : TND
+2022-10-07 15:55:33,564 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:34,035 [main] INFO ApiIntegration - Credit API Status Cod is Equal: 200
+2022-10-07 15:55:34,047 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:34,226 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-L6HIBUxbhgDyuTIeDoY2_D","CreditTransactionId":"QA_Test-RoJN7MifdvxqZLj7szAQ_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:34,405 [main] INFO ApiIntegration - Debit API Response ResponseCode : 0
+2022-10-07 15:55:34,406 [main] INFO ApiIntegration - Debit API Response Description : null
+2022-10-07 15:55:34,407 [main] INFO ApiIntegration - Debit API Response BetId : 565
+2022-10-07 15:55:34,408 [main] INFO ApiIntegration - Debit API Response Balance : 9836.0
+2022-10-07 15:55:34,408 [main] INFO ApiIntegration - Debit API Response ClientId : dazzabet10130
+2022-10-07 15:55:34,409 [main] INFO ApiIntegration - Debit API Response CurrencyId : TND
+2022-10-07 15:55:34,413 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:34,596 [main] INFO ApiIntegration - Debit API Status Cod is Equal: 200
+2022-10-07 15:55:34,607 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:34,784 [main] INFO ApiIntegration - Balance Before Credit:9836.0
+2022-10-07 15:55:34,789 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-QualNpby0eSs2e9A6Z9n_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:34,982 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:35,163 [main] INFO ApiIntegration - Balance After Credit:9835.0
+2022-10-07 15:55:35,177 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-AqPL5qCAEZ1DXe7s5KC7_D","CreditTransactionId":"QA_Test-QualNpby0eSs2e9A6Z9n_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:35,382 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:35,555 [main] INFO ApiIntegration - Balance After Debit:9837.0
+2022-10-07 15:55:35,559 [main] INFO ApiIntegration - RollBackRequestBody : {"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-QualNpby0eSs2e9A6Z9n_C","TransactionId":"QA_Test-cUVopZRb4AfK59A4MXZU_R","OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:35,742 [main] INFO ApiIntegration - RollBackCredit API Response ResponseCode : 0
+2022-10-07 15:55:35,743 [main] INFO ApiIntegration - RollBackCredit API Response Description : null
+2022-10-07 15:55:35,758 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:35,936 [main] INFO ApiIntegration - Balance After RollBackCredit:9836.0
+2022-10-07 15:55:35,941 [main] INFO ApiIntegration - RollBackCredit API Status Cod is Equal: 200
+2022-10-07 15:55:35,960 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:36,133 [main] INFO ApiIntegration - Balance Before Credit:9836.0
+2022-10-07 15:55:36,149 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-kvsJunOhhBnqIiroOlPG_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:36,338 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:36,516 [main] INFO ApiIntegration - Balance After Credit:9835.0
+2022-10-07 15:55:36,521 [main] INFO ApiIntegration - RollBackRequestBody : {"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-kvsJunOhhBnqIiroOlPG_C","TransactionId":"QA_Test-PlVNLUPXrWCSqa6IQJj0_R","OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:36,700 [main] INFO ApiIntegration - RollBackCredit API Response ResponseCode : 0
+2022-10-07 15:55:36,701 [main] INFO ApiIntegration - RollBackCredit API Response Description : null
+2022-10-07 15:55:36,715 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:36,892 [main] INFO ApiIntegration - Balance After RollBackCredit:9836.0
+2022-10-07 15:55:36,896 [main] INFO ApiIntegration - RollBackCredit API Status Cod is Equal: 200
+2022-10-07 15:55:36,911 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:37,084 [main] INFO ApiIntegration - Balance Before Credit:9836.0
+2022-10-07 15:55:37,100 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-C1WXR70CNAohphDWO2vA_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:37,292 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:37,464 [main] INFO ApiIntegration - Balance After Credit:9835.0
+2022-10-07 15:55:37,470 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-rj6EVOEA6YTTobqu4QX9_D","CreditTransactionId":"QA_Test-C1WXR70CNAohphDWO2vA_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:37,671 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:37,850 [main] INFO ApiIntegration - Balance After Debit:9837.0
+2022-10-07 15:55:37,861 [main] INFO ApiIntegration - RollBackRequestBody : {"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-rj6EVOEA6YTTobqu4QX9_D","TransactionId":"QA_Test-biOcNlgWLdUpqpUiBeF2_R","OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:38,056 [main] INFO ApiIntegration - RollBack API Response ResponseCode : 0
+2022-10-07 15:55:38,057 [main] INFO ApiIntegration - RollBack API Response Description : null
+2022-10-07 15:55:38,061 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:38,238 [main] INFO ApiIntegration - Balance After RollBackDebit:9835.0
+2022-10-07 15:55:38,244 [main] INFO ApiIntegration - RollBack API Status Cod is Equal: 200
+2022-10-07 15:55:38,264 [main] INFO ApiIntegration - AuthorizationRequestBody : {"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","ProductId":54351}
+2022-10-07 15:55:38,441 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
+2022-10-07 15:55:38,441 [main] INFO ApiIntegration - Authorization API Response ResponseCode : 0
+2022-10-07 15:55:38,442 [main] INFO ApiIntegration - Authorization API Response Description : null
+2022-10-07 15:55:38,450 [main] INFO ApiIntegration - AuthorizationRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a81","ProductId":54351}
+2022-10-07 15:55:38,624 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
+2022-10-07 15:55:38,624 [main] INFO ApiIntegration - Authorization API Response ResponseCode : 22
+2022-10-07 15:55:38,625 [main] INFO ApiIntegration - Authorization API Response Description : error login
+2022-10-07 15:55:38,637 [main] INFO ApiIntegration - AuthorizationRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","ProductId":54351}
+2022-10-07 15:55:38,821 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
+2022-10-07 15:55:38,821 [main] INFO ApiIntegration - Authorization API Response ResponseCode : 0
+2022-10-07 15:55:38,821 [main] INFO ApiIntegration - Authorization API Response Description : null
+2022-10-07 15:55:38,831 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:39,011 [main] INFO ApiIntegration - GetBalance API Response ResponseCode : 0
+2022-10-07 15:55:39,011 [main] INFO ApiIntegration - GetBalance API Response Description : null
+2022-10-07 15:55:39,021 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a81","CurrencyId":"TND"}
+2022-10-07 15:55:39,212 [main] INFO ApiIntegration - GetBalance API Response ResponseCode : 22
+2022-10-07 15:55:39,213 [main] INFO ApiIntegration - GetBalance API Response Description : error login
+2022-10-07 15:55:39,220 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND1"}
+2022-10-07 15:55:39,397 [main] INFO ApiIntegration - GetBalance API Response ResponseCode : 0
+2022-10-07 15:55:39,397 [main] INFO ApiIntegration - GetBalance API Response Description : null
+2022-10-07 15:55:39,409 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"USD"}
+2022-10-07 15:55:39,592 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"EUR"}
+2022-10-07 15:55:39,769 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:39,957 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-6Ita3MeC0HeXKAcRdadL_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:40,133 [main] INFO ApiIntegration - Credit API Response ResponseCode : 0
+2022-10-07 15:55:40,134 [main] INFO ApiIntegration - Credit API Response Description : null
+2022-10-07 15:55:40,139 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:40,334 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:40,514 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a81","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-4BBSGjO4i9ppgycp3n4J_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:40,689 [main] INFO ApiIntegration - Credit API Response ResponseCode : 22
+2022-10-07 15:55:40,689 [main] INFO ApiIntegration - Credit API Response Description : error login
+2022-10-07 15:55:40,694 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:40,871 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:41,087 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":-10,"OperationTypeId":1,"TransactionId":"QA_Test-jmdum1dxFk8NMH4mwGVE_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:41,267 [main] INFO ApiIntegration - Credit API Response ResponseCode : 43
+2022-10-07 15:55:41,268 [main] INFO ApiIntegration - Credit API Response Description : game not avaible
+2022-10-07 15:55:41,273 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:41,453 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:41,632 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-A9IHpVJhr15Na1jCAnFb_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:41,822 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:42,004 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-A9IHpVJhr15Na1jCAnFb_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:42,207 [main] INFO ApiIntegration - Credit API Response ResponseCode : 0
+2022-10-07 15:55:42,208 [main] INFO ApiIntegration - Credit API Response Description : null
+2022-10-07 15:55:42,214 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:42,411 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:42,595 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-ROzY7LIajIdGWCuQgWDU_C","BetState":1,"Amount":9843.0}
+2022-10-07 15:55:42,769 [main] INFO ApiIntegration - Credit API Response ResponseCode : 63
+2022-10-07 15:55:42,770 [main] INFO ApiIntegration - Credit API Response Description : balance less then bet Amount
+2022-10-07 15:55:42,775 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:42,960 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:43,149 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-Sy8x6SKI3DQuiUXcmgyp_C","BetState":1,"Amount":0.0}
+2022-10-07 15:55:43,324 [main] INFO ApiIntegration - Credit API Response ResponseCode : 0
+2022-10-07 15:55:43,325 [main] INFO ApiIntegration - Credit API Response Description : null
+2022-10-07 15:55:43,329 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:43,528 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:43,733 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-a1gmB7df9EIg6QLKj2Sr_C","BetState":1,"Amount":-1.0}
+2022-10-07 15:55:43,911 [main] INFO ApiIntegration - Credit API Response ResponseCode : 39
+2022-10-07 15:55:43,911 [main] INFO ApiIntegration - Credit API Response Description : WrongOperationAmount
+2022-10-07 15:55:43,916 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:44,109 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:44,289 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-xDMhHxRTxmDztxGKXh9A_C","BetState":1,"Amount":-1.5}
+2022-10-07 15:55:44,454 [main] INFO ApiIntegration - Credit API Response ResponseCode : 39
+2022-10-07 15:55:44,454 [main] INFO ApiIntegration - Credit API Response Description : WrongOperationAmount
+2022-10-07 15:55:44,459 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:44,669 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:44,851 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-TAjpDEAMIodLC0fIXaSW_C","BetState":1,"Amount":-1.05}
+2022-10-07 15:55:45,014 [main] INFO ApiIntegration - Credit API Response ResponseCode : 39
+2022-10-07 15:55:45,015 [main] INFO ApiIntegration - Credit API Response Description : WrongOperationAmount
+2022-10-07 15:55:45,019 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:45,202 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:45,379 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-H8QGwnDKod7CrQgIsYyC_C","BetState":1,"Amount":-1.005}
+2022-10-07 15:55:45,558 [main] INFO ApiIntegration - Credit API Response ResponseCode : 39
+2022-10-07 15:55:45,559 [main] INFO ApiIntegration - Credit API Response Description : WrongOperationAmount
+2022-10-07 15:55:45,563 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:45,758 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:45,931 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-ToEuHbK42b9Bh4Cf4lcD_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:46,115 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:46,290 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-V7kT9YgHAdoEGAW3bIm1_D","CreditTransactionId":"QA_Test-ToEuHbK42b9Bh4Cf4lcD_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a81"}
+2022-10-07 15:55:46,459 [main] INFO ApiIntegration - Debit API Response ResponseCode : 22
+2022-10-07 15:55:46,460 [main] INFO ApiIntegration - Debit API Response Description : error login
+2022-10-07 15:55:46,467 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:46,646 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:46,820 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-D6qmpztnvt7oCA9xx8bE_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:47,007 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:47,187 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":-10,"TransactionId":"QA_Test-D0ghP6j2xj8P8eoXVEeI_D","CreditTransactionId":"QA_Test-D6qmpztnvt7oCA9xx8bE_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:47,370 [main] INFO ApiIntegration - Debit API Response ResponseCode : 43
+2022-10-07 15:55:47,371 [main] INFO ApiIntegration - Debit API Response Description : game not avaible
+2022-10-07 15:55:47,385 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:47,577 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:47,754 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-914YOpDHRyl10uwlW2B9_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:47,930 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:48,115 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-z1u0UxiolYK5No3SDhq5_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:48,295 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:48,484 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":-10,"TransactionId":"QA_Test-RYfQQMKpDIKJN1R2k402_D","CreditTransactionId":"QA_Test-914YOpDHRyl10uwlW2B9_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:48,662 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:48,849 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":-10,"TransactionId":"QA_Test-RYfQQMKpDIKJN1R2k402_D","CreditTransactionId":"QA_Test-z1u0UxiolYK5No3SDhq5_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:49,023 [main] INFO ApiIntegration - Debit API Response ResponseCode : 43
+2022-10-07 15:55:49,024 [main] INFO ApiIntegration - Debit API Response Description : game not avaible
+2022-10-07 15:55:49,028 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:49,206 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:49,402 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-ig2pfo8DT9FOMSPcdLc2_D","CreditTransactionId":"QA_Test-vkuSR7ydLfsXy8ohyfN4_C_ErrorID","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:49,584 [main] INFO ApiIntegration - Debit API Response ResponseCode : 0
+2022-10-07 15:55:49,584 [main] INFO ApiIntegration - Debit API Response Description : null
+2022-10-07 15:55:49,591 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:49,766 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:49,934 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-qdo78MPnQ2ZHRbPd5UVK_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:50,130 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:50,318 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-zUyNXNlPeoN0NQ0DBmR4_D","CreditTransactionId":"QA_Test-qdo78MPnQ2ZHRbPd5UVK_C","Amount":0.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:50,498 [main] INFO ApiIntegration - Debit API Response ResponseCode : 0
+2022-10-07 15:55:50,498 [main] INFO ApiIntegration - Debit API Response Description : null
+2022-10-07 15:55:50,504 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:50,686 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:50,875 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-wdAXIglAmS89vwB43xJM_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:51,061 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:51,249 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-PGN5ZAEo4RUFnTiW3TrA_D","CreditTransactionId":"QA_Test-wdAXIglAmS89vwB43xJM_C","Amount":-1.0,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:51,430 [main] INFO ApiIntegration - Debit API Response ResponseCode : 39
+2022-10-07 15:55:51,430 [main] INFO ApiIntegration - Debit API Response Description : WrongOperationAmount
+2022-10-07 15:55:51,434 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:51,633 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:51,829 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-HhDrLOzM5wZLZpiq3He6_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:52,006 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:52,181 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-2E0X7AMp0PckHfhLigm5_D","CreditTransactionId":"QA_Test-HhDrLOzM5wZLZpiq3He6_C","Amount":-1.5,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:52,348 [main] INFO ApiIntegration - Debit API Response ResponseCode : 39
+2022-10-07 15:55:52,349 [main] INFO ApiIntegration - Debit API Response Description : WrongOperationAmount
+2022-10-07 15:55:52,354 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:52,536 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:52,706 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-gYvoF34V8aBEd75oriNj_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:52,892 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:53,071 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-s3qntr5wJq20RlToHOcs_D","CreditTransactionId":"QA_Test-gYvoF34V8aBEd75oriNj_C","Amount":-1.05,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:53,244 [main] INFO ApiIntegration - Debit API Response ResponseCode : 39
+2022-10-07 15:55:53,245 [main] INFO ApiIntegration - Debit API Response Description : WrongOperationAmount
+2022-10-07 15:55:53,251 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:53,435 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:53,621 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-8TA3WZ4tR4asrwqPgCv9_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:53,816 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:53,994 [main] INFO ApiIntegration - DebitRequestBody : {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-39hyCp4dspCzbUUa4G4b_D","CreditTransactionId":"QA_Test-8TA3WZ4tR4asrwqPgCv9_C","Amount":-1.005,"BetState":2,"OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:54,168 [main] INFO ApiIntegration - Debit API Response ResponseCode : 39
+2022-10-07 15:55:54,168 [main] INFO ApiIntegration - Debit API Response Description : WrongOperationAmount
+2022-10-07 15:55:54,175 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:54,355 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:54,520 [main] INFO ApiIntegration - Balance Before Credit:9826.0
+2022-10-07 15:55:54,523 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-vFOg4iqas63DxKiwnvPB_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:54,695 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:54,867 [main] INFO ApiIntegration - Balance After Credit:9825.0
+2022-10-07 15:55:54,874 [main] INFO ApiIntegration - RollBackRequestBody : {"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-vFOg4iqas63DxKiwnvPB_C","TransactionId":"QA_Test-finLgUBDArscwVyc3svD_R","OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8Error"}
+2022-10-07 15:55:55,047 [main] INFO ApiIntegration - RollBack API Response ResponseCode : 0
+2022-10-07 15:55:55,047 [main] INFO ApiIntegration - RollBack API Response Description : null
+2022-10-07 15:55:55,052 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:55,226 [main] INFO ApiIntegration - Balance After RollBack:9826.0
+2022-10-07 15:55:55,240 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:55,410 [main] INFO ApiIntegration - Balance Before Credit:9826.0
+2022-10-07 15:55:55,415 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-Qj9s3GcLYy2qPzHNDXQA_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:55,592 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:55,762 [main] INFO ApiIntegration - Balance After Credit:9825.0
+2022-10-07 15:55:55,767 [main] INFO ApiIntegration - RollBackRequestBody : {"UserName":"testuser","GameId":-10,"RollbackTransactionId":"QA_Test-Qj9s3GcLYy2qPzHNDXQA_C","TransactionId":"QA_Test-9iZK8MR4fyz3GoIESvOA_R","OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:55,952 [main] INFO ApiIntegration - RollBack API Response ResponseCode : 0
+2022-10-07 15:55:55,953 [main] INFO ApiIntegration - RollBack API Response Description : null
+2022-10-07 15:55:55,967 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:56,147 [main] INFO ApiIntegration - Balance After RollBack:9826.0
+2022-10-07 15:55:56,159 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:56,340 [main] INFO ApiIntegration - Balance Before RollBack:9826.0
+2022-10-07 15:55:56,345 [main] INFO ApiIntegration - RollBackRequestBody : {"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-JLp3v13hhjEj5Yfbgh6o_C","TransactionId":"QA_Test-JLp3v13hhjEj5Yfbgh6o_C","OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:56,520 [main] INFO ApiIntegration - RollBack API Response ResponseCode : 0
+2022-10-07 15:55:56,520 [main] INFO ApiIntegration - RollBack API Response Description : null
+2022-10-07 15:55:56,524 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:56,705 [main] INFO ApiIntegration - Balance After RollBack:9826.0
+2022-10-07 15:55:56,734 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:56,903 [main] INFO ApiIntegration - Balance Before Credit:9826.0
+2022-10-07 15:55:56,907 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-uSP5TzcxBFpQgUHmbWb0_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:57,082 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:57,252 [main] INFO ApiIntegration - Balance After Credit:9825.0
+2022-10-07 15:55:57,256 [main] INFO ApiIntegration - RollBackRequestBody : {"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-uSP5TzcxBFpQgUHmbWb0_C","TransactionId":"QA_Test-rJxpZSYb3CkjePoij7a2_R","OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:57,442 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:57,622 [main] INFO ApiIntegration - Balance After RollBack:9826.0
+2022-10-07 15:55:57,627 [main] INFO ApiIntegration - RollBackRequestBody : {"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-uSP5TzcxBFpQgUHmbWb0_C","TransactionId":"QA_Test-QVeSxcTeYMYsyGnoXWlJ_R","OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:57,798 [main] INFO ApiIntegration - RollBack API Response ResponseCode : 0
+2022-10-07 15:55:57,798 [main] INFO ApiIntegration - RollBack API Response Description : null
+2022-10-07 15:55:57,807 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:57,976 [main] INFO ApiIntegration - Balance After RollBack:9827.0
+2022-10-07 15:55:57,986 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:58,153 [main] INFO ApiIntegration - Balance Before First Credit :9827.0
+2022-10-07 15:55:58,159 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-Ovt4pbDDvCzWE72d3BzX_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:58,331 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:58,505 [main] INFO ApiIntegration - Balance After First Credit :9826.0
+2022-10-07 15:55:58,509 [main] INFO ApiIntegration - CreditRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-iFjvb8PQRW62uRtZ7jBt_C","BetState":1,"Amount":1.0}
+2022-10-07 15:55:58,694 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:58,868 [main] INFO ApiIntegration - Balance After First Credit :9825.0
+2022-10-07 15:55:58,874 [main] INFO ApiIntegration - RollBackRequestBody : {"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-Ovt4pbDDvCzWE72d3BzX_C","TransactionId":"QA_Test-yXq68fSsiUAP3IsL0n9U_R","OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:59,048 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:59,213 [main] INFO ApiIntegration - Balance After RollBack:9826.0
+2022-10-07 15:55:59,217 [main] INFO ApiIntegration - RollBackRequestBody : {"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-iFjvb8PQRW62uRtZ7jBt_C","TransactionId":"QA_Test-yXq68fSsiUAP3IsL0n9U_R","OperationTypeId":4,"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8"}
+2022-10-07 15:55:59,385 [main] INFO ApiIntegration - RollBack API Response ResponseCode : 0
+2022-10-07 15:55:59,386 [main] INFO ApiIntegration - RollBack API Response Description : null
+2022-10-07 15:55:59,390 [main] INFO ApiIntegration - GetBalanceRequestBody : {"Token":"424490bf-4609-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-07 15:55:59,563 [main] INFO ApiIntegration - Balance After RollBack:9826.0
+2022-10-07 15:55:59,622 [main] INFO ApiIntegration - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2022-10-07 15:55:59,623 [main] INFO ApiIntegration - 
+2022-10-07 15:55:59,623 [main] INFO ApiIntegration - 
+2022-10-07 15:55:59,623 [main] INFO ApiIntegration - 

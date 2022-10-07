@@ -168,7 +168,6 @@ public class BaseTest {
         return creditResponse;
     }
 
-
     public HttpResponse<String> debitAPI(String ClientId, String CurrencyID, int GameID, String TransactionId, String CreditTransactionId,
                                          double Amount, int BetState, int OperationTypeId, String AuthorizationToken) throws UnirestException {  //if type = 1 one time else IDArrayList size
 
@@ -196,7 +195,6 @@ public class BaseTest {
                 .asString();
         return debitResponse;
     }
-
 
     public HttpResponse<String> rollBackAPI(String UserName, int GameId, String RollbackTransactionId, String TransactionId,
                                             String AuthorizationToken, int OperationTypeId) throws UnirestException {  //if type = 1 one time else IDArrayList size

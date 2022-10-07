@@ -1,9 +1,9 @@
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testCases\IqSoft_API_5_Debit_Negative_Test.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testData\IqSoft_06_APIVariables_RollBack_Request.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testData\IqSoft_04_APIVariables_Credit_Request.java
+C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testCases\IqSoft_API_6_RollBackCreditWithDebit_Positive_Test.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testCases\IqSoft_API_4_Credit_Positive_Test.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\utilities\ReadConfig.java
-C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\utilities\ReportingExtent.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testData\IqSoft_03_APIVariables_GetBalance_Request.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testData\IqSoft_06_APIVariables_RollBack_Response.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testData\IqSoft_02_APISVariables_Authorization_Response.java
@@ -11,6 +11,7 @@ C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_I
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testData\IqSoft_02_APISVariables_Authorization_Request.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testCases\IqSoft_API_4_Credit_Negative_Test.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testCases\IqSoft_API_1_OpenGame_Negative_Test.java
+C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testCases\IqSoft_API_6_RollBackDebit_Positive_Test.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testData\IqSoft_05_APIVariables_Debit_Response.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testCases\IqSoft_API_3_GetBalance_Negative_Test.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\utilities\ReportingAllure.java
@@ -19,9 +20,9 @@ C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_I
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testCases\IqSoft_API_1_OpenGame_Positive_Test.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testCases\IqSoft_API_2_Authorization_Negative_Test.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testCases\IqSoft_API_6_RollBack_Negative_Test.java
-C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testCases\IqSoft_API_6_RollBack_Positive_Test.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testData\IqSoft_03_APIVariables_GetBalance_Response.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testCases\IqSoft_API_5_Debit_Positive_Test.java
+C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testCases\IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testCases\BaseTest.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testCases\IqSoft_API_2_Authorization_Positive_Test.java
 C:\Users\Nerses Khachatryan\Desktop\IQsoft_API_Integration-OpenGame\IQsoft_API_Integration-OpenGame\IQSoftAPI_Integration_QA\src\test\java\testData\IqSoft_01_APIVariables_OpenGame_Response.java
