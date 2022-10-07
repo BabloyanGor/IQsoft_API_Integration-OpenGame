@@ -8,8 +8,6 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.json.JSONObject;
-import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -36,7 +34,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
-                creditTransactionID , betAmountCreditConfig,1);
+                creditTransactionID, betAmountCreditConfig, 1);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -44,7 +42,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         double amountAfterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
         HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitTransactionID,
-                creditTransactionID,betAmountDebitConfig,2,4, AuthorizationTokenVar+"1");
+                creditTransactionID, betAmountDebitConfig, 2, 4, AuthorizationTokenVar + "1");
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -61,12 +59,15 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         double amountAfterDebit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        softAssert.assertEquals(statusCod, 200);
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 22);
+        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 22,
+                "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "error login",
                 "Error Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
-        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit+betAmountCreditConfig);
-        softAssert.assertEquals(amountAfterCredit, amountAfterDebit);
+        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit + betAmountCreditConfig,
+                "amountBeforeCredit =  amountAfterCredit + betAmountCreditConfig" + amountBeforeCredit + " != " + amountAfterCredit + betAmountCreditConfig);
+        softAssert.assertEquals(amountAfterCredit, amountAfterDebit,
+                "amountAfterCredit = amountAfterDebit" + amountAfterCredit + " != " + amountAfterDebit);
 
         softAssert.assertAll();
 
@@ -87,7 +88,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
-                creditTransactionID , betAmountCreditConfig,1);
+                creditTransactionID, betAmountCreditConfig, 1);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -96,7 +97,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, -10, debitTransactionID,
-                creditTransactionID,betAmountDebitConfig,2,4, AuthorizationTokenVar);
+                creditTransactionID, betAmountDebitConfig, 2, 4, AuthorizationTokenVar);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -113,13 +114,15 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         double amountAfterDebit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        softAssert.assertEquals(statusCod, 200);
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 43);
+        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 43,
+                "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "game not available",
                 "Error Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
-        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit+betAmountCreditConfig);
-        softAssert.assertEquals(amountAfterCredit, amountAfterDebit);
-
+        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit + betAmountCreditConfig,
+                "amountBeforeCredit = amountAfterCredit + betAmountCreditConfig" + amountBeforeCredit + " !=  " + amountAfterCredit + "+" + betAmountCreditConfig);
+        softAssert.assertEquals(amountAfterCredit, amountAfterDebit,
+                "amountAfterCredit = amountAfterDebit " + amountAfterCredit + "  =  " + amountAfterDebit);
         softAssert.assertAll();
     }
 
@@ -140,7 +143,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
-                creditTransactionID1 , betAmountCreditConfig,1);
+                creditTransactionID1, betAmountCreditConfig, 1);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterCredit1 = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -149,7 +152,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
-                creditTransactionID2 , betAmountCreditConfig,1);
+                creditTransactionID2, betAmountCreditConfig, 1);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterCredit2 = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -159,7 +162,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
 
 
         debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitTransactionID,
-                creditTransactionID1,betAmountDebitConfig,2,4, AuthorizationTokenVar);
+                creditTransactionID1, betAmountDebitConfig, 2, 4, AuthorizationTokenVar);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterDebit1 = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -168,7 +171,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitTransactionID,
-                creditTransactionID2,betAmountDebitConfig,2,4, AuthorizationTokenVar);
+                creditTransactionID2, betAmountDebitConfig, 2, 4, AuthorizationTokenVar);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -184,14 +187,15 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         double amountAfterDebit2 = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        softAssert.assertEquals(statusCod, 200);
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 69, "ResponseCode");
+        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 69,
+                "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "ClientDocumentAlreadyExists",
                 "Error Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
 
-        softAssert.assertEquals(amountBeforeCredit1, amountAfterCredit1+betAmountCreditConfig,"amountBeforeCredit1 = amountAfterCredit1+betAmountCreditConfig");
-        softAssert.assertEquals(amountAfterCredit1, amountAfterCredit2+betAmountCreditConfig,"amountAfterCredit1 = amountAfterCredit2+betAmountCreditConfig");
-        softAssert.assertEquals(amountAfterCredit2, amountAfterDebit1-betAmountDebitConfig,"amountAfterCredit2 = amountAfterCredit2+betAmountCreditConfig");
+        softAssert.assertEquals(amountBeforeCredit1, amountAfterCredit1 + betAmountCreditConfig, "amountBeforeCredit1 = amountAfterCredit1+betAmountCreditConfig");
+        softAssert.assertEquals(amountAfterCredit1, amountAfterCredit2 + betAmountCreditConfig, "amountAfterCredit1 = amountAfterCredit2+betAmountCreditConfig");
+        softAssert.assertEquals(amountAfterCredit2, amountAfterDebit1 - betAmountDebitConfig, "amountAfterCredit2 = amountAfterCredit2+betAmountCreditConfig");
         softAssert.assertEquals(amountAfterDebit1, amountAfterDebit2);
 
         softAssert.assertAll();
@@ -210,8 +214,8 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         double amountBeforeDebit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        HttpResponse<String> responseDebit = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig,debitTransactionID,
-                creditTransactionID , betAmountDebitConfig,2,4, AuthorizationTokenVar);
+        HttpResponse<String> responseDebit = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitTransactionID,
+                creditTransactionID, betAmountDebitConfig, 2, 4, AuthorizationTokenVar);
         Unirest.shutdown();
         statusCod = responseDebit.getStatus();
         jsonObjectBody = new JSONObject(responseDebit.getBody());
@@ -228,8 +232,9 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         double amountAfterDebit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        softAssert.assertEquals(statusCod, 200);
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 50);
+        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 50,
+                "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "CanNotConnectCreditAndDebit",
                 "Error Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
         softAssert.assertEquals(amountBeforeDebit, amountAfterDebit);
@@ -252,7 +257,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
-                creditTransactionID , betAmountCreditConfig,1);
+                creditTransactionID, betAmountCreditConfig, 1);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -261,7 +266,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitTransactionID,
-                creditTransactionID,errorAmount,2,4, AuthorizationTokenVar);
+                creditTransactionID, errorAmount, 2, 4, AuthorizationTokenVar);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -278,11 +283,12 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         double amountAfterDebit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        softAssert.assertEquals(statusCod, 200);
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 39);
+        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 39,
+                "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "WrongOperationAmount",
                 "Error Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
-        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit+betAmountCreditConfig);
+        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit + betAmountCreditConfig);
         softAssert.assertEquals(amountAfterCredit, amountAfterDebit);
 
         softAssert.assertAll();
