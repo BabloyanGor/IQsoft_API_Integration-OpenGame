@@ -7,13 +7,10 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.json.JSONObject;
-import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 import java.io.IOException;
-import java.util.ArrayList;
+
 
 public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
     JSONObject jsonObjectBody;
@@ -123,8 +120,8 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
         softAssert.assertEquals(amountBeforeCredit, amountAfterCredit + betAmountCreditConfig,
                 "amountBeforeCredit: " + amountBeforeCredit + " = amountAfterCredit : " + amountAfterCredit+ " + betAmountCreditConfig : " + betAmountCreditConfig);
-        softAssert.assertEquals(amountAfterCredit, amountAfterRollBack,
-                "amountAfterCredit: " + amountAfterCredit + " = amountAfterRollBack : " + amountAfterRollBack);
+        softAssert.assertEquals(amountAfterRollBack , amountAfterCredit,
+                "amountAfterRollBack : " + amountAfterRollBack + " = amountAfterCredit: " + amountAfterCredit );
         softAssert.assertAll();
 
     }
@@ -133,7 +130,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
     @Test(priority = 3)
     @Description("Verify RollBack API_s response with Invalid TransactionID")
     @Severity(SeverityLevel.BLOCKER)
-    public void RollBackAPIValidateResponseUsingInvalidTransactionID() throws UnirestException, IOException {
+    public void RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit() throws UnirestException, IOException {
         String creditTransactionID = randomCreditTransactionID();
         SoftAssert softAssert = new SoftAssert();
 
@@ -173,7 +170,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
     @Test(priority = 4)
     @Description("Verify RollBack API_s response using Same RollBackTransactionID twice ")
     @Severity(SeverityLevel.BLOCKER)
-    public void RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice() throws UnirestException, IOException {
+    public void RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice() throws UnirestException, IOException {
         String creditTransactionID = randomCreditTransactionID();
         String rollBackTransactionID1 = randomRollBackTransactionID();
         String rollBackTransactionID2 = randomRollBackTransactionID();
@@ -239,7 +236,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
     @Test(priority = 5)
     @Description("Verify RollBack API_s response using Same TransactionID twice ")
     @Severity(SeverityLevel.BLOCKER)
-    public void RollBackAPIValidateResponseUsingSameTransactionIDTwice() throws UnirestException, IOException {
+    public void RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice() throws UnirestException, IOException {
         String creditTransactionID1 = randomCreditTransactionID();
         String creditTransactionID2 = randomCreditTransactionID();
         String rollBackTransactionID = randomRollBackTransactionID();
@@ -301,7 +298,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         logger.info("Balance After RollBack:" + amountAfterRollBack2);
 
         softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
-        
+
         softAssert.assertEquals(amountBeforeCredit1, amountAfterCredit1 + betAmountCreditConfig,
                 "amountBeforeCredit1: " + amountBeforeCredit1 + " = amountAfterCredit1 : " + amountAfterCredit1 + " + betAmountCreditConfig : " + betAmountCreditConfig);
         softAssert.assertEquals(amountAfterCredit1, amountAfterCredit2 + betAmountCreditConfig,

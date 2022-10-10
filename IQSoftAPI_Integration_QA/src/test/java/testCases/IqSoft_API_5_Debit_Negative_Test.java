@@ -13,7 +13,6 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
     JSONObject jsonObjectBody;
@@ -115,6 +114,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
+
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 43,
                 "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "game not available",
@@ -237,7 +237,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
                 "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "CanNotConnectCreditAndDebit",
                 "Error Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
-        softAssert.assertEquals(amountBeforeDebit, amountAfterDebit);
+        softAssert.assertEquals(amountBeforeDebit, amountAfterDebit, "amountBeforeDebit: " + amountBeforeDebit + " = amountAfterDebit: " + amountAfterDebit);
 
         softAssert.assertAll();
 

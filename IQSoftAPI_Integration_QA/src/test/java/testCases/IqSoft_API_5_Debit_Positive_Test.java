@@ -83,10 +83,14 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest{
                 "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "null",
                 "Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
-        softAssert.assertNotEquals(iqSoft_05_apiVariables_debit_response.getBetId(), "null");
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getClientId(), iqSoft_05_apiVariables_debit_request.getClientId());
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getCurrencyId(), currencyIDConfig);
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getCurrencyId().length(), 3);
+        softAssert.assertNotEquals(iqSoft_05_apiVariables_debit_response.getBetId(), "null",
+                "BetID: " + iqSoft_05_apiVariables_debit_response.getBetId());
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getClientId(), iqSoft_05_apiVariables_debit_request.getClientId(),
+                "Response ClientId: " + iqSoft_05_apiVariables_debit_response.getClientId()+ " = RequestClientId: " + iqSoft_05_apiVariables_debit_request.getClientId());
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getCurrencyId(), currencyIDConfig,
+                "CurrencyId: " + iqSoft_05_apiVariables_debit_response.getCurrencyId() + " = currencyIDConfig: "+ currencyIDConfig);
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getCurrencyId().length(), 3,
+                "CurrencyId Length: " + iqSoft_05_apiVariables_debit_response.getCurrencyId());
         softAssert.assertEquals(betAmountDebitConfig , afterDebit-beforeDebit);
 
         softAssert.assertAll();
