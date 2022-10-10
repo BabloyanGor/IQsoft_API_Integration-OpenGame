@@ -69,7 +69,7 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest{
     @Severity(SeverityLevel.BLOCKER)
     public void DebitAPIValidateStatusCod() {
         logger.info("Debit API Status Cod is Equal: " + statusCod);
-        Assert.assertEquals(200, statusCod);
+        Assert.assertEquals(200, statusCod, "StatusCod: " + statusCod);
     }
 
 
@@ -79,8 +79,10 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest{
     public void DebitAPIValidatePositiveResponse() {
         SoftAssert softAssert = new SoftAssert();
 
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 0);
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "null","Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 0,
+                "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "null",
+                "Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
         softAssert.assertNotEquals(iqSoft_05_apiVariables_debit_response.getBetId(), "null");
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getClientId(), iqSoft_05_apiVariables_debit_request.getClientId());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getCurrencyId(), currencyIDConfig);

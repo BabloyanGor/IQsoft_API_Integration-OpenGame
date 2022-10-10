@@ -79,7 +79,7 @@ public class IqSoft_API_6_RollBackCreditWithDebit_Positive_Test extends BaseTest
     @Severity(SeverityLevel.BLOCKER)
     public void RollBackAPIValidateStatusCod() {
         logger.info("RollBackCredit API Status Cod is Equal: " + statusCod);
-        Assert.assertEquals(200, statusCod);
+        Assert.assertEquals(200, statusCod, "StatusCod: " + statusCod);
     }
 
     @Test(priority = 2, dependsOnMethods = {"RollBackAPIValidateStatusCod"})
@@ -87,8 +87,10 @@ public class IqSoft_API_6_RollBackCreditWithDebit_Positive_Test extends BaseTest
     @Severity(SeverityLevel.BLOCKER)
     public void RollBackAPIValidatePositiveResponse() {
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(iqSoft_06_apiVariables_rollBack_response.getResponseCode(), 0);
-        softAssert.assertEquals(iqSoft_06_apiVariables_rollBack_response.getDescription(), "null");
+        softAssert.assertEquals(iqSoft_06_apiVariables_rollBack_response.getResponseCode(), 0,
+                "ResponseCode: " + iqSoft_06_apiVariables_rollBack_response.getResponseCode());
+        softAssert.assertEquals(iqSoft_06_apiVariables_rollBack_response.getDescription(), "null",
+                "Description: " + iqSoft_06_apiVariables_rollBack_response.getDescription());
         softAssert.assertAll();
     }
 
@@ -98,9 +100,12 @@ public class IqSoft_API_6_RollBackCreditWithDebit_Positive_Test extends BaseTest
     public void RollBackAPIValidatePositiveResponseBalanceCorrection() {
         SoftAssert softAssert = new SoftAssert();
 
-        softAssert.assertEquals(afterCredit, beforeAll - betAmountCreditConfig, "Verify Balance After Credit ");
-        softAssert.assertEquals(afterDebit,  afterCredit + betAmountDebitConfig, "Verify Balance After Debit ");
-        softAssert.assertEquals(afterRollBackCredit, beforeAll , "Verify Balance After RollBackCredit ");
+        softAssert.assertEquals(afterCredit, beforeAll - betAmountCreditConfig,
+                "afterCredit: "+ afterCredit + " = beforeAll: " + beforeAll + " - betAmountCreditConfig: "+ betAmountCreditConfig);
+        softAssert.assertEquals(afterDebit,  afterCredit + betAmountDebitConfig,
+                "afterDebit: "+ afterDebit + " = afterCredit: " + afterCredit + " + betAmountDebitConfig: "+ betAmountDebitConfig);
+        softAssert.assertEquals(afterRollBackCredit, beforeAll,
+                "afterRollBackCredit: "+ afterRollBackCredit + " = beforeAll: " + beforeAll );
 
         softAssert.assertAll();
     }

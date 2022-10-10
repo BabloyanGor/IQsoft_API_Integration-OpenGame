@@ -147,7 +147,8 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
                 "ResponseCode: " + iqSoft_04_apiVariables_credit_response.getResponseCode());
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "game not available",
                 "Error Description: " + iqSoft_04_apiVariables_credit_response.getDescription());
-        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit);
+        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit,
+                "Amount BeforeCredit: " + amountBeforeCredit + "Amount AfterCredit: " + amountAfterCredit);
 
         softAssert.assertAll();
     }
@@ -188,7 +189,7 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit.getBody());
-        double amountAfterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        double amountAfterCredit3 = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
         softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
@@ -197,8 +198,10 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
                 "ResponseCode: " + iqSoft_04_apiVariables_credit_response.getResponseCode());
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "ClientDocumentAlreadyExists",
                 "Error Description: " + iqSoft_04_apiVariables_credit_response.getDescription());
-        softAssert.assertEquals(amountBeforeCredit1, amountBeforeCredit2-betAmountCreditConfig);
-        softAssert.assertEquals(amountBeforeCredit2, amountAfterCredit);
+        softAssert.assertEquals(amountBeforeCredit1, amountBeforeCredit2-betAmountCreditConfig,
+                "AmountBeforeCredit1: " + amountBeforeCredit1 + " = amountBeforeCredit2: "+amountBeforeCredit2+" - betAmountCreditConfig: " + betAmountCreditConfig);
+        softAssert.assertEquals(amountBeforeCredit2, amountAfterCredit3,
+                "AmountBeforeCredit2: " + amountBeforeCredit2 + " = amountBeforeCredit3 : "+amountAfterCredit3);
 
 
     }
@@ -244,14 +247,15 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
                 "ResponseCode: " + iqSoft_04_apiVariables_credit_response.getResponseCode());
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "balance less then bet Amount",
                 "Error Description: " + iqSoft_04_apiVariables_credit_response.getDescription());
-        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit);
+        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit,
+                "AmountBeforeCredit: " + amountBeforeCredit + " = amountAfterCredit : "+amountAfterCredit);
 
         softAssert.assertAll();
 
     }
 
 
-    @Test(priority = 5, dataProvider = "invalidAmountData")
+    @Test(priority = 6, dataProvider = "invalidAmountData")
     @Description("Verify Credit API_s response with invalid Amount")
     @Severity(SeverityLevel.BLOCKER)
     public void CreditAPIValidateResponseWithInvalidAmount(double errAmount) throws UnirestException, IOException {
@@ -292,7 +296,8 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
                 "ResponseCode: " + iqSoft_04_apiVariables_credit_response.getResponseCode());
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "WrongOperationAmount",
                 "Error Description: " + iqSoft_04_apiVariables_credit_response.getDescription());
-        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit);
+        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit,
+                "AmountBeforeCredit: " + amountBeforeCredit + " = amountAfterCredit : "+amountAfterCredit);
 
         softAssert.assertAll();
 
