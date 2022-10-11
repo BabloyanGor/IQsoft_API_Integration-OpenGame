@@ -1,0 +1,128 @@
+{
+  "uid" : "4bd9fb1adf0c7d19",
+  "name" : "GetBalanceAPIValidatePositiveResponse",
+  "fullName" : "testCases.IqSoft_API_3_GetBalance_Positive_Test.GetBalanceAPIValidatePositiveResponse",
+  "historyId" : "888492858dbacec93019f41bd2fa48a7",
+  "time" : {
+    "start" : 1665476249141,
+    "stop" : 1665476249145,
+    "duration" : 4
+  },
+  "description" : "Verify GetBalance API_s Validate Positive Response",
+  "descriptionHtml" : "<p>Verify GetBalance API_s Validate Positive Response</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665476245177,
+      "stop" : 1665476245246,
+      "duration" : 69
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1665476248650,
+      "stop" : 1665476249131,
+      "duration" : 481
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c23652d3dc04049c",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "c23652d3dc04049c.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "b3884ffe07001b79",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "b3884ffe07001b79.txt",
+      "type" : "text/plain",
+      "size" : 82
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665476276076,
+      "stop" : 1665476276077,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_3_GetBalance_Positive_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_3_GetBalance_Positive_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "GetBalanceAPIValidatePositiveResponse"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_3_GetBalance_Positive_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "10040@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4bd9fb1adf0c7d19.json",
+  "parameterValues" : [ ]
+}

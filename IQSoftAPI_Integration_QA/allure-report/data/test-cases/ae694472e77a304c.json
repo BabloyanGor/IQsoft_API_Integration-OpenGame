@@ -1,0 +1,153 @@
+{
+  "uid" : "ae694472e77a304c",
+  "name" : "CreditAPIValidateResponseWithInvalidAmount",
+  "fullName" : "testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidAmount",
+  "historyId" : "ef0781f2acd147b7c22eacbbc1b61a94",
+  "time" : {
+    "start" : 1665476260954,
+    "stop" : 1665476261484,
+    "duration" : 530
+  },
+  "description" : "Verify Credit API_s response with invalid Amount",
+  "descriptionHtml" : "<p>Verify Credit API_s response with invalid Amount</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665476245177,
+      "stop" : 1665476245246,
+      "duration" : 69
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify Credit API_s response with invalid Amount",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "47cf5938c7cca33d",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "47cf5938c7cca33d.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "45baf60af78dc73b",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "45baf60af78dc73b.txt",
+      "type" : "text/plain",
+      "size" : 82
+    }, {
+      "uid" : "78aa15ae73fd61",
+      "name" : "CreditAPI RequestBody",
+      "source" : "78aa15ae73fd61.txt",
+      "type" : "text/plain",
+      "size" : 179
+    }, {
+      "uid" : "ac1d6ae34d7d1a0d",
+      "name" : "CreditAPI ResponseBody",
+      "source" : "ac1d6ae34d7d1a0d.txt",
+      "type" : "text/plain",
+      "size" : 58
+    }, {
+      "uid" : "2c36a2f7a45e823a",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "2c36a2f7a45e823a.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "98dd8212c66f600c",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "98dd8212c66f600c.txt",
+      "type" : "text/plain",
+      "size" : 82
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 6,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665476276076,
+      "stop" : 1665476276077,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "CreditAPIValidateResponseWithInvalidAmount"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "10040@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "-1.05"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ae694472e77a304c.json",
+  "parameterValues" : [ "-1.05" ]
+}

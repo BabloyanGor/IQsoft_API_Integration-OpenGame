@@ -23,14 +23,10 @@ public class IqSoft_API_1_OpenGame_Positive_Test extends BaseTest {
     @BeforeClass
     public void setUpTestCase() throws UnirestException, IOException {
 
-//        Allure.addAttachment("OpenGameAPI RequestBody", openGameRequestBody);
-
         HttpResponse<String> openGameResponse = openGameAPI(partnerIdConfig, gameIdConfig, sessionTokenConfig, languageIdConst, isForMobileConst, domainConfig);
         Unirest.shutdown();
         statusCod = openGameResponse.getStatus();
         jsonObjectBody = new JSONObject(openGameResponse.getBody());
-
-//        Allure.addAttachment("OpenGameAPI ResponseBody",jsonObjectBody.toString());
 
 
 

@@ -1,1 +1,0 @@
-{"Description":null,"ResponseCode":"0","OperationItems":{"BetId":1385,"Balance":9684.0,"ClientId":"dazzabet10130","CurrencyId":"TND"}}
