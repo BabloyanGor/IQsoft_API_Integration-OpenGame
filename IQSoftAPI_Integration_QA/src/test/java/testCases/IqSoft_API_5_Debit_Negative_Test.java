@@ -75,7 +75,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
 
     @Test(priority = 2)
     @Description("Verify Debit API_s response with Invalid ProductID")
-    @Severity(SeverityLevel.BLOCKER)
+    @Severity(SeverityLevel.NORMAL)
     public void DebitAPIValidateResponseUsingInvalidProductID() throws UnirestException, IOException {
         String creditTransactionID = randomCreditTransactionID();
         String debitTransactionID = randomDebitTransactionID();

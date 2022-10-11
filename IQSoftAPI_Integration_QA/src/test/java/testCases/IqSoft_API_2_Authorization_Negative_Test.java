@@ -81,7 +81,7 @@ public class IqSoft_API_2_Authorization_Negative_Test extends  BaseTest{
 
     @Test(priority =3)
     @Description("Verify Authorization API_s response with invalid gameIdConfig")
-    @Severity(SeverityLevel.BLOCKER)
+    @Severity(SeverityLevel.NORMAL)
     public void AuthorizationAPIValidateResponseWithInvalidProductID() throws UnirestException, IOException {
 
         SoftAssert softAssert = new SoftAssert();

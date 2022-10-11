@@ -50,7 +50,7 @@ public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
     }
 
     @Test(priority = 2)
-    @Description("Verify OpenGame API_s response with invalid Token ")
+    @Description("Verify OpenGame API_s response with Expired Token ")
     @Severity(SeverityLevel.BLOCKER)
     public void openGameAPIValidateResponseWithExpiredToken() throws UnirestException, IOException {
 
@@ -149,7 +149,7 @@ public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
 
     @Test(priority = 5)
     @Description("Verify OpenGame API_s response with invalid Domain")
-    @Severity(SeverityLevel.NORMAL)
+    @Severity(SeverityLevel.BLOCKER)
     public void openGameAPIValidateResponseWithInvalidDomain() throws UnirestException, IOException {
 
         SoftAssert softAssert = new SoftAssert();

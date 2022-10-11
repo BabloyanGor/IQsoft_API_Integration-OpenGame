@@ -74,7 +74,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
 
     @Test(priority = 2)
     @Description("Verify RollBack API_s response with Invalid ProductID")
-    @Severity(SeverityLevel.BLOCKER)
+    @Severity(SeverityLevel.NORMAL)
     public void RollBackAPIValidateResponseUsingInvalidProductID() throws UnirestException, IOException {
         String creditTransactionID = randomCreditTransactionID();
         String debitTransactionID = randomDebitTransactionID();
@@ -132,6 +132,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
     @Severity(SeverityLevel.BLOCKER)
     public void RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit() throws UnirestException, IOException {
         String creditTransactionID = randomCreditTransactionID();
+        String rollBackTransactionID = randomRollBackTransactionID();
         SoftAssert softAssert = new SoftAssert();
 
         HttpResponse<String> responseGetBalanceBeforeRollBack = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -140,7 +141,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         Unirest.shutdown();
         logger.info("Balance Before RollBack:" + amountBeforeRollBack);
 
-        HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, creditTransactionID, creditTransactionID, AuthorizationTokenVar, 4);
+        HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, creditTransactionID, rollBackTransactionID, AuthorizationTokenVar, 4);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());

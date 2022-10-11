@@ -51,6 +51,7 @@ public class IqSoft_API_3_GetBalance_Positive_Test extends BaseTest {
 
     @Test(priority = 2, dependsOnMethods = {"GetBalanceAPIValidateStatusCod"})
     @Description("Verify GetBalance API_s Validate Positive Response")
+    @Severity(SeverityLevel.BLOCKER)
     public void GetBalanceAPIValidatePositiveResponse() {
         SoftAssert softAssert = new SoftAssert();
 

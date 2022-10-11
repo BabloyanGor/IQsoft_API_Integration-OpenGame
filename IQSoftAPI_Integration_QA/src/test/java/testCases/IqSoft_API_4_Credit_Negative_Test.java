@@ -109,7 +109,7 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
 
     @Test(priority = 3)
     @Description("Verify Credit API_s response with invalid ProductID")
-    @Severity(SeverityLevel.BLOCKER)
+    @Severity(SeverityLevel.NORMAL)
     public void CreditAPIValidateResponseWithInvalidProductID() throws UnirestException, IOException {
         SoftAssert softAssert = new SoftAssert();
 
