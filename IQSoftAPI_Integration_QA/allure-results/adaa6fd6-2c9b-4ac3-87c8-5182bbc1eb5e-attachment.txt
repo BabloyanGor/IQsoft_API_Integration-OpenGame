@@ -1,1 +1,0 @@
-{"CurrencyId":"EUR","Description":null,"ResponseCode":0,"AvailableBalance":9584.0}  ResponseTime 172 ms

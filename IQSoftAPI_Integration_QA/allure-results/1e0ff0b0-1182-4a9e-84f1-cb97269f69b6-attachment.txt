@@ -1,1 +1,0 @@
-{"UserName":"testuser","GameId":-10,"RollbackTransactionId":"QA_Test-KcXaB2fExyhM7mWZZD5D_C","TransactionId":"QA_Test-45GopawmTpjLIxY7hpMU_R","OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8"}
