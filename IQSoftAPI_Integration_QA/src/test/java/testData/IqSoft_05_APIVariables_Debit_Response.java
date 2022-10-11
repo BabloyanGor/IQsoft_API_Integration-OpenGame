@@ -13,6 +13,9 @@ public class IqSoft_05_APIVariables_Debit_Response {
     @Expose
     private String Description;
 
+
+
+
     @SerializedName("BetId")
     @Expose
     private String BetId;
@@ -46,6 +49,10 @@ public class IqSoft_05_APIVariables_Debit_Response {
     public void setDescription(String description) {
         Description = description;
     }
+
+
+
+
 
     public String getBetId() {
         return BetId;

@@ -9,11 +9,30 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "25ea569a792ed31a",
+      "uid" : "cb147ce2632a8828",
       "status" : "passed",
       "time" : {
-        "start" : 1665476253201,
-        "stop" : 1665476253202,
+        "start" : 1665488788762,
+        "stop" : 1665488788763,
+        "duration" : 1
+      }
+    } ]
+  },
+  "a186140269c7884522bc37fb2f5116bb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "752d7af77b9d30a0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665488787799,
+        "stop" : 1665488787800,
         "duration" : 1
       }
     } ]
@@ -28,70 +47,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9149b20a8d968daf",
+      "uid" : "a90d70657ef9b185",
       "status" : "failed",
       "statusDetails" : "The following asserts failed:\n\tResponseCode 21 expected [22] but found [21],\n\tError Description: An error occurred while updating the entries. See the inner exception for details. expected [ClientNotFound ] but found [An error occurred while updating the entries. See the inner exception for details.]",
       "time" : {
-        "start" : 1665476247172,
-        "stop" : 1665476247453,
-        "duration" : 281
-      }
-    } ]
-  },
-  "a186140269c7884522bc37fb2f5116bb" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "c377c2f3836ede18",
-      "status" : "passed",
-      "time" : {
-        "start" : 1665476252240,
-        "stop" : 1665476252241,
-        "duration" : 1
-      }
-    } ]
-  },
-  "a08545ca10cc27a665d782cd6f799f02" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "9882a83203780e3c",
-      "status" : "passed",
-      "time" : {
-        "start" : 1665476267978,
-        "stop" : 1665476268901,
-        "duration" : 923
-      }
-    } ]
-  },
-  "3235f64a2a311e7a1d0b72f79830a428" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "a3b3ec8d7aae0a88",
-      "status" : "passed",
-      "time" : {
-        "start" : 1665476267041,
-        "stop" : 1665476267969,
-        "duration" : 928
+        "start" : 1665488782889,
+        "stop" : 1665488783186,
+        "duration" : 297
       }
     } ]
   },
@@ -105,12 +67,50 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ea4ee7496865daee",
+      "uid" : "4ff117413d3f9e63",
       "status" : "passed",
       "time" : {
-        "start" : 1665476250048,
-        "stop" : 1665476250049,
-        "duration" : 1
+        "start" : 1665488785839,
+        "stop" : 1665488785839,
+        "duration" : 0
+      }
+    } ]
+  },
+  "a08545ca10cc27a665d782cd6f799f02" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6dfd90724976e95e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665488803645,
+        "stop" : 1665488804578,
+        "duration" : 933
+      }
+    } ]
+  },
+  "3235f64a2a311e7a1d0b72f79830a428" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fc187e1efee9e8dc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665488802726,
+        "stop" : 1665488803643,
+        "duration" : 917
       }
     } ]
   },
@@ -124,13 +124,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "94a63c32fe63fcd3",
+      "uid" : "31ad7b68d6d9c17a",
       "status" : "failed",
       "statusDetails" : "The following asserts failed:\n\tError Description: game not avaible expected [game not available] but found [game not avaible]",
       "time" : {
-        "start" : 1665476257210,
-        "stop" : 1665476257777,
-        "duration" : 567
+        "start" : 1665488792790,
+        "stop" : 1665488793356,
+        "duration" : 566
       }
     } ]
   },
@@ -144,12 +144,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8bf5215a85d518a0",
+      "uid" : "f9fc815dfb32d338",
       "status" : "passed",
       "time" : {
-        "start" : 1665476272562,
-        "stop" : 1665476273097,
-        "duration" : 535
+        "start" : 1665488808346,
+        "stop" : 1665488808892,
+        "duration" : 546
       }
     } ]
   },
@@ -163,32 +163,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "598c5441cef9d09c",
+      "uid" : "9235ce6eea56a95c",
       "status" : "passed",
       "time" : {
-        "start" : 1665476250042,
-        "stop" : 1665476250043,
+        "start" : 1665488785827,
+        "stop" : 1665488785828,
         "duration" : 1
-      }
-    } ]
-  },
-  "f9a297d26d8349f3da5988dcd89ffa22" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "a605c64538f7deb2",
-      "status" : "failed",
-      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [22] but found [21],\n\tError Description: An error occurred while updating the entries. See the inner exception for details. expected [Client not found] but found [An error occurred while updating the entries. See the inner exception for details.]",
-      "time" : {
-        "start" : 1665476246816,
-        "stop" : 1665476247168,
-        "duration" : 352
       }
     } ]
   },
@@ -202,12 +182,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "99a58c1029f49244",
+      "uid" : "6db64d947360ce30",
       "status" : "passed",
       "time" : {
-        "start" : 1665476259835,
-        "stop" : 1665476260371,
-        "duration" : 536
+        "start" : 1665488795437,
+        "stop" : 1665488795987,
+        "duration" : 550
+      }
+    } ]
+  },
+  "f9a297d26d8349f3da5988dcd89ffa22" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e3ec675f659aad90",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [22] but found [21],\n\tError Description: An error occurred while updating the entries. See the inner exception for details. expected [Client not found] but found [An error occurred while updating the entries. See the inner exception for details.]",
+      "time" : {
+        "start" : 1665488782477,
+        "stop" : 1665488782880,
+        "duration" : 403
       }
     } ]
   },
@@ -221,13 +221,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ec8379ba1693fe95",
+      "uid" : "7736f3bf252bc37e",
       "status" : "failed",
       "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [39] but found [0],\n\tError Description: null expected [WrongOperationAmount] but found [null]",
       "time" : {
-        "start" : 1665476259270,
-        "stop" : 1665476259828,
-        "duration" : 558
+        "start" : 1665488794888,
+        "stop" : 1665488795432,
+        "duration" : 544
       }
     } ]
   },
@@ -241,13 +241,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c775d375a9b95a1d",
+      "uid" : "71173d08595d8ace",
       "status" : "failed",
       "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [43] but found [0],\n\tError Description: null expected [ProductNotFound] but found [null]",
       "time" : {
-        "start" : 1665476254977,
-        "stop" : 1665476255174,
-        "duration" : 197
+        "start" : 1665488790505,
+        "stop" : 1665488790695,
+        "duration" : 190
       }
     } ]
   },
@@ -261,13 +261,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a5bac268c4b5eeed",
+      "uid" : "228ad92ca18b44cd",
       "status" : "failed",
-      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [29] but found [0],\n\tError Description: null expected [SessionExpired] but found [null],\n\tamountBeforeCredit = amountAfterCredit: 9664.5 = 9663.5 expected [9663.5] but found [9664.5]",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [29] but found [0],\n\tError Description: null expected [SessionExpired] but found [null],\n\tamountBeforeCredit = amountAfterCredit: 9614.0 = 9613.0 expected [9613.0] but found [9614.0]",
       "time" : {
-        "start" : 1665476256124,
-        "stop" : 1665476256668,
-        "duration" : 544
+        "start" : 1665488791649,
+        "stop" : 1665488792214,
+        "duration" : 565
       }
     } ]
   },
@@ -281,13 +281,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "eb14c8dfb986b119",
+      "uid" : "f99b0c635f7dd2ec",
       "status" : "failed",
-      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [50] but found [0],\n\tError Description: null expected [CanNotConnectCreditAndDebit] but found [null],\n\tamountBeforeDebit: 9660.5 = amountAfterDebit: 9662.5 expected [9662.5] but found [9660.5]",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [50] but found [0],\n\tError Description: null expected [CanNotConnectCreditAndDebit] but found [null],\n\tamountBeforeDebit: 9610.0 = amountAfterDebit: 9612.0 expected [9612.0] but found [9610.0]",
       "time" : {
-        "start" : 1665476265520,
-        "stop" : 1665476266089,
-        "duration" : 569
+        "start" : 1665488801237,
+        "stop" : 1665488801784,
+        "duration" : 547
       }
     } ]
   },
@@ -301,12 +301,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c00dd61c673ba144",
+      "uid" : "d521a224df690ff4",
       "status" : "passed",
       "time" : {
-        "start" : 1665476261486,
-        "stop" : 1665476262014,
-        "duration" : 528
+        "start" : 1665488797148,
+        "stop" : 1665488797695,
+        "duration" : 547
       }
     } ]
   },
@@ -320,12 +320,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ae694472e77a304c",
+      "uid" : "8b2732ba52b0b75e",
       "status" : "passed",
       "time" : {
-        "start" : 1665476260954,
-        "stop" : 1665476261484,
-        "duration" : 530
+        "start" : 1665488796592,
+        "stop" : 1665488797145,
+        "duration" : 553
       }
     } ]
   },
@@ -339,12 +339,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "fa1eac395e07cb17",
+      "uid" : "65fc2c2eca5051fb",
       "status" : "passed",
       "time" : {
-        "start" : 1665476269799,
-        "stop" : 1665476270700,
-        "duration" : 901
+        "start" : 1665488805506,
+        "stop" : 1665488806450,
+        "duration" : 944
       }
     } ]
   },
@@ -358,13 +358,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "dbe5d8222570cb46",
+      "uid" : "2fe5c1a561af7b9",
       "status" : "failed",
       "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [69] but found [0],\n\tError Description: null expected [ClientDocumentAlreadyExists] but found [null]",
       "time" : {
-        "start" : 1665476263884,
-        "stop" : 1665476265517,
-        "duration" : 1633
+        "start" : 1665488799595,
+        "stop" : 1665488801234,
+        "duration" : 1639
       }
     } ]
   },
@@ -378,12 +378,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "87e6c03cf25ea318",
+      "uid" : "3e1c34d24e735c63",
       "status" : "passed",
       "time" : {
-        "start" : 1665476250916,
-        "stop" : 1665476250916,
-        "duration" : 0
+        "start" : 1665488786430,
+        "stop" : 1665488786438,
+        "duration" : 8
       }
     } ]
   },
@@ -397,12 +397,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3341ee2e09321a11",
+      "uid" : "eda5f7123151ab4b",
       "status" : "passed",
       "time" : {
-        "start" : 1665476260374,
-        "stop" : 1665476260951,
-        "duration" : 577
+        "start" : 1665488795990,
+        "stop" : 1665488796588,
+        "duration" : 598
       }
     } ]
   },
@@ -416,12 +416,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5301aca435c391d5",
+      "uid" : "e48b522ae85c908a",
       "status" : "passed",
       "time" : {
-        "start" : 1665476252244,
-        "stop" : 1665476252245,
-        "duration" : 1
+        "start" : 1665488787805,
+        "stop" : 1665488787805,
+        "duration" : 0
       }
     } ]
   },
@@ -435,32 +435,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "364f9ed42593ecde",
+      "uid" : "7708ff4a3d4f46e0",
       "status" : "failed",
-      "statusDetails" : "The following asserts failed:\n\tamountAfterCredit: 9656.5 = amountAfterRollBack : 9657.5 expected [9657.5] but found [9656.5]",
+      "statusDetails" : "The following asserts failed:\n\tamountAfterCredit: 9606.0 = amountAfterRollBack : 9607.0 expected [9607.0] but found [9606.0]",
       "time" : {
-        "start" : 1665476270704,
-        "stop" : 1665476271636,
-        "duration" : 932
-      }
-    } ]
-  },
-  "d8fe06a2543f4c93ead6231af5e5b7b6" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "3b042e041421ef1b",
-      "status" : "passed",
-      "time" : {
-        "start" : 1665476262017,
-        "stop" : 1665476262934,
-        "duration" : 917
+        "start" : 1665488806454,
+        "stop" : 1665488807392,
+        "duration" : 938
       }
     } ]
   },
@@ -474,12 +455,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "85fb70a41e3f7d81",
+      "uid" : "f7f0d2df2de66803",
       "status" : "passed",
       "time" : {
-        "start" : 1665476274395,
-        "stop" : 1665476276002,
-        "duration" : 1607
+        "start" : 1665488810199,
+        "stop" : 1665488811810,
+        "duration" : 1611
+      }
+    } ]
+  },
+  "d8fe06a2543f4c93ead6231af5e5b7b6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5d886df51db15c10",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665488797700,
+        "stop" : 1665488798645,
+        "duration" : 945
       }
     } ]
   },
@@ -493,32 +493,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "24149234273ef572",
+      "uid" : "3ee78058291d75f1",
       "status" : "failed",
       "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [29] but found [0],\n\tError Description: null expected [SessionExpired] but found [null]",
       "time" : {
-        "start" : 1665476255179,
-        "stop" : 1665476255379,
-        "duration" : 200
-      }
-    } ]
-  },
-  "dc96eaf72e3610208c3d99e1a1b80c8a" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "2e9785b0ec2a3592",
-      "status" : "passed",
-      "time" : {
-        "start" : 1665476246441,
-        "stop" : 1665476246450,
-        "duration" : 9
+        "start" : 1665488790703,
+        "stop" : 1665488790886,
+        "duration" : 183
       }
     } ]
   },
@@ -532,13 +513,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d120b1251af4ed9d",
+      "uid" : "b090baa3e5ffc566",
       "status" : "failed",
       "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [0] but found [21],\n\tError Description: An error occurred while updating the entries. See the inner exception for details. expected [null] but found [An error occurred while updating the entries. See the inner exception for details.],\n\tResponseObject: null did not expect [null] but found [null],\n\tResponseObject Don't Contain http:// expected [true] but found [false]",
       "time" : {
-        "start" : 1665476246511,
-        "stop" : 1665476246522,
-        "duration" : 11
+        "start" : 1665488782154,
+        "stop" : 1665488782175,
+        "duration" : 21
+      }
+    } ]
+  },
+  "dc96eaf72e3610208c3d99e1a1b80c8a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "65ad890e16e3f8be",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665488782066,
+        "stop" : 1665488782076,
+        "duration" : 10
       }
     } ]
   },
@@ -552,12 +552,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6ce605fb80881847",
+      "uid" : "3d45977ecab0fbf9",
       "status" : "passed",
       "time" : {
-        "start" : 1665476254801,
-        "stop" : 1665476254973,
-        "duration" : 172
+        "start" : 1665488790297,
+        "stop" : 1665488790496,
+        "duration" : 199
       }
     } ]
   },
@@ -571,11 +571,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6ae8f98d41a06729",
+      "uid" : "8b7de0e6031d2ca2",
       "status" : "passed",
       "time" : {
-        "start" : 1665476252232,
-        "stop" : 1665476252233,
+        "start" : 1665488787789,
+        "stop" : 1665488787790,
         "duration" : 1
       }
     } ]
@@ -590,12 +590,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8831c522575f0ce1",
+      "uid" : "731ec4157ab317fc",
       "status" : "passed",
       "time" : {
-        "start" : 1665476247466,
-        "stop" : 1665476247639,
-        "duration" : 173
+        "start" : 1665488783190,
+        "stop" : 1665488783367,
+        "duration" : 177
       }
     } ]
   },
@@ -609,12 +609,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "dafb55db2a8e53e8",
+      "uid" : "a6a1977605cdac90",
       "status" : "passed",
       "time" : {
-        "start" : 1665476248638,
-        "stop" : 1665476248639,
-        "duration" : 1
+        "start" : 1665488784172,
+        "stop" : 1665488784174,
+        "duration" : 2
       }
     } ]
   },
@@ -628,13 +628,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "10ea90697ac6c601",
+      "uid" : "65ed76b4b89cca43",
       "status" : "failed",
       "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [39] but found [0],\n\tError Description: null expected [WrongOperationAmount] but found [null]",
       "time" : {
-        "start" : 1665476266095,
-        "stop" : 1665476267037,
-        "duration" : 942
+        "start" : 1665488801787,
+        "stop" : 1665488802723,
+        "duration" : 936
       }
     } ]
   },
@@ -648,12 +648,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9039d20317dbabed",
+      "uid" : "166a6a0760df96e8",
       "status" : "passed",
       "time" : {
-        "start" : 1665476268904,
-        "stop" : 1665476269796,
-        "duration" : 892
+        "start" : 1665488804583,
+        "stop" : 1665488805503,
+        "duration" : 920
       }
     } ]
   },
@@ -667,13 +667,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ccfd9ba8644c1f2f",
+      "uid" : "1d38b8c9e0a0df6f",
       "status" : "failed",
       "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [20] but found [0],\n\tError Description: null expected [CurrencyNotExists] but found [null]",
       "time" : {
-        "start" : 1665476255563,
-        "stop" : 1665476255753,
-        "duration" : 190
+        "start" : 1665488791083,
+        "stop" : 1665488791279,
+        "duration" : 196
       }
     } ]
   },
@@ -687,12 +687,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a1808f954b46fa7f",
+      "uid" : "d96e520de31a2e7f",
       "status" : "passed",
       "time" : {
-        "start" : 1665476253194,
-        "stop" : 1665476253195,
-        "duration" : 1
+        "start" : 1665488788747,
+        "stop" : 1665488788749,
+        "duration" : 2
       }
     } ]
   },
@@ -706,12 +706,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3279fda3b3d05a97",
+      "uid" : "7c2010dca95810d3",
       "status" : "passed",
       "time" : {
-        "start" : 1665476258720,
-        "stop" : 1665476259259,
-        "duration" : 539
+        "start" : 1665488794337,
+        "stop" : 1665488794882,
+        "duration" : 545
       }
     } ]
   },
@@ -725,52 +725,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1c9814b25f06b980",
+      "uid" : "739ac4dba9d0a511",
       "status" : "failed",
       "statusDetails" : "The following asserts failed:\n\tError Description: game not avaible expected [game not available] but found [game not avaible]",
       "time" : {
-        "start" : 1665476262938,
-        "stop" : 1665476263879,
+        "start" : 1665488798650,
+        "stop" : 1665488799591,
         "duration" : 941
-      }
-    } ]
-  },
-  "7e82feebddcb291865c7feb2170dc3e8" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "68357db31e6434e7",
-      "status" : "passed",
-      "time" : {
-        "start" : 1665476246533,
-        "stop" : 1665476246811,
-        "duration" : 278
-      }
-    } ]
-  },
-  "badd8f700559d0535d927d532a418904" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "a357b2eb2661b719",
-      "status" : "failed",
-      "statusDetails" : "The following asserts failed:\n\tamountAfterRollBack : 9657.5 = amountAfterCredit: 9656.5 expected [9656.5] but found [9657.5]",
-      "time" : {
-        "start" : 1665476271639,
-        "stop" : 1665476272559,
-        "duration" : 920
       }
     } ]
   },
@@ -784,12 +745,51 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2b66ea9b27fc5875",
+      "uid" : "725a92477f6082bc",
       "status" : "passed",
       "time" : {
-        "start" : 1665476250920,
-        "stop" : 1665476250921,
+        "start" : 1665488786445,
+        "stop" : 1665488786446,
         "duration" : 1
+      }
+    } ]
+  },
+  "badd8f700559d0535d927d532a418904" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "db99bd617ac0e31a",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tamountAfterRollBack : 9607.0 = amountAfterCredit: 9606.0 expected [9606.0] but found [9607.0]",
+      "time" : {
+        "start" : 1665488807395,
+        "stop" : 1665488808342,
+        "duration" : 947
+      }
+    } ]
+  },
+  "7e82feebddcb291865c7feb2170dc3e8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "24f69dee31dbcbcc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665488782188,
+        "stop" : 1665488782472,
+        "duration" : 284
       }
     } ]
   },
@@ -803,13 +803,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e1d78006ab732515",
+      "uid" : "493e35925e13676a",
       "status" : "failed",
-      "statusDetails" : "balanceUSD VS balanceEUR did not expect [9664.5] but found [9664.5]",
+      "statusDetails" : "balanceUSD VS balanceEUR did not expect [9614.0] but found [9614.0]",
       "time" : {
-        "start" : 1665476255756,
-        "stop" : 1665476256121,
-        "duration" : 365
+        "start" : 1665488791283,
+        "stop" : 1665488791645,
+        "duration" : 362
       }
     } ]
   },
@@ -823,12 +823,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2abb148223fd342",
+      "uid" : "19fc56975687f6aa",
       "status" : "passed",
       "time" : {
-        "start" : 1665476256671,
-        "stop" : 1665476257207,
-        "duration" : 536
+        "start" : 1665488792222,
+        "stop" : 1665488792787,
+        "duration" : 565
       }
     } ]
   },
@@ -842,12 +842,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9f40da67f4bbf64",
+      "uid" : "cc86375df50b1888",
       "status" : "passed",
       "time" : {
-        "start" : 1665476248643,
-        "stop" : 1665476248643,
-        "duration" : 0
+        "start" : 1665488784180,
+        "stop" : 1665488784181,
+        "duration" : 1
       }
     } ]
   },
@@ -861,11 +861,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6d9f3df55fb396e2",
+      "uid" : "e021f4b11cbdf022",
       "status" : "passed",
       "time" : {
-        "start" : 1665476254541,
-        "stop" : 1665476254542,
+        "start" : 1665488790073,
+        "stop" : 1665488790074,
         "duration" : 1
       }
     } ]
@@ -880,12 +880,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "cb2dd8cbc94debf4",
+      "uid" : "a7bdfe40820be8e3",
       "status" : "passed",
       "time" : {
-        "start" : 1665476257781,
-        "stop" : 1665476258692,
-        "duration" : 911
+        "start" : 1665488793360,
+        "stop" : 1665488794334,
+        "duration" : 974
       }
     } ]
   },
@@ -899,12 +899,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "23d5b204db94b45e",
+      "uid" : "579ce1eb529c28d4",
       "status" : "passed",
       "time" : {
-        "start" : 1665476249136,
-        "stop" : 1665476249137,
-        "duration" : 1
+        "start" : 1665488784662,
+        "stop" : 1665488784662,
+        "duration" : 0
       }
     } ]
   },
@@ -918,13 +918,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "583fe94f08671e44",
+      "uid" : "4b17740020eb2ee0",
       "status" : "failed",
       "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [43] but found [21],\n\tError Description: An error occurred while updating the entries. See the inner exception for details. expected [ProductNotFound] but found [An error occurred while updating the entries. See the inner exception for details.]",
       "time" : {
-        "start" : 1665476247643,
-        "stop" : 1665476247952,
-        "duration" : 309
+        "start" : 1665488783371,
+        "stop" : 1665488783661,
+        "duration" : 290
       }
     } ]
   },
@@ -938,12 +938,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3a6acedb3f7cab8c",
+      "uid" : "a04b845903e485c8",
       "status" : "passed",
       "time" : {
-        "start" : 1665476254554,
-        "stop" : 1665476254554,
-        "duration" : 0
+        "start" : 1665488790084,
+        "stop" : 1665488790085,
+        "duration" : 1
       }
     } ]
   },
@@ -957,13 +957,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "eed694ed58dbe31a",
+      "uid" : "8cd3c6bddd6b78a8",
       "status" : "failed",
-      "statusDetails" : "The following asserts failed:\n\tamountAfterRollBack1: 9657.5 = amountAfterRollBack2 : 9658.5 expected [9658.5] but found [9657.5]",
+      "statusDetails" : "The following asserts failed:\n\tamountAfterRollBack1: 9607.0 = amountAfterRollBack2 : 9608.0 expected [9608.0] but found [9607.0]",
       "time" : {
-        "start" : 1665476273101,
-        "stop" : 1665476274391,
-        "duration" : 1290
+        "start" : 1665488808895,
+        "stop" : 1665488810196,
+        "duration" : 1301
       }
     } ]
   },
@@ -977,13 +977,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "65ac07f9d3508628",
+      "uid" : "2fe5429626bb8852",
       "status" : "failed",
       "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [29] but found [0],\n\tError Description: null expected [SessionExpired] but found [null]",
       "time" : {
-        "start" : 1665476254592,
-        "stop" : 1665476254798,
-        "duration" : 206
+        "start" : 1665488790088,
+        "stop" : 1665488790289,
+        "duration" : 201
       }
     } ]
   },
@@ -997,12 +997,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4bd9fb1adf0c7d19",
+      "uid" : "b59746ca9f252edb",
       "status" : "passed",
       "time" : {
-        "start" : 1665476249141,
-        "stop" : 1665476249145,
-        "duration" : 4
+        "start" : 1665488784667,
+        "stop" : 1665488784669,
+        "duration" : 2
       }
     } ]
   },
@@ -1016,12 +1016,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6f14da6ca6134c9d",
+      "uid" : "8e6e28100a7a8304",
       "status" : "passed",
       "time" : {
-        "start" : 1665476254547,
-        "stop" : 1665476254547,
-        "duration" : 0
+        "start" : 1665488790079,
+        "stop" : 1665488790080,
+        "duration" : 1
       }
     } ]
   },
@@ -1035,12 +1035,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9f93fe0a4e514056",
+      "uid" : "9844f4824629a25d",
       "status" : "passed",
       "time" : {
-        "start" : 1665476255383,
-        "stop" : 1665476255558,
-        "duration" : 175
+        "start" : 1665488790893,
+        "stop" : 1665488791078,
+        "duration" : 185
       }
     } ]
   },
@@ -1054,11 +1054,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "85042e7809d25b97",
+      "uid" : "580f16459e1f0f07",
       "status" : "passed",
       "time" : {
-        "start" : 1665476253198,
-        "stop" : 1665476253198,
+        "start" : 1665488788758,
+        "stop" : 1665488788758,
         "duration" : 0
       }
     } ]

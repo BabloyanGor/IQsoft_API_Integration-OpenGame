@@ -6,6 +6,7 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -42,21 +43,24 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
         iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
         logger.info("Credit API Response Description : " + iqSoft_04_apiVariables_credit_response.getDescription());
 
-        String OperationItems = String.valueOf(jsonObjectBody.getJSONObject("OperationItems"));
-        JSONObject jsonObjectOperationItems = new JSONObject(OperationItems);
 
-        iqSoft_04_apiVariables_credit_response.setBetId(jsonObjectOperationItems.get("BetId").toString());
-        logger.info("Credit API Response BetId : " + iqSoft_04_apiVariables_credit_response.getBetId());
+        JSONArray jsonArrayOperationItems = jsonObjectBody.getJSONArray("OperationItems");
+        for (int j = 0; j < jsonArrayOperationItems.length(); j++) {
+            String first = String.valueOf(jsonArrayOperationItems.get(j));
+            JSONObject jsonObjectGame = new JSONObject(first);
 
-        iqSoft_04_apiVariables_credit_response.setBalance(Double.parseDouble(jsonObjectOperationItems.get("Balance").toString()));
-        logger.info("Credit API Response Balance : " + iqSoft_04_apiVariables_credit_response.getBalance());
+            iqSoft_04_apiVariables_credit_response.setBetId(jsonObjectGame.get("BetId").toString());
+            logger.info("Debit API Response BetId : " + iqSoft_04_apiVariables_credit_response.getBetId());
 
-        iqSoft_04_apiVariables_credit_response.setClientId(jsonObjectOperationItems.get("ClientId").toString());
-        logger.info("Credit API Response ClientId : " + iqSoft_04_apiVariables_credit_response.getClientId());
+            iqSoft_04_apiVariables_credit_response.setBalance(Double.parseDouble(jsonObjectGame.get("Balance").toString()));
+            logger.info("Debit API Response Balance : " + iqSoft_04_apiVariables_credit_response.getBalance());
 
-        iqSoft_04_apiVariables_credit_response.setCurrencyId(jsonObjectOperationItems.get("CurrencyId").toString());
-        logger.info("Credit API Response CurrencyId : " + iqSoft_04_apiVariables_credit_response.getCurrencyId());
+            iqSoft_04_apiVariables_credit_response.setClientId(jsonObjectGame.get("ClientId").toString());
+            logger.info("Debit API Response ClientId : " + iqSoft_04_apiVariables_credit_response.getClientId());
 
+            iqSoft_04_apiVariables_credit_response.setCurrencyId(jsonObjectGame.get("CurrencyId").toString());
+            logger.info("Debit API Response CurrencyId : " + iqSoft_04_apiVariables_credit_response.getCurrencyId());
+        }
 
         HttpResponse<String> responseGetBalanceAfter = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfter.getBody());

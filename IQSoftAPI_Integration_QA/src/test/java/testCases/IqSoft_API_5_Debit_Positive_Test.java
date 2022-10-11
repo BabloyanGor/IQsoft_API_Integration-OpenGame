@@ -6,6 +6,7 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -40,20 +41,39 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest{
         iqSoft_05_apiVariables_debit_response.setDescription(jsonObjectBody.get("Description").toString());
         logger.info("Debit API Response Description : " + iqSoft_05_apiVariables_debit_response.getDescription());
 
-        String OperationItems = String.valueOf(jsonObjectBody.getJSONObject("OperationItems"));
-        JSONObject jsonObjectOperationItems = new JSONObject(OperationItems);
 
-        iqSoft_05_apiVariables_debit_response.setBetId(jsonObjectOperationItems.get("BetId").toString());
-        logger.info("Debit API Response BetId : " + iqSoft_05_apiVariables_debit_response.getBetId());
+        JSONArray jsonArrayOperationItems = jsonObjectBody.getJSONArray("OperationItems");
+        for (int j = 0; j < jsonArrayOperationItems.length(); j++) {
+            String first = String.valueOf(jsonArrayOperationItems.get(j));
+            JSONObject jsonObjectGame = new JSONObject(first);
 
-        iqSoft_05_apiVariables_debit_response.setBalance(Double.parseDouble(jsonObjectOperationItems.get("Balance").toString()));
-        logger.info("Debit API Response Balance : " + iqSoft_05_apiVariables_debit_response.getBalance());
+            iqSoft_05_apiVariables_debit_response.setBetId(jsonObjectGame.get("BetId").toString());
+            logger.info("Debit API Response BetId : " + iqSoft_05_apiVariables_debit_response.getBetId());
 
-        iqSoft_05_apiVariables_debit_response.setClientId(jsonObjectOperationItems.get("ClientId").toString());
-        logger.info("Debit API Response ClientId : " + iqSoft_05_apiVariables_debit_response.getClientId());
+            iqSoft_05_apiVariables_debit_response.setBalance(Double.parseDouble(jsonObjectGame.get("Balance").toString()));
+            logger.info("Debit API Response Balance : " + iqSoft_05_apiVariables_debit_response.getBalance());
 
-        iqSoft_05_apiVariables_debit_response.setCurrencyId(jsonObjectOperationItems.get("CurrencyId").toString());
-        logger.info("Debit API Response CurrencyId : " + iqSoft_05_apiVariables_debit_response.getCurrencyId());
+            iqSoft_05_apiVariables_debit_response.setClientId(jsonObjectGame.get("ClientId").toString());
+            logger.info("Debit API Response ClientId : " + iqSoft_05_apiVariables_debit_response.getClientId());
+
+            iqSoft_05_apiVariables_debit_response.setCurrencyId(jsonObjectGame.get("CurrencyId").toString());
+            logger.info("Debit API Response CurrencyId : " + iqSoft_05_apiVariables_debit_response.getCurrencyId());
+        }
+
+//        String OperationItems = String.valueOf(jsonObjectBody.getJSONObject("OperationItems"));
+//        JSONObject jsonObjectOperationItems = new JSONObject(OperationItems);
+//
+//        iqSoft_05_apiVariables_debit_response.setBetId(jsonObjectOperationItems.get("BetId").toString());
+//        logger.info("Debit API Response BetId : " + iqSoft_05_apiVariables_debit_response.getBetId());
+//
+//        iqSoft_05_apiVariables_debit_response.setBalance(Double.parseDouble(jsonObjectOperationItems.get("Balance").toString()));
+//        logger.info("Debit API Response Balance : " + iqSoft_05_apiVariables_debit_response.getBalance());
+//
+//        iqSoft_05_apiVariables_debit_response.setClientId(jsonObjectOperationItems.get("ClientId").toString());
+//        logger.info("Debit API Response ClientId : " + iqSoft_05_apiVariables_debit_response.getClientId());
+//
+//        iqSoft_05_apiVariables_debit_response.setCurrencyId(jsonObjectOperationItems.get("CurrencyId").toString());
+//        logger.info("Debit API Response CurrencyId : " + iqSoft_05_apiVariables_debit_response.getCurrencyId());
 
 
         HttpResponse<String> responseGetBalanceAfter = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
