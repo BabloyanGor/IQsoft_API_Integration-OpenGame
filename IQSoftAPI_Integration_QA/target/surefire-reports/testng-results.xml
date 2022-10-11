@@ -2,24 +2,24 @@
 <testng-results ignored="26" total="81" passed="36" failed="19" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-10T12:31:22 AMT" name="IQsoft API Integration" finished-at="2022-10-10T12:31:53 AMT" duration-ms="30934">
+  <suite started-at="2022-10-10T18:13:18 AMT" name="IQsoft API Integration" finished-at="2022-10-10T18:13:49 AMT" duration-ms="31569">
     <groups>
     </groups>
-    <test started-at="2022-10-10T12:31:22 AMT" name="API Integration Automation Test" finished-at="2022-10-10T12:31:53 AMT" duration-ms="30934">
+    <test started-at="2022-10-10T18:13:18 AMT" name="API Integration Automation Test" finished-at="2022-10-10T18:13:49 AMT" duration-ms="31569">
       <class name="testCases.IqSoft_API_1_OpenGame_Positive_Test">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@25ce9dc4]" started-at="2022-10-10T12:31:22 AMT" name="setupSuite" finished-at="2022-10-10T12:31:22 AMT" duration-ms="66" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@51891008]" started-at="2022-10-10T18:13:18 AMT" name="setupSuite" finished-at="2022-10-10T18:13:18 AMT" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setUpTestCase()[pri:0, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@25ce9dc4]" started-at="2022-10-10T12:31:22 AMT" name="setUpTestCase" finished-at="2022-10-10T12:31:23 AMT" duration-ms="1220" status="PASS">
+        <test-method is-config="true" signature="setUpTestCase()[pri:0, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@51891008]" started-at="2022-10-10T18:13:18 AMT" name="setUpTestCase" finished-at="2022-10-10T18:13:19 AMT" duration-ms="857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTestCase -->
-        <test-method signature="openGameAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@25ce9dc4]" started-at="2022-10-10T12:31:23 AMT" name="openGameAPIValidateStatusCod" finished-at="2022-10-10T12:31:23 AMT" duration-ms="45" status="PASS">
+        <test-method signature="openGameAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@51891008]" started-at="2022-10-10T18:13:19 AMT" name="openGameAPIValidateStatusCod" finished-at="2022-10-10T18:13:19 AMT" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openGameAPIValidateStatusCod -->
-        <test-method signature="openGameAPIValidatePositiveResponse()[pri:3, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@25ce9dc4]" started-at="2022-10-10T12:31:23 AMT" name="openGameAPIValidatePositiveResponse" finished-at="2022-10-10T12:31:23 AMT" depends-on-methods="testCases.IqSoft_API_1_OpenGame_Positive_Test.openGameAPIValidateStatusCod" duration-ms="14" status="FAIL">
+        <test-method signature="openGameAPIValidatePositiveResponse()[pri:3, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@51891008]" started-at="2022-10-10T18:13:19 AMT" name="openGameAPIValidatePositiveResponse" finished-at="2022-10-10T18:13:19 AMT" depends-on-methods="testCases.IqSoft_API_1_OpenGame_Positive_Test.openGameAPIValidateStatusCod" duration-ms="11" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -36,7 +36,7 @@ ResponseObject: null did not expect [null] but found [null],
 ResponseObject Don't Contain http:// expected [true] but found [false]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at testCases.IqSoft_API_1_OpenGame_Positive_Test.openGameAPIValidatePositiveResponse(IqSoft_API_1_OpenGame_Positive_Test.java:63)
+at testCases.IqSoft_API_1_OpenGame_Positive_Test.openGameAPIValidatePositiveResponse(IqSoft_API_1_OpenGame_Positive_Test.java:73)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,17 +74,17 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openGameAPIValidatePositiveResponse -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@25ce9dc4]" started-at="2022-10-10T12:31:53 AMT" name="tearDownSuite" finished-at="2022-10-10T12:31:53 AMT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:testCases.IqSoft_API_1_OpenGame_Positive_Test@51891008]" started-at="2022-10-10T18:13:49 AMT" name="tearDownSuite" finished-at="2022-10-10T18:13:49 AMT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
       </class> <!-- testCases.IqSoft_API_1_OpenGame_Positive_Test -->
       <class name="testCases.IqSoft_API_1_OpenGame_Negative_Test">
-        <test-method signature="openGameAPIValidateResponseWithInvalidToken()[pri:1, instance:testCases.IqSoft_API_1_OpenGame_Negative_Test@3e8c3cb]" started-at="2022-10-10T12:31:23 AMT" name="openGameAPIValidateResponseWithInvalidToken" finished-at="2022-10-10T12:31:24 AMT" duration-ms="274" status="PASS">
+        <test-method signature="openGameAPIValidateResponseWithInvalidToken()[pri:1, instance:testCases.IqSoft_API_1_OpenGame_Negative_Test@1b66c0fb]" started-at="2022-10-10T18:13:19 AMT" name="openGameAPIValidateResponseWithInvalidToken" finished-at="2022-10-10T18:13:19 AMT" duration-ms="516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openGameAPIValidateResponseWithInvalidToken -->
-        <test-method signature="openGameAPIValidateResponseWithExpiredToken()[pri:2, instance:testCases.IqSoft_API_1_OpenGame_Negative_Test@3e8c3cb]" started-at="2022-10-10T12:31:24 AMT" name="openGameAPIValidateResponseWithExpiredToken" finished-at="2022-10-10T12:31:24 AMT" duration-ms="282" status="FAIL">
+        <test-method signature="openGameAPIValidateResponseWithExpiredToken()[pri:2, instance:testCases.IqSoft_API_1_OpenGame_Negative_Test@1b66c0fb]" started-at="2022-10-10T18:13:19 AMT" name="openGameAPIValidateResponseWithExpiredToken" finished-at="2022-10-10T18:13:20 AMT" duration-ms="471" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -135,7 +135,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openGameAPIValidateResponseWithExpiredToken -->
-        <test-method signature="openGameAPIValidateResponseWithInvalidPartnerID()[pri:3, instance:testCases.IqSoft_API_1_OpenGame_Negative_Test@3e8c3cb]" started-at="2022-10-10T12:31:24 AMT" name="openGameAPIValidateResponseWithInvalidPartnerID" finished-at="2022-10-10T12:31:24 AMT" duration-ms="345" status="FAIL">
+        <test-method signature="openGameAPIValidateResponseWithInvalidPartnerID()[pri:3, instance:testCases.IqSoft_API_1_OpenGame_Negative_Test@1b66c0fb]" started-at="2022-10-10T18:13:20 AMT" name="openGameAPIValidateResponseWithInvalidPartnerID" finished-at="2022-10-10T18:13:20 AMT" duration-ms="287" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -186,11 +186,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openGameAPIValidateResponseWithInvalidPartnerID -->
-        <test-method signature="openGameAPIValidateResponseWithInvalidGameID()[pri:4, instance:testCases.IqSoft_API_1_OpenGame_Negative_Test@3e8c3cb]" started-at="2022-10-10T12:31:24 AMT" name="openGameAPIValidateResponseWithInvalidGameID" finished-at="2022-10-10T12:31:25 AMT" duration-ms="168" status="PASS">
+        <test-method signature="openGameAPIValidateResponseWithInvalidGameID()[pri:4, instance:testCases.IqSoft_API_1_OpenGame_Negative_Test@1b66c0fb]" started-at="2022-10-10T18:13:20 AMT" name="openGameAPIValidateResponseWithInvalidGameID" finished-at="2022-10-10T18:13:20 AMT" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openGameAPIValidateResponseWithInvalidGameID -->
-        <test-method signature="openGameAPIValidateResponseWithInvalidDomain()[pri:5, instance:testCases.IqSoft_API_1_OpenGame_Negative_Test@3e8c3cb]" started-at="2022-10-10T12:31:25 AMT" name="openGameAPIValidateResponseWithInvalidDomain" finished-at="2022-10-10T12:31:25 AMT" duration-ms="367" status="FAIL">
+        <test-method signature="openGameAPIValidateResponseWithInvalidDomain()[pri:5, instance:testCases.IqSoft_API_1_OpenGame_Negative_Test@1b66c0fb]" started-at="2022-10-10T18:13:20 AMT" name="openGameAPIValidateResponseWithInvalidDomain" finished-at="2022-10-10T18:13:21 AMT" duration-ms="288" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -243,29 +243,29 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
         </test-method> <!-- openGameAPIValidateResponseWithInvalidDomain -->
       </class> <!-- testCases.IqSoft_API_1_OpenGame_Negative_Test -->
       <class name="testCases.IqSoft_API_3_GetBalance_Positive_Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_3_GetBalance_Positive_Test@543295b0]" started-at="2022-10-10T12:31:25 AMT" name="setUp" finished-at="2022-10-10T12:31:26 AMT" duration-ms="491" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_3_GetBalance_Positive_Test@24c1b2d2]" started-at="2022-10-10T18:13:21 AMT" name="setUp" finished-at="2022-10-10T18:13:22 AMT" duration-ms="470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="GetBalanceAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_3_GetBalance_Positive_Test@543295b0]" started-at="2022-10-10T12:31:26 AMT" name="GetBalanceAPIValidateStatusCod" finished-at="2022-10-10T12:31:26 AMT" duration-ms="6" status="PASS">
+        <test-method signature="GetBalanceAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_3_GetBalance_Positive_Test@24c1b2d2]" started-at="2022-10-10T18:13:22 AMT" name="GetBalanceAPIValidateStatusCod" finished-at="2022-10-10T18:13:22 AMT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetBalanceAPIValidateStatusCod -->
-        <test-method signature="GetBalanceAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_3_GetBalance_Positive_Test@543295b0]" started-at="2022-10-10T12:31:26 AMT" name="GetBalanceAPIValidatePositiveResponse" finished-at="2022-10-10T12:31:26 AMT" depends-on-methods="testCases.IqSoft_API_3_GetBalance_Positive_Test.GetBalanceAPIValidateStatusCod" duration-ms="5" status="PASS">
+        <test-method signature="GetBalanceAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_3_GetBalance_Positive_Test@24c1b2d2]" started-at="2022-10-10T18:13:22 AMT" name="GetBalanceAPIValidatePositiveResponse" finished-at="2022-10-10T18:13:22 AMT" depends-on-methods="testCases.IqSoft_API_3_GetBalance_Positive_Test.GetBalanceAPIValidateStatusCod" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetBalanceAPIValidatePositiveResponse -->
       </class> <!-- testCases.IqSoft_API_3_GetBalance_Positive_Test -->
       <class name="testCases.IqSoft_API_6_RollBack_Negative_Test">
-        <test-method signature="RollBackAPIValidateResponseWithInvalidToken()[pri:1, instance:testCases.IqSoft_API_6_RollBack_Negative_Test@2034b64c]" started-at="2022-10-10T12:31:48 AMT" name="RollBackAPIValidateResponseWithInvalidToken" finished-at="2022-10-10T12:31:49 AMT" duration-ms="939" status="FAIL">
+        <test-method signature="RollBackAPIValidateResponseWithInvalidToken()[pri:1, instance:testCases.IqSoft_API_6_RollBack_Negative_Test@660acfb]" started-at="2022-10-10T18:13:44 AMT" name="RollBackAPIValidateResponseWithInvalidToken" finished-at="2022-10-10T18:13:45 AMT" duration-ms="976" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-amountAfterCredit: 9786.0 = amountAfterRollBack : 9787.0 expected [9787.0] but found [9786.0]]]>
+amountAfterCredit: 9674.0 = amountAfterRollBack : 9675.0 expected [9675.0] but found [9674.0]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-amountAfterCredit: 9786.0 = amountAfterRollBack : 9787.0 expected [9787.0] but found [9786.0]
+amountAfterCredit: 9674.0 = amountAfterRollBack : 9675.0 expected [9675.0] but found [9674.0]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseWithInvalidToken(IqSoft_API_6_RollBack_Negative_Test.java:70)
@@ -306,15 +306,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RollBackAPIValidateResponseWithInvalidToken -->
-        <test-method signature="RollBackAPIValidateResponseUsingInvalidProductID()[pri:2, instance:testCases.IqSoft_API_6_RollBack_Negative_Test@2034b64c]" started-at="2022-10-10T12:31:49 AMT" name="RollBackAPIValidateResponseUsingInvalidProductID" finished-at="2022-10-10T12:31:49 AMT" duration-ms="920" status="FAIL">
+        <test-method signature="RollBackAPIValidateResponseUsingInvalidProductID()[pri:2, instance:testCases.IqSoft_API_6_RollBack_Negative_Test@660acfb]" started-at="2022-10-10T18:13:45 AMT" name="RollBackAPIValidateResponseUsingInvalidProductID" finished-at="2022-10-10T18:13:46 AMT" duration-ms="959" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-amountAfterRollBack : 9787.0 = amountAfterCredit: 9786.0 expected [9786.0] but found [9787.0]]]>
+amountAfterRollBack : 9675.0 = amountAfterCredit: 9674.0 expected [9674.0] but found [9675.0]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-amountAfterRollBack : 9787.0 = amountAfterCredit: 9786.0 expected [9786.0] but found [9787.0]
+amountAfterRollBack : 9675.0 = amountAfterCredit: 9674.0 expected [9674.0] but found [9675.0]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingInvalidProductID(IqSoft_API_6_RollBack_Negative_Test.java:125)
@@ -355,19 +355,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RollBackAPIValidateResponseUsingInvalidProductID -->
-        <test-method signature="RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit()[pri:3, instance:testCases.IqSoft_API_6_RollBack_Negative_Test@2034b64c]" started-at="2022-10-10T12:31:49 AMT" name="RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit" finished-at="2022-10-10T12:31:50 AMT" duration-ms="565" status="PASS">
+        <test-method signature="RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit()[pri:3, instance:testCases.IqSoft_API_6_RollBack_Negative_Test@660acfb]" started-at="2022-10-10T18:13:46 AMT" name="RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit" finished-at="2022-10-10T18:13:46 AMT" duration-ms="645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit -->
-        <test-method signature="RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice()[pri:4, instance:testCases.IqSoft_API_6_RollBack_Negative_Test@2034b64c]" started-at="2022-10-10T12:31:50 AMT" name="RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice" finished-at="2022-10-10T12:31:51 AMT" duration-ms="1283" status="FAIL">
+        <test-method signature="RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice()[pri:4, instance:testCases.IqSoft_API_6_RollBack_Negative_Test@660acfb]" started-at="2022-10-10T18:13:46 AMT" name="RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice" finished-at="2022-10-10T18:13:48 AMT" duration-ms="1296" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-amountAfterRollBack1: 9787.0 = amountAfterRollBack2 : 9788.0 expected [9788.0] but found [9787.0]]]>
+amountAfterRollBack1: 9675.0 = amountAfterRollBack2 : 9676.0 expected [9676.0] but found [9675.0]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-amountAfterRollBack1: 9787.0 = amountAfterRollBack2 : 9788.0 expected [9788.0] but found [9787.0]
+amountAfterRollBack1: 9675.0 = amountAfterRollBack2 : 9676.0 expected [9676.0] but found [9675.0]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice(IqSoft_API_6_RollBack_Negative_Test.java:232)
@@ -408,41 +408,41 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice -->
-        <test-method signature="RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice()[pri:5, instance:testCases.IqSoft_API_6_RollBack_Negative_Test@2034b64c]" started-at="2022-10-10T12:31:51 AMT" name="RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice" finished-at="2022-10-10T12:31:53 AMT" duration-ms="1703" status="PASS">
+        <test-method signature="RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice()[pri:5, instance:testCases.IqSoft_API_6_RollBack_Negative_Test@660acfb]" started-at="2022-10-10T18:13:48 AMT" name="RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice" finished-at="2022-10-10T18:13:49 AMT" duration-ms="1700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice -->
       </class> <!-- testCases.IqSoft_API_6_RollBack_Negative_Test -->
       <class name="testCases.IqSoft_API_5_Debit_Positive_Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_5_Debit_Positive_Test@117159c0]" started-at="2022-10-10T12:31:27 AMT" name="setUp" finished-at="2022-10-10T12:31:28 AMT" duration-ms="569" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_5_Debit_Positive_Test@508dec2b]" started-at="2022-10-10T18:13:23 AMT" name="setUp" finished-at="2022-10-10T18:13:23 AMT" duration-ms="563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="DebitAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_5_Debit_Positive_Test@117159c0]" started-at="2022-10-10T12:31:28 AMT" name="DebitAPIValidateStatusCod" finished-at="2022-10-10T12:31:28 AMT" duration-ms="2" status="PASS">
+        <test-method signature="DebitAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_5_Debit_Positive_Test@508dec2b]" started-at="2022-10-10T18:13:23 AMT" name="DebitAPIValidateStatusCod" finished-at="2022-10-10T18:13:23 AMT" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DebitAPIValidateStatusCod -->
-        <test-method signature="DebitAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_5_Debit_Positive_Test@117159c0]" started-at="2022-10-10T12:31:28 AMT" name="DebitAPIValidatePositiveResponse" finished-at="2022-10-10T12:31:28 AMT" depends-on-methods="testCases.IqSoft_API_5_Debit_Positive_Test.DebitAPIValidateStatusCod" duration-ms="3" status="PASS">
+        <test-method signature="DebitAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_5_Debit_Positive_Test@508dec2b]" started-at="2022-10-10T18:13:23 AMT" name="DebitAPIValidatePositiveResponse" finished-at="2022-10-10T18:13:23 AMT" depends-on-methods="testCases.IqSoft_API_5_Debit_Positive_Test.DebitAPIValidateStatusCod" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DebitAPIValidatePositiveResponse -->
       </class> <!-- testCases.IqSoft_API_5_Debit_Positive_Test -->
       <class name="testCases.IqSoft_API_2_Authorization_Positive_Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_2_Authorization_Positive_Test@563f38c4]" started-at="2022-10-10T12:31:25 AMT" name="setUp" finished-at="2022-10-10T12:31:25 AMT" duration-ms="527" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_2_Authorization_Positive_Test@3e0e1046]" started-at="2022-10-10T18:13:21 AMT" name="setUp" finished-at="2022-10-10T18:13:21 AMT" duration-ms="506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AuthorizationAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_2_Authorization_Positive_Test@563f38c4]" started-at="2022-10-10T12:31:25 AMT" name="AuthorizationAPIValidateStatusCod" finished-at="2022-10-10T12:31:25 AMT" duration-ms="1" status="PASS">
+        <test-method signature="AuthorizationAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_2_Authorization_Positive_Test@3e0e1046]" started-at="2022-10-10T18:13:21 AMT" name="AuthorizationAPIValidateStatusCod" finished-at="2022-10-10T18:13:21 AMT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AuthorizationAPIValidateStatusCod -->
-        <test-method signature="AuthorizationAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_2_Authorization_Positive_Test@563f38c4]" started-at="2022-10-10T12:31:25 AMT" name="AuthorizationAPIValidatePositiveResponse" finished-at="2022-10-10T12:31:25 AMT" depends-on-methods="testCases.IqSoft_API_2_Authorization_Positive_Test.AuthorizationAPIValidateStatusCod" duration-ms="1" status="PASS">
+        <test-method signature="AuthorizationAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_2_Authorization_Positive_Test@3e0e1046]" started-at="2022-10-10T18:13:21 AMT" name="AuthorizationAPIValidatePositiveResponse" finished-at="2022-10-10T18:13:21 AMT" depends-on-methods="testCases.IqSoft_API_2_Authorization_Positive_Test.AuthorizationAPIValidateStatusCod" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AuthorizationAPIValidatePositiveResponse -->
       </class> <!-- testCases.IqSoft_API_2_Authorization_Positive_Test -->
       <class name="testCases.IqSoft_API_2_Authorization_Negative_Test">
-        <test-method signature="AuthorizationAPIValidateResponseWithExpiredToken()[pri:1, instance:testCases.IqSoft_API_2_Authorization_Negative_Test@202b0582]" started-at="2022-10-10T12:31:31 AMT" name="AuthorizationAPIValidateResponseWithExpiredToken" finished-at="2022-10-10T12:31:32 AMT" duration-ms="190" status="FAIL">
+        <test-method signature="AuthorizationAPIValidateResponseWithExpiredToken()[pri:1, instance:testCases.IqSoft_API_2_Authorization_Negative_Test@798162bc]" started-at="2022-10-10T18:13:27 AMT" name="AuthorizationAPIValidateResponseWithExpiredToken" finished-at="2022-10-10T18:13:27 AMT" duration-ms="188" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -493,11 +493,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AuthorizationAPIValidateResponseWithExpiredToken -->
-        <test-method signature="AuthorizationAPIValidateResponseWithInvalidToken()[pri:2, instance:testCases.IqSoft_API_2_Authorization_Negative_Test@202b0582]" started-at="2022-10-10T12:31:32 AMT" name="AuthorizationAPIValidateResponseWithInvalidToken" finished-at="2022-10-10T12:31:32 AMT" duration-ms="174" status="PASS">
+        <test-method signature="AuthorizationAPIValidateResponseWithInvalidToken()[pri:2, instance:testCases.IqSoft_API_2_Authorization_Negative_Test@798162bc]" started-at="2022-10-10T18:13:27 AMT" name="AuthorizationAPIValidateResponseWithInvalidToken" finished-at="2022-10-10T18:13:27 AMT" duration-ms="189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AuthorizationAPIValidateResponseWithInvalidToken -->
-        <test-method signature="AuthorizationAPIValidateResponseWithInvalidProductID()[pri:3, instance:testCases.IqSoft_API_2_Authorization_Negative_Test@202b0582]" started-at="2022-10-10T12:31:32 AMT" name="AuthorizationAPIValidateResponseWithInvalidProductID" finished-at="2022-10-10T12:31:32 AMT" duration-ms="181" status="FAIL">
+        <test-method signature="AuthorizationAPIValidateResponseWithInvalidProductID()[pri:3, instance:testCases.IqSoft_API_2_Authorization_Negative_Test@798162bc]" started-at="2022-10-10T18:13:27 AMT" name="AuthorizationAPIValidateResponseWithInvalidProductID" finished-at="2022-10-10T18:13:28 AMT" duration-ms="194" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -550,11 +550,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
         </test-method> <!-- AuthorizationAPIValidateResponseWithInvalidProductID -->
       </class> <!-- testCases.IqSoft_API_2_Authorization_Negative_Test -->
       <class name="testCases.IqSoft_API_5_Debit_Negative_Test">
-        <test-method signature="DebitAPIValidateResponseWithInvalidToken()[pri:1, instance:testCases.IqSoft_API_5_Debit_Negative_Test@58cbafc2]" started-at="2022-10-10T12:31:39 AMT" name="DebitAPIValidateResponseWithInvalidToken" finished-at="2022-10-10T12:31:40 AMT" duration-ms="916" status="PASS">
+        <test-method signature="DebitAPIValidateResponseWithInvalidToken()[pri:1, instance:testCases.IqSoft_API_5_Debit_Negative_Test@7486b455]" started-at="2022-10-10T18:13:35 AMT" name="DebitAPIValidateResponseWithInvalidToken" finished-at="2022-10-10T18:13:36 AMT" duration-ms="941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DebitAPIValidateResponseWithInvalidToken -->
-        <test-method signature="DebitAPIValidateResponseUsingInvalidProductID()[pri:2, instance:testCases.IqSoft_API_5_Debit_Negative_Test@58cbafc2]" started-at="2022-10-10T12:31:40 AMT" name="DebitAPIValidateResponseUsingInvalidProductID" finished-at="2022-10-10T12:31:41 AMT" duration-ms="925" status="FAIL">
+        <test-method signature="DebitAPIValidateResponseUsingInvalidProductID()[pri:2, instance:testCases.IqSoft_API_5_Debit_Negative_Test@7486b455]" started-at="2022-10-10T18:13:36 AMT" name="DebitAPIValidateResponseUsingInvalidProductID" finished-at="2022-10-10T18:13:37 AMT" duration-ms="943" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -603,7 +603,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DebitAPIValidateResponseUsingInvalidProductID -->
-        <test-method signature="DebitAPIValidateResponseUsingTransactionIDTwice()[pri:3, instance:testCases.IqSoft_API_5_Debit_Negative_Test@58cbafc2]" started-at="2022-10-10T12:31:41 AMT" name="DebitAPIValidateResponseUsingTransactionIDTwice" finished-at="2022-10-10T12:31:42 AMT" duration-ms="1656" status="FAIL">
+        <test-method signature="DebitAPIValidateResponseUsingTransactionIDTwice()[pri:3, instance:testCases.IqSoft_API_5_Debit_Negative_Test@7486b455]" started-at="2022-10-10T18:13:37 AMT" name="DebitAPIValidateResponseUsingTransactionIDTwice" finished-at="2022-10-10T18:13:38 AMT" duration-ms="1692" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -654,19 +654,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DebitAPIValidateResponseUsingTransactionIDTwice -->
-        <test-method signature="DebitAPIValidateResponseUsingInvalidCreditTransactionID()[pri:4, instance:testCases.IqSoft_API_5_Debit_Negative_Test@58cbafc2]" started-at="2022-10-10T12:31:42 AMT" name="DebitAPIValidateResponseUsingInvalidCreditTransactionID" finished-at="2022-10-10T12:31:43 AMT" duration-ms="555" status="FAIL">
+        <test-method signature="DebitAPIValidateResponseUsingInvalidCreditTransactionID()[pri:4, instance:testCases.IqSoft_API_5_Debit_Negative_Test@7486b455]" started-at="2022-10-10T18:13:38 AMT" name="DebitAPIValidateResponseUsingInvalidCreditTransactionID" finished-at="2022-10-10T18:13:39 AMT" duration-ms="546" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
 ResponseCode: 0 expected [50] but found [0],
 Error Description: null expected [CanNotConnectCreditAndDebit] but found [null],
-amountBeforeDebit: 9790.0 = amountAfterDebit: 9792.0 expected [9792.0] but found [9790.0]]]>
+amountBeforeDebit: 9678.0 = amountAfterDebit: 9680.0 expected [9680.0] but found [9678.0]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
 ResponseCode: 0 expected [50] but found [0],
 Error Description: null expected [CanNotConnectCreditAndDebit] but found [null],
-amountBeforeDebit: 9790.0 = amountAfterDebit: 9792.0 expected [9792.0] but found [9790.0]
+amountBeforeDebit: 9678.0 = amountAfterDebit: 9680.0 expected [9680.0] but found [9678.0]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidCreditTransactionID(IqSoft_API_5_Debit_Negative_Test.java:242)
@@ -707,7 +707,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DebitAPIValidateResponseUsingInvalidCreditTransactionID -->
-        <test-method signature="DebitAPIValidateResponseUsingInvalidAmount(java.lang.Double)[pri:5, instance:testCases.IqSoft_API_5_Debit_Negative_Test@58cbafc2]" started-at="2022-10-10T12:31:43 AMT" name="DebitAPIValidateResponseUsingInvalidAmount" data-provider="invalidAmount" finished-at="2022-10-10T12:31:44 AMT" duration-ms="942" status="FAIL">
+        <test-method signature="DebitAPIValidateResponseUsingInvalidAmount(java.lang.Double)[pri:5, instance:testCases.IqSoft_API_5_Debit_Negative_Test@7486b455]" started-at="2022-10-10T18:13:39 AMT" name="DebitAPIValidateResponseUsingInvalidAmount" data-provider="invalidAmount" finished-at="2022-10-10T18:13:40 AMT" duration-ms="938" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -765,7 +765,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DebitAPIValidateResponseUsingInvalidAmount -->
-        <test-method signature="DebitAPIValidateResponseUsingInvalidAmount(java.lang.Double)[pri:5, instance:testCases.IqSoft_API_5_Debit_Negative_Test@58cbafc2]" started-at="2022-10-10T12:31:44 AMT" name="DebitAPIValidateResponseUsingInvalidAmount" data-provider="invalidAmount" finished-at="2022-10-10T12:31:45 AMT" duration-ms="904" status="PASS">
+        <test-method signature="DebitAPIValidateResponseUsingInvalidAmount(java.lang.Double)[pri:5, instance:testCases.IqSoft_API_5_Debit_Negative_Test@7486b455]" started-at="2022-10-10T18:13:40 AMT" name="DebitAPIValidateResponseUsingInvalidAmount" data-provider="invalidAmount" finished-at="2022-10-10T18:13:41 AMT" duration-ms="931" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -776,7 +776,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DebitAPIValidateResponseUsingInvalidAmount -->
-        <test-method signature="DebitAPIValidateResponseUsingInvalidAmount(java.lang.Double)[pri:5, instance:testCases.IqSoft_API_5_Debit_Negative_Test@58cbafc2]" started-at="2022-10-10T12:31:45 AMT" name="DebitAPIValidateResponseUsingInvalidAmount" data-provider="invalidAmount" finished-at="2022-10-10T12:31:46 AMT" duration-ms="922" status="PASS">
+        <test-method signature="DebitAPIValidateResponseUsingInvalidAmount(java.lang.Double)[pri:5, instance:testCases.IqSoft_API_5_Debit_Negative_Test@7486b455]" started-at="2022-10-10T18:13:41 AMT" name="DebitAPIValidateResponseUsingInvalidAmount" data-provider="invalidAmount" finished-at="2022-10-10T18:13:42 AMT" duration-ms="893" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -787,7 +787,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DebitAPIValidateResponseUsingInvalidAmount -->
-        <test-method signature="DebitAPIValidateResponseUsingInvalidAmount(java.lang.Double)[pri:5, instance:testCases.IqSoft_API_5_Debit_Negative_Test@58cbafc2]" started-at="2022-10-10T12:31:46 AMT" name="DebitAPIValidateResponseUsingInvalidAmount" data-provider="invalidAmount" finished-at="2022-10-10T12:31:47 AMT" duration-ms="914" status="PASS">
+        <test-method signature="DebitAPIValidateResponseUsingInvalidAmount(java.lang.Double)[pri:5, instance:testCases.IqSoft_API_5_Debit_Negative_Test@7486b455]" started-at="2022-10-10T18:13:42 AMT" name="DebitAPIValidateResponseUsingInvalidAmount" data-provider="invalidAmount" finished-at="2022-10-10T18:13:43 AMT" duration-ms="937" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -798,7 +798,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DebitAPIValidateResponseUsingInvalidAmount -->
-        <test-method signature="DebitAPIValidateResponseUsingInvalidAmount(java.lang.Double)[pri:5, instance:testCases.IqSoft_API_5_Debit_Negative_Test@58cbafc2]" started-at="2022-10-10T12:31:47 AMT" name="DebitAPIValidateResponseUsingInvalidAmount" data-provider="invalidAmount" finished-at="2022-10-10T12:31:48 AMT" duration-ms="958" status="PASS">
+        <test-method signature="DebitAPIValidateResponseUsingInvalidAmount(java.lang.Double)[pri:5, instance:testCases.IqSoft_API_5_Debit_Negative_Test@7486b455]" started-at="2022-10-10T18:13:43 AMT" name="DebitAPIValidateResponseUsingInvalidAmount" data-provider="invalidAmount" finished-at="2022-10-10T18:13:44 AMT" duration-ms="937" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -811,21 +811,21 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
         </test-method> <!-- DebitAPIValidateResponseUsingInvalidAmount -->
       </class> <!-- testCases.IqSoft_API_5_Debit_Negative_Test -->
       <class name="testCases.IqSoft_API_4_Credit_Positive_Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_4_Credit_Positive_Test@54422e18]" started-at="2022-10-10T12:31:26 AMT" name="setUp" finished-at="2022-10-10T12:31:27 AMT" duration-ms="1172" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_4_Credit_Positive_Test@7dc19a70]" started-at="2022-10-10T18:13:22 AMT" name="setUp" finished-at="2022-10-10T18:13:23 AMT" duration-ms="1184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="CreditAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_4_Credit_Positive_Test@54422e18]" started-at="2022-10-10T12:31:27 AMT" name="CreditAPIValidateStatusCod" finished-at="2022-10-10T12:31:27 AMT" duration-ms="2" status="PASS">
+        <test-method signature="CreditAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_4_Credit_Positive_Test@7dc19a70]" started-at="2022-10-10T18:13:23 AMT" name="CreditAPIValidateStatusCod" finished-at="2022-10-10T18:13:23 AMT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditAPIValidateStatusCod -->
-        <test-method signature="CreditAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_4_Credit_Positive_Test@54422e18]" started-at="2022-10-10T12:31:27 AMT" name="CreditAPIValidatePositiveResponse" finished-at="2022-10-10T12:31:27 AMT" depends-on-methods="testCases.IqSoft_API_4_Credit_Positive_Test.CreditAPIValidateStatusCod" duration-ms="3" status="PASS">
+        <test-method signature="CreditAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_4_Credit_Positive_Test@7dc19a70]" started-at="2022-10-10T18:13:23 AMT" name="CreditAPIValidatePositiveResponse" finished-at="2022-10-10T18:13:23 AMT" depends-on-methods="testCases.IqSoft_API_4_Credit_Positive_Test.CreditAPIValidateStatusCod" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditAPIValidatePositiveResponse -->
       </class> <!-- testCases.IqSoft_API_4_Credit_Positive_Test -->
       <class name="testCases.IqSoft_API_3_GetBalance_Negative_Test">
-        <test-method signature="GetBalanceAPIValidateResponseWithExpiredToken()[pri:1, instance:testCases.IqSoft_API_3_GetBalance_Negative_Test@235ecd9f]" started-at="2022-10-10T12:31:32 AMT" name="GetBalanceAPIValidateResponseWithExpiredToken" finished-at="2022-10-10T12:31:32 AMT" duration-ms="178" status="FAIL">
+        <test-method signature="GetBalanceAPIValidateResponseWithExpiredToken()[pri:1, instance:testCases.IqSoft_API_3_GetBalance_Negative_Test@1df8da7a]" started-at="2022-10-10T18:13:28 AMT" name="GetBalanceAPIValidateResponseWithExpiredToken" finished-at="2022-10-10T18:13:28 AMT" duration-ms="197" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -876,11 +876,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetBalanceAPIValidateResponseWithExpiredToken -->
-        <test-method signature="GetBalanceAPIValidateResponseWithInvalidToken()[pri:2, instance:testCases.IqSoft_API_3_GetBalance_Negative_Test@235ecd9f]" started-at="2022-10-10T12:31:32 AMT" name="GetBalanceAPIValidateResponseWithInvalidToken" finished-at="2022-10-10T12:31:32 AMT" duration-ms="183" status="PASS">
+        <test-method signature="GetBalanceAPIValidateResponseWithInvalidToken()[pri:2, instance:testCases.IqSoft_API_3_GetBalance_Negative_Test@1df8da7a]" started-at="2022-10-10T18:13:28 AMT" name="GetBalanceAPIValidateResponseWithInvalidToken" finished-at="2022-10-10T18:13:28 AMT" duration-ms="188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetBalanceAPIValidateResponseWithInvalidToken -->
-        <test-method signature="GetBalanceAPIValidateResponseWithInvalidCurrencyID()[pri:3, instance:testCases.IqSoft_API_3_GetBalance_Negative_Test@235ecd9f]" started-at="2022-10-10T12:31:32 AMT" name="GetBalanceAPIValidateResponseWithInvalidCurrencyID" finished-at="2022-10-10T12:31:32 AMT" duration-ms="198" status="FAIL">
+        <test-method signature="GetBalanceAPIValidateResponseWithInvalidCurrencyID()[pri:3, instance:testCases.IqSoft_API_3_GetBalance_Negative_Test@1df8da7a]" started-at="2022-10-10T18:13:28 AMT" name="GetBalanceAPIValidateResponseWithInvalidCurrencyID" finished-at="2022-10-10T18:13:28 AMT" duration-ms="195" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -931,13 +931,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetBalanceAPIValidateResponseWithInvalidCurrencyID -->
-        <test-method signature="GetBalanceAPIValidateResponseWithOtherCurrencyID()[pri:4, instance:testCases.IqSoft_API_3_GetBalance_Negative_Test@235ecd9f]" started-at="2022-10-10T12:31:32 AMT" name="GetBalanceAPIValidateResponseWithOtherCurrencyID" finished-at="2022-10-10T12:31:33 AMT" duration-ms="377" status="FAIL">
+        <test-method signature="GetBalanceAPIValidateResponseWithOtherCurrencyID()[pri:4, instance:testCases.IqSoft_API_3_GetBalance_Negative_Test@1df8da7a]" started-at="2022-10-10T18:13:28 AMT" name="GetBalanceAPIValidateResponseWithOtherCurrencyID" finished-at="2022-10-10T18:13:29 AMT" duration-ms="419" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[balanceUSD VS balanceEUR did not expect [9794.0] but found [9794.0]]]>
+              <![CDATA[balanceUSD VS balanceEUR did not expect [9682.0] but found [9682.0]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: balanceUSD VS balanceEUR did not expect [9794.0] but found [9794.0]
+              <![CDATA[java.lang.AssertionError: balanceUSD VS balanceEUR did not expect [9682.0] but found [9682.0]
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failEquals(Assert.java:1417)
 at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
@@ -982,37 +982,37 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
         </test-method> <!-- GetBalanceAPIValidateResponseWithOtherCurrencyID -->
       </class> <!-- testCases.IqSoft_API_3_GetBalance_Negative_Test -->
       <class name="testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test@3e27ba32]" started-at="2022-10-10T12:31:28 AMT" name="setUp" finished-at="2022-10-10T12:31:29 AMT" duration-ms="1326" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test@1e4f4a5c]" started-at="2022-10-10T18:13:23 AMT" name="setUp" finished-at="2022-10-10T18:13:25 AMT" duration-ms="1341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="RollBackAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test@3e27ba32]" started-at="2022-10-10T12:31:29 AMT" name="RollBackAPIValidateStatusCod" finished-at="2022-10-10T12:31:29 AMT" duration-ms="9" status="PASS">
+        <test-method signature="RollBackAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test@1e4f4a5c]" started-at="2022-10-10T18:13:25 AMT" name="RollBackAPIValidateStatusCod" finished-at="2022-10-10T18:13:25 AMT" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RollBackAPIValidateStatusCod -->
-        <test-method signature="RollBackAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test@3e27ba32]" started-at="2022-10-10T12:31:29 AMT" name="RollBackAPIValidatePositiveResponse" finished-at="2022-10-10T12:31:29 AMT" depends-on-methods="testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test.RollBackAPIValidateStatusCod" duration-ms="1" status="PASS">
+        <test-method signature="RollBackAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test@1e4f4a5c]" started-at="2022-10-10T18:13:25 AMT" name="RollBackAPIValidatePositiveResponse" finished-at="2022-10-10T18:13:25 AMT" depends-on-methods="testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test.RollBackAPIValidateStatusCod" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RollBackAPIValidatePositiveResponse -->
-        <test-method signature="RollBackAPIValidatePositiveResponseBalanceCorrection()[pri:3, instance:testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test@3e27ba32]" started-at="2022-10-10T12:31:29 AMT" name="RollBackAPIValidatePositiveResponseBalanceCorrection" finished-at="2022-10-10T12:31:29 AMT" depends-on-methods="testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test.RollBackAPIValidateStatusCod" duration-ms="2" status="PASS">
+        <test-method signature="RollBackAPIValidatePositiveResponseBalanceCorrection()[pri:3, instance:testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test@1e4f4a5c]" started-at="2022-10-10T18:13:25 AMT" name="RollBackAPIValidatePositiveResponseBalanceCorrection" finished-at="2022-10-10T18:13:25 AMT" depends-on-methods="testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test.RollBackAPIValidateStatusCod" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RollBackAPIValidatePositiveResponseBalanceCorrection -->
       </class> <!-- testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test -->
       <class name="testCases.IqSoft_API_4_Credit_Negative_Test">
-        <test-method signature="CreditAPIValidateResponseWithExpiredToken()[pri:1, instance:testCases.IqSoft_API_4_Credit_Negative_Test@1ca3b418]" started-at="2022-10-10T12:31:33 AMT" name="CreditAPIValidateResponseWithExpiredToken" finished-at="2022-10-10T12:31:33 AMT" duration-ms="539" status="FAIL">
+        <test-method signature="CreditAPIValidateResponseWithExpiredToken()[pri:1, instance:testCases.IqSoft_API_4_Credit_Negative_Test@23941fb4]" started-at="2022-10-10T18:13:29 AMT" name="CreditAPIValidateResponseWithExpiredToken" finished-at="2022-10-10T18:13:29 AMT" duration-ms="612" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
 ResponseCode: 0 expected [29] but found [0],
 Error Description: null expected [SessionExpired] but found [null],
-amountBeforeCredit = amountAfterCredit: 9794.0 = 9793.0 expected [9793.0] but found [9794.0]]]>
+amountBeforeCredit = amountAfterCredit: 9682.0 = 9681.0 expected [9681.0] but found [9682.0]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
 ResponseCode: 0 expected [29] but found [0],
 Error Description: null expected [SessionExpired] but found [null],
-amountBeforeCredit = amountAfterCredit: 9794.0 = 9793.0 expected [9793.0] but found [9794.0]
+amountBeforeCredit = amountAfterCredit: 9682.0 = 9681.0 expected [9681.0] but found [9682.0]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithExpiredToken(IqSoft_API_4_Credit_Negative_Test.java:63)
@@ -1053,11 +1053,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditAPIValidateResponseWithExpiredToken -->
-        <test-method signature="CreditAPIValidateResponseWithInvalidToken()[pri:2, instance:testCases.IqSoft_API_4_Credit_Negative_Test@1ca3b418]" started-at="2022-10-10T12:31:33 AMT" name="CreditAPIValidateResponseWithInvalidToken" finished-at="2022-10-10T12:31:34 AMT" duration-ms="556" status="PASS">
+        <test-method signature="CreditAPIValidateResponseWithInvalidToken()[pri:2, instance:testCases.IqSoft_API_4_Credit_Negative_Test@23941fb4]" started-at="2022-10-10T18:13:29 AMT" name="CreditAPIValidateResponseWithInvalidToken" finished-at="2022-10-10T18:13:30 AMT" duration-ms="578" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditAPIValidateResponseWithInvalidToken -->
-        <test-method signature="CreditAPIValidateResponseWithInvalidProductID()[pri:3, instance:testCases.IqSoft_API_4_Credit_Negative_Test@1ca3b418]" started-at="2022-10-10T12:31:34 AMT" name="CreditAPIValidateResponseWithInvalidProductID" finished-at="2022-10-10T12:31:35 AMT" duration-ms="548" status="FAIL">
+        <test-method signature="CreditAPIValidateResponseWithInvalidProductID()[pri:3, instance:testCases.IqSoft_API_4_Credit_Negative_Test@23941fb4]" started-at="2022-10-10T18:13:30 AMT" name="CreditAPIValidateResponseWithInvalidProductID" finished-at="2022-10-10T18:13:30 AMT" duration-ms="555" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -1106,15 +1106,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditAPIValidateResponseWithInvalidProductID -->
-        <test-method signature="CreditAPIValidateResponseUsingTransactionIDTwice()[pri:4, instance:testCases.IqSoft_API_4_Credit_Negative_Test@1ca3b418]" started-at="2022-10-10T12:31:35 AMT" name="CreditAPIValidateResponseUsingTransactionIDTwice" finished-at="2022-10-10T12:31:35 AMT" duration-ms="917" status="PASS">
+        <test-method signature="CreditAPIValidateResponseUsingTransactionIDTwice()[pri:4, instance:testCases.IqSoft_API_4_Credit_Negative_Test@23941fb4]" started-at="2022-10-10T18:13:30 AMT" name="CreditAPIValidateResponseUsingTransactionIDTwice" finished-at="2022-10-10T18:13:31 AMT" duration-ms="1059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditAPIValidateResponseUsingTransactionIDTwice -->
-        <test-method signature="CreditAPIValidateResponseUsingAmountHigherThenBalance()[pri:5, instance:testCases.IqSoft_API_4_Credit_Negative_Test@1ca3b418]" started-at="2022-10-10T12:31:35 AMT" name="CreditAPIValidateResponseUsingAmountHigherThenBalance" finished-at="2022-10-10T12:31:36 AMT" duration-ms="548" status="PASS">
+        <test-method signature="CreditAPIValidateResponseUsingAmountHigherThenBalance()[pri:5, instance:testCases.IqSoft_API_4_Credit_Negative_Test@23941fb4]" started-at="2022-10-10T18:13:31 AMT" name="CreditAPIValidateResponseUsingAmountHigherThenBalance" finished-at="2022-10-10T18:13:32 AMT" duration-ms="559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditAPIValidateResponseUsingAmountHigherThenBalance -->
-        <test-method signature="CreditAPIValidateResponseWithInvalidAmount(double)[pri:6, instance:testCases.IqSoft_API_4_Credit_Negative_Test@1ca3b418]" started-at="2022-10-10T12:31:36 AMT" name="CreditAPIValidateResponseWithInvalidAmount" data-provider="invalidAmountData" finished-at="2022-10-10T12:31:37 AMT" duration-ms="549" status="FAIL">
+        <test-method signature="CreditAPIValidateResponseWithInvalidAmount(double)[pri:6, instance:testCases.IqSoft_API_4_Credit_Negative_Test@23941fb4]" started-at="2022-10-10T18:13:32 AMT" name="CreditAPIValidateResponseWithInvalidAmount" data-provider="invalidAmountData" finished-at="2022-10-10T18:13:33 AMT" duration-ms="553" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1172,7 +1172,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditAPIValidateResponseWithInvalidAmount -->
-        <test-method signature="CreditAPIValidateResponseWithInvalidAmount(double)[pri:6, instance:testCases.IqSoft_API_4_Credit_Negative_Test@1ca3b418]" started-at="2022-10-10T12:31:37 AMT" name="CreditAPIValidateResponseWithInvalidAmount" data-provider="invalidAmountData" finished-at="2022-10-10T12:31:37 AMT" duration-ms="544" status="PASS">
+        <test-method signature="CreditAPIValidateResponseWithInvalidAmount(double)[pri:6, instance:testCases.IqSoft_API_4_Credit_Negative_Test@23941fb4]" started-at="2022-10-10T18:13:33 AMT" name="CreditAPIValidateResponseWithInvalidAmount" data-provider="invalidAmountData" finished-at="2022-10-10T18:13:33 AMT" duration-ms="571" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1183,7 +1183,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditAPIValidateResponseWithInvalidAmount -->
-        <test-method signature="CreditAPIValidateResponseWithInvalidAmount(double)[pri:6, instance:testCases.IqSoft_API_4_Credit_Negative_Test@1ca3b418]" started-at="2022-10-10T12:31:37 AMT" name="CreditAPIValidateResponseWithInvalidAmount" data-provider="invalidAmountData" finished-at="2022-10-10T12:31:38 AMT" duration-ms="561" status="PASS">
+        <test-method signature="CreditAPIValidateResponseWithInvalidAmount(double)[pri:6, instance:testCases.IqSoft_API_4_Credit_Negative_Test@23941fb4]" started-at="2022-10-10T18:13:33 AMT" name="CreditAPIValidateResponseWithInvalidAmount" data-provider="invalidAmountData" finished-at="2022-10-10T18:13:34 AMT" duration-ms="535" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1194,7 +1194,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditAPIValidateResponseWithInvalidAmount -->
-        <test-method signature="CreditAPIValidateResponseWithInvalidAmount(double)[pri:6, instance:testCases.IqSoft_API_4_Credit_Negative_Test@1ca3b418]" started-at="2022-10-10T12:31:38 AMT" name="CreditAPIValidateResponseWithInvalidAmount" data-provider="invalidAmountData" finished-at="2022-10-10T12:31:38 AMT" duration-ms="552" status="PASS">
+        <test-method signature="CreditAPIValidateResponseWithInvalidAmount(double)[pri:6, instance:testCases.IqSoft_API_4_Credit_Negative_Test@23941fb4]" started-at="2022-10-10T18:13:34 AMT" name="CreditAPIValidateResponseWithInvalidAmount" data-provider="invalidAmountData" finished-at="2022-10-10T18:13:34 AMT" duration-ms="568" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1205,7 +1205,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditAPIValidateResponseWithInvalidAmount -->
-        <test-method signature="CreditAPIValidateResponseWithInvalidAmount(double)[pri:6, instance:testCases.IqSoft_API_4_Credit_Negative_Test@1ca3b418]" started-at="2022-10-10T12:31:38 AMT" name="CreditAPIValidateResponseWithInvalidAmount" data-provider="invalidAmountData" finished-at="2022-10-10T12:31:39 AMT" duration-ms="567" status="PASS">
+        <test-method signature="CreditAPIValidateResponseWithInvalidAmount(double)[pri:6, instance:testCases.IqSoft_API_4_Credit_Negative_Test@23941fb4]" started-at="2022-10-10T18:13:34 AMT" name="CreditAPIValidateResponseWithInvalidAmount" data-provider="invalidAmountData" finished-at="2022-10-10T18:13:35 AMT" duration-ms="558" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1218,37 +1218,37 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
         </test-method> <!-- CreditAPIValidateResponseWithInvalidAmount -->
       </class> <!-- testCases.IqSoft_API_4_Credit_Negative_Test -->
       <class name="testCases.IqSoft_API_6_RollBackDebit_Positive_Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_6_RollBackDebit_Positive_Test@3b0fe47a]" started-at="2022-10-10T12:31:30 AMT" name="setUp" finished-at="2022-10-10T12:31:31 AMT" duration-ms="1337" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_6_RollBackDebit_Positive_Test@465232e9]" started-at="2022-10-10T18:13:26 AMT" name="setUp" finished-at="2022-10-10T18:13:27 AMT" duration-ms="1389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="RollBackAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_6_RollBackDebit_Positive_Test@3b0fe47a]" started-at="2022-10-10T12:31:31 AMT" name="RollBackAPIValidateStatusCod" finished-at="2022-10-10T12:31:31 AMT" duration-ms="3" status="PASS">
+        <test-method signature="RollBackAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_6_RollBackDebit_Positive_Test@465232e9]" started-at="2022-10-10T18:13:27 AMT" name="RollBackAPIValidateStatusCod" finished-at="2022-10-10T18:13:27 AMT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RollBackAPIValidateStatusCod -->
-        <test-method signature="RollBackAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_6_RollBackDebit_Positive_Test@3b0fe47a]" started-at="2022-10-10T12:31:31 AMT" name="RollBackAPIValidatePositiveResponse" finished-at="2022-10-10T12:31:31 AMT" depends-on-methods="testCases.IqSoft_API_6_RollBackDebit_Positive_Test.RollBackAPIValidateStatusCod" duration-ms="2" status="PASS">
+        <test-method signature="RollBackAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_6_RollBackDebit_Positive_Test@465232e9]" started-at="2022-10-10T18:13:27 AMT" name="RollBackAPIValidatePositiveResponse" finished-at="2022-10-10T18:13:27 AMT" depends-on-methods="testCases.IqSoft_API_6_RollBackDebit_Positive_Test.RollBackAPIValidateStatusCod" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RollBackAPIValidatePositiveResponse -->
-        <test-method signature="RollBackAPIValidatePositiveResponseBalanceCorrection()[pri:3, instance:testCases.IqSoft_API_6_RollBackDebit_Positive_Test@3b0fe47a]" started-at="2022-10-10T12:31:31 AMT" name="RollBackAPIValidatePositiveResponseBalanceCorrection" finished-at="2022-10-10T12:31:31 AMT" depends-on-methods="testCases.IqSoft_API_6_RollBackDebit_Positive_Test.RollBackAPIValidateStatusCod" duration-ms="1" status="PASS">
+        <test-method signature="RollBackAPIValidatePositiveResponseBalanceCorrection()[pri:3, instance:testCases.IqSoft_API_6_RollBackDebit_Positive_Test@465232e9]" started-at="2022-10-10T18:13:27 AMT" name="RollBackAPIValidatePositiveResponseBalanceCorrection" finished-at="2022-10-10T18:13:27 AMT" depends-on-methods="testCases.IqSoft_API_6_RollBackDebit_Positive_Test.RollBackAPIValidateStatusCod" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RollBackAPIValidatePositiveResponseBalanceCorrection -->
       </class> <!-- testCases.IqSoft_API_6_RollBackDebit_Positive_Test -->
       <class name="testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test@7ef82753]" started-at="2022-10-10T12:31:29 AMT" name="setUp" finished-at="2022-10-10T12:31:30 AMT" duration-ms="944" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test@37313c65]" started-at="2022-10-10T18:13:25 AMT" name="setUp" finished-at="2022-10-10T18:13:26 AMT" duration-ms="975" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="RollBackAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test@7ef82753]" started-at="2022-10-10T12:31:30 AMT" name="RollBackAPIValidateStatusCod" finished-at="2022-10-10T12:31:30 AMT" duration-ms="3" status="PASS">
+        <test-method signature="RollBackAPIValidateStatusCod()[pri:1, instance:testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test@37313c65]" started-at="2022-10-10T18:13:26 AMT" name="RollBackAPIValidateStatusCod" finished-at="2022-10-10T18:13:26 AMT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RollBackAPIValidateStatusCod -->
-        <test-method signature="RollBackAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test@7ef82753]" started-at="2022-10-10T12:31:30 AMT" name="RollBackAPIValidatePositiveResponse" finished-at="2022-10-10T12:31:30 AMT" depends-on-methods="testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test.RollBackAPIValidateStatusCod" duration-ms="2" status="PASS">
+        <test-method signature="RollBackAPIValidatePositiveResponse()[pri:2, instance:testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test@37313c65]" started-at="2022-10-10T18:13:26 AMT" name="RollBackAPIValidatePositiveResponse" finished-at="2022-10-10T18:13:26 AMT" depends-on-methods="testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test.RollBackAPIValidateStatusCod" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RollBackAPIValidatePositiveResponse -->
-        <test-method signature="RollBackAPIValidatePositiveResponseBalanceCorrection()[pri:3, instance:testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test@7ef82753]" started-at="2022-10-10T12:31:30 AMT" name="RollBackAPIValidatePositiveResponseBalanceCorrection" finished-at="2022-10-10T12:31:30 AMT" depends-on-methods="testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test.RollBackAPIValidateStatusCod" duration-ms="1" status="PASS">
+        <test-method signature="RollBackAPIValidatePositiveResponseBalanceCorrection()[pri:3, instance:testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test@37313c65]" started-at="2022-10-10T18:13:26 AMT" name="RollBackAPIValidatePositiveResponseBalanceCorrection" finished-at="2022-10-10T18:13:26 AMT" depends-on-methods="testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test.RollBackAPIValidateStatusCod" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RollBackAPIValidatePositiveResponseBalanceCorrection -->

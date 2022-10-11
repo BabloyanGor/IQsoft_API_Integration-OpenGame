@@ -1,0 +1,148 @@
+{
+  "uid" : "a01e4412b7690c6d",
+  "name" : "CreditAPIValidateResponseUsingAmountHigherThenBalance",
+  "fullName" : "testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseUsingAmountHigherThenBalance",
+  "historyId" : "61c113a1005fc4fa1f63d23a4d84997c",
+  "time" : {
+    "start" : 1665411024240,
+    "stop" : 1665411024817,
+    "duration" : 577
+  },
+  "description" : "Verify Credit API_s response  using Amount Higher Then Balance",
+  "descriptionHtml" : "<p>Verify Credit API_s response  using Amount Higher Then Balance</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665411009933,
+      "stop" : 1665411009996,
+      "duration" : 63
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify Credit API_s response  using Amount Higher Then Balance",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b2cfa346c366e",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "b2cfa346c366e.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "28bfc4cee9a0ff0e",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "28bfc4cee9a0ff0e.txt",
+      "type" : "text/plain",
+      "size" : 82
+    }, {
+      "uid" : "4987ad6ccfe14334",
+      "name" : "CreditAPI RequestBody",
+      "source" : "4987ad6ccfe14334.txt",
+      "type" : "text/plain",
+      "size" : 180
+    }, {
+      "uid" : "5a0ebb674344b725",
+      "name" : "CreditAPI ResponseBody",
+      "source" : "5a0ebb674344b725.txt",
+      "type" : "text/plain",
+      "size" : 64
+    }, {
+      "uid" : "5c505993d1acd35",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "5c505993d1acd35.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "9a7d546d85e5d98c",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "9a7d546d85e5d98c.txt",
+      "type" : "text/plain",
+      "size" : 82
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665411042258,
+      "stop" : 1665411042259,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "CreditAPIValidateResponseUsingAmountHigherThenBalance"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "2316@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a01e4412b7690c6d.json",
+  "parameterValues" : [ ]
+}

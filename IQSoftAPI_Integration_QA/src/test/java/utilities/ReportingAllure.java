@@ -37,39 +37,39 @@ public class ReportingAllure implements ITestListener {
 
     @Override
     public void onStart(ITestContext iTestContext) {
-        saveTextLog((iTestContext.getName()) + ": Test execution starts");
+        attachHtml((iTestContext.getName()) + ": Test execution starts");
         BaseTest.logger.info((iTestContext.getName()) + ": Test execution starts");
 
     }
 
     @Override
     public void onFinish(ITestContext iTestContext) {
-        saveTextLog((iTestContext.getName()) + ": Test execution finished");
+        attachHtml((iTestContext.getName()) + ": Test execution finished");
         BaseTest.logger.info((iTestContext.getName()) + ": Test execution finished");
 
     }
 
     @Override
     public void onTestSuccess(ITestResult iTestResult) {
-        saveTextLog(getTestMethodName(iTestResult) + ": Test passed");
+        attachHtml(getTestMethodName(iTestResult) + ": Test passed");
         BaseTest.logger.info(getTestMethodName(iTestResult) + ": Test passed");
     }
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-        saveTextLog(getTestMethodName(iTestResult) + ": Test failed");
+        attachHtml(getTestMethodName(iTestResult) + ": Test failed");
         BaseTest.logger.error(getTestMethodName(iTestResult) + " Test failed");
     }
 
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
-        saveTextLog(getTestMethodName(iTestResult) + ": Test Skipped");
+        attachHtml(getTestMethodName(iTestResult) + ": Test Skipped");
         BaseTest.logger.error(getTestMethodName(iTestResult) + " Test failed");
     }
 
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
-        saveTextLog(getTestMethodName(iTestResult) + ": Test failed partially");
+        attachHtml(getTestMethodName(iTestResult) + ": Test failed partially");
         BaseTest.logger.error(getTestMethodName(iTestResult) + ": Test failed partially");
     }
 }

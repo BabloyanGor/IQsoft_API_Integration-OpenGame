@@ -3,6 +3,7 @@ package testCases;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
+import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -17,7 +18,7 @@ import java.io.IOException;
 
 public class IqSoft_API_2_Authorization_Positive_Test extends BaseTest {
 
-    JSONObject jsonObjectBody;
+    JSONObject jsonObjectBody ;
     int statusCod;
 
     @BeforeClass
@@ -65,6 +66,7 @@ public class IqSoft_API_2_Authorization_Positive_Test extends BaseTest {
     @Description("Verify Authorization API_s Response Status Cod equals to 200")
     @Severity(SeverityLevel.BLOCKER)
     public void AuthorizationAPIValidateStatusCod() {
+
         logger.info("Authorization API Status Cod is Equal: " + statusCod);
         Assert.assertEquals(200, statusCod, "StatusCod: " + statusCod);
     }
@@ -85,13 +87,10 @@ public class IqSoft_API_2_Authorization_Positive_Test extends BaseTest {
                 "UserName: " + iqSoft_02_apisVariables_authorization_response.getUserName());
         softAssert.assertNotEquals(iqSoft_02_apisVariables_authorization_response.getBirthDate(), null,
                 "BirthDate: " + iqSoft_02_apisVariables_authorization_response.getBirthDate());
-
-
         softAssert.assertNotEquals(iqSoft_02_apisVariables_authorization_response.getCurrencyId(), null,
                 "CurrencyId: " + iqSoft_02_apisVariables_authorization_response.getCurrencyId());
         softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getCurrencyId().length(), 3,
                 "CurrencyIdLength: " + iqSoft_02_apisVariables_authorization_response.getCurrencyId().length());
-
         softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getDescription(), "null",
                 "Description : " + iqSoft_02_apisVariables_authorization_response.getDescription());
         softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getResponseCode(), 0,

@@ -1,0 +1,129 @@
+{
+  "uid" : "7441df5bd41b875",
+  "name" : "AuthorizationAPIValidatePositiveResponse",
+  "fullName" : "testCases.IqSoft_API_2_Authorization_Positive_Test.AuthorizationAPIValidatePositiveResponse",
+  "historyId" : "8a67f0bdf7b84b57e042262515421b30",
+  "time" : {
+    "start" : 1665411013818,
+    "stop" : 1665411013818,
+    "duration" : 0
+  },
+  "description" : "Verify Authorization API_s Validate Positive Response",
+  "descriptionHtml" : "<p>Verify Authorization API_s Validate Positive Response</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665411009933,
+      "stop" : 1665411009996,
+      "duration" : 63
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1665411013144,
+      "stop" : 1665411013808,
+      "duration" : 664
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "98cab514db455a30",
+      "name" : "AuthorizationAPI RequestBody",
+      "source" : "98cab514db455a30.txt",
+      "type" : "text/plain",
+      "size" : 66
+    }, {
+      "uid" : "443bbc8fa80bbe87",
+      "name" : "AuthorizationAPI ResponseBody",
+      "source" : "443bbc8fa80bbe87.txt",
+      "type" : "text/plain",
+      "size" : 219
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665411042258,
+      "stop" : 1665411042259,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_2_Authorization_Positive_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_2_Authorization_Positive_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "AuthorizationAPIValidatePositiveResponse"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_2_Authorization_Positive_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "2316@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7441df5bd41b875.json",
+  "parameterValues" : [ ]
+}

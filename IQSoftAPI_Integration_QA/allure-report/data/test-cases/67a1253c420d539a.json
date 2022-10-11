@@ -1,0 +1,163 @@
+{
+  "uid" : "67a1253c420d539a",
+  "name" : "CreditAPIValidatePositiveResponse",
+  "fullName" : "testCases.IqSoft_API_4_Credit_Positive_Test.CreditAPIValidatePositiveResponse",
+  "historyId" : "4f26ff0cb3df1c2752aa3c6046bff70f",
+  "time" : {
+    "start" : 1665411203205,
+    "stop" : 1665411203206,
+    "duration" : 1
+  },
+  "description" : "Verify Credit API_s Validate Positive Response",
+  "descriptionHtml" : "<p>Verify Credit API_s Validate Positive Response</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665411198122,
+      "stop" : 1665411198179,
+      "duration" : 57
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1665411202015,
+      "stop" : 1665411203199,
+      "duration" : 1184
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3b99a344c47ab10",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "3b99a344c47ab10.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "c4de2110cccad0b9",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "c4de2110cccad0b9.txt",
+      "type" : "text/plain",
+      "size" : 82
+    }, {
+      "uid" : "9fc1527d5be119c8",
+      "name" : "CreditAPI RequestBody",
+      "source" : "9fc1527d5be119c8.txt",
+      "type" : "text/plain",
+      "size" : 177
+    }, {
+      "uid" : "de36343487edf894",
+      "name" : "CreditAPI ResponseBody",
+      "source" : "de36343487edf894.txt",
+      "type" : "text/plain",
+      "size" : 132
+    }, {
+      "uid" : "8b1ceb9bd4e80cac",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "8b1ceb9bd4e80cac.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "701abf16c51a0779",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "701abf16c51a0779.txt",
+      "type" : "text/plain",
+      "size" : 82
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665411229807,
+      "stop" : 1665411229807,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_4_Credit_Positive_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_4_Credit_Positive_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "CreditAPIValidatePositiveResponse"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_4_Credit_Positive_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "7328@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "bcee6800b8ff1002",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411015253,
+        "stop" : 1665411015255,
+        "duration" : 2
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "67a1253c420d539a.json",
+  "parameterValues" : [ ]
+}

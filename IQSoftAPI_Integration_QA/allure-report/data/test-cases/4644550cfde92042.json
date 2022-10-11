@@ -1,0 +1,151 @@
+{
+  "uid" : "4644550cfde92042",
+  "name" : "CreditAPIValidateResponseWithInvalidAmount",
+  "fullName" : "testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidAmount",
+  "historyId" : "b25309c987608a3a10d4e909ded5df84",
+  "time" : {
+    "start" : 1665411027162,
+    "stop" : 1665411027739,
+    "duration" : 577
+  },
+  "description" : "Verify Credit API_s response with invalid Amount",
+  "descriptionHtml" : "<p>Verify Credit API_s response with invalid Amount</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665411009933,
+      "stop" : 1665411009996,
+      "duration" : 63
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify Credit API_s response with invalid Amount",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5817711e7ef3a7dd",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "5817711e7ef3a7dd.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "cdc6661d64dbd82e",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "cdc6661d64dbd82e.txt",
+      "type" : "text/plain",
+      "size" : 82
+    }, {
+      "uid" : "fbd231b1284fd6e3",
+      "name" : "CreditAPI RequestBody",
+      "source" : "fbd231b1284fd6e3.txt",
+      "type" : "text/plain",
+      "size" : 180
+    }, {
+      "uid" : "d6e166e68a38116",
+      "name" : "CreditAPI ResponseBody",
+      "source" : "d6e166e68a38116.txt",
+      "type" : "text/plain",
+      "size" : 58
+    }, {
+      "uid" : "5b3a5a5cf1434119",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "5b3a5a5cf1434119.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "e82c4941d2c63dd9",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "e82c4941d2c63dd9.txt",
+      "type" : "text/plain",
+      "size" : 82
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665411042258,
+      "stop" : 1665411042259,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "CreditAPIValidateResponseWithInvalidAmount"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "2316@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "-1.005"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4644550cfde92042.json",
+  "parameterValues" : [ "-1.005" ]
+}

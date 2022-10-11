@@ -1,0 +1,220 @@
+{
+  "uid" : "54d1ea43e2822c9f",
+  "name" : "RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice",
+  "fullName" : "testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice",
+  "historyId" : "7b3b3afa070b5afd7dbb87b99f150f81",
+  "time" : {
+    "start" : 1665411040573,
+    "stop" : 1665411042203,
+    "duration" : 1630
+  },
+  "description" : "Verify RollBack API_s response using Same TransactionID twice ",
+  "descriptionHtml" : "<p>Verify RollBack API_s response using Same TransactionID twice</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665411009933,
+      "stop" : 1665411009996,
+      "duration" : 63
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify RollBack API_s response using Same TransactionID twice ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a5a9d94ce5d70ad5",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "a5a9d94ce5d70ad5.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "23397aec1a307ace",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "23397aec1a307ace.txt",
+      "type" : "text/plain",
+      "size" : 82
+    }, {
+      "uid" : "dd67b60c1c35a1a0",
+      "name" : "CreditAPI RequestBody",
+      "source" : "dd67b60c1c35a1a0.txt",
+      "type" : "text/plain",
+      "size" : 177
+    }, {
+      "uid" : "11246207603069db",
+      "name" : "CreditAPI ResponseBody",
+      "source" : "11246207603069db.txt",
+      "type" : "text/plain",
+      "size" : 132
+    }, {
+      "uid" : "64e00191b4651dbf",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "64e00191b4651dbf.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "c3e9b7161bd8eac9",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "c3e9b7161bd8eac9.txt",
+      "type" : "text/plain",
+      "size" : 82
+    }, {
+      "uid" : "541b8204a1757046",
+      "name" : "CreditAPI RequestBody",
+      "source" : "541b8204a1757046.txt",
+      "type" : "text/plain",
+      "size" : 177
+    }, {
+      "uid" : "d403e892561279c8",
+      "name" : "CreditAPI ResponseBody",
+      "source" : "d403e892561279c8.txt",
+      "type" : "text/plain",
+      "size" : 132
+    }, {
+      "uid" : "cdb7534448da0096",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "cdb7534448da0096.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "d6fd29f8ab3949e1",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "d6fd29f8ab3949e1.txt",
+      "type" : "text/plain",
+      "size" : 82
+    }, {
+      "uid" : "537c52ed07e44508",
+      "name" : "RollBackAPI RequestBody",
+      "source" : "537c52ed07e44508.txt",
+      "type" : "text/plain",
+      "size" : 211
+    }, {
+      "uid" : "80a9028bdf528081",
+      "name" : "RollBackAPI ResponseBody",
+      "source" : "80a9028bdf528081.txt",
+      "type" : "text/plain",
+      "size" : 37
+    }, {
+      "uid" : "c5f532c912e07c19",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "c5f532c912e07c19.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "7a40a82691bc3425",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "7a40a82691bc3425.txt",
+      "type" : "text/plain",
+      "size" : 82
+    }, {
+      "uid" : "a5ec68991b6b1517",
+      "name" : "RollBackAPI RequestBody",
+      "source" : "a5ec68991b6b1517.txt",
+      "type" : "text/plain",
+      "size" : 211
+    }, {
+      "uid" : "78aa790812322bf7",
+      "name" : "RollBackAPI ResponseBody",
+      "source" : "78aa790812322bf7.txt",
+      "type" : "text/plain",
+      "size" : 37
+    }, {
+      "uid" : "24a411f9217f0ed",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "24a411f9217f0ed.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "d1cd25b00aa0c612",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "d1cd25b00aa0c612.txt",
+      "type" : "text/plain",
+      "size" : 82
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 18,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665411042258,
+      "stop" : 1665411042259,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_6_RollBack_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_6_RollBack_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_6_RollBack_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "2316@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "54d1ea43e2822c9f.json",
+  "parameterValues" : [ ]
+}

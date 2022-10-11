@@ -1,0 +1,175 @@
+{
+  "uid" : "23d7072e4d4df59f",
+  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+  "fullName" : "testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount",
+  "historyId" : "3235f64a2a311e7a1d0b72f79830a428",
+  "time" : {
+    "start" : 1665411033015,
+    "stop" : 1665411033956,
+    "duration" : 941
+  },
+  "description" : "Verify Debit API_s response using Invalid Amount",
+  "descriptionHtml" : "<p>Verify Debit API_s response using Invalid Amount</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665411009933,
+      "stop" : 1665411009996,
+      "duration" : 63
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify Debit API_s response using Invalid Amount",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c069c32970f3d142",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "c069c32970f3d142.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "b88733cb51683a0a",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "b88733cb51683a0a.txt",
+      "type" : "text/plain",
+      "size" : 82
+    }, {
+      "uid" : "1d261adfd7073fd6",
+      "name" : "CreditAPI RequestBody",
+      "source" : "1d261adfd7073fd6.txt",
+      "type" : "text/plain",
+      "size" : 177
+    }, {
+      "uid" : "cbb2fd5613eaaa46",
+      "name" : "CreditAPI ResponseBody",
+      "source" : "cbb2fd5613eaaa46.txt",
+      "type" : "text/plain",
+      "size" : 132
+    }, {
+      "uid" : "552c72d595d9459d",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "552c72d595d9459d.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "812e2d0dec0f81f1",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "812e2d0dec0f81f1.txt",
+      "type" : "text/plain",
+      "size" : 82
+    }, {
+      "uid" : "52704c1aa1b38018",
+      "name" : "DebitAPI RequestBody",
+      "source" : "52704c1aa1b38018.txt",
+      "type" : "text/plain",
+      "size" : 260
+    }, {
+      "uid" : "e1c36d7b6c6db08f",
+      "name" : "DebitAPI ResponseBody",
+      "source" : "e1c36d7b6c6db08f.txt",
+      "type" : "text/plain",
+      "size" : 58
+    }, {
+      "uid" : "42b943a73c68ce92",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "42b943a73c68ce92.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "795f0fd3479b21bd",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "795f0fd3479b21bd.txt",
+      "type" : "text/plain",
+      "size" : 82
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665411042258,
+      "stop" : 1665411042259,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_5_Debit_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_5_Debit_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "DebitAPIValidateResponseUsingInvalidAmount"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_5_Debit_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "2316@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "-1.0"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "23d7072e4d4df59f.json",
+  "parameterValues" : [ "-1.0" ]
+}

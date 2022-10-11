@@ -1,0 +1,1066 @@
+{
+  "dc5d7e2d7ed9d0a7406a51ca3c8e7ba" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cd30479b5926181e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411206153,
+        "stop" : 1665411206154,
+        "duration" : 1
+      }
+    } ]
+  },
+  "3cefe587bc4cb84a559429926de266ef" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "abc39077997fd540",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode 21 expected [22] but found [21],\n\tError Description: An error occurred while updating the entries. See the inner exception for details. expected [ClientNotFound ] but found [An error occurred while updating the entries. See the inner exception for details.]",
+      "time" : {
+        "start" : 1665411200170,
+        "stop" : 1665411200458,
+        "duration" : 288
+      }
+    } ]
+  },
+  "a186140269c7884522bc37fb2f5116bb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "71802a841d07441b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411205155,
+        "stop" : 1665411205155,
+        "duration" : 0
+      }
+    } ]
+  },
+  "4f26ff0cb3df1c2752aa3c6046bff70f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "67a1253c420d539a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411203205,
+        "stop" : 1665411203206,
+        "duration" : 1
+      }
+    } ]
+  },
+  "a08545ca10cc27a665d782cd6f799f02" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "718e5f568bddf426",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411221374,
+        "stop" : 1665411222266,
+        "duration" : 892
+      }
+    } ]
+  },
+  "3235f64a2a311e7a1d0b72f79830a428" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "497cf059fd643bd8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411220439,
+        "stop" : 1665411221371,
+        "duration" : 932
+      }
+    } ]
+  },
+  "b4120927638bf3c438771ea0b608a4f3" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f0e92e0c4bb4c810",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tError Description: game not avaible expected [game not available] but found [game not avaible]",
+      "time" : {
+        "start" : 1665411210365,
+        "stop" : 1665411210920,
+        "duration" : 555
+      }
+    } ]
+  },
+  "95931095539f395ca0c1a1aff73c90d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f1810e5599fda6bf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411226098,
+        "stop" : 1665411226743,
+        "duration" : 645
+      }
+    } ]
+  },
+  "6aa344a4bfee41947ded7ca9e2bf7059" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4e9cc67b759c3333",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411203201,
+        "stop" : 1665411203202,
+        "duration" : 1
+      }
+    } ]
+  },
+  "f9a297d26d8349f3da5988dcd89ffa22" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6f50e1b1889b2a63",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [22] but found [21],\n\tError Description: An error occurred while updating the entries. See the inner exception for details. expected [Client not found] but found [An error occurred while updating the entries. See the inner exception for details.]",
+      "time" : {
+        "start" : 1665411199694,
+        "stop" : 1665411200165,
+        "duration" : 471
+      }
+    } ]
+  },
+  "ada57195e0ee2f6b99d20ba4348813c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "324fd2581157de1a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411213108,
+        "stop" : 1665411213679,
+        "duration" : 571
+      }
+    } ]
+  },
+  "4ec03e174daa410e53f22effad418f91" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "93e585c71a9cf582",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [43] but found [0],\n\tError Description: null expected [ProductNotFound] but found [null]",
+      "time" : {
+        "start" : 1665411207949,
+        "stop" : 1665411208140,
+        "duration" : 191
+      }
+    } ]
+  },
+  "f3ff1f99343980b749bef3f219dd9ece" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b6cad25b77f8b891",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [39] but found [0],\n\tError Description: null expected [WrongOperationAmount] but found [null]",
+      "time" : {
+        "start" : 1665411212553,
+        "stop" : 1665411213104,
+        "duration" : 551
+      }
+    } ]
+  },
+  "af7f128b0732a7a827f0dd43f9edaad" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "abdb81ec331079c5",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [29] but found [0],\n\tError Description: null expected [SessionExpired] but found [null],\n\tamountBeforeCredit = amountAfterCredit: 9682.0 = 9681.0 expected [9681.0] but found [9682.0]",
+      "time" : {
+        "start" : 1665411209171,
+        "stop" : 1665411209781,
+        "duration" : 610
+      }
+    } ]
+  },
+  "b37c45feba2ed46f55ea2e8b13be95f4" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f349b5bed68034e9",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [50] but found [0],\n\tError Description: null expected [CanNotConnectCreditAndDebit] but found [null],\n\tamountBeforeDebit: 9678.0 = amountAfterDebit: 9680.0 expected [9680.0] but found [9678.0]",
+      "time" : {
+        "start" : 1665411218949,
+        "stop" : 1665411219494,
+        "duration" : 545
+      }
+    } ]
+  },
+  "b25309c987608a3a10d4e909ded5df84" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "afeb2279a2e859d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411214789,
+        "stop" : 1665411215346,
+        "duration" : 557
+      }
+    } ]
+  },
+  "ef0781f2acd147b7c22eacbbc1b61a94" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "971dc0fec5aa597f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411214218,
+        "stop" : 1665411214786,
+        "duration" : 568
+      }
+    } ]
+  },
+  "6ad4ab9c870b54f33e66ae31ef187ca" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "be0da28123c936eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411223211,
+        "stop" : 1665411224148,
+        "duration" : 937
+      }
+    } ]
+  },
+  "b2bb3b2771c365bed47f382ba1e91e65" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "745a06cf71446be8",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [69] but found [0],\n\tError Description: null expected [ClientDocumentAlreadyExists] but found [null]",
+      "time" : {
+        "start" : 1665411217238,
+        "stop" : 1665411218930,
+        "duration" : 1692
+      }
+    } ]
+  },
+  "859d75ca8b32231e2c0b21c0f3692376" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "91b5bf3200ba8e95",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411213681,
+        "stop" : 1665411214215,
+        "duration" : 534
+      }
+    } ]
+  },
+  "a5e4ac79575e09609045a20bac7fded5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "43fdcc68ffa14cab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411203777,
+        "stop" : 1665411203779,
+        "duration" : 2
+      }
+    } ]
+  },
+  "af458609e278efd5b5c647b305ac4e40" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f595b3876f0d9ebe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411205159,
+        "stop" : 1665411205160,
+        "duration" : 1
+      }
+    } ]
+  },
+  "862603de78c00916407b08539cebcc50" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "652224f95fd0ffb7",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tamountAfterCredit: 9674.0 = amountAfterRollBack : 9675.0 expected [9675.0] but found [9674.0]",
+      "time" : {
+        "start" : 1665411224150,
+        "stop" : 1665411225127,
+        "duration" : 977
+      }
+    } ]
+  },
+  "7b3b3afa070b5afd7dbb87b99f150f81" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "187e4f95ed5488c6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411228045,
+        "stop" : 1665411229745,
+        "duration" : 1700
+      }
+    } ]
+  },
+  "d8fe06a2543f4c93ead6231af5e5b7b6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "352d53cd43ab612b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411215349,
+        "stop" : 1665411216289,
+        "duration" : 940
+      }
+    } ]
+  },
+  "c7da46239332cdb54acabdd7adcde55d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e2ec4d26c2b851f9",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [29] but found [0],\n\tError Description: null expected [SessionExpired] but found [null]",
+      "time" : {
+        "start" : 1665411208145,
+        "stop" : 1665411208342,
+        "duration" : 197
+      }
+    } ]
+  },
+  "87675a08e59a77dbb2ca8980bbd7e2a2" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "109e4fafc59f25a6",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [0] but found [21],\n\tError Description: An error occurred while updating the entries. See the inner exception for details. expected [null] but found [An error occurred while updating the entries. See the inner exception for details.],\n\tResponseObject: null did not expect [null] but found [null],\n\tResponseObject Don't Contain http:// expected [true] but found [false]",
+      "time" : {
+        "start" : 1665411199159,
+        "stop" : 1665411199170,
+        "duration" : 11
+      }
+    } ]
+  },
+  "dc96eaf72e3610208c3d99e1a1b80c8a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5212fbf76e088228",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411199106,
+        "stop" : 1665411199113,
+        "duration" : 7
+      }
+    } ]
+  },
+  "3944ea1bfd4dab3f3044793593464943" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "83c904a67b84608c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411207749,
+        "stop" : 1665411207937,
+        "duration" : 188
+      }
+    } ]
+  },
+  "7e04fea702fe20d4531bb0c207f506f3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "83cb93a2ff7b9ca4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411205140,
+        "stop" : 1665411205142,
+        "duration" : 2
+      }
+    } ]
+  },
+  "3763a7deab7d2d1c4ce5ddc4c58c45a6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1fca534358b70072",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411200478,
+        "stop" : 1665411200723,
+        "duration" : 245
+      }
+    } ]
+  },
+  "93a6a1e896094fcedc2c825c503d2fde" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "13232f576e6d882a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411201525,
+        "stop" : 1665411201526,
+        "duration" : 1
+      }
+    } ]
+  },
+  "1a402c25926a00fba801bcfa8176a453" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4c39025c306af5f5",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [39] but found [0],\n\tError Description: null expected [WrongOperationAmount] but found [null]",
+      "time" : {
+        "start" : 1665411219497,
+        "stop" : 1665411220435,
+        "duration" : 938
+      }
+    } ]
+  },
+  "b30c7e55db3fafad6216b5da1ee83e67" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5e18aa5be29afa3d",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [20] but found [0],\n\tError Description: null expected [CurrencyNotExists] but found [null]",
+      "time" : {
+        "start" : 1665411208547,
+        "stop" : 1665411208739,
+        "duration" : 192
+      }
+    } ]
+  },
+  "dbbf154f2414cfa8da1d0917b1f9f01d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "60a85956a99cdd3a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411222272,
+        "stop" : 1665411223208,
+        "duration" : 936
+      }
+    } ]
+  },
+  "f90bd0f80bce2714765ed9274241862" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2694796b82bc127a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411206140,
+        "stop" : 1665411206141,
+        "duration" : 1
+      }
+    } ]
+  },
+  "61c113a1005fc4fa1f63d23a4d84997c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "20f964aeca65d222",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411211988,
+        "stop" : 1665411212545,
+        "duration" : 557
+      }
+    } ]
+  },
+  "2c75192783b3f12b4a770ef2891c6dd7" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "38939365af88825e",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tError Description: game not avaible expected [game not available] but found [game not avaible]",
+      "time" : {
+        "start" : 1665411216295,
+        "stop" : 1665411217235,
+        "duration" : 940
+      }
+    } ]
+  },
+  "badd8f700559d0535d927d532a418904" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b8cb0590d1ffddfd",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tamountAfterRollBack : 9675.0 = amountAfterCredit: 9674.0 expected [9674.0] but found [9675.0]",
+      "time" : {
+        "start" : 1665411225135,
+        "stop" : 1665411226092,
+        "duration" : 957
+      }
+    } ]
+  },
+  "7d0e87e462c32532a80fbd49f313393a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f7c65cae4d1bffb3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411203787,
+        "stop" : 1665411203789,
+        "duration" : 2
+      }
+    } ]
+  },
+  "7e82feebddcb291865c7feb2170dc3e8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "859cfad1cfca4563",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411199176,
+        "stop" : 1665411199691,
+        "duration" : 515
+      }
+    } ]
+  },
+  "83e9d81fbb1e671bd2643e2b84d61778" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9ea8eb3318359e7c",
+      "status" : "failed",
+      "statusDetails" : "balanceUSD VS balanceEUR did not expect [9682.0] but found [9682.0]",
+      "time" : {
+        "start" : 1665411208743,
+        "stop" : 1665411209162,
+        "duration" : 419
+      }
+    } ]
+  },
+  "216d89b1b4125e437fb41555d2e3ee82" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6fe098588615ec0b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411209784,
+        "stop" : 1665411210362,
+        "duration" : 578
+      }
+    } ]
+  },
+  "8a67f0bdf7b84b57e042262515421b30" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4cdb1dce4112f607",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411201530,
+        "stop" : 1665411201530,
+        "duration" : 0
+      }
+    } ]
+  },
+  "b434aec64d5d2fdf28d8703fc1f58ead" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8dd9fd604f26e707",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411207547,
+        "stop" : 1665411207548,
+        "duration" : 1
+      }
+    } ]
+  },
+  "dce64b4babed4bb0a30dc9f4130c8090" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cc2aca8ab2d14ff6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411210926,
+        "stop" : 1665411211982,
+        "duration" : 1056
+      }
+    } ]
+  },
+  "fe3e5944185491e5a7d9f3d82d14cf56" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c4747b947d7483c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411202005,
+        "stop" : 1665411202005,
+        "duration" : 0
+      }
+    } ]
+  },
+  "1dfb73c7d2bb14c69d0fa43c8368655d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b438fa368658757f",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [43] but found [21],\n\tError Description: An error occurred while updating the entries. See the inner exception for details. expected [ProductNotFound] but found [An error occurred while updating the entries. See the inner exception for details.]",
+      "time" : {
+        "start" : 1665411200727,
+        "stop" : 1665411201014,
+        "duration" : 287
+      }
+    } ]
+  },
+  "af2de4bbf0b0762f6d2ff5ca33e892a2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a11f05f33cf4d3b9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411207554,
+        "stop" : 1665411207555,
+        "duration" : 1
+      }
+    } ]
+  },
+  "a16f9262f26e494b988852dbe6e39187" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "158f617b6c124dab",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tamountAfterRollBack1: 9675.0 = amountAfterRollBack2 : 9676.0 expected [9676.0] but found [9675.0]",
+      "time" : {
+        "start" : 1665411226748,
+        "stop" : 1665411228042,
+        "duration" : 1294
+      }
+    } ]
+  },
+  "7be0af38f1459508ac9409c19cdc10d0" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fe0b6e2ca1a5c5a2",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [29] but found [0],\n\tError Description: null expected [SessionExpired] but found [null]",
+      "time" : {
+        "start" : 1665411207557,
+        "stop" : 1665411207746,
+        "duration" : 189
+      }
+    } ]
+  },
+  "888492858dbacec93019f41bd2fa48a7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4ce558c33fb10962",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411202009,
+        "stop" : 1665411202011,
+        "duration" : 2
+      }
+    } ]
+  },
+  "b985f0592f4e52e892859da7c75408ed" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d2ce6b368221bbe5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411207551,
+        "stop" : 1665411207551,
+        "duration" : 0
+      }
+    } ]
+  },
+  "371f2d826ee9a24f5ddcfecb65861d17" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bf96c2620e281585",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411208348,
+        "stop" : 1665411208536,
+        "duration" : 188
+      }
+    } ]
+  },
+  "ede5ed6959361720a75dba073814d3e5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2da3f58f8ead8610",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411206145,
+        "stop" : 1665411206147,
+        "duration" : 2
+      }
+    } ]
+  }
+}

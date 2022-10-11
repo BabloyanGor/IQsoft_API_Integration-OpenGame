@@ -6,6 +6,25 @@
   </listeners>
   <test thread-count="5" name="API Integration Automation Test(failed)" verbose="0">
     <classes>
+      <class name="testCases.IqSoft_API_5_Debit_Negative_Test">
+        <methods>
+          <include name="DebitAPIValidateResponseUsingInvalidAmount" invocation-numbers="0"/>
+          <include name="tearDownSuite"/>
+          <include name="DebitAPIValidateResponseUsingInvalidProductID"/>
+          <include name="DebitAPIValidateResponseUsingTransactionIDTwice"/>
+          <include name="DebitAPIValidateResponseUsingInvalidCreditTransactionID"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- testCases.IqSoft_API_5_Debit_Negative_Test -->
+      <class name="testCases.IqSoft_API_4_Credit_Negative_Test">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="CreditAPIValidateResponseWithExpiredToken"/>
+          <include name="CreditAPIValidateResponseWithInvalidProductID"/>
+          <include name="setupSuite"/>
+          <include name="CreditAPIValidateResponseWithInvalidAmount" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.IqSoft_API_4_Credit_Negative_Test -->
       <class name="testCases.IqSoft_API_1_OpenGame_Negative_Test">
         <methods>
           <include name="openGameAPIValidateResponseWithInvalidPartnerID"/>
@@ -20,46 +39,19 @@
           <include name="setUpTestCase"/>
           <include name="tearDownSuite"/>
           <include name="openGameAPIValidatePositiveResponse"/>
-          <include name="setupSuite"/>
           <include name="openGameAPIValidateStatusCod"/>
+          <include name="setupSuite"/>
         </methods>
       </class> <!-- testCases.IqSoft_API_1_OpenGame_Positive_Test -->
-      <class name="testCases.IqSoft_API_4_Credit_Negative_Test">
-        <methods>
-          <include name="tearDownSuite"/>
-          <include name="CreditAPIValidateResponseWithExpiredToken"/>
-          <include name="CreditAPIValidateResponseWithInvalidProductID"/>
-          <include name="setupSuite"/>
-          <include name="CreditAPIValidateResponseWithInvalidAmount" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- testCases.IqSoft_API_4_Credit_Negative_Test -->
       <class name="testCases.IqSoft_API_3_GetBalance_Negative_Test">
         <methods>
           <include name="GetBalanceAPIValidateResponseWithInvalidCurrencyID"/>
-          <include name="GetBalanceAPIValidateResponseWithOtherCurrencyID"/>
           <include name="tearDownSuite"/>
-          <include name="GetBalanceAPIValidateResponseWithExpiredToken"/>
+          <include name="GetBalanceAPIValidateResponseWithOtherCurrencyID"/>
           <include name="setupSuite"/>
+          <include name="GetBalanceAPIValidateResponseWithExpiredToken"/>
         </methods>
       </class> <!-- testCases.IqSoft_API_3_GetBalance_Negative_Test -->
-      <class name="testCases.IqSoft_API_5_Debit_Negative_Test">
-        <methods>
-          <include name="DebitAPIValidateResponseUsingInvalidAmount" invocation-numbers="0"/>
-          <include name="tearDownSuite"/>
-          <include name="DebitAPIValidateResponseUsingInvalidProductID"/>
-          <include name="DebitAPIValidateResponseUsingTransactionIDTwice"/>
-          <include name="DebitAPIValidateResponseUsingInvalidCreditTransactionID"/>
-          <include name="setupSuite"/>
-        </methods>
-      </class> <!-- testCases.IqSoft_API_5_Debit_Negative_Test -->
-      <class name="testCases.IqSoft_API_2_Authorization_Negative_Test">
-        <methods>
-          <include name="AuthorizationAPIValidateResponseWithInvalidProductID"/>
-          <include name="tearDownSuite"/>
-          <include name="AuthorizationAPIValidateResponseWithExpiredToken"/>
-          <include name="setupSuite"/>
-        </methods>
-      </class> <!-- testCases.IqSoft_API_2_Authorization_Negative_Test -->
       <class name="testCases.IqSoft_API_6_RollBack_Negative_Test">
         <methods>
           <include name="RollBackAPIValidateResponseUsingInvalidProductID"/>
@@ -69,6 +61,14 @@
           <include name="setupSuite"/>
         </methods>
       </class> <!-- testCases.IqSoft_API_6_RollBack_Negative_Test -->
+      <class name="testCases.IqSoft_API_2_Authorization_Negative_Test">
+        <methods>
+          <include name="AuthorizationAPIValidateResponseWithInvalidProductID"/>
+          <include name="tearDownSuite"/>
+          <include name="AuthorizationAPIValidateResponseWithExpiredToken"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- testCases.IqSoft_API_2_Authorization_Negative_Test -->
     </classes>
   </test> <!-- API Integration Automation Test(failed) -->
 </suite> <!-- Failed suite [IQsoft API Integration] -->

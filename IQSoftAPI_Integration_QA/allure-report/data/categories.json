@@ -1,0 +1,396 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "The following asserts failed:\n\tResponseCode: 21 expected [0] but found [21],\n\tError Description: An error occurred while updating the entries. See the inner exception for details. expected [null] but found [An error occurred while updating the entries. See the inner exception for details.],\n\tResponseObject: null did not expect [null] but found [null],\n\tResponseObject Don't Contain http:// expected [true] but found [false]",
+      "children" : [ {
+        "name" : "openGameAPIValidatePositiveResponse",
+        "uid" : "109e4fafc59f25a6",
+        "parentUid" : "43402bbdccd1bd28ebc9d637ecde1111",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411199159,
+          "stop" : 1665411199170,
+          "duration" : 11
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "43402bbdccd1bd28ebc9d637ecde1111"
+    }, {
+      "name" : "The following asserts failed:\n\tResponseCode: 21 expected [22] but found [21],\n\tError Description: An error occurred while updating the entries. See the inner exception for details. expected [Client not found] but found [An error occurred while updating the entries. See the inner exception for details.]",
+      "children" : [ {
+        "name" : "openGameAPIValidateResponseWithExpiredToken",
+        "uid" : "6f50e1b1889b2a63",
+        "parentUid" : "7031754ca0150fa51a6e0147441a86eb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411199694,
+          "stop" : 1665411200165,
+          "duration" : 471
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7031754ca0150fa51a6e0147441a86eb"
+    }, {
+      "name" : "The following asserts failed:\n\tResponseCode 21 expected [22] but found [21],\n\tError Description: An error occurred while updating the entries. See the inner exception for details. expected [ClientNotFound ] but found [An error occurred while updating the entries. See the inner exception for details.]",
+      "children" : [ {
+        "name" : "openGameAPIValidateResponseWithInvalidPartnerID",
+        "uid" : "abc39077997fd540",
+        "parentUid" : "6bdb29ffe031f82d86c03c3d38f97f0b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411200170,
+          "stop" : 1665411200458,
+          "duration" : 288
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6bdb29ffe031f82d86c03c3d38f97f0b"
+    }, {
+      "name" : "The following asserts failed:\n\tResponseCode: 21 expected [43] but found [21],\n\tError Description: An error occurred while updating the entries. See the inner exception for details. expected [ProductNotFound] but found [An error occurred while updating the entries. See the inner exception for details.]",
+      "children" : [ {
+        "name" : "openGameAPIValidateResponseWithInvalidDomain",
+        "uid" : "b438fa368658757f",
+        "parentUid" : "865420dec9dbda002fc726c380bd7327",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411200727,
+          "stop" : 1665411201014,
+          "duration" : 287
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "865420dec9dbda002fc726c380bd7327"
+    }, {
+      "name" : "The following asserts failed:\n\tResponseCode: 0 expected [29] but found [0],\n\tError Description: null expected [SessionExpired] but found [null]",
+      "children" : [ {
+        "name" : "AuthorizationAPIValidateResponseWithExpiredToken",
+        "uid" : "fe0b6e2ca1a5c5a2",
+        "parentUid" : "f47b7068962c64b1b2f613d3d8066c0f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411207557,
+          "stop" : 1665411207746,
+          "duration" : 189
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "GetBalanceAPIValidateResponseWithExpiredToken",
+        "uid" : "e2ec4d26c2b851f9",
+        "parentUid" : "f47b7068962c64b1b2f613d3d8066c0f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411208145,
+          "stop" : 1665411208342,
+          "duration" : 197
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f47b7068962c64b1b2f613d3d8066c0f"
+    }, {
+      "name" : "The following asserts failed:\n\tResponseCode: 0 expected [43] but found [0],\n\tError Description: null expected [ProductNotFound] but found [null]",
+      "children" : [ {
+        "name" : "AuthorizationAPIValidateResponseWithInvalidProductID",
+        "uid" : "93e585c71a9cf582",
+        "parentUid" : "e948308485ef34fec9633a49f2ec8829",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411207949,
+          "stop" : 1665411208140,
+          "duration" : 191
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e948308485ef34fec9633a49f2ec8829"
+    }, {
+      "name" : "The following asserts failed:\n\tResponseCode: 0 expected [20] but found [0],\n\tError Description: null expected [CurrencyNotExists] but found [null]",
+      "children" : [ {
+        "name" : "GetBalanceAPIValidateResponseWithInvalidCurrencyID",
+        "uid" : "5e18aa5be29afa3d",
+        "parentUid" : "76fe13540ee7af117831057849fb7c70",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411208547,
+          "stop" : 1665411208739,
+          "duration" : 192
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "76fe13540ee7af117831057849fb7c70"
+    }, {
+      "name" : "balanceUSD VS balanceEUR did not expect [9682.0] but found [9682.0]",
+      "children" : [ {
+        "name" : "GetBalanceAPIValidateResponseWithOtherCurrencyID",
+        "uid" : "9ea8eb3318359e7c",
+        "parentUid" : "bbf41b6f5e07ee929fd77d37edb679c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411208743,
+          "stop" : 1665411209162,
+          "duration" : 419
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bbf41b6f5e07ee929fd77d37edb679c5"
+    }, {
+      "name" : "The following asserts failed:\n\tResponseCode: 0 expected [29] but found [0],\n\tError Description: null expected [SessionExpired] but found [null],\n\tamountBeforeCredit = amountAfterCredit: 9682.0 = 9681.0 expected [9681.0] but found [9682.0]",
+      "children" : [ {
+        "name" : "CreditAPIValidateResponseWithExpiredToken",
+        "uid" : "abdb81ec331079c5",
+        "parentUid" : "adcd279434b301b50cbd298d262d638d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411209171,
+          "stop" : 1665411209781,
+          "duration" : 610
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "adcd279434b301b50cbd298d262d638d"
+    }, {
+      "name" : "The following asserts failed:\n\tError Description: game not avaible expected [game not available] but found [game not avaible]",
+      "children" : [ {
+        "name" : "CreditAPIValidateResponseWithInvalidProductID",
+        "uid" : "f0e92e0c4bb4c810",
+        "parentUid" : "2576ad70d9e4957588d3b7e26b488dab",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411210365,
+          "stop" : 1665411210920,
+          "duration" : 555
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "DebitAPIValidateResponseUsingInvalidProductID",
+        "uid" : "38939365af88825e",
+        "parentUid" : "2576ad70d9e4957588d3b7e26b488dab",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411216295,
+          "stop" : 1665411217235,
+          "duration" : 940
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2576ad70d9e4957588d3b7e26b488dab"
+    }, {
+      "name" : "The following asserts failed:\n\tResponseCode: 0 expected [39] but found [0],\n\tError Description: null expected [WrongOperationAmount] but found [null]",
+      "children" : [ {
+        "name" : "CreditAPIValidateResponseWithInvalidAmount",
+        "uid" : "b6cad25b77f8b891",
+        "parentUid" : "b8618fc60a0843f4054f06e92c77679f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411212553,
+          "stop" : 1665411213104,
+          "duration" : 551
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "0.0" ]
+      }, {
+        "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+        "uid" : "4c39025c306af5f5",
+        "parentUid" : "b8618fc60a0843f4054f06e92c77679f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411219497,
+          "stop" : 1665411220435,
+          "duration" : 938
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "0.0" ]
+      } ],
+      "uid" : "b8618fc60a0843f4054f06e92c77679f"
+    }, {
+      "name" : "The following asserts failed:\n\tResponseCode: 0 expected [69] but found [0],\n\tError Description: null expected [ClientDocumentAlreadyExists] but found [null]",
+      "children" : [ {
+        "name" : "DebitAPIValidateResponseUsingTransactionIDTwice",
+        "uid" : "745a06cf71446be8",
+        "parentUid" : "fecd2c5af7b4e3b7485fc8a8ea2a7015",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411217238,
+          "stop" : 1665411218930,
+          "duration" : 1692
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fecd2c5af7b4e3b7485fc8a8ea2a7015"
+    }, {
+      "name" : "The following asserts failed:\n\tResponseCode: 0 expected [50] but found [0],\n\tError Description: null expected [CanNotConnectCreditAndDebit] but found [null],\n\tamountBeforeDebit: 9678.0 = amountAfterDebit: 9680.0 expected [9680.0] but found [9678.0]",
+      "children" : [ {
+        "name" : "DebitAPIValidateResponseUsingInvalidCreditTransactionID",
+        "uid" : "f349b5bed68034e9",
+        "parentUid" : "c0cda2ca27a3cb873c8ff6ffc68afbe9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411218949,
+          "stop" : 1665411219494,
+          "duration" : 545
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c0cda2ca27a3cb873c8ff6ffc68afbe9"
+    }, {
+      "name" : "The following asserts failed:\n\tamountAfterCredit: 9674.0 = amountAfterRollBack : 9675.0 expected [9675.0] but found [9674.0]",
+      "children" : [ {
+        "name" : "RollBackAPIValidateResponseWithInvalidToken",
+        "uid" : "652224f95fd0ffb7",
+        "parentUid" : "b4e8df00ce2fd313bba2d3b4792fb3b9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411224150,
+          "stop" : 1665411225127,
+          "duration" : 977
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b4e8df00ce2fd313bba2d3b4792fb3b9"
+    }, {
+      "name" : "The following asserts failed:\n\tamountAfterRollBack : 9675.0 = amountAfterCredit: 9674.0 expected [9674.0] but found [9675.0]",
+      "children" : [ {
+        "name" : "RollBackAPIValidateResponseUsingInvalidProductID",
+        "uid" : "b8cb0590d1ffddfd",
+        "parentUid" : "d4041d743cf4175ba4ea203043ba88b2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411225135,
+          "stop" : 1665411226092,
+          "duration" : 957
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d4041d743cf4175ba4ea203043ba88b2"
+    }, {
+      "name" : "The following asserts failed:\n\tamountAfterRollBack1: 9675.0 = amountAfterRollBack2 : 9676.0 expected [9676.0] but found [9675.0]",
+      "children" : [ {
+        "name" : "RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice",
+        "uid" : "158f617b6c124dab",
+        "parentUid" : "c5a94815f816aad3297feaeda941de74",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665411226748,
+          "stop" : 1665411228042,
+          "duration" : 1294
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c5a94815f816aad3297feaeda941de74"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

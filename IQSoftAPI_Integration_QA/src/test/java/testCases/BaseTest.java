@@ -5,6 +5,7 @@ import com.google.gson.Gson;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
+import io.qameta.allure.Allure;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -100,12 +101,20 @@ public class BaseTest {
 
         String openGameRequestBody = gson.toJson(iqSoft_01_apiVariables_openGame_request);
         logger.info("getURLRequestBody :" + openGameRequestBody);
-        HttpResponse<String> openGameResponse = Unirest.post(openGameURL)
+        HttpResponse<String>  openGameResponse = Unirest.post(openGameURL)
                 .header("Content-Type", "application/json")
                 .body(openGameRequestBody)
                 .asString();
+        Allure.addAttachment("OpenGameAPI RequestBody", openGameRequestBody);
+        Allure.addAttachment("OpenGameAPI ResponseBody", openGameResponse.getBody());
+
         return openGameResponse;
     }
+
+
+
+
+
 
 
     public HttpResponse<String> authorizationAPI(String SessionToken, int ProductID) throws UnirestException {
@@ -120,8 +129,15 @@ public class BaseTest {
                 .header("Content-Type", "application/json")
                 .body(authorizationRequestBody)
                 .asString();
+
+        Allure.addAttachment("AuthorizationAPI RequestBody", authorizationRequestBody);
+        Allure.addAttachment("AuthorizationAPI ResponseBody", authorizationResponse.getBody());
         return authorizationResponse;
     }
+
+
+
+
 
 
     public HttpResponse<String> getBalanceAPI(String AuthorizationToken, String CurrencyId) throws UnirestException {
@@ -136,13 +152,19 @@ public class BaseTest {
                 .header("Content-Type", "application/json")
                 .body(getBalanceRequestBody)
                 .asString();
+        Allure.addAttachment("GetBalanceAPI RequestBody", getBalanceRequestBody);
+        Allure.addAttachment("GetBalanceAPI ResponseBody", getBalanceResponse.getBody());
         return getBalanceResponse;
     }
 
 
+
+
+
+
+
     public HttpResponse<String> creditAPI(String AuthorizationToken, String CurrencyID, int GameID, int OperationTypeId,
                                           String TransactionId, double Amount, int BetState) throws UnirestException {
-
 
         // OperationTypeId  3_Bet, 4_Win, 15_BetRollBack,  17_WinRollBack
         // BetStates  2_Won, 3_Lost, 4_Returned
@@ -164,8 +186,16 @@ public class BaseTest {
                 .header("Content-Type", "application/json")
                 .body(CreditRequestBody)
                 .asString();
+        Allure.addAttachment("CreditAPI RequestBody", CreditRequestBody);
+        Allure.addAttachment("CreditAPI ResponseBody", creditResponse.getBody());
         return creditResponse;
     }
+
+
+
+
+
+
 
     public HttpResponse<String> debitAPI(String ClientId, String CurrencyID, int GameID, String TransactionId, String CreditTransactionId,
                                          double Amount, int BetState, int OperationTypeId, String AuthorizationToken) throws UnirestException {  //if type = 1 one time else IDArrayList size
@@ -192,8 +222,15 @@ public class BaseTest {
                 .header("Content-Type", "application/json")
                 .body(DebitRequestBody)
                 .asString();
+
+        Allure.addAttachment("DebitAPI RequestBody", DebitRequestBody);
+        Allure.addAttachment("DebitAPI ResponseBody", debitResponse.getBody());
         return debitResponse;
     }
+
+
+
+
 
     public HttpResponse<String> rollBackAPI(String UserName, int GameId, String RollbackTransactionId, String TransactionId,
                                             String AuthorizationToken, int OperationTypeId) throws UnirestException {  //if type = 1 one time else IDArrayList size
@@ -212,6 +249,8 @@ public class BaseTest {
                 .header("Content-Type", "application/json")
                 .body(RollBackRequestBody)
                 .asString();
+        Allure.addAttachment("RollBackAPI RequestBody", RollBackRequestBody);
+        Allure.addAttachment("RollBackAPI ResponseBody", rollBackResponse.getBody());
         return rollBackResponse;
     }
 

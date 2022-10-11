@@ -1,0 +1,211 @@
+{
+  "uid" : "8dd9fd604f26e707",
+  "name" : "RollBackAPIValidateStatusCod",
+  "fullName" : "testCases.IqSoft_API_6_RollBackDebit_Positive_Test.RollBackAPIValidateStatusCod",
+  "historyId" : "b434aec64d5d2fdf28d8703fc1f58ead",
+  "time" : {
+    "start" : 1665411207547,
+    "stop" : 1665411207548,
+    "duration" : 1
+  },
+  "description" : "Verify RollBack API_s Response Status Cod equals to 200",
+  "descriptionHtml" : "<p>Verify RollBack API_s Response Status Cod equals to 200</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665411198122,
+      "stop" : 1665411198179,
+      "duration" : 57
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1665411206156,
+      "stop" : 1665411207545,
+      "duration" : 1389
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8aba3b19d1ff390e",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "8aba3b19d1ff390e.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "c33ccb5ce738f5e5",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "c33ccb5ce738f5e5.txt",
+      "type" : "text/plain",
+      "size" : 82
+    }, {
+      "uid" : "4942b01e4629c515",
+      "name" : "CreditAPI RequestBody",
+      "source" : "4942b01e4629c515.txt",
+      "type" : "text/plain",
+      "size" : 177
+    }, {
+      "uid" : "b38456d3a481b98d",
+      "name" : "CreditAPI ResponseBody",
+      "source" : "b38456d3a481b98d.txt",
+      "type" : "text/plain",
+      "size" : 132
+    }, {
+      "uid" : "2853752797eb72b7",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "2853752797eb72b7.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "c40d3cde3418d6f8",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "c40d3cde3418d6f8.txt",
+      "type" : "text/plain",
+      "size" : 82
+    }, {
+      "uid" : "8975422a6818d78",
+      "name" : "DebitAPI RequestBody",
+      "source" : "8975422a6818d78.txt",
+      "type" : "text/plain",
+      "size" : 259
+    }, {
+      "uid" : "b35190ad78c36f7b",
+      "name" : "DebitAPI ResponseBody",
+      "source" : "b35190ad78c36f7b.txt",
+      "type" : "text/plain",
+      "size" : 134
+    }, {
+      "uid" : "694356cef76027ad",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "694356cef76027ad.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "258cacaa301bcdf8",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "258cacaa301bcdf8.txt",
+      "type" : "text/plain",
+      "size" : 82
+    }, {
+      "uid" : "7ff2bc13a5fb34ac",
+      "name" : "RollBackAPI RequestBody",
+      "source" : "7ff2bc13a5fb34ac.txt",
+      "type" : "text/plain",
+      "size" : 211
+    }, {
+      "uid" : "89524cc21fd8c34",
+      "name" : "RollBackAPI ResponseBody",
+      "source" : "89524cc21fd8c34.txt",
+      "type" : "text/plain",
+      "size" : 37
+    }, {
+      "uid" : "69f6b6a9c8c46528",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "69f6b6a9c8c46528.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "670c20f7d3fe7cb7",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "670c20f7d3fe7cb7.txt",
+      "type" : "text/plain",
+      "size" : 82
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 14,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665411229807,
+      "stop" : 1665411229807,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_6_RollBackDebit_Positive_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_6_RollBackDebit_Positive_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "RollBackAPIValidateStatusCod"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_6_RollBackDebit_Positive_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "7328@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "41a8e5da6fad0be9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665411019919,
+        "stop" : 1665411019919,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8dd9fd604f26e707.json",
+  "parameterValues" : [ ]
+}
