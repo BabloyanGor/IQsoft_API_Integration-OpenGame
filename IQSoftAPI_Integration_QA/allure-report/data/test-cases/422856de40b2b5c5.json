@@ -1,0 +1,169 @@
+{
+  "uid" : "422856de40b2b5c5",
+  "name" : "CreditAPIValidateResponseWithInvalidAmount",
+  "fullName" : "testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidAmount",
+  "historyId" : "ada57195e0ee2f6b99d20ba4348813c",
+  "time" : {
+    "start" : 1665497113734,
+    "stop" : 1665497114328,
+    "duration" : 594
+  },
+  "description" : "Verify Credit API_s response with invalid Amount",
+  "descriptionHtml" : "<p>Verify Credit API_s response with invalid Amount</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665497099359,
+      "stop" : 1665497099417,
+      "duration" : 58
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "Verify Credit API_s response with invalid Amount",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3999ff4902532b6d",
+      "name" : "GetBalanceAPI ResponseTime",
+      "source" : "3999ff4902532b6d.txt",
+      "type" : "text/plain",
+      "size" : 6
+    }, {
+      "uid" : "c18a26b1fbb4cad3",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "c18a26b1fbb4cad3.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "dc839ffd5bbda1a7",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "dc839ffd5bbda1a7.txt",
+      "type" : "text/plain",
+      "size" : 82
+    }, {
+      "uid" : "58c09802dd0cc61f",
+      "name" : "CreditAPI ResponseTime",
+      "source" : "58c09802dd0cc61f.txt",
+      "type" : "text/plain",
+      "size" : 6
+    }, {
+      "uid" : "e89a3818b5d2dacb",
+      "name" : "CreditAPI RequestBody",
+      "source" : "e89a3818b5d2dacb.txt",
+      "type" : "text/plain",
+      "size" : 178
+    }, {
+      "uid" : "18940721d33df1fa",
+      "name" : "CreditAPI ResponseBody",
+      "source" : "18940721d33df1fa.txt",
+      "type" : "text/plain",
+      "size" : 58
+    }, {
+      "uid" : "9bf396c746466242",
+      "name" : "GetBalanceAPI ResponseTime",
+      "source" : "9bf396c746466242.txt",
+      "type" : "text/plain",
+      "size" : 6
+    }, {
+      "uid" : "37f46acf9828abab",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "37f46acf9828abab.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "9ae96ee33732f2ba",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "9ae96ee33732f2ba.txt",
+      "type" : "text/plain",
+      "size" : 82
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 9
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665497130153,
+      "stop" : 1665497130154,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "CreditAPIValidateResponseWithInvalidAmount"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "15084@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "-1.0"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "422856de40b2b5c5.json",
+  "parameterValues" : [ "-1.0" ]
+}

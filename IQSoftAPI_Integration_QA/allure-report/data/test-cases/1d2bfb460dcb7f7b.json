@@ -1,0 +1,130 @@
+{
+  "uid" : "1d2bfb460dcb7f7b",
+  "name" : "AuthorizationAPIValidateResponseWithInvalidToken",
+  "fullName" : "testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithInvalidToken",
+  "historyId" : "3944ea1bfd4dab3f3044793593464943",
+  "time" : {
+    "start" : 1665497108583,
+    "stop" : 1665497108781,
+    "duration" : 198
+  },
+  "description" : "Verify Authorization API_s response with invalid Token",
+  "descriptionHtml" : "<p>Verify Authorization API_s response with invalid Token</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665497099359,
+      "stop" : 1665497099417,
+      "duration" : 58
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "Verify Authorization API_s response with invalid Token",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4aea98ea0672778c",
+      "name" : "AuthorizationAPI ResponseTime",
+      "source" : "4aea98ea0672778c.txt",
+      "type" : "text/plain",
+      "size" : 6
+    }, {
+      "uid" : "d7c6751768118c18",
+      "name" : "AuthorizationAPI RequestBody",
+      "source" : "d7c6751768118c18.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "548c3da5b9884bdf",
+      "name" : "AuthorizationAPI ResponseBody",
+      "source" : "548c3da5b9884bdf.txt",
+      "type" : "text/plain",
+      "size" : 47
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665497130153,
+      "stop" : 1665497130154,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_2_Authorization_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_2_Authorization_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "AuthorizationAPIValidateResponseWithInvalidToken"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_2_Authorization_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "15084@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1d2bfb460dcb7f7b.json",
+  "parameterValues" : [ ]
+}

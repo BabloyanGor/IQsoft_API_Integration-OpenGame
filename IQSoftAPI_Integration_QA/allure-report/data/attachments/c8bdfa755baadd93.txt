@@ -1,0 +1,1 @@
+{"CurrencyId":"TND1","Description":null,"ResponseCode":0,"AvailableBalance":9600.0}

@@ -1,0 +1,139 @@
+{
+  "uid" : "c2bc2410edeb2eb0",
+  "name" : "openGameAPIValidateStatusCod",
+  "fullName" : "testCases.IqSoft_API_1_OpenGame_Positive_Test.openGameAPIValidateStatusCod",
+  "historyId" : "dc96eaf72e3610208c3d99e1a1b80c8a",
+  "time" : {
+    "start" : 1665498315527,
+    "stop" : 1665498315534,
+    "duration" : 7
+  },
+  "description" : "Verify openGame API_s Status Cod equals to 200",
+  "descriptionHtml" : "<p>Verify openGame API_s Status Cod equals to 200</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665498314332,
+      "stop" : 1665498314390,
+      "duration" : 58
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "setUpTestCase",
+    "time" : {
+      "start" : 1665498314421,
+      "stop" : 1665498315477,
+      "duration" : 1056
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "bc847d6f8cbf0cb0",
+      "name" : "OpenGameAPI RequestBody ",
+      "source" : "bc847d6f8cbf0cb0.txt",
+      "type" : "text/plain",
+      "size" : 140
+    }, {
+      "uid" : "436055c6c4a433e3",
+      "name" : "OpenGameAPI ResponseBody ",
+      "source" : "436055c6c4a433e3.txt",
+      "type" : "{\"ResponseCode\":21,\"Description\":\"An error occurred while updating the entries. See the inner exception for details.\",\"ResponseObject\":null}  ResponseTime ",
+      "size" : 6
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665498345967,
+      "stop" : 1665498345967,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_1_OpenGame_Positive_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_1_OpenGame_Positive_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "openGameAPIValidateStatusCod"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_1_OpenGame_Positive_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "7564@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "7be17010e299198",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665497100514,
+        "stop" : 1665497100522,
+        "duration" : 8
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c2bc2410edeb2eb0.json",
+  "parameterValues" : [ ]
+}

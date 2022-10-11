@@ -1,0 +1,161 @@
+{
+  "uid" : "36c28d398e06a3c0",
+  "name" : "CreditAPIValidateResponseWithInvalidAmount",
+  "fullName" : "testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidAmount",
+  "historyId" : "b25309c987608a3a10d4e909ded5df84",
+  "time" : {
+    "start" : 1665498330849,
+    "stop" : 1665498331420,
+    "duration" : 571
+  },
+  "description" : "Verify Credit API_s response with invalid Amount",
+  "descriptionHtml" : "<p>Verify Credit API_s response with invalid Amount</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665498314332,
+      "stop" : 1665498314390,
+      "duration" : 58
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "Verify Credit API_s response with invalid Amount",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e549b40e3a0d7316",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "e549b40e3a0d7316.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "9b011ec7c2d2186a",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "9b011ec7c2d2186a.txt",
+      "type" : "{\"CurrencyId\":\"TND\",\"Description\":null,\"ResponseCode\":0,\"AvailableBalance\":9591.0}  ResponseTime ",
+      "size" : 6
+    }, {
+      "uid" : "46acd242e0685383",
+      "name" : "CreditAPI RequestBody",
+      "source" : "46acd242e0685383.txt",
+      "type" : "text/plain",
+      "size" : 180
+    }, {
+      "uid" : "28beef8c80592bf9",
+      "name" : "CreditAPI ResponseBody",
+      "source" : "28beef8c80592bf9.txt",
+      "type" : "{\"Description\":\"WrongOperationAmount\",\"ResponseCode\":\"39\"}  ResponseTime ",
+      "size" : 6
+    }, {
+      "uid" : "2f301872f7f58c36",
+      "name" : "GetBalanceAPI RequestBody",
+      "source" : "2f301872f7f58c36.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "477212022831ff40",
+      "name" : "GetBalanceAPI ResponseBody",
+      "source" : "477212022831ff40.txt",
+      "type" : "{\"CurrencyId\":\"TND\",\"Description\":null,\"ResponseCode\":0,\"AvailableBalance\":9591.0}  ResponseTime ",
+      "size" : 6
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 6
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665498345967,
+      "stop" : 1665498345967,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "CreditAPIValidateResponseWithInvalidAmount"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "7564@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "-1.005"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "e63d2dae20b132",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665497115454,
+        "stop" : 1665497116013,
+        "duration" : 559
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "36c28d398e06a3c0.json",
+  "parameterValues" : [ "-1.005" ]
+}

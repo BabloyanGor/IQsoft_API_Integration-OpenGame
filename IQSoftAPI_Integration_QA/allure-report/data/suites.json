@@ -9,36 +9,36 @@
         "name" : "testCases.IqSoft_API_1_OpenGame_Positive_Test",
         "children" : [ {
           "name" : "openGameAPIValidateStatusCod",
-          "uid" : "65ad890e16e3f8be",
+          "uid" : "c2bc2410edeb2eb0",
           "parentUid" : "a463d7d5949bf44fa55e2e6cb55b46df",
           "status" : "passed",
           "time" : {
-            "start" : 1665488782066,
-            "stop" : 1665488782076,
-            "duration" : 10
+            "start" : 1665498315527,
+            "stop" : 1665498315534,
+            "duration" : 7
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "openGameAPIValidatePositiveResponse",
-          "uid" : "b090baa3e5ffc566",
+          "uid" : "8a3d51bb887ddeaf",
           "parentUid" : "a463d7d5949bf44fa55e2e6cb55b46df",
           "status" : "failed",
           "time" : {
-            "start" : 1665488782154,
-            "stop" : 1665488782175,
-            "duration" : 21
+            "start" : 1665498315590,
+            "stop" : 1665498315603,
+            "duration" : 13
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         } ],
@@ -47,87 +47,87 @@
         "name" : "testCases.IqSoft_API_1_OpenGame_Negative_Test",
         "children" : [ {
           "name" : "openGameAPIValidateResponseWithInvalidToken",
-          "uid" : "24f69dee31dbcbcc",
+          "uid" : "6e883c5eba56c2c2",
           "parentUid" : "2717fc5ef6b8c85785eefc7a97c78474",
           "status" : "passed",
           "time" : {
-            "start" : 1665488782188,
-            "stop" : 1665488782472,
-            "duration" : 284
+            "start" : 1665498315610,
+            "stop" : 1665498315933,
+            "duration" : 323
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "openGameAPIValidateResponseWithExpiredToken",
-          "uid" : "e3ec675f659aad90",
+          "uid" : "8d9a10754ed5ef01",
           "parentUid" : "2717fc5ef6b8c85785eefc7a97c78474",
           "status" : "failed",
           "time" : {
-            "start" : 1665488782477,
-            "stop" : 1665488782880,
-            "duration" : 403
+            "start" : 1665498315939,
+            "stop" : 1665498316231,
+            "duration" : 292
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "openGameAPIValidateResponseWithInvalidPartnerID",
-          "uid" : "a90d70657ef9b185",
+          "uid" : "1f6faf213bf7b6c2",
           "parentUid" : "2717fc5ef6b8c85785eefc7a97c78474",
           "status" : "failed",
           "time" : {
-            "start" : 1665488782889,
-            "stop" : 1665488783186,
-            "duration" : 297
+            "start" : 1665498316237,
+            "stop" : 1665498316581,
+            "duration" : 344
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "openGameAPIValidateResponseWithInvalidGameID",
-          "uid" : "731ec4157ab317fc",
+          "uid" : "5c8b05021181bd8d",
           "parentUid" : "2717fc5ef6b8c85785eefc7a97c78474",
           "status" : "passed",
           "time" : {
-            "start" : 1665488783190,
-            "stop" : 1665488783367,
-            "duration" : 177
+            "start" : 1665498316589,
+            "stop" : 1665498316758,
+            "duration" : 169
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "openGameAPIValidateResponseWithInvalidDomain",
-          "uid" : "4b17740020eb2ee0",
+          "uid" : "9b976270a1f650d1",
           "parentUid" : "2717fc5ef6b8c85785eefc7a97c78474",
           "status" : "failed",
           "time" : {
-            "start" : 1665488783371,
-            "stop" : 1665488783661,
-            "duration" : 290
+            "start" : 1665498316762,
+            "stop" : 1665498317079,
+            "duration" : 317
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         } ],
@@ -136,36 +136,36 @@
         "name" : "testCases.IqSoft_API_2_Authorization_Positive_Test",
         "children" : [ {
           "name" : "AuthorizationAPIValidateStatusCod",
-          "uid" : "a6a1977605cdac90",
+          "uid" : "7c662d5ddcbf03eb",
           "parentUid" : "9d8946a8519feedf4e3fceaefee53ed4",
           "status" : "passed",
           "time" : {
-            "start" : 1665488784172,
-            "stop" : 1665488784174,
-            "duration" : 2
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "newPassed" : false,
-          "newBroken" : false,
-          "retriesCount" : 0,
-          "retriesStatusChange" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "AuthorizationAPIValidatePositiveResponse",
-          "uid" : "cc86375df50b1888",
-          "parentUid" : "9d8946a8519feedf4e3fceaefee53ed4",
-          "status" : "passed",
-          "time" : {
-            "start" : 1665488784180,
-            "stop" : 1665488784181,
+            "start" : 1665498317638,
+            "stop" : 1665498317639,
             "duration" : 1
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "AuthorizationAPIValidatePositiveResponse",
+          "uid" : "224dfb09cc75e0cf",
+          "parentUid" : "9d8946a8519feedf4e3fceaefee53ed4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1665498317643,
+            "stop" : 1665498317643,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         } ],
@@ -174,36 +174,36 @@
         "name" : "testCases.IqSoft_API_3_GetBalance_Positive_Test",
         "children" : [ {
           "name" : "GetBalanceAPIValidateStatusCod",
-          "uid" : "579ce1eb529c28d4",
+          "uid" : "7bd9ee8d9c4daeb8",
           "parentUid" : "147397d6cff0d5e6d4659758351f51f5",
           "status" : "passed",
           "time" : {
-            "start" : 1665488784662,
-            "stop" : 1665488784662,
-            "duration" : 0
+            "start" : 1665498318124,
+            "stop" : 1665498318125,
+            "duration" : 1
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "GetBalanceAPIValidatePositiveResponse",
-          "uid" : "b59746ca9f252edb",
+          "uid" : "6ce0a1f155f0182c",
           "parentUid" : "147397d6cff0d5e6d4659758351f51f5",
           "status" : "passed",
           "time" : {
-            "start" : 1665488784667,
-            "stop" : 1665488784669,
-            "duration" : 2
+            "start" : 1665498318128,
+            "stop" : 1665498318129,
+            "duration" : 1
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         } ],
@@ -212,36 +212,36 @@
         "name" : "testCases.IqSoft_API_4_Credit_Positive_Test",
         "children" : [ {
           "name" : "CreditAPIValidateStatusCod",
-          "uid" : "9235ce6eea56a95c",
+          "uid" : "29a15a6e8cbc3688",
           "parentUid" : "70c04027ac1e042a7ec144a44b8f5b70",
           "status" : "passed",
           "time" : {
-            "start" : 1665488785827,
-            "stop" : 1665488785828,
+            "start" : 1665498319001,
+            "stop" : 1665498319002,
             "duration" : 1
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "CreditAPIValidatePositiveResponse",
-          "uid" : "4ff117413d3f9e63",
+          "uid" : "6806962d714b14",
           "parentUid" : "70c04027ac1e042a7ec144a44b8f5b70",
           "status" : "passed",
           "time" : {
-            "start" : 1665488785839,
-            "stop" : 1665488785839,
-            "duration" : 0
+            "start" : 1665498319006,
+            "stop" : 1665498319007,
+            "duration" : 1
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         } ],
@@ -250,36 +250,36 @@
         "name" : "testCases.IqSoft_API_5_Debit_Positive_Test",
         "children" : [ {
           "name" : "DebitAPIValidateStatusCod",
-          "uid" : "3e1c34d24e735c63",
+          "uid" : "3968ba31e44a154",
           "parentUid" : "5808aac0cc3633bef4942d310b1bdbb1",
           "status" : "passed",
           "time" : {
-            "start" : 1665488786430,
-            "stop" : 1665488786438,
-            "duration" : 8
+            "start" : 1665498319901,
+            "stop" : 1665498319901,
+            "duration" : 0
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "DebitAPIValidatePositiveResponse",
-          "uid" : "725a92477f6082bc",
+          "uid" : "c194d922569a3038",
           "parentUid" : "5808aac0cc3633bef4942d310b1bdbb1",
           "status" : "passed",
           "time" : {
-            "start" : 1665488786445,
-            "stop" : 1665488786446,
-            "duration" : 1
+            "start" : 1665498319905,
+            "stop" : 1665498319905,
+            "duration" : 0
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         } ],
@@ -288,53 +288,53 @@
         "name" : "testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test",
         "children" : [ {
           "name" : "RollBackAPIValidateStatusCod",
-          "uid" : "8b7de0e6031d2ca2",
+          "uid" : "de00850855c238f",
           "parentUid" : "6662674892550334acaeb6b57b6cb46a",
           "status" : "passed",
           "time" : {
-            "start" : 1665488787789,
-            "stop" : 1665488787790,
+            "start" : 1665498321227,
+            "stop" : 1665498321228,
             "duration" : 1
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "RollBackAPIValidatePositiveResponse",
-          "uid" : "752d7af77b9d30a0",
+          "uid" : "4b9f3cac5d45812",
           "parentUid" : "6662674892550334acaeb6b57b6cb46a",
           "status" : "passed",
           "time" : {
-            "start" : 1665488787799,
-            "stop" : 1665488787800,
+            "start" : 1665498321237,
+            "stop" : 1665498321238,
             "duration" : 1
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "RollBackAPIValidatePositiveResponseBalanceCorrection",
-          "uid" : "e48b522ae85c908a",
+          "uid" : "4619d21b9957a3f5",
           "parentUid" : "6662674892550334acaeb6b57b6cb46a",
           "status" : "passed",
           "time" : {
-            "start" : 1665488787805,
-            "stop" : 1665488787805,
-            "duration" : 0
+            "start" : 1665498321243,
+            "stop" : 1665498321244,
+            "duration" : 1
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         } ],
@@ -343,53 +343,53 @@
         "name" : "testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test",
         "children" : [ {
           "name" : "RollBackAPIValidateStatusCod",
-          "uid" : "d96e520de31a2e7f",
+          "uid" : "bbb1a91f6be71d52",
           "parentUid" : "ed3a511ee2ef8cf677bdc3025026543c",
           "status" : "passed",
           "time" : {
-            "start" : 1665488788747,
-            "stop" : 1665488788749,
+            "start" : 1665498322213,
+            "stop" : 1665498322215,
             "duration" : 2
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "RollBackAPIValidatePositiveResponse",
-          "uid" : "580f16459e1f0f07",
+          "uid" : "45699c28846389dc",
           "parentUid" : "ed3a511ee2ef8cf677bdc3025026543c",
           "status" : "passed",
           "time" : {
-            "start" : 1665488788758,
-            "stop" : 1665488788758,
-            "duration" : 0
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "newPassed" : false,
-          "newBroken" : false,
-          "retriesCount" : 0,
-          "retriesStatusChange" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "RollBackAPIValidatePositiveResponseBalanceCorrection",
-          "uid" : "cb147ce2632a8828",
-          "parentUid" : "ed3a511ee2ef8cf677bdc3025026543c",
-          "status" : "passed",
-          "time" : {
-            "start" : 1665488788762,
-            "stop" : 1665488788763,
+            "start" : 1665498322230,
+            "stop" : 1665498322231,
             "duration" : 1
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "RollBackAPIValidatePositiveResponseBalanceCorrection",
+          "uid" : "5063aae7336c707e",
+          "parentUid" : "ed3a511ee2ef8cf677bdc3025026543c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1665498322240,
+            "stop" : 1665498322243,
+            "duration" : 3
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         } ],
@@ -398,53 +398,53 @@
         "name" : "testCases.IqSoft_API_6_RollBackDebit_Positive_Test",
         "children" : [ {
           "name" : "RollBackAPIValidateStatusCod",
-          "uid" : "e021f4b11cbdf022",
+          "uid" : "237cc67792af0a84",
           "parentUid" : "d14ea2d32a0ec828e1aa9a9cadb023cf",
           "status" : "passed",
           "time" : {
-            "start" : 1665488790073,
-            "stop" : 1665488790074,
+            "start" : 1665498323568,
+            "stop" : 1665498323569,
             "duration" : 1
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "RollBackAPIValidatePositiveResponse",
-          "uid" : "8e6e28100a7a8304",
+          "uid" : "b06ab0a31c4a4ded",
           "parentUid" : "d14ea2d32a0ec828e1aa9a9cadb023cf",
           "status" : "passed",
           "time" : {
-            "start" : 1665488790079,
-            "stop" : 1665488790080,
+            "start" : 1665498323574,
+            "stop" : 1665498323575,
             "duration" : 1
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "RollBackAPIValidatePositiveResponseBalanceCorrection",
-          "uid" : "a04b845903e485c8",
+          "uid" : "49b83f0f63c58934",
           "parentUid" : "d14ea2d32a0ec828e1aa9a9cadb023cf",
           "status" : "passed",
           "time" : {
-            "start" : 1665488790084,
-            "stop" : 1665488790085,
-            "duration" : 1
+            "start" : 1665498323579,
+            "stop" : 1665498323579,
+            "duration" : 0
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         } ],
@@ -453,53 +453,53 @@
         "name" : "testCases.IqSoft_API_2_Authorization_Negative_Test",
         "children" : [ {
           "name" : "AuthorizationAPIValidateResponseWithExpiredToken",
-          "uid" : "2fe5429626bb8852",
+          "uid" : "73ed17e6744ef66",
           "parentUid" : "eaba1b561cf628be0542948aa7a5902b",
           "status" : "failed",
           "time" : {
-            "start" : 1665488790088,
-            "stop" : 1665488790289,
-            "duration" : 201
+            "start" : 1665498323582,
+            "stop" : 1665498323784,
+            "duration" : 202
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "AuthorizationAPIValidateResponseWithInvalidToken",
-          "uid" : "3d45977ecab0fbf9",
+          "uid" : "68b4affde3b4884e",
           "parentUid" : "eaba1b561cf628be0542948aa7a5902b",
           "status" : "passed",
           "time" : {
-            "start" : 1665488790297,
-            "stop" : 1665488790496,
-            "duration" : 199
+            "start" : 1665498323788,
+            "stop" : 1665498323966,
+            "duration" : 178
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "AuthorizationAPIValidateResponseWithInvalidProductID",
-          "uid" : "71173d08595d8ace",
+          "uid" : "74adb34df42573df",
           "parentUid" : "eaba1b561cf628be0542948aa7a5902b",
           "status" : "failed",
           "time" : {
-            "start" : 1665488790505,
-            "stop" : 1665488790695,
-            "duration" : 190
+            "start" : 1665498323972,
+            "stop" : 1665498324165,
+            "duration" : 193
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         } ],
@@ -508,70 +508,70 @@
         "name" : "testCases.IqSoft_API_3_GetBalance_Negative_Test",
         "children" : [ {
           "name" : "GetBalanceAPIValidateResponseWithExpiredToken",
-          "uid" : "3ee78058291d75f1",
+          "uid" : "7475528c2f498f33",
           "parentUid" : "e90c04e7b927fb6a74fd3f397da982b2",
           "status" : "failed",
           "time" : {
-            "start" : 1665488790703,
-            "stop" : 1665488790886,
-            "duration" : 183
+            "start" : 1665498324169,
+            "stop" : 1665498324347,
+            "duration" : 178
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "GetBalanceAPIValidateResponseWithInvalidToken",
-          "uid" : "9844f4824629a25d",
+          "uid" : "9c5c21babdde911e",
           "parentUid" : "e90c04e7b927fb6a74fd3f397da982b2",
           "status" : "passed",
           "time" : {
-            "start" : 1665488790893,
-            "stop" : 1665488791078,
-            "duration" : 185
+            "start" : 1665498324351,
+            "stop" : 1665498324533,
+            "duration" : 182
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "GetBalanceAPIValidateResponseWithInvalidCurrencyID",
-          "uid" : "1d38b8c9e0a0df6f",
+          "uid" : "e35647a117ca332c",
           "parentUid" : "e90c04e7b927fb6a74fd3f397da982b2",
           "status" : "failed",
           "time" : {
-            "start" : 1665488791083,
-            "stop" : 1665488791279,
-            "duration" : 196
+            "start" : 1665498324537,
+            "stop" : 1665498324726,
+            "duration" : 189
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "GetBalanceAPIValidateResponseWithOtherCurrencyID",
-          "uid" : "493e35925e13676a",
+          "uid" : "476a06f7082acab0",
           "parentUid" : "e90c04e7b927fb6a74fd3f397da982b2",
           "status" : "failed",
           "time" : {
-            "start" : 1665488791283,
-            "stop" : 1665488791645,
-            "duration" : 362
+            "start" : 1665498324729,
+            "stop" : 1665498325096,
+            "duration" : 367
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         } ],
@@ -580,172 +580,172 @@
         "name" : "testCases.IqSoft_API_4_Credit_Negative_Test",
         "children" : [ {
           "name" : "CreditAPIValidateResponseWithExpiredToken",
-          "uid" : "228ad92ca18b44cd",
+          "uid" : "e91168dc00e4dc4b",
           "parentUid" : "e08b91add74591a212445fca8bbbe1c4",
           "status" : "failed",
           "time" : {
-            "start" : 1665488791649,
-            "stop" : 1665488792214,
-            "duration" : 565
+            "start" : 1665498325099,
+            "stop" : 1665498325647,
+            "duration" : 548
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "CreditAPIValidateResponseWithInvalidToken",
-          "uid" : "19fc56975687f6aa",
+          "uid" : "52786c900145fcdb",
           "parentUid" : "e08b91add74591a212445fca8bbbe1c4",
           "status" : "passed",
           "time" : {
-            "start" : 1665488792222,
-            "stop" : 1665488792787,
-            "duration" : 565
+            "start" : 1665498325653,
+            "stop" : 1665498326239,
+            "duration" : 586
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "CreditAPIValidateResponseWithInvalidProductID",
-          "uid" : "31ad7b68d6d9c17a",
+          "uid" : "55835ac830f927eb",
           "parentUid" : "e08b91add74591a212445fca8bbbe1c4",
           "status" : "failed",
           "time" : {
-            "start" : 1665488792790,
-            "stop" : 1665488793356,
-            "duration" : 566
+            "start" : 1665498326242,
+            "stop" : 1665498326784,
+            "duration" : 542
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "CreditAPIValidateResponseUsingTransactionIDTwice",
-          "uid" : "a7bdfe40820be8e3",
+          "uid" : "654c7d86ecc9028f",
           "parentUid" : "e08b91add74591a212445fca8bbbe1c4",
           "status" : "passed",
           "time" : {
-            "start" : 1665488793360,
-            "stop" : 1665488794334,
-            "duration" : 974
+            "start" : 1665498326787,
+            "stop" : 1665498327734,
+            "duration" : 947
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "CreditAPIValidateResponseUsingAmountHigherThenBalance",
-          "uid" : "7c2010dca95810d3",
+          "uid" : "f99478a7e1eac894",
           "parentUid" : "e08b91add74591a212445fca8bbbe1c4",
           "status" : "passed",
           "time" : {
-            "start" : 1665488794337,
-            "stop" : 1665488794882,
-            "duration" : 545
+            "start" : 1665498327738,
+            "stop" : 1665498328313,
+            "duration" : 575
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "CreditAPIValidateResponseWithInvalidAmount",
-          "uid" : "7736f3bf252bc37e",
+          "uid" : "3464baa3ba7a5d2d",
           "parentUid" : "e08b91add74591a212445fca8bbbe1c4",
           "status" : "failed",
           "time" : {
-            "start" : 1665488794888,
-            "stop" : 1665488795432,
-            "duration" : 544
+            "start" : 1665498328322,
+            "stop" : 1665498328896,
+            "duration" : 574
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ "0.0" ]
         }, {
           "name" : "CreditAPIValidateResponseWithInvalidAmount",
-          "uid" : "6db64d947360ce30",
+          "uid" : "1fe89a659f99dee",
           "parentUid" : "e08b91add74591a212445fca8bbbe1c4",
           "status" : "passed",
           "time" : {
-            "start" : 1665488795437,
-            "stop" : 1665488795987,
-            "duration" : 550
+            "start" : 1665498328901,
+            "stop" : 1665498329478,
+            "duration" : 577
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ "-1.0" ]
         }, {
           "name" : "CreditAPIValidateResponseWithInvalidAmount",
-          "uid" : "eda5f7123151ab4b",
+          "uid" : "69a8941beec97ae5",
           "parentUid" : "e08b91add74591a212445fca8bbbe1c4",
           "status" : "passed",
           "time" : {
-            "start" : 1665488795990,
-            "stop" : 1665488796588,
-            "duration" : 598
+            "start" : 1665498329482,
+            "stop" : 1665498330044,
+            "duration" : 562
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ "-1.5" ]
         }, {
           "name" : "CreditAPIValidateResponseWithInvalidAmount",
-          "uid" : "8b2732ba52b0b75e",
+          "uid" : "a6957ca1312f0dae",
           "parentUid" : "e08b91add74591a212445fca8bbbe1c4",
           "status" : "passed",
           "time" : {
-            "start" : 1665488796592,
-            "stop" : 1665488797145,
-            "duration" : 553
+            "start" : 1665498330047,
+            "stop" : 1665498330824,
+            "duration" : 777
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ "-1.05" ]
         }, {
           "name" : "CreditAPIValidateResponseWithInvalidAmount",
-          "uid" : "d521a224df690ff4",
+          "uid" : "36c28d398e06a3c0",
           "parentUid" : "e08b91add74591a212445fca8bbbe1c4",
           "status" : "passed",
           "time" : {
-            "start" : 1665488797148,
-            "stop" : 1665488797695,
-            "duration" : 547
+            "start" : 1665498330849,
+            "stop" : 1665498331420,
+            "duration" : 571
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ "-1.005" ]
         } ],
@@ -754,155 +754,155 @@
         "name" : "testCases.IqSoft_API_5_Debit_Negative_Test",
         "children" : [ {
           "name" : "DebitAPIValidateResponseWithInvalidToken",
-          "uid" : "5d886df51db15c10",
+          "uid" : "2d9597318ab4c817",
           "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
           "status" : "passed",
           "time" : {
-            "start" : 1665488797700,
-            "stop" : 1665488798645,
-            "duration" : 945
+            "start" : 1665498331424,
+            "stop" : 1665498332335,
+            "duration" : 911
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "DebitAPIValidateResponseUsingInvalidProductID",
-          "uid" : "739ac4dba9d0a511",
+          "uid" : "bfe205e68941ae13",
           "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
           "status" : "failed",
           "time" : {
-            "start" : 1665488798650,
-            "stop" : 1665488799591,
-            "duration" : 941
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "newPassed" : false,
-          "newBroken" : false,
-          "retriesCount" : 0,
-          "retriesStatusChange" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "DebitAPIValidateResponseUsingTransactionIDTwice",
-          "uid" : "2fe5c1a561af7b9",
-          "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
-          "status" : "failed",
-          "time" : {
-            "start" : 1665488799595,
-            "stop" : 1665488801234,
-            "duration" : 1639
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "newPassed" : false,
-          "newBroken" : false,
-          "retriesCount" : 0,
-          "retriesStatusChange" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "DebitAPIValidateResponseUsingInvalidCreditTransactionID",
-          "uid" : "f99b0c635f7dd2ec",
-          "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
-          "status" : "failed",
-          "time" : {
-            "start" : 1665488801237,
-            "stop" : 1665488801784,
-            "duration" : 547
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "newPassed" : false,
-          "newBroken" : false,
-          "retriesCount" : 0,
-          "retriesStatusChange" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "DebitAPIValidateResponseUsingInvalidAmount",
-          "uid" : "65ed76b4b89cca43",
-          "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
-          "status" : "failed",
-          "time" : {
-            "start" : 1665488801787,
-            "stop" : 1665488802723,
-            "duration" : 936
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "newPassed" : false,
-          "newBroken" : false,
-          "retriesCount" : 0,
-          "retriesStatusChange" : false,
-          "parameters" : [ "0.0" ]
-        }, {
-          "name" : "DebitAPIValidateResponseUsingInvalidAmount",
-          "uid" : "fc187e1efee9e8dc",
-          "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1665488802726,
-            "stop" : 1665488803643,
-            "duration" : 917
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "newPassed" : false,
-          "newBroken" : false,
-          "retriesCount" : 0,
-          "retriesStatusChange" : false,
-          "parameters" : [ "-1.0" ]
-        }, {
-          "name" : "DebitAPIValidateResponseUsingInvalidAmount",
-          "uid" : "6dfd90724976e95e",
-          "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1665488803645,
-            "stop" : 1665488804578,
-            "duration" : 933
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "newPassed" : false,
-          "newBroken" : false,
-          "retriesCount" : 0,
-          "retriesStatusChange" : false,
-          "parameters" : [ "-1.5" ]
-        }, {
-          "name" : "DebitAPIValidateResponseUsingInvalidAmount",
-          "uid" : "166a6a0760df96e8",
-          "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1665488804583,
-            "stop" : 1665488805503,
-            "duration" : 920
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "newPassed" : false,
-          "newBroken" : false,
-          "retriesCount" : 0,
-          "retriesStatusChange" : false,
-          "parameters" : [ "-1.05" ]
-        }, {
-          "name" : "DebitAPIValidateResponseUsingInvalidAmount",
-          "uid" : "65fc2c2eca5051fb",
-          "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1665488805506,
-            "stop" : 1665488806450,
+            "start" : 1665498332338,
+            "stop" : 1665498333282,
             "duration" : 944
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "DebitAPIValidateResponseUsingTransactionIDTwice",
+          "uid" : "3d33776522698be6",
+          "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
+          "status" : "failed",
+          "time" : {
+            "start" : 1665498333287,
+            "stop" : 1665498335016,
+            "duration" : 1729
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "DebitAPIValidateResponseUsingInvalidCreditTransactionID",
+          "uid" : "b2ad593361b34adf",
+          "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
+          "status" : "failed",
+          "time" : {
+            "start" : 1665498335021,
+            "stop" : 1665498335599,
+            "duration" : 578
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+          "uid" : "f2f5c34c19972019",
+          "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
+          "status" : "failed",
+          "time" : {
+            "start" : 1665498335606,
+            "stop" : 1665498336547,
+            "duration" : 941
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ "0.0" ]
+        }, {
+          "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+          "uid" : "92a05ff689e44e8b",
+          "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1665498336551,
+            "stop" : 1665498337471,
+            "duration" : 920
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ "-1.0" ]
+        }, {
+          "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+          "uid" : "87229fb6fc685a82",
+          "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1665498337474,
+            "stop" : 1665498338389,
+            "duration" : 915
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ "-1.5" ]
+        }, {
+          "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+          "uid" : "787b97d217fb9892",
+          "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1665498338392,
+            "stop" : 1665498339349,
+            "duration" : 957
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ "-1.05" ]
+        }, {
+          "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+          "uid" : "d8a39785c9ab3f8c",
+          "parentUid" : "c10b3db1796ebba799bc14bde54c323f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1665498339354,
+            "stop" : 1665498340242,
+            "duration" : 888
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ "-1.005" ]
         } ],
@@ -911,87 +911,87 @@
         "name" : "testCases.IqSoft_API_6_RollBack_Negative_Test",
         "children" : [ {
           "name" : "RollBackAPIValidateResponseWithInvalidToken",
-          "uid" : "7708ff4a3d4f46e0",
+          "uid" : "2e993b47b9456bf0",
           "parentUid" : "648ce4bd6c8f5ecc884cb11f71db16c1",
           "status" : "failed",
           "time" : {
-            "start" : 1665488806454,
-            "stop" : 1665488807392,
-            "duration" : 938
+            "start" : 1665498340245,
+            "stop" : 1665498341169,
+            "duration" : 924
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "RollBackAPIValidateResponseUsingInvalidProductID",
-          "uid" : "db99bd617ac0e31a",
+          "uid" : "c46a1310262a8e5f",
           "parentUid" : "648ce4bd6c8f5ecc884cb11f71db16c1",
           "status" : "failed",
           "time" : {
-            "start" : 1665488807395,
-            "stop" : 1665488808342,
-            "duration" : 947
+            "start" : 1665498341172,
+            "stop" : 1665498342199,
+            "duration" : 1027
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit",
-          "uid" : "f9fc815dfb32d338",
+          "uid" : "d418dfc0b24268e7",
           "parentUid" : "648ce4bd6c8f5ecc884cb11f71db16c1",
           "status" : "passed",
           "time" : {
-            "start" : 1665488808346,
-            "stop" : 1665488808892,
-            "duration" : 546
+            "start" : 1665498342238,
+            "stop" : 1665498342811,
+            "duration" : 573
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice",
-          "uid" : "8cd3c6bddd6b78a8",
+          "uid" : "e083874fa313635",
           "parentUid" : "648ce4bd6c8f5ecc884cb11f71db16c1",
           "status" : "failed",
           "time" : {
-            "start" : 1665488808895,
-            "stop" : 1665488810196,
-            "duration" : 1301
+            "start" : 1665498342815,
+            "stop" : 1665498344199,
+            "duration" : 1384
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         }, {
           "name" : "RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice",
-          "uid" : "f7f0d2df2de66803",
+          "uid" : "defbd151a4d60d2f",
           "parentUid" : "648ce4bd6c8f5ecc884cb11f71db16c1",
           "status" : "passed",
           "time" : {
-            "start" : 1665488810199,
-            "stop" : 1665488811810,
-            "duration" : 1611
+            "start" : 1665498344204,
+            "stop" : 1665498345913,
+            "duration" : 1709
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 1,
           "retriesStatusChange" : false,
           "parameters" : [ ]
         } ],
