@@ -1,0 +1,1 @@
+{"CurrencyId":"USD","Description":null,"ResponseCode":0,"AvailableBalance":9532.5}  ResponseTime 526 ms

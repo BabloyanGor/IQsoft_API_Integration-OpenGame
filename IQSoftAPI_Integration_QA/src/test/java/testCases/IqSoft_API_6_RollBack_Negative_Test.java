@@ -9,6 +9,7 @@ import io.qameta.allure.SeverityLevel;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
 import java.io.IOException;
 
 
@@ -64,9 +65,9 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
 
         softAssert.assertEquals(amountBeforeCredit, amountAfterCredit + betAmountCreditConfig,
-                "amountBeforeCredit: " + amountBeforeCredit + " = amountAfterCredit : " + amountAfterCredit+ " + betAmountCreditConfig : " + betAmountCreditConfig);
-        softAssert.assertEquals(amountAfterCredit, amountAfterRollBack,
-                "amountAfterCredit: " + amountAfterCredit + " = amountAfterRollBack : " + amountAfterRollBack);
+                "amountBeforeCredit: " + amountBeforeCredit + " = amountAfterCredit : " + amountAfterCredit + " + betAmountCreditConfig : " + betAmountCreditConfig);
+        softAssert.assertEquals(amountAfterRollBack, amountAfterCredit,
+                "amountAfterRollBack: " + amountAfterRollBack + " = amountAfterCredit: " + amountAfterCredit);
         softAssert.assertAll();
 
     }
@@ -119,9 +120,9 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
 
         softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
         softAssert.assertEquals(amountBeforeCredit, amountAfterCredit + betAmountCreditConfig,
-                "amountBeforeCredit: " + amountBeforeCredit + " = amountAfterCredit : " + amountAfterCredit+ " + betAmountCreditConfig : " + betAmountCreditConfig);
-        softAssert.assertEquals(amountAfterRollBack , amountAfterCredit,
-                "amountAfterRollBack : " + amountAfterRollBack + " = amountAfterCredit: " + amountAfterCredit );
+                "amountBeforeCredit: " + amountBeforeCredit + " = amountAfterCredit : " + amountAfterCredit + " + betAmountCreditConfig : " + betAmountCreditConfig);
+        softAssert.assertEquals(amountAfterRollBack, amountAfterCredit,
+                "amountAfterRollBack : " + amountAfterRollBack + " = amountAfterCredit: " + amountAfterCredit);
         softAssert.assertAll();
 
     }
@@ -162,8 +163,8 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
 
         softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
 
-        softAssert.assertEquals(amountBeforeRollBack, amountAfterRollBack,
-                "amountBeforeRollBack: " + amountBeforeRollBack + " = amountAfterRollBack : " + amountAfterRollBack);
+        softAssert.assertEquals(amountAfterRollBack, amountBeforeRollBack,
+                "amountAfterRollBack: " + amountAfterRollBack + " = amountBeforeRollBack: " + amountBeforeRollBack);
         softAssert.assertAll();
     }
 
@@ -227,9 +228,9 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         softAssert.assertEquals(amountBeforeCredit, amountAfterCredit + betAmountCreditConfig,
                 "amountBeforeCredit: " + amountBeforeCredit + " = amountAfterCredit : " + amountAfterCredit + " + betAmountCreditConfig : " + betAmountCreditConfig);
         softAssert.assertEquals(amountAfterRollBack1, amountBeforeCredit,
-                "amountAfterRollBack1: " + amountAfterRollBack1 + " = amountBeforeCredit : " + amountBeforeCredit );
-        softAssert.assertEquals(amountAfterRollBack1, amountAfterRollBack2,
-                "amountAfterRollBack1: " + amountAfterRollBack1 + " = amountAfterRollBack2 : " + amountAfterRollBack2);
+                "amountAfterRollBack1: " + amountAfterRollBack1 + " = amountBeforeCredit : " + amountBeforeCredit);
+        softAssert.assertEquals(amountAfterRollBack2, amountAfterRollBack1,
+                "amountAfterRollBack2 : " + amountAfterRollBack2 + " = amountAfterRollBack1: " + amountAfterRollBack1);
         softAssert.assertAll();
     }
 

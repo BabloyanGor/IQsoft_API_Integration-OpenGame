@@ -11,7 +11,6 @@
           <include name="DebitAPIValidateResponseUsingInvalidAmount" invocation-numbers="0"/>
           <include name="tearDownSuite"/>
           <include name="DebitAPIValidateResponseUsingInvalidProductID"/>
-          <include name="DebitAPIValidateResponseUsingTransactionIDTwice"/>
           <include name="DebitAPIValidateResponseUsingInvalidCreditTransactionID"/>
           <include name="setupSuite"/>
         </methods>

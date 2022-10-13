@@ -102,7 +102,6 @@ public class BaseTest {
         iqSoft_01_apiVariables_openGame_request.setDomain(Domain);
 
         String openGameRequestBody = gson.toJson(iqSoft_01_apiVariables_openGame_request);
-        logger.info("getURLRequestBody :" + openGameRequestBody);
 
         long start = System.currentTimeMillis();
         HttpResponse<String> openGameResponse = Unirest.post(openGameURL)
@@ -111,11 +110,14 @@ public class BaseTest {
                 .asString();
 
         long end = System.currentTimeMillis();
-//        Allure.addAttachment("OpenGameAPI ResponseTime" , (end-start) + " ms");
 
         Allure.addAttachment("OpenGameAPI RequestBody ", openGameRequestBody);
         Allure.addAttachment("OpenGameAPI ResponseBody ", openGameResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
-
+        logger.info("");
+        logger.info("OpenGameAPI RequestBody "+ openGameRequestBody);
+        logger.info("");
+        logger.info("OpenGameAPI ResponseBody "+ openGameResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
+        logger.info("");
         return openGameResponse;
     }
 
@@ -126,7 +128,6 @@ public class BaseTest {
         iqSoft_02_apisVariables_authorization_request.setToken(SessionToken);
         iqSoft_02_apisVariables_authorization_request.setProductId(ProductID);
         String authorizationRequestBody = gson.toJson(iqSoft_02_apisVariables_authorization_request);
-        logger.info("AuthorizationRequestBody : " + authorizationRequestBody);
 
         long start = System.currentTimeMillis();
         HttpResponse<String> authorizationResponse = Unirest.post(callbackUrl + "/Authorization")
@@ -135,10 +136,14 @@ public class BaseTest {
                 .asString();
 
         long end = System.currentTimeMillis();
-//        Allure.addAttachment("AuthorizationAPI ResponseTime" , (end-start) + " ms");
 
         Allure.addAttachment("AuthorizationAPI RequestBody", authorizationRequestBody);
         Allure.addAttachment("AuthorizationAPI ResponseBody", authorizationResponse.getBody() + "  ResponseTime "+ (end - start) + " ms");
+        logger.info("");
+        logger.info("AuthorizationAPI RequestBody "+ authorizationRequestBody);
+        logger.info("");
+        logger.info("AuthorizationAPI ResponseBody "+ authorizationResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
+        logger.info("");
         return authorizationResponse;
     }
 
@@ -149,7 +154,6 @@ public class BaseTest {
         iqSoft_03_apiVariables_getBalance_request.setToken(AuthorizationToken);
         iqSoft_03_apiVariables_getBalance_request.setCurrencyId(CurrencyId);
         String getBalanceRequestBody = gson.toJson(iqSoft_03_apiVariables_getBalance_request);
-        logger.info("GetBalanceRequestBody : " + getBalanceRequestBody);
 
         long start = System.currentTimeMillis();
         HttpResponse<String> getBalanceResponse = Unirest.post(callbackUrl + "/GetBalance")
@@ -158,10 +162,15 @@ public class BaseTest {
                 .asString();
 
         long end = System.currentTimeMillis();
-//        Allure.addAttachment("GetBalanceAPI ResponseTime" , (end-start) + " ms");
 
         Allure.addAttachment("GetBalanceAPI RequestBody", getBalanceRequestBody);
         Allure.addAttachment("GetBalanceAPI ResponseBody", getBalanceResponse.getBody() + "  ResponseTime "+ (end - start) + " ms");
+        logger.info("");
+        logger.info("GetBalanceAPI RequestBody "+ getBalanceRequestBody);
+        logger.info("");
+        logger.info("GetBalanceAPI ResponseBody "+ getBalanceResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
+        logger.info("");
+
         return getBalanceResponse;
     }
 
@@ -184,7 +193,6 @@ public class BaseTest {
         iqSoft_04_apiVariables_credit_request.setBetState(BetState);
 
         String CreditRequestBody = gson.toJson(iqSoft_04_apiVariables_credit_request);
-        logger.info("CreditRequestBody : " + CreditRequestBody);
 
         long start = System.currentTimeMillis();
         HttpResponse<String> creditResponse = Unirest.post(callbackUrl + "/Credit")
@@ -193,10 +201,15 @@ public class BaseTest {
                 .asString();
 
         long end = System.currentTimeMillis();
-//        Allure.addAttachment("CreditAPI ResponseTime" , (end-start) + " ms");
 
         Allure.addAttachment("CreditAPI RequestBody", CreditRequestBody);
         Allure.addAttachment("CreditAPI ResponseBody", creditResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
+        logger.info("");
+        logger.info("CreditAPI RequestBody "+ CreditRequestBody);
+        logger.info("");
+        logger.info("CreditAPI ResponseBody "+ creditResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
+        logger.info("");
+
         return creditResponse;
     }
 
@@ -221,7 +234,6 @@ public class BaseTest {
         iqSoft_05_apiVariables_debit_request.setToken(AuthorizationToken);
 
         String DebitRequestBody = gson.toJson(iqSoft_05_apiVariables_debit_request);
-        logger.info("DebitRequestBody : " + DebitRequestBody);
 
         long start = System.currentTimeMillis();
         HttpResponse<String> debitResponse = Unirest.post(callbackUrl + "/Debit")
@@ -229,10 +241,14 @@ public class BaseTest {
                 .body(DebitRequestBody)
                 .asString();
         long end = System.currentTimeMillis();
-//        Allure.addAttachment("DebitAPI ResponseTime" , (end-start) + " ms");
 
         Allure.addAttachment("DebitAPI RequestBody", DebitRequestBody);
         Allure.addAttachment("DebitAPI ResponseBody", debitResponse.getBody() + "  ResponseTime "+ (end - start) + " ms");
+        logger.info("");
+        logger.info("DebitAPI RequestBody "+ DebitRequestBody);
+        logger.info("");
+        logger.info("DebitAPI ResponseBody "+ debitResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
+        logger.info("");
         return debitResponse;
     }
 
@@ -256,10 +272,14 @@ public class BaseTest {
                 .body(RollBackRequestBody)
                 .asString();
         long end = System.currentTimeMillis();
-//        Allure.addAttachment("RollBackAPI ResponseTime" , (end-start) + " ms");
 
         Allure.addAttachment("RollBackAPI RequestBody", RollBackRequestBody);
         Allure.addAttachment("RollBackAPI ResponseBody", rollBackResponse.getBody() + "  ResponseTime "+ (end - start) + " ms");
+        logger.info("");
+        logger.info("RollBackAPI RequestBody "+ RollBackRequestBody);
+        logger.info("");
+        logger.info("RollBackAPI ResponseBody "+ rollBackResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
+        logger.info("");
         return rollBackResponse;
     }
 

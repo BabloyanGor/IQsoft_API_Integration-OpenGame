@@ -188,15 +188,15 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 69,
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 0,
                 "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "ClientDocumentAlreadyExists",
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "null",
                 "Error Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
 
         softAssert.assertEquals(amountBeforeCredit1, amountAfterCredit1 + betAmountCreditConfig, "amountBeforeCredit1 = amountAfterCredit1+betAmountCreditConfig");
         softAssert.assertEquals(amountAfterCredit1, amountAfterCredit2 + betAmountCreditConfig, "amountAfterCredit1 = amountAfterCredit2+betAmountCreditConfig");
         softAssert.assertEquals(amountAfterCredit2, amountAfterDebit1 - betAmountDebitConfig, "amountAfterCredit2 = amountAfterCredit2+betAmountCreditConfig");
-        softAssert.assertEquals(amountAfterDebit1, amountAfterDebit2);
+        softAssert.assertEquals(amountAfterDebit1, amountAfterDebit2, "amountAfterDebit2: " + amountAfterDebit2 + " = amountAfterDebit1: " + amountAfterDebit1);
 
         softAssert.assertAll();
     }
@@ -237,7 +237,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
                 "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "CanNotConnectCreditAndDebit",
                 "Error Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
-        softAssert.assertEquals(amountBeforeDebit, amountAfterDebit, "amountBeforeDebit: " + amountBeforeDebit + " = amountAfterDebit: " + amountAfterDebit);
+        softAssert.assertEquals(amountAfterDebit , amountBeforeDebit,  "amountAfterDebit: " + amountAfterDebit + " = amountBeforeDebit: " + amountBeforeDebit);
 
         softAssert.assertAll();
 

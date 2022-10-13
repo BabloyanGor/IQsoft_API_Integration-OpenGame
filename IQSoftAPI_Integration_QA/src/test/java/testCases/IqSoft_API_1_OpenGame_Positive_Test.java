@@ -27,6 +27,9 @@ public class IqSoft_API_1_OpenGame_Positive_Test extends BaseTest {
         Unirest.shutdown();
         statusCod = openGameResponse.getStatus();
         jsonObjectBody = new JSONObject(openGameResponse.getBody());
+
+
+
         iqSoft_01_apiVariables_openGame_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
         logger.info("getGameUrl API ResponseCode is Equal: " + iqSoft_01_apiVariables_openGame_response.getResponseCode());
 
