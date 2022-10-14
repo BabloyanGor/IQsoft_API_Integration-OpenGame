@@ -1706,3 +1706,98 @@
 2022-10-14 13:44:59,721 [main] INFO ApiIntegration - 
 2022-10-14 13:44:59,721 [main] INFO ApiIntegration - 
 2022-10-14 13:44:59,721 [main] INFO ApiIntegration - 
+2022-10-14 16:58:28,158 [main] INFO ApiIntegration - API Integration Automation Test(failed): Test execution starts
+2022-10-14 16:58:29,623 [main] INFO ApiIntegration - 
+2022-10-14 16:58:29,624 [main] INFO ApiIntegration - https://iqs.dazzabet.com/api/endpoint/GetBalance
+2022-10-14 16:58:29,624 [main] INFO ApiIntegration - GetBalanceAPI RequestBody {"CurrencyId":"TND"}
+2022-10-14 16:58:29,624 [main] INFO ApiIntegration - GetBalanceAPI ResponseBody {"Description":"error login","ResponseCode":22}  ResponseTime 1028 ms
+2022-10-14 16:58:29,624 [main] INFO ApiIntegration - 
+2022-10-14 16:58:29,627 [main] ERROR ApiIntegration - DebitAPIValidateResponseUsingInvalidProductID Test failed
+2022-10-14 16:58:30,177 [main] INFO ApiIntegration - 
+2022-10-14 16:58:30,177 [main] INFO ApiIntegration - https://iqs.dazzabet.com/api/endpoint/GetBalance
+2022-10-14 16:58:30,177 [main] INFO ApiIntegration - GetBalanceAPI RequestBody {"CurrencyId":"TND"}
+2022-10-14 16:58:30,178 [main] INFO ApiIntegration - GetBalanceAPI ResponseBody {"Description":"error login","ResponseCode":22}  ResponseTime 485 ms
+2022-10-14 16:58:30,178 [main] INFO ApiIntegration - 
+2022-10-14 16:58:30,178 [main] ERROR ApiIntegration - DebitAPIValidateResponseUsingInvalidCreditTransactionID Test failed
+2022-10-14 16:58:30,676 [main] INFO ApiIntegration - 
+2022-10-14 16:58:30,676 [main] INFO ApiIntegration - https://iqs.dazzabet.com/api/endpoint/GetBalance
+2022-10-14 16:58:30,676 [main] INFO ApiIntegration - GetBalanceAPI RequestBody {"CurrencyId":"TND"}
+2022-10-14 16:58:30,677 [main] INFO ApiIntegration - GetBalanceAPI ResponseBody {"Description":"error login","ResponseCode":22}  ResponseTime 481 ms
+2022-10-14 16:58:30,677 [main] INFO ApiIntegration - 
+2022-10-14 16:58:30,677 [main] ERROR ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount Test failed
+2022-10-14 16:58:31,202 [main] INFO ApiIntegration - 
+2022-10-14 16:58:31,202 [main] INFO ApiIntegration - https://iqs.dazzabet.com/api/endpoint/GetBalance
+2022-10-14 16:58:31,203 [main] INFO ApiIntegration - GetBalanceAPI RequestBody {"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-10-14 16:58:31,203 [main] INFO ApiIntegration - GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9483.5}  ResponseTime 510 ms
+2022-10-14 16:58:31,203 [main] INFO ApiIntegration - 
+2022-10-14 16:58:31,206 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
+2022-10-14 16:58:31,223 [main] ERROR ApiIntegration - GetBalanceAPIValidateResponseWithExpiredToken Test failed
+2022-10-14 16:58:31,711 [main] INFO ApiIntegration - 
+2022-10-14 16:58:31,711 [main] INFO ApiIntegration - https://iqs.dazzabet.com/api/endpoint/GetBalance
+2022-10-14 16:58:31,711 [main] INFO ApiIntegration - GetBalanceAPI RequestBody {"CurrencyId":"TND1"}
+2022-10-14 16:58:31,711 [main] INFO ApiIntegration - GetBalanceAPI ResponseBody {"Description":"error login","ResponseCode":22}  ResponseTime 470 ms
+2022-10-14 16:58:31,711 [main] INFO ApiIntegration - 
+2022-10-14 16:58:31,712 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
+2022-10-14 16:58:31,712 [main] ERROR ApiIntegration - GetBalanceAPIValidateResponseWithInvalidCurrencyID Test failed
+2022-10-14 16:58:32,193 [main] INFO ApiIntegration - 
+2022-10-14 16:58:32,193 [main] INFO ApiIntegration - https://iqs.dazzabet.com/api/endpoint/GetBalance
+2022-10-14 16:58:32,194 [main] INFO ApiIntegration - GetBalanceAPI RequestBody {"CurrencyId":"USD"}
+2022-10-14 16:58:32,194 [main] INFO ApiIntegration - GetBalanceAPI ResponseBody {"Description":"error login","ResponseCode":22}  ResponseTime 462 ms
+2022-10-14 16:58:32,194 [main] INFO ApiIntegration - 
+2022-10-14 16:58:32,195 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
+2022-10-14 16:58:32,196 [main] ERROR ApiIntegration - GetBalanceAPIValidateResponseWithOtherCurrencyID Test failed
+2022-10-14 16:58:32,659 [main] INFO ApiIntegration - 
+2022-10-14 16:58:32,659 [main] INFO ApiIntegration - https://iqs.dazzabet.com/api/endpoint/GetBalance
+2022-10-14 16:58:32,659 [main] INFO ApiIntegration - GetBalanceAPI RequestBody {"CurrencyId":"TND"}
+2022-10-14 16:58:32,659 [main] INFO ApiIntegration - GetBalanceAPI ResponseBody {"Description":"error login","ResponseCode":22}  ResponseTime 447 ms
+2022-10-14 16:58:32,659 [main] INFO ApiIntegration - 
+2022-10-14 16:58:32,660 [main] ERROR ApiIntegration - RollBackAPIValidateResponseWithInvalidToken Test failed
+2022-10-14 16:58:33,116 [main] INFO ApiIntegration - 
+2022-10-14 16:58:33,116 [main] INFO ApiIntegration - https://iqs.dazzabet.com/api/endpoint/GetBalance
+2022-10-14 16:58:33,116 [main] INFO ApiIntegration - GetBalanceAPI RequestBody {"CurrencyId":"TND"}
+2022-10-14 16:58:33,117 [main] INFO ApiIntegration - GetBalanceAPI ResponseBody {"Description":"error login","ResponseCode":22}  ResponseTime 442 ms
+2022-10-14 16:58:33,117 [main] INFO ApiIntegration - 
+2022-10-14 16:58:33,117 [main] ERROR ApiIntegration - RollBackAPIValidateResponseUsingInvalidProductID Test failed
+2022-10-14 16:58:33,423 [main] INFO ApiIntegration - 
+2022-10-14 16:58:33,423 [main] INFO ApiIntegration - https://iqs.dazzabet.com/api/endpoint/GetBalance
+2022-10-14 16:58:33,423 [main] INFO ApiIntegration - GetBalanceAPI RequestBody {"CurrencyId":"TND"}
+2022-10-14 16:58:33,423 [main] INFO ApiIntegration - GetBalanceAPI ResponseBody {"Description":"error login","ResponseCode":22}  ResponseTime 292 ms
+2022-10-14 16:58:33,423 [main] INFO ApiIntegration - 
+2022-10-14 16:58:33,424 [main] ERROR ApiIntegration - RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice Test failed
+2022-10-14 16:58:33,726 [main] INFO ApiIntegration - 
+2022-10-14 16:58:33,726 [main] INFO ApiIntegration - https://iqs.dazzabet.com/api/endpoint/GetBalance
+2022-10-14 16:58:33,726 [main] INFO ApiIntegration - GetBalanceAPI RequestBody {"CurrencyId":"TND"}
+2022-10-14 16:58:33,726 [main] INFO ApiIntegration - GetBalanceAPI ResponseBody {"Description":"error login","ResponseCode":22}  ResponseTime 290 ms
+2022-10-14 16:58:33,726 [main] INFO ApiIntegration - 
+2022-10-14 16:58:33,727 [main] ERROR ApiIntegration - CreditAPIValidateResponseWithExpiredToken Test failed
+2022-10-14 16:58:34,030 [main] INFO ApiIntegration - 
+2022-10-14 16:58:34,030 [main] INFO ApiIntegration - https://iqs.dazzabet.com/api/endpoint/GetBalance
+2022-10-14 16:58:34,030 [main] INFO ApiIntegration - GetBalanceAPI RequestBody {"CurrencyId":"TND"}
+2022-10-14 16:58:34,030 [main] INFO ApiIntegration - GetBalanceAPI ResponseBody {"Description":"error login","ResponseCode":22}  ResponseTime 290 ms
+2022-10-14 16:58:34,030 [main] INFO ApiIntegration - 
+2022-10-14 16:58:34,030 [main] ERROR ApiIntegration - CreditAPIValidateResponseWithInvalidProductID Test failed
+2022-10-14 16:58:34,506 [main] INFO ApiIntegration - 
+2022-10-14 16:58:34,506 [main] INFO ApiIntegration - https://iqs.dazzabet.com/api/endpoint/GetBalance
+2022-10-14 16:58:34,506 [main] INFO ApiIntegration - GetBalanceAPI RequestBody {"CurrencyId":"TND"}
+2022-10-14 16:58:34,507 [main] INFO ApiIntegration - GetBalanceAPI ResponseBody {"Description":"error login","ResponseCode":22}  ResponseTime 462 ms
+2022-10-14 16:58:34,507 [main] INFO ApiIntegration - 
+2022-10-14 16:58:34,507 [main] ERROR ApiIntegration - CreditAPIValidateResponseWithInvalidAmount Test failed
+2022-10-14 16:58:35,001 [main] INFO ApiIntegration - 
+2022-10-14 16:58:35,001 [main] INFO ApiIntegration - https://iqs.dazzabet.com/api/endpoint/Authorization
+2022-10-14 16:58:35,002 [main] INFO ApiIntegration - AuthorizationAPI RequestBody {"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","ProductId":54351}
+2022-10-14 16:58:35,002 [main] INFO ApiIntegration - AuthorizationAPI ResponseBody {"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","Gender":"1","ClientId":"dazzabet10130","LastName":"","UserName":"testuser","BirthDate":"1998-12-29","FirstName":"","CurrencyId":"TND","Description":null,"ResponseCode":0}  ResponseTime 481 ms
+2022-10-14 16:58:35,002 [main] INFO ApiIntegration - 
+2022-10-14 16:58:35,003 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
+2022-10-14 16:58:35,003 [main] ERROR ApiIntegration - AuthorizationAPIValidateResponseWithExpiredToken Test failed
+2022-10-14 16:58:35,470 [main] INFO ApiIntegration - 
+2022-10-14 16:58:35,471 [main] INFO ApiIntegration - https://iqs.dazzabet.com/api/endpoint/Authorization
+2022-10-14 16:58:35,471 [main] INFO ApiIntegration - AuthorizationAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","ProductId":54351}
+2022-10-14 16:58:35,471 [main] INFO ApiIntegration - AuthorizationAPI ResponseBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","Gender":"1","ClientId":"dazzabet10130","LastName":"","UserName":"testuser","BirthDate":"1998-12-29","FirstName":"","CurrencyId":"TND","Description":null,"ResponseCode":0}  ResponseTime 456 ms
+2022-10-14 16:58:35,471 [main] INFO ApiIntegration - 
+2022-10-14 16:58:35,472 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
+2022-10-14 16:58:35,472 [main] ERROR ApiIntegration - AuthorizationAPIValidateResponseWithInvalidProductID Test failed
+2022-10-14 16:58:35,475 [main] INFO ApiIntegration - API Integration Automation Test(failed): Test execution finished
+2022-10-14 16:58:35,495 [main] INFO ApiIntegration - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2022-10-14 16:58:35,496 [main] INFO ApiIntegration - 
+2022-10-14 16:58:35,496 [main] INFO ApiIntegration - 
+2022-10-14 16:58:35,496 [main] INFO ApiIntegration - 
