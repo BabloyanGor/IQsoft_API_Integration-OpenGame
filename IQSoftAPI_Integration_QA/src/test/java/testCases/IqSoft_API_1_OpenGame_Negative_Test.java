@@ -20,7 +20,7 @@ public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
     @Test(priority = 1)
     @Description("Verify OpenGame API_s response with invalid Token ")
     @Severity(SeverityLevel.BLOCKER)
-    public void openGameAPIValidateResponseWithInvalidToken() throws UnirestException, IOException {
+    public void OpenGameAPIValidateResponseWithInvalidToken() throws UnirestException, IOException {
 
         SoftAssert softAssert = new SoftAssert();
 
@@ -48,7 +48,7 @@ public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
     @Test(priority = 2)
     @Description("Verify OpenGame API_s response with Expired Token ")
     @Severity(SeverityLevel.BLOCKER)
-    public void openGameAPIValidateResponseWithExpiredToken() throws UnirestException, IOException {
+    public void OpenGameAPIValidateResponseWithExpiredToken() throws UnirestException, IOException {
         SoftAssert softAssert = new SoftAssert();
 
         HttpResponse<String> response = openGameAPI(partnerIdConfig, gameIdConfig, expiredSessionTokenConfig, languageIdConst, isForMobileConst, domainConfig);
@@ -75,7 +75,7 @@ public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
     @Test(priority = 3)
     @Description("Verify OpenGame API_s response with invalid PartnerID")
     @Severity(SeverityLevel.NORMAL)
-    public void openGameAPIValidateResponseWithInvalidPartnerID() throws UnirestException, IOException {
+    public void OpenGameAPIValidateResponseWithInvalidPartnerID() throws UnirestException, IOException {
         SoftAssert softAssert = new SoftAssert();
 
         HttpResponse<String> response = openGameAPI(-1, gameIdConfig, sessionTokenConfig , languageIdConst, isForMobileConst, domainConfig);
@@ -102,7 +102,7 @@ public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
     @Test(priority = 4)
     @Description("Verify OpenGame API_s response with invalid GameID")
     @Severity(SeverityLevel.NORMAL)
-    public void openGameAPIValidateResponseWithInvalidGameID() throws UnirestException, IOException {
+    public void OpenGameAPIValidateResponseWithInvalidGameID() throws UnirestException, IOException {
         SoftAssert softAssert = new SoftAssert();
 
         HttpResponse<String> response = openGameAPI(partnerIdConfig, -1, sessionTokenConfig , languageIdConst, isForMobileConst, domainConfig);
@@ -128,7 +128,7 @@ public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
     @Test(priority = 5)
     @Description("Verify OpenGame API_s response with invalid Domain")
     @Severity(SeverityLevel.BLOCKER)
-    public void openGameAPIValidateResponseWithInvalidDomain() throws UnirestException, IOException {
+    public void OpenGameAPIValidateResponseWithInvalidDomain() throws UnirestException, IOException {
         SoftAssert softAssert = new SoftAssert();
 
         HttpResponse<String> response = openGameAPI(partnerIdConfig, gameIdConfig, sessionTokenConfig , languageIdConst, isForMobileConst, domainConfig+"1");

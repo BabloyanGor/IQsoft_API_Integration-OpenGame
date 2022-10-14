@@ -37,7 +37,7 @@ public class IqSoft_API_1_OpenGame_Positive_Test extends BaseTest {
     @Test(priority = 1)
     @Description("Verify openGame API_s Status Cod equals to 200")
     @Severity(SeverityLevel.BLOCKER)
-    public void openGameAPIValidateStatusCod() {
+    public void OpenGameAPIValidateStatusCod() {
 
         logger.info("openGame API Response Status Cod is Equal: " + statusCod);
         Assert.assertEquals(statusCod, 200,"StatusCod: " + statusCod);
@@ -47,7 +47,7 @@ public class IqSoft_API_1_OpenGame_Positive_Test extends BaseTest {
     @Test(priority = 3, dependsOnMethods = {"openGameAPIValidateStatusCod"})
     @Description("Verify openGame API Positive Response")
     @Severity(SeverityLevel.BLOCKER)
-    public void openGameAPIValidatePositiveResponse() {
+    public void OpenGameAPIValidatePositiveResponse() {
 
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseCode(), 0,
