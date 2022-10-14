@@ -40,10 +40,7 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(responseCredit.getBody());
 
         iqSoft_04_apiVariables_credit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("Credit API Response ResponseCode : " + iqSoft_04_apiVariables_credit_response.getResponseCode());
-
         iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("Credit API Response Description : " + iqSoft_04_apiVariables_credit_response.getDescription());
 
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -85,10 +82,7 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(responseCredit.getBody());
 
         iqSoft_04_apiVariables_credit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("Credit API Response ResponseCode : " + iqSoft_04_apiVariables_credit_response.getResponseCode());
-
         iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("Credit API Response Description : " + iqSoft_04_apiVariables_credit_response.getDescription());
 
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -129,10 +123,7 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(responseCredit.getBody());
 
         iqSoft_04_apiVariables_credit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("Credit API Response ResponseCode : " + iqSoft_04_apiVariables_credit_response.getResponseCode());
-
         iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("Credit API Response Description : " + iqSoft_04_apiVariables_credit_response.getDescription());
 
 
 
@@ -181,10 +172,7 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(responseCredit2.getBody());
 
         iqSoft_04_apiVariables_credit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("Credit API Response ResponseCode : " + iqSoft_04_apiVariables_credit_response.getResponseCode());
-
         iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("Credit API Response Description : " + iqSoft_04_apiVariables_credit_response.getDescription());
 
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -229,11 +217,7 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(responseCredit.getBody());
 
         iqSoft_04_apiVariables_credit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("Credit API Response ResponseCode : " + iqSoft_04_apiVariables_credit_response.getResponseCode());
-
         iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("Credit API Response Description : " + iqSoft_04_apiVariables_credit_response.getDescription());
-
 
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -278,12 +262,7 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(responseCredit.getBody());
 
         iqSoft_04_apiVariables_credit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("Credit API Response ResponseCode : " + iqSoft_04_apiVariables_credit_response.getResponseCode());
-
         iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("Credit API Response Description : " + iqSoft_04_apiVariables_credit_response.getDescription());
-
-
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit.getBody());

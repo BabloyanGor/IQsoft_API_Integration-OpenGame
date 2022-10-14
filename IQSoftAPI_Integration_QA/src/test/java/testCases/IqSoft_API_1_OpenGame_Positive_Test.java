@@ -28,21 +28,11 @@ public class IqSoft_API_1_OpenGame_Positive_Test extends BaseTest {
         statusCod = openGameResponse.getStatus();
         jsonObjectBody = new JSONObject(openGameResponse.getBody());
 
-
-
         iqSoft_01_apiVariables_openGame_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("getGameUrl API ResponseCode is Equal: " + iqSoft_01_apiVariables_openGame_response.getResponseCode());
-
         iqSoft_01_apiVariables_openGame_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("getGameUrl API Description is Equal: " + iqSoft_01_apiVariables_openGame_response.getDescription());
-
         iqSoft_01_apiVariables_openGame_response.setResponseObject(jsonObjectBody.get("ResponseObject").toString());
-        logger.info("getGameUrl API ResponseObject is Equal: " + iqSoft_01_apiVariables_openGame_response.getResponseObject());
-
-
 
     }
-
 
     @Test(priority = 1)
     @Description("Verify openGame API_s Status Cod equals to 200")
@@ -59,7 +49,6 @@ public class IqSoft_API_1_OpenGame_Positive_Test extends BaseTest {
     @Severity(SeverityLevel.BLOCKER)
     public void openGameAPIValidatePositiveResponse() {
 
-
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseCode(), 0,
                 "ResponseCode: " +iqSoft_01_apiVariables_openGame_response.getResponseCode());
@@ -69,7 +58,6 @@ public class IqSoft_API_1_OpenGame_Positive_Test extends BaseTest {
                 "ResponseObject: " + iqSoft_01_apiVariables_openGame_response.getResponseObject());
         softAssert.assertTrue(iqSoft_01_apiVariables_openGame_response.getResponseObject().contains("http://"),"ResponseObject Don't Contain http://");
         softAssert.assertAll();
-
     }
 
 

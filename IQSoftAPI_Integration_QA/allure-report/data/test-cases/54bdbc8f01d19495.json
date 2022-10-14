@@ -1,0 +1,155 @@
+{
+  "uid" : "54bdbc8f01d19495",
+  "name" : "CreditAPIValidateStatusCod",
+  "fullName" : "testCases.IqSoft_API_4_Credit_Positive_Test.CreditAPIValidateStatusCod",
+  "historyId" : "6aa344a4bfee41947ded7ca9e2bf7059",
+  "time" : {
+    "start" : 1665737830347,
+    "stop" : 1665737830348,
+    "duration" : 1
+  },
+  "description" : "Verify Credit API_s Response Status Cod equals to 200",
+  "descriptionHtml" : "<p>Verify Credit API_s Response Status Cod equals to 200</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665737819473,
+      "stop" : 1665737819566,
+      "duration" : 93
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1665737827549,
+      "stop" : 1665737830345,
+      "duration" : 2796
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9f9360f1f48d45bc",
+      "name" : "GetBalanceAPI:  Url:  https://iqs.dazzabet.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "9f9360f1f48d45bc.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "535f4fd217632608",
+      "name" : "GetBalanceAPI:  ResponseBody",
+      "source" : "535f4fd217632608.txt",
+      "type" : "text/plain",
+      "size" : 103
+    }, {
+      "uid" : "5e5cf6f72eaa0a8e",
+      "name" : "CreditAPI  Url:  https://iqs.dazzabet.com/api/endpoint/Credit        RequestBody",
+      "source" : "5e5cf6f72eaa0a8e.txt",
+      "type" : "text/plain",
+      "size" : 177
+    }, {
+      "uid" : "587540fd11c27d17",
+      "name" : "CreditAPI  ResponseBody",
+      "source" : "587540fd11c27d17.txt",
+      "type" : "text/plain",
+      "size" : 156
+    }, {
+      "uid" : "16331a3532fdeac2",
+      "name" : "GetBalanceAPI:  Url:  https://iqs.dazzabet.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "16331a3532fdeac2.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "cc7dc82f4e3c7429",
+      "name" : "GetBalanceAPI:  ResponseBody",
+      "source" : "cc7dc82f4e3c7429.txt",
+      "type" : "text/plain",
+      "size" : 103
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 6,
+    "hasContent" : true,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665737915402,
+      "stop" : 1665737915402,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_4_Credit_Positive_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_4_Credit_Positive_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "CreditAPIValidateStatusCod"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_4_Credit_Positive_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "16640@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "54bdbc8f01d19495.json",
+  "parameterValues" : [ ]
+}

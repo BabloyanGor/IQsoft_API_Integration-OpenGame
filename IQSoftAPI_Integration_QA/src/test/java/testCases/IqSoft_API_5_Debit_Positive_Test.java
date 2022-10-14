@@ -36,10 +36,7 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest{
 
 
         iqSoft_05_apiVariables_debit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("Debit API Response ResponseCode : " + iqSoft_05_apiVariables_debit_response.getResponseCode());
-
         iqSoft_05_apiVariables_debit_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("Debit API Response Description : " + iqSoft_05_apiVariables_debit_response.getDescription());
 
 
         JSONArray jsonArrayOperationItems = jsonObjectBody.getJSONArray("OperationItems");
@@ -48,16 +45,9 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest{
             JSONObject jsonObjectGame = new JSONObject(first);
 
             iqSoft_05_apiVariables_debit_response.setBetId(jsonObjectGame.get("BetId").toString());
-            logger.info("Debit API Response BetId : " + iqSoft_05_apiVariables_debit_response.getBetId());
-
             iqSoft_05_apiVariables_debit_response.setBalance(Double.parseDouble(jsonObjectGame.get("Balance").toString()));
-            logger.info("Debit API Response Balance : " + iqSoft_05_apiVariables_debit_response.getBalance());
-
             iqSoft_05_apiVariables_debit_response.setClientId(jsonObjectGame.get("ClientId").toString());
-            logger.info("Debit API Response ClientId : " + iqSoft_05_apiVariables_debit_response.getClientId());
-
             iqSoft_05_apiVariables_debit_response.setCurrencyId(jsonObjectGame.get("CurrencyId").toString());
-            logger.info("Debit API Response CurrencyId : " + iqSoft_05_apiVariables_debit_response.getCurrencyId());
         }
 
 //        String OperationItems = String.valueOf(jsonObjectBody.getJSONObject("OperationItems"));
@@ -74,7 +64,6 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest{
 //
 //        iqSoft_05_apiVariables_debit_response.setCurrencyId(jsonObjectOperationItems.get("CurrencyId").toString());
 //        logger.info("Debit API Response CurrencyId : " + iqSoft_05_apiVariables_debit_response.getCurrencyId());
-
 
         HttpResponse<String> responseGetBalanceAfter = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfter.getBody());

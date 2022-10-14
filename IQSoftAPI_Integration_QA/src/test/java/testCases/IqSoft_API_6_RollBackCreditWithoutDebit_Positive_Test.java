@@ -49,10 +49,7 @@ public class IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test extends BaseT
         jsonObjectBody = new JSONObject(response.getBody());
 
         iqSoft_06_apiVariables_rollBack_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("RollBackCredit API Response ResponseCode : " + iqSoft_06_apiVariables_rollBack_response.getResponseCode());
-
         iqSoft_06_apiVariables_rollBack_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("RollBackCredit API Response Description : " + iqSoft_06_apiVariables_rollBack_response.getDescription());
 
         HttpResponse<String> responseGetBalanceAfter = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfter.getBody());

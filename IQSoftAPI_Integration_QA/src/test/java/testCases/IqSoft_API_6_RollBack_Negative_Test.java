@@ -49,11 +49,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(response.getBody());
 
         iqSoft_06_apiVariables_rollBack_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("RollBack API Response ResponseCode : " + iqSoft_06_apiVariables_rollBack_response.getResponseCode());
-
         iqSoft_06_apiVariables_rollBack_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("RollBack API Response Description : " + iqSoft_06_apiVariables_rollBack_response.getDescription());
-
 
         HttpResponse<String> responseGetBalanceAfterRollBack = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterRollBack.getBody());
@@ -105,11 +101,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(response.getBody());
 
         iqSoft_06_apiVariables_rollBack_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("RollBack API Response ResponseCode : " + iqSoft_06_apiVariables_rollBack_response.getResponseCode());
-
         iqSoft_06_apiVariables_rollBack_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("RollBack API Response Description : " + iqSoft_06_apiVariables_rollBack_response.getDescription());
-
 
         HttpResponse<String> responseGetBalanceAfterRollBack = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterRollBack.getBody());
@@ -148,11 +140,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(response.getBody());
 
         iqSoft_06_apiVariables_rollBack_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("RollBack API Response ResponseCode : " + iqSoft_06_apiVariables_rollBack_response.getResponseCode());
-
         iqSoft_06_apiVariables_rollBack_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("RollBack API Response Description : " + iqSoft_06_apiVariables_rollBack_response.getDescription());
-
 
         HttpResponse<String> responseGetBalanceAfterRollBack = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterRollBack.getBody());
@@ -211,11 +199,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(response.getBody());
 
         iqSoft_06_apiVariables_rollBack_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("RollBack API Response ResponseCode : " + iqSoft_06_apiVariables_rollBack_response.getResponseCode());
-
         iqSoft_06_apiVariables_rollBack_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("RollBack API Response Description : " + iqSoft_06_apiVariables_rollBack_response.getDescription());
-
 
         HttpResponse<String> responseGetBalanceAfterRollBack2 = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterRollBack2.getBody());
@@ -287,11 +271,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(responseRollBack.getBody());
 
         iqSoft_06_apiVariables_rollBack_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("RollBack API Response ResponseCode : " + iqSoft_06_apiVariables_rollBack_response.getResponseCode());
-
         iqSoft_06_apiVariables_rollBack_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("RollBack API Response Description : " + iqSoft_06_apiVariables_rollBack_response.getDescription());
-
 
         HttpResponse<String> responseGetBalanceAfterRollBack2 = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterRollBack2.getBody());

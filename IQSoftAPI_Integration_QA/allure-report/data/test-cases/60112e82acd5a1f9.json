@@ -1,0 +1,179 @@
+{
+  "uid" : "60112e82acd5a1f9",
+  "name" : "RollBackAPIValidatePositiveResponse",
+  "fullName" : "testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test.RollBackAPIValidatePositiveResponse",
+  "historyId" : "ede5ed6959361720a75dba073814d3e5",
+  "time" : {
+    "start" : 1665737840588,
+    "stop" : 1665737840589,
+    "duration" : 1
+  },
+  "description" : "Verify RollBackCredit API_s Positive Response",
+  "descriptionHtml" : "<p>Verify RollBackCredit API_s Positive Response</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665737819473,
+      "stop" : 1665737819566,
+      "duration" : 93
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1665737837274,
+      "stop" : 1665737840581,
+      "duration" : 3307
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ff75a06fe2948747",
+      "name" : "GetBalanceAPI:  Url:  https://iqs.dazzabet.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "ff75a06fe2948747.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "d4040cea8719b6f1",
+      "name" : "GetBalanceAPI:  ResponseBody",
+      "source" : "d4040cea8719b6f1.txt",
+      "type" : "text/plain",
+      "size" : 103
+    }, {
+      "uid" : "1e5c50b45a3d7691",
+      "name" : "CreditAPI  Url:  https://iqs.dazzabet.com/api/endpoint/Credit        RequestBody",
+      "source" : "1e5c50b45a3d7691.txt",
+      "type" : "text/plain",
+      "size" : 177
+    }, {
+      "uid" : "940220a5cef1bc8f",
+      "name" : "CreditAPI  ResponseBody",
+      "source" : "940220a5cef1bc8f.txt",
+      "type" : "text/plain",
+      "size" : 155
+    }, {
+      "uid" : "690afc75e55e2587",
+      "name" : "GetBalanceAPI:  Url:  https://iqs.dazzabet.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "690afc75e55e2587.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "9d000c55948646f8",
+      "name" : "GetBalanceAPI:  ResponseBody",
+      "source" : "9d000c55948646f8.txt",
+      "type" : "text/plain",
+      "size" : 103
+    }, {
+      "uid" : "50e7de88c66c88dd",
+      "name" : "RollBackAPI  Url:  https://iqs.dazzabet.com/api/endpoint/Rollback        RequestBody",
+      "source" : "50e7de88c66c88dd.txt",
+      "type" : "text/plain",
+      "size" : 211
+    }, {
+      "uid" : "2a0ccd4de4c49fa7",
+      "name" : "RollBackAPI  ResponseBody",
+      "source" : "2a0ccd4de4c49fa7.txt",
+      "type" : "text/plain",
+      "size" : 58
+    }, {
+      "uid" : "bc047724f22a587b",
+      "name" : "GetBalanceAPI:  Url:  https://iqs.dazzabet.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "bc047724f22a587b.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "71b1e8ae74c63ecf",
+      "name" : "GetBalanceAPI:  ResponseBody",
+      "source" : "71b1e8ae74c63ecf.txt",
+      "type" : "text/plain",
+      "size" : 103
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 10,
+    "hasContent" : true,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665737915402,
+      "stop" : 1665737915402,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "RollBackAPIValidatePositiveResponse"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "16640@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "60112e82acd5a1f9.json",
+  "parameterValues" : [ ]
+}

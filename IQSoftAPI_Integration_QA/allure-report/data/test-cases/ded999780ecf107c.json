@@ -1,0 +1,174 @@
+{
+  "uid" : "ded999780ecf107c",
+  "name" : "DebitAPIValidateResponseWithInvalidToken",
+  "fullName" : "testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseWithInvalidToken",
+  "historyId" : "d8fe06a2543f4c93ead6231af5e5b7b6",
+  "time" : {
+    "start" : 1665737870625,
+    "stop" : 1665737873899,
+    "duration" : 3274
+  },
+  "description" : "Verify Debit API_s response with Invalid Token",
+  "descriptionHtml" : "<p>Verify Debit API_s response with Invalid Token</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665737819473,
+      "stop" : 1665737819566,
+      "duration" : 93
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "Verify Debit API_s response with Invalid Token",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "fa6a534c427c95d2",
+      "name" : "GetBalanceAPI:  Url:  https://iqs.dazzabet.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "fa6a534c427c95d2.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "c48d1862dbcc5a3",
+      "name" : "GetBalanceAPI:  ResponseBody",
+      "source" : "c48d1862dbcc5a3.txt",
+      "type" : "text/plain",
+      "size" : 103
+    }, {
+      "uid" : "afd93c12d1281c12",
+      "name" : "CreditAPI  Url:  https://iqs.dazzabet.com/api/endpoint/Credit        RequestBody",
+      "source" : "afd93c12d1281c12.txt",
+      "type" : "text/plain",
+      "size" : 177
+    }, {
+      "uid" : "23f4bdb2c77ec171",
+      "name" : "CreditAPI  ResponseBody",
+      "source" : "23f4bdb2c77ec171.txt",
+      "type" : "text/plain",
+      "size" : 155
+    }, {
+      "uid" : "fa6ff8e1f1b9a92e",
+      "name" : "GetBalanceAPI:  Url:  https://iqs.dazzabet.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "fa6ff8e1f1b9a92e.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "cd166a68b1a9c8df",
+      "name" : "GetBalanceAPI:  ResponseBody",
+      "source" : "cd166a68b1a9c8df.txt",
+      "type" : "text/plain",
+      "size" : 103
+    }, {
+      "uid" : "d5cead11f2136776",
+      "name" : "DebitAPI  Url:  https://iqs.dazzabet.com/api/endpoint/Debit        RequestBody",
+      "source" : "d5cead11f2136776.txt",
+      "type" : "text/plain",
+      "size" : 260
+    }, {
+      "uid" : "b582bb7ce73ee113",
+      "name" : "DebitAPI  ResponseBody",
+      "source" : "b582bb7ce73ee113.txt",
+      "type" : "text/plain",
+      "size" : 70
+    }, {
+      "uid" : "ff26e4aea4934a16",
+      "name" : "GetBalanceAPI:  Url:  https://iqs.dazzabet.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "ff26e4aea4934a16.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "926468f88730d995",
+      "name" : "GetBalanceAPI:  ResponseBody",
+      "source" : "926468f88730d995.txt",
+      "type" : "text/plain",
+      "size" : 103
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 10,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665737915402,
+      "stop" : 1665737915402,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_5_Debit_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_5_Debit_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "DebitAPIValidateResponseWithInvalidToken"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_5_Debit_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "16640@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ded999780ecf107c.json",
+  "parameterValues" : [ ]
+}

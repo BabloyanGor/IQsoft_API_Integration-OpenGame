@@ -11,7 +11,6 @@ import org.json.JSONObject;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 import java.io.IOException;
 
 public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
@@ -48,10 +47,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
 
 
         iqSoft_05_apiVariables_debit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("Debit API Response ResponseCode : " + iqSoft_05_apiVariables_debit_response.getResponseCode());
-
         iqSoft_05_apiVariables_debit_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("Debit API Response Description : " + iqSoft_05_apiVariables_debit_response.getDescription());
 
         HttpResponse<String> responseGetBalanceAfterDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterDebit.getBody());
@@ -103,10 +99,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
 
 
         iqSoft_05_apiVariables_debit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("Debit API Response ResponseCode : " + iqSoft_05_apiVariables_debit_response.getResponseCode());
-
         iqSoft_05_apiVariables_debit_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("Debit API Response Description : " + iqSoft_05_apiVariables_debit_response.getDescription());
 
         HttpResponse<String> responseGetBalanceAfterDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterDebit.getBody());
@@ -177,10 +170,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(response.getBody());
 
         iqSoft_05_apiVariables_debit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("Debit API Response ResponseCode : " + iqSoft_05_apiVariables_debit_response.getResponseCode());
-
         iqSoft_05_apiVariables_debit_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("Debit API Response Description : " + iqSoft_05_apiVariables_debit_response.getDescription());
 
         HttpResponse<String> responseGetBalanceAfterDebit2 = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterDebit2.getBody());
@@ -222,10 +212,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
 
 
         iqSoft_05_apiVariables_debit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("Debit API Response ResponseCode : " + iqSoft_05_apiVariables_debit_response.getResponseCode());
-
         iqSoft_05_apiVariables_debit_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("Debit API Response Description : " + iqSoft_05_apiVariables_debit_response.getDescription());
 
         HttpResponse<String> responseGetBalanceAfterDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterDebit.getBody());
@@ -273,10 +260,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
 
 
         iqSoft_05_apiVariables_debit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("Debit API Response ResponseCode : " + iqSoft_05_apiVariables_debit_response.getResponseCode());
-
         iqSoft_05_apiVariables_debit_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("Debit API Response Description : " + iqSoft_05_apiVariables_debit_response.getDescription());
 
         HttpResponse<String> responseGetBalanceAfterDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterDebit.getBody());

@@ -21,10 +21,12 @@ public class BaseTest {
 
     public static Logger logger;
     ReadConfig readConfig = new ReadConfig();
-    public String openGameURL = readConfig.getOpenGameURL();
+
+//    public String openGameURL = readConfig.getOpenGameURL();
+    public int partnerIdConfig = readConfig.getPartnerID();
+    public String openGameURL =  "https://production.iqsoftllc.com/"+partnerIdConfig+"/api/Integration/OpenGame";
     public String callbackUrl = readConfig.getCallbackUrl();
     public String domainConfig = readConfig.getDomain();
-    public int partnerIdConfig = readConfig.getPartnerID();
     public String clientIdConfig = readConfig.getClientId();
     public String userNameConfig = readConfig.getUserName();
 
@@ -72,7 +74,7 @@ public class BaseTest {
     IqSoft_05_APIVariables_Debit_Response iqSoft_05_apiVariables_debit_response = new IqSoft_05_APIVariables_Debit_Response();
     IqSoft_06_APIVariables_RollBack_Request iqSoft_06_apiVariables_rollBack_request = new IqSoft_06_APIVariables_RollBack_Request();
     IqSoft_06_APIVariables_RollBack_Response iqSoft_06_apiVariables_rollBack_response = new IqSoft_06_APIVariables_RollBack_Response();
-
+    //endregion
 
     @BeforeSuite
     public void setupSuite() {
@@ -88,7 +90,7 @@ public class BaseTest {
         logger.info("");
     }
 
-    //endregion
+
 
     public HttpResponse<String> openGameAPI(int PartnerID, int GameID, String SessionToken, String LanguageId,
                                             boolean isForMobile, String Domain) throws UnirestException {
@@ -104,20 +106,23 @@ public class BaseTest {
         String openGameRequestBody = gson.toJson(iqSoft_01_apiVariables_openGame_request);
 
         long start = System.currentTimeMillis();
-        HttpResponse<String> openGameResponse = Unirest.post(openGameURL)
+        String url = openGameURL;
+
+        HttpResponse<String> openGameResponse = Unirest.post(url)
                 .header("Content-Type", "application/json")
                 .body(openGameRequestBody)
                 .asString();
 
         long end = System.currentTimeMillis();
 
-        Allure.addAttachment("OpenGameAPI RequestBody ", openGameRequestBody);
-        Allure.addAttachment("OpenGameAPI ResponseBody ", openGameResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
+        Allure.addAttachment("OpenGameAPI:  Url  "+ url + "        RequestBody ", openGameRequestBody);
+        Allure.addAttachment("OpenGameAPI:  ResponseBody ", openGameResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
         logger.info("");
+        logger.info(url);
         logger.info("OpenGameAPI RequestBody "+ openGameRequestBody);
-        logger.info("");
         logger.info("OpenGameAPI ResponseBody "+ openGameResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
         logger.info("");
+
         return openGameResponse;
     }
 
@@ -129,21 +134,23 @@ public class BaseTest {
         iqSoft_02_apisVariables_authorization_request.setProductId(ProductID);
         String authorizationRequestBody = gson.toJson(iqSoft_02_apisVariables_authorization_request);
 
+        String url = callbackUrl + "/Authorization";
         long start = System.currentTimeMillis();
-        HttpResponse<String> authorizationResponse = Unirest.post(callbackUrl + "/Authorization")
+        HttpResponse<String> authorizationResponse = Unirest.post(url)
                 .header("Content-Type", "application/json")
                 .body(authorizationRequestBody)
                 .asString();
 
         long end = System.currentTimeMillis();
 
-        Allure.addAttachment("AuthorizationAPI RequestBody", authorizationRequestBody);
-        Allure.addAttachment("AuthorizationAPI ResponseBody", authorizationResponse.getBody() + "  ResponseTime "+ (end - start) + " ms");
+        Allure.addAttachment("AuthorizationAPI:  Url  "+ url + "        RequestBody", authorizationRequestBody);
+        Allure.addAttachment("AuthorizationAPI:  ResponseBody", authorizationResponse.getBody() + "  ResponseTime "+ (end - start) + " ms");
         logger.info("");
+        logger.info(url);
         logger.info("AuthorizationAPI RequestBody "+ authorizationRequestBody);
-        logger.info("");
         logger.info("AuthorizationAPI ResponseBody "+ authorizationResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
         logger.info("");
+
         return authorizationResponse;
     }
 
@@ -155,19 +162,21 @@ public class BaseTest {
         iqSoft_03_apiVariables_getBalance_request.setCurrencyId(CurrencyId);
         String getBalanceRequestBody = gson.toJson(iqSoft_03_apiVariables_getBalance_request);
 
+        String url = callbackUrl + "/GetBalance";
+
         long start = System.currentTimeMillis();
-        HttpResponse<String> getBalanceResponse = Unirest.post(callbackUrl + "/GetBalance")
+        HttpResponse<String> getBalanceResponse = Unirest.post(url)
                 .header("Content-Type", "application/json")
                 .body(getBalanceRequestBody)
                 .asString();
 
         long end = System.currentTimeMillis();
 
-        Allure.addAttachment("GetBalanceAPI RequestBody", getBalanceRequestBody);
-        Allure.addAttachment("GetBalanceAPI ResponseBody", getBalanceResponse.getBody() + "  ResponseTime "+ (end - start) + " ms");
+        Allure.addAttachment("GetBalanceAPI:  Url:  "+ url + "        RequestBody", getBalanceRequestBody);
+        Allure.addAttachment("GetBalanceAPI:  ResponseBody", getBalanceResponse.getBody() + "  ResponseTime "+ (end - start) + " ms");
         logger.info("");
+        logger.info(url);
         logger.info("GetBalanceAPI RequestBody "+ getBalanceRequestBody);
-        logger.info("");
         logger.info("GetBalanceAPI ResponseBody "+ getBalanceResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
         logger.info("");
 
@@ -193,20 +202,21 @@ public class BaseTest {
         iqSoft_04_apiVariables_credit_request.setBetState(BetState);
 
         String CreditRequestBody = gson.toJson(iqSoft_04_apiVariables_credit_request);
+        String url = callbackUrl + "/Credit";
 
         long start = System.currentTimeMillis();
-        HttpResponse<String> creditResponse = Unirest.post(callbackUrl + "/Credit")
+        HttpResponse<String> creditResponse = Unirest.post(url)
                 .header("Content-Type", "application/json")
                 .body(CreditRequestBody)
                 .asString();
 
         long end = System.currentTimeMillis();
 
-        Allure.addAttachment("CreditAPI RequestBody", CreditRequestBody);
-        Allure.addAttachment("CreditAPI ResponseBody", creditResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
+        Allure.addAttachment("CreditAPI  Url:  "+ url + "        RequestBody", CreditRequestBody);
+        Allure.addAttachment("CreditAPI  ResponseBody", creditResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
         logger.info("");
+        logger.info(url);
         logger.info("CreditAPI RequestBody "+ CreditRequestBody);
-        logger.info("");
         logger.info("CreditAPI ResponseBody "+ creditResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
         logger.info("");
 
@@ -234,21 +244,23 @@ public class BaseTest {
         iqSoft_05_apiVariables_debit_request.setToken(AuthorizationToken);
 
         String DebitRequestBody = gson.toJson(iqSoft_05_apiVariables_debit_request);
+        String url = callbackUrl + "/Debit";
 
         long start = System.currentTimeMillis();
-        HttpResponse<String> debitResponse = Unirest.post(callbackUrl + "/Debit")
+        HttpResponse<String> debitResponse = Unirest.post(url)
                 .header("Content-Type", "application/json")
                 .body(DebitRequestBody)
                 .asString();
         long end = System.currentTimeMillis();
 
-        Allure.addAttachment("DebitAPI RequestBody", DebitRequestBody);
-        Allure.addAttachment("DebitAPI ResponseBody", debitResponse.getBody() + "  ResponseTime "+ (end - start) + " ms");
+        Allure.addAttachment("DebitAPI  Url:  "+ url + "        RequestBody", DebitRequestBody);
+        Allure.addAttachment("DebitAPI  ResponseBody", debitResponse.getBody() + "  ResponseTime "+ (end - start) + " ms");
         logger.info("");
+        logger.info(url);
         logger.info("DebitAPI RequestBody "+ DebitRequestBody);
-        logger.info("");
         logger.info("DebitAPI ResponseBody "+ debitResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
         logger.info("");
+
         return debitResponse;
     }
 
@@ -265,21 +277,23 @@ public class BaseTest {
         iqSoft_06_apiVariables_rollBack_request.setOperationTypeId(OperationTypeId);
 
         String RollBackRequestBody = gson.toJson(iqSoft_06_apiVariables_rollBack_request);
-        logger.info("RollBackRequestBody : " + RollBackRequestBody);
+        String url = callbackUrl + "/Rollback";
+
         long start = System.currentTimeMillis();
-        HttpResponse<String> rollBackResponse = Unirest.post(callbackUrl + "/Rollback")
+        HttpResponse<String> rollBackResponse = Unirest.post(url)
                 .header("Content-Type", "application/json")
                 .body(RollBackRequestBody)
                 .asString();
         long end = System.currentTimeMillis();
 
-        Allure.addAttachment("RollBackAPI RequestBody", RollBackRequestBody);
-        Allure.addAttachment("RollBackAPI ResponseBody", rollBackResponse.getBody() + "  ResponseTime "+ (end - start) + " ms");
+        Allure.addAttachment("RollBackAPI  Url:  "+ url + "        RequestBody", RollBackRequestBody);
+        Allure.addAttachment("RollBackAPI  ResponseBody", rollBackResponse.getBody() + "  ResponseTime "+ (end - start) + " ms");
         logger.info("");
+        logger.info(url);
         logger.info("RollBackAPI RequestBody "+ RollBackRequestBody);
-        logger.info("");
         logger.info("RollBackAPI ResponseBody "+ rollBackResponse.getBody() + "  ResponseTime " + (end - start) + " ms");
         logger.info("");
+
         return rollBackResponse;
     }
 

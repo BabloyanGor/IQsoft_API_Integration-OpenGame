@@ -38,10 +38,7 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
         jsonObjectBody = new JSONObject(responseCredit.getBody());
 
         iqSoft_04_apiVariables_credit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("Credit API Response ResponseCode : " + iqSoft_04_apiVariables_credit_response.getResponseCode());
-
         iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("Credit API Response Description : " + iqSoft_04_apiVariables_credit_response.getDescription());
 
 
         JSONArray jsonArrayOperationItems = jsonObjectBody.getJSONArray("OperationItems");
@@ -50,16 +47,9 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
             JSONObject jsonObjectGame = new JSONObject(first);
 
             iqSoft_04_apiVariables_credit_response.setBetId(jsonObjectGame.get("BetId").toString());
-            logger.info("Debit API Response BetId : " + iqSoft_04_apiVariables_credit_response.getBetId());
-
             iqSoft_04_apiVariables_credit_response.setBalance(Double.parseDouble(jsonObjectGame.get("Balance").toString()));
-            logger.info("Debit API Response Balance : " + iqSoft_04_apiVariables_credit_response.getBalance());
-
             iqSoft_04_apiVariables_credit_response.setClientId(jsonObjectGame.get("ClientId").toString());
-            logger.info("Debit API Response ClientId : " + iqSoft_04_apiVariables_credit_response.getClientId());
-
             iqSoft_04_apiVariables_credit_response.setCurrencyId(jsonObjectGame.get("CurrencyId").toString());
-            logger.info("Debit API Response CurrencyId : " + iqSoft_04_apiVariables_credit_response.getCurrencyId());
         }
 
         HttpResponse<String> responseGetBalanceAfter = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);

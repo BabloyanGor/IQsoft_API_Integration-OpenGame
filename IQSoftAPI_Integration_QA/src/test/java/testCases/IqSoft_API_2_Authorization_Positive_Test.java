@@ -29,34 +29,15 @@ public class IqSoft_API_2_Authorization_Positive_Test extends BaseTest {
         jsonObjectBody = new JSONObject(authorizationResponse.getBody());
 
         iqSoft_02_apisVariables_authorization_response.setToken(jsonObjectBody.get("Token").toString());
-        logger.info("Authorization API Response Token : " + iqSoft_02_apisVariables_authorization_response.getToken());
-
         iqSoft_02_apisVariables_authorization_response.setGender(jsonObjectBody.get("Gender").toString());
-        logger.info("Authorization API Response Gender : " + iqSoft_02_apisVariables_authorization_response.getGender());
-
         iqSoft_02_apisVariables_authorization_response.setClientId(jsonObjectBody.get("ClientId").toString());
-        logger.info("Authorization API Response ClientId : " + iqSoft_02_apisVariables_authorization_response.getClientId());
-
         iqSoft_02_apisVariables_authorization_response.setLastName(jsonObjectBody.get("LastName").toString());
-        logger.info("Authorization API Response LastName : " + iqSoft_02_apisVariables_authorization_response.getLastName());
-
         iqSoft_02_apisVariables_authorization_response.setUserName(jsonObjectBody.get("UserName").toString());
-        logger.info("Authorization API Response UserName : " + iqSoft_02_apisVariables_authorization_response.getUserName());
-
         iqSoft_02_apisVariables_authorization_response.setBirthDate(jsonObjectBody.get("BirthDate").toString());
-        logger.info("Authorization API Response BirthDate : " + iqSoft_02_apisVariables_authorization_response.getBirthDate());
-
         iqSoft_02_apisVariables_authorization_response.setFirstName(jsonObjectBody.get("FirstName").toString());
-        logger.info("Authorization API Response FirstName : " + iqSoft_02_apisVariables_authorization_response.getFirstName());
-
         iqSoft_02_apisVariables_authorization_response.setCurrencyId(jsonObjectBody.get("CurrencyId").toString());
-        logger.info("Authorization API Response CurrencyId : " + iqSoft_02_apisVariables_authorization_response.getCurrencyId());
-
         iqSoft_02_apisVariables_authorization_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("Authorization API Response Description : " + iqSoft_02_apisVariables_authorization_response.getDescription());
-
         iqSoft_02_apisVariables_authorization_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("Authorization API Response ResponseCode : " + iqSoft_02_apisVariables_authorization_response.getResponseCode());
 
         AuthorizationTokenVar = iqSoft_02_apisVariables_authorization_response.getToken();
     }

@@ -24,13 +24,11 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
         HttpResponse<String> response = getBalanceAPI(expiredSessionTokenConfig, currencyIDConfig);
         Unirest.shutdown();
         statusCod = response.getStatus();
+        logger.info(" GetBalance API Status Cod is Equal: " + statusCod);
         jsonObjectBody = new JSONObject(response.getBody());
 
         iqSoft_03_apiVariables_getBalance_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("GetBalance API Response ResponseCode : " + iqSoft_03_apiVariables_getBalance_response.getResponseCode());
-
         iqSoft_03_apiVariables_getBalance_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("GetBalance API Response Description : " + iqSoft_03_apiVariables_getBalance_response.getDescription());
 
         SoftAssert softAssert = new SoftAssert();
 
@@ -50,19 +48,15 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
         HttpResponse<String> response = getBalanceAPI(AuthorizationTokenVar + "1", currencyIDConfig);
         Unirest.shutdown();
         statusCod = response.getStatus();
+        logger.info(" GetBalance API Status Cod is Equal: " + statusCod);
         jsonObjectBody = new JSONObject(response.getBody());
 
-
         iqSoft_03_apiVariables_getBalance_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("GetBalance API Response ResponseCode : " + iqSoft_03_apiVariables_getBalance_response.getResponseCode());
-
         iqSoft_03_apiVariables_getBalance_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("GetBalance API Response Description : " + iqSoft_03_apiVariables_getBalance_response.getDescription());
 
         SoftAssert softAssert = new SoftAssert();
 
         softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
-
         softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(), 22,
                 "ResponseCode: " + iqSoft_03_apiVariables_getBalance_response.getResponseCode());
         softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getDescription(), "error login",
@@ -78,18 +72,15 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
         HttpResponse<String> response = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig + "1");
         Unirest.shutdown();
         statusCod = response.getStatus();
+        logger.info(" GetBalance API Status Cod is Equal: " + statusCod);
         jsonObjectBody = new JSONObject(response.getBody());
 
         iqSoft_03_apiVariables_getBalance_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("GetBalance API Response ResponseCode : " + iqSoft_03_apiVariables_getBalance_response.getResponseCode());
-
         iqSoft_03_apiVariables_getBalance_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("GetBalance API Response Description : " + iqSoft_03_apiVariables_getBalance_response.getDescription());
 
         SoftAssert softAssert = new SoftAssert();
 
         softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
-
         softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(), 20,
                 "ResponseCode: " + iqSoft_03_apiVariables_getBalance_response.getResponseCode());
         softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getDescription(), "CurrencyNotExists",
@@ -105,6 +96,7 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
         HttpResponse<String> response1 = getBalanceAPI(AuthorizationTokenVar, "USD");
         Unirest.shutdown();
         statusCod = response1.getStatus();
+        logger.info(" GetBalance API Status Cod is Equal: " + statusCod);
         jsonObjectBody = new JSONObject(response1.getBody());
 
         iqSoft_03_apiVariables_getBalance_response.setAvailableBalance(Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString()));

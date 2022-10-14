@@ -28,17 +28,9 @@ public class IqSoft_API_3_GetBalance_Positive_Test extends BaseTest {
         jsonObjectBody = new JSONObject(getBalanceResponse.getBody());
 
         iqSoft_03_apiVariables_getBalance_response.setCurrencyId(jsonObjectBody.get("CurrencyId").toString());
-        logger.info("GetBalance API Response CurrencyId : " + iqSoft_03_apiVariables_getBalance_response.getCurrencyId());
-
         iqSoft_03_apiVariables_getBalance_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        logger.info("GetBalance API Response ResponseCode : " + iqSoft_03_apiVariables_getBalance_response.getResponseCode());
-
         iqSoft_03_apiVariables_getBalance_response.setDescription(jsonObjectBody.get("Description").toString());
-        logger.info("GetBalance API Response Description : " + iqSoft_03_apiVariables_getBalance_response.getDescription());
-
         iqSoft_03_apiVariables_getBalance_response.setAvailableBalance(Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString()));
-        logger.info("GetBalance API Response Description : " + iqSoft_03_apiVariables_getBalance_response.getAvailableBalance());
-
     }
 
     @Test(priority = 1)

@@ -1,550 +1,550 @@
 [ {
-  "uid" : "4d6a99d6811fa71b",
-  "name" : "DebitAPIValidateResponseUsingInvalidCreditTransactionID",
+  "uid" : "dcab63aa8a260141",
+  "name" : "GetBalanceAPIValidateResponseWithInvalidCurrencyID",
   "time" : {
-    "start" : 1665667783850,
-    "stop" : 1665667786077,
-    "duration" : 2227
+    "start" : 1665737849112,
+    "stop" : 1665737849772,
+    "duration" : 660
   },
   "status" : "failed",
   "severity" : "blocker"
 }, {
-  "uid" : "39d8069de8f1247a",
-  "name" : "CreditAPIValidateResponseWithInvalidAmount",
-  "time" : {
-    "start" : 1665667755821,
-    "stop" : 1665667757609,
-    "duration" : 1788
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "6b66bdf5406b510e",
+  "uid" : "ec4dfc3329f5b176",
   "name" : "GetBalanceAPIValidateStatusCod",
   "time" : {
-    "start" : 1665667722943,
-    "stop" : 1665667722944,
+    "start" : 1665737827541,
+    "stop" : 1665737827541,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "bd8a6480d95a41f9",
+  "name" : "CreditAPIValidateResponseWithInvalidAmount",
+  "time" : {
+    "start" : 1665737868868,
+    "stop" : 1665737870623,
+    "duration" : 1755
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "a3492c42544d1a42",
+  "name" : "DebitAPIValidateResponseUsingInvalidCreditTransactionID",
+  "time" : {
+    "start" : 1665737882865,
+    "stop" : 1665737884716,
+    "duration" : 1851
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "8b42adf734a75cd4",
+  "name" : "RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice",
+  "time" : {
+    "start" : 1665737909768,
+    "stop" : 1665737915318,
+    "duration" : 5550
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "61a224f67c7fe165",
+  "name" : "CreditAPIValidateResponseWithInvalidAmount",
+  "time" : {
+    "start" : 1665737866812,
+    "stop" : 1665737868866,
+    "duration" : 2054
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "2440ffdbf0d92079",
+  "name" : "openGameAPIValidateResponseWithInvalidGameID",
+  "time" : {
+    "start" : 1665737824041,
+    "stop" : 1665737824920,
+    "duration" : 879
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f9c7c3dc619947e",
+  "name" : "RollBackAPIValidatePositiveResponseBalanceCorrection",
+  "time" : {
+    "start" : 1665737840593,
+    "stop" : 1665737840594,
     "duration" : 1
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "935aaacb8e85d9d8",
-  "name" : "openGameAPIValidateStatusCod",
+  "uid" : "414f838c0078072a",
+  "name" : "DebitAPIValidateResponseUsingInvalidProductID",
   "time" : {
-    "start" : 1665667717738,
-    "stop" : 1665667717744,
-    "duration" : 6
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "36c0eb428580981e",
-  "name" : "openGameAPIValidateResponseWithInvalidPartnerID",
-  "time" : {
-    "start" : 1665667719335,
-    "stop" : 1665667720082,
-    "duration" : 747
+    "start" : 1665737873907,
+    "stop" : 1665737877298,
+    "duration" : 3391
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "b64b657ef39a662e",
-  "name" : "RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice",
+  "uid" : "cb6ab44aaf9322e2",
+  "name" : "RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit",
   "time" : {
-    "start" : 1665667811434,
-    "stop" : 1665667819788,
-    "duration" : 8354
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "60e63b0e0b66efd1",
-  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
-  "time" : {
-    "start" : 1665667798941,
-    "stop" : 1665667802066,
-    "duration" : 3125
+    "start" : 1665737903838,
+    "stop" : 1665737905323,
+    "duration" : 1485
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "32f538d87fae1cf7",
+  "uid" : "6138dd1014bc439c",
+  "name" : "openGameAPIValidateResponseWithInvalidToken",
+  "time" : {
+    "start" : 1665737821632,
+    "stop" : 1665737822315,
+    "duration" : 683
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "7af13f2173044716",
   "name" : "RollBackAPIValidatePositiveResponseBalanceCorrection",
   "time" : {
-    "start" : 1665667735021,
-    "stop" : 1665667735022,
+    "start" : 1665737845816,
+    "stop" : 1665737845816,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "54bdbc8f01d19495",
+  "name" : "CreditAPIValidateStatusCod",
+  "time" : {
+    "start" : 1665737830347,
+    "stop" : 1665737830348,
     "duration" : 1
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "5208d84d8791b18c",
-  "name" : "openGameAPIValidateResponseWithInvalidDomain",
+  "uid" : "3ac0ba65e3876dc6",
+  "name" : "CreditAPIValidateResponseUsingAmountHigherThenBalance",
   "time" : {
-    "start" : 1665667720652,
-    "stop" : 1665667721443,
-    "duration" : 791
+    "start" : 1665737859456,
+    "stop" : 1665737861316,
+    "duration" : 1860
   },
-  "status" : "failed",
+  "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "38ceaa7b47cd9a5b",
-  "name" : "GetBalanceAPIValidatePositiveResponse",
+  "uid" : "e1b7167cf80ac78",
+  "name" : "CreditAPIValidateResponseWithInvalidProductID",
   "time" : {
-    "start" : 1665667722948,
-    "stop" : 1665667722950,
+    "start" : 1665737854829,
+    "stop" : 1665737856481,
+    "duration" : 1652
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a70bb487f1c31aa",
+  "name" : "CreditAPIValidateResponseWithInvalidToken",
+  "time" : {
+    "start" : 1665737852791,
+    "stop" : 1665737854826,
+    "duration" : 2035
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "bee70f0d00acb583",
+  "name" : "RollBackAPIValidatePositiveResponse",
+  "time" : {
+    "start" : 1665737845812,
+    "stop" : 1665737845813,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "af97ce74ff6a6e48",
+  "name" : "RollBackAPIValidatePositiveResponse",
+  "time" : {
+    "start" : 1665737837262,
+    "stop" : 1665737837262,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "4c3602bc22f049dd",
+  "name" : "AuthorizationAPIValidatePositiveResponse",
+  "time" : {
+    "start" : 1665737826679,
+    "stop" : 1665737826681,
     "duration" : 2
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "59189970f37e2b4d",
-  "name" : "RollBackAPIValidatePositiveResponse",
-  "time" : {
-    "start" : 1665667735018,
-    "stop" : 1665667735018,
-    "duration" : 0
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "eb76b50f1ab75b8d",
+  "uid" : "6545e53c8385b6ed",
   "name" : "RollBackAPIValidatePositiveResponseBalanceCorrection",
   "time" : {
-    "start" : 1665667731397,
-    "stop" : 1665667731397,
-    "duration" : 0
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "a3bb2d34255c95ef",
-  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
-  "time" : {
-    "start" : 1665667796119,
-    "stop" : 1665667798938,
-    "duration" : 2819
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "51b364bc9ccce499",
-  "name" : "RollBackAPIValidateStatusCod",
-  "time" : {
-    "start" : 1665667739522,
-    "stop" : 1665667739523,
+    "start" : 1665737837269,
+    "stop" : 1665737837270,
     "duration" : 1
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "bcfddce07812e04e",
-  "name" : "GetBalanceAPIValidateResponseWithOtherCurrencyID",
-  "time" : {
-    "start" : 1665667743665,
-    "stop" : 1665667744804,
-    "duration" : 1139
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "63e2cd6be7d1d21f",
+  "uid" : "3ab27ad19c55b15a",
   "name" : "AuthorizationAPIValidateResponseWithInvalidToken",
   "time" : {
-    "start" : 1665667740103,
-    "stop" : 1665667740757,
-    "duration" : 654
+    "start" : 1665737846433,
+    "stop" : 1665737846997,
+    "duration" : 564
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "e1422473759fce34",
-  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+  "uid" : "60112e82acd5a1f9",
+  "name" : "RollBackAPIValidatePositiveResponse",
   "time" : {
-    "start" : 1665667790142,
-    "stop" : 1665667793137,
-    "duration" : 2995
+    "start" : 1665737840588,
+    "stop" : 1665737840589,
+    "duration" : 1
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "94875c129103af54",
-  "name" : "CreditAPIValidateResponseWithInvalidAmount",
-  "time" : {
-    "start" : 1665667757615,
-    "stop" : 1665667759297,
-    "duration" : 1682
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "e1c0b3ec58fcfd83",
-  "name" : "GetBalanceAPIValidateResponseWithExpiredToken",
-  "time" : {
-    "start" : 1665667741518,
-    "stop" : 1665667742072,
-    "duration" : 554
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "e2817bb439b469d4",
-  "name" : "DebitAPIValidatePositiveResponse",
-  "time" : {
-    "start" : 1665667726707,
-    "stop" : 1665667726707,
-    "duration" : 0
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "2af35e48b83445dd",
-  "name" : "DebitAPIValidateResponseWithInvalidToken",
-  "time" : {
-    "start" : 1665667765883,
-    "stop" : 1665667769353,
-    "duration" : 3470
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "d3fef6308187c03b",
-  "name" : "CreditAPIValidateResponseWithInvalidAmount",
-  "time" : {
-    "start" : 1665667759301,
-    "stop" : 1665667761435,
-    "duration" : 2134
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "f7b81ac8e18e9c43",
-  "name" : "CreditAPIValidateResponseWithInvalidToken",
-  "time" : {
-    "start" : 1665667747042,
-    "stop" : 1665667749008,
-    "duration" : 1966
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "646fe234b45df5a9",
-  "name" : "RollBackAPIValidateResponseWithInvalidToken",
-  "time" : {
-    "start" : 1665667802075,
-    "stop" : 1665667805114,
-    "duration" : 3039
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "e4ab85c581d19ea1",
-  "name" : "CreditAPIValidateResponseWithInvalidAmount",
-  "time" : {
-    "start" : 1665667761438,
-    "stop" : 1665667763185,
-    "duration" : 1747
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "81945f4a6a7db32",
+  "uid" : "46b8bfaec3ec318e",
   "name" : "openGameAPIValidatePositiveResponse",
   "time" : {
-    "start" : 1665667717790,
-    "stop" : 1665667717799,
-    "duration" : 9
+    "start" : 1665737821616,
+    "stop" : 1665737821626,
+    "duration" : 10
   },
   "status" : "failed",
   "severity" : "blocker"
 }, {
-  "uid" : "e5e5ec7c5a6b9cf7",
-  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
-  "time" : {
-    "start" : 1665667793146,
-    "stop" : 1665667796115,
-    "duration" : 2969
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "cd5bd71fce859cec",
-  "name" : "RollBackAPIValidatePositiveResponseBalanceCorrection",
-  "time" : {
-    "start" : 1665667739533,
-    "stop" : 1665667739534,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "89f3c67b452faf8a",
-  "name" : "DebitAPIValidateStatusCod",
-  "time" : {
-    "start" : 1665667726703,
-    "stop" : 1665667726704,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "8505e3ef2b634b50",
-  "name" : "RollBackAPIValidatePositiveResponse",
-  "time" : {
-    "start" : 1665667739528,
-    "stop" : 1665667739529,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "a77f1be238663c82",
-  "name" : "AuthorizationAPIValidateResponseWithInvalidProductID",
-  "time" : {
-    "start" : 1665667740762,
-    "stop" : 1665667741509,
-    "duration" : 747
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "5a5707bf395c9151",
-  "name" : "DebitAPIValidateResponseUsingInvalidProductID",
-  "time" : {
-    "start" : 1665667769356,
-    "stop" : 1665667772219,
-    "duration" : 2863
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "b6a5d10beeef662c",
-  "name" : "RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit",
-  "time" : {
-    "start" : 1665667809146,
-    "stop" : 1665667811427,
-    "duration" : 2281
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "93dead1319ab7feb",
-  "name" : "CreditAPIValidatePositiveResponse",
-  "time" : {
-    "start" : 1665667724907,
-    "stop" : 1665667724908,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "9929e194ecce6e90",
-  "name" : "CreditAPIValidateResponseUsingAmountHigherThenBalance",
-  "time" : {
-    "start" : 1665667753876,
-    "stop" : 1665667755806,
-    "duration" : 1930
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "218cb537bd2a771f",
-  "name" : "GetBalanceAPIValidateResponseWithInvalidToken",
-  "time" : {
-    "start" : 1665667742075,
-    "stop" : 1665667742830,
-    "duration" : 755
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "583590898b290bb1",
+  "uid" : "4c4f1459b9d3112d",
   "name" : "RollBackAPIValidateStatusCod",
   "time" : {
-    "start" : 1665667735014,
-    "stop" : 1665667735014,
-    "duration" : 0
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "9fb9921f943fa1c8",
-  "name" : "DebitAPIValidateResponseUsingTransactionIDTwice",
-  "time" : {
-    "start" : 1665667772221,
-    "stop" : 1665667783846,
-    "duration" : 11625
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "517d75debe5204c7",
-  "name" : "openGameAPIValidateResponseWithInvalidGameID",
-  "time" : {
-    "start" : 1665667720089,
-    "stop" : 1665667720644,
-    "duration" : 555
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "30e612a3a599357e",
-  "name" : "AuthorizationAPIValidatePositiveResponse",
-  "time" : {
-    "start" : 1665667722263,
-    "stop" : 1665667722264,
+    "start" : 1665737837248,
+    "stop" : 1665737837249,
     "duration" : 1
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "28f9089dc20d8066",
-  "name" : "openGameAPIValidateResponseWithInvalidToken",
-  "time" : {
-    "start" : 1665667717805,
-    "stop" : 1665667718659,
-    "duration" : 854
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "2e15ba9631fe6035",
-  "name" : "CreditAPIValidateResponseWithExpiredToken",
-  "time" : {
-    "start" : 1665667744809,
-    "stop" : 1665667747039,
-    "duration" : 2230
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "947d988781ba0d6c",
-  "name" : "GetBalanceAPIValidateResponseWithInvalidCurrencyID",
-  "time" : {
-    "start" : 1665667742834,
-    "stop" : 1665667743662,
-    "duration" : 828
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "47761d37f553cb5e",
-  "name" : "RollBackAPIValidateResponseUsingInvalidProductID",
-  "time" : {
-    "start" : 1665667805117,
-    "stop" : 1665667809142,
-    "duration" : 4025
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "544179753e666ca5",
-  "name" : "AuthorizationAPIValidateResponseWithExpiredToken",
-  "time" : {
-    "start" : 1665667739537,
-    "stop" : 1665667740099,
-    "duration" : 562
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "60ec33789fc6397b",
-  "name" : "CreditAPIValidateResponseWithInvalidAmount",
-  "time" : {
-    "start" : 1665667763195,
-    "stop" : 1665667765879,
-    "duration" : 2684
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "9024dbc5fb0cad3a",
-  "name" : "CreditAPIValidateResponseWithInvalidProductID",
-  "time" : {
-    "start" : 1665667749012,
-    "stop" : 1665667750897,
-    "duration" : 1885
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "31902037a18ef8cd",
-  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
-  "time" : {
-    "start" : 1665667786080,
-    "stop" : 1665667790138,
-    "duration" : 4058
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "e5cb683d2e87ee13",
-  "name" : "RollBackAPIValidatePositiveResponse",
-  "time" : {
-    "start" : 1665667731392,
-    "stop" : 1665667731393,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "d1cfe117f9b4958c",
-  "name" : "RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice",
-  "time" : {
-    "start" : 1665667819796,
-    "stop" : 1665667825808,
-    "duration" : 6012
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "20a583c80d770c9d",
-  "name" : "AuthorizationAPIValidateStatusCod",
-  "time" : {
-    "start" : 1665667722257,
-    "stop" : 1665667722258,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "2163d89d19926371",
+  "uid" : "5f80b7a7dabcdfd4",
   "name" : "RollBackAPIValidateStatusCod",
   "time" : {
-    "start" : 1665667731375,
-    "stop" : 1665667731376,
+    "start" : 1665737840583,
+    "stop" : 1665737840584,
     "duration" : 1
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "a646501243709e0d",
+  "uid" : "2df5d02540ab7ad1",
+  "name" : "openGameAPIValidateStatusCod",
+  "time" : {
+    "start" : 1665737821561,
+    "stop" : 1665737821568,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "563d02a8e1824232",
   "name" : "CreditAPIValidateResponseUsingTransactionIDTwice",
   "time" : {
-    "start" : 1665667750901,
-    "stop" : 1665667753872,
-    "duration" : 2971
+    "start" : 1665737856484,
+    "stop" : 1665737859452,
+    "duration" : 2968
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "44795dbfa8fda581",
-  "name" : "CreditAPIValidateStatusCod",
+  "uid" : "f0a9942b8112526",
+  "name" : "openGameAPIValidateResponseWithInvalidDomain",
   "time" : {
-    "start" : 1665667724903,
-    "stop" : 1665667724903,
+    "start" : 1665737824927,
+    "stop" : 1665737825793,
+    "duration" : 866
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "765e73c8e940a9be",
+  "name" : "DebitAPIValidateResponseUsingTransactionIDTwice",
+  "time" : {
+    "start" : 1665737877302,
+    "stop" : 1665737882862,
+    "duration" : 5560
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "816f5f187910909e",
+  "name" : "AuthorizationAPIValidateResponseWithExpiredToken",
+  "time" : {
+    "start" : 1665737845819,
+    "stop" : 1665737846430,
+    "duration" : 611
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "8d37389e7cb446bf",
+  "name" : "GetBalanceAPIValidatePositiveResponse",
+  "time" : {
+    "start" : 1665737827546,
+    "stop" : 1665737827548,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "97a3ad29d0380c79",
+  "name" : "openGameAPIValidateResponseWithInvalidPartnerID",
+  "time" : {
+    "start" : 1665737823176,
+    "stop" : 1665737824038,
+    "duration" : 862
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4355e1adc1ff54b",
+  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+  "time" : {
+    "start" : 1665737896064,
+    "stop" : 1665737898625,
+    "duration" : 2561
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "40b00f37bd112519",
+  "name" : "DebitAPIValidateStatusCod",
+  "time" : {
+    "start" : 1665737832609,
+    "stop" : 1665737832610,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "edcb64b5216cadaa",
+  "name" : "GetBalanceAPIValidateResponseWithInvalidToken",
+  "time" : {
+    "start" : 1665737848340,
+    "stop" : 1665737849106,
+    "duration" : 766
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "9d8479a43a579926",
+  "name" : "GetBalanceAPIValidateResponseWithOtherCurrencyID",
+  "time" : {
+    "start" : 1665737849777,
+    "stop" : 1665737850946,
+    "duration" : 1169
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "663b2312e409f033",
+  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+  "time" : {
+    "start" : 1665737887749,
+    "stop" : 1665737890980,
+    "duration" : 3231
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "ded999780ecf107c",
+  "name" : "DebitAPIValidateResponseWithInvalidToken",
+  "time" : {
+    "start" : 1665737870625,
+    "stop" : 1665737873899,
+    "duration" : 3274
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "2a8ef2a4a9273c64",
+  "name" : "CreditAPIValidateResponseWithExpiredToken",
+  "time" : {
+    "start" : 1665737850949,
+    "stop" : 1665737852782,
+    "duration" : 1833
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "c97d1e3fc6f91e9c",
+  "name" : "CreditAPIValidatePositiveResponse",
+  "time" : {
+    "start" : 1665737830351,
+    "stop" : 1665737830352,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "a36c8b325ac786ae",
+  "name" : "DebitAPIValidatePositiveResponse",
+  "time" : {
+    "start" : 1665737832613,
+    "stop" : 1665737832614,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "86272b2b2585ca9",
+  "name" : "CreditAPIValidateResponseWithInvalidAmount",
+  "time" : {
+    "start" : 1665737863041,
+    "stop" : 1665737864929,
+    "duration" : 1888
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "f0416cb5dc320213",
+  "name" : "AuthorizationAPIValidateStatusCod",
+  "time" : {
+    "start" : 1665737826675,
+    "stop" : 1665737826675,
     "duration" : 0
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "da6b0d567bf466c2",
+  "uid" : "298f21aadf09c297",
+  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+  "time" : {
+    "start" : 1665737893701,
+    "stop" : 1665737896053,
+    "duration" : 2352
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "14a4cde8acc6c8e3",
+  "name" : "RollBackAPIValidateResponseWithInvalidToken",
+  "time" : {
+    "start" : 1665737898635,
+    "stop" : 1665737901023,
+    "duration" : 2388
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "21adf287de8dc839",
+  "name" : "CreditAPIValidateResponseWithInvalidAmount",
+  "time" : {
+    "start" : 1665737861324,
+    "stop" : 1665737863037,
+    "duration" : 1713
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "863590c18fdee8c3",
+  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+  "time" : {
+    "start" : 1665737890985,
+    "stop" : 1665737893699,
+    "duration" : 2714
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "b95c8155b47589af",
+  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+  "time" : {
+    "start" : 1665737884720,
+    "stop" : 1665737887745,
+    "duration" : 3025
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "e948bb70fc631bf6",
+  "name" : "RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice",
+  "time" : {
+    "start" : 1665737905326,
+    "stop" : 1665737909763,
+    "duration" : 4437
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "85548f270ee3fba8",
+  "name" : "RollBackAPIValidateResponseUsingInvalidProductID",
+  "time" : {
+    "start" : 1665737901028,
+    "stop" : 1665737903834,
+    "duration" : 2806
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a83ec4b29b361659",
+  "name" : "RollBackAPIValidateStatusCod",
+  "time" : {
+    "start" : 1665737845808,
+    "stop" : 1665737845809,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "7487da3b911966c1",
   "name" : "openGameAPIValidateResponseWithExpiredToken",
   "time" : {
-    "start" : 1665667718663,
-    "stop" : 1665667719330,
-    "duration" : 667
+    "start" : 1665737822319,
+    "stop" : 1665737823173,
+    "duration" : 854
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "9705055edaa7da03",
+  "name" : "AuthorizationAPIValidateResponseWithInvalidProductID",
+  "time" : {
+    "start" : 1665737847000,
+    "stop" : 1665737847683,
+    "duration" : 683
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "293cdc6adb0bcf3a",
+  "name" : "CreditAPIValidateResponseWithInvalidAmount",
+  "time" : {
+    "start" : 1665737864932,
+    "stop" : 1665737866810,
+    "duration" : 1878
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "b1c1c6b1c10dc543",
+  "name" : "GetBalanceAPIValidateResponseWithExpiredToken",
+  "time" : {
+    "start" : 1665737847688,
+    "stop" : 1665737848336,
+    "duration" : 648
   },
   "status" : "failed",
   "severity" : "blocker"

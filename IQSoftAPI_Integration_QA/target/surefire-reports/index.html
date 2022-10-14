@@ -411,7 +411,7 @@
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [29] but found [0],
 	Error Description: null expected [SessionExpired] but found [null]
-	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithExpiredToken(IqSoft_API_3_GetBalance_Negative_Test.java:43)
+	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithExpiredToken(IqSoft_API_3_GetBalance_Negative_Test.java:41)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -425,7 +425,7 @@
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [20] but found [0],
 	Error Description: null expected [CurrencyNotExists] but found [null]
-	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithInvalidCurrencyID(IqSoft_API_3_GetBalance_Negative_Test.java:98)
+	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithInvalidCurrencyID(IqSoft_API_3_GetBalance_Negative_Test.java:89)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -436,8 +436,8 @@
                   <a name="GetBalanceAPIValidateResponseWithOtherCurrencyID">
                   </a> <!-- GetBalanceAPIValidateResponseWithOtherCurrencyID -->
                   <span class="method-name">GetBalanceAPIValidateResponseWithOtherCurrencyID</span>
-                  <div class="stack-trace">java.lang.AssertionError: balanceUSD VS balanceEUR did not expect [9532.5] but found [9532.5]
-	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithOtherCurrencyID(IqSoft_API_3_GetBalance_Negative_Test.java:121)
+                  <div class="stack-trace">java.lang.AssertionError: balanceUSD VS balanceEUR did not expect [9504.5] but found [9504.5]
+	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithOtherCurrencyID(IqSoft_API_3_GetBalance_Negative_Test.java:113)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 34 stack frames
 </div> <!-- stack-trace -->
@@ -460,7 +460,7 @@
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [39] but found [0],
 	Error Description: null expected [WrongOperationAmount] but found [null]
-	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount(IqSoft_API_5_Debit_Negative_Test.java:294)
+	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount(IqSoft_API_5_Debit_Negative_Test.java:278)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -474,8 +474,8 @@
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [50] but found [0],
 	Error Description: null expected [CanNotConnectCreditAndDebit] but found [null],
-	amountAfterDebit: 9530.5 = amountBeforeDebit: 9528.5 expected [9528.5] but found [9530.5]
-	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidCreditTransactionID(IqSoft_API_5_Debit_Negative_Test.java:242)
+	amountAfterDebit: 9502.5 = amountBeforeDebit: 9500.5 expected [9500.5] but found [9502.5]
+	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidCreditTransactionID(IqSoft_API_5_Debit_Negative_Test.java:229)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -488,7 +488,7 @@
                   <span class="method-name">DebitAPIValidateResponseUsingInvalidProductID</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	Error Description: game not avaible expected [game not available] but found [game not avaible]
-	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidProductID(IqSoft_API_5_Debit_Negative_Test.java:126)
+	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidProductID(IqSoft_API_5_Debit_Negative_Test.java:119)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -512,7 +512,7 @@
 	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [null] but found [An error occurred while updating the entries. See the inner exception for details.],
 	ResponseObject: null did not expect [null] but found [null],
 	ResponseObject Don&apos;t Contain http:// expected [true] but found [false]
-	at testCases.IqSoft_API_1_OpenGame_Positive_Test.openGameAPIValidatePositiveResponse(IqSoft_API_1_OpenGame_Positive_Test.java:71)
+	at testCases.IqSoft_API_1_OpenGame_Positive_Test.openGameAPIValidatePositiveResponse(IqSoft_API_1_OpenGame_Positive_Test.java:60)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -532,8 +532,8 @@
                   </a> <!-- RollBackAPIValidateResponseUsingInvalidProductID -->
                   <span class="method-name">RollBackAPIValidateResponseUsingInvalidProductID</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	amountAfterRollBack : 9525.5 = amountAfterCredit: 9524.5 expected [9524.5] but found [9525.5]
-	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingInvalidProductID(IqSoft_API_6_RollBack_Negative_Test.java:126)
+	amountAfterRollBack : 9497.5 = amountAfterCredit: 9496.5 expected [9496.5] but found [9497.5]
+	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingInvalidProductID(IqSoft_API_6_RollBack_Negative_Test.java:118)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -545,8 +545,8 @@
                   </a> <!-- RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice -->
                   <span class="method-name">RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	amountAfterRollBack2 : 9526.5 = amountAfterRollBack1: 9525.5 expected [9525.5] but found [9526.5]
-	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice(IqSoft_API_6_RollBack_Negative_Test.java:234)
+	amountAfterRollBack2 : 9498.5 = amountAfterRollBack1: 9497.5 expected [9497.5] but found [9498.5]
+	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice(IqSoft_API_6_RollBack_Negative_Test.java:218)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -558,8 +558,8 @@
                   </a> <!-- RollBackAPIValidateResponseWithInvalidToken -->
                   <span class="method-name">RollBackAPIValidateResponseWithInvalidToken</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	amountAfterRollBack: 9525.5 = amountAfterCredit: 9524.5 expected [9524.5] but found [9525.5]
-	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseWithInvalidToken(IqSoft_API_6_RollBack_Negative_Test.java:71)
+	amountAfterRollBack: 9497.5 = amountAfterCredit: 9496.5 expected [9496.5] but found [9497.5]
+	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseWithInvalidToken(IqSoft_API_6_RollBack_Negative_Test.java:67)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -581,7 +581,7 @@
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [29] but found [0],
 	Error Description: null expected [SessionExpired] but found [null]
-	at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithExpiredToken(IqSoft_API_2_Authorization_Negative_Test.java:48)
+	at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithExpiredToken(IqSoft_API_2_Authorization_Negative_Test.java:42)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -595,7 +595,7 @@
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [43] but found [0],
 	Error Description: null expected [ProductNotFound] but found [null]
-	at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithInvalidProductID(IqSoft_API_2_Authorization_Negative_Test.java:109)
+	at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithInvalidProductID(IqSoft_API_2_Authorization_Negative_Test.java:95)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -617,8 +617,8 @@
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [29] but found [0],
 	Error Description: null expected [SessionExpired] but found [null],
-	amountBeforeCredit = amountAfterCredit: 9532.5 = 9531.5 expected [9531.5] but found [9532.5]
-	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithExpiredToken(IqSoft_API_4_Credit_Negative_Test.java:63)
+	amountBeforeCredit = amountAfterCredit: 9504.5 = 9503.5 expected [9503.5] but found [9504.5]
+	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithExpiredToken(IqSoft_API_4_Credit_Negative_Test.java:60)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -633,7 +633,7 @@
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [39] but found [0],
 	Error Description: null expected [WrongOperationAmount] but found [null]
-	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidAmount(IqSoft_API_4_Credit_Negative_Test.java:302)
+	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidAmount(IqSoft_API_4_Credit_Negative_Test.java:281)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -646,7 +646,7 @@
                   <span class="method-name">CreditAPIValidateResponseWithInvalidProductID</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	Error Description: game not avaible expected [game not available] but found [game not avaible]
-	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidProductID(IqSoft_API_4_Credit_Negative_Test.java:153)
+	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidProductID(IqSoft_API_4_Credit_Negative_Test.java:144)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -668,7 +668,7 @@
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 21 expected [22] but found [21],
 	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [Client not found] but found [An error occurred while updating the entries. See the inner exception for details.]
-	at testCases.IqSoft_API_1_OpenGame_Negative_Test.openGameAPIValidateResponseWithExpiredToken(IqSoft_API_1_OpenGame_Negative_Test.java:81)
+	at testCases.IqSoft_API_1_OpenGame_Negative_Test.openGameAPIValidateResponseWithExpiredToken(IqSoft_API_1_OpenGame_Negative_Test.java:72)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -682,7 +682,7 @@
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 21 expected [43] but found [21],
 	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ProductNotFound] but found [An error occurred while updating the entries. See the inner exception for details.]
-	at testCases.IqSoft_API_1_OpenGame_Negative_Test.openGameAPIValidateResponseWithInvalidDomain(IqSoft_API_1_OpenGame_Negative_Test.java:179)
+	at testCases.IqSoft_API_1_OpenGame_Negative_Test.openGameAPIValidateResponseWithInvalidDomain(IqSoft_API_1_OpenGame_Negative_Test.java:151)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -696,7 +696,7 @@
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	ResponseCode 21 expected [22] but found [21],
 	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ClientNotFound ] but found [An error occurred while updating the entries. See the inner exception for details.]
-	at testCases.IqSoft_API_1_OpenGame_Negative_Test.openGameAPIValidateResponseWithInvalidPartnerID(IqSoft_API_1_OpenGame_Negative_Test.java:114)
+	at testCases.IqSoft_API_1_OpenGame_Negative_Test.openGameAPIValidateResponseWithInvalidPartnerID(IqSoft_API_1_OpenGame_Negative_Test.java:98)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -1155,222 +1155,222 @@ data.addRows(55);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'DebitAPIValidateResponseUsingTransactionIDTwice')
 data.setCell(0, 2, 'testCases.IqSoft_API_5_Debit_Negative_Test')
-data.setCell(0, 3, 11626);
+data.setCell(0, 3, 5561);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice')
+data.setCell(1, 1, 'RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice')
 data.setCell(1, 2, 'testCases.IqSoft_API_6_RollBack_Negative_Test')
-data.setCell(1, 3, 8356);
+data.setCell(1, 3, 5552);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice')
+data.setCell(2, 1, 'RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice')
 data.setCell(2, 2, 'testCases.IqSoft_API_6_RollBack_Negative_Test')
-data.setCell(2, 3, 6016);
+data.setCell(2, 3, 4437);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'DebitAPIValidateResponseUsingInvalidAmount')
+data.setCell(3, 1, 'DebitAPIValidateResponseUsingInvalidProductID')
 data.setCell(3, 2, 'testCases.IqSoft_API_5_Debit_Negative_Test')
-data.setCell(3, 3, 4057);
+data.setCell(3, 3, 3394);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'RollBackAPIValidateResponseUsingInvalidProductID')
-data.setCell(4, 2, 'testCases.IqSoft_API_6_RollBack_Negative_Test')
-data.setCell(4, 3, 4026);
+data.setCell(4, 1, 'DebitAPIValidateResponseWithInvalidToken')
+data.setCell(4, 2, 'testCases.IqSoft_API_5_Debit_Negative_Test')
+data.setCell(4, 3, 3274);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'DebitAPIValidateResponseWithInvalidToken')
+data.setCell(5, 1, 'DebitAPIValidateResponseUsingInvalidAmount')
 data.setCell(5, 2, 'testCases.IqSoft_API_5_Debit_Negative_Test')
-data.setCell(5, 3, 3471);
+data.setCell(5, 3, 3233);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'DebitAPIValidateResponseUsingInvalidAmount')
 data.setCell(6, 2, 'testCases.IqSoft_API_5_Debit_Negative_Test')
-data.setCell(6, 3, 3127);
+data.setCell(6, 3, 3026);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'RollBackAPIValidateResponseWithInvalidToken')
-data.setCell(7, 2, 'testCases.IqSoft_API_6_RollBack_Negative_Test')
-data.setCell(7, 3, 3043);
+data.setCell(7, 1, 'CreditAPIValidateResponseUsingTransactionIDTwice')
+data.setCell(7, 2, 'testCases.IqSoft_API_4_Credit_Negative_Test')
+data.setCell(7, 3, 2969);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'DebitAPIValidateResponseUsingInvalidAmount')
-data.setCell(8, 2, 'testCases.IqSoft_API_5_Debit_Negative_Test')
-data.setCell(8, 3, 2996);
+data.setCell(8, 1, 'RollBackAPIValidateResponseUsingInvalidProductID')
+data.setCell(8, 2, 'testCases.IqSoft_API_6_RollBack_Negative_Test')
+data.setCell(8, 3, 2807);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'DebitAPIValidateResponseUsingInvalidAmount')
 data.setCell(9, 2, 'testCases.IqSoft_API_5_Debit_Negative_Test')
-data.setCell(9, 3, 2973);
+data.setCell(9, 3, 2715);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'CreditAPIValidateResponseUsingTransactionIDTwice')
-data.setCell(10, 2, 'testCases.IqSoft_API_4_Credit_Negative_Test')
-data.setCell(10, 3, 2972);
+data.setCell(10, 1, 'DebitAPIValidateResponseUsingInvalidAmount')
+data.setCell(10, 2, 'testCases.IqSoft_API_5_Debit_Negative_Test')
+data.setCell(10, 3, 2567);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'DebitAPIValidateResponseUsingInvalidProductID')
-data.setCell(11, 2, 'testCases.IqSoft_API_5_Debit_Negative_Test')
-data.setCell(11, 3, 2864);
+data.setCell(11, 1, 'RollBackAPIValidateResponseWithInvalidToken')
+data.setCell(11, 2, 'testCases.IqSoft_API_6_RollBack_Negative_Test')
+data.setCell(11, 3, 2395);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'DebitAPIValidateResponseUsingInvalidAmount')
 data.setCell(12, 2, 'testCases.IqSoft_API_5_Debit_Negative_Test')
-data.setCell(12, 3, 2821);
+data.setCell(12, 3, 2352);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'CreditAPIValidateResponseWithInvalidAmount')
 data.setCell(13, 2, 'testCases.IqSoft_API_4_Credit_Negative_Test')
-data.setCell(13, 3, 2689);
+data.setCell(13, 3, 2054);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit')
-data.setCell(14, 2, 'testCases.IqSoft_API_6_RollBack_Negative_Test')
-data.setCell(14, 3, 2281);
+data.setCell(14, 1, 'CreditAPIValidateResponseWithInvalidToken')
+data.setCell(14, 2, 'testCases.IqSoft_API_4_Credit_Negative_Test')
+data.setCell(14, 3, 2038);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'CreditAPIValidateResponseWithExpiredToken')
+data.setCell(15, 1, 'CreditAPIValidateResponseWithInvalidAmount')
 data.setCell(15, 2, 'testCases.IqSoft_API_4_Credit_Negative_Test')
-data.setCell(15, 3, 2233);
+data.setCell(15, 3, 1889);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'DebitAPIValidateResponseUsingInvalidCreditTransactionID')
-data.setCell(16, 2, 'testCases.IqSoft_API_5_Debit_Negative_Test')
-data.setCell(16, 3, 2227);
+data.setCell(16, 1, 'CreditAPIValidateResponseWithInvalidAmount')
+data.setCell(16, 2, 'testCases.IqSoft_API_4_Credit_Negative_Test')
+data.setCell(16, 3, 1878);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'CreditAPIValidateResponseWithInvalidAmount')
+data.setCell(17, 1, 'CreditAPIValidateResponseUsingAmountHigherThenBalance')
 data.setCell(17, 2, 'testCases.IqSoft_API_4_Credit_Negative_Test')
-data.setCell(17, 3, 2135);
+data.setCell(17, 3, 1862);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'CreditAPIValidateResponseWithInvalidToken')
-data.setCell(18, 2, 'testCases.IqSoft_API_4_Credit_Negative_Test')
-data.setCell(18, 3, 1966);
+data.setCell(18, 1, 'DebitAPIValidateResponseUsingInvalidCreditTransactionID')
+data.setCell(18, 2, 'testCases.IqSoft_API_5_Debit_Negative_Test')
+data.setCell(18, 3, 1853);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'CreditAPIValidateResponseUsingAmountHigherThenBalance')
+data.setCell(19, 1, 'CreditAPIValidateResponseWithExpiredToken')
 data.setCell(19, 2, 'testCases.IqSoft_API_4_Credit_Negative_Test')
-data.setCell(19, 3, 1931);
+data.setCell(19, 3, 1833);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'CreditAPIValidateResponseWithInvalidProductID')
+data.setCell(20, 1, 'CreditAPIValidateResponseWithInvalidAmount')
 data.setCell(20, 2, 'testCases.IqSoft_API_4_Credit_Negative_Test')
-data.setCell(20, 3, 1886);
+data.setCell(20, 3, 1755);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'CreditAPIValidateResponseWithInvalidAmount')
 data.setCell(21, 2, 'testCases.IqSoft_API_4_Credit_Negative_Test')
-data.setCell(21, 3, 1790);
+data.setCell(21, 3, 1714);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'CreditAPIValidateResponseWithInvalidAmount')
+data.setCell(22, 1, 'CreditAPIValidateResponseWithInvalidProductID')
 data.setCell(22, 2, 'testCases.IqSoft_API_4_Credit_Negative_Test')
-data.setCell(22, 3, 1748);
+data.setCell(22, 3, 1652);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'CreditAPIValidateResponseWithInvalidAmount')
-data.setCell(23, 2, 'testCases.IqSoft_API_4_Credit_Negative_Test')
-data.setCell(23, 3, 1685);
+data.setCell(23, 1, 'RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit')
+data.setCell(23, 2, 'testCases.IqSoft_API_6_RollBack_Negative_Test')
+data.setCell(23, 3, 1487);
 data.setCell(24, 0, 24)
 data.setCell(24, 1, 'GetBalanceAPIValidateResponseWithOtherCurrencyID')
 data.setCell(24, 2, 'testCases.IqSoft_API_3_GetBalance_Negative_Test')
-data.setCell(24, 3, 1139);
+data.setCell(24, 3, 1170);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'openGameAPIValidateResponseWithInvalidToken')
+data.setCell(25, 1, 'openGameAPIValidateResponseWithInvalidGameID')
 data.setCell(25, 2, 'testCases.IqSoft_API_1_OpenGame_Negative_Test')
-data.setCell(25, 3, 855);
+data.setCell(25, 3, 878);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'GetBalanceAPIValidateResponseWithInvalidCurrencyID')
-data.setCell(26, 2, 'testCases.IqSoft_API_3_GetBalance_Negative_Test')
-data.setCell(26, 3, 829);
+data.setCell(26, 1, 'openGameAPIValidateResponseWithInvalidDomain')
+data.setCell(26, 2, 'testCases.IqSoft_API_1_OpenGame_Negative_Test')
+data.setCell(26, 3, 869);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'openGameAPIValidateResponseWithInvalidDomain')
+data.setCell(27, 1, 'openGameAPIValidateResponseWithInvalidPartnerID')
 data.setCell(27, 2, 'testCases.IqSoft_API_1_OpenGame_Negative_Test')
-data.setCell(27, 3, 792);
+data.setCell(27, 3, 862);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'GetBalanceAPIValidateResponseWithInvalidToken')
-data.setCell(28, 2, 'testCases.IqSoft_API_3_GetBalance_Negative_Test')
-data.setCell(28, 3, 756);
+data.setCell(28, 1, 'openGameAPIValidateResponseWithExpiredToken')
+data.setCell(28, 2, 'testCases.IqSoft_API_1_OpenGame_Negative_Test')
+data.setCell(28, 3, 855);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'AuthorizationAPIValidateResponseWithInvalidProductID')
-data.setCell(29, 2, 'testCases.IqSoft_API_2_Authorization_Negative_Test')
-data.setCell(29, 3, 748);
+data.setCell(29, 1, 'GetBalanceAPIValidateResponseWithInvalidToken')
+data.setCell(29, 2, 'testCases.IqSoft_API_3_GetBalance_Negative_Test')
+data.setCell(29, 3, 767);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'openGameAPIValidateResponseWithInvalidPartnerID')
+data.setCell(30, 1, 'openGameAPIValidateResponseWithInvalidToken')
 data.setCell(30, 2, 'testCases.IqSoft_API_1_OpenGame_Negative_Test')
-data.setCell(30, 3, 748);
+data.setCell(30, 3, 684);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'openGameAPIValidateResponseWithExpiredToken')
-data.setCell(31, 2, 'testCases.IqSoft_API_1_OpenGame_Negative_Test')
-data.setCell(31, 3, 668);
+data.setCell(31, 1, 'AuthorizationAPIValidateResponseWithInvalidProductID')
+data.setCell(31, 2, 'testCases.IqSoft_API_2_Authorization_Negative_Test')
+data.setCell(31, 3, 684);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'AuthorizationAPIValidateResponseWithInvalidToken')
-data.setCell(32, 2, 'testCases.IqSoft_API_2_Authorization_Negative_Test')
-data.setCell(32, 3, 656);
+data.setCell(32, 1, 'GetBalanceAPIValidateResponseWithInvalidCurrencyID')
+data.setCell(32, 2, 'testCases.IqSoft_API_3_GetBalance_Negative_Test')
+data.setCell(32, 3, 660);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'AuthorizationAPIValidateResponseWithExpiredToken')
-data.setCell(33, 2, 'testCases.IqSoft_API_2_Authorization_Negative_Test')
-data.setCell(33, 3, 562);
+data.setCell(33, 1, 'GetBalanceAPIValidateResponseWithExpiredToken')
+data.setCell(33, 2, 'testCases.IqSoft_API_3_GetBalance_Negative_Test')
+data.setCell(33, 3, 650);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'openGameAPIValidateResponseWithInvalidGameID')
-data.setCell(34, 2, 'testCases.IqSoft_API_1_OpenGame_Negative_Test')
-data.setCell(34, 3, 556);
+data.setCell(34, 1, 'AuthorizationAPIValidateResponseWithExpiredToken')
+data.setCell(34, 2, 'testCases.IqSoft_API_2_Authorization_Negative_Test')
+data.setCell(34, 3, 611);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'GetBalanceAPIValidateResponseWithExpiredToken')
-data.setCell(35, 2, 'testCases.IqSoft_API_3_GetBalance_Negative_Test')
-data.setCell(35, 3, 556);
+data.setCell(35, 1, 'AuthorizationAPIValidateResponseWithInvalidToken')
+data.setCell(35, 2, 'testCases.IqSoft_API_2_Authorization_Negative_Test')
+data.setCell(35, 3, 565);
 data.setCell(36, 0, 36)
 data.setCell(36, 1, 'openGameAPIValidateStatusCod')
 data.setCell(36, 2, 'testCases.IqSoft_API_1_OpenGame_Positive_Test')
-data.setCell(36, 3, 39);
+data.setCell(36, 3, 40);
 data.setCell(37, 0, 37)
 data.setCell(37, 1, 'openGameAPIValidatePositiveResponse')
 data.setCell(37, 2, 'testCases.IqSoft_API_1_OpenGame_Positive_Test')
 data.setCell(37, 3, 10);
 data.setCell(38, 0, 38)
 data.setCell(38, 1, 'RollBackAPIValidateStatusCod')
-data.setCell(38, 2, 'testCases.IqSoft_API_6_RollBackDebit_Positive_Test')
-data.setCell(38, 3, 3);
+data.setCell(38, 2, 'testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test')
+data.setCell(38, 3, 5);
 data.setCell(39, 0, 39)
 data.setCell(39, 1, 'AuthorizationAPIValidateStatusCod')
 data.setCell(39, 2, 'testCases.IqSoft_API_2_Authorization_Positive_Test')
 data.setCell(39, 3, 3);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'RollBackAPIValidateStatusCod')
-data.setCell(40, 2, 'testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test')
+data.setCell(40, 1, 'DebitAPIValidateStatusCod')
+data.setCell(40, 2, 'testCases.IqSoft_API_5_Debit_Positive_Test')
 data.setCell(40, 3, 3);
 data.setCell(41, 0, 41)
-data.setCell(41, 1, 'GetBalanceAPIValidateStatusCod')
+data.setCell(41, 1, 'GetBalanceAPIValidatePositiveResponse')
 data.setCell(41, 2, 'testCases.IqSoft_API_3_GetBalance_Positive_Test')
 data.setCell(41, 3, 3);
 data.setCell(42, 0, 42)
-data.setCell(42, 1, 'CreditAPIValidatePositiveResponse')
-data.setCell(42, 2, 'testCases.IqSoft_API_4_Credit_Positive_Test')
-data.setCell(42, 3, 3);
+data.setCell(42, 1, 'RollBackAPIValidateStatusCod')
+data.setCell(42, 2, 'testCases.IqSoft_API_6_RollBackDebit_Positive_Test')
+data.setCell(42, 3, 2);
 data.setCell(43, 0, 43)
-data.setCell(43, 1, 'GetBalanceAPIValidatePositiveResponse')
-data.setCell(43, 2, 'testCases.IqSoft_API_3_GetBalance_Positive_Test')
-data.setCell(43, 3, 3);
+data.setCell(43, 1, 'DebitAPIValidatePositiveResponse')
+data.setCell(43, 2, 'testCases.IqSoft_API_5_Debit_Positive_Test')
+data.setCell(43, 3, 2);
 data.setCell(44, 0, 44)
-data.setCell(44, 1, 'RollBackAPIValidatePositiveResponse')
-data.setCell(44, 2, 'testCases.IqSoft_API_6_RollBackDebit_Positive_Test')
-data.setCell(44, 3, 3);
+data.setCell(44, 1, 'RollBackAPIValidateStatusCod')
+data.setCell(44, 2, 'testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test')
+data.setCell(44, 3, 2);
 data.setCell(45, 0, 45)
-data.setCell(45, 1, 'DebitAPIValidatePositiveResponse')
-data.setCell(45, 2, 'testCases.IqSoft_API_5_Debit_Positive_Test')
+data.setCell(45, 1, 'RollBackAPIValidatePositiveResponse')
+data.setCell(45, 2, 'testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test')
 data.setCell(45, 3, 2);
 data.setCell(46, 0, 46)
-data.setCell(46, 1, 'AuthorizationAPIValidatePositiveResponse')
-data.setCell(46, 2, 'testCases.IqSoft_API_2_Authorization_Positive_Test')
+data.setCell(46, 1, 'RollBackAPIValidatePositiveResponseBalanceCorrection')
+data.setCell(46, 2, 'testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test')
 data.setCell(46, 3, 2);
 data.setCell(47, 0, 47)
-data.setCell(47, 1, 'RollBackAPIValidateStatusCod')
-data.setCell(47, 2, 'testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test')
+data.setCell(47, 1, 'GetBalanceAPIValidateStatusCod')
+data.setCell(47, 2, 'testCases.IqSoft_API_3_GetBalance_Positive_Test')
 data.setCell(47, 3, 2);
 data.setCell(48, 0, 48)
-data.setCell(48, 1, 'DebitAPIValidateStatusCod')
-data.setCell(48, 2, 'testCases.IqSoft_API_5_Debit_Positive_Test')
+data.setCell(48, 1, 'CreditAPIValidatePositiveResponse')
+data.setCell(48, 2, 'testCases.IqSoft_API_4_Credit_Positive_Test')
 data.setCell(48, 3, 2);
 data.setCell(49, 0, 49)
 data.setCell(49, 1, 'RollBackAPIValidatePositiveResponse')
-data.setCell(49, 2, 'testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test')
+data.setCell(49, 2, 'testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test')
 data.setCell(49, 3, 2);
 data.setCell(50, 0, 50)
-data.setCell(50, 1, 'RollBackAPIValidatePositiveResponseBalanceCorrection')
-data.setCell(50, 2, 'testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test')
+data.setCell(50, 1, 'CreditAPIValidateStatusCod')
+data.setCell(50, 2, 'testCases.IqSoft_API_4_Credit_Positive_Test')
 data.setCell(50, 3, 2);
 data.setCell(51, 0, 51)
-data.setCell(51, 1, 'RollBackAPIValidatePositiveResponse')
-data.setCell(51, 2, 'testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test')
+data.setCell(51, 1, 'RollBackAPIValidatePositiveResponseBalanceCorrection')
+data.setCell(51, 2, 'testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test')
 data.setCell(51, 3, 2);
 data.setCell(52, 0, 52)
-data.setCell(52, 1, 'CreditAPIValidateStatusCod')
-data.setCell(52, 2, 'testCases.IqSoft_API_4_Credit_Positive_Test')
-data.setCell(52, 3, 2);
+data.setCell(52, 1, 'AuthorizationAPIValidatePositiveResponse')
+data.setCell(52, 2, 'testCases.IqSoft_API_2_Authorization_Positive_Test')
+data.setCell(52, 3, 1);
 data.setCell(53, 0, 53)
-data.setCell(53, 1, 'RollBackAPIValidatePositiveResponseBalanceCorrection')
+data.setCell(53, 1, 'RollBackAPIValidatePositiveResponse')
 data.setCell(53, 2, 'testCases.IqSoft_API_6_RollBackDebit_Positive_Test')
-data.setCell(53, 3, 2);
+data.setCell(53, 3, 1);
 data.setCell(54, 0, 54)
 data.setCell(54, 1, 'RollBackAPIValidatePositiveResponseBalanceCorrection')
-data.setCell(54, 2, 'testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test')
+data.setCell(54, 2, 'testCases.IqSoft_API_6_RollBackDebit_Positive_Test')
 data.setCell(54, 3, 1);
 window.suiteTableData['IQsoft_API_Integration']= { tableData: data, tableDiv: 'times-div-IQsoft_API_Integration'}
 return data;
@@ -1526,163 +1526,163 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpTestCase</span>
-                <span class="method-start">95 ms</span>
+                <span class="method-start">152 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">openGameAPIValidateStatusCod</span>
-                <span class="method-start">1533 ms</span>
+                <span class="method-start">2075 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">openGameAPIValidatePositiveResponse</span>
-                <span class="method-start">1618 ms</span>
+                <span class="method-start">2164 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.IqSoft_API_1_OpenGame_Negative_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">openGameAPIValidateResponseWithInvalidToken</span>
-                <span class="method-start">1634 ms</span>
+                <span class="method-start">2180 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">openGameAPIValidateResponseWithExpiredToken</span>
-                <span class="method-start">2491 ms</span>
+                <span class="method-start">2866 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">openGameAPIValidateResponseWithInvalidPartnerID</span>
-                <span class="method-start">3163 ms</span>
+                <span class="method-start">3724 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">openGameAPIValidateResponseWithInvalidGameID</span>
-                <span class="method-start">3917 ms</span>
+                <span class="method-start">4589 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">openGameAPIValidateResponseWithInvalidDomain</span>
-                <span class="method-start">4480 ms</span>
+                <span class="method-start">5473 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.IqSoft_API_2_Authorization_Positive_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">5275 ms</span>
+                <span class="method-start">6344 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">AuthorizationAPIValidateStatusCod</span>
-                <span class="method-start">6084 ms</span>
+                <span class="method-start">7221 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AuthorizationAPIValidatePositiveResponse</span>
-                <span class="method-start">6091 ms</span>
+                <span class="method-start">7227 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.IqSoft_API_3_GetBalance_Positive_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">6096 ms</span>
+                <span class="method-start">7231 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">GetBalanceAPIValidateStatusCod</span>
-                <span class="method-start">6771 ms</span>
+                <span class="method-start">8088 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GetBalanceAPIValidatePositiveResponse</span>
-                <span class="method-start">6776 ms</span>
+                <span class="method-start">8094 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.IqSoft_API_4_Credit_Positive_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">6782 ms</span>
+                <span class="method-start">8098 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">CreditAPIValidateStatusCod</span>
-                <span class="method-start">8731 ms</span>
+                <span class="method-start">10895 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreditAPIValidatePositiveResponse</span>
-                <span class="method-start">8735 ms</span>
+                <span class="method-start">10899 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.IqSoft_API_5_Debit_Positive_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">8740 ms</span>
+                <span class="method-start">10903 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">DebitAPIValidateStatusCod</span>
-                <span class="method-start">10531 ms</span>
+                <span class="method-start">13156 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DebitAPIValidatePositiveResponse</span>
-                <span class="method-start">10535 ms</span>
+                <span class="method-start">13161 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">10540 ms</span>
+                <span class="method-start">13252 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">RollBackAPIValidateStatusCod</span>
-                <span class="method-start">15202 ms</span>
+                <span class="method-start">17793 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">RollBackAPIValidatePositiveResponse</span>
-                <span class="method-start">15220 ms</span>
+                <span class="method-start">17809 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">RollBackAPIValidatePositiveResponseBalanceCorrection</span>
-                <span class="method-start">15225 ms</span>
+                <span class="method-start">17816 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">15231 ms</span>
+                <span class="method-start">17822 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">RollBackAPIValidateStatusCod</span>
-                <span class="method-start">18842 ms</span>
+                <span class="method-start">21131 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">RollBackAPIValidatePositiveResponse</span>
-                <span class="method-start">18846 ms</span>
+                <span class="method-start">21135 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">RollBackAPIValidatePositiveResponseBalanceCorrection</span>
-                <span class="method-start">18850 ms</span>
+                <span class="method-start">21140 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.IqSoft_API_6_RollBackDebit_Positive_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">18857 ms</span>
+                <span class="method-start">21145 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">RollBackAPIValidateStatusCod</span>
-                <span class="method-start">23350 ms</span>
+                <span class="method-start">26356 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">RollBackAPIValidatePositiveResponse</span>
-                <span class="method-start">23356 ms</span>
+                <span class="method-start">26360 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">RollBackAPIValidatePositiveResponseBalanceCorrection</span>
-                <span class="method-start">23361 ms</span>
+                <span class="method-start">26364 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -1691,17 +1691,17 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">AuthorizationAPIValidateResponseWithExpiredToken</span>
-                <span class="method-start">23366 ms</span>
+                <span class="method-start">26367 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AuthorizationAPIValidateResponseWithInvalidToken</span>
-                <span class="method-start">23931 ms</span>
+                <span class="method-start">26981 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">AuthorizationAPIValidateResponseWithInvalidProductID</span>
-                <span class="method-start">24590 ms</span>
+                <span class="method-start">27548 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -1710,23 +1710,23 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">GetBalanceAPIValidateResponseWithExpiredToken</span>
-                <span class="method-start">25345 ms</span>
+                <span class="method-start">28235 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GetBalanceAPIValidateResponseWithInvalidToken</span>
-                <span class="method-start">25904 ms</span>
+                <span class="method-start">28888 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">GetBalanceAPIValidateResponseWithInvalidCurrencyID</span>
-                <span class="method-start">26662 ms</span>
+                <span class="method-start">29660 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">GetBalanceAPIValidateResponseWithOtherCurrencyID</span>
-                <span class="method-start">27494 ms</span>
+                <span class="method-start">30324 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -1735,92 +1735,92 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">CreditAPIValidateResponseWithExpiredToken</span>
-                <span class="method-start">28636 ms</span>
+                <span class="method-start">31497 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreditAPIValidateResponseWithInvalidToken</span>
-                <span class="method-start">30871 ms</span>
+                <span class="method-start">33336 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">CreditAPIValidateResponseWithInvalidProductID</span>
-                <span class="method-start">32840 ms</span>
+                <span class="method-start">35377 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreditAPIValidateResponseUsingTransactionIDTwice</span>
-                <span class="method-start">34729 ms</span>
+                <span class="method-start">37032 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreditAPIValidateResponseUsingAmountHigherThenBalance</span>
-                <span class="method-start">37704 ms</span>
+                <span class="method-start">40003 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">CreditAPIValidateResponseWithInvalidAmount(0.0)</span>
-                <span class="method-start">39648 ms</span>
+                <span class="method-start">41871 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreditAPIValidateResponseWithInvalidAmount(-1.0)</span>
-                <span class="method-start">41442 ms</span>
+                <span class="method-start">43589 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreditAPIValidateResponseWithInvalidAmount(-1.5)</span>
-                <span class="method-start">43129 ms</span>
+                <span class="method-start">45480 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreditAPIValidateResponseWithInvalidAmount(-1.05)</span>
-                <span class="method-start">45267 ms</span>
+                <span class="method-start">47360 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreditAPIValidateResponseWithInvalidAmount(-1.005)</span>
-                <span class="method-start">47020 ms</span>
+                <span class="method-start">49416 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.IqSoft_API_5_Debit_Negative_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">DebitAPIValidateResponseWithInvalidToken</span>
-                <span class="method-start">49711 ms</span>
+                <span class="method-start">51173 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DebitAPIValidateResponseUsingInvalidProductID</span>
-                <span class="method-start">53184 ms</span>
+                <span class="method-start">54452 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DebitAPIValidateResponseUsingTransactionIDTwice</span>
-                <span class="method-start">56050 ms</span>
+                <span class="method-start">57849 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DebitAPIValidateResponseUsingInvalidCreditTransactionID</span>
-                <span class="method-start">67678 ms</span>
+                <span class="method-start">63412 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">DebitAPIValidateResponseUsingInvalidAmount(0.0)</span>
-                <span class="method-start">69910 ms</span>
+                <span class="method-start">65268 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DebitAPIValidateResponseUsingInvalidAmount(-1.0)</span>
-                <span class="method-start">73970 ms</span>
+                <span class="method-start">68296 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DebitAPIValidateResponseUsingInvalidAmount(-1.5)</span>
-                <span class="method-start">76972 ms</span>
+                <span class="method-start">71532 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DebitAPIValidateResponseUsingInvalidAmount(-1.05)</span>
-                <span class="method-start">79947 ms</span>
+                <span class="method-start">74249 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DebitAPIValidateResponseUsingInvalidAmount(-1.005)</span>
-                <span class="method-start">82769 ms</span>
+                <span class="method-start">76607 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -1829,34 +1829,34 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">RollBackAPIValidateResponseWithInvalidToken</span>
-                <span class="method-start">85901 ms</span>
+                <span class="method-start">79177 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">RollBackAPIValidateResponseUsingInvalidProductID</span>
-                <span class="method-start">88946 ms</span>
+                <span class="method-start">81575 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit</span>
-                <span class="method-start">92975 ms</span>
+                <span class="method-start">84385 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice</span>
-                <span class="method-start">95262 ms</span>
+                <span class="method-start">85874 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice</span>
-                <span class="method-start">103621 ms</span>
+                <span class="method-start">90314 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.IqSoft_API_1_OpenGame_Positive_Test</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDownSuite</span>
-                <span class="method-start">109721 ms</span>
+                <span class="method-start">95950 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
