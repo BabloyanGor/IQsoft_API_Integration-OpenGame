@@ -35,12 +35,12 @@ public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
 
         logger.info("OpenGame API Response Status Cod is Equal: " + statusCod);
 
-        softAssert.assertEquals(statusCod, 200,"StatusCod: " + statusCod);
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseCode(),22,
-                "ResponseCode: "+ iqSoft_01_apiVariables_openGame_response.getResponseCode());
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getDescription(),"Client not found",
+        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseCode(), 22,
+                "ResponseCode: " + iqSoft_01_apiVariables_openGame_response.getResponseCode());
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getDescription(), "Client not found",
                 "Error Description: " + iqSoft_01_apiVariables_openGame_response.getDescription());
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseObject(),"null",
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseObject(), "null",
                 "ResponseObject: " + iqSoft_01_apiVariables_openGame_response.getResponseObject());
         softAssert.assertAll();
     }
@@ -62,13 +62,13 @@ public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
 
         logger.info("OpenGame API Response Status Cod is Equal: " + statusCod);
 
-        softAssert.assertEquals(statusCod, 200,"StatusCod: " + statusCod);
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseCode(),22,
-                "ResponseCode: "+iqSoft_01_apiVariables_openGame_response.getResponseCode());
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getDescription(),"Client not found",
+        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseCode(), 22,
+                "ResponseCode: " + iqSoft_01_apiVariables_openGame_response.getResponseCode());
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getDescription(), "Client not found",
                 "Error Description: " + iqSoft_01_apiVariables_openGame_response.getDescription());
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseObject(),"null",
-                "ResponseObject: "+iqSoft_01_apiVariables_openGame_response.getResponseObject());
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseObject(), "null",
+                "ResponseObject: " + iqSoft_01_apiVariables_openGame_response.getResponseObject());
         softAssert.assertAll();
     }
 
@@ -78,7 +78,7 @@ public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
     public void OpenGameAPIValidateResponseWithInvalidPartnerID() throws UnirestException, IOException {
         SoftAssert softAssert = new SoftAssert();
 
-        HttpResponse<String> response = openGameAPI(-1, gameIdConfig, sessionTokenConfig , languageIdConst, isForMobileConst, domainConfig);
+        HttpResponse<String> response = openGameAPI(-1, gameIdConfig, sessionTokenConfig, languageIdConst, isForMobileConst, domainConfig);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -88,13 +88,13 @@ public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
         iqSoft_01_apiVariables_openGame_response.setResponseObject(jsonObjectBody.get("ResponseObject").toString());
 
         logger.info("OpenGame API Response Status Cod is Equal: " + statusCod);
-        softAssert.assertEquals(statusCod, 200,"StatusCod: " + statusCod);
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseCode(),22,
+        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseCode(), 22,
                 "ResponseCode " + iqSoft_01_apiVariables_openGame_response.getResponseCode());
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getDescription(),"ClientNotFound ",
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getDescription(), "ClientNotFound ",
                 "Error Description: " + iqSoft_01_apiVariables_openGame_response.getDescription());
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseObject(),"null",
-                "ResponseObject " +iqSoft_01_apiVariables_openGame_response.getResponseObject());
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseObject(), "null",
+                "ResponseObject " + iqSoft_01_apiVariables_openGame_response.getResponseObject());
         softAssert.assertAll();
     }
 
@@ -105,7 +105,7 @@ public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
     public void OpenGameAPIValidateResponseWithInvalidGameID() throws UnirestException, IOException {
         SoftAssert softAssert = new SoftAssert();
 
-        HttpResponse<String> response = openGameAPI(partnerIdConfig, -1, sessionTokenConfig , languageIdConst, isForMobileConst, domainConfig);
+        HttpResponse<String> response = openGameAPI(partnerIdConfig, -1, sessionTokenConfig, languageIdConst, isForMobileConst, domainConfig);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -115,13 +115,13 @@ public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
         iqSoft_01_apiVariables_openGame_response.setResponseObject(jsonObjectBody.get("ResponseObject").toString());
 
         logger.info("OpenGame API Response Status Cod is Equal: " + statusCod);
-        softAssert.assertEquals(statusCod, 200,"StatusCod: " + statusCod);
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseCode(),43,
+        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseCode(), 43,
                 "ResponseCode: " + iqSoft_01_apiVariables_openGame_response.getResponseCode());
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getDescription(),"Product not found",
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getDescription(), "Product not found",
                 "Error Description: " + iqSoft_01_apiVariables_openGame_response.getDescription());
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseObject(),"null",
-                "ResponseObject: " +iqSoft_01_apiVariables_openGame_response.getResponseObject());
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseObject(), "null",
+                "ResponseObject: " + iqSoft_01_apiVariables_openGame_response.getResponseObject());
         softAssert.assertAll();
     }
 
@@ -131,7 +131,7 @@ public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
     public void OpenGameAPIValidateResponseWithInvalidDomain() throws UnirestException, IOException {
         SoftAssert softAssert = new SoftAssert();
 
-        HttpResponse<String> response = openGameAPI(partnerIdConfig, gameIdConfig, sessionTokenConfig , languageIdConst, isForMobileConst, domainConfig+"1");
+        HttpResponse<String> response = openGameAPI(partnerIdConfig, gameIdConfig, sessionTokenConfig, languageIdConst, isForMobileConst, domainConfig + "1");
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -141,17 +141,15 @@ public class IqSoft_API_1_OpenGame_Negative_Test extends BaseTest {
         iqSoft_01_apiVariables_openGame_response.setResponseObject(jsonObjectBody.get("ResponseObject").toString());
 
         logger.info("OpenGame API Response Status Cod is Equal: " + statusCod);
-        softAssert.assertEquals(statusCod, 200,"StatusCod: " + statusCod);
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseCode(),43,
-                "ResponseCode: " +iqSoft_01_apiVariables_openGame_response.getResponseCode());
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getDescription(),"ProductNotFound",
+        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseCode(), 43,
+                "ResponseCode: " + iqSoft_01_apiVariables_openGame_response.getResponseCode());
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getDescription(), "ProductNotFound",
                 "Error Description: " + iqSoft_01_apiVariables_openGame_response.getDescription());
-        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseObject(),"null",
-                "ResponseObject: " +iqSoft_01_apiVariables_openGame_response.getResponseObject());
+        softAssert.assertEquals(iqSoft_01_apiVariables_openGame_response.getResponseObject(), "null",
+                "ResponseObject: " + iqSoft_01_apiVariables_openGame_response.getResponseObject());
         softAssert.assertAll();
     }
-
-
 
 
 }

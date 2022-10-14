@@ -1,0 +1,155 @@
+{
+  "uid" : "4d10b4046f33ffdf",
+  "name" : "DebitAPIValidatePositiveResponse",
+  "fullName" : "testCases.IqSoft_API_5_Debit_Positive_Test.DebitAPIValidatePositiveResponse",
+  "historyId" : "7d0e87e462c32532a80fbd49f313393a",
+  "time" : {
+    "start" : 1665740007467,
+    "stop" : 1665740007467,
+    "duration" : 0
+  },
+  "description" : "Verify Debit API_s Validate Positive Response",
+  "descriptionHtml" : "<p>Verify Debit API_s Validate Positive Response</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1665739991501,
+      "stop" : 1665739991548,
+      "duration" : 47
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1665740005259,
+      "stop" : 1665740007462,
+      "duration" : 2203
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4ae1f7c2d631a877",
+      "name" : "GetBalanceAPI:  Url:  https://iqs.dazzabet.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "4ae1f7c2d631a877.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "2fa2ed0af92c02fa",
+      "name" : "GetBalanceAPI:  ResponseBody",
+      "source" : "2fa2ed0af92c02fa.txt",
+      "type" : "text/plain",
+      "size" : 103
+    }, {
+      "uid" : "2d9aca3fca693f34",
+      "name" : "DebitAPI  Url:  https://iqs.dazzabet.com/api/endpoint/Debit        RequestBody",
+      "source" : "2d9aca3fca693f34.txt",
+      "type" : "text/plain",
+      "size" : 259
+    }, {
+      "uid" : "69f533004d0bc69a",
+      "name" : "DebitAPI  ResponseBody",
+      "source" : "69f533004d0bc69a.txt",
+      "type" : "text/plain",
+      "size" : 157
+    }, {
+      "uid" : "c4292dbbc5d9d7d5",
+      "name" : "GetBalanceAPI:  Url:  https://iqs.dazzabet.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "c4292dbbc5d9d7d5.txt",
+      "type" : "text/plain",
+      "size" : 67
+    }, {
+      "uid" : "f0ef46beda41f4e2",
+      "name" : "GetBalanceAPI:  ResponseBody",
+      "source" : "f0ef46beda41f4e2.txt",
+      "type" : "text/plain",
+      "size" : 103
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1665740081850,
+      "stop" : 1665740081850,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_5_Debit_Positive_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_5_Debit_Positive_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "DebitAPIValidatePositiveResponse"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_5_Debit_Positive_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "3252@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4d10b4046f33ffdf.json",
+  "parameterValues" : [ ]
+}

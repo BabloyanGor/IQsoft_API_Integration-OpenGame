@@ -18,7 +18,7 @@ import java.io.IOException;
 
 public class IqSoft_API_2_Authorization_Positive_Test extends BaseTest {
 
-    JSONObject jsonObjectBody ;
+    JSONObject jsonObjectBody;
     int statusCod;
 
     @BeforeClass

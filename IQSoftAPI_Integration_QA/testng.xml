@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="utilities.ReportingAllure"/>
     </listeners>
-    <test name="API Integration Automation Test" thread-count="5">
+    <test name="API Integration Automation Test">
         <classes>
 
             <class name="testCases.IqSoft_API_1_OpenGame_Positive_Test"/>

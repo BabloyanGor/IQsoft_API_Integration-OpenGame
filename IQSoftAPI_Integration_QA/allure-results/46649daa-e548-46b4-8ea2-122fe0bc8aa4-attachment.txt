@@ -1,0 +1,1 @@
+{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9489.5}  ResponseTime 442 ms

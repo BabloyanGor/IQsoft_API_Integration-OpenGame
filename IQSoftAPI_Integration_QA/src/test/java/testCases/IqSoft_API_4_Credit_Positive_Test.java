@@ -84,7 +84,7 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
         softAssert.assertNotEquals(iqSoft_04_apiVariables_credit_response.getClientId(), null,
                 "ClientId: " + iqSoft_04_apiVariables_credit_response.getClientId());
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getCurrencyId(), currencyIDConfig,
-                "ResponseCurrencyId = CurrencyIDConfig" + iqSoft_04_apiVariables_credit_response.getCurrencyId()+ "   " + currencyIDConfig);
+                "ResponseCurrencyId = CurrencyIDConfig" + iqSoft_04_apiVariables_credit_response.getCurrencyId() + "   " + currencyIDConfig);
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getCurrencyId().length(), 3,
                 "CurrencyIdLength =" + iqSoft_04_apiVariables_credit_response.getCurrencyId().length());
 

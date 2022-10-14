@@ -34,7 +34,7 @@ public class IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test extends BaseT
         logger.info("Balance Before Credit:" + beforeAll);
 
 
-        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1, CreditTransactionID,betAmountCreditConfig,1);
+        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1, CreditTransactionID, betAmountCreditConfig, 1);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -43,7 +43,7 @@ public class IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test extends BaseT
         Unirest.shutdown();
         logger.info("Balance After Credit:" + afterCredit);
 
-        HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, CreditTransactionID, randomRollBackTransactionID(), AuthorizationTokenVar,4);
+        HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, CreditTransactionID, randomRollBackTransactionID(), AuthorizationTokenVar, 4);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -87,9 +87,9 @@ public class IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test extends BaseT
         SoftAssert softAssert = new SoftAssert();
 
         softAssert.assertEquals(afterCredit, beforeAll - betAmountCreditConfig,
-                "afterCredit: "+ afterCredit + " = beforeAll: " + beforeAll + " - betAmountCreditConfig: "+ betAmountCreditConfig);
-        softAssert.assertEquals(afterRollBackCredit, beforeAll ,
-                "afterRollBackCredit: "+ afterRollBackCredit + " = beforeAll: " + beforeAll );
+                "afterCredit: " + afterCredit + " = beforeAll: " + beforeAll + " - betAmountCreditConfig: " + betAmountCreditConfig);
+        softAssert.assertEquals(afterRollBackCredit, beforeAll,
+                "afterRollBackCredit: " + afterRollBackCredit + " = beforeAll: " + beforeAll);
 
         softAssert.assertAll();
     }

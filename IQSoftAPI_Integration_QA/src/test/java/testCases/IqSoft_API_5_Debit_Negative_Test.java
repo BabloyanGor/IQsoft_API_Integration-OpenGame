@@ -11,6 +11,7 @@ import org.json.JSONObject;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
 import java.io.IOException;
 
 public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
@@ -224,7 +225,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
                 "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "CanNotConnectCreditAndDebit",
                 "Error Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
-        softAssert.assertEquals(amountAfterDebit , amountBeforeDebit,  "amountAfterDebit: " + amountAfterDebit + " = amountBeforeDebit: " + amountBeforeDebit);
+        softAssert.assertEquals(amountAfterDebit, amountBeforeDebit, "amountAfterDebit: " + amountAfterDebit + " = amountBeforeDebit: " + amountBeforeDebit);
 
         softAssert.assertAll();
 

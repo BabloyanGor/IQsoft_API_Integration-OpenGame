@@ -1,1 +1,0 @@
-{"Description":"balance less then bet Amount","ResponseCode":63}  ResponseTime 622 ms

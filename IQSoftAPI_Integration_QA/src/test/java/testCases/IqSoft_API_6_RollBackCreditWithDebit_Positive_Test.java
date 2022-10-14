@@ -14,7 +14,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 
-public class IqSoft_API_6_RollBackCreditWithDebit_Positive_Test extends BaseTest{
+public class IqSoft_API_6_RollBackCreditWithDebit_Positive_Test extends BaseTest {
     JSONObject jsonObjectBody;
     int statusCod;
     double beforeAll;
@@ -24,6 +24,7 @@ public class IqSoft_API_6_RollBackCreditWithDebit_Positive_Test extends BaseTest
 
     String CreditTransactionID = randomCreditTransactionID();
     String DebitTransactionID = randomDebitTransactionID();
+
     @BeforeClass
     public void setUp() throws UnirestException, IOException {
         HttpResponse<String> responseGetBalanceBeforeRollBack = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -32,7 +33,7 @@ public class IqSoft_API_6_RollBackCreditWithDebit_Positive_Test extends BaseTest
         logger.info("Balance Before Credit:" + beforeAll);
 
 
-        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1, CreditTransactionID,betAmountCreditConfig,1);
+        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1, CreditTransactionID, betAmountCreditConfig, 1);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -41,8 +42,8 @@ public class IqSoft_API_6_RollBackCreditWithDebit_Positive_Test extends BaseTest
         logger.info("Balance After Credit:" + afterCredit);
 
 
-        debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, DebitTransactionID, CreditTransactionID,betAmountDebitConfig,2,
-                4,AuthorizationTokenVar);
+        debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, DebitTransactionID, CreditTransactionID, betAmountDebitConfig, 2,
+                4, AuthorizationTokenVar);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -52,7 +53,7 @@ public class IqSoft_API_6_RollBackCreditWithDebit_Positive_Test extends BaseTest
         logger.info("Balance After Debit:" + afterDebit);
 
 
-        HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, CreditTransactionID, randomRollBackTransactionID(), AuthorizationTokenVar,4);
+        HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, CreditTransactionID, randomRollBackTransactionID(), AuthorizationTokenVar, 4);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -96,11 +97,11 @@ public class IqSoft_API_6_RollBackCreditWithDebit_Positive_Test extends BaseTest
         SoftAssert softAssert = new SoftAssert();
 
         softAssert.assertEquals(afterCredit, beforeAll - betAmountCreditConfig,
-                "afterCredit: "+ afterCredit + " = beforeAll: " + beforeAll + " - betAmountCreditConfig: "+ betAmountCreditConfig);
-        softAssert.assertEquals(afterDebit,  afterCredit + betAmountDebitConfig,
-                "afterDebit: "+ afterDebit + " = afterCredit: " + afterCredit + " + betAmountDebitConfig: "+ betAmountDebitConfig);
+                "afterCredit: " + afterCredit + " = beforeAll: " + beforeAll + " - betAmountCreditConfig: " + betAmountCreditConfig);
+        softAssert.assertEquals(afterDebit, afterCredit + betAmountDebitConfig,
+                "afterDebit: " + afterDebit + " = afterCredit: " + afterCredit + " + betAmountDebitConfig: " + betAmountDebitConfig);
         softAssert.assertEquals(afterRollBackCredit, beforeAll,
-                "afterRollBackCredit: "+ afterRollBackCredit + " = beforeAll: " + beforeAll );
+                "afterRollBackCredit: " + afterRollBackCredit + " = beforeAll: " + beforeAll);
 
         softAssert.assertAll();
     }
