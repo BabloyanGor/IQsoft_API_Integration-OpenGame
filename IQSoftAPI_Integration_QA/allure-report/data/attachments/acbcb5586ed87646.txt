@@ -1,1 +1,0 @@
-{"PartnerId":61,"GameId":54351,"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com"}

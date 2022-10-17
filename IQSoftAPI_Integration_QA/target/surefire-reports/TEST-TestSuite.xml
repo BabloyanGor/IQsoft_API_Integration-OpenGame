@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="55.432" tests="55" errors="0" skipped="0" failures="18">
+<testsuite name="TestSuite" time="52.197" tests="55" errors="0" skipped="0" failures="18">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.2+8-LTS-86"/>
@@ -60,8 +60,8 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="openGameAPIValidateStatusCod" classname="testCases.IqSoft_API_1_OpenGame_Positive_Test" time="0.086"/>
-  <testcase name="openGameAPIValidatePositiveResponse" classname="testCases.IqSoft_API_1_OpenGame_Positive_Test" time="0.016">
+  <testcase name="OpenGameAPIValidateStatusCod" classname="testCases.IqSoft_API_1_OpenGame_Positive_Test" time="0.144"/>
+  <testcase name="OpenGameAPIValidatePositiveResponse" classname="testCases.IqSoft_API_1_OpenGame_Positive_Test" time="0.02">
     <failure message="The following asserts failed:&#10;	ResponseCode: 21 expected [0] but found [21],&#10;	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [null] but found [An error occurred while updating the entries. See the inner exception for details.],&#10;	ResponseObject: null did not expect [null] but found [null],&#10;	ResponseObject Don&apos;t Contain http:// expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 21 expected [0] but found [21],
 	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [null] but found [An error occurred while updating the entries. See the inner exception for details.],
@@ -69,122 +69,117 @@
 	ResponseObject Don't Contain http:// expected [true] but found [false]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_1_OpenGame_Positive_Test.openGameAPIValidatePositiveResponse(IqSoft_API_1_OpenGame_Positive_Test.java:60)
+	at testCases.IqSoft_API_1_OpenGame_Positive_Test.OpenGameAPIValidatePositiveResponse(IqSoft_API_1_OpenGame_Positive_Test.java:60)
 </failure>
-    <system-out><![CDATA[ERROR [main] (ReportingAllure.java:61)- openGameAPIValidatePositiveResponse Test failed
+    <system-out><![CDATA[ERROR [main] (ReportingAllure.java:61)- OpenGameAPIValidatePositiveResponse Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="openGameAPIValidateResponseWithInvalidToken" classname="testCases.IqSoft_API_1_OpenGame_Negative_Test" time="0.686"/>
-  <testcase name="openGameAPIValidateResponseWithExpiredToken" classname="testCases.IqSoft_API_1_OpenGame_Negative_Test" time="0.857">
+  <testcase name="OpenGameAPIValidateResponseWithInvalidToken" classname="testCases.IqSoft_API_1_OpenGame_Negative_Test" time="0.616"/>
+  <testcase name="OpenGameAPIValidateResponseWithExpiredToken" classname="testCases.IqSoft_API_1_OpenGame_Negative_Test" time="0.637">
     <failure message="The following asserts failed:&#10;	ResponseCode: 21 expected [22] but found [21],&#10;	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [Client not found] but found [An error occurred while updating the entries. See the inner exception for details.]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 21 expected [22] but found [21],
 	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [Client not found] but found [An error occurred while updating the entries. See the inner exception for details.]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_1_OpenGame_Negative_Test.openGameAPIValidateResponseWithExpiredToken(IqSoft_API_1_OpenGame_Negative_Test.java:72)
+	at testCases.IqSoft_API_1_OpenGame_Negative_Test.OpenGameAPIValidateResponseWithExpiredToken(IqSoft_API_1_OpenGame_Negative_Test.java:72)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:120)- https://production.iqsoftllc.com/61/api/Integration/OpenGame
- INFO [main] (BaseTest.java:121)- 
- INFO [main] (BaseTest.java:122)- OpenGameAPI RequestBody {"PartnerId":61,"GameId":54351,"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com"}
- INFO [main] (BaseTest.java:123)- 
- INFO [main] (BaseTest.java:124)- OpenGameAPI ResponseBody {"ResponseCode":21,"Description":"An error occurred while updating the entries. See the inner exception for details.","ResponseObject":null}  ResponseTime 846 ms
- INFO [main] (BaseTest.java:125)- 
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:116)- 
+ INFO [main] (BaseTest.java:117)- https://production.iqsoftllc.com/61/api/Integration/OpenGame
+ INFO [main] (BaseTest.java:118)- OpenGameAPI:  RequestBody {"PartnerId":61,"GameId":54351,"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com"}
+ INFO [main] (BaseTest.java:119)- OpenGameAPI:  ResponseBody {"ResponseCode":21,"Description":"An error occurred while updating the entries. See the inner exception for details.","ResponseObject":null}  ResponseTime 612 ms
+ INFO [main] (BaseTest.java:120)- 
  INFO [main] (IqSoft_API_1_OpenGame_Negative_Test.java:63)- OpenGame API Response Status Cod is Equal: 200
-ERROR [main] (ReportingAllure.java:61)- openGameAPIValidateResponseWithExpiredToken Test failed
+ERROR [main] (ReportingAllure.java:61)- OpenGameAPIValidateResponseWithExpiredToken Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="openGameAPIValidateResponseWithInvalidPartnerID" classname="testCases.IqSoft_API_1_OpenGame_Negative_Test" time="0.865">
+  <testcase name="OpenGameAPIValidateResponseWithInvalidPartnerID" classname="testCases.IqSoft_API_1_OpenGame_Negative_Test" time="0.65">
     <failure message="The following asserts failed:&#10;	ResponseCode 21 expected [22] but found [21],&#10;	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ClientNotFound ] but found [An error occurred while updating the entries. See the inner exception for details.]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	ResponseCode 21 expected [22] but found [21],
 	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ClientNotFound ] but found [An error occurred while updating the entries. See the inner exception for details.]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_1_OpenGame_Negative_Test.openGameAPIValidateResponseWithInvalidPartnerID(IqSoft_API_1_OpenGame_Negative_Test.java:98)
+	at testCases.IqSoft_API_1_OpenGame_Negative_Test.OpenGameAPIValidateResponseWithInvalidPartnerID(IqSoft_API_1_OpenGame_Negative_Test.java:98)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:120)- https://production.iqsoftllc.com/61/api/Integration/OpenGame
- INFO [main] (BaseTest.java:121)- 
- INFO [main] (BaseTest.java:122)- OpenGameAPI RequestBody {"PartnerId":-1,"GameId":54351,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com"}
- INFO [main] (BaseTest.java:123)- 
- INFO [main] (BaseTest.java:124)- OpenGameAPI ResponseBody {"ResponseCode":21,"Description":"An error occurred while updating the entries. See the inner exception for details.","ResponseObject":null}  ResponseTime 852 ms
- INFO [main] (BaseTest.java:125)- 
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:116)- 
+ INFO [main] (BaseTest.java:117)- https://production.iqsoftllc.com/61/api/Integration/OpenGame
+ INFO [main] (BaseTest.java:118)- OpenGameAPI:  RequestBody {"PartnerId":-1,"GameId":54351,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com"}
+ INFO [main] (BaseTest.java:119)- OpenGameAPI:  ResponseBody {"ResponseCode":21,"Description":"An error occurred while updating the entries. See the inner exception for details.","ResponseObject":null}  ResponseTime 639 ms
+ INFO [main] (BaseTest.java:120)- 
  INFO [main] (IqSoft_API_1_OpenGame_Negative_Test.java:90)- OpenGame API Response Status Cod is Equal: 200
-ERROR [main] (ReportingAllure.java:61)- openGameAPIValidateResponseWithInvalidPartnerID Test failed
+ERROR [main] (ReportingAllure.java:61)- OpenGameAPIValidateResponseWithInvalidPartnerID Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="openGameAPIValidateResponseWithInvalidGameID" classname="testCases.IqSoft_API_1_OpenGame_Negative_Test" time="0.883"/>
-  <testcase name="openGameAPIValidateResponseWithInvalidDomain" classname="testCases.IqSoft_API_1_OpenGame_Negative_Test" time="0.87">
+  <testcase name="OpenGameAPIValidateResponseWithInvalidGameID" classname="testCases.IqSoft_API_1_OpenGame_Negative_Test" time="0.543"/>
+  <testcase name="OpenGameAPIValidateResponseWithInvalidDomain" classname="testCases.IqSoft_API_1_OpenGame_Negative_Test" time="0.669">
     <failure message="The following asserts failed:&#10;	ResponseCode: 21 expected [43] but found [21],&#10;	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ProductNotFound] but found [An error occurred while updating the entries. See the inner exception for details.]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 21 expected [43] but found [21],
 	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ProductNotFound] but found [An error occurred while updating the entries. See the inner exception for details.]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_1_OpenGame_Negative_Test.openGameAPIValidateResponseWithInvalidDomain(IqSoft_API_1_OpenGame_Negative_Test.java:151)
+	at testCases.IqSoft_API_1_OpenGame_Negative_Test.OpenGameAPIValidateResponseWithInvalidDomain(IqSoft_API_1_OpenGame_Negative_Test.java:151)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:120)- https://production.iqsoftllc.com/61/api/Integration/OpenGame
- INFO [main] (BaseTest.java:121)- 
- INFO [main] (BaseTest.java:122)- OpenGameAPI RequestBody {"PartnerId":61,"GameId":54351,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com1"}
- INFO [main] (BaseTest.java:123)- 
- INFO [main] (BaseTest.java:124)- OpenGameAPI ResponseBody {"ResponseCode":21,"Description":"An error occurred while updating the entries. See the inner exception for details.","ResponseObject":null}  ResponseTime 854 ms
- INFO [main] (BaseTest.java:125)- 
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:116)- 
+ INFO [main] (BaseTest.java:117)- https://production.iqsoftllc.com/61/api/Integration/OpenGame
+ INFO [main] (BaseTest.java:118)- OpenGameAPI:  RequestBody {"PartnerId":61,"GameId":54351,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","LanguageId":"en","IsForMobile":false,"Domain":"dazarbet.com1"}
+ INFO [main] (BaseTest.java:119)- OpenGameAPI:  ResponseBody {"ResponseCode":21,"Description":"An error occurred while updating the entries. See the inner exception for details.","ResponseObject":null}  ResponseTime 648 ms
+ INFO [main] (BaseTest.java:120)- 
  INFO [main] (IqSoft_API_1_OpenGame_Negative_Test.java:143)- OpenGame API Response Status Cod is Equal: 200
-ERROR [main] (ReportingAllure.java:61)- openGameAPIValidateResponseWithInvalidDomain Test failed
+ERROR [main] (ReportingAllure.java:61)- OpenGameAPIValidateResponseWithInvalidDomain Test failed
 ]]></system-out>
   </testcase>
   <testcase name="AuthorizationAPIValidateStatusCod" classname="testCases.IqSoft_API_2_Authorization_Positive_Test" time="0.004"/>
-  <testcase name="AuthorizationAPIValidatePositiveResponse" classname="testCases.IqSoft_API_2_Authorization_Positive_Test" time="0.004"/>
-  <testcase name="GetBalanceAPIValidateStatusCod" classname="testCases.IqSoft_API_3_GetBalance_Positive_Test" time="0.009"/>
-  <testcase name="GetBalanceAPIValidatePositiveResponse" classname="testCases.IqSoft_API_3_GetBalance_Positive_Test" time="0.001"/>
-  <testcase name="CreditAPIValidateStatusCod" classname="testCases.IqSoft_API_4_Credit_Positive_Test" time="0.01"/>
-  <testcase name="CreditAPIValidatePositiveResponse" classname="testCases.IqSoft_API_4_Credit_Positive_Test" time="0"/>
-  <testcase name="DebitAPIValidateStatusCod" classname="testCases.IqSoft_API_5_Debit_Positive_Test" time="0"/>
-  <testcase name="DebitAPIValidatePositiveResponse" classname="testCases.IqSoft_API_5_Debit_Positive_Test" time="0.086"/>
-  <testcase name="RollBackAPIValidateStatusCod" classname="testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test" time="0.005"/>
-  <testcase name="RollBackAPIValidatePositiveResponse" classname="testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test" time="0.006"/>
-  <testcase name="RollBackAPIValidatePositiveResponseBalanceCorrection" classname="testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test" time="0.005"/>
-  <testcase name="RollBackAPIValidateStatusCod" classname="testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test" time="0.007"/>
-  <testcase name="RollBackAPIValidatePositiveResponse" classname="testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test" time="0.001"/>
-  <testcase name="RollBackAPIValidatePositiveResponseBalanceCorrection" classname="testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test" time="0"/>
-  <testcase name="RollBackAPIValidateStatusCod" classname="testCases.IqSoft_API_6_RollBackDebit_Positive_Test" time="0"/>
-  <testcase name="RollBackAPIValidatePositiveResponse" classname="testCases.IqSoft_API_6_RollBackDebit_Positive_Test" time="0"/>
-  <testcase name="RollBackAPIValidatePositiveResponseBalanceCorrection" classname="testCases.IqSoft_API_6_RollBackDebit_Positive_Test" time="0"/>
-  <testcase name="AuthorizationAPIValidateResponseWithExpiredToken" classname="testCases.IqSoft_API_2_Authorization_Negative_Test" time="0.624">
+  <testcase name="AuthorizationAPIValidatePositiveResponse" classname="testCases.IqSoft_API_2_Authorization_Positive_Test" time="0.006"/>
+  <testcase name="GetBalanceAPIValidateStatusCod" classname="testCases.IqSoft_API_3_GetBalance_Positive_Test" time="0.001"/>
+  <testcase name="GetBalanceAPIValidatePositiveResponse" classname="testCases.IqSoft_API_3_GetBalance_Positive_Test" time="0.004"/>
+  <testcase name="CreditAPIValidateStatusCod" classname="testCases.IqSoft_API_4_Credit_Positive_Test" time="0.004"/>
+  <testcase name="CreditAPIValidatePositiveResponse" classname="testCases.IqSoft_API_4_Credit_Positive_Test" time="0.004"/>
+  <testcase name="DebitAPIValidateStatusCod" classname="testCases.IqSoft_API_5_Debit_Positive_Test" time="0.012"/>
+  <testcase name="DebitAPIValidatePositiveResponse" classname="testCases.IqSoft_API_5_Debit_Positive_Test" time="0.001"/>
+  <testcase name="RollBackAPIValidateStatusCod" classname="testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test" time="0.009"/>
+  <testcase name="RollBackAPIValidatePositiveResponse" classname="testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test" time="0.003"/>
+  <testcase name="RollBackAPIValidatePositiveResponseBalanceCorrection" classname="testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test" time="0.004"/>
+  <testcase name="RollBackAPIValidateStatusCod" classname="testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test" time="0.001"/>
+  <testcase name="RollBackAPIValidatePositiveResponse" classname="testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test" time="0.008"/>
+  <testcase name="RollBackAPIValidatePositiveResponseBalanceCorrection" classname="testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test" time="0.001"/>
+  <testcase name="RollBackAPIValidateStatusCod" classname="testCases.IqSoft_API_6_RollBackDebit_Positive_Test" time="0.005"/>
+  <testcase name="RollBackAPIValidatePositiveResponse" classname="testCases.IqSoft_API_6_RollBackDebit_Positive_Test" time="0.003"/>
+  <testcase name="RollBackAPIValidatePositiveResponseBalanceCorrection" classname="testCases.IqSoft_API_6_RollBackDebit_Positive_Test" time="0.002"/>
+  <testcase name="AuthorizationAPIValidateResponseWithExpiredToken" classname="testCases.IqSoft_API_2_Authorization_Negative_Test" time="1.248">
     <failure message="The following asserts failed:&#10;	ResponseCode: 0 expected [29] but found [0],&#10;	Error Description: null expected [SessionExpired] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [29] but found [0],
 	Error Description: null expected [SessionExpired] but found [null]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithExpiredToken(IqSoft_API_2_Authorization_Negative_Test.java:42)
+	at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithExpiredToken(IqSoft_API_2_Authorization_Negative_Test.java:43)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:149)- https://iqs.dazzabet.com/api/endpoint/Authorization
- INFO [main] (BaseTest.java:150)- 
- INFO [main] (BaseTest.java:151)- AuthorizationAPI RequestBody {"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","ProductId":54351}
- INFO [main] (BaseTest.java:152)- 
- INFO [main] (BaseTest.java:153)- AuthorizationAPI ResponseBody {"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","Gender":"1","ClientId":"dazzabet10130","LastName":"","UserName":"testuser","BirthDate":"1998-12-29","FirstName":"","CurrencyId":"TND","Description":null,"ResponseCode":0}  ResponseTime 596 ms
- INFO [main] (BaseTest.java:154)- 
- INFO [main] (IqSoft_API_2_Authorization_Negative_Test.java:29)- Authorization API Response Status cod : 200
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:143)- 
+ INFO [main] (BaseTest.java:144)- https://iqs.dazzabet.com/api/endpoint/Authorization
+ INFO [main] (BaseTest.java:145)- AuthorizationAPI:  RequestBody{"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","ProductId":54351}
+ INFO [main] (BaseTest.java:146)- AuthorizationAPI:  ResponseBody{"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","Gender":"1","ClientId":"dazzabet10130","LastName":"","UserName":"testuser","BirthDate":"1998-12-29","FirstName":"","CurrencyId":"TND","Description":null,"ResponseCode":0}  ResponseTime 1229 ms
+ INFO [main] (BaseTest.java:147)- 
+ INFO [main] (IqSoft_API_2_Authorization_Negative_Test.java:30)- Authorization API Response Status cod : 200
 ERROR [main] (ReportingAllure.java:61)- AuthorizationAPIValidateResponseWithExpiredToken Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="AuthorizationAPIValidateResponseWithInvalidToken" classname="testCases.IqSoft_API_2_Authorization_Negative_Test" time="0.566"/>
-  <testcase name="AuthorizationAPIValidateResponseWithInvalidProductID" classname="testCases.IqSoft_API_2_Authorization_Negative_Test" time="0.678">
+  <testcase name="AuthorizationAPIValidateResponseWithInvalidToken" classname="testCases.IqSoft_API_2_Authorization_Negative_Test" time="0.839"/>
+  <testcase name="AuthorizationAPIValidateResponseWithInvalidProductID" classname="testCases.IqSoft_API_2_Authorization_Negative_Test" time="0.63">
     <failure message="The following asserts failed:&#10;	ResponseCode: 0 expected [43] but found [0],&#10;	Error Description: null expected [ProductNotFound] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [43] but found [0],
 	Error Description: null expected [ProductNotFound] but found [null]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithInvalidProductID(IqSoft_API_2_Authorization_Negative_Test.java:95)
+	at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithInvalidProductID(IqSoft_API_2_Authorization_Negative_Test.java:96)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:149)- https://iqs.dazzabet.com/api/endpoint/Authorization
- INFO [main] (BaseTest.java:150)- 
- INFO [main] (BaseTest.java:151)- AuthorizationAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","ProductId":54351}
- INFO [main] (BaseTest.java:152)- 
- INFO [main] (BaseTest.java:153)- AuthorizationAPI ResponseBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","Gender":"1","ClientId":"dazzabet10130","LastName":"","UserName":"testuser","BirthDate":"1998-12-29","FirstName":"","CurrencyId":"TND","Description":null,"ResponseCode":0}  ResponseTime 671 ms
- INFO [main] (BaseTest.java:154)- 
- INFO [main] (IqSoft_API_2_Authorization_Negative_Test.java:82)- Authorization API Response Status cod : 200
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:143)- 
+ INFO [main] (BaseTest.java:144)- https://iqs.dazzabet.com/api/endpoint/Authorization
+ INFO [main] (BaseTest.java:145)- AuthorizationAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","ProductId":54351}
+ INFO [main] (BaseTest.java:146)- AuthorizationAPI:  ResponseBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","Gender":"1","ClientId":"dazzabet10130","LastName":"","UserName":"testuser","BirthDate":"1998-12-29","FirstName":"","CurrencyId":"TND","Description":null,"ResponseCode":0}  ResponseTime 606 ms
+ INFO [main] (BaseTest.java:147)- 
+ INFO [main] (IqSoft_API_2_Authorization_Negative_Test.java:83)- Authorization API Response Status cod : 200
 ERROR [main] (ReportingAllure.java:61)- AuthorizationAPIValidateResponseWithInvalidProductID Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="GetBalanceAPIValidateResponseWithExpiredToken" classname="testCases.IqSoft_API_3_GetBalance_Negative_Test" time="0.66">
+  <testcase name="GetBalanceAPIValidateResponseWithExpiredToken" classname="testCases.IqSoft_API_3_GetBalance_Negative_Test" time="0.85">
     <failure message="The following asserts failed:&#10;	ResponseCode: 0 expected [29] but found [0],&#10;	Error Description: null expected [SessionExpired] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [29] but found [0],
 	Error Description: null expected [SessionExpired] but found [null]
@@ -192,18 +187,17 @@ ERROR [main] (ReportingAllure.java:61)- AuthorizationAPIValidateResponseWithInva
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithExpiredToken(IqSoft_API_3_GetBalance_Negative_Test.java:41)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9504.5}  ResponseTime 635 ms
- INFO [main] (BaseTest.java:184)- 
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9481.7}  ResponseTime 819 ms
+ INFO [main] (BaseTest.java:176)- 
  INFO [main] (IqSoft_API_3_GetBalance_Negative_Test.java:27)-  GetBalance API Status Cod is Equal: 200
 ERROR [main] (ReportingAllure.java:61)- GetBalanceAPIValidateResponseWithExpiredToken Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="GetBalanceAPIValidateResponseWithInvalidToken" classname="testCases.IqSoft_API_3_GetBalance_Negative_Test" time="0.77"/>
-  <testcase name="GetBalanceAPIValidateResponseWithInvalidCurrencyID" classname="testCases.IqSoft_API_3_GetBalance_Negative_Test" time="0.665">
+  <testcase name="GetBalanceAPIValidateResponseWithInvalidToken" classname="testCases.IqSoft_API_3_GetBalance_Negative_Test" time="0.737"/>
+  <testcase name="GetBalanceAPIValidateResponseWithInvalidCurrencyID" classname="testCases.IqSoft_API_3_GetBalance_Negative_Test" time="0.518">
     <failure message="The following asserts failed:&#10;	ResponseCode: 0 expected [20] but found [0],&#10;	Error Description: null expected [CurrencyNotExists] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [20] but found [0],
 	Error Description: null expected [CurrencyNotExists] but found [null]
@@ -211,393 +205,351 @@ ERROR [main] (ReportingAllure.java:61)- GetBalanceAPIValidateResponseWithExpired
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithInvalidCurrencyID(IqSoft_API_3_GetBalance_Negative_Test.java:89)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND1"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND1","Description":null,"ResponseCode":0,"AvailableBalance":9504.5}  ResponseTime 644 ms
- INFO [main] (BaseTest.java:184)- 
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND1"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND1","Description":null,"ResponseCode":0,"AvailableBalance":9481.7}  ResponseTime 491 ms
+ INFO [main] (BaseTest.java:176)- 
  INFO [main] (IqSoft_API_3_GetBalance_Negative_Test.java:75)-  GetBalance API Status Cod is Equal: 200
 ERROR [main] (ReportingAllure.java:61)- GetBalanceAPIValidateResponseWithInvalidCurrencyID Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="GetBalanceAPIValidateResponseWithOtherCurrencyID" classname="testCases.IqSoft_API_3_GetBalance_Negative_Test" time="1.176">
-    <failure message="balanceUSD VS balanceEUR did not expect [9504.5] but found [9504.5]" type="java.lang.AssertionError">java.lang.AssertionError: balanceUSD VS balanceEUR did not expect [9504.5] but found [9504.5]
+  <testcase name="GetBalanceAPIValidateResponseWithOtherCurrencyID" classname="testCases.IqSoft_API_3_GetBalance_Negative_Test" time="1.291">
+    <failure message="balanceUSD VS balanceEUR did not expect [9481.7] but found [9481.7]" type="java.lang.AssertionError">java.lang.AssertionError: balanceUSD VS balanceEUR did not expect [9481.7] but found [9481.7]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failEquals(Assert.java:1417)
 	at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
 	at org.testng.Assert.assertNotEquals(Assert.java:2033)
 	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithOtherCurrencyID(IqSoft_API_3_GetBalance_Negative_Test.java:113)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"USD"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"USD","Description":null,"ResponseCode":0,"AvailableBalance":9504.5}  ResponseTime 557 ms
- INFO [main] (BaseTest.java:184)- 
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"USD"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"USD","Description":null,"ResponseCode":0,"AvailableBalance":9481.7}  ResponseTime 816 ms
+ INFO [main] (BaseTest.java:176)- 
  INFO [main] (IqSoft_API_3_GetBalance_Negative_Test.java:99)-  GetBalance API Status Cod is Equal: 200
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"EUR"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"EUR","Description":null,"ResponseCode":0,"AvailableBalance":9504.5}  ResponseTime 590 ms
- INFO [main] (BaseTest.java:184)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"EUR"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"EUR","Description":null,"ResponseCode":0,"AvailableBalance":9481.7}  ResponseTime 454 ms
+ INFO [main] (BaseTest.java:176)- 
 ERROR [main] (ReportingAllure.java:61)- GetBalanceAPIValidateResponseWithOtherCurrencyID Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="CreditAPIValidateResponseWithExpiredToken" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="1.835">
-    <failure message="The following asserts failed:&#10;	ResponseCode: 0 expected [29] but found [0],&#10;	Error Description: null expected [SessionExpired] but found [null],&#10;	amountBeforeCredit = amountAfterCredit: 9504.5 = 9503.5 expected [9503.5] but found [9504.5]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+  <testcase name="CreditAPIValidateResponseWithExpiredToken" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="1.856">
+    <failure message="The following asserts failed:&#10;	ResponseCode: 0 expected [29] but found [0],&#10;	Error Description: null expected [SessionExpired] but found [null],&#10;	amountBeforeCredit = amountAfterCredit: 9481.7 = 9480.7 expected [9480.7] but found [9481.7]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [29] but found [0],
 	Error Description: null expected [SessionExpired] but found [null],
-	amountBeforeCredit = amountAfterCredit: 9504.5 = 9503.5 expected [9503.5] but found [9504.5]
+	amountBeforeCredit = amountAfterCredit: 9481.7 = 9480.7 expected [9480.7] but found [9481.7]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithExpiredToken(IqSoft_API_4_Credit_Negative_Test.java:60)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9504.5}  ResponseTime 567 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (BaseTest.java:220)- https://iqs.dazzabet.com/api/endpoint/Credit
- INFO [main] (BaseTest.java:221)- 
- INFO [main] (BaseTest.java:222)- CreditAPI RequestBody {"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-Jv4rRXSKZw5Xsd3G3IIM_C","BetState":1,"Amount":1.0}
- INFO [main] (BaseTest.java:223)- 
- INFO [main] (BaseTest.java:224)- CreditAPI ResponseBody {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":2299,"Balance":9503.5,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 610 ms
- INFO [main] (BaseTest.java:225)- 
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9503.5}  ResponseTime 620 ms
- INFO [main] (BaseTest.java:184)- 
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9481.7}  ResponseTime 509 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (BaseTest.java:212)- 
+ INFO [main] (BaseTest.java:213)- https://iqs.dazzabet.com/api/endpoint/Credit
+ INFO [main] (BaseTest.java:214)- CreditAPI:  RequestBody{"Token":"6cf0a441-455a-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-Kz5YsdvzfKGQ1WnwTtqb_C","BetState":1,"Amount":1.0}
+ INFO [main] (BaseTest.java:215)- CreditAPI:  ResponseBody{"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":2460,"Balance":9480.7,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 446 ms
+ INFO [main] (BaseTest.java:216)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9480.7}  ResponseTime 857 ms
+ INFO [main] (BaseTest.java:176)- 
 ERROR [main] (ReportingAllure.java:61)- CreditAPIValidateResponseWithExpiredToken Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="CreditAPIValidateResponseWithInvalidToken" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="2.054"/>
-  <testcase name="CreditAPIValidateResponseWithInvalidProductID" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="1.644">
+  <testcase name="CreditAPIValidateResponseWithInvalidToken" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="1.732"/>
+  <testcase name="CreditAPIValidateResponseWithInvalidProductID" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="1.55">
     <failure message="The following asserts failed:&#10;	Error Description: game not avaible expected [game not available] but found [game not avaible]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	Error Description: game not avaible expected [game not available] but found [game not avaible]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidProductID(IqSoft_API_4_Credit_Negative_Test.java:144)
+	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidProductID(IqSoft_API_4_Credit_Negative_Test.java:143)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9503.5}  ResponseTime 545 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (BaseTest.java:220)- https://iqs.dazzabet.com/api/endpoint/Credit
- INFO [main] (BaseTest.java:221)- 
- INFO [main] (BaseTest.java:222)- CreditAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":-10,"OperationTypeId":1,"TransactionId":"QA_Test-auIcffHfIgAiSt9IeArs_C","BetState":1,"Amount":1.0}
- INFO [main] (BaseTest.java:223)- 
- INFO [main] (BaseTest.java:224)- CreditAPI ResponseBody {"Description":"game not avaible","ResponseCode":43}  ResponseTime 560 ms
- INFO [main] (BaseTest.java:225)- 
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9503.5}  ResponseTime 504 ms
- INFO [main] (BaseTest.java:184)- 
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9480.7}  ResponseTime 460 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (BaseTest.java:212)- 
+ INFO [main] (BaseTest.java:213)- https://iqs.dazzabet.com/api/endpoint/Credit
+ INFO [main] (BaseTest.java:214)- CreditAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":-10,"OperationTypeId":1,"TransactionId":"QA_Test-hHzLgMhlHaN8xAkWDL4Z_C","BetState":1,"Amount":1.0}
+ INFO [main] (BaseTest.java:215)- CreditAPI:  ResponseBody{"Description":"game not avaible","ResponseCode":43}  ResponseTime 474 ms
+ INFO [main] (BaseTest.java:216)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9480.7}  ResponseTime 559 ms
+ INFO [main] (BaseTest.java:176)- 
 ERROR [main] (ReportingAllure.java:61)- CreditAPIValidateResponseWithInvalidProductID Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="CreditAPIValidateResponseUsingTransactionIDTwice" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="2.972"/>
-  <testcase name="CreditAPIValidateResponseUsingAmountHigherThenBalance" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="1.864"/>
-  <testcase name="CreditAPIValidateResponseWithInvalidAmount" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="1.712">
+  <testcase name="CreditAPIValidateResponseUsingTransactionIDTwice" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="3.416"/>
+  <testcase name="CreditAPIValidateResponseUsingAmountHigherThenBalance" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="1.95"/>
+  <testcase name="CreditAPIValidateResponseWithInvalidAmount" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="3.038">
     <failure message="The following asserts failed:&#10;	ResponseCode: 0 expected [39] but found [0],&#10;	Error Description: null expected [WrongOperationAmount] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [39] but found [0],
 	Error Description: null expected [WrongOperationAmount] but found [null]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidAmount(IqSoft_API_4_Credit_Negative_Test.java:281)
+	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidAmount(IqSoft_API_4_Credit_Negative_Test.java:280)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9502.5}  ResponseTime 440 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (BaseTest.java:220)- https://iqs.dazzabet.com/api/endpoint/Credit
- INFO [main] (BaseTest.java:221)- 
- INFO [main] (BaseTest.java:222)- CreditAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-cNVHHdTSiSftKraF9rtW_C","BetState":1,"Amount":0.0}
- INFO [main] (BaseTest.java:223)- 
- INFO [main] (BaseTest.java:224)- CreditAPI ResponseBody {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":2303,"Balance":9502.5,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 574 ms
- INFO [main] (BaseTest.java:225)- 
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9502.5}  ResponseTime 653 ms
- INFO [main] (BaseTest.java:184)- 
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9479.7}  ResponseTime 1062 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (BaseTest.java:212)- 
+ INFO [main] (BaseTest.java:213)- https://iqs.dazzabet.com/api/endpoint/Credit
+ INFO [main] (BaseTest.java:214)- CreditAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-9V0cxJzgENTyh5gEoj56_C","BetState":1,"Amount":0.0}
+ INFO [main] (BaseTest.java:215)- CreditAPI:  ResponseBody{"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":2464,"Balance":9479.7,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 784 ms
+ INFO [main] (BaseTest.java:216)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9479.7}  ResponseTime 794 ms
+ INFO [main] (BaseTest.java:176)- 
 ERROR [main] (ReportingAllure.java:61)- CreditAPIValidateResponseWithInvalidAmount Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="CreditAPIValidateResponseWithInvalidAmount" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="1.902"/>
-  <testcase name="CreditAPIValidateResponseWithInvalidAmount" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="1.878"/>
-  <testcase name="CreditAPIValidateResponseWithInvalidAmount" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="2.048"/>
-  <testcase name="CreditAPIValidateResponseWithInvalidAmount" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="1.777"/>
-  <testcase name="DebitAPIValidateResponseWithInvalidToken" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="3.289"/>
-  <testcase name="DebitAPIValidateResponseUsingInvalidProductID" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="3.376">
+  <testcase name="CreditAPIValidateResponseWithInvalidAmount" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="1.734"/>
+  <testcase name="CreditAPIValidateResponseWithInvalidAmount" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="1.802"/>
+  <testcase name="CreditAPIValidateResponseWithInvalidAmount" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="1.924"/>
+  <testcase name="CreditAPIValidateResponseWithInvalidAmount" classname="testCases.IqSoft_API_4_Credit_Negative_Test" time="1.919"/>
+  <testcase name="DebitAPIValidateResponseWithInvalidToken" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="3.045"/>
+  <testcase name="DebitAPIValidateResponseUsingInvalidProductID" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="3.473">
     <failure message="The following asserts failed:&#10;	Error Description: game not avaible expected [game not available] but found [game not avaible]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	Error Description: game not avaible expected [game not available] but found [game not avaible]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidProductID(IqSoft_API_5_Debit_Negative_Test.java:119)
+	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidProductID(IqSoft_API_5_Debit_Negative_Test.java:120)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9501.5}  ResponseTime 613 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (BaseTest.java:220)- https://iqs.dazzabet.com/api/endpoint/Credit
- INFO [main] (BaseTest.java:221)- 
- INFO [main] (BaseTest.java:222)- CreditAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-nqTaee3rraSR26T66UfV_C","BetState":1,"Amount":1.0}
- INFO [main] (BaseTest.java:223)- 
- INFO [main] (BaseTest.java:224)- CreditAPI ResponseBody {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":2305,"Balance":9500.5,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 815 ms
- INFO [main] (BaseTest.java:225)- 
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9500.5}  ResponseTime 615 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (BaseTest.java:262)- https://iqs.dazzabet.com/api/endpoint/Debit
- INFO [main] (BaseTest.java:263)- 
- INFO [main] (BaseTest.java:264)- DebitAPI RequestBody {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":-10,"TransactionId":"QA_Test-s2wVBk6MUtK9gb8B7qGh_D","CreditTransactionId":"QA_Test-nqTaee3rraSR26T66UfV_C","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8"}
- INFO [main] (BaseTest.java:265)- 
- INFO [main] (BaseTest.java:266)- DebitAPI ResponseBody {"Description":"game not avaible","ResponseCode":"43"}  ResponseTime 579 ms
- INFO [main] (BaseTest.java:267)- 
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9500.5}  ResponseTime 699 ms
- INFO [main] (BaseTest.java:184)- 
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9478.7}  ResponseTime 550 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (BaseTest.java:212)- 
+ INFO [main] (BaseTest.java:213)- https://iqs.dazzabet.com/api/endpoint/Credit
+ INFO [main] (BaseTest.java:214)- CreditAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-zJwscJQVrS8jpN6N1SRc_C","BetState":1,"Amount":1.0}
+ INFO [main] (BaseTest.java:215)- CreditAPI:  ResponseBody{"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":2466,"Balance":9477.7,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 672 ms
+ INFO [main] (BaseTest.java:216)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9477.7}  ResponseTime 594 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (BaseTest.java:252)- 
+ INFO [main] (BaseTest.java:253)- https://iqs.dazzabet.com/api/endpoint/Debit
+ INFO [main] (BaseTest.java:254)- DebitAPI:  RequestBody{"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":-10,"TransactionId":"QA_Test-GPPbF4WdXgKJyncaHVtT_D","CreditTransactionId":"QA_Test-zJwscJQVrS8jpN6N1SRc_C","Amount":5.0,"BetState":2,"OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8"}
+ INFO [main] (BaseTest.java:255)- DebitAPI:  ResponseBody{"Description":"game not avaible","ResponseCode":"43"}  ResponseTime 891 ms
+ INFO [main] (BaseTest.java:256)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9477.7}  ResponseTime 654 ms
+ INFO [main] (BaseTest.java:176)- 
 ERROR [main] (ReportingAllure.java:61)- DebitAPIValidateResponseUsingInvalidProductID Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="DebitAPIValidateResponseUsingTransactionIDTwice" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="5.565"/>
-  <testcase name="DebitAPIValidateResponseUsingInvalidCreditTransactionID" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="1.851">
-    <failure message="The following asserts failed:&#10;	ResponseCode: 0 expected [50] but found [0],&#10;	Error Description: null expected [CanNotConnectCreditAndDebit] but found [null],&#10;	amountAfterDebit: 9502.5 = amountBeforeDebit: 9500.5 expected [9500.5] but found [9502.5]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+  <testcase name="DebitAPIValidateResponseUsingTransactionIDTwice" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="4.612"/>
+  <testcase name="DebitAPIValidateResponseUsingInvalidCreditTransactionID" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="1.492">
+    <failure message="The following asserts failed:&#10;	ResponseCode: 0 expected [50] but found [0],&#10;	Error Description: null expected [CanNotConnectCreditAndDebit] but found [null],&#10;	amountAfterDebit: 9485.7 = amountBeforeDebit: 9480.7 expected [9480.7] but found [9485.7]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [50] but found [0],
 	Error Description: null expected [CanNotConnectCreditAndDebit] but found [null],
-	amountAfterDebit: 9502.5 = amountBeforeDebit: 9500.5 expected [9500.5] but found [9502.5]
+	amountAfterDebit: 9485.7 = amountBeforeDebit: 9480.7 expected [9480.7] but found [9485.7]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidCreditTransactionID(IqSoft_API_5_Debit_Negative_Test.java:229)
+	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidCreditTransactionID(IqSoft_API_5_Debit_Negative_Test.java:230)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9500.5}  ResponseTime 599 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (BaseTest.java:262)- https://iqs.dazzabet.com/api/endpoint/Debit
- INFO [main] (BaseTest.java:263)- 
- INFO [main] (BaseTest.java:264)- DebitAPI RequestBody {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-ZAnd6LDEyUgO3k5YJy9G_D","CreditTransactionId":"QA_Test-Ci4igwYF5KvFijctDgeT_C_ErrorID","Amount":2.0,"BetState":2,"OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8"}
- INFO [main] (BaseTest.java:265)- 
- INFO [main] (BaseTest.java:266)- DebitAPI ResponseBody {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":2310,"Balance":9502.5,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 610 ms
- INFO [main] (BaseTest.java:267)- 
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9502.5}  ResponseTime 614 ms
- INFO [main] (BaseTest.java:184)- 
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9480.7}  ResponseTime 469 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (BaseTest.java:252)- 
+ INFO [main] (BaseTest.java:253)- https://iqs.dazzabet.com/api/endpoint/Debit
+ INFO [main] (BaseTest.java:254)- DebitAPI:  RequestBody{"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-SMMi9N9AmtqKqDYbTmro_D","CreditTransactionId":"QA_Test-Di9lCZOo5PecmrP0uUDH_C_ErrorID","Amount":5.0,"BetState":2,"OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8"}
+ INFO [main] (BaseTest.java:255)- DebitAPI:  ResponseBody{"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":2471,"Balance":9485.7,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 517 ms
+ INFO [main] (BaseTest.java:256)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9485.7}  ResponseTime 454 ms
+ INFO [main] (BaseTest.java:176)- 
 ERROR [main] (ReportingAllure.java:61)- DebitAPIValidateResponseUsingInvalidCreditTransactionID Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="DebitAPIValidateResponseUsingInvalidAmount" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="3.031">
+  <testcase name="DebitAPIValidateResponseUsingInvalidAmount" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="2.711">
     <failure message="The following asserts failed:&#10;	ResponseCode: 0 expected [39] but found [0],&#10;	Error Description: null expected [WrongOperationAmount] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [39] but found [0],
 	Error Description: null expected [WrongOperationAmount] but found [null]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount(IqSoft_API_5_Debit_Negative_Test.java:278)
+	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount(IqSoft_API_5_Debit_Negative_Test.java:279)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9502.5}  ResponseTime 575 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (BaseTest.java:220)- https://iqs.dazzabet.com/api/endpoint/Credit
- INFO [main] (BaseTest.java:221)- 
- INFO [main] (BaseTest.java:222)- CreditAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-70FCkiMrv8XiYreljasM_C","BetState":1,"Amount":1.0}
- INFO [main] (BaseTest.java:223)- 
- INFO [main] (BaseTest.java:224)- CreditAPI ResponseBody {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":2311,"Balance":9501.5,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 699 ms
- INFO [main] (BaseTest.java:225)- 
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9501.5}  ResponseTime 535 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (BaseTest.java:262)- https://iqs.dazzabet.com/api/endpoint/Debit
- INFO [main] (BaseTest.java:263)- 
- INFO [main] (BaseTest.java:264)- DebitAPI RequestBody {"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-jhGtuoYSdcG6ynX4uNy5_D","CreditTransactionId":"QA_Test-70FCkiMrv8XiYreljasM_C","Amount":0.0,"BetState":2,"OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8"}
- INFO [main] (BaseTest.java:265)- 
- INFO [main] (BaseTest.java:266)- DebitAPI ResponseBody {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":2312,"Balance":9501.5,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 557 ms
- INFO [main] (BaseTest.java:267)- 
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9501.5}  ResponseTime 592 ms
- INFO [main] (BaseTest.java:184)- 
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9485.7}  ResponseTime 501 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (BaseTest.java:212)- 
+ INFO [main] (BaseTest.java:213)- https://iqs.dazzabet.com/api/endpoint/Credit
+ INFO [main] (BaseTest.java:214)- CreditAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-bx3fZEoCjlWoLO6Rn1sP_C","BetState":1,"Amount":1.0}
+ INFO [main] (BaseTest.java:215)- CreditAPI:  ResponseBody{"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":2472,"Balance":9484.7,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 630 ms
+ INFO [main] (BaseTest.java:216)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9484.7}  ResponseTime 615 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (BaseTest.java:252)- 
+ INFO [main] (BaseTest.java:253)- https://iqs.dazzabet.com/api/endpoint/Debit
+ INFO [main] (BaseTest.java:254)- DebitAPI:  RequestBody{"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-wNmnxf3PbuDx7Rc6zE6t_D","CreditTransactionId":"QA_Test-bx3fZEoCjlWoLO6Rn1sP_C","Amount":0.0,"BetState":2,"OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8"}
+ INFO [main] (BaseTest.java:255)- DebitAPI:  ResponseBody{"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":2473,"Balance":9484.7,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 448 ms
+ INFO [main] (BaseTest.java:256)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9484.7}  ResponseTime 461 ms
+ INFO [main] (BaseTest.java:176)- 
 ERROR [main] (ReportingAllure.java:61)- DebitAPIValidateResponseUsingInvalidAmount Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="DebitAPIValidateResponseUsingInvalidAmount" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="3.232"/>
-  <testcase name="DebitAPIValidateResponseUsingInvalidAmount" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="2.719"/>
-  <testcase name="DebitAPIValidateResponseUsingInvalidAmount" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="2.362"/>
-  <testcase name="DebitAPIValidateResponseUsingInvalidAmount" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="2.573"/>
-  <testcase name="RollBackAPIValidateResponseWithInvalidToken" classname="testCases.IqSoft_API_6_RollBack_Negative_Test" time="2.396">
-    <failure message="The following asserts failed:&#10;	amountAfterRollBack: 9497.5 = amountAfterCredit: 9496.5 expected [9496.5] but found [9497.5]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-	amountAfterRollBack: 9497.5 = amountAfterCredit: 9496.5 expected [9496.5] but found [9497.5]
+  <testcase name="DebitAPIValidateResponseUsingInvalidAmount" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="2.494"/>
+  <testcase name="DebitAPIValidateResponseUsingInvalidAmount" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="2.448"/>
+  <testcase name="DebitAPIValidateResponseUsingInvalidAmount" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="2.287"/>
+  <testcase name="DebitAPIValidateResponseUsingInvalidAmount" classname="testCases.IqSoft_API_5_Debit_Negative_Test" time="2.337"/>
+  <testcase name="RollBackAPIValidateResponseWithInvalidToken" classname="testCases.IqSoft_API_6_RollBack_Negative_Test" time="2.323">
+    <failure message="The following asserts failed:&#10;	amountAfterRollBack: 9480.7 = amountAfterCredit: 9479.7 expected [9479.7] but found [9480.7]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	amountAfterRollBack: 9480.7 = amountAfterCredit: 9479.7 expected [9479.7] but found [9480.7]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseWithInvalidToken(IqSoft_API_6_RollBack_Negative_Test.java:67)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9497.5}  ResponseTime 445 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:33)- Balance Before Credit:9497.5
- INFO [main] (BaseTest.java:220)- https://iqs.dazzabet.com/api/endpoint/Credit
- INFO [main] (BaseTest.java:221)- 
- INFO [main] (BaseTest.java:222)- CreditAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-BhrMEf3MiJKDD2ipalJK_C","BetState":1,"Amount":1.0}
- INFO [main] (BaseTest.java:223)- 
- INFO [main] (BaseTest.java:224)- CreditAPI ResponseBody {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":2317,"Balance":9496.5,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 470 ms
- INFO [main] (BaseTest.java:225)- 
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9496.5}  ResponseTime 454 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:43)- Balance After Credit:9496.5
- INFO [main] (BaseTest.java:296)- https://iqs.dazzabet.com/api/endpoint/Rollback
- INFO [main] (BaseTest.java:297)- 
- INFO [main] (BaseTest.java:298)- RollBackAPI RequestBody {"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-BhrMEf3MiJKDD2ipalJK_C","TransactionId":"QA_Test-DrgUTZiEseJHUPuWZnSS_R","OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8Error"}
- INFO [main] (BaseTest.java:299)- 
- INFO [main] (BaseTest.java:300)- RollBackAPI ResponseBody {"Description":null,"ResponseCode":0}  ResponseTime 487 ms
- INFO [main] (BaseTest.java:301)- 
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9497.5}  ResponseTime 462 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:58)- Balance After RollBack:9497.5
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9480.7}  ResponseTime 442 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:33)- Balance Before Credit:9480.7
+ INFO [main] (BaseTest.java:212)- 
+ INFO [main] (BaseTest.java:213)- https://iqs.dazzabet.com/api/endpoint/Credit
+ INFO [main] (BaseTest.java:214)- CreditAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-x4FbqsH0M2GIelZcN4t6_C","BetState":1,"Amount":1.0}
+ INFO [main] (BaseTest.java:215)- CreditAPI:  ResponseBody{"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":2478,"Balance":9479.7,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 445 ms
+ INFO [main] (BaseTest.java:216)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9479.7}  ResponseTime 456 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:43)- Balance After Credit:9479.7
+ INFO [main] (BaseTest.java:284)- 
+ INFO [main] (BaseTest.java:285)- https://iqs.dazzabet.com/api/endpoint/Rollback
+ INFO [main] (BaseTest.java:286)- RollBackAPI:  RequestBody{"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-x4FbqsH0M2GIelZcN4t6_C","TransactionId":"QA_Test-RFzG7K3648M4ZCxeOwBU_R","OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8Error"}
+ INFO [main] (BaseTest.java:287)- RollBackAPI:  ResponseBody{"Description":null,"ResponseCode":0}  ResponseTime 445 ms
+ INFO [main] (BaseTest.java:288)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9480.7}  ResponseTime 432 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:58)- Balance After RollBack:9480.7
 ERROR [main] (ReportingAllure.java:61)- RollBackAPIValidateResponseWithInvalidToken Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="RollBackAPIValidateResponseUsingInvalidProductID" classname="testCases.IqSoft_API_6_RollBack_Negative_Test" time="2.8">
-    <failure message="The following asserts failed:&#10;	amountAfterRollBack : 9497.5 = amountAfterCredit: 9496.5 expected [9496.5] but found [9497.5]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-	amountAfterRollBack : 9497.5 = amountAfterCredit: 9496.5 expected [9496.5] but found [9497.5]
+  <testcase name="RollBackAPIValidateResponseUsingInvalidProductID" classname="testCases.IqSoft_API_6_RollBack_Negative_Test" time="2.232">
+    <failure message="The following asserts failed:&#10;	amountAfterRollBack : 9480.7 = amountAfterCredit: 9479.7 expected [9479.7] but found [9480.7]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	amountAfterRollBack : 9480.7 = amountAfterCredit: 9479.7 expected [9479.7] but found [9480.7]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingInvalidProductID(IqSoft_API_6_RollBack_Negative_Test.java:118)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9497.5}  ResponseTime 483 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:85)- Balance Before Credit:9497.5
- INFO [main] (BaseTest.java:220)- https://iqs.dazzabet.com/api/endpoint/Credit
- INFO [main] (BaseTest.java:221)- 
- INFO [main] (BaseTest.java:222)- CreditAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-UKYJfR24iCoTnBD0Jr0E_C","BetState":1,"Amount":1.0}
- INFO [main] (BaseTest.java:223)- 
- INFO [main] (BaseTest.java:224)- CreditAPI ResponseBody {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":2319,"Balance":9496.5,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 633 ms
- INFO [main] (BaseTest.java:225)- 
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9496.5}  ResponseTime 457 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:95)- Balance After Credit:9496.5
- INFO [main] (BaseTest.java:296)- https://iqs.dazzabet.com/api/endpoint/Rollback
- INFO [main] (BaseTest.java:297)- 
- INFO [main] (BaseTest.java:298)- RollBackAPI RequestBody {"UserName":"testuser","GameId":-10,"RollbackTransactionId":"QA_Test-UKYJfR24iCoTnBD0Jr0E_C","TransactionId":"QA_Test-lyhP2e1sKQTQyoePC7iW_R","OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8"}
- INFO [main] (BaseTest.java:299)- 
- INFO [main] (BaseTest.java:300)- RollBackAPI ResponseBody {"Description":null,"ResponseCode":0}  ResponseTime 511 ms
- INFO [main] (BaseTest.java:301)- 
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9497.5}  ResponseTime 659 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:110)- Balance After RollBack:9497.5
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9480.7}  ResponseTime 418 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:85)- Balance Before Credit:9480.7
+ INFO [main] (BaseTest.java:212)- 
+ INFO [main] (BaseTest.java:213)- https://iqs.dazzabet.com/api/endpoint/Credit
+ INFO [main] (BaseTest.java:214)- CreditAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-hDR2vx1EnY3D2w2opJ6a_C","BetState":1,"Amount":1.0}
+ INFO [main] (BaseTest.java:215)- CreditAPI:  ResponseBody{"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":2480,"Balance":9479.7,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 451 ms
+ INFO [main] (BaseTest.java:216)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9479.7}  ResponseTime 421 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:95)- Balance After Credit:9479.7
+ INFO [main] (BaseTest.java:284)- 
+ INFO [main] (BaseTest.java:285)- https://iqs.dazzabet.com/api/endpoint/Rollback
+ INFO [main] (BaseTest.java:286)- RollBackAPI:  RequestBody{"UserName":"testuser","GameId":-10,"RollbackTransactionId":"QA_Test-hDR2vx1EnY3D2w2opJ6a_C","TransactionId":"QA_Test-KrK8IRNHPkM1ax0Fko7Q_R","OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8"}
+ INFO [main] (BaseTest.java:287)- RollBackAPI:  ResponseBody{"Description":null,"ResponseCode":0}  ResponseTime 430 ms
+ INFO [main] (BaseTest.java:288)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9480.7}  ResponseTime 444 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:110)- Balance After RollBack:9480.7
 ERROR [main] (ReportingAllure.java:61)- RollBackAPIValidateResponseUsingInvalidProductID Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit" classname="testCases.IqSoft_API_6_RollBack_Negative_Test" time="1.491"/>
-  <testcase name="RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice" classname="testCases.IqSoft_API_6_RollBack_Negative_Test" time="4.466">
-    <failure message="The following asserts failed:&#10;	amountAfterRollBack2 : 9498.5 = amountAfterRollBack1: 9497.5 expected [9497.5] but found [9498.5]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-	amountAfterRollBack2 : 9498.5 = amountAfterRollBack1: 9497.5 expected [9497.5] but found [9498.5]
+  <testcase name="RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit" classname="testCases.IqSoft_API_6_RollBack_Negative_Test" time="1.438"/>
+  <testcase name="RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice" classname="testCases.IqSoft_API_6_RollBack_Negative_Test" time="3.478">
+    <failure message="The following asserts failed:&#10;	amountAfterRollBack2 : 9481.7 = amountAfterRollBack1: 9480.7 expected [9480.7] but found [9481.7]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	amountAfterRollBack2 : 9481.7 = amountAfterRollBack1: 9480.7 expected [9480.7] but found [9481.7]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice(IqSoft_API_6_RollBack_Negative_Test.java:218)
 </failure>
-    <system-out><![CDATA[ INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9497.5}  ResponseTime 437 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:173)- Balance Before Credit:9497.5
- INFO [main] (BaseTest.java:220)- https://iqs.dazzabet.com/api/endpoint/Credit
- INFO [main] (BaseTest.java:221)- 
- INFO [main] (BaseTest.java:222)- CreditAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-jBUZnj7qrBEOSxzAZyTs_C","BetState":1,"Amount":1.0}
- INFO [main] (BaseTest.java:223)- 
- INFO [main] (BaseTest.java:224)- CreditAPI ResponseBody {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":2321,"Balance":9496.5,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 570 ms
- INFO [main] (BaseTest.java:225)- 
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9496.5}  ResponseTime 711 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:183)- Balance After Credit:9496.5
- INFO [main] (BaseTest.java:296)- https://iqs.dazzabet.com/api/endpoint/Rollback
- INFO [main] (BaseTest.java:297)- 
- INFO [main] (BaseTest.java:298)- RollBackAPI RequestBody {"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-jBUZnj7qrBEOSxzAZyTs_C","TransactionId":"QA_Test-CqxakEAvZ08vWjetdCz1_R","OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8"}
- INFO [main] (BaseTest.java:299)- 
- INFO [main] (BaseTest.java:300)- RollBackAPI ResponseBody {"Description":null,"ResponseCode":0}  ResponseTime 687 ms
- INFO [main] (BaseTest.java:301)- 
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9497.5}  ResponseTime 684 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:193)- Balance After RollBack:9497.5
- INFO [main] (BaseTest.java:296)- https://iqs.dazzabet.com/api/endpoint/Rollback
- INFO [main] (BaseTest.java:297)- 
- INFO [main] (BaseTest.java:298)- RollBackAPI RequestBody {"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-jBUZnj7qrBEOSxzAZyTs_C","TransactionId":"QA_Test-0GCxDdaJA4cp8423PG1W_R","OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8"}
- INFO [main] (BaseTest.java:299)- 
- INFO [main] (BaseTest.java:300)- RollBackAPI ResponseBody {"Description":null,"ResponseCode":0}  ResponseTime 640 ms
- INFO [main] (BaseTest.java:301)- 
- INFO [main] (BaseTest.java:179)- https://iqs.dazzabet.com/api/endpoint/GetBalance
- INFO [main] (BaseTest.java:180)- 
- INFO [main] (BaseTest.java:181)- GetBalanceAPI RequestBody {"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
- INFO [main] (BaseTest.java:182)- 
- INFO [main] (BaseTest.java:183)- GetBalanceAPI ResponseBody {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9498.5}  ResponseTime 626 ms
- INFO [main] (BaseTest.java:184)- 
- INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:208)- Balance After RollBack:9498.5
+    <system-out><![CDATA[ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9480.7}  ResponseTime 442 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:173)- Balance Before Credit:9480.7
+ INFO [main] (BaseTest.java:212)- 
+ INFO [main] (BaseTest.java:213)- https://iqs.dazzabet.com/api/endpoint/Credit
+ INFO [main] (BaseTest.java:214)- CreditAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-ZKSV8zvkn3Q39TS7vWyz_C","BetState":1,"Amount":1.0}
+ INFO [main] (BaseTest.java:215)- CreditAPI:  ResponseBody{"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":2482,"Balance":9479.7,"ClientId":"dazzabet10130","CurrencyId":"TND"}]}  ResponseTime 635 ms
+ INFO [main] (BaseTest.java:216)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9479.7}  ResponseTime 466 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:183)- Balance After Credit:9479.7
+ INFO [main] (BaseTest.java:284)- 
+ INFO [main] (BaseTest.java:285)- https://iqs.dazzabet.com/api/endpoint/Rollback
+ INFO [main] (BaseTest.java:286)- RollBackAPI:  RequestBody{"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-ZKSV8zvkn3Q39TS7vWyz_C","TransactionId":"QA_Test-9lPqyQ314GMx1QHvZjEe_R","OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8"}
+ INFO [main] (BaseTest.java:287)- RollBackAPI:  ResponseBody{"Description":null,"ResponseCode":0}  ResponseTime 464 ms
+ INFO [main] (BaseTest.java:288)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9480.7}  ResponseTime 448 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:193)- Balance After RollBack:9480.7
+ INFO [main] (BaseTest.java:284)- 
+ INFO [main] (BaseTest.java:285)- https://iqs.dazzabet.com/api/endpoint/Rollback
+ INFO [main] (BaseTest.java:286)- RollBackAPI:  RequestBody{"UserName":"testuser","GameId":54351,"RollbackTransactionId":"QA_Test-ZKSV8zvkn3Q39TS7vWyz_C","TransactionId":"QA_Test-RWqFHbVKLECo0uYEVL0T_R","OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8"}
+ INFO [main] (BaseTest.java:287)- RollBackAPI:  ResponseBody{"Description":null,"ResponseCode":0}  ResponseTime 438 ms
+ INFO [main] (BaseTest.java:288)- 
+ INFO [main] (BaseTest.java:172)- 
+ INFO [main] (BaseTest.java:173)- https://iqs.dazzabet.com/api/endpoint/GetBalance
+ INFO [main] (BaseTest.java:174)- GetBalanceAPI:  RequestBody{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND"}
+ INFO [main] (BaseTest.java:175)- GetBalanceAPI:  ResponseBody{"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":9481.7}  ResponseTime 456 ms
+ INFO [main] (BaseTest.java:176)- 
+ INFO [main] (IqSoft_API_6_RollBack_Negative_Test.java:208)- Balance After RollBack:9481.7
 ERROR [main] (ReportingAllure.java:61)- RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice Test failed
 ]]></system-out>
   </testcase>
-  <testcase name="RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice" classname="testCases.IqSoft_API_6_RollBack_Negative_Test" time="5.546"/>
+  <testcase name="RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice" classname="testCases.IqSoft_API_6_RollBack_Negative_Test" time="4.387"/>
 </testsuite>
