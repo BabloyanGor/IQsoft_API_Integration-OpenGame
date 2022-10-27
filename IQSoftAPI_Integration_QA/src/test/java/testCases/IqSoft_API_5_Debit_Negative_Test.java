@@ -283,7 +283,6 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
     @DataProvider(name = "invalidAmount")
     Object[][] invalidAmount() {
         Double[][] arr = {
-                {0.0},
                 {-1.0},
                 {-1.5},
                 {-1.05},

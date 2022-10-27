@@ -190,7 +190,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(responseGetBalanceAfterRollBack1.getBody());
         double amountAfterRollBack1 = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
-        logger.info("Balance After RollBack:" + amountAfterRollBack1);
+        logger.info("Balance After RollBack_1:" + amountAfterRollBack1);
 
         HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, creditTransactionID, rollBackTransactionID2, AuthorizationTokenVar, 4);
         Unirest.shutdown();
@@ -205,7 +205,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(responseGetBalanceAfterRollBack2.getBody());
         double amountAfterRollBack2 = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
-        logger.info("Balance After RollBack:" + amountAfterRollBack2);
+        logger.info("Balance After RollBack_2::" + amountAfterRollBack2);
 
         softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
 
@@ -233,7 +233,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(responseGetBalanceBeforeCredit1.getBody());
         double amountBeforeCredit1 = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
-        logger.info("Balance Before First Credit :" + amountBeforeCredit1);
+        logger.info("Balance Before Credit_1:" + amountBeforeCredit1);
 
         creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
                 creditTransactionID1, betAmountCreditConfig, 1);
@@ -243,7 +243,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit1.getBody());
         double amountAfterCredit1 = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
-        logger.info("Balance After First Credit :" + amountAfterCredit1);
+        logger.info("Balance After Credit_1:" + amountAfterCredit1);
 
         creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
                 creditTransactionID2, betAmountCreditConfig, 1);
@@ -253,7 +253,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit2.getBody());
         double amountAfterCredit2 = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
-        logger.info("Balance After First Credit :" + amountAfterCredit2);
+        logger.info("Balance After Credit_2:" + amountAfterCredit2);
 
         rollBackAPI(userNameConfig, gameIdConfig, creditTransactionID1, rollBackTransactionID, AuthorizationTokenVar, 4);
         Unirest.shutdown();
@@ -262,7 +262,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(responseGetBalanceAfterRollBack1.getBody());
         double amountAfterRollBack1 = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
-        logger.info("Balance After RollBack:" + amountAfterRollBack1);
+        logger.info("Balance After RollBack_1:" + amountAfterRollBack1);
 
         HttpResponse<String> responseRollBack = rollBackAPI(userNameConfig, gameIdConfig, creditTransactionID2, rollBackTransactionID, AuthorizationTokenVar, 4);
         Unirest.shutdown();
@@ -277,7 +277,7 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
         jsonObjectBody = new JSONObject(responseGetBalanceAfterRollBack2.getBody());
         double amountAfterRollBack2 = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
-        logger.info("Balance After RollBack:" + amountAfterRollBack2);
+        logger.info("Balance After RollBack_2:" + amountAfterRollBack2);
 
         softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
 

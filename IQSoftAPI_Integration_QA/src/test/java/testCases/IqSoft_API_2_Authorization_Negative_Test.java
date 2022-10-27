@@ -65,7 +65,7 @@ public class IqSoft_API_2_Authorization_Negative_Test extends BaseTest {
 
         softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getResponseCode(), 22,
                 "ResponseCode: " + iqSoft_02_apisVariables_authorization_response.getResponseCode());
-        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getDescription(), "error login",
+        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getDescription(), "ClientNotFound",
                 "Error Description: " + iqSoft_02_apisVariables_authorization_response.getDescription());
 
         softAssert.assertAll();
@@ -77,7 +77,7 @@ public class IqSoft_API_2_Authorization_Negative_Test extends BaseTest {
     public void AuthorizationAPIValidateResponseWithInvalidProductID() throws UnirestException, IOException {
         SoftAssert softAssert = new SoftAssert();
 
-        HttpResponse<String> response = authorizationAPI(sessionTokenConfig, gameIdConfig);
+        HttpResponse<String> response = authorizationAPI(sessionTokenConfig, -10);
         Unirest.shutdown();
         statusCod = response.getStatus();
         logger.info("Authorization API Response Status cod : " + statusCod);

@@ -1,1 +1,0 @@
-{"ClientId":"dazzabet10130","CurrencyId":"TND","GameId":54351,"TransactionId":"QA_Test-FxiNiS77WMRosVIKslVN_D","CreditTransactionId":"QA_Test-tjQsywGBAFC0j0X3Qdo1_C","Amount":5.0,"BetState":2,"OperationTypeId":4,"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8"}

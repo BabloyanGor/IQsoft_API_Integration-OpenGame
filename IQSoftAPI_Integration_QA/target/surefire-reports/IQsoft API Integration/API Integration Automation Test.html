@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>API Integration Automation Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>37/18/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>37/17/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 17 17:10:48 AMT 2022</td>
+<td>Started on:</td><td>Wed Oct 26 12:53:01 AMT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>87 seconds (87529 ms)</td>
+<tr><td>Total time:</td><td>73 seconds (73362 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -80,14 +80,14 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [50] but found [0],
 	Error Description: null expected [CanNotConnectCreditAndDebit] but found [null],
-	amountAfterDebit: 9485.7 = amountBeforeDebit: 9480.7 expected [9480.7] but found [9485.7]
+	amountAfterDebit: 9493.7 = amountBeforeDebit: 9488.7 expected [9488.7] but found [9493.7]
 	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidCreditTransactionID(IqSoft_API_5_Debit_Negative_Test.java:230)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1837858473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace1837858473'><pre>java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [50] but found [0],
 	Error Description: null expected [CanNotConnectCreditAndDebit] but found [null],
-	amountAfterDebit: 9485.7 = amountBeforeDebit: 9480.7 expected [9480.7] but found [9485.7]
+	amountAfterDebit: 9493.7 = amountBeforeDebit: 9488.7 expected [9488.7] but found [9493.7]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidCreditTransactionID(IqSoft_API_5_Debit_Negative_Test.java:230)
@@ -125,6 +125,52 @@ function toggleAllBoxes() {
 </pre></div></td>
 <td>1</td>
 <td>testCases.IqSoft_API_5_Debit_Negative_Test@72035809</td></tr>
+<tr>
+<td title='testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseWithInvalidToken()'><b>RollBackAPIValidateResponseWithInvalidToken</b><br>Test class: testCases.IqSoft_API_6_RollBack_Negative_Test</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	amountAfterRollBack: 9489.7 = amountAfterCredit: 9488.7 expected [9488.7] but found [9489.7]
+	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseWithInvalidToken(IqSoft_API_6_RollBack_Negative_Test.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace332357514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace332357514'><pre>java.lang.AssertionError: The following asserts failed:
+	amountAfterRollBack: 9489.7 = amountAfterCredit: 9488.7 expected [9488.7] but found [9489.7]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseWithInvalidToken(IqSoft_API_6_RollBack_Negative_Test.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>2</td>
+<td>testCases.IqSoft_API_6_RollBack_Negative_Test@909217e</td></tr>
 <tr>
 <td title='testCases.IqSoft_API_1_OpenGame_Negative_Test.OpenGameAPIValidateResponseWithExpiredToken()'><b>OpenGameAPIValidateResponseWithExpiredToken</b><br>Test class: testCases.IqSoft_API_1_OpenGame_Negative_Test</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
@@ -313,21 +359,21 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </pre></div></td>
-<td>1</td>
+<td>0</td>
 <td>testCases.IqSoft_API_2_Authorization_Negative_Test@5f049ea1</td></tr>
 <tr>
 <td title='testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithExpiredToken()'><b>CreditAPIValidateResponseWithExpiredToken</b><br>Test class: testCases.IqSoft_API_4_Credit_Negative_Test</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [29] but found [0],
 	Error Description: null expected [SessionExpired] but found [null],
-	amountBeforeCredit = amountAfterCredit: 9481.7 = 9480.7 expected [9480.7] but found [9481.7]
+	amountBeforeCredit = amountAfterCredit: 9489.7 = 9488.7 expected [9488.7] but found [9489.7]
 	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithExpiredToken(IqSoft_API_4_Credit_Negative_Test.java:60)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1974918491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace1974918491'><pre>java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [29] but found [0],
 	Error Description: null expected [SessionExpired] but found [null],
-	amountBeforeCredit = amountAfterCredit: 9481.7 = 9480.7 expected [9480.7] but found [9481.7]
+	amountBeforeCredit = amountAfterCredit: 9489.7 = 9488.7 expected [9488.7] but found [9489.7]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithExpiredToken(IqSoft_API_4_Credit_Negative_Test.java:60)
@@ -368,107 +414,15 @@ function toggleAllBoxes() {
 <tr>
 <td title='testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingInvalidProductID()'><b>RollBackAPIValidateResponseUsingInvalidProductID</b><br>Test class: testCases.IqSoft_API_6_RollBack_Negative_Test</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
-	amountAfterRollBack : 9480.7 = amountAfterCredit: 9479.7 expected [9479.7] but found [9480.7]
+	amountAfterRollBack : 9489.7 = amountAfterCredit: 9488.7 expected [9488.7] but found [9489.7]
 	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingInvalidProductID(IqSoft_API_6_RollBack_Negative_Test.java:118)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace290991542", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace290991542'><pre>java.lang.AssertionError: The following asserts failed:
-	amountAfterRollBack : 9480.7 = amountAfterCredit: 9479.7 expected [9479.7] but found [9480.7]
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace403740863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace403740863'><pre>java.lang.AssertionError: The following asserts failed:
+	amountAfterRollBack : 9489.7 = amountAfterCredit: 9488.7 expected [9488.7] but found [9489.7]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingInvalidProductID(IqSoft_API_6_RollBack_Negative_Test.java:118)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</pre></div></td>
-<td>2</td>
-<td>testCases.IqSoft_API_6_RollBack_Negative_Test@909217e</td></tr>
-<tr>
-<td title='testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice()'><b>RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice</b><br>Test class: testCases.IqSoft_API_6_RollBack_Negative_Test</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	amountAfterRollBack2 : 9481.7 = amountAfterRollBack1: 9480.7 expected [9480.7] but found [9481.7]
-	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice(IqSoft_API_6_RollBack_Negative_Test.java:218)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace722844186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace722844186'><pre>java.lang.AssertionError: The following asserts failed:
-	amountAfterRollBack2 : 9481.7 = amountAfterRollBack1: 9480.7 expected [9480.7] but found [9481.7]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice(IqSoft_API_6_RollBack_Negative_Test.java:218)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</pre></div></td>
-<td>3</td>
-<td>testCases.IqSoft_API_6_RollBack_Negative_Test@909217e</td></tr>
-<tr>
-<td title='testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseWithInvalidToken()'><b>RollBackAPIValidateResponseWithInvalidToken</b><br>Test class: testCases.IqSoft_API_6_RollBack_Negative_Test</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	amountAfterRollBack: 9480.7 = amountAfterCredit: 9479.7 expected [9479.7] but found [9480.7]
-	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseWithInvalidToken(IqSoft_API_6_RollBack_Negative_Test.java:67)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1663786105", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1663786105'><pre>java.lang.AssertionError: The following asserts failed:
-	amountAfterRollBack: 9480.7 = amountAfterCredit: 9479.7 expected [9479.7] but found [9480.7]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseWithInvalidToken(IqSoft_API_6_RollBack_Negative_Test.java:67)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -649,7 +603,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </pre></div></td>
-<td>3</td>
+<td>1</td>
 <td>testCases.IqSoft_API_4_Credit_Negative_Test@5afa3c9</td></tr>
 <tr>
 <td title='testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidProductID()'><b>DebitAPIValidateResponseUsingInvalidProductID</b><br>Test class: testCases.IqSoft_API_5_Debit_Negative_Test</td>
@@ -695,7 +649,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </pre></div></td>
-<td>3</td>
+<td>2</td>
 <td>testCases.IqSoft_API_5_Debit_Negative_Test@72035809</td></tr>
 <tr>
 <td title='testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithInvalidProductID()'><b>AuthorizationAPIValidateResponseWithInvalidProductID</b><br>Test class: testCases.IqSoft_API_2_Authorization_Negative_Test</td>
@@ -746,12 +700,58 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>testCases.IqSoft_API_2_Authorization_Negative_Test@5f049ea1</td></tr>
 <tr>
+<td title='testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice()'><b>RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice</b><br>Test class: testCases.IqSoft_API_6_RollBack_Negative_Test</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	amountAfterRollBack2 : 9490.7 = amountAfterRollBack1: 9489.7 expected [9489.7] but found [9490.7]
+	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice(IqSoft_API_6_RollBack_Negative_Test.java:218)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1804179825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1804179825'><pre>java.lang.AssertionError: The following asserts failed:
+	amountAfterRollBack2 : 9490.7 = amountAfterRollBack1: 9489.7 expected [9489.7] but found [9490.7]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice(IqSoft_API_6_RollBack_Negative_Test.java:218)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>3</td>
+<td>testCases.IqSoft_API_6_RollBack_Negative_Test@909217e</td></tr>
+<tr>
 <td title='testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithOtherCurrencyID()'><b>GetBalanceAPIValidateResponseWithOtherCurrencyID</b><br>Test class: testCases.IqSoft_API_3_GetBalance_Negative_Test</td>
-<td><div><pre>java.lang.AssertionError: balanceUSD VS balanceEUR did not expect [9481.7] but found [9481.7]
+<td><div><pre>java.lang.AssertionError: balanceUSD VS balanceEUR did not expect [9489.7] but found [9489.7]
 	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithOtherCurrencyID(IqSoft_API_3_GetBalance_Negative_Test.java:113)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2095602418", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2095602418'><pre>java.lang.AssertionError: balanceUSD VS balanceEUR did not expect [9481.7] but found [9481.7]
+<div class='stack-trace' id='stack-trace2095602418'><pre>java.lang.AssertionError: balanceUSD VS balanceEUR did not expect [9489.7] but found [9489.7]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failEquals(Assert.java:1417)
 	at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
@@ -789,56 +789,8 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </pre></div></td>
-<td>1</td>
+<td>0</td>
 <td>testCases.IqSoft_API_3_GetBalance_Negative_Test@72cc7e6f</td></tr>
-<tr>
-<td title='testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount()'><b>DebitAPIValidateResponseUsingInvalidAmount</b><br>Test class: testCases.IqSoft_API_5_Debit_Negative_Test<br>Parameters: 0.0</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	ResponseCode: 0 expected [39] but found [0],
-	Error Description: null expected [WrongOperationAmount] but found [null]
-	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount(IqSoft_API_5_Debit_Negative_Test.java:279)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace857825275", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace857825275'><pre>java.lang.AssertionError: The following asserts failed:
-	ResponseCode: 0 expected [39] but found [0],
-	Error Description: null expected [WrongOperationAmount] but found [null]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount(IqSoft_API_5_Debit_Negative_Test.java:279)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</pre></div></td>
-<td>2</td>
-<td>testCases.IqSoft_API_5_Debit_Negative_Test@72035809</td></tr>
 <tr>
 <td title='testCases.IqSoft_API_1_OpenGame_Negative_Test.OpenGameAPIValidateResponseWithInvalidPartnerID()'><b>OpenGameAPIValidateResponseWithInvalidPartnerID</b><br>Test class: testCases.IqSoft_API_1_OpenGame_Negative_Test</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
@@ -965,11 +917,6 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>testCases.IqSoft_API_6_RollBackDebit_Positive_Test@3f191845</td></tr>
 <tr>
-<td title='testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit()'><b>RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit</b><br>Test class: testCases.IqSoft_API_6_RollBack_Negative_Test</td>
-<td></td>
-<td>1</td>
-<td>testCases.IqSoft_API_6_RollBack_Negative_Test@909217e</td></tr>
-<tr>
 <td title='testCases.IqSoft_API_5_Debit_Positive_Test.DebitAPIValidatePositiveResponse()'><b>DebitAPIValidatePositiveResponse</b><br>Test class: testCases.IqSoft_API_5_Debit_Positive_Test</td>
 <td></td>
 <td>0</td>
@@ -989,11 +936,6 @@ function toggleAllBoxes() {
 <td></td>
 <td>1</td>
 <td>testCases.IqSoft_API_4_Credit_Negative_Test@5afa3c9</td></tr>
-<tr>
-<td title='testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount()'><b>DebitAPIValidateResponseUsingInvalidAmount</b><br>Test class: testCases.IqSoft_API_5_Debit_Negative_Test<br>Parameters: -1.005</td>
-<td></td>
-<td>2</td>
-<td>testCases.IqSoft_API_5_Debit_Negative_Test@72035809</td></tr>
 <tr>
 <td title='testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test.RollBackAPIValidateStatusCod()'><b>RollBackAPIValidateStatusCod</b><br>Test class: testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test</td>
 <td></td>
@@ -1015,11 +957,6 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test@2d901eb0</td></tr>
 <tr>
-<td title='testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount()'><b>DebitAPIValidateResponseUsingInvalidAmount</b><br>Test class: testCases.IqSoft_API_5_Debit_Negative_Test<br>Parameters: -1.05</td>
-<td></td>
-<td>2</td>
-<td>testCases.IqSoft_API_5_Debit_Negative_Test@72035809</td></tr>
-<tr>
 <td title='testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidAmount()'><b>CreditAPIValidateResponseWithInvalidAmount</b><br>Test class: testCases.IqSoft_API_4_Credit_Negative_Test<br>Parameters: -1.5</td>
 <td></td>
 <td>1</td>
@@ -1027,7 +964,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseWithInvalidToken()'><b>DebitAPIValidateResponseWithInvalidToken</b><br>Test class: testCases.IqSoft_API_5_Debit_Negative_Test</td>
 <td></td>
-<td>3</td>
+<td>2</td>
 <td>testCases.IqSoft_API_5_Debit_Negative_Test@72035809</td></tr>
 <tr>
 <td title='testCases.IqSoft_API_5_Debit_Positive_Test.DebitAPIValidateStatusCod()'><b>DebitAPIValidateStatusCod</b><br>Test class: testCases.IqSoft_API_5_Debit_Positive_Test</td>
@@ -1047,7 +984,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseUsingTransactionIDTwice()'><b>CreditAPIValidateResponseUsingTransactionIDTwice</b><br>Test class: testCases.IqSoft_API_4_Credit_Negative_Test</td>
 <td></td>
-<td>3</td>
+<td>2</td>
 <td>testCases.IqSoft_API_4_Credit_Negative_Test@5afa3c9</td></tr>
 <tr>
 <td title='testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test.RollBackAPIValidatePositiveResponseBalanceCorrection()'><b>RollBackAPIValidatePositiveResponseBalanceCorrection</b><br>Test class: testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test</td>
@@ -1055,15 +992,15 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test@2d901eb0</td></tr>
 <tr>
+<td title='testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice()'><b>RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice</b><br>Test class: testCases.IqSoft_API_6_RollBack_Negative_Test</td>
+<td></td>
+<td>4</td>
+<td>testCases.IqSoft_API_6_RollBack_Negative_Test@909217e</td></tr>
+<tr>
 <td title='testCases.IqSoft_API_3_GetBalance_Positive_Test.GetBalanceAPIValidateStatusCod()'><b>GetBalanceAPIValidateStatusCod</b><br>Test class: testCases.IqSoft_API_3_GetBalance_Positive_Test</td>
 <td></td>
 <td>0</td>
 <td>testCases.IqSoft_API_3_GetBalance_Positive_Test@d737b89</td></tr>
-<tr>
-<td title='testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount()'><b>DebitAPIValidateResponseUsingInvalidAmount</b><br>Test class: testCases.IqSoft_API_5_Debit_Negative_Test<br>Parameters: -1.0</td>
-<td></td>
-<td>2</td>
-<td>testCases.IqSoft_API_5_Debit_Negative_Test@72035809</td></tr>
 <tr>
 <td title='testCases.IqSoft_API_4_Credit_Positive_Test.CreditAPIValidatePositiveResponse()'><b>CreditAPIValidatePositiveResponse</b><br>Test class: testCases.IqSoft_API_4_Credit_Positive_Test</td>
 <td></td>
@@ -1075,7 +1012,12 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>testCases.IqSoft_API_3_GetBalance_Positive_Test@d737b89</td></tr>
 <tr>
-<td title='testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount()'><b>DebitAPIValidateResponseUsingInvalidAmount</b><br>Test class: testCases.IqSoft_API_5_Debit_Negative_Test<br>Parameters: -1.5</td>
+<td title='testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit()'><b>RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit</b><br>Test class: testCases.IqSoft_API_6_RollBack_Negative_Test</td>
+<td></td>
+<td>1</td>
+<td>testCases.IqSoft_API_6_RollBack_Negative_Test@909217e</td></tr>
+<tr>
+<td title='testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount()'><b>DebitAPIValidateResponseUsingInvalidAmount</b><br>Test class: testCases.IqSoft_API_5_Debit_Negative_Test<br>Parameters: -1.005</td>
 <td></td>
 <td>2</td>
 <td>testCases.IqSoft_API_5_Debit_Negative_Test@72035809</td></tr>
@@ -1090,10 +1032,20 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test@2d901eb0</td></tr>
 <tr>
+<td title='testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount()'><b>DebitAPIValidateResponseUsingInvalidAmount</b><br>Test class: testCases.IqSoft_API_5_Debit_Negative_Test<br>Parameters: -1.0</td>
+<td></td>
+<td>2</td>
+<td>testCases.IqSoft_API_5_Debit_Negative_Test@72035809</td></tr>
+<tr>
 <td title='testCases.IqSoft_API_4_Credit_Positive_Test.CreditAPIValidateStatusCod()'><b>CreditAPIValidateStatusCod</b><br>Test class: testCases.IqSoft_API_4_Credit_Positive_Test</td>
 <td></td>
 <td>0</td>
 <td>testCases.IqSoft_API_4_Credit_Positive_Test@8519cb4</td></tr>
+<tr>
+<td title='testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount()'><b>DebitAPIValidateResponseUsingInvalidAmount</b><br>Test class: testCases.IqSoft_API_5_Debit_Negative_Test<br>Parameters: -1.05</td>
+<td></td>
+<td>2</td>
+<td>testCases.IqSoft_API_5_Debit_Negative_Test@72035809</td></tr>
 <tr>
 <td title='testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test.RollBackAPIValidatePositiveResponseBalanceCorrection()'><b>RollBackAPIValidatePositiveResponseBalanceCorrection</b><br>Test class: testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test</td>
 <td></td>
@@ -1105,10 +1057,10 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>testCases.IqSoft_API_6_RollBackDebit_Positive_Test@3f191845</td></tr>
 <tr>
-<td title='testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice()'><b>RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice</b><br>Test class: testCases.IqSoft_API_6_RollBack_Negative_Test</td>
+<td title='testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount()'><b>DebitAPIValidateResponseUsingInvalidAmount</b><br>Test class: testCases.IqSoft_API_5_Debit_Negative_Test<br>Parameters: -1.5</td>
 <td></td>
-<td>4</td>
-<td>testCases.IqSoft_API_6_RollBack_Negative_Test@909217e</td></tr>
+<td>2</td>
+<td>testCases.IqSoft_API_5_Debit_Negative_Test@72035809</td></tr>
 <tr>
 <td title='testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithInvalidToken()'><b>GetBalanceAPIValidateResponseWithInvalidToken</b><br>Test class: testCases.IqSoft_API_3_GetBalance_Negative_Test</td>
 <td></td>
