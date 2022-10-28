@@ -88,6 +88,25 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getCurrencyId().length(), 3,
                 "CurrencyIdLength =" + iqSoft_04_apiVariables_credit_response.getCurrencyId().length());
 
+        boolean balanceHigherOREqualZero = iqSoft_03_apiVariables_getBalance_response.getAvailableBalance() >= 0;
+        softAssert.assertEquals(balanceHigherOREqualZero, true);
+        softAssert.assertNotEquals(iqSoft_03_apiVariables_getBalance_response.getAvailableBalance(), null);
+
+        String balance = String.valueOf(iqSoft_04_apiVariables_credit_response.getBalance());
+        String balanceAfterSplit=null;
+        try {
+            balanceAfterSplit = balance.split("\\.")[1];
+        }
+        catch (Exception e){
+
+        }
+        if (balanceAfterSplit != null && balanceAfterSplit.length()>2){
+            softAssert.assertTrue(false, "Balance after . has more then 2 symbols");
+        }
+        else {
+            softAssert.assertTrue(true);
+        }
+
         softAssert.assertAll();
     }
 

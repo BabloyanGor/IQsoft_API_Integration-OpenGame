@@ -1,0 +1,230 @@
+{
+  "uid" : "9da32e540009fb47",
+  "name" : "DebitAPIValidateResponseUsingTransactionIDTwice",
+  "fullName" : "testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingTransactionIDTwice",
+  "historyId" : "b2bb3b2771c365bed47f382ba1e91e65",
+  "time" : {
+    "start" : 1666984255024,
+    "stop" : 1666984257155,
+    "duration" : 2131
+  },
+  "description" : "Verify Debit API_s response using same DebitTransactionID twice",
+  "descriptionHtml" : "<p>Verify Debit API_s response using same DebitTransactionID twice</p>\n",
+  "status" : "failed",
+  "statusMessage" : "The following asserts failed:\n\tResponseCode: 21 expected [0] but found [21],\n\tError Description: Transaction is already processed expected [null] but found [Transaction is already processed]",
+  "statusTrace" : "java.lang.AssertionError: The following asserts failed:\n\tResponseCode: 21 expected [0] but found [21],\n\tError Description: Transaction is already processed expected [null] but found [Transaction is already processed]\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)\r\n\tat testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingTransactionIDTwice(IqSoft_API_5_Debit_Negative_Test.java:192)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)\r\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\r\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\r\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\r\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:806)\r\n\tat org.testng.TestRunner.run(TestRunner.java:601)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:433)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:330)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1176)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1099)\r\n\tat org.testng.TestNG.run(TestNG.java:1067)\r\n\tat com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)\r\n\tat com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1666984239704,
+      "stop" : 1666984239738,
+      "duration" : 34
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "Verify Debit API_s response using same DebitTransactionID twice",
+    "status" : "failed",
+    "statusMessage" : "The following asserts failed:\n\tResponseCode: 21 expected [0] but found [21],\n\tError Description: Transaction is already processed expected [null] but found [Transaction is already processed]",
+    "statusTrace" : "java.lang.AssertionError: The following asserts failed:\n\tResponseCode: 21 expected [0] but found [21],\n\tError Description: Transaction is already processed expected [null] but found [Transaction is already processed]\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)\r\n\tat testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingTransactionIDTwice(IqSoft_API_5_Debit_Negative_Test.java:192)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)\r\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\r\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\r\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\r\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:806)\r\n\tat org.testng.TestRunner.run(TestRunner.java:601)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:433)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:330)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1176)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1099)\r\n\tat org.testng.TestNG.run(TestNG.java:1067)\r\n\tat com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)\r\n\tat com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)\r\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "52064aca51c9ad6d",
+      "name" : "GetBalanceAPI:  Url:  https://gobet.tn/iapi/iq/GetBalance        RequestBody",
+      "source" : "52064aca51c9ad6d.txt",
+      "type" : "text/plain",
+      "size" : 50
+    }, {
+      "uid" : "24be24b397c9186f",
+      "name" : "GetBalanceAPI:  ResponseTime  167ms        ResponseBody",
+      "source" : "24be24b397c9186f.txt",
+      "type" : "text/plain",
+      "size" : 83
+    }, {
+      "uid" : "26f453031519fbb5",
+      "name" : "CreditAPI:  Url:  https://gobet.tn/iapi/iq/Credit        RequestBody",
+      "source" : "26f453031519fbb5.txt",
+      "type" : "text/plain",
+      "size" : 160
+    }, {
+      "uid" : "a757bc69962220dc",
+      "name" : "CreditAPI:  ResponseTime  189ms        ResponseBody",
+      "source" : "a757bc69962220dc.txt",
+      "type" : "text/plain",
+      "size" : 218
+    }, {
+      "uid" : "3e94b6487f9ef5e7",
+      "name" : "GetBalanceAPI:  Url:  https://gobet.tn/iapi/iq/GetBalance        RequestBody",
+      "source" : "3e94b6487f9ef5e7.txt",
+      "type" : "text/plain",
+      "size" : 50
+    }, {
+      "uid" : "29e8d25af300084a",
+      "name" : "GetBalanceAPI:  ResponseTime  172ms        ResponseBody",
+      "source" : "29e8d25af300084a.txt",
+      "type" : "text/plain",
+      "size" : 83
+    }, {
+      "uid" : "d7098dcc1207c107",
+      "name" : "CreditAPI:  Url:  https://gobet.tn/iapi/iq/Credit        RequestBody",
+      "source" : "d7098dcc1207c107.txt",
+      "type" : "text/plain",
+      "size" : 160
+    }, {
+      "uid" : "5beae68fb6eb67b",
+      "name" : "CreditAPI:  ResponseTime  183ms        ResponseBody",
+      "source" : "5beae68fb6eb67b.txt",
+      "type" : "text/plain",
+      "size" : 218
+    }, {
+      "uid" : "1985bfbabbb57548",
+      "name" : "GetBalanceAPI:  Url:  https://gobet.tn/iapi/iq/GetBalance        RequestBody",
+      "source" : "1985bfbabbb57548.txt",
+      "type" : "text/plain",
+      "size" : 50
+    }, {
+      "uid" : "44c494bf4345c7dd",
+      "name" : "GetBalanceAPI:  ResponseTime  229ms        ResponseBody",
+      "source" : "44c494bf4345c7dd.txt",
+      "type" : "text/plain",
+      "size" : 83
+    }, {
+      "uid" : "b92f11c0b16e1846",
+      "name" : "DebitAPI  Url:  https://gobet.tn/iapi/iq/Debit        RequestBody",
+      "source" : "b92f11c0b16e1846.txt",
+      "type" : "text/plain",
+      "size" : 232
+    }, {
+      "uid" : "7a8f574309ca6bed",
+      "name" : "DebitAPI    ResponseTime  156ms        ResponseBody",
+      "source" : "7a8f574309ca6bed.txt",
+      "type" : "text/plain",
+      "size" : 218
+    }, {
+      "uid" : "816c0b71109ba4de",
+      "name" : "GetBalanceAPI:  Url:  https://gobet.tn/iapi/iq/GetBalance        RequestBody",
+      "source" : "816c0b71109ba4de.txt",
+      "type" : "text/plain",
+      "size" : 50
+    }, {
+      "uid" : "c99e1876bd817a01",
+      "name" : "GetBalanceAPI:  ResponseTime  211ms        ResponseBody",
+      "source" : "c99e1876bd817a01.txt",
+      "type" : "text/plain",
+      "size" : 83
+    }, {
+      "uid" : "2fe2f98de5bf8141",
+      "name" : "DebitAPI  Url:  https://gobet.tn/iapi/iq/Debit        RequestBody",
+      "source" : "2fe2f98de5bf8141.txt",
+      "type" : "text/plain",
+      "size" : 232
+    }, {
+      "uid" : "6d7666b7290b8077",
+      "name" : "DebitAPI    ResponseTime  193ms        ResponseBody",
+      "source" : "6d7666b7290b8077.txt",
+      "type" : "text/plain",
+      "size" : 68
+    }, {
+      "uid" : "a590dbec9a00af36",
+      "name" : "GetBalanceAPI:  Url:  https://gobet.tn/iapi/iq/GetBalance        RequestBody",
+      "source" : "a590dbec9a00af36.txt",
+      "type" : "text/plain",
+      "size" : 50
+    }, {
+      "uid" : "d32ec7f69fe96994",
+      "name" : "GetBalanceAPI:  ResponseTime  567ms        ResponseBody",
+      "source" : "d32ec7f69fe96994.txt",
+      "type" : "text/plain",
+      "size" : 83
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 18,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1666984267260,
+      "stop" : 1666984267260,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_5_Debit_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_5_Debit_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "DebitAPIValidateResponseUsingTransactionIDTwice"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_5_Debit_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-52C1ANV"
+  }, {
+    "name" : "thread",
+    "value" : "21028@DESKTOP-52C1ANV.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "9da32e540009fb47.json",
+  "parameterValues" : [ ]
+}

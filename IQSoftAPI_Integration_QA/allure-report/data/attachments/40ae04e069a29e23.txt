@@ -1,0 +1,1 @@
+{"ClientId":"420","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-fsiUQEijHb7d6NgnuSP1_D","CreditTransactionId":"QA_Test-aE0cgjk7pA6n4QtOEVkm_C","Amount":5.0,"BetState":2,"OperationTypeId":4,"Token":"NDIwfDE2NjY5NTgyNTE"}

@@ -103,6 +103,21 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest {
                 "CurrencyId Length: " + iqSoft_05_apiVariables_debit_response.getCurrencyId());
         softAssert.assertEquals(betAmountDebitConfig, afterDebit - beforeDebit);
 
+        String balance = String.valueOf(iqSoft_05_apiVariables_debit_response.getBalance());
+        String balanceAfterSplit=null;
+        try {
+            balanceAfterSplit = balance.split("\\.")[1];
+        }
+        catch (Exception e){
+
+        }
+        if (balanceAfterSplit != null && balanceAfterSplit.length()>2){
+            softAssert.assertTrue(false, "Balance after . has more then 2 symbols");
+        }
+        else {
+            softAssert.assertTrue(true);
+        }
+
         softAssert.assertAll();
     }
 

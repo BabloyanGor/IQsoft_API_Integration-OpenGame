@@ -1,0 +1,131 @@
+{
+  "uid" : "e288ddd320fd3084",
+  "name" : "GetBalanceAPIValidateStatusCod",
+  "fullName" : "testCases.IqSoft_API_3_GetBalance_Positive_Test.GetBalanceAPIValidateStatusCod",
+  "historyId" : "fe3e5944185491e5a7d9f3d82d14cf56",
+  "time" : {
+    "start" : 1666984240575,
+    "stop" : 1666984240579,
+    "duration" : 4
+  },
+  "description" : "Verify GetBalance API_s Response Status Cod equals to 200",
+  "descriptionHtml" : "<p>Verify GetBalance API_s Response Status Cod equals to 200</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1666984239704,
+      "stop" : 1666984239738,
+      "duration" : 34
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1666984240372,
+      "stop" : 1666984240570,
+      "duration" : 198
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5ae560132d8eea3b",
+      "name" : "GetBalanceAPI:  Url:  https://gobet.tn/iapi/iq/GetBalance        RequestBody",
+      "source" : "5ae560132d8eea3b.txt",
+      "type" : "text/plain",
+      "size" : 50
+    }, {
+      "uid" : "b1d7e9242678e08a",
+      "name" : "GetBalanceAPI:  ResponseTime  186ms        ResponseBody",
+      "source" : "b1d7e9242678e08a.txt",
+      "type" : "text/plain",
+      "size" : 83
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1666984267260,
+      "stop" : 1666984267260,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_3_GetBalance_Positive_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_3_GetBalance_Positive_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "GetBalanceAPIValidateStatusCod"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_3_GetBalance_Positive_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-52C1ANV"
+  }, {
+    "name" : "thread",
+    "value" : "21028@DESKTOP-52C1ANV.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e288ddd320fd3084.json",
+  "parameterValues" : [ ]
+}

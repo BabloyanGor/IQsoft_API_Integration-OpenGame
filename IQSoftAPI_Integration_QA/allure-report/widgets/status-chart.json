@@ -1,0 +1,471 @@
+[ {
+  "uid" : "23b6353f710ce229",
+  "name" : "GetBalanceAPIValidateResponseWithInvalidToken",
+  "time" : {
+    "start" : 1666984246229,
+    "stop" : 1666984246407,
+    "duration" : 178
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "7a80215e50aa288e",
+  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+  "time" : {
+    "start" : 1666984258984,
+    "stop" : 1666984260077,
+    "duration" : 1093
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "f0a011cbebefef6",
+  "name" : "GetBalanceAPIValidateResponseWithExpiredToken",
+  "time" : {
+    "start" : 1666984246058,
+    "stop" : 1666984246227,
+    "duration" : 169
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "545961829fce9978",
+  "name" : "CreditAPIValidateResponseWithInvalidAmount",
+  "time" : {
+    "start" : 1666984251538,
+    "stop" : 1666984252083,
+    "duration" : 545
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "c63fb1e187a0d51a",
+  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+  "time" : {
+    "start" : 1666984261009,
+    "stop" : 1666984261905,
+    "duration" : 896
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "9fff57fa11a3b69a",
+  "name" : "RollBackAPIValidateStatusCod",
+  "time" : {
+    "start" : 1666984244196,
+    "stop" : 1666984244197,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "4c99751f80a749a3",
+  "name" : "CreditAPIValidateResponseWithInvalidAmount",
+  "time" : {
+    "start" : 1666984250347,
+    "stop" : 1666984251010,
+    "duration" : 663
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "15cacb0aa51461c6",
+  "name" : "AuthorizationAPIValidateResponseWithInvalidToken",
+  "time" : {
+    "start" : 1666984245679,
+    "stop" : 1666984245865,
+    "duration" : 186
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "235ee3690126dfa",
+  "name" : "CreditAPIValidatePositiveResponse",
+  "time" : {
+    "start" : 1666984241181,
+    "stop" : 1666984241195,
+    "duration" : 14
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "850a419348517b92",
+  "name" : "GetBalanceAPIValidateResponseWithInvalidCurrencyID",
+  "time" : {
+    "start" : 1666984246409,
+    "stop" : 1666984246691,
+    "duration" : 282
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "e164fe5be512ef7f",
+  "name" : "RollBackAPIValidatePositiveResponse",
+  "time" : {
+    "start" : 1666984243224,
+    "stop" : 1666984243225,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "6165ccb305252e18",
+  "name" : "AuthorizationAPIValidateStatusCod",
+  "time" : {
+    "start" : 1666984240323,
+    "stop" : 1666984240327,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "9a853b13bbff734e",
+  "name" : "RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice",
+  "time" : {
+    "start" : 1666984264364,
+    "stop" : 1666984265594,
+    "duration" : 1230
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "e8ccb028dc46066",
+  "name" : "CreditAPIValidateResponseUsingAmountHigherThenBalance",
+  "time" : {
+    "start" : 1666984249798,
+    "stop" : 1666984250342,
+    "duration" : 544
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "95f3fc2eb7c926f9",
+  "name" : "CreditAPIValidateResponseWithInvalidAmount",
+  "time" : {
+    "start" : 1666984252617,
+    "stop" : 1666984253172,
+    "duration" : 555
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "e31a274be975939c",
+  "name" : "DebitAPIValidateResponseWithInvalidToken",
+  "time" : {
+    "start" : 1666984253176,
+    "stop" : 1666984254127,
+    "duration" : 951
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "19e3e13ae4ac1ca7",
+  "name" : "RollBackAPIValidatePositiveResponseBalanceCorrection",
+  "time" : {
+    "start" : 1666984244202,
+    "stop" : 1666984244202,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "e288ddd320fd3084",
+  "name" : "GetBalanceAPIValidateStatusCod",
+  "time" : {
+    "start" : 1666984240575,
+    "stop" : 1666984240579,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "e0d44b2929c32ed",
+  "name" : "DebitAPIValidateStatusCod",
+  "time" : {
+    "start" : 1666984241789,
+    "stop" : 1666984241790,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "6c8968232f721307",
+  "name" : "DebitAPIValidatePositiveResponse",
+  "time" : {
+    "start" : 1666984241792,
+    "stop" : 1666984241792,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "d873b1b911e5eaa3",
+  "name" : "GetBalanceAPIValidatePositiveResponse",
+  "time" : {
+    "start" : 1666984240586,
+    "stop" : 1666984240589,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "73000121cbed3788",
+  "name" : "DebitAPIValidateResponseUsingInvalidProductID",
+  "time" : {
+    "start" : 1666984254130,
+    "stop" : 1666984255022,
+    "duration" : 892
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "6674c263f4eec4e7",
+  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+  "time" : {
+    "start" : 1666984260079,
+    "stop" : 1666984261007,
+    "duration" : 928
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "f48737de84c31f0c",
+  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+  "time" : {
+    "start" : 1666984258059,
+    "stop" : 1666984258982,
+    "duration" : 923
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "e38f8f3ffb846455",
+  "name" : "CreditAPIValidateResponseWithInvalidAmount",
+  "time" : {
+    "start" : 1666984252086,
+    "stop" : 1666984252614,
+    "duration" : 528
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "236428c20c24426a",
+  "name" : "RollBackAPIValidateResponseWithInvalidToken",
+  "time" : {
+    "start" : 1666984261907,
+    "stop" : 1666984262787,
+    "duration" : 880
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "2ccc7bd9c7571ed8",
+  "name" : "CreditAPIValidateResponseWithExpiredToken",
+  "time" : {
+    "start" : 1666984247057,
+    "stop" : 1666984247601,
+    "duration" : 544
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "dd8b0b7cac1cb246",
+  "name" : "GetBalanceAPIValidateResponseWithOtherCurrencyID",
+  "time" : {
+    "start" : 1666984246694,
+    "stop" : 1666984247052,
+    "duration" : 358
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "cde7db97fc5f3c6a",
+  "name" : "AuthorizationAPIValidatePositiveResponse",
+  "time" : {
+    "start" : 1666984240368,
+    "stop" : 1666984240370,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "6398275684b28723",
+  "name" : "RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit",
+  "time" : {
+    "start" : 1666984263812,
+    "stop" : 1666984264363,
+    "duration" : 551
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "1376a4aee64f3ce1",
+  "name" : "CreditAPIValidateStatusCod",
+  "time" : {
+    "start" : 1666984241178,
+    "stop" : 1666984241178,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "9da32e540009fb47",
+  "name" : "DebitAPIValidateResponseUsingTransactionIDTwice",
+  "time" : {
+    "start" : 1666984255024,
+    "stop" : 1666984257155,
+    "duration" : 2131
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "6fa9772ae0c71954",
+  "name" : "CreditAPIValidateResponseWithInvalidProductID",
+  "time" : {
+    "start" : 1666984248176,
+    "stop" : 1666984248857,
+    "duration" : 681
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "878b4846e4baa9eb",
+  "name" : "RollBackAPIValidatePositiveResponseBalanceCorrection",
+  "time" : {
+    "start" : 1666984245498,
+    "stop" : 1666984245498,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "8f3fb330c5f9a284",
+  "name" : "RollBackAPIValidatePositiveResponse",
+  "time" : {
+    "start" : 1666984245490,
+    "stop" : 1666984245491,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "29784645c7321403",
+  "name" : "DebitAPIValidateResponseUsingInvalidCreditTransactionID",
+  "time" : {
+    "start" : 1666984257157,
+    "stop" : 1666984258055,
+    "duration" : 898
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "5e7a37057815f0d3",
+  "name" : "CreditAPIValidateResponseWithInvalidAmount",
+  "time" : {
+    "start" : 1666984251016,
+    "stop" : 1666984251536,
+    "duration" : 520
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "849b6029c5d2208e",
+  "name" : "RollBackAPIValidateResponseUsingInvalidProductID",
+  "time" : {
+    "start" : 1666984262788,
+    "stop" : 1666984263811,
+    "duration" : 1023
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "56e9c8909dd4f048",
+  "name" : "CreditAPIValidateResponseWithInvalidToken",
+  "time" : {
+    "start" : 1666984247607,
+    "stop" : 1666984248173,
+    "duration" : 566
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "b56630bc3f6036c6",
+  "name" : "RollBackAPIValidatePositiveResponseBalanceCorrection",
+  "time" : {
+    "start" : 1666984243227,
+    "stop" : 1666984243228,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "bc41f82c2d700206",
+  "name" : "RollBackAPIValidatePositiveResponse",
+  "time" : {
+    "start" : 1666984244199,
+    "stop" : 1666984244199,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "2858e16efdac6608",
+  "name" : "AuthorizationAPIValidateResponseWithInvalidProductID",
+  "time" : {
+    "start" : 1666984245869,
+    "stop" : 1666984246056,
+    "duration" : 187
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b4038ba73144646e",
+  "name" : "RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice",
+  "time" : {
+    "start" : 1666984265596,
+    "stop" : 1666984267249,
+    "duration" : 1653
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "96566a3c3a6b2ee3",
+  "name" : "RollBackAPIValidateStatusCod",
+  "time" : {
+    "start" : 1666984245487,
+    "stop" : 1666984245487,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "74b7d3d36cc9b6f",
+  "name" : "AuthorizationAPIValidateResponseWithExpiredToken",
+  "time" : {
+    "start" : 1666984245501,
+    "stop" : 1666984245674,
+    "duration" : 173
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "411f2bf72e3d328c",
+  "name" : "CreditAPIValidateResponseUsingTransactionIDTwice",
+  "time" : {
+    "start" : 1666984248860,
+    "stop" : 1666984249795,
+    "duration" : 935
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "bde45c896c051aad",
+  "name" : "RollBackAPIValidateStatusCod",
+  "time" : {
+    "start" : 1666984243221,
+    "stop" : 1666984243222,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+} ]
