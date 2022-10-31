@@ -1,5 +1,0 @@
-<<<<<<<< HEAD:IQSoftAPI_Integration_QA/allure-report/data/attachments/0677181b-c8f7-451d-8191-50765e492d5c-attachment.txt
-{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":783.95000000000005}
-========
-{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":1041.71}
->>>>>>>> 061248aec6e63a0bcf37be9bd94a044322ecb3c7:IQSoftAPI_Integration_QA/allure-report/data/attachments/12f506d3df221623.txt

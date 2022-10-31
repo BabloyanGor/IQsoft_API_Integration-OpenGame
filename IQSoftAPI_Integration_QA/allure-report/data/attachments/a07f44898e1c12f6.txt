@@ -1,1 +1,0 @@
-{"Token":"NDIwfDE2NjY5NTgyNTE","CurrencyId":"USD"}

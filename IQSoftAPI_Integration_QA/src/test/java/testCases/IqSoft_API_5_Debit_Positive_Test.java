@@ -112,7 +112,7 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest {
 
         }
         if (balanceAfterSplit != null && balanceAfterSplit.length()>2){
-            softAssert.assertTrue(false, "Balance after . has more then 2 symbols");
+            softAssert.fail("Balance after . has more then 2 symbols");
         }
         else {
             softAssert.assertTrue(true);
