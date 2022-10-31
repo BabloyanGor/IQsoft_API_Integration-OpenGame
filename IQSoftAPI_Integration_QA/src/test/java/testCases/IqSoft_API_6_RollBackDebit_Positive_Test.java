@@ -25,6 +25,10 @@ public class IqSoft_API_6_RollBackDebit_Positive_Test extends BaseTest {
     String CreditTransactionID = randomCreditTransactionID();
     String DebitTransactionID = randomDebitTransactionID();
 
+    int operationTypeIdCredit = 3;
+    int operationTypeIdDebit = 4;
+
+    int operationTypeIdRollBackDebit = 17;
     @BeforeClass
     public void setUp() throws UnirestException, IOException {
         HttpResponse<String> responseGetBalanceBeforeRollBack = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -33,7 +37,7 @@ public class IqSoft_API_6_RollBackDebit_Positive_Test extends BaseTest {
         Unirest.shutdown();
         logger.info("Balance Before Credit:" + beforeAll);
 
-        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1, CreditTransactionID, betAmountCreditConfig, 1);
+        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit, CreditTransactionID, betAmountCreditConfig, 1);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -44,7 +48,7 @@ public class IqSoft_API_6_RollBackDebit_Positive_Test extends BaseTest {
 
 
         debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, DebitTransactionID, CreditTransactionID, betAmountDebitConfig, 2,
-                4, AuthorizationTokenVar);
+                operationTypeIdDebit, AuthorizationTokenVar);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -53,7 +57,7 @@ public class IqSoft_API_6_RollBackDebit_Positive_Test extends BaseTest {
         Unirest.shutdown();
         logger.info("Balance After Debit:" + afterDebit);
 
-        HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, DebitTransactionID, randomRollBackTransactionID(), AuthorizationTokenVar, 4);
+        HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, DebitTransactionID, randomRollBackTransactionID(), AuthorizationTokenVar, operationTypeIdRollBackDebit);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());

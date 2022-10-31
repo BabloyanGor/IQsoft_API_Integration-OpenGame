@@ -1,42 +1,67 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 54, Failures: 17, Errors: 0, Skipped: 0, Time elapsed: 74.471 sec <<< FAILURE! - in TestSuite
-OpenGameAPIValidatePositiveResponse(testCases.IqSoft_API_1_OpenGame_Positive_Test)  Time elapsed: 0.016 sec  <<< FAILURE!
+Tests run: 47, Failures: 34, Errors: 0, Skipped: 0, Time elapsed: 44.546 sec <<< FAILURE! - in TestSuite
+CreditAPIValidatePositiveResponse(testCases.IqSoft_API_4_Credit_Positive_Test)  Time elapsed: 0.013 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	Description:  expected [null] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_4_Credit_Positive_Test.CreditAPIValidatePositiveResponse(IqSoft_API_4_Credit_Positive_Test.java:110)
+
+DebitAPIValidatePositiveResponse(testCases.IqSoft_API_5_Debit_Positive_Test)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	Description:  expected [null] but found []
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_5_Debit_Positive_Test.DebitAPIValidatePositiveResponse(IqSoft_API_5_Debit_Positive_Test.java:121)
+
+RollBackAPIValidatePositiveResponse(testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test)  Time elapsed: 0.002 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 21 expected [0] but found [21],
-	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [null] but found [An error occurred while updating the entries. See the inner exception for details.],
-	ResponseObject: null did not expect [null] but found [null],
-	ResponseObject Don't Contain http:// expected [true] but found [false]
+	Description: RollbackTransactionId Not Found expected [null] but found [RollbackTransactionId Not Found]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_1_OpenGame_Positive_Test.OpenGameAPIValidatePositiveResponse(IqSoft_API_1_OpenGame_Positive_Test.java:60)
+	at testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test.RollBackAPIValidatePositiveResponse(IqSoft_API_6_RollBackCreditWithDebit_Positive_Test.java:90)
 
-OpenGameAPIValidateResponseWithExpiredToken(testCases.IqSoft_API_1_OpenGame_Negative_Test)  Time elapsed: 0.622 sec  <<< FAILURE!
+RollBackAPIValidatePositiveResponseBalanceCorrection(testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test)  Time elapsed: 0.004 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
-	ResponseCode: 21 expected [22] but found [21],
-	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [Client not found] but found [An error occurred while updating the entries. See the inner exception for details.]
+	afterRollBackCredit: 58.1 = beforeAll: 54.1 expected [54.1] but found [58.1]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_1_OpenGame_Negative_Test.OpenGameAPIValidateResponseWithExpiredToken(IqSoft_API_1_OpenGame_Negative_Test.java:72)
+	at testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test.RollBackAPIValidatePositiveResponseBalanceCorrection(IqSoft_API_6_RollBackCreditWithDebit_Positive_Test.java:106)
 
-OpenGameAPIValidateResponseWithInvalidPartnerID(testCases.IqSoft_API_1_OpenGame_Negative_Test)  Time elapsed: 0.645 sec  <<< FAILURE!
+RollBackAPIValidatePositiveResponse(testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test)  Time elapsed: 0.001 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
-	ResponseCode 21 expected [22] but found [21],
-	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ClientNotFound ] but found [An error occurred while updating the entries. See the inner exception for details.]
+	ResponseCode: 21 expected [0] but found [21],
+	Description: RollbackTransactionId Not Found expected [null] but found [RollbackTransactionId Not Found]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_1_OpenGame_Negative_Test.OpenGameAPIValidateResponseWithInvalidPartnerID(IqSoft_API_1_OpenGame_Negative_Test.java:98)
+	at testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test.RollBackAPIValidatePositiveResponse(IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test.java:80)
 
-OpenGameAPIValidateResponseWithInvalidDomain(testCases.IqSoft_API_1_OpenGame_Negative_Test)  Time elapsed: 0.633 sec  <<< FAILURE!
+RollBackAPIValidatePositiveResponseBalanceCorrection(testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test)  Time elapsed: 0.003 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
-	ResponseCode: 21 expected [43] but found [21],
-	Error Description: An error occurred while updating the entries. See the inner exception for details. expected [ProductNotFound] but found [An error occurred while updating the entries. See the inner exception for details.]
+	afterRollBackCredit: 57.1 = beforeAll: 58.1 expected [58.1] but found [57.1]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_1_OpenGame_Negative_Test.OpenGameAPIValidateResponseWithInvalidDomain(IqSoft_API_1_OpenGame_Negative_Test.java:151)
+	at testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test.RollBackAPIValidatePositiveResponseBalanceCorrection(IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test.java:94)
 
-AuthorizationAPIValidateResponseWithExpiredToken(testCases.IqSoft_API_2_Authorization_Negative_Test)  Time elapsed: 0.606 sec  <<< FAILURE!
+RollBackAPIValidatePositiveResponse(testCases.IqSoft_API_6_RollBackDebit_Positive_Test)  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	ResponseCode: 21 expected [0] but found [21],
+	Description: RollbackTransactionId Not Found expected [null] but found [RollbackTransactionId Not Found]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_6_RollBackDebit_Positive_Test.RollBackAPIValidatePositiveResponse(IqSoft_API_6_RollBackDebit_Positive_Test.java:90)
+
+RollBackAPIValidatePositiveResponseBalanceCorrection(testCases.IqSoft_API_6_RollBackDebit_Positive_Test)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	afterRollBackDebit: 61.1 = afterCredit: 56.1 expected [56.1] but found [61.1]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_6_RollBackDebit_Positive_Test.RollBackAPIValidatePositiveResponseBalanceCorrection(IqSoft_API_6_RollBackDebit_Positive_Test.java:106)
+
+AuthorizationAPIValidateResponseWithExpiredToken(testCases.IqSoft_API_2_Authorization_Negative_Test)  Time elapsed: 0.287 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [29] but found [0],
 	Error Description: null expected [SessionExpired] but found [null]
@@ -44,7 +69,15 @@ java.lang.AssertionError: The following asserts failed:
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithExpiredToken(IqSoft_API_2_Authorization_Negative_Test.java:43)
 
-AuthorizationAPIValidateResponseWithInvalidProductID(testCases.IqSoft_API_2_Authorization_Negative_Test)  Time elapsed: 0.456 sec  <<< FAILURE!
+AuthorizationAPIValidateResponseWithInvalidToken(testCases.IqSoft_API_2_Authorization_Negative_Test)  Time elapsed: 0.293 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	ResponseCode: 0 expected [22] but found [0],
+	Error Description: null expected [ClientNotFound] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithInvalidToken(IqSoft_API_2_Authorization_Negative_Test.java:71)
+
+AuthorizationAPIValidateResponseWithInvalidProductID(testCases.IqSoft_API_2_Authorization_Negative_Test)  Time elapsed: 0.269 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [43] but found [0],
 	Error Description: null expected [ProductNotFound] but found [null]
@@ -52,7 +85,7 @@ java.lang.AssertionError: The following asserts failed:
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithInvalidProductID(IqSoft_API_2_Authorization_Negative_Test.java:96)
 
-GetBalanceAPIValidateResponseWithExpiredToken(testCases.IqSoft_API_3_GetBalance_Negative_Test)  Time elapsed: 0.627 sec  <<< FAILURE!
+GetBalanceAPIValidateResponseWithExpiredToken(testCases.IqSoft_API_3_GetBalance_Negative_Test)  Time elapsed: 0.358 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [29] but found [0],
 	Error Description: null expected [SessionExpired] but found [null]
@@ -60,7 +93,15 @@ java.lang.AssertionError: The following asserts failed:
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithExpiredToken(IqSoft_API_3_GetBalance_Negative_Test.java:41)
 
-GetBalanceAPIValidateResponseWithInvalidCurrencyID(testCases.IqSoft_API_3_GetBalance_Negative_Test)  Time elapsed: 0.629 sec  <<< FAILURE!
+GetBalanceAPIValidateResponseWithInvalidToken(testCases.IqSoft_API_3_GetBalance_Negative_Test)  Time elapsed: 0.358 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	ResponseCode: 0 expected [22] but found [0],
+	Error Description: null expected [error login] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithInvalidToken(IqSoft_API_3_GetBalance_Negative_Test.java:65)
+
+GetBalanceAPIValidateResponseWithInvalidCurrencyID(testCases.IqSoft_API_3_GetBalance_Negative_Test)  Time elapsed: 0.273 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [20] but found [0],
 	Error Description: null expected [CurrencyNotExists] but found [null]
@@ -68,72 +109,175 @@ java.lang.AssertionError: The following asserts failed:
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithInvalidCurrencyID(IqSoft_API_3_GetBalance_Negative_Test.java:89)
 
-GetBalanceAPIValidateResponseWithOtherCurrencyID(testCases.IqSoft_API_3_GetBalance_Negative_Test)  Time elapsed: 0.918 sec  <<< FAILURE!
-java.lang.AssertionError: balanceUSD VS balanceEUR did not expect [9489.7] but found [9489.7]
+GetBalanceAPIValidateResponseWithOtherCurrencyID(testCases.IqSoft_API_3_GetBalance_Negative_Test)  Time elapsed: 0.562 sec  <<< FAILURE!
+java.lang.AssertionError: balanceUSD VS balanceEUR did not expect [61.1] but found [61.1]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failEquals(Assert.java:1417)
 	at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
 	at org.testng.Assert.assertNotEquals(Assert.java:2033)
 	at testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithOtherCurrencyID(IqSoft_API_3_GetBalance_Negative_Test.java:113)
 
-CreditAPIValidateResponseWithExpiredToken(testCases.IqSoft_API_4_Credit_Negative_Test)  Time elapsed: 1.338 sec  <<< FAILURE!
+CreditAPIValidateResponseWithExpiredToken(testCases.IqSoft_API_4_Credit_Negative_Test)  Time elapsed: 0.931 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [29] but found [0],
-	Error Description: null expected [SessionExpired] but found [null],
-	amountBeforeCredit = amountAfterCredit: 9489.7 = 9488.7 expected [9488.7] but found [9489.7]
+	Error Description:  expected [SessionExpired] but found [],
+	amountBeforeCredit = amountAfterCredit: 61.1 = 60.1 expected [60.1] but found [61.1]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithExpiredToken(IqSoft_API_4_Credit_Negative_Test.java:60)
 
-CreditAPIValidateResponseWithInvalidProductID(testCases.IqSoft_API_4_Credit_Negative_Test)  Time elapsed: 1.526 sec  <<< FAILURE!
+CreditAPIValidateResponseWithInvalidToken(testCases.IqSoft_API_4_Credit_Negative_Test)  Time elapsed: 0.828 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
-	Error Description: game not avaible expected [game not available] but found [game not avaible]
+	ResponseCode: 0 expected [22] but found [0],
+	Error Description:  expected [error login] but found [],
+	expected [59.1] but found [60.1]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidToken(IqSoft_API_4_Credit_Negative_Test.java:101)
+
+CreditAPIValidateResponseWithInvalidProductID(testCases.IqSoft_API_4_Credit_Negative_Test)  Time elapsed: 0.814 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	ResponseCode: 0 expected [43] but found [0],
+	Error Description:  expected [game not available] but found [],
+	Amount BeforeCredit: 59.1Amount AfterCredit: 58.1 expected [58.1] but found [59.1]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidProductID(IqSoft_API_4_Credit_Negative_Test.java:143)
 
-CreditAPIValidateResponseWithInvalidAmount(testCases.IqSoft_API_4_Credit_Negative_Test)  Time elapsed: 1.581 sec  <<< FAILURE!
+CreditAPIValidateResponseUsingAmountHigherThenBalance(testCases.IqSoft_API_4_Credit_Negative_Test)  Time elapsed: 0.836 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
-	ResponseCode: 0 expected [39] but found [0],
-	Error Description: null expected [WrongOperationAmount] but found [null]
+	ResponseCode: 21 expected [63] but found [21],
+	Error Description: Insufficient funds expected [balance less then bet Amount] but found [Insufficient funds]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseUsingAmountHigherThenBalance(IqSoft_API_4_Credit_Negative_Test.java:236)
+
+CreditAPIValidateResponseWithInvalidAmount(testCases.IqSoft_API_4_Credit_Negative_Test)  Time elapsed: 0.807 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	ResponseCode: 21 expected [39] but found [21],
+	Error Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidAmount(IqSoft_API_4_Credit_Negative_Test.java:280)
 
-DebitAPIValidateResponseUsingInvalidProductID(testCases.IqSoft_API_5_Debit_Negative_Test)  Time elapsed: 2.537 sec  <<< FAILURE!
+CreditAPIValidateResponseWithInvalidAmount(testCases.IqSoft_API_4_Credit_Negative_Test)  Time elapsed: 0.854 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
-	Error Description: game not avaible expected [game not available] but found [game not avaible]
+	ResponseCode: 21 expected [39] but found [21],
+	Error Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],
+	AmountBeforeCredit: 57.1 = amountAfterCredit : 58.1 expected [58.1] but found [57.1]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidAmount(IqSoft_API_4_Credit_Negative_Test.java:280)
+
+CreditAPIValidateResponseWithInvalidAmount(testCases.IqSoft_API_4_Credit_Negative_Test)  Time elapsed: 0.832 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	ResponseCode: 21 expected [39] but found [21],
+	Error Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],
+	AmountBeforeCredit: 58.1 = amountAfterCredit : 59.6 expected [59.6] but found [58.1]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidAmount(IqSoft_API_4_Credit_Negative_Test.java:280)
+
+CreditAPIValidateResponseWithInvalidAmount(testCases.IqSoft_API_4_Credit_Negative_Test)  Time elapsed: 0.897 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	ResponseCode: 21 expected [39] but found [21],
+	Error Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],
+	AmountBeforeCredit: 59.6 = amountAfterCredit : 60.65 expected [60.65] but found [59.6]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidAmount(IqSoft_API_4_Credit_Negative_Test.java:280)
+
+CreditAPIValidateResponseWithInvalidAmount(testCases.IqSoft_API_4_Credit_Negative_Test)  Time elapsed: 0.798 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	ResponseCode: 21 expected [39] but found [21],
+	Error Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],
+	AmountBeforeCredit: 60.65 = amountAfterCredit : 61.66 expected [61.66] but found [60.65]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidAmount(IqSoft_API_4_Credit_Negative_Test.java:280)
+
+DebitAPIValidateResponseWithInvalidToken(testCases.IqSoft_API_5_Debit_Negative_Test)  Time elapsed: 1.376 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	ResponseCode: 0 expected [22] but found [0],
+	Error Description:  expected [error login] but found [],
+	amountAfterCredit = amountAfterDebit60.66 != 65.66 expected [65.66] but found [60.66]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseWithInvalidToken(IqSoft_API_5_Debit_Negative_Test.java:68)
+
+DebitAPIValidateResponseUsingInvalidProductID(testCases.IqSoft_API_5_Debit_Negative_Test)  Time elapsed: 1.441 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	ResponseCode: 0 expected [43] but found [0],
+	Error Description:  expected [game not available] but found [],
+	amountAfterCredit = amountAfterDebit 64.66  =  69.66 expected [69.66] but found [64.66]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidProductID(IqSoft_API_5_Debit_Negative_Test.java:120)
 
-DebitAPIValidateResponseUsingInvalidCreditTransactionID(testCases.IqSoft_API_5_Debit_Negative_Test)  Time elapsed: 1.214 sec  <<< FAILURE!
+DebitAPIValidateResponseUsingTransactionIDTwice(testCases.IqSoft_API_5_Debit_Negative_Test)  Time elapsed: 2.67 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	ResponseCode: 21 expected [0] but found [21],
+	Error Description: Transaction is already processed expected [null] but found [Transaction is already processed]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingTransactionIDTwice(IqSoft_API_5_Debit_Negative_Test.java:192)
+
+DebitAPIValidateResponseUsingInvalidCreditTransactionID(testCases.IqSoft_API_5_Debit_Negative_Test)  Time elapsed: 0.822 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
 	ResponseCode: 0 expected [50] but found [0],
-	Error Description: null expected [CanNotConnectCreditAndDebit] but found [null],
-	amountAfterDebit: 9493.7 = amountBeforeDebit: 9488.7 expected [9488.7] but found [9493.7]
+	Error Description:  expected [CanNotConnectCreditAndDebit] but found [],
+	amountAfterDebit: 77.66 = amountBeforeDebit: 72.66 expected [72.66] but found [77.66]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidCreditTransactionID(IqSoft_API_5_Debit_Negative_Test.java:230)
 
-RollBackAPIValidateResponseWithInvalidToken(testCases.IqSoft_API_6_RollBack_Negative_Test)  Time elapsed: 2.416 sec  <<< FAILURE!
+DebitAPIValidateResponseUsingInvalidAmount(testCases.IqSoft_API_5_Debit_Negative_Test)  Time elapsed: 1.406 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
-	amountAfterRollBack: 9489.7 = amountAfterCredit: 9488.7 expected [9488.7] but found [9489.7]
+	ResponseCode: 21 expected [39] but found [21],
+	Error Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],
+	expected [75.66] but found [76.66]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseWithInvalidToken(IqSoft_API_6_RollBack_Negative_Test.java:67)
+	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount(IqSoft_API_5_Debit_Negative_Test.java:279)
 
-RollBackAPIValidateResponseUsingInvalidProductID(testCases.IqSoft_API_6_RollBack_Negative_Test)  Time elapsed: 2.2 sec  <<< FAILURE!
+DebitAPIValidateResponseUsingInvalidAmount(testCases.IqSoft_API_5_Debit_Negative_Test)  Time elapsed: 1.457 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
-	amountAfterRollBack : 9489.7 = amountAfterCredit: 9488.7 expected [9488.7] but found [9489.7]
+	ResponseCode: 21 expected [39] but found [21],
+	Error Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],
+	expected [73.16] but found [74.66]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingInvalidProductID(IqSoft_API_6_RollBack_Negative_Test.java:118)
+	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount(IqSoft_API_5_Debit_Negative_Test.java:279)
 
-RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice(testCases.IqSoft_API_6_RollBack_Negative_Test)  Time elapsed: 3.485 sec  <<< FAILURE!
+DebitAPIValidateResponseUsingInvalidAmount(testCases.IqSoft_API_5_Debit_Negative_Test)  Time elapsed: 2.721 sec  <<< FAILURE!
 java.lang.AssertionError: The following asserts failed:
-	amountAfterRollBack2 : 9490.7 = amountAfterRollBack1: 9489.7 expected [9489.7] but found [9490.7]
+	ResponseCode: 21 expected [39] but found [21],
+	Error Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],
+	expected [71.11] but found [72.16]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount(IqSoft_API_5_Debit_Negative_Test.java:279)
+
+DebitAPIValidateResponseUsingInvalidAmount(testCases.IqSoft_API_5_Debit_Negative_Test)  Time elapsed: 2.27 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	ResponseCode: 21 expected [39] but found [21],
+	Error Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],
+	expected [69.11] but found [70.11]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount(IqSoft_API_5_Debit_Negative_Test.java:279)
+
+RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice(testCases.IqSoft_API_6_RollBack_Negative_Test)  Time elapsed: 1.997 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	amountAfterRollBack1: 66.11 = amountBeforeCredit : 67.11 expected [67.11] but found [66.11]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice(IqSoft_API_6_RollBack_Negative_Test.java:218)
+
+RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice(testCases.IqSoft_API_6_RollBack_Negative_Test)  Time elapsed: 2.61 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	amountAfterRollBack1: 64.11 = amountAfterCredit2 : 64.11 + betAmountCreditConfig : 1.0 expected [65.11] but found [64.11]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice(IqSoft_API_6_RollBack_Negative_Test.java:292)
 

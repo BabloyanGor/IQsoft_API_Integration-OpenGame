@@ -1,0 +1,1 @@
+{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":3,"TransactionId":"QA_Test-RGptseIVNSdnauiiTama_C","BetState":1,"Amount":9500.7}

@@ -21,7 +21,7 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest {
     int statusCod;
     double beforeDebit;
     double afterDebit;
-
+    int operationTypeIdDebit = 4;
     @BeforeClass
     public void setUp() throws UnirestException, IOException {
         HttpResponse<String> responseGetBalanceBeforeDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -30,7 +30,7 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest {
         Unirest.shutdown();
 
         HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitValidTransactionID,
-                creditValidTransactionID, betAmountDebitConfig, 2, 4, AuthorizationTokenVar);
+                creditValidTransactionID, betAmountDebitConfig, 2, operationTypeIdDebit, AuthorizationTokenVar);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());

@@ -17,6 +17,8 @@ import java.io.IOException;
 public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
     JSONObject jsonObjectBody;
     int statusCod;
+    int operationTypeIdCredit = 3;
+    int operationTypeIdDebit = 4;
 
 
     @Test(priority = 1)
@@ -32,7 +34,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         double amountBeforeCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
+        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
                 creditTransactionID, betAmountCreditConfig, 1);
         Unirest.shutdown();
 
@@ -41,7 +43,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         double amountAfterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
         HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitTransactionID,
-                creditTransactionID, betAmountDebitConfig, 2, 4, AuthorizationTokenVar + "1");
+                creditTransactionID, betAmountDebitConfig, 2, operationTypeIdDebit, AuthorizationTokenVar + "1");
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -83,7 +85,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         double amountBeforeCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
+        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
                 creditTransactionID, betAmountCreditConfig, 1);
         Unirest.shutdown();
 
@@ -93,7 +95,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, -10, debitTransactionID,
-                creditTransactionID, betAmountDebitConfig, 2, 4, AuthorizationTokenVar);
+                creditTransactionID, betAmountDebitConfig, 2, operationTypeIdDebit, AuthorizationTokenVar);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -136,7 +138,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         double amountBeforeCredit1 = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
+        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
                 creditTransactionID1, betAmountCreditConfig, 1);
         Unirest.shutdown();
 
@@ -145,7 +147,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         double amountAfterCredit1 = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
+        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
                 creditTransactionID2, betAmountCreditConfig, 1);
         Unirest.shutdown();
 
@@ -156,7 +158,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
 
 
         debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitTransactionID,
-                creditTransactionID1, betAmountDebitConfig, 2, 4, AuthorizationTokenVar);
+                creditTransactionID1, betAmountDebitConfig, 2, operationTypeIdDebit, AuthorizationTokenVar);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterDebit1 = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -165,7 +167,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitTransactionID,
-                creditTransactionID2, betAmountDebitConfig, 2, 4, AuthorizationTokenVar);
+                creditTransactionID2, betAmountDebitConfig, 2, operationTypeIdDebit, AuthorizationTokenVar);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -206,7 +208,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         HttpResponse<String> responseDebit = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitTransactionID,
-                creditTransactionID, betAmountDebitConfig, 2, 4, AuthorizationTokenVar);
+                creditTransactionID, betAmountDebitConfig, 2, operationTypeIdDebit, AuthorizationTokenVar);
         Unirest.shutdown();
         statusCod = responseDebit.getStatus();
         jsonObjectBody = new JSONObject(responseDebit.getBody());
@@ -244,7 +246,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         double amountBeforeCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
+        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
                 creditTransactionID, betAmountCreditConfig, 1);
         Unirest.shutdown();
 
@@ -254,7 +256,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitTransactionID,
-                creditTransactionID, errorAmount, 2, 4, AuthorizationTokenVar);
+                creditTransactionID, errorAmount, 2, operationTypeIdDebit, AuthorizationTokenVar);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
