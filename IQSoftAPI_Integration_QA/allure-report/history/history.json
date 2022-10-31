@@ -1,0 +1,929 @@
+{
+  "dc5d7e2d7ed9d0a7406a51ca3c8e7ba" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "19e3e13ae4ac1ca7",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tafterRollBackCredit: 1039.21 = beforeAll: 1040.21 expected [1040.21] but found [1039.21]",
+      "time" : {
+        "start" : 1666984244202,
+        "stop" : 1666984244202,
+        "duration" : 0
+      }
+    } ]
+  },
+  "a186140269c7884522bc37fb2f5116bb" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e164fe5be512ef7f",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [0] but found [21],\n\tDescription: RollbackTransactionId Not Found expected [null] but found [RollbackTransactionId Not Found]",
+      "time" : {
+        "start" : 1666984243224,
+        "stop" : 1666984243225,
+        "duration" : 1
+      }
+    } ]
+  },
+  "a08545ca10cc27a665d782cd6f799f02" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7a80215e50aa288e",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [39] but found [21],\n\tError Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],\n\texpected [1055.27] but found [1056.77]",
+      "time" : {
+        "start" : 1666984258984,
+        "stop" : 1666984260077,
+        "duration" : 1093
+      }
+    } ]
+  },
+  "4f26ff0cb3df1c2752aa3c6046bff70f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "235ee3690126dfa",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tDescription:  expected [null] but found []",
+      "time" : {
+        "start" : 1666984241181,
+        "stop" : 1666984241195,
+        "duration" : 14
+      }
+    } ]
+  },
+  "2c75192783b3f12b4a770ef2891c6dd7" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "73000121cbed3788",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [43] but found [0],\n\tError Description:  expected [game not available] but found [],\n\tamountAfterCredit = amountAfterDebit 1046.77  =  1051.77 expected [1051.77] but found [1046.77]",
+      "time" : {
+        "start" : 1666984254130,
+        "stop" : 1666984255022,
+        "duration" : 892
+      }
+    } ]
+  },
+  "3235f64a2a311e7a1d0b72f79830a428" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f48737de84c31f0c",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [39] but found [21],\n\tError Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],\n\texpected [1057.77] but found [1058.77]",
+      "time" : {
+        "start" : 1666984258059,
+        "stop" : 1666984258982,
+        "duration" : 923
+      }
+    } ]
+  },
+  "badd8f700559d0535d927d532a418904" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "849b6029c5d2208e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666984262788,
+        "stop" : 1666984263811,
+        "duration" : 1023
+      }
+    } ]
+  },
+  "7d0e87e462c32532a80fbd49f313393a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6c8968232f721307",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tDescription:  expected [null] but found []",
+      "time" : {
+        "start" : 1666984241792,
+        "stop" : 1666984241792,
+        "duration" : 0
+      }
+    } ]
+  },
+  "b4120927638bf3c438771ea0b608a4f3" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6fa9772ae0c71954",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [43] but found [0],\n\tError Description:  expected [game not available] but found [],\n\tAmount BeforeCredit: 1041.21Amount AfterCredit: 1040.21 expected [1040.21] but found [1041.21]",
+      "time" : {
+        "start" : 1666984248176,
+        "stop" : 1666984248857,
+        "duration" : 681
+      }
+    } ]
+  },
+  "83e9d81fbb1e671bd2643e2b84d61778" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dd8b0b7cac1cb246",
+      "status" : "failed",
+      "statusDetails" : "balanceUSD VS balanceEUR did not expect [1043.21] but found [1043.21]",
+      "time" : {
+        "start" : 1666984246694,
+        "stop" : 1666984247052,
+        "duration" : 358
+      }
+    } ]
+  },
+  "216d89b1b4125e437fb41555d2e3ee82" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "56e9c8909dd4f048",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [22] but found [0],\n\tError Description:  expected [error login] but found [],\n\texpected [1041.21] but found [1042.21]",
+      "time" : {
+        "start" : 1666984247607,
+        "stop" : 1666984248173,
+        "duration" : 566
+      }
+    } ]
+  },
+  "95931095539f395ca0c1a1aff73c90d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6398275684b28723",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666984263812,
+        "stop" : 1666984264363,
+        "duration" : 551
+      }
+    } ]
+  },
+  "6aa344a4bfee41947ded7ca9e2bf7059" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1376a4aee64f3ce1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666984241178,
+        "stop" : 1666984241178,
+        "duration" : 0
+      }
+    } ]
+  },
+  "8a67f0bdf7b84b57e042262515421b30" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cde7db97fc5f3c6a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666984240368,
+        "stop" : 1666984240370,
+        "duration" : 2
+      }
+    } ]
+  },
+  "ada57195e0ee2f6b99d20ba4348813c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5e7a37057815f0d3",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [39] but found [21],\n\tError Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],\n\tAmountBeforeCredit: 1039.21 = amountAfterCredit : 1040.21 expected [1040.21] but found [1039.21]",
+      "time" : {
+        "start" : 1666984251016,
+        "stop" : 1666984251536,
+        "duration" : 520
+      }
+    } ]
+  },
+  "4ec03e174daa410e53f22effad418f91" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2858e16efdac6608",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [43] but found [0],\n\tError Description: null expected [ProductNotFound] but found [null]",
+      "time" : {
+        "start" : 1666984245869,
+        "stop" : 1666984246056,
+        "duration" : 187
+      }
+    } ]
+  },
+  "f3ff1f99343980b749bef3f219dd9ece" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4c99751f80a749a3",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [39] but found [21],\n\tError Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params]",
+      "time" : {
+        "start" : 1666984250347,
+        "stop" : 1666984251010,
+        "duration" : 663
+      }
+    } ]
+  },
+  "af7f128b0732a7a827f0dd43f9edaad" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2ccc7bd9c7571ed8",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [29] but found [0],\n\tError Description:  expected [SessionExpired] but found [],\n\tamountBeforeCredit = amountAfterCredit: 1043.21 = 1042.21 expected [1042.21] but found [1043.21]",
+      "time" : {
+        "start" : 1666984247057,
+        "stop" : 1666984247601,
+        "duration" : 544
+      }
+    } ]
+  },
+  "b37c45feba2ed46f55ea2e8b13be95f4" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "29784645c7321403",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [50] but found [0],\n\tError Description:  expected [CanNotConnectCreditAndDebit] but found [],\n\tamountAfterDebit: 1059.77 = amountBeforeDebit: 1054.77 expected [1054.77] but found [1059.77]",
+      "time" : {
+        "start" : 1666984257157,
+        "stop" : 1666984258055,
+        "duration" : 898
+      }
+    } ]
+  },
+  "b434aec64d5d2fdf28d8703fc1f58ead" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "96566a3c3a6b2ee3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666984245487,
+        "stop" : 1666984245487,
+        "duration" : 0
+      }
+    } ]
+  },
+  "dce64b4babed4bb0a30dc9f4130c8090" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "411f2bf72e3d328c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666984248860,
+        "stop" : 1666984249795,
+        "duration" : 935
+      }
+    } ]
+  },
+  "fe3e5944185491e5a7d9f3d82d14cf56" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e288ddd320fd3084",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666984240575,
+        "stop" : 1666984240579,
+        "duration" : 4
+      }
+    } ]
+  },
+  "b25309c987608a3a10d4e909ded5df84" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "95f3fc2eb7c926f9",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [39] but found [21],\n\tError Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],\n\tAmountBeforeCredit: 1042.76 = amountAfterCredit : 1043.77 expected [1043.77] but found [1042.76]",
+      "time" : {
+        "start" : 1666984252617,
+        "stop" : 1666984253172,
+        "duration" : 555
+      }
+    } ]
+  },
+  "ef0781f2acd147b7c22eacbbc1b61a94" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e38f8f3ffb846455",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [39] but found [21],\n\tError Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],\n\tAmountBeforeCredit: 1041.71 = amountAfterCredit : 1042.76 expected [1042.76] but found [1041.71]",
+      "time" : {
+        "start" : 1666984252086,
+        "stop" : 1666984252614,
+        "duration" : 528
+      }
+    } ]
+  },
+  "6ad4ab9c870b54f33e66ae31ef187ca" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c63fb1e187a0d51a",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [39] but found [21],\n\tError Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],\n\texpected [1051.21] but found [1052.22]",
+      "time" : {
+        "start" : 1666984261009,
+        "stop" : 1666984261905,
+        "duration" : 896
+      }
+    } ]
+  },
+  "af2de4bbf0b0762f6d2ff5ca33e892a2" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "878b4846e4baa9eb",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tafterRollBackDebit: 1043.21 = afterCredit: 1038.21 expected [1038.21] but found [1043.21]",
+      "time" : {
+        "start" : 1666984245498,
+        "stop" : 1666984245498,
+        "duration" : 0
+      }
+    } ]
+  },
+  "b2bb3b2771c365bed47f382ba1e91e65" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9da32e540009fb47",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [0] but found [21],\n\tError Description: Transaction is already processed expected [null] but found [Transaction is already processed]",
+      "time" : {
+        "start" : 1666984255024,
+        "stop" : 1666984257155,
+        "duration" : 2131
+      }
+    } ]
+  },
+  "a5e4ac79575e09609045a20bac7fded5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e0d44b2929c32ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666984241789,
+        "stop" : 1666984241790,
+        "duration" : 1
+      }
+    } ]
+  },
+  "859d75ca8b32231e2c0b21c0f3692376" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "545961829fce9978",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [39] but found [21],\n\tError Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],\n\tAmountBeforeCredit: 1040.21 = amountAfterCredit : 1041.71 expected [1041.71] but found [1040.21]",
+      "time" : {
+        "start" : 1666984251538,
+        "stop" : 1666984252083,
+        "duration" : 545
+      }
+    } ]
+  },
+  "af458609e278efd5b5c647b305ac4e40" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b56630bc3f6036c6",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tafterRollBackCredit: 1040.21 = beforeAll: 1036.21 expected [1036.21] but found [1040.21]",
+      "time" : {
+        "start" : 1666984243227,
+        "stop" : 1666984243228,
+        "duration" : 1
+      }
+    } ]
+  },
+  "a16f9262f26e494b988852dbe6e39187" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9a853b13bbff734e",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tamountAfterRollBack1: 1048.21 = amountBeforeCredit : 1049.21 expected [1049.21] but found [1048.21]",
+      "time" : {
+        "start" : 1666984264364,
+        "stop" : 1666984265594,
+        "duration" : 1230
+      }
+    } ]
+  },
+  "862603de78c00916407b08539cebcc50" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "236428c20c24426a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666984261907,
+        "stop" : 1666984262787,
+        "duration" : 880
+      }
+    } ]
+  },
+  "7b3b3afa070b5afd7dbb87b99f150f81" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b4038ba73144646e",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tamountAfterRollBack1: 1046.21 = amountAfterCredit2 : 1046.21 + betAmountCreditConfig : 1.0 expected [1047.21] but found [1046.21]",
+      "time" : {
+        "start" : 1666984265596,
+        "stop" : 1666984267249,
+        "duration" : 1653
+      }
+    } ]
+  },
+  "d8fe06a2543f4c93ead6231af5e5b7b6" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e31a274be975939c",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [22] but found [0],\n\tError Description:  expected [error login] but found [],\n\tamountAfterCredit = amountAfterDebit1042.77 != 1047.77 expected [1047.77] but found [1042.77]",
+      "time" : {
+        "start" : 1666984253176,
+        "stop" : 1666984254127,
+        "duration" : 951
+      }
+    } ]
+  },
+  "c7da46239332cdb54acabdd7adcde55d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f0a011cbebefef6",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [29] but found [0],\n\tError Description: null expected [SessionExpired] but found [null]",
+      "time" : {
+        "start" : 1666984246058,
+        "stop" : 1666984246227,
+        "duration" : 169
+      }
+    } ]
+  },
+  "7be0af38f1459508ac9409c19cdc10d0" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "74b7d3d36cc9b6f",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [29] but found [0],\n\tError Description: null expected [SessionExpired] but found [null]",
+      "time" : {
+        "start" : 1666984245501,
+        "stop" : 1666984245674,
+        "duration" : 173
+      }
+    } ]
+  },
+  "3944ea1bfd4dab3f3044793593464943" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "15cacb0aa51461c6",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [22] but found [0],\n\tError Description: null expected [ClientNotFound] but found [null]",
+      "time" : {
+        "start" : 1666984245679,
+        "stop" : 1666984245865,
+        "duration" : 186
+      }
+    } ]
+  },
+  "888492858dbacec93019f41bd2fa48a7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d873b1b911e5eaa3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666984240586,
+        "stop" : 1666984240589,
+        "duration" : 3
+      }
+    } ]
+  },
+  "7e04fea702fe20d4531bb0c207f506f3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bde45c896c051aad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666984243221,
+        "stop" : 1666984243222,
+        "duration" : 1
+      }
+    } ]
+  },
+  "b985f0592f4e52e892859da7c75408ed" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8f3fb330c5f9a284",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [0] but found [21],\n\tDescription: RollbackTransactionId Not Found expected [null] but found [RollbackTransactionId Not Found]",
+      "time" : {
+        "start" : 1666984245490,
+        "stop" : 1666984245491,
+        "duration" : 1
+      }
+    } ]
+  },
+  "371f2d826ee9a24f5ddcfecb65861d17" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "23b6353f710ce229",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [22] but found [0],\n\tError Description: null expected [error login] but found [null]",
+      "time" : {
+        "start" : 1666984246229,
+        "stop" : 1666984246407,
+        "duration" : 178
+      }
+    } ]
+  },
+  "93a6a1e896094fcedc2c825c503d2fde" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6165ccb305252e18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666984240323,
+        "stop" : 1666984240327,
+        "duration" : 4
+      }
+    } ]
+  },
+  "ede5ed6959361720a75dba073814d3e5" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bc41f82c2d700206",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [0] but found [21],\n\tDescription: RollbackTransactionId Not Found expected [null] but found [RollbackTransactionId Not Found]",
+      "time" : {
+        "start" : 1666984244199,
+        "stop" : 1666984244199,
+        "duration" : 0
+      }
+    } ]
+  },
+  "b30c7e55db3fafad6216b5da1ee83e67" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "850a419348517b92",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 0 expected [20] but found [0],\n\tError Description: null expected [CurrencyNotExists] but found [null]",
+      "time" : {
+        "start" : 1666984246409,
+        "stop" : 1666984246691,
+        "duration" : 282
+      }
+    } ]
+  },
+  "dbbf154f2414cfa8da1d0917b1f9f01d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6674c263f4eec4e7",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [39] but found [21],\n\tError Description: Invalid request params expected [WrongOperationAmount] but found [Invalid request params],\n\texpected [1053.22] but found [1054.27]",
+      "time" : {
+        "start" : 1666984260079,
+        "stop" : 1666984261007,
+        "duration" : 928
+      }
+    } ]
+  },
+  "f90bd0f80bce2714765ed9274241862" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9fff57fa11a3b69a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666984244196,
+        "stop" : 1666984244197,
+        "duration" : 1
+      }
+    } ]
+  },
+  "61c113a1005fc4fa1f63d23a4d84997c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e8ccb028dc46066",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\tResponseCode: 21 expected [63] but found [21],\n\tError Description: Insufficient funds expected [balance less then bet Amount] but found [Insufficient funds]",
+      "time" : {
+        "start" : 1666984249798,
+        "stop" : 1666984250342,
+        "duration" : 544
+      }
+    } ]
+  }
+}

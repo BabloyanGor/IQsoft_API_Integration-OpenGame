@@ -1,0 +1,134 @@
+{
+  "uid" : "2858e16efdac6608",
+  "name" : "AuthorizationAPIValidateResponseWithInvalidProductID",
+  "fullName" : "testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithInvalidProductID",
+  "historyId" : "4ec03e174daa410e53f22effad418f91",
+  "time" : {
+    "start" : 1666984245869,
+    "stop" : 1666984246056,
+    "duration" : 187
+  },
+  "description" : "Verify Authorization API_s response with invalid gameIdConfig",
+  "descriptionHtml" : "<p>Verify Authorization API_s response with invalid gameIdConfig</p>\n",
+  "status" : "failed",
+  "statusMessage" : "The following asserts failed:\n\tResponseCode: 0 expected [43] but found [0],\n\tError Description: null expected [ProductNotFound] but found [null]",
+  "statusTrace" : "java.lang.AssertionError: The following asserts failed:\n\tResponseCode: 0 expected [43] but found [0],\n\tError Description: null expected [ProductNotFound] but found [null]\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)\r\n\tat testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithInvalidProductID(IqSoft_API_2_Authorization_Negative_Test.java:96)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)\r\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\r\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\r\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\r\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:806)\r\n\tat org.testng.TestRunner.run(TestRunner.java:601)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:433)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:330)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1176)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1099)\r\n\tat org.testng.TestNG.run(TestNG.java:1067)\r\n\tat com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)\r\n\tat com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1666984239704,
+      "stop" : 1666984239738,
+      "duration" : 34
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "Verify Authorization API_s response with invalid gameIdConfig",
+    "status" : "failed",
+    "statusMessage" : "The following asserts failed:\n\tResponseCode: 0 expected [43] but found [0],\n\tError Description: null expected [ProductNotFound] but found [null]",
+    "statusTrace" : "java.lang.AssertionError: The following asserts failed:\n\tResponseCode: 0 expected [43] but found [0],\n\tError Description: null expected [ProductNotFound] but found [null]\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)\r\n\tat testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithInvalidProductID(IqSoft_API_2_Authorization_Negative_Test.java:96)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)\r\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\r\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\r\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\r\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:806)\r\n\tat org.testng.TestRunner.run(TestRunner.java:601)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:433)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:330)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1176)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1099)\r\n\tat org.testng.TestNG.run(TestNG.java:1067)\r\n\tat com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)\r\n\tat com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)\r\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7770bea332858452",
+      "name" : "AuthorizationAPI:  Url  https://gobet.tn/iapi/iq/Authorization        RequestBody",
+      "source" : "7770bea332858452.txt",
+      "type" : "text/plain",
+      "size" : 47
+    }, {
+      "uid" : "bdd67a6dbd465214",
+      "name" : "AuthorizationAPI:  ResponseTime  182ms        ResponseBody",
+      "source" : "bdd67a6dbd465214.txt",
+      "type" : "text/plain",
+      "size" : 451
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1666984267260,
+      "stop" : 1666984267260,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_2_Authorization_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_2_Authorization_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "AuthorizationAPIValidateResponseWithInvalidProductID"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_2_Authorization_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-52C1ANV"
+  }, {
+    "name" : "thread",
+    "value" : "21028@DESKTOP-52C1ANV.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "2858e16efdac6608.json",
+  "parameterValues" : [ ]
+}

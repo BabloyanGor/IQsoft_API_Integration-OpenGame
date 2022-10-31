@@ -15,7 +15,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 
-public class IqSoft_API_3_GetBalance_Positive_Test extends BaseTest {
+public class IqSoft_API_3_GetBalance_Positive_Test extends BaseTest{
     JSONObject jsonObjectBody;
     int statusCod;
 
@@ -62,8 +62,25 @@ public class IqSoft_API_3_GetBalance_Positive_Test extends BaseTest {
         softAssert.assertEquals(balanceHigherOREqualZero, true);
         softAssert.assertNotEquals(iqSoft_03_apiVariables_getBalance_response.getAvailableBalance(), null);
 
+        String balance = String.valueOf(iqSoft_03_apiVariables_getBalance_response.getAvailableBalance());
+        String balanceAfterSplit=null;
+        try {
+            balanceAfterSplit = balance.split("\\.")[1];
+        }
+        catch (Exception e){
+
+        }
+        if (balanceAfterSplit != null && balanceAfterSplit.length()>2){
+            softAssert.assertTrue(false, "Balance after . has more then 2 symbols");
+        }
+        else {
+            softAssert.assertTrue(true);
+        }
+
+
         softAssert.assertAll();
     }
+
 
 
 }
