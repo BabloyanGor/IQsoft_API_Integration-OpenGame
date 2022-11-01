@@ -20,7 +20,7 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
     double beforeCredit;
     double afterCredit;
     int statusCod;
-    int operationTypeIdCredit = 3;
+    int operationTypeIdCredit = 1;
 
     @BeforeClass
     public void setUp() throws UnirestException, IOException {
@@ -75,8 +75,8 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
 
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getResponseCode(), 0,
                 "ResponseCode: " + iqSoft_04_apiVariables_credit_response.getResponseCode());
-        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "null",
-                "Description: " + iqSoft_04_apiVariables_credit_response.getDescription());
+//        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "null",
+//                "Description: " + iqSoft_04_apiVariables_credit_response.getDescription());
         softAssert.assertNotEquals(iqSoft_04_apiVariables_credit_response.getBetId(), "null",
                 "BetId: " + iqSoft_04_apiVariables_credit_response.getBetId());
         softAssert.assertEquals(beforeCredit - afterCredit, betAmountCreditConfig ,

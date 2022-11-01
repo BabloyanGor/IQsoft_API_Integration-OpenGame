@@ -1,1 +1,0 @@
-{"Token":"e30214f9-4872-11ed-b772-ecb1d7ae60a8","CurrencyId":"TND","GameId":54351,"OperationTypeId":1,"TransactionId":"QA_Test-re0oUolKgxShWuE8hXKf_C","BetState":15,"Amount":1.0}

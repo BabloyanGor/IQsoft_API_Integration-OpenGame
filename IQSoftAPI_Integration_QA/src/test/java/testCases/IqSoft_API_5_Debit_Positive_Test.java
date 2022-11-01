@@ -21,7 +21,7 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest {
     int statusCod;
     double beforeDebit;
     double afterDebit;
-    int operationTypeIdDebit = 4;
+    int operationTypeIdDebit = 1;
     @BeforeClass
     public void setUp() throws UnirestException, IOException {
         HttpResponse<String> responseGetBalanceBeforeDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -91,8 +91,8 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest {
 
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 0,
                 "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "null",
-                "Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
+//        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "null",
+//                "Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
         softAssert.assertNotEquals(iqSoft_05_apiVariables_debit_response.getBetId(), "null",
                 "BetID: " + iqSoft_05_apiVariables_debit_response.getBetId());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getClientId(), iqSoft_05_apiVariables_debit_request.getClientId(),

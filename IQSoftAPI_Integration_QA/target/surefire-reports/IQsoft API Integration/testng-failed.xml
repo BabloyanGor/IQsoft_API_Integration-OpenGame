@@ -19,8 +19,8 @@
       </class> <!-- testCases.IqSoft_API_5_Debit_Negative_Test -->
       <class name="testCases.IqSoft_API_6_RollBack_Negative_Test">
         <methods>
-          <include name="RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice"/>
-          <include name="RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice"/>
+          <include name="RollBackAPIValidateResponseUsingInvalidProductID"/>
+          <include name="RollBackAPIValidateResponseWithInvalidToken"/>
           <include name="tearDownSuite"/>
           <include name="setupSuite"/>
         </methods>

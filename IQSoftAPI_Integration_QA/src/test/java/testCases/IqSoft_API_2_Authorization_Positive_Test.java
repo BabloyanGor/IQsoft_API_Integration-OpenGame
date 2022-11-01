@@ -72,8 +72,8 @@ public class IqSoft_API_2_Authorization_Positive_Test extends BaseTest {
                 "CurrencyId: " + iqSoft_02_apisVariables_authorization_response.getCurrencyId());
         softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getCurrencyId().length(), 3,
                 "CurrencyIdLength: " + iqSoft_02_apisVariables_authorization_response.getCurrencyId().length());
-        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getDescription(), "null",
-                "Description : " + iqSoft_02_apisVariables_authorization_response.getDescription());
+//        softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getDescription(), "null",
+//                "Description : " + iqSoft_02_apisVariables_authorization_response.getDescription());
         softAssert.assertEquals(iqSoft_02_apisVariables_authorization_response.getResponseCode(), 0,
                 "ResponseCode : " + iqSoft_02_apisVariables_authorization_response.getResponseCode());
 
