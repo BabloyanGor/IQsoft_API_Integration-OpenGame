@@ -43,7 +43,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         double amountAfterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
         HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitTransactionID,
-                creditTransactionID, betAmountDebitConfig, 2, operationTypeIdDebit, AuthorizationTokenVar + "1");
+                creditTransactionID, betAmountDebitConfig, 2, operationTypeIdDebit, AuthorizationTokenVar + "_Error");
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -195,7 +195,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
     }
 
     @Test(priority = 4)
-    @Description("Verify Debit API_s response using Invalid Amount")
+    @Description("Verify Debit API_s response using Invalid Credit Transaction ID")
     @Severity(SeverityLevel.BLOCKER)
     public void DebitAPIValidateResponseUsingInvalidCreditTransactionID() throws UnirestException, IOException {
         String creditTransactionID = "QA_Test-" + RandomStringUtils.randomAlphanumeric(20) + "_C_ErrorID";
@@ -233,7 +233,61 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
 
     }
 
-    @Test(priority = 5, dataProvider = "invalidAmount")
+
+    @Test(priority = 5)
+    @Description("Verify Debit API_s response using Debit amount 0")
+    @Severity(SeverityLevel.BLOCKER)
+    public void DebitAPIValidateResponseUsingAmount_0() throws UnirestException, IOException {
+
+        String creditTransactionID = randomCreditTransactionID();
+        String debitTransactionID = randomDebitTransactionID();
+        SoftAssert softAssert = new SoftAssert();
+
+        HttpResponse<String> responseGetBalanceBeforeCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        jsonObjectBody = new JSONObject(responseGetBalanceBeforeCredit.getBody());
+        double amountBeforeCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        Unirest.shutdown();
+
+        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
+                creditTransactionID, betAmountCreditConfig, 1);
+        Unirest.shutdown();
+
+        HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit.getBody());
+        double amountAfterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        Unirest.shutdown();
+
+        HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitTransactionID,
+                creditTransactionID, 0, 2, operationTypeIdDebit, AuthorizationTokenVar );
+        Unirest.shutdown();
+        statusCod = response.getStatus();
+        jsonObjectBody = new JSONObject(response.getBody());
+
+
+        iqSoft_05_apiVariables_debit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
+//        iqSoft_05_apiVariables_debit_response.setDescription(jsonObjectBody.get("Description").toString());
+
+        HttpResponse<String> responseGetBalanceAfterDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        jsonObjectBody = new JSONObject(responseGetBalanceAfterDebit.getBody());
+        double amountAfterDebit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+        Unirest.shutdown();
+
+        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 0,
+                "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
+//        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "error login",
+//                "Error Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
+        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit + betAmountCreditConfig,
+                "amountBeforeCredit =  amountAfterCredit + betAmountCreditConfig" + amountBeforeCredit + " != " + amountAfterCredit + betAmountCreditConfig);
+        softAssert.assertEquals(amountAfterCredit, amountAfterDebit,
+                "amountAfterCredit = amountAfterDebit" + amountAfterCredit + " != " + amountAfterDebit);
+
+        softAssert.assertAll();
+
+    }
+
+
+    @Test(priority = 6, dataProvider = "invalidAmount")
     @Description("Verify Debit API_s response using Invalid Amount")
     @Severity(SeverityLevel.BLOCKER)
     public void DebitAPIValidateResponseUsingInvalidAmount(Double errorAmount) throws UnirestException, IOException {

@@ -72,7 +72,7 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
         double amountBeforeCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar + "1", currencyIDConfig, gameIdConfig, operationTypeIdCredit,
+        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar + "_Error", currencyIDConfig, gameIdConfig, operationTypeIdCredit,
                 randomCreditTransactionID(), betAmountCreditConfig, 1);
         Unirest.shutdown();
         statusCod = responseCredit.getStatus();

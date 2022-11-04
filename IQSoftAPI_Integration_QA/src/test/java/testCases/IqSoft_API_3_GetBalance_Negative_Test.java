@@ -112,6 +112,4 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
 
         Assert.assertNotEquals(balanceUSD, balanceEUR, "balanceUSD VS balanceEUR");
     }
-
-
 }
