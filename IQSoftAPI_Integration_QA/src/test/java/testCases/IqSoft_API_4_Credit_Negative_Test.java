@@ -102,47 +102,47 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test(priority = 3)
-    @Description("Verify Credit API_s response with invalid ProductID")
-    @Severity(SeverityLevel.NORMAL)
-    public void CreditAPIValidateResponseWithInvalidProductID() throws UnirestException, IOException {
-        SoftAssert softAssert = new SoftAssert();
-
-        HttpResponse<String> responseGetBalanceBeforeCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
-        jsonObjectBody = new JSONObject(responseGetBalanceBeforeCredit.getBody());
-        double amountBeforeCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
-        Unirest.shutdown();
-
-        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, currencyIDConfig, -10, operationTypeIdCredit,
-                randomCreditTransactionID(), betAmountCreditConfig, 1);
-        Unirest.shutdown();
-        statusCod = responseCredit.getStatus();
-        jsonObjectBody = new JSONObject(responseCredit.getBody());
-
-        Unirest.shutdown();
-        statusCod = responseCredit.getStatus();
-        jsonObjectBody = new JSONObject(responseCredit.getBody());
-
-        iqSoft_04_apiVariables_credit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-//        iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
-
-
-        HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
-        jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit.getBody());
-        double amountAfterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
-        Unirest.shutdown();
-
-        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
-
-        softAssert.assertNotEquals(iqSoft_04_apiVariables_credit_response.getResponseCode(), 0,
-                "ResponseCode: " + iqSoft_04_apiVariables_credit_response.getResponseCode());
-//        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "game not available",
-//                "Error Description: " + iqSoft_04_apiVariables_credit_response.getDescription());
-        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit,
-                "Amount BeforeCredit: " + amountBeforeCredit + "Amount AfterCredit: " + amountAfterCredit);
-
-        softAssert.assertAll();
-    }
+//    @Test(priority = 3)
+//    @Description("Verify Credit API_s response with invalid ProductID")
+//    @Severity(SeverityLevel.NORMAL)
+//    public void CreditAPIValidateResponseWithInvalidProductID() throws UnirestException, IOException {
+//        SoftAssert softAssert = new SoftAssert();
+//
+//        HttpResponse<String> responseGetBalanceBeforeCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+//        jsonObjectBody = new JSONObject(responseGetBalanceBeforeCredit.getBody());
+//        double amountBeforeCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+//        Unirest.shutdown();
+//
+//        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, currencyIDConfig, -10, operationTypeIdCredit,
+//                randomCreditTransactionID(), betAmountCreditConfig, 1);
+//        Unirest.shutdown();
+//        statusCod = responseCredit.getStatus();
+//        jsonObjectBody = new JSONObject(responseCredit.getBody());
+//
+//        Unirest.shutdown();
+//        statusCod = responseCredit.getStatus();
+//        jsonObjectBody = new JSONObject(responseCredit.getBody());
+//
+//        iqSoft_04_apiVariables_credit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
+////        iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
+//
+//
+//        HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+//        jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit.getBody());
+//        double amountAfterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+//        Unirest.shutdown();
+//
+//        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
+//
+//        softAssert.assertNotEquals(iqSoft_04_apiVariables_credit_response.getResponseCode(), 0,
+//                "ResponseCode: " + iqSoft_04_apiVariables_credit_response.getResponseCode());
+////        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "game not available",
+////                "Error Description: " + iqSoft_04_apiVariables_credit_response.getDescription());
+//        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit,
+//                "Amount BeforeCredit: " + amountBeforeCredit + "Amount AfterCredit: " + amountAfterCredit);
+//
+//        softAssert.assertAll();
+//    }
 
 
     @Test(priority = 4)
