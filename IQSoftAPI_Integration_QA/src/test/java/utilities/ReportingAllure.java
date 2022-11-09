@@ -1,4 +1,5 @@
 package utilities;
+
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -11,11 +12,22 @@ import testCases.BaseTest;
 
 public class ReportingAllure implements ITestListener {
     BaseTest baseTest = new BaseTest();
+
     private static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
     }
 
-//     Text attachments for Allure
+    //     Text attachments for Allure
+    @Attachment(value = "{0}", type = "application/json")
+    public static String saveApplicationJson(String message) {
+        return message;
+    }
+
+    @Attachment(value = "{0}", type = "text/json")
+    public static String saveTextJson(String message) {
+        return message;
+    }
+
     @Attachment(value = "Page screenshot", type = "image/png")
     public byte[] saveScreenshotPNG(WebDriver driver) {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
@@ -32,7 +44,6 @@ public class ReportingAllure implements ITestListener {
     public static String attachHtml(String html) {
         return html;
     }
-
 
 
     @Override

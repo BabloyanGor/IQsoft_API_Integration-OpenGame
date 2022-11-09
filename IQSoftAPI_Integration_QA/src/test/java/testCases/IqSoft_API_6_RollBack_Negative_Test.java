@@ -61,8 +61,9 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
 
         softAssert.assertEquals(amountBeforeCredit, amountAfterCredit + betAmountCreditConfig,
                 "amountBeforeCredit: " + amountBeforeCredit + " = amountAfterCredit : " + amountAfterCredit + " + betAmountCreditConfig : " + betAmountCreditConfig);
-        softAssert.assertEquals(amountAfterRollBack, amountAfterCredit,
-                "amountAfterRollBack: " + amountAfterRollBack + " = amountAfterCredit: " + amountAfterCredit);
+        softAssert.assertEquals(amountAfterRollBack, amountBeforeCredit,
+                "amountAfterRollBack: " + amountAfterRollBack + " = amountBeforeCredit: " + amountBeforeCredit);
+        
         softAssert.assertAll();
 
     }
