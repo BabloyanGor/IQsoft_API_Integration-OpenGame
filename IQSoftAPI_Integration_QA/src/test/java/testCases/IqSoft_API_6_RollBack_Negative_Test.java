@@ -17,56 +17,56 @@ public class IqSoft_API_6_RollBack_Negative_Test extends BaseTest {
     JSONObject jsonObjectBody;
     int statusCod;
 
-    @Test(priority = 1)
-    @Description("Verify RollBack API_s response with Expired Token")
-    @Severity(SeverityLevel.BLOCKER)
-    public void RollBackAPIValidateResponseWithExpiredToken() throws UnirestException, IOException {
-        String creditTransactionID = randomCreditTransactionID();
-        String rollBackTransactionID = randomRollBackTransactionID();
-        SoftAssert softAssert = new SoftAssert();
-
-        HttpResponse<String> responseGetBalanceBeforeCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
-        jsonObjectBody = new JSONObject(responseGetBalanceBeforeCredit.getBody());
-        double amountBeforeCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
-        Unirest.shutdown();
-        logger.info("Balance Before Credit:" + amountBeforeCredit);
-
-        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
-                creditTransactionID, betAmountCreditConfig, 1);
-        Unirest.shutdown();
-
-        HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
-        jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit.getBody());
-        double amountAfterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
-        Unirest.shutdown();
-        logger.info("Balance After Credit:" + amountAfterCredit);
-
-
-        HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, creditTransactionID, rollBackTransactionID, expiredSessionTokenConfig, 15);
-        Unirest.shutdown();
-        statusCod = response.getStatus();
-        jsonObjectBody = new JSONObject(response.getBody());
-
-        iqSoft_06_apiVariables_rollBack_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
-        iqSoft_06_apiVariables_rollBack_response.setDescription(jsonObjectBody.get("Description").toString());
-
-        HttpResponse<String> responseGetBalanceAfterRollBack = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
-        jsonObjectBody = new JSONObject(responseGetBalanceAfterRollBack.getBody());
-        double amountAfterRollBack = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
-        Unirest.shutdown();
-        logger.info("Balance After RollBack:" + amountAfterRollBack);
-
-
-        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
-
-        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit + betAmountCreditConfig,
-                "amountBeforeCredit: " + amountBeforeCredit + " = amountAfterCredit : " + amountAfterCredit + " + betAmountCreditConfig : " + betAmountCreditConfig);
-        softAssert.assertEquals(amountAfterRollBack, amountBeforeCredit,
-                "amountAfterRollBack: " + amountAfterRollBack + " = amountBeforeCredit: " + amountBeforeCredit);
-        
-        softAssert.assertAll();
-
-    }
+//    @Test(priority = 1)
+//    @Description("Verify RollBack API_s response with Expired Token")
+//    @Severity(SeverityLevel.BLOCKER)
+//    public void RollBackAPIValidateResponseWithExpiredToken() throws UnirestException, IOException {
+//        String creditTransactionID = randomCreditTransactionID();
+//        String rollBackTransactionID = randomRollBackTransactionID();
+//        SoftAssert softAssert = new SoftAssert();
+//
+//        HttpResponse<String> responseGetBalanceBeforeCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+//        jsonObjectBody = new JSONObject(responseGetBalanceBeforeCredit.getBody());
+//        double amountBeforeCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+//        Unirest.shutdown();
+//        logger.info("Balance Before Credit:" + amountBeforeCredit);
+//
+//        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
+//                creditTransactionID, betAmountCreditConfig, 1);
+//        Unirest.shutdown();
+//
+//        HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+//        jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit.getBody());
+//        double amountAfterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+//        Unirest.shutdown();
+//        logger.info("Balance After Credit:" + amountAfterCredit);
+//
+//
+//        HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, creditTransactionID, rollBackTransactionID, expiredSessionTokenConfig, 15);
+//        Unirest.shutdown();
+//        statusCod = response.getStatus();
+//        jsonObjectBody = new JSONObject(response.getBody());
+//
+//        iqSoft_06_apiVariables_rollBack_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
+//        iqSoft_06_apiVariables_rollBack_response.setDescription(jsonObjectBody.get("Description").toString());
+//
+//        HttpResponse<String> responseGetBalanceAfterRollBack = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+//        jsonObjectBody = new JSONObject(responseGetBalanceAfterRollBack.getBody());
+//        double amountAfterRollBack = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
+//        Unirest.shutdown();
+//        logger.info("Balance After RollBack:" + amountAfterRollBack);
+//
+//
+//        softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
+//
+//        softAssert.assertEquals(amountBeforeCredit, amountAfterCredit + betAmountCreditConfig,
+//                "amountBeforeCredit: " + amountBeforeCredit + " = amountAfterCredit : " + amountAfterCredit + " + betAmountCreditConfig : " + betAmountCreditConfig);
+//        softAssert.assertEquals(amountAfterRollBack, amountBeforeCredit,
+//                "amountAfterRollBack: " + amountAfterRollBack + " = amountBeforeCredit: " + amountBeforeCredit);
+//
+//        softAssert.assertAll();
+//
+//    }
 
 
     @Test(priority = 2)

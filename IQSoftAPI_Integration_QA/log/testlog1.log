@@ -1,757 +1,709 @@
-2022-11-04 14:11:16,832 [main] INFO ApiIntegration - API Integration Automation Test: Test execution starts
-2022-11-04 14:11:17,657 [main] INFO ApiIntegration - 
-2022-11-04 14:11:17,657 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Authorization
-2022-11-04 14:11:17,658 [main] INFO ApiIntegration - AuthorizationAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","ProductId":54001}
-2022-11-04 14:11:17,658 [main] INFO ApiIntegration - AuthorizationAPI:  ResponseBody{"ResponseCode":0,"Description":null,"Token":"MzIwNTc1fDE2NjcyOTAzMzc=","ClientId":"320575","UserName":"iqtest3","NickName":"iqtest3","CurrencyId":"TND","CurrencySymbol":"TND","FirstName":"iqtest3","LastName":"iqtest3","Gender":1,"BirthDate":"1990-01-01","CategoryId":10,"CategoryName":"Player","UserId":320575,"AvailableBalance":"521.00","BetShopId":null,"BetShopName":null,"BetShopAddress":null,"BetShopCurrencyId":"TND","CashDeskId":1,"DepositCount":0}  ResponseTime 504 ms
-2022-11-04 14:11:17,658 [main] INFO ApiIntegration - 
-2022-11-04 14:11:17,715 [main] INFO ApiIntegration - Authorization API Status Cod is Equal: 200
-2022-11-04 14:11:17,776 [main] INFO ApiIntegration - AuthorizationAPIValidateStatusCod: Test passed
-2022-11-04 14:11:17,788 [main] INFO ApiIntegration - AuthorizationAPIValidatePositiveResponse: Test passed
-2022-11-04 14:11:18,019 [main] INFO ApiIntegration - 
-2022-11-04 14:11:18,019 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:18,019 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:18,019 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"521.00"}  ResponseTime 219 ms
-2022-11-04 14:11:18,020 [main] INFO ApiIntegration - 
-2022-11-04 14:11:18,022 [main] INFO ApiIntegration - GetBalance API Status Cod is Equal: 200
-2022-11-04 14:11:18,024 [main] INFO ApiIntegration - GetBalanceAPIValidateStatusCod: Test passed
-2022-11-04 14:11:18,030 [main] INFO ApiIntegration - GetBalanceAPIValidatePositiveResponse: Test passed
-2022-11-04 14:11:18,265 [main] INFO ApiIntegration - 
-2022-11-04 14:11:18,266 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:18,266 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:18,266 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"521.00"}  ResponseTime 224 ms
-2022-11-04 14:11:18,266 [main] INFO ApiIntegration - 
-2022-11-04 14:11:18,536 [main] INFO ApiIntegration - 
-2022-11-04 14:11:18,537 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:18,537 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-qtuafDBDXavYetSy5brf_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:18,537 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"520.00","OperationItems":[{"ClientId":320575,"Balance":"520.00","CurrencyId":"TND","TransactionId":"QA_Test-qtuafDBDXavYetSy5brf_C","BetId":"QA_Test-qtuafDBDXavYetSy5brf_C"}]}  ResponseTime 262 ms
-2022-11-04 14:11:18,537 [main] INFO ApiIntegration - 
-2022-11-04 14:11:18,669 [main] INFO ApiIntegration - 
-2022-11-04 14:11:18,670 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:18,670 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:18,671 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"520.00"}  ResponseTime 116 ms
-2022-11-04 14:11:18,671 [main] INFO ApiIntegration - 
-2022-11-04 14:11:18,678 [main] INFO ApiIntegration - Credit API Status Cod is Equal: 200
-2022-11-04 14:11:18,680 [main] INFO ApiIntegration - CreditAPIValidateStatusCod: Test passed
-2022-11-04 14:11:18,688 [main] INFO ApiIntegration - CreditAPIValidatePositiveResponse: Test passed
-2022-11-04 14:11:18,816 [main] INFO ApiIntegration - 
-2022-11-04 14:11:18,816 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:18,816 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:18,816 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"520.00"}  ResponseTime 117 ms
-2022-11-04 14:11:18,816 [main] INFO ApiIntegration - 
-2022-11-04 14:11:18,954 [main] INFO ApiIntegration - 
-2022-11-04 14:11:18,954 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
-2022-11-04 14:11:18,955 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-LJcssNIpc5f2TMr0w7CU_D","CreditTransactionId":"QA_Test-qtuafDBDXavYetSy5brf_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:18,955 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"525.00","OperationItems":[{"ClientId":320575,"Balance":"525.00","CurrencyId":"TND","TransactionId":"QA_Test-LJcssNIpc5f2TMr0w7CU_D","BetId":"QA_Test-LJcssNIpc5f2TMr0w7CU_D"}]}  ResponseTime 123 ms
-2022-11-04 14:11:18,956 [main] INFO ApiIntegration - 
-2022-11-04 14:11:19,087 [main] INFO ApiIntegration - 
-2022-11-04 14:11:19,087 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:19,087 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:19,088 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"525.00"}  ResponseTime 118 ms
-2022-11-04 14:11:19,088 [main] INFO ApiIntegration - 
-2022-11-04 14:11:19,090 [main] INFO ApiIntegration - Debit API Status Cod is Equal: 200
-2022-11-04 14:11:19,092 [main] INFO ApiIntegration - DebitAPIValidateStatusCod: Test passed
-2022-11-04 14:11:19,486 [main] INFO ApiIntegration - DebitAPIValidatePositiveResponse: Test passed
-2022-11-04 14:11:19,626 [main] INFO ApiIntegration - 
-2022-11-04 14:11:19,627 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:19,627 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:19,628 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"525.00"}  ResponseTime 127 ms
-2022-11-04 14:11:19,629 [main] INFO ApiIntegration - 
-2022-11-04 14:11:19,629 [main] INFO ApiIntegration - Balance Before Credit:525.0
-2022-11-04 14:11:19,786 [main] INFO ApiIntegration - 
-2022-11-04 14:11:19,787 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:19,787 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-iKRv4u8NElOEAVkpKvY5_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:19,787 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"524.00","OperationItems":[{"ClientId":320575,"Balance":"524.00","CurrencyId":"TND","TransactionId":"QA_Test-iKRv4u8NElOEAVkpKvY5_C","BetId":"QA_Test-iKRv4u8NElOEAVkpKvY5_C"}]}  ResponseTime 147 ms
-2022-11-04 14:11:19,788 [main] INFO ApiIntegration - 
-2022-11-04 14:11:19,950 [main] INFO ApiIntegration - 
-2022-11-04 14:11:19,950 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:19,951 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:19,951 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 133 ms
-2022-11-04 14:11:19,952 [main] INFO ApiIntegration - 
-2022-11-04 14:11:19,952 [main] INFO ApiIntegration - Balance After Credit:524.0
-2022-11-04 14:11:20,110 [main] INFO ApiIntegration - 
-2022-11-04 14:11:20,111 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
-2022-11-04 14:11:20,111 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-XCuyqw4rdax27wBqJlSs_D","CreditTransactionId":"QA_Test-iKRv4u8NElOEAVkpKvY5_C","Amount":5.0,"BetState":2,"OperationTypeId":4,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:20,112 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"529.00","OperationItems":[{"ClientId":320575,"Balance":"529.00","CurrencyId":"TND","TransactionId":"QA_Test-XCuyqw4rdax27wBqJlSs_D","BetId":"QA_Test-XCuyqw4rdax27wBqJlSs_D"}]}  ResponseTime 135 ms
-2022-11-04 14:11:20,112 [main] INFO ApiIntegration - 
-2022-11-04 14:11:20,273 [main] INFO ApiIntegration - 
-2022-11-04 14:11:20,274 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:20,274 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:20,275 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"529.00"}  ResponseTime 140 ms
-2022-11-04 14:11:20,275 [main] INFO ApiIntegration - 
-2022-11-04 14:11:20,277 [main] INFO ApiIntegration - Balance After Debit:529.0
-2022-11-04 14:11:20,415 [main] INFO ApiIntegration - 
-2022-11-04 14:11:20,415 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
-2022-11-04 14:11:20,415 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-iKRv4u8NElOEAVkpKvY5_C","TransactionId":"QA_Test-1TY7EZbb9i2r6u6bX73X_R","OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:20,415 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody{"ResponseCode":0,"Description":""}  ResponseTime 122 ms
-2022-11-04 14:11:20,415 [main] INFO ApiIntegration - 
-2022-11-04 14:11:20,541 [main] INFO ApiIntegration - 
-2022-11-04 14:11:20,541 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:20,542 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:20,542 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"525.00"}  ResponseTime 110 ms
-2022-11-04 14:11:20,542 [main] INFO ApiIntegration - 
-2022-11-04 14:11:20,543 [main] INFO ApiIntegration - Balance After RollBackCredit:525.0
-2022-11-04 14:11:20,549 [main] INFO ApiIntegration - RollBackCredit API Status Cod is Equal: 200
-2022-11-04 14:11:20,553 [main] INFO ApiIntegration - RollBackAPIValidateStatusCod: Test passed
-2022-11-04 14:11:20,558 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponse: Test passed
-2022-11-04 14:11:20,564 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponseBalanceCorrection: Test passed
-2022-11-04 14:11:20,704 [main] INFO ApiIntegration - 
-2022-11-04 14:11:20,704 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:20,704 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:20,704 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"525.00"}  ResponseTime 130 ms
-2022-11-04 14:11:20,704 [main] INFO ApiIntegration - 
-2022-11-04 14:11:20,705 [main] INFO ApiIntegration - Balance Before Credit:525.0
-2022-11-04 14:11:20,850 [main] INFO ApiIntegration - 
-2022-11-04 14:11:20,850 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:20,851 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":3,"TransactionId":"QA_Test-Yubg1EZ0nVpNreisfUEc_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:20,851 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"524.00","OperationItems":[{"ClientId":320575,"Balance":"524.00","CurrencyId":"TND","TransactionId":"QA_Test-Yubg1EZ0nVpNreisfUEc_C","BetId":"QA_Test-Yubg1EZ0nVpNreisfUEc_C"}]}  ResponseTime 130 ms
-2022-11-04 14:11:20,852 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,001 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,002 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:21,002 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:21,002 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 122 ms
-2022-11-04 14:11:21,002 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,003 [main] INFO ApiIntegration - Balance After Credit:524.0
-2022-11-04 14:11:21,155 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,156 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
-2022-11-04 14:11:21,156 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-Yubg1EZ0nVpNreisfUEc_C","TransactionId":"QA_Test-amK4AV9AvbjkowrrsVvL_R","OperationTypeId":15,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:21,156 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody{"ResponseCode":0,"Description":""}  ResponseTime 143 ms
-2022-11-04 14:11:21,156 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,285 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,285 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:21,285 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:21,286 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"525.00"}  ResponseTime 120 ms
-2022-11-04 14:11:21,286 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,286 [main] INFO ApiIntegration - Balance After RollBackCredit:525.0
-2022-11-04 14:11:21,288 [main] INFO ApiIntegration - RollBackCredit API Status Cod is Equal: 200
-2022-11-04 14:11:21,290 [main] INFO ApiIntegration - RollBackAPIValidateStatusCod: Test passed
-2022-11-04 14:11:21,298 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponse: Test passed
-2022-11-04 14:11:21,303 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponseBalanceCorrection: Test passed
-2022-11-04 14:11:21,441 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,441 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:21,441 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:21,441 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"525.00"}  ResponseTime 125 ms
-2022-11-04 14:11:21,441 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,442 [main] INFO ApiIntegration - Balance Before Credit:525.0
-2022-11-04 14:11:21,615 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,615 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:21,616 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":3,"TransactionId":"QA_Test-LQmzX0oqkuMsv3SAvdrD_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:21,616 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"524.00","OperationItems":[{"ClientId":320575,"Balance":"524.00","CurrencyId":"TND","TransactionId":"QA_Test-LQmzX0oqkuMsv3SAvdrD_C","BetId":"QA_Test-LQmzX0oqkuMsv3SAvdrD_C"}]}  ResponseTime 156 ms
-2022-11-04 14:11:21,616 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,732 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,732 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:21,732 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:21,732 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 107 ms
-2022-11-04 14:11:21,732 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,733 [main] INFO ApiIntegration - Balance After Credit:524.0
-2022-11-04 14:11:21,849 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,849 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
-2022-11-04 14:11:21,850 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-Nfypgsk8k0Gy7DxDMXJd_D","CreditTransactionId":"QA_Test-LQmzX0oqkuMsv3SAvdrD_C","Amount":5.0,"BetState":2,"OperationTypeId":4,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:21,850 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"529.00","OperationItems":[{"ClientId":320575,"Balance":"529.00","CurrencyId":"TND","TransactionId":"QA_Test-Nfypgsk8k0Gy7DxDMXJd_D","BetId":"QA_Test-Nfypgsk8k0Gy7DxDMXJd_D"}]}  ResponseTime 109 ms
-2022-11-04 14:11:21,850 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,962 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,963 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:21,963 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:21,963 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"529.00"}  ResponseTime 105 ms
-2022-11-04 14:11:21,963 [main] INFO ApiIntegration - 
-2022-11-04 14:11:21,964 [main] INFO ApiIntegration - Balance After Debit:529.0
-2022-11-04 14:11:22,110 [main] INFO ApiIntegration - 
-2022-11-04 14:11:22,111 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
-2022-11-04 14:11:22,111 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-Nfypgsk8k0Gy7DxDMXJd_D","TransactionId":"QA_Test-C20j0WBLCV7ko3EibDrk_R","OperationTypeId":17,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:22,111 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody{"ResponseCode":0,"Description":""}  ResponseTime 134 ms
-2022-11-04 14:11:22,112 [main] INFO ApiIntegration - 
-2022-11-04 14:11:22,292 [main] INFO ApiIntegration - 
-2022-11-04 14:11:22,293 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:22,293 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:22,293 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 166 ms
-2022-11-04 14:11:22,293 [main] INFO ApiIntegration - 
-2022-11-04 14:11:22,293 [main] INFO ApiIntegration - Balance After RollBackDebit:524.0
-2022-11-04 14:11:22,297 [main] INFO ApiIntegration - RollBack API Status Cod is Equal: 200
-2022-11-04 14:11:22,298 [main] INFO ApiIntegration - RollBackAPIValidateStatusCod: Test passed
-2022-11-04 14:11:22,306 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponse: Test passed
-2022-11-04 14:11:22,311 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponseBalanceCorrection: Test passed
-2022-11-04 14:11:22,433 [main] INFO ApiIntegration - 
-2022-11-04 14:11:22,433 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Authorization
-2022-11-04 14:11:22,433 [main] INFO ApiIntegration - AuthorizationAPI:  RequestBody{"Token":"NDIwfDE2NjY5NTgyNTE","ProductId":54001}
-2022-11-04 14:11:22,433 [main] INFO ApiIntegration - AuthorizationAPI:  ResponseBody{"ResponseCode":21,"Description":"Expired Token"}  ResponseTime 112 ms
-2022-11-04 14:11:22,434 [main] INFO ApiIntegration - 
-2022-11-04 14:11:22,434 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
-2022-11-04 14:11:22,436 [main] INFO ApiIntegration - AuthorizationAPIValidateResponseWithExpiredToken: Test passed
-2022-11-04 14:11:22,565 [main] INFO ApiIntegration - 
-2022-11-04 14:11:22,565 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Authorization
-2022-11-04 14:11:22,565 [main] INFO ApiIntegration - AuthorizationAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d1","ProductId":54001}
-2022-11-04 14:11:22,565 [main] INFO ApiIntegration - AuthorizationAPI:  ResponseBody{"ResponseCode":21,"Description":"Expired Token"}  ResponseTime 119 ms
-2022-11-04 14:11:22,565 [main] INFO ApiIntegration - 
-2022-11-04 14:11:22,566 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
-2022-11-04 14:11:22,567 [main] INFO ApiIntegration - AuthorizationAPIValidateResponseWithInvalidToken: Test passed
-2022-11-04 14:11:22,681 [main] INFO ApiIntegration - 
-2022-11-04 14:11:22,681 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:22,681 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"NDIwfDE2NjY5NTgyNTE","CurrencyId":"TND"}
-2022-11-04 14:11:22,681 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"212.64"}  ResponseTime 106 ms
-2022-11-04 14:11:22,682 [main] INFO ApiIntegration - 
-2022-11-04 14:11:22,682 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
-2022-11-04 14:11:22,702 [main] ERROR ApiIntegration - GetBalanceAPIValidateResponseWithExpiredToken Test failed
-2022-11-04 14:11:22,817 [main] INFO ApiIntegration - 
-2022-11-04 14:11:22,817 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:22,818 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d1","CurrencyId":"TND"}
-2022-11-04 14:11:22,818 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 104 ms
-2022-11-04 14:11:22,818 [main] INFO ApiIntegration - 
-2022-11-04 14:11:22,818 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
-2022-11-04 14:11:22,822 [main] ERROR ApiIntegration - GetBalanceAPIValidateResponseWithInvalidToken Test failed
-2022-11-04 14:11:22,933 [main] INFO ApiIntegration - 
-2022-11-04 14:11:22,934 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:22,934 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND1"}
-2022-11-04 14:11:22,934 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":21,"Description":"invalid CurrencyId"}  ResponseTime 105 ms
-2022-11-04 14:11:22,934 [main] INFO ApiIntegration - 
-2022-11-04 14:11:22,934 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
-2022-11-04 14:11:22,936 [main] INFO ApiIntegration - GetBalanceAPIValidateResponseWithInvalidCurrencyID: Test passed
-2022-11-04 14:11:23,052 [main] INFO ApiIntegration - 
-2022-11-04 14:11:23,052 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:23,053 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"USD"}
-2022-11-04 14:11:23,053 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":21,"Description":"invalid CurrencyId"}  ResponseTime 109 ms
-2022-11-04 14:11:23,053 [main] INFO ApiIntegration - 
-2022-11-04 14:11:23,053 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
-2022-11-04 14:11:23,055 [main] ERROR ApiIntegration - GetBalanceAPIValidateResponseWithOtherCurrencyID Test failed
-2022-11-04 14:11:23,198 [main] INFO ApiIntegration - 
-2022-11-04 14:11:23,199 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:23,199 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:23,199 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 129 ms
-2022-11-04 14:11:23,199 [main] INFO ApiIntegration - 
-2022-11-04 14:11:23,363 [main] INFO ApiIntegration - 
-2022-11-04 14:11:23,363 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:23,363 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"NDIwfDE2NjY5NTgyNTE","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-JiZtNvtaHoPAyBnQhF7k_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:23,364 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"211.64","OperationItems":[{"ClientId":420,"Balance":"211.64","CurrencyId":"TND","TransactionId":"QA_Test-JiZtNvtaHoPAyBnQhF7k_C","BetId":"QA_Test-JiZtNvtaHoPAyBnQhF7k_C"}]}  ResponseTime 157 ms
-2022-11-04 14:11:23,364 [main] INFO ApiIntegration - 
-2022-11-04 14:11:23,494 [main] INFO ApiIntegration - 
-2022-11-04 14:11:23,495 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:23,496 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:23,496 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 120 ms
-2022-11-04 14:11:23,497 [main] INFO ApiIntegration - 
-2022-11-04 14:11:23,507 [main] ERROR ApiIntegration - CreditAPIValidateResponseWithExpiredToken Test failed
-2022-11-04 14:11:23,656 [main] INFO ApiIntegration - 
-2022-11-04 14:11:23,657 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:23,657 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:23,657 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 127 ms
-2022-11-04 14:11:23,657 [main] INFO ApiIntegration - 
-2022-11-04 14:11:23,834 [main] INFO ApiIntegration - 
-2022-11-04 14:11:23,834 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:23,834 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d_Error","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-J96ppNTQ8VnoSoY5HF0p_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:23,834 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"523.00","OperationItems":[{"ClientId":320575,"Balance":"523.00","CurrencyId":"TND","TransactionId":"QA_Test-J96ppNTQ8VnoSoY5HF0p_C","BetId":"QA_Test-J96ppNTQ8VnoSoY5HF0p_C"}]}  ResponseTime 162 ms
-2022-11-04 14:11:23,834 [main] INFO ApiIntegration - 
-2022-11-04 14:11:23,968 [main] INFO ApiIntegration - 
-2022-11-04 14:11:23,969 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:23,969 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:23,969 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"523.00"}  ResponseTime 126 ms
-2022-11-04 14:11:23,969 [main] INFO ApiIntegration - 
-2022-11-04 14:11:23,971 [main] ERROR ApiIntegration - CreditAPIValidateResponseWithInvalidToken Test failed
-2022-11-04 14:11:24,103 [main] INFO ApiIntegration - 
-2022-11-04 14:11:24,103 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:24,104 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:24,104 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"523.00"}  ResponseTime 121 ms
-2022-11-04 14:11:24,104 [main] INFO ApiIntegration - 
-2022-11-04 14:11:24,223 [main] INFO ApiIntegration - 
-2022-11-04 14:11:24,224 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:24,224 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":3,"TransactionId":"QA_Test-adMoiCxNEICjOsWBKH94_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:24,225 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"522.00","OperationItems":[{"ClientId":320575,"Balance":"522.00","CurrencyId":"TND","TransactionId":"QA_Test-adMoiCxNEICjOsWBKH94_C","BetId":"QA_Test-adMoiCxNEICjOsWBKH94_C"}]}  ResponseTime 105 ms
-2022-11-04 14:11:24,225 [main] INFO ApiIntegration - 
-2022-11-04 14:11:24,368 [main] INFO ApiIntegration - 
-2022-11-04 14:11:24,368 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:24,368 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:24,368 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 124 ms
-2022-11-04 14:11:24,368 [main] INFO ApiIntegration - 
-2022-11-04 14:11:24,490 [main] INFO ApiIntegration - 
-2022-11-04 14:11:24,491 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:24,491 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-adMoiCxNEICjOsWBKH94_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:24,491 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":21,"Description":"Transaction is already processed"}  ResponseTime 113 ms
-2022-11-04 14:11:24,491 [main] INFO ApiIntegration - 
-2022-11-04 14:11:24,614 [main] INFO ApiIntegration - 
-2022-11-04 14:11:24,615 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:24,615 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:24,615 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 111 ms
-2022-11-04 14:11:24,615 [main] INFO ApiIntegration - 
-2022-11-04 14:11:24,617 [main] INFO ApiIntegration - CreditAPIValidateResponseUsingTransactionIDTwice: Test passed
-2022-11-04 14:11:24,735 [main] INFO ApiIntegration - 
-2022-11-04 14:11:24,736 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:24,736 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:24,736 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 107 ms
-2022-11-04 14:11:24,737 [main] INFO ApiIntegration - 
-2022-11-04 14:11:24,879 [main] INFO ApiIntegration - 
-2022-11-04 14:11:24,879 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:24,879 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-DtDbAWU5KwhNflJAIN6p_C","BetState":1,"Amount":532.0}
-2022-11-04 14:11:24,879 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":21,"Description":"Insufficient funds"}  ResponseTime 118 ms
-2022-11-04 14:11:24,879 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,008 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,008 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:25,008 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:25,008 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 122 ms
-2022-11-04 14:11:25,008 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,009 [main] INFO ApiIntegration - CreditAPIValidateResponseUsingAmountHigherThenBalance: Test passed
-2022-11-04 14:11:25,144 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,145 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:25,145 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:25,145 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 115 ms
-2022-11-04 14:11:25,146 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,279 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,279 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:25,279 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-VhCFqbbyBOtUz2gLnffi_C","BetState":1,"Amount":0.0}
-2022-11-04 14:11:25,279 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 116 ms
-2022-11-04 14:11:25,279 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,414 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,414 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:25,414 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:25,415 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 126 ms
-2022-11-04 14:11:25,415 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,417 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
-2022-11-04 14:11:25,547 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,547 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:25,547 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:25,547 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 122 ms
-2022-11-04 14:11:25,547 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,667 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,667 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:25,667 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-niiHecW74WCiiQVbL7dj_C","BetState":1,"Amount":-1.0}
-2022-11-04 14:11:25,667 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 115 ms
-2022-11-04 14:11:25,668 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,788 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,789 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:25,789 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:25,789 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 110 ms
-2022-11-04 14:11:25,790 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,795 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
-2022-11-04 14:11:25,925 [main] INFO ApiIntegration - 
-2022-11-04 14:11:25,925 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:25,925 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:25,925 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 118 ms
-2022-11-04 14:11:25,925 [main] INFO ApiIntegration - 
-2022-11-04 14:11:26,106 [main] INFO ApiIntegration - 
-2022-11-04 14:11:26,107 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:26,107 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-Mtvprl4bJqVfWqfqRt70_C","BetState":1,"Amount":-1.5}
-2022-11-04 14:11:26,107 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 171 ms
-2022-11-04 14:11:26,107 [main] INFO ApiIntegration - 
-2022-11-04 14:11:26,269 [main] INFO ApiIntegration - 
-2022-11-04 14:11:26,269 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:26,269 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:26,270 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 153 ms
-2022-11-04 14:11:26,270 [main] INFO ApiIntegration - 
-2022-11-04 14:11:26,271 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
-2022-11-04 14:11:26,411 [main] INFO ApiIntegration - 
-2022-11-04 14:11:26,411 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:26,412 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:26,412 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 129 ms
-2022-11-04 14:11:26,412 [main] INFO ApiIntegration - 
-2022-11-04 14:11:26,538 [main] INFO ApiIntegration - 
-2022-11-04 14:11:26,538 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:26,538 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-LWj0f5BNacb5e3Tlz0jF_C","BetState":1,"Amount":-1.05}
-2022-11-04 14:11:26,538 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 115 ms
-2022-11-04 14:11:26,538 [main] INFO ApiIntegration - 
-2022-11-04 14:11:26,641 [main] INFO ApiIntegration - 
-2022-11-04 14:11:26,641 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:26,641 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:26,641 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 97 ms
-2022-11-04 14:11:26,641 [main] INFO ApiIntegration - 
-2022-11-04 14:11:26,642 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
-2022-11-04 14:11:26,777 [main] INFO ApiIntegration - 
-2022-11-04 14:11:26,777 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:26,777 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:26,777 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 119 ms
-2022-11-04 14:11:26,777 [main] INFO ApiIntegration - 
-2022-11-04 14:11:26,890 [main] INFO ApiIntegration - 
-2022-11-04 14:11:26,891 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:26,891 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-nPYacj7czY5V4Cmh9xsA_C","BetState":1,"Amount":-1.005}
-2022-11-04 14:11:26,891 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 103 ms
-2022-11-04 14:11:26,891 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,002 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,002 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:27,003 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:27,003 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 100 ms
-2022-11-04 14:11:27,003 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,009 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
-2022-11-04 14:11:27,150 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,151 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:27,151 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:27,151 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 119 ms
-2022-11-04 14:11:27,151 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,318 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,318 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:27,318 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-sjNOi5qnpUQ7QVQeoNlR_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:27,318 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"521.00","OperationItems":[{"ClientId":320575,"Balance":"521.00","CurrencyId":"TND","TransactionId":"QA_Test-sjNOi5qnpUQ7QVQeoNlR_C","BetId":"QA_Test-sjNOi5qnpUQ7QVQeoNlR_C"}]}  ResponseTime 148 ms
-2022-11-04 14:11:27,319 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,447 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,447 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:27,447 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:27,447 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"521.00"}  ResponseTime 119 ms
-2022-11-04 14:11:27,447 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,567 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,568 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
-2022-11-04 14:11:27,568 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-7gXMYum7cpdHocFSPPmO_D","CreditTransactionId":"QA_Test-sjNOi5qnpUQ7QVQeoNlR_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d_Error"}
-2022-11-04 14:11:27,569 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"526.00","OperationItems":[{"ClientId":320575,"Balance":"526.00","CurrencyId":"TND","TransactionId":"QA_Test-7gXMYum7cpdHocFSPPmO_D","BetId":"QA_Test-7gXMYum7cpdHocFSPPmO_D"}]}  ResponseTime 110 ms
-2022-11-04 14:11:27,569 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,689 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,689 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:27,689 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:27,690 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"526.00"}  ResponseTime 109 ms
-2022-11-04 14:11:27,690 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,693 [main] ERROR ApiIntegration - DebitAPIValidateResponseWithInvalidToken Test failed
-2022-11-04 14:11:27,807 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,807 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:27,807 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:27,807 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"526.00"}  ResponseTime 100 ms
-2022-11-04 14:11:27,807 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,970 [main] INFO ApiIntegration - 
-2022-11-04 14:11:27,970 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:27,970 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-3enh1RE4ilNAUk35WS15_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:27,970 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"525.00","OperationItems":[{"ClientId":320575,"Balance":"525.00","CurrencyId":"TND","TransactionId":"QA_Test-3enh1RE4ilNAUk35WS15_C","BetId":"QA_Test-3enh1RE4ilNAUk35WS15_C"}]}  ResponseTime 137 ms
-2022-11-04 14:11:27,970 [main] INFO ApiIntegration - 
-2022-11-04 14:11:28,091 [main] INFO ApiIntegration - 
-2022-11-04 14:11:28,091 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:28,091 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:28,091 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"525.00"}  ResponseTime 115 ms
-2022-11-04 14:11:28,091 [main] INFO ApiIntegration - 
-2022-11-04 14:11:28,220 [main] INFO ApiIntegration - 
-2022-11-04 14:11:28,220 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:28,221 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-91Au8UjMmM2uqvzFNyQt_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:28,221 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"524.00","OperationItems":[{"ClientId":320575,"Balance":"524.00","CurrencyId":"TND","TransactionId":"QA_Test-91Au8UjMmM2uqvzFNyQt_C","BetId":"QA_Test-91Au8UjMmM2uqvzFNyQt_C"}]}  ResponseTime 119 ms
-2022-11-04 14:11:28,221 [main] INFO ApiIntegration - 
-2022-11-04 14:11:28,334 [main] INFO ApiIntegration - 
-2022-11-04 14:11:28,334 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:28,334 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:28,334 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 105 ms
-2022-11-04 14:11:28,334 [main] INFO ApiIntegration - 
-2022-11-04 14:11:28,466 [main] INFO ApiIntegration - 
-2022-11-04 14:11:28,466 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
-2022-11-04 14:11:28,466 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-OaWcDOJ9qWHBcSnTtx0z_D","CreditTransactionId":"QA_Test-3enh1RE4ilNAUk35WS15_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:28,466 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"529.00","OperationItems":[{"ClientId":320575,"Balance":"529.00","CurrencyId":"TND","TransactionId":"QA_Test-OaWcDOJ9qWHBcSnTtx0z_D","BetId":"QA_Test-OaWcDOJ9qWHBcSnTtx0z_D"}]}  ResponseTime 123 ms
-2022-11-04 14:11:28,466 [main] INFO ApiIntegration - 
-2022-11-04 14:11:28,611 [main] INFO ApiIntegration - 
-2022-11-04 14:11:28,612 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:28,612 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:28,612 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"529.00"}  ResponseTime 137 ms
-2022-11-04 14:11:28,612 [main] INFO ApiIntegration - 
-2022-11-04 14:11:28,742 [main] INFO ApiIntegration - 
-2022-11-04 14:11:28,743 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
-2022-11-04 14:11:28,743 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-OaWcDOJ9qWHBcSnTtx0z_D","CreditTransactionId":"QA_Test-91Au8UjMmM2uqvzFNyQt_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:28,743 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":21,"Description":"Transaction is already processed"}  ResponseTime 114 ms
-2022-11-04 14:11:28,743 [main] INFO ApiIntegration - 
-2022-11-04 14:11:28,888 [main] INFO ApiIntegration - 
-2022-11-04 14:11:28,888 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:28,888 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:28,888 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"529.00"}  ResponseTime 129 ms
-2022-11-04 14:11:28,888 [main] INFO ApiIntegration - 
-2022-11-04 14:11:28,891 [main] ERROR ApiIntegration - DebitAPIValidateResponseUsingTransactionIDTwice Test failed
-2022-11-04 14:11:29,008 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,008 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:29,008 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:29,008 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"529.00"}  ResponseTime 110 ms
-2022-11-04 14:11:29,008 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,133 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,133 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
-2022-11-04 14:11:29,133 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-VjBO5JVc4oYA1suPRHJf_D","CreditTransactionId":"QA_Test-KfBJEtyXQVSpjeVeUTI4_C_ErrorID","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:29,133 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":21,"Description":"CreditTransactionId Not Found"}  ResponseTime 119 ms
-2022-11-04 14:11:29,133 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,274 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,274 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:29,275 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:29,275 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"529.00"}  ResponseTime 127 ms
-2022-11-04 14:11:29,275 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,279 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidCreditTransactionID: Test passed
-2022-11-04 14:11:29,418 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,418 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:29,419 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:29,419 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"529.00"}  ResponseTime 123 ms
-2022-11-04 14:11:29,419 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,554 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,554 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:29,555 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-E4AR1YLh2l73S5bb6cNm_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:29,555 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"528.00","OperationItems":[{"ClientId":320575,"Balance":"528.00","CurrencyId":"TND","TransactionId":"QA_Test-E4AR1YLh2l73S5bb6cNm_C","BetId":"QA_Test-E4AR1YLh2l73S5bb6cNm_C"}]}  ResponseTime 116 ms
-2022-11-04 14:11:29,555 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,680 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,680 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:29,680 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:29,680 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"528.00"}  ResponseTime 105 ms
-2022-11-04 14:11:29,680 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,797 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,797 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
-2022-11-04 14:11:29,797 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-Nn4KtmYlr9rHg7BaqHdV_D","CreditTransactionId":"QA_Test-E4AR1YLh2l73S5bb6cNm_C","Amount":0.0,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:29,798 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"528.00","OperationItems":[{"ClientId":320575,"Balance":"528.00","CurrencyId":"TND","TransactionId":"QA_Test-Nn4KtmYlr9rHg7BaqHdV_D","BetId":"QA_Test-Nn4KtmYlr9rHg7BaqHdV_D"}]}  ResponseTime 108 ms
-2022-11-04 14:11:29,798 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,925 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,925 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:29,925 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:29,925 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"528.00"}  ResponseTime 120 ms
-2022-11-04 14:11:29,925 [main] INFO ApiIntegration - 
-2022-11-04 14:11:29,926 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingAmount_0: Test passed
-2022-11-04 14:11:30,048 [main] INFO ApiIntegration - 
-2022-11-04 14:11:30,048 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:30,048 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:30,048 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"528.00"}  ResponseTime 105 ms
-2022-11-04 14:11:30,049 [main] INFO ApiIntegration - 
-2022-11-04 14:11:30,192 [main] INFO ApiIntegration - 
-2022-11-04 14:11:30,192 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:30,192 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-06502GB7T8xhUQVZtx7h_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:30,192 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"527.00","OperationItems":[{"ClientId":320575,"Balance":"527.00","CurrencyId":"TND","TransactionId":"QA_Test-06502GB7T8xhUQVZtx7h_C","BetId":"QA_Test-06502GB7T8xhUQVZtx7h_C"}]}  ResponseTime 132 ms
-2022-11-04 14:11:30,192 [main] INFO ApiIntegration - 
-2022-11-04 14:11:30,315 [main] INFO ApiIntegration - 
-2022-11-04 14:11:30,315 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:30,315 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:30,316 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"527.00"}  ResponseTime 105 ms
-2022-11-04 14:11:30,316 [main] INFO ApiIntegration - 
-2022-11-04 14:11:30,455 [main] INFO ApiIntegration - 
-2022-11-04 14:11:30,455 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
-2022-11-04 14:11:30,455 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-iltNPCdWvZInja2hEddt_D","CreditTransactionId":"QA_Test-06502GB7T8xhUQVZtx7h_C","Amount":-1.0,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:30,456 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 115 ms
-2022-11-04 14:11:30,456 [main] INFO ApiIntegration - 
-2022-11-04 14:11:30,574 [main] INFO ApiIntegration - 
-2022-11-04 14:11:30,575 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:30,575 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:30,575 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"527.00"}  ResponseTime 105 ms
-2022-11-04 14:11:30,575 [main] INFO ApiIntegration - 
-2022-11-04 14:11:30,577 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
-2022-11-04 14:11:30,698 [main] INFO ApiIntegration - 
-2022-11-04 14:11:30,698 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:30,698 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:30,698 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"527.00"}  ResponseTime 105 ms
-2022-11-04 14:11:30,698 [main] INFO ApiIntegration - 
-2022-11-04 14:11:30,831 [main] INFO ApiIntegration - 
-2022-11-04 14:11:30,832 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:30,832 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-8z7oF2zhxOmfx5QZey4J_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:30,833 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"526.00","OperationItems":[{"ClientId":320575,"Balance":"526.00","CurrencyId":"TND","TransactionId":"QA_Test-8z7oF2zhxOmfx5QZey4J_C","BetId":"QA_Test-8z7oF2zhxOmfx5QZey4J_C"}]}  ResponseTime 116 ms
-2022-11-04 14:11:30,833 [main] INFO ApiIntegration - 
-2022-11-04 14:11:30,971 [main] INFO ApiIntegration - 
-2022-11-04 14:11:30,971 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:30,971 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:30,971 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"526.00"}  ResponseTime 111 ms
-2022-11-04 14:11:30,976 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,108 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,109 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
-2022-11-04 14:11:31,109 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-zMBk5w61wSRKRhb2W6Pa_D","CreditTransactionId":"QA_Test-8z7oF2zhxOmfx5QZey4J_C","Amount":-1.5,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:31,109 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 112 ms
-2022-11-04 14:11:31,110 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,267 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,267 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:31,267 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:31,267 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"526.00"}  ResponseTime 113 ms
-2022-11-04 14:11:31,267 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,269 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
-2022-11-04 14:11:31,381 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,382 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:31,382 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:31,382 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"526.00"}  ResponseTime 100 ms
-2022-11-04 14:11:31,382 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,513 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,514 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:31,514 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-mKuHd9MbOzz1ouCNS2PN_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:31,514 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"525.00","OperationItems":[{"ClientId":320575,"Balance":"525.00","CurrencyId":"TND","TransactionId":"QA_Test-mKuHd9MbOzz1ouCNS2PN_C","BetId":"QA_Test-mKuHd9MbOzz1ouCNS2PN_C"}]}  ResponseTime 110 ms
-2022-11-04 14:11:31,514 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,624 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,625 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:31,625 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:31,625 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"525.00"}  ResponseTime 99 ms
-2022-11-04 14:11:31,625 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,762 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,762 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
-2022-11-04 14:11:31,762 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-m4BWybnJYsuAxZQr0Mbz_D","CreditTransactionId":"QA_Test-mKuHd9MbOzz1ouCNS2PN_C","Amount":-1.05,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:31,762 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 117 ms
-2022-11-04 14:11:31,762 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,869 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,870 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:31,870 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:31,870 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"525.00"}  ResponseTime 99 ms
-2022-11-04 14:11:31,870 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,872 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
-2022-11-04 14:11:31,988 [main] INFO ApiIntegration - 
-2022-11-04 14:11:31,989 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:31,989 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:31,989 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"525.00"}  ResponseTime 105 ms
-2022-11-04 14:11:31,989 [main] INFO ApiIntegration - 
-2022-11-04 14:11:32,130 [main] INFO ApiIntegration - 
-2022-11-04 14:11:32,130 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:32,130 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-O3d7LypPJZi8MaNBBZSS_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:32,131 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"524.00","OperationItems":[{"ClientId":320575,"Balance":"524.00","CurrencyId":"TND","TransactionId":"QA_Test-O3d7LypPJZi8MaNBBZSS_C","BetId":"QA_Test-O3d7LypPJZi8MaNBBZSS_C"}]}  ResponseTime 125 ms
-2022-11-04 14:11:32,131 [main] INFO ApiIntegration - 
-2022-11-04 14:11:32,256 [main] INFO ApiIntegration - 
-2022-11-04 14:11:32,256 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:32,256 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:32,256 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 113 ms
-2022-11-04 14:11:32,257 [main] INFO ApiIntegration - 
-2022-11-04 14:11:32,393 [main] INFO ApiIntegration - 
-2022-11-04 14:11:32,394 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
-2022-11-04 14:11:32,394 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-0Je0rF2orZwK8IEuyvAx_D","CreditTransactionId":"QA_Test-O3d7LypPJZi8MaNBBZSS_C","Amount":-1.005,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:32,394 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 115 ms
-2022-11-04 14:11:32,394 [main] INFO ApiIntegration - 
-2022-11-04 14:11:32,509 [main] INFO ApiIntegration - 
-2022-11-04 14:11:32,509 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:32,509 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:32,510 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 105 ms
-2022-11-04 14:11:32,510 [main] INFO ApiIntegration - 
-2022-11-04 14:11:32,517 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
-2022-11-04 14:11:32,635 [main] INFO ApiIntegration - 
-2022-11-04 14:11:32,635 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:32,635 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:32,635 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 104 ms
-2022-11-04 14:11:32,635 [main] INFO ApiIntegration - 
-2022-11-04 14:11:32,635 [main] INFO ApiIntegration - Balance Before Credit:524.0
-2022-11-04 14:11:32,749 [main] INFO ApiIntegration - 
-2022-11-04 14:11:32,749 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:32,750 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-dfVB8c9UlwiIBjLvQmEj_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:32,750 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"523.00","OperationItems":[{"ClientId":320575,"Balance":"523.00","CurrencyId":"TND","TransactionId":"QA_Test-dfVB8c9UlwiIBjLvQmEj_C","BetId":"QA_Test-dfVB8c9UlwiIBjLvQmEj_C"}]}  ResponseTime 105 ms
-2022-11-04 14:11:32,750 [main] INFO ApiIntegration - 
-2022-11-04 14:11:32,876 [main] INFO ApiIntegration - 
-2022-11-04 14:11:32,876 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:32,877 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:32,877 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"523.00"}  ResponseTime 116 ms
-2022-11-04 14:11:32,877 [main] INFO ApiIntegration - 
-2022-11-04 14:11:32,878 [main] INFO ApiIntegration - Balance After Credit:523.0
-2022-11-04 14:11:33,017 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,018 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
-2022-11-04 14:11:33,018 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-dfVB8c9UlwiIBjLvQmEj_C","TransactionId":"QA_Test-cImmouW41DtRgwetGXfX_R","OperationTypeId":15,"Token":"NDIwfDE2NjY5NTgyNTE"}
-2022-11-04 14:11:33,019 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody{"ResponseCode":0,"Description":""}  ResponseTime 119 ms
-2022-11-04 14:11:33,019 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,139 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,139 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:33,139 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:33,139 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 105 ms
-2022-11-04 14:11:33,140 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,140 [main] INFO ApiIntegration - Balance After RollBack:524.0
-2022-11-04 14:11:33,147 [main] ERROR ApiIntegration - RollBackAPIValidateResponseWithExpiredToken Test failed
-2022-11-04 14:11:33,264 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,265 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:33,265 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:33,265 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 106 ms
-2022-11-04 14:11:33,265 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,265 [main] INFO ApiIntegration - Balance Before Credit:524.0
-2022-11-04 14:11:33,390 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,390 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:33,391 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-t3EDCEv0jMXSClHpCVuz_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:33,391 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"523.00","OperationItems":[{"ClientId":320575,"Balance":"523.00","CurrencyId":"TND","TransactionId":"QA_Test-t3EDCEv0jMXSClHpCVuz_C","BetId":"QA_Test-t3EDCEv0jMXSClHpCVuz_C"}]}  ResponseTime 116 ms
-2022-11-04 14:11:33,391 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,519 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,520 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:33,520 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:33,520 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"523.00"}  ResponseTime 111 ms
-2022-11-04 14:11:33,520 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,520 [main] INFO ApiIntegration - Balance After Credit:523.0
-2022-11-04 14:11:33,636 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,636 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
-2022-11-04 14:11:33,636 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-t3EDCEv0jMXSClHpCVuz_C","TransactionId":"QA_Test-i7jO1VCQ7h4BAbmEnkOQ_R","OperationTypeId":15,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d_Error"}
-2022-11-04 14:11:33,636 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody{"ResponseCode":0,"Description":""}  ResponseTime 112 ms
-2022-11-04 14:11:33,636 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,751 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,751 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:33,751 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:33,751 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 99 ms
-2022-11-04 14:11:33,751 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,752 [main] INFO ApiIntegration - Balance After RollBack:524.0
-2022-11-04 14:11:33,755 [main] ERROR ApiIntegration - RollBackAPIValidateResponseWithInvalidToken Test failed
-2022-11-04 14:11:33,871 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,871 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:33,871 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:33,872 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 103 ms
-2022-11-04 14:11:33,872 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,872 [main] INFO ApiIntegration - Balance Before RollBack:524.0
-2022-11-04 14:11:33,988 [main] INFO ApiIntegration - 
-2022-11-04 14:11:33,988 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
-2022-11-04 14:11:33,989 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-VKtYlbY26WWAZ7HRTS4b_C","TransactionId":"QA_Test-Vs8yyDsnWFYAitWEh241_R","OperationTypeId":15,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:33,989 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody{"ResponseCode":21,"Description":"RollbackTransactionId Not Found"}  ResponseTime 106 ms
-2022-11-04 14:11:33,989 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,107 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,107 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:34,108 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:34,108 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 109 ms
-2022-11-04 14:11:34,108 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,109 [main] INFO ApiIntegration - Balance After RollBack:524.0
-2022-11-04 14:11:34,114 [main] INFO ApiIntegration - RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit: Test passed
-2022-11-04 14:11:34,245 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,245 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:34,245 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:34,245 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 118 ms
-2022-11-04 14:11:34,245 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,246 [main] INFO ApiIntegration - Balance Before Credit:524.0
-2022-11-04 14:11:34,371 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,371 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:34,371 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-j1oAFjlJavdPYw3w7Zds_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:34,371 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"523.00","OperationItems":[{"ClientId":320575,"Balance":"523.00","CurrencyId":"TND","TransactionId":"QA_Test-j1oAFjlJavdPYw3w7Zds_C","BetId":"QA_Test-j1oAFjlJavdPYw3w7Zds_C"}]}  ResponseTime 117 ms
-2022-11-04 14:11:34,371 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,499 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,499 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:34,499 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:34,500 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"523.00"}  ResponseTime 117 ms
-2022-11-04 14:11:34,500 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,501 [main] INFO ApiIntegration - Balance After Credit:523.0
-2022-11-04 14:11:34,626 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,626 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
-2022-11-04 14:11:34,627 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-j1oAFjlJavdPYw3w7Zds_C","TransactionId":"QA_Test-7qOXxXPe6Evo8luXXQcG_R","OperationTypeId":15,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:34,627 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody{"ResponseCode":0,"Description":""}  ResponseTime 113 ms
-2022-11-04 14:11:34,627 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,748 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,749 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:34,749 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:34,749 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 108 ms
-2022-11-04 14:11:34,749 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,749 [main] INFO ApiIntegration - Balance After RollBack_1:524.0
-2022-11-04 14:11:34,852 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,852 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
-2022-11-04 14:11:34,852 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-j1oAFjlJavdPYw3w7Zds_C","TransactionId":"QA_Test-EYoOzkXBBlUqQKT2RyzR_R","OperationTypeId":4,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:34,852 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody{"ResponseCode":21,"Description":"RollbackTransactionId Not Found"}  ResponseTime 97 ms
-2022-11-04 14:11:34,852 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,981 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,981 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:34,981 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:34,981 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 119 ms
-2022-11-04 14:11:34,981 [main] INFO ApiIntegration - 
-2022-11-04 14:11:34,981 [main] INFO ApiIntegration - Balance After RollBack_2::524.0
-2022-11-04 14:11:34,983 [main] INFO ApiIntegration - RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice: Test passed
-2022-11-04 14:11:35,097 [main] INFO ApiIntegration - 
-2022-11-04 14:11:35,097 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:35,097 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:35,097 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"524.00"}  ResponseTime 107 ms
-2022-11-04 14:11:35,097 [main] INFO ApiIntegration - 
-2022-11-04 14:11:35,097 [main] INFO ApiIntegration - Balance Before Credit_1:524.0
-2022-11-04 14:11:35,234 [main] INFO ApiIntegration - 
-2022-11-04 14:11:35,234 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:35,234 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-WjPRovPjxxSVUjsbFO12_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:35,235 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"523.00","OperationItems":[{"ClientId":320575,"Balance":"523.00","CurrencyId":"TND","TransactionId":"QA_Test-WjPRovPjxxSVUjsbFO12_C","BetId":"QA_Test-WjPRovPjxxSVUjsbFO12_C"}]}  ResponseTime 125 ms
-2022-11-04 14:11:35,235 [main] INFO ApiIntegration - 
-2022-11-04 14:11:35,368 [main] INFO ApiIntegration - 
-2022-11-04 14:11:35,369 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:35,369 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:35,369 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"523.00"}  ResponseTime 114 ms
-2022-11-04 14:11:35,369 [main] INFO ApiIntegration - 
-2022-11-04 14:11:35,370 [main] INFO ApiIntegration - Balance After Credit_1:523.0
-2022-11-04 14:11:35,489 [main] INFO ApiIntegration - 
-2022-11-04 14:11:35,490 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
-2022-11-04 14:11:35,490 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-mGvmVgKDbbefZWXwBWs3_C","BetState":1,"Amount":1.0}
-2022-11-04 14:11:35,490 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"522.00","OperationItems":[{"ClientId":320575,"Balance":"522.00","CurrencyId":"TND","TransactionId":"QA_Test-mGvmVgKDbbefZWXwBWs3_C","BetId":"QA_Test-mGvmVgKDbbefZWXwBWs3_C"}]}  ResponseTime 110 ms
-2022-11-04 14:11:35,491 [main] INFO ApiIntegration - 
-2022-11-04 14:11:35,600 [main] INFO ApiIntegration - 
-2022-11-04 14:11:35,600 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:35,600 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:35,600 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"522.00"}  ResponseTime 99 ms
-2022-11-04 14:11:35,600 [main] INFO ApiIntegration - 
-2022-11-04 14:11:35,600 [main] INFO ApiIntegration - Balance After Credit_2:522.0
-2022-11-04 14:11:35,721 [main] INFO ApiIntegration - 
-2022-11-04 14:11:35,722 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
-2022-11-04 14:11:35,722 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-WjPRovPjxxSVUjsbFO12_C","TransactionId":"QA_Test-6xJh1UeztvJVjCoIgBC7_R","OperationTypeId":15,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:35,722 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody{"ResponseCode":0,"Description":""}  ResponseTime 116 ms
-2022-11-04 14:11:35,722 [main] INFO ApiIntegration - 
-2022-11-04 14:11:35,844 [main] INFO ApiIntegration - 
-2022-11-04 14:11:35,845 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:35,846 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:35,846 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"523.00"}  ResponseTime 115 ms
-2022-11-04 14:11:35,846 [main] INFO ApiIntegration - 
-2022-11-04 14:11:35,847 [main] INFO ApiIntegration - Balance After RollBack_1:523.0
-2022-11-04 14:11:35,972 [main] INFO ApiIntegration - 
-2022-11-04 14:11:35,972 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
-2022-11-04 14:11:35,972 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-mGvmVgKDbbefZWXwBWs3_C","TransactionId":"QA_Test-6xJh1UeztvJVjCoIgBC7_R","OperationTypeId":4,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
-2022-11-04 14:11:35,973 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody{"ResponseCode":21,"Description":"Transaction is already processed"}  ResponseTime 107 ms
-2022-11-04 14:11:35,973 [main] INFO ApiIntegration - 
-2022-11-04 14:11:36,086 [main] INFO ApiIntegration - 
-2022-11-04 14:11:36,086 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
-2022-11-04 14:11:36,086 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
-2022-11-04 14:11:36,086 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"523.00"}  ResponseTime 103 ms
-2022-11-04 14:11:36,086 [main] INFO ApiIntegration - 
-2022-11-04 14:11:36,086 [main] INFO ApiIntegration - Balance After RollBack_2:523.0
-2022-11-04 14:11:36,087 [main] INFO ApiIntegration - RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice: Test passed
-2022-11-04 14:11:36,115 [main] INFO ApiIntegration - API Integration Automation Test: Test execution finished
-2022-11-04 14:11:36,118 [main] INFO ApiIntegration - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
-2022-11-04 14:11:36,118 [main] INFO ApiIntegration - 
-2022-11-04 14:11:36,118 [main] INFO ApiIntegration - 
-2022-11-04 14:11:36,118 [main] INFO ApiIntegration - 
+2022-11-09 14:09:52,730 [main] INFO ApiIntegration - API Integration Automation Test: Test execution starts
+2022-11-09 14:09:53,926 [main] INFO ApiIntegration - 
+2022-11-09 14:09:53,927 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Authorization
+2022-11-09 14:09:53,927 [main] INFO ApiIntegration - AuthorizationAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","ProductId":54001}
+2022-11-09 14:09:53,928 [main] INFO ApiIntegration - AuthorizationAPI:  ResponseBody{"ResponseCode":0,"Description":null,"Token":"MzIwNTc1fDE2NjcyOTAzMzc=","ClientId":"320575","UserName":"iqtest3","NickName":"iqtest3","CurrencyId":"TND","CurrencySymbol":"TND","FirstName":"iqtest3","LastName":"iqtest3","Gender":1,"BirthDate":"1990-01-01","CategoryId":10,"CategoryName":"Player","UserId":320575,"AvailableBalance":"539.00","BetShopId":null,"BetShopName":null,"BetShopAddress":null,"BetShopCurrencyId":"TND","CashDeskId":1,"DepositCount":0}  ResponseTime 626 ms
+2022-11-09 14:09:53,928 [main] INFO ApiIntegration - 
+2022-11-09 14:09:54,003 [main] INFO ApiIntegration - Authorization API Status Cod is Equal: 200
+2022-11-09 14:09:54,124 [main] INFO ApiIntegration - AuthorizationAPIValidateStatusCod: Test passed
+2022-11-09 14:09:54,140 [main] INFO ApiIntegration - AuthorizationAPIValidatePositiveResponse: Test passed
+2022-11-09 14:09:54,408 [main] INFO ApiIntegration - 
+2022-11-09 14:09:54,408 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:54,409 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:54,409 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"539.00"}  ResponseTime 254 ms
+2022-11-09 14:09:54,410 [main] INFO ApiIntegration - 
+2022-11-09 14:09:54,419 [main] INFO ApiIntegration - GetBalance API Status Cod is Equal: 200
+2022-11-09 14:09:54,427 [main] INFO ApiIntegration - GetBalanceAPIValidateStatusCod: Test passed
+2022-11-09 14:09:54,442 [main] INFO ApiIntegration - GetBalanceAPIValidatePositiveResponse: Test passed
+2022-11-09 14:09:54,705 [main] INFO ApiIntegration - 
+2022-11-09 14:09:54,706 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:54,706 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:54,707 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"539.00"}  ResponseTime 247 ms
+2022-11-09 14:09:54,707 [main] INFO ApiIntegration - 
+2022-11-09 14:09:54,967 [main] INFO ApiIntegration - 
+2022-11-09 14:09:54,967 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:09:54,967 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-4JsAEgPTgH2XJmCcwovq_C","BetState":1,"Amount":1.0}
+2022-11-09 14:09:54,967 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"538.00","OperationItems":[{"ClientId":320575,"Balance":"538.00","CurrencyId":"TND","TransactionId":"QA_Test-4JsAEgPTgH2XJmCcwovq_C","BetId":"QA_Test-4JsAEgPTgH2XJmCcwovq_C"}]}  ResponseTime 244 ms
+2022-11-09 14:09:54,967 [main] INFO ApiIntegration - 
+2022-11-09 14:09:55,109 [main] INFO ApiIntegration - 
+2022-11-09 14:09:55,109 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:55,109 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:55,109 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"538.00"}  ResponseTime 133 ms
+2022-11-09 14:09:55,109 [main] INFO ApiIntegration - 
+2022-11-09 14:09:55,113 [main] INFO ApiIntegration - Credit API Status Cod is Equal: 200
+2022-11-09 14:09:55,115 [main] INFO ApiIntegration - CreditAPIValidateStatusCod: Test passed
+2022-11-09 14:09:55,122 [main] INFO ApiIntegration - CreditAPIValidatePositiveResponse: Test passed
+2022-11-09 14:09:55,256 [main] INFO ApiIntegration - 
+2022-11-09 14:09:55,257 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:55,257 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:55,257 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"538.00"}  ResponseTime 128 ms
+2022-11-09 14:09:55,257 [main] INFO ApiIntegration - 
+2022-11-09 14:09:55,389 [main] INFO ApiIntegration - 
+2022-11-09 14:09:55,389 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
+2022-11-09 14:09:55,389 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-cKui2G3hkbshiQ9RVrRZ_D","CreditTransactionId":"QA_Test-4JsAEgPTgH2XJmCcwovq_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:09:55,389 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"543.00","OperationItems":[{"ClientId":320575,"Balance":"543.00","CurrencyId":"TND","TransactionId":"QA_Test-cKui2G3hkbshiQ9RVrRZ_D","BetId":"QA_Test-cKui2G3hkbshiQ9RVrRZ_D"}]}  ResponseTime 124 ms
+2022-11-09 14:09:55,389 [main] INFO ApiIntegration - 
+2022-11-09 14:09:55,525 [main] INFO ApiIntegration - 
+2022-11-09 14:09:55,525 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:55,526 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:55,526 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"543.00"}  ResponseTime 122 ms
+2022-11-09 14:09:55,526 [main] INFO ApiIntegration - 
+2022-11-09 14:09:55,534 [main] INFO ApiIntegration - Debit API Status Cod is Equal: 200
+2022-11-09 14:09:55,540 [main] INFO ApiIntegration - DebitAPIValidateStatusCod: Test passed
+2022-11-09 14:09:55,549 [main] INFO ApiIntegration - DebitAPIValidatePositiveResponse: Test passed
+2022-11-09 14:09:55,670 [main] INFO ApiIntegration - 
+2022-11-09 14:09:55,671 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:55,671 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:55,671 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"543.00"}  ResponseTime 112 ms
+2022-11-09 14:09:55,671 [main] INFO ApiIntegration - 
+2022-11-09 14:09:55,671 [main] INFO ApiIntegration - Balance Before Credit:543.0
+2022-11-09 14:09:55,806 [main] INFO ApiIntegration - 
+2022-11-09 14:09:55,806 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:09:55,806 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-lvJYEUzGAEr9aQskl0gm_C","BetState":1,"Amount":1.0}
+2022-11-09 14:09:55,806 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"542.00","OperationItems":[{"ClientId":320575,"Balance":"542.00","CurrencyId":"TND","TransactionId":"QA_Test-lvJYEUzGAEr9aQskl0gm_C","BetId":"QA_Test-lvJYEUzGAEr9aQskl0gm_C"}]}  ResponseTime 127 ms
+2022-11-09 14:09:55,806 [main] INFO ApiIntegration - 
+2022-11-09 14:09:55,964 [main] INFO ApiIntegration - 
+2022-11-09 14:09:55,964 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:55,965 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:55,965 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"542.00"}  ResponseTime 153 ms
+2022-11-09 14:09:55,965 [main] INFO ApiIntegration - 
+2022-11-09 14:09:55,965 [main] INFO ApiIntegration - Balance After Credit:542.0
+2022-11-09 14:09:56,092 [main] INFO ApiIntegration - 
+2022-11-09 14:09:56,092 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
+2022-11-09 14:09:56,092 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-wngvRdRnE4DXbdpyJmVQ_D","CreditTransactionId":"QA_Test-lvJYEUzGAEr9aQskl0gm_C","Amount":5.0,"BetState":2,"OperationTypeId":4,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:09:56,092 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"547.00","OperationItems":[{"ClientId":320575,"Balance":"547.00","CurrencyId":"TND","TransactionId":"QA_Test-wngvRdRnE4DXbdpyJmVQ_D","BetId":"QA_Test-wngvRdRnE4DXbdpyJmVQ_D"}]}  ResponseTime 121 ms
+2022-11-09 14:09:56,092 [main] INFO ApiIntegration - 
+2022-11-09 14:09:56,211 [main] INFO ApiIntegration - 
+2022-11-09 14:09:56,211 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:56,211 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:56,211 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"547.00"}  ResponseTime 113 ms
+2022-11-09 14:09:56,211 [main] INFO ApiIntegration - 
+2022-11-09 14:09:56,212 [main] INFO ApiIntegration - Balance After Debit:547.0
+2022-11-09 14:09:56,347 [main] INFO ApiIntegration - 
+2022-11-09 14:09:56,347 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
+2022-11-09 14:09:56,347 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-lvJYEUzGAEr9aQskl0gm_C","TransactionId":"QA_Test-nuvjBkxgBOwdTXAOIbcw_R","OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:09:56,347 [main] INFO ApiIntegration - RollBackAPI:  ResponseBodyUnable to open file!  ResponseTime 125 ms
+2022-11-09 14:09:56,347 [main] INFO ApiIntegration - 
+2022-11-09 14:09:56,363 [main] ERROR ApiIntegration - RollBackAPIValidateStatusCod Test failed
+2022-11-09 14:09:56,368 [main] ERROR ApiIntegration - RollBackAPIValidatePositiveResponse Test failed
+2022-11-09 14:09:56,388 [main] ERROR ApiIntegration - RollBackAPIValidatePositiveResponseBalanceCorrection Test failed
+2022-11-09 14:09:56,516 [main] INFO ApiIntegration - 
+2022-11-09 14:09:56,516 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:56,517 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:56,517 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"547.00"}  ResponseTime 117 ms
+2022-11-09 14:09:56,517 [main] INFO ApiIntegration - 
+2022-11-09 14:09:56,518 [main] INFO ApiIntegration - Balance Before Credit:547.0
+2022-11-09 14:09:56,640 [main] INFO ApiIntegration - 
+2022-11-09 14:09:56,640 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:09:56,640 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":3,"TransactionId":"QA_Test-0440JyxZ2rralJtnNaZU_C","BetState":1,"Amount":1.0}
+2022-11-09 14:09:56,640 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"546.00","OperationItems":[{"ClientId":320575,"Balance":"546.00","CurrencyId":"TND","TransactionId":"QA_Test-0440JyxZ2rralJtnNaZU_C","BetId":"QA_Test-0440JyxZ2rralJtnNaZU_C"}]}  ResponseTime 116 ms
+2022-11-09 14:09:56,640 [main] INFO ApiIntegration - 
+2022-11-09 14:09:56,759 [main] INFO ApiIntegration - 
+2022-11-09 14:09:56,759 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:56,759 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:56,759 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"546.00"}  ResponseTime 113 ms
+2022-11-09 14:09:56,759 [main] INFO ApiIntegration - 
+2022-11-09 14:09:56,760 [main] INFO ApiIntegration - Balance After Credit:546.0
+2022-11-09 14:09:56,891 [main] INFO ApiIntegration - 
+2022-11-09 14:09:56,891 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
+2022-11-09 14:09:56,891 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-0440JyxZ2rralJtnNaZU_C","TransactionId":"QA_Test-9eDPzSc0bIBls5oGxBBW_R","OperationTypeId":15,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:09:56,891 [main] INFO ApiIntegration - RollBackAPI:  ResponseBodyUnable to open file!  ResponseTime 125 ms
+2022-11-09 14:09:56,891 [main] INFO ApiIntegration - 
+2022-11-09 14:09:56,901 [main] ERROR ApiIntegration - RollBackAPIValidateStatusCod Test failed
+2022-11-09 14:09:56,905 [main] ERROR ApiIntegration - RollBackAPIValidatePositiveResponse Test failed
+2022-11-09 14:09:56,913 [main] ERROR ApiIntegration - RollBackAPIValidatePositiveResponseBalanceCorrection Test failed
+2022-11-09 14:09:57,036 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,037 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:57,037 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:57,037 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"546.00"}  ResponseTime 114 ms
+2022-11-09 14:09:57,037 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,037 [main] INFO ApiIntegration - Balance Before Credit:546.0
+2022-11-09 14:09:57,181 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,181 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:09:57,181 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":3,"TransactionId":"QA_Test-F1H6tYdH8Swl2tlw4RA4_C","BetState":1,"Amount":1.0}
+2022-11-09 14:09:57,181 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"545.00","OperationItems":[{"ClientId":320575,"Balance":"545.00","CurrencyId":"TND","TransactionId":"QA_Test-F1H6tYdH8Swl2tlw4RA4_C","BetId":"QA_Test-F1H6tYdH8Swl2tlw4RA4_C"}]}  ResponseTime 138 ms
+2022-11-09 14:09:57,181 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,307 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,307 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:57,307 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:57,307 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"545.00"}  ResponseTime 117 ms
+2022-11-09 14:09:57,307 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,308 [main] INFO ApiIntegration - Balance After Credit:545.0
+2022-11-09 14:09:57,440 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,440 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
+2022-11-09 14:09:57,440 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-GvH25tobINWoHeQdZ16i_D","CreditTransactionId":"QA_Test-F1H6tYdH8Swl2tlw4RA4_C","Amount":5.0,"BetState":2,"OperationTypeId":4,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:09:57,440 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"550.00","OperationItems":[{"ClientId":320575,"Balance":"550.00","CurrencyId":"TND","TransactionId":"QA_Test-GvH25tobINWoHeQdZ16i_D","BetId":"QA_Test-GvH25tobINWoHeQdZ16i_D"}]}  ResponseTime 124 ms
+2022-11-09 14:09:57,440 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,566 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,566 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:57,566 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:57,566 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"550.00"}  ResponseTime 117 ms
+2022-11-09 14:09:57,566 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,567 [main] INFO ApiIntegration - Balance After Debit:550.0
+2022-11-09 14:09:57,687 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,687 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
+2022-11-09 14:09:57,687 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-GvH25tobINWoHeQdZ16i_D","TransactionId":"QA_Test-B1zKdTRw25qTUjuDhkKR_R","OperationTypeId":17,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:09:57,687 [main] INFO ApiIntegration - RollBackAPI:  ResponseBodyUnable to open file!  ResponseTime 112 ms
+2022-11-09 14:09:57,687 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,695 [main] ERROR ApiIntegration - RollBackAPIValidateStatusCod Test failed
+2022-11-09 14:09:57,699 [main] ERROR ApiIntegration - RollBackAPIValidatePositiveResponse Test failed
+2022-11-09 14:09:57,704 [main] ERROR ApiIntegration - RollBackAPIValidatePositiveResponseBalanceCorrection Test failed
+2022-11-09 14:09:57,831 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,832 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Authorization
+2022-11-09 14:09:57,832 [main] INFO ApiIntegration - AuthorizationAPI:  RequestBody{"Token":"NDIwfDE2NjY5NTgyNTE","ProductId":54001}
+2022-11-09 14:09:57,832 [main] INFO ApiIntegration - AuthorizationAPI:  ResponseBody{"ResponseCode":21,"Description":"Expired Token"}  ResponseTime 117 ms
+2022-11-09 14:09:57,832 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,834 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
+2022-11-09 14:09:57,846 [main] INFO ApiIntegration - AuthorizationAPIValidateResponseWithExpiredToken: Test passed
+2022-11-09 14:09:57,974 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,974 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Authorization
+2022-11-09 14:09:57,974 [main] INFO ApiIntegration - AuthorizationAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d1","ProductId":54001}
+2022-11-09 14:09:57,974 [main] INFO ApiIntegration - AuthorizationAPI:  ResponseBody{"ResponseCode":21,"Description":"Expired Token"}  ResponseTime 116 ms
+2022-11-09 14:09:57,974 [main] INFO ApiIntegration - 
+2022-11-09 14:09:57,975 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
+2022-11-09 14:09:57,977 [main] INFO ApiIntegration - AuthorizationAPIValidateResponseWithInvalidToken: Test passed
+2022-11-09 14:09:58,096 [main] INFO ApiIntegration - 
+2022-11-09 14:09:58,097 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:58,097 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"NDIwfDE2NjY5NTgyNTE","CurrencyId":"TND"}
+2022-11-09 14:09:58,097 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":21,"Description":"Expired Token"}  ResponseTime 110 ms
+2022-11-09 14:09:58,097 [main] INFO ApiIntegration - 
+2022-11-09 14:09:58,116 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
+2022-11-09 14:09:58,122 [main] INFO ApiIntegration - GetBalanceAPIValidateResponseWithExpiredToken: Test passed
+2022-11-09 14:09:58,286 [main] INFO ApiIntegration - 
+2022-11-09 14:09:58,286 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:58,287 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d1","CurrencyId":"TND"}
+2022-11-09 14:09:58,287 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":21,"Description":"Expired Token"}  ResponseTime 145 ms
+2022-11-09 14:09:58,287 [main] INFO ApiIntegration - 
+2022-11-09 14:09:58,287 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
+2022-11-09 14:09:58,289 [main] INFO ApiIntegration - GetBalanceAPIValidateResponseWithInvalidToken: Test passed
+2022-11-09 14:09:58,429 [main] INFO ApiIntegration - 
+2022-11-09 14:09:58,429 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:58,429 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND1"}
+2022-11-09 14:09:58,429 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":21,"Description":"invalid CurrencyId"}  ResponseTime 133 ms
+2022-11-09 14:09:58,429 [main] INFO ApiIntegration - 
+2022-11-09 14:09:58,430 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
+2022-11-09 14:09:58,435 [main] INFO ApiIntegration - GetBalanceAPIValidateResponseWithInvalidCurrencyID: Test passed
+2022-11-09 14:09:58,567 [main] INFO ApiIntegration - 
+2022-11-09 14:09:58,567 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:58,568 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"USD"}
+2022-11-09 14:09:58,568 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":21,"Description":"invalid CurrencyId"}  ResponseTime 121 ms
+2022-11-09 14:09:58,568 [main] INFO ApiIntegration - 
+2022-11-09 14:09:58,568 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
+2022-11-09 14:09:58,572 [main] ERROR ApiIntegration - GetBalanceAPIValidateResponseWithOtherCurrencyID Test failed
+2022-11-09 14:09:58,705 [main] INFO ApiIntegration - 
+2022-11-09 14:09:58,705 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:58,706 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:58,706 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"550.00"}  ResponseTime 119 ms
+2022-11-09 14:09:58,706 [main] INFO ApiIntegration - 
+2022-11-09 14:09:58,920 [main] INFO ApiIntegration - 
+2022-11-09 14:09:58,920 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:09:58,921 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"NDIwfDE2NjY5NTgyNTE","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-111KEkWpFftbjoM6H35G_C","BetState":1,"Amount":1.0}
+2022-11-09 14:09:58,921 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"128.29","OperationItems":[{"ClientId":420,"Balance":"128.29","CurrencyId":"TND","TransactionId":"QA_Test-111KEkWpFftbjoM6H35G_C","BetId":"QA_Test-111KEkWpFftbjoM6H35G_C"}]}  ResponseTime 164 ms
+2022-11-09 14:09:58,921 [main] INFO ApiIntegration - 
+2022-11-09 14:09:59,101 [main] INFO ApiIntegration - 
+2022-11-09 14:09:59,101 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:59,102 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:59,102 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"550.00"}  ResponseTime 159 ms
+2022-11-09 14:09:59,102 [main] INFO ApiIntegration - 
+2022-11-09 14:09:59,130 [main] ERROR ApiIntegration - CreditAPIValidateResponseWithExpiredToken Test failed
+2022-11-09 14:09:59,287 [main] INFO ApiIntegration - 
+2022-11-09 14:09:59,288 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:59,288 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:59,288 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"550.00"}  ResponseTime 145 ms
+2022-11-09 14:09:59,288 [main] INFO ApiIntegration - 
+2022-11-09 14:09:59,456 [main] INFO ApiIntegration - 
+2022-11-09 14:09:59,456 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:09:59,456 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d_Error","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-Y19qIevQuT6FPPmVD7vD_C","BetState":1,"Amount":1.0}
+2022-11-09 14:09:59,456 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"549.00","OperationItems":[{"ClientId":320575,"Balance":"549.00","CurrencyId":"TND","TransactionId":"QA_Test-Y19qIevQuT6FPPmVD7vD_C","BetId":"QA_Test-Y19qIevQuT6FPPmVD7vD_C"}]}  ResponseTime 157 ms
+2022-11-09 14:09:59,457 [main] INFO ApiIntegration - 
+2022-11-09 14:09:59,604 [main] INFO ApiIntegration - 
+2022-11-09 14:09:59,605 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:59,605 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:59,605 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"549.00"}  ResponseTime 139 ms
+2022-11-09 14:09:59,605 [main] INFO ApiIntegration - 
+2022-11-09 14:09:59,611 [main] ERROR ApiIntegration - CreditAPIValidateResponseWithInvalidToken Test failed
+2022-11-09 14:09:59,744 [main] INFO ApiIntegration - 
+2022-11-09 14:09:59,745 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:09:59,745 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:09:59,745 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"549.00"}  ResponseTime 122 ms
+2022-11-09 14:09:59,745 [main] INFO ApiIntegration - 
+2022-11-09 14:09:59,891 [main] INFO ApiIntegration - 
+2022-11-09 14:09:59,891 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:09:59,891 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":3,"TransactionId":"QA_Test-EsWPb8MbS09PZDDsGiic_C","BetState":1,"Amount":1.0}
+2022-11-09 14:09:59,891 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"548.00","OperationItems":[{"ClientId":320575,"Balance":"548.00","CurrencyId":"TND","TransactionId":"QA_Test-EsWPb8MbS09PZDDsGiic_C","BetId":"QA_Test-EsWPb8MbS09PZDDsGiic_C"}]}  ResponseTime 139 ms
+2022-11-09 14:09:59,891 [main] INFO ApiIntegration - 
+2022-11-09 14:10:00,033 [main] INFO ApiIntegration - 
+2022-11-09 14:10:00,033 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:00,033 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:00,033 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"548.00"}  ResponseTime 134 ms
+2022-11-09 14:10:00,033 [main] INFO ApiIntegration - 
+2022-11-09 14:10:00,192 [main] INFO ApiIntegration - 
+2022-11-09 14:10:00,192 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:00,192 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-EsWPb8MbS09PZDDsGiic_C","BetState":1,"Amount":1.0}
+2022-11-09 14:10:00,193 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":21,"Description":"Transaction is already processed"}  ResponseTime 151 ms
+2022-11-09 14:10:00,193 [main] INFO ApiIntegration - 
+2022-11-09 14:10:00,378 [main] INFO ApiIntegration - 
+2022-11-09 14:10:00,378 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:00,378 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:00,378 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"548.00"}  ResponseTime 179 ms
+2022-11-09 14:10:00,379 [main] INFO ApiIntegration - 
+2022-11-09 14:10:00,384 [main] INFO ApiIntegration - CreditAPIValidateResponseUsingTransactionIDTwice: Test passed
+2022-11-09 14:10:00,530 [main] INFO ApiIntegration - 
+2022-11-09 14:10:00,530 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:00,530 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:00,530 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"548.00"}  ResponseTime 136 ms
+2022-11-09 14:10:00,530 [main] INFO ApiIntegration - 
+2022-11-09 14:10:00,669 [main] INFO ApiIntegration - 
+2022-11-09 14:10:00,670 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:00,670 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-Fmkxk6f2MokECjHSdLls_C","BetState":1,"Amount":558.0}
+2022-11-09 14:10:00,671 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":21,"Description":"Insufficient funds"}  ResponseTime 126 ms
+2022-11-09 14:10:00,671 [main] INFO ApiIntegration - 
+2022-11-09 14:10:00,800 [main] INFO ApiIntegration - 
+2022-11-09 14:10:00,801 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:00,801 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:00,801 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"548.00"}  ResponseTime 120 ms
+2022-11-09 14:10:00,801 [main] INFO ApiIntegration - 
+2022-11-09 14:10:00,804 [main] INFO ApiIntegration - CreditAPIValidateResponseUsingAmountHigherThenBalance: Test passed
+2022-11-09 14:10:00,981 [main] INFO ApiIntegration - 
+2022-11-09 14:10:00,981 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:00,982 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:00,982 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"548.00"}  ResponseTime 145 ms
+2022-11-09 14:10:00,982 [main] INFO ApiIntegration - 
+2022-11-09 14:10:01,150 [main] INFO ApiIntegration - 
+2022-11-09 14:10:01,162 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:01,162 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-xDcU46ngOsSHp0PIBgHy_C","BetState":1,"Amount":0.0}
+2022-11-09 14:10:01,162 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 146 ms
+2022-11-09 14:10:01,162 [main] INFO ApiIntegration - 
+2022-11-09 14:10:01,300 [main] INFO ApiIntegration - 
+2022-11-09 14:10:01,300 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:01,300 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:01,300 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"548.00"}  ResponseTime 129 ms
+2022-11-09 14:10:01,300 [main] INFO ApiIntegration - 
+2022-11-09 14:10:01,305 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
+2022-11-09 14:10:01,435 [main] INFO ApiIntegration - 
+2022-11-09 14:10:01,435 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:01,435 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:01,435 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"548.00"}  ResponseTime 119 ms
+2022-11-09 14:10:01,435 [main] INFO ApiIntegration - 
+2022-11-09 14:10:01,568 [main] INFO ApiIntegration - 
+2022-11-09 14:10:01,568 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:01,569 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-BDYTO904n3R3q1F8yjOA_C","BetState":1,"Amount":-1.0}
+2022-11-09 14:10:01,569 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 127 ms
+2022-11-09 14:10:01,569 [main] INFO ApiIntegration - 
+2022-11-09 14:10:01,697 [main] INFO ApiIntegration - 
+2022-11-09 14:10:01,698 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:01,698 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:01,698 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"548.00"}  ResponseTime 121 ms
+2022-11-09 14:10:01,698 [main] INFO ApiIntegration - 
+2022-11-09 14:10:01,704 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
+2022-11-09 14:10:01,835 [main] INFO ApiIntegration - 
+2022-11-09 14:10:01,836 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:01,836 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:01,837 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"548.00"}  ResponseTime 118 ms
+2022-11-09 14:10:01,837 [main] INFO ApiIntegration - 
+2022-11-09 14:10:01,975 [main] INFO ApiIntegration - 
+2022-11-09 14:10:01,975 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:01,975 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-Or7SNYJOOPBTDojdUznd_C","BetState":1,"Amount":-1.5}
+2022-11-09 14:10:01,976 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 121 ms
+2022-11-09 14:10:01,976 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,097 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,097 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:02,098 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:02,098 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"548.00"}  ResponseTime 112 ms
+2022-11-09 14:10:02,098 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,101 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
+2022-11-09 14:10:02,243 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,243 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:02,243 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:02,243 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"548.00"}  ResponseTime 133 ms
+2022-11-09 14:10:02,243 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,358 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,359 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:02,359 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-vmPmZHG93eRWMtXEihw0_C","BetState":1,"Amount":-1.05}
+2022-11-09 14:10:02,359 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 110 ms
+2022-11-09 14:10:02,359 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,480 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,480 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:02,480 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:02,480 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"548.00"}  ResponseTime 114 ms
+2022-11-09 14:10:02,480 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,483 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
+2022-11-09 14:10:02,604 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,604 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:02,604 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:02,604 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"548.00"}  ResponseTime 112 ms
+2022-11-09 14:10:02,604 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,739 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,740 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:02,740 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-VhnlXUF8E7BP4f3LZZCE_C","BetState":1,"Amount":-1.005}
+2022-11-09 14:10:02,740 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 126 ms
+2022-11-09 14:10:02,740 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,858 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,858 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:02,858 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:02,858 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"548.00"}  ResponseTime 109 ms
+2022-11-09 14:10:02,858 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,862 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
+2022-11-09 14:10:02,977 [main] INFO ApiIntegration - 
+2022-11-09 14:10:02,978 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:02,978 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:02,978 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"548.00"}  ResponseTime 109 ms
+2022-11-09 14:10:02,978 [main] INFO ApiIntegration - 
+2022-11-09 14:10:03,092 [main] INFO ApiIntegration - 
+2022-11-09 14:10:03,093 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:03,093 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-NrTcHfwbBZRB8kGQ3rxO_C","BetState":1,"Amount":1.0}
+2022-11-09 14:10:03,093 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"547.00","OperationItems":[{"ClientId":320575,"Balance":"547.00","CurrencyId":"TND","TransactionId":"QA_Test-NrTcHfwbBZRB8kGQ3rxO_C","BetId":"QA_Test-NrTcHfwbBZRB8kGQ3rxO_C"}]}  ResponseTime 109 ms
+2022-11-09 14:10:03,093 [main] INFO ApiIntegration - 
+2022-11-09 14:10:03,206 [main] INFO ApiIntegration - 
+2022-11-09 14:10:03,206 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:03,206 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:03,206 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"547.00"}  ResponseTime 107 ms
+2022-11-09 14:10:03,206 [main] INFO ApiIntegration - 
+2022-11-09 14:10:03,325 [main] INFO ApiIntegration - 
+2022-11-09 14:10:03,325 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
+2022-11-09 14:10:03,325 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-rJlxP1BJ8XlTXk6fZ5OF_D","CreditTransactionId":"QA_Test-NrTcHfwbBZRB8kGQ3rxO_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d_Error"}
+2022-11-09 14:10:03,325 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"552.00","OperationItems":[{"ClientId":320575,"Balance":"552.00","CurrencyId":"TND","TransactionId":"QA_Test-rJlxP1BJ8XlTXk6fZ5OF_D","BetId":"QA_Test-rJlxP1BJ8XlTXk6fZ5OF_D"}]}  ResponseTime 112 ms
+2022-11-09 14:10:03,325 [main] INFO ApiIntegration - 
+2022-11-09 14:10:03,454 [main] INFO ApiIntegration - 
+2022-11-09 14:10:03,454 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:03,454 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:03,454 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"552.00"}  ResponseTime 119 ms
+2022-11-09 14:10:03,454 [main] INFO ApiIntegration - 
+2022-11-09 14:10:03,460 [main] ERROR ApiIntegration - DebitAPIValidateResponseWithInvalidToken Test failed
+2022-11-09 14:10:03,590 [main] INFO ApiIntegration - 
+2022-11-09 14:10:03,590 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:03,590 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:03,590 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"552.00"}  ResponseTime 119 ms
+2022-11-09 14:10:03,590 [main] INFO ApiIntegration - 
+2022-11-09 14:10:03,737 [main] INFO ApiIntegration - 
+2022-11-09 14:10:03,738 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:03,738 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-O5Iv3PKKKqeJS1X6ck3P_C","BetState":1,"Amount":1.0}
+2022-11-09 14:10:03,738 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"551.00","OperationItems":[{"ClientId":320575,"Balance":"551.00","CurrencyId":"TND","TransactionId":"QA_Test-O5Iv3PKKKqeJS1X6ck3P_C","BetId":"QA_Test-O5Iv3PKKKqeJS1X6ck3P_C"}]}  ResponseTime 135 ms
+2022-11-09 14:10:03,738 [main] INFO ApiIntegration - 
+2022-11-09 14:10:03,906 [main] INFO ApiIntegration - 
+2022-11-09 14:10:03,906 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:03,906 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:03,906 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"551.00"}  ResponseTime 159 ms
+2022-11-09 14:10:03,906 [main] INFO ApiIntegration - 
+2022-11-09 14:10:04,059 [main] INFO ApiIntegration - 
+2022-11-09 14:10:04,059 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
+2022-11-09 14:10:04,059 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-GbcLwnW27GCOC4X7tXEs_D","CreditTransactionId":"QA_Test-O5Iv3PKKKqeJS1X6ck3P_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"NDIwfDE2NjY5NTgyNTE"}
+2022-11-09 14:10:04,059 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"556.00","OperationItems":[{"ClientId":320575,"Balance":"556.00","CurrencyId":"TND","TransactionId":"QA_Test-GbcLwnW27GCOC4X7tXEs_D","BetId":"QA_Test-GbcLwnW27GCOC4X7tXEs_D"}]}  ResponseTime 146 ms
+2022-11-09 14:10:04,059 [main] INFO ApiIntegration - 
+2022-11-09 14:10:04,215 [main] INFO ApiIntegration - 
+2022-11-09 14:10:04,215 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:04,215 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:04,215 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"556.00"}  ResponseTime 149 ms
+2022-11-09 14:10:04,215 [main] INFO ApiIntegration - 
+2022-11-09 14:10:04,220 [main] ERROR ApiIntegration - DebitAPIValidateResponseWithExpiredToken Test failed
+2022-11-09 14:10:04,362 [main] INFO ApiIntegration - 
+2022-11-09 14:10:04,362 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:04,362 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:04,362 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"556.00"}  ResponseTime 133 ms
+2022-11-09 14:10:04,362 [main] INFO ApiIntegration - 
+2022-11-09 14:10:04,498 [main] INFO ApiIntegration - 
+2022-11-09 14:10:04,498 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:04,498 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-hi0SmhdMP3TDfYf0RHAl_C","BetState":1,"Amount":1.0}
+2022-11-09 14:10:04,498 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"555.00","OperationItems":[{"ClientId":320575,"Balance":"555.00","CurrencyId":"TND","TransactionId":"QA_Test-hi0SmhdMP3TDfYf0RHAl_C","BetId":"QA_Test-hi0SmhdMP3TDfYf0RHAl_C"}]}  ResponseTime 127 ms
+2022-11-09 14:10:04,498 [main] INFO ApiIntegration - 
+2022-11-09 14:10:04,632 [main] INFO ApiIntegration - 
+2022-11-09 14:10:04,633 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:04,633 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:04,633 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"555.00"}  ResponseTime 123 ms
+2022-11-09 14:10:04,633 [main] INFO ApiIntegration - 
+2022-11-09 14:10:04,773 [main] INFO ApiIntegration - 
+2022-11-09 14:10:04,773 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:04,774 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-AlmDgM14x7LKFQytw1dB_C","BetState":1,"Amount":1.0}
+2022-11-09 14:10:04,774 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"554.00","OperationItems":[{"ClientId":320575,"Balance":"554.00","CurrencyId":"TND","TransactionId":"QA_Test-AlmDgM14x7LKFQytw1dB_C","BetId":"QA_Test-AlmDgM14x7LKFQytw1dB_C"}]}  ResponseTime 133 ms
+2022-11-09 14:10:04,774 [main] INFO ApiIntegration - 
+2022-11-09 14:10:04,898 [main] INFO ApiIntegration - 
+2022-11-09 14:10:04,899 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:04,899 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:04,899 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"554.00"}  ResponseTime 115 ms
+2022-11-09 14:10:04,899 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,031 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,031 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
+2022-11-09 14:10:05,031 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-mgLRXq1686IxtnT4y1cS_D","CreditTransactionId":"QA_Test-hi0SmhdMP3TDfYf0RHAl_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:10:05,031 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"559.00","OperationItems":[{"ClientId":320575,"Balance":"559.00","CurrencyId":"TND","TransactionId":"QA_Test-mgLRXq1686IxtnT4y1cS_D","BetId":"QA_Test-mgLRXq1686IxtnT4y1cS_D"}]}  ResponseTime 122 ms
+2022-11-09 14:10:05,031 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,155 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,156 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:05,156 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:05,156 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"559.00"}  ResponseTime 113 ms
+2022-11-09 14:10:05,157 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,280 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,281 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
+2022-11-09 14:10:05,281 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-mgLRXq1686IxtnT4y1cS_D","CreditTransactionId":"QA_Test-AlmDgM14x7LKFQytw1dB_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:10:05,281 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":21,"Description":"Transaction is already processed"}  ResponseTime 114 ms
+2022-11-09 14:10:05,281 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,399 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,399 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:05,399 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:05,399 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"559.00"}  ResponseTime 111 ms
+2022-11-09 14:10:05,399 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,403 [main] ERROR ApiIntegration - DebitAPIValidateResponseUsingTransactionIDTwice Test failed
+2022-11-09 14:10:05,530 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,530 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:05,530 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:05,531 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"559.00"}  ResponseTime 115 ms
+2022-11-09 14:10:05,531 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,659 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,659 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
+2022-11-09 14:10:05,659 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-5o2r0oLXDZjhy3BYIb1s_D","CreditTransactionId":"QA_Test-x54Dt8JwJFzvCAMvnHbq_C_ErrorID","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:10:05,659 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":21,"Description":"CreditTransactionId Not Found"}  ResponseTime 115 ms
+2022-11-09 14:10:05,659 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,782 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,782 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:05,782 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:05,782 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"559.00"}  ResponseTime 118 ms
+2022-11-09 14:10:05,783 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,785 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidCreditTransactionID: Test passed
+2022-11-09 14:10:05,907 [main] INFO ApiIntegration - 
+2022-11-09 14:10:05,907 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:05,907 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:05,908 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"559.00"}  ResponseTime 113 ms
+2022-11-09 14:10:05,908 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,027 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,027 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:06,027 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-l2LmgYY2DszGNTJKwMxq_C","BetState":1,"Amount":1.0}
+2022-11-09 14:10:06,027 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"558.00","OperationItems":[{"ClientId":320575,"Balance":"558.00","CurrencyId":"TND","TransactionId":"QA_Test-l2LmgYY2DszGNTJKwMxq_C","BetId":"QA_Test-l2LmgYY2DszGNTJKwMxq_C"}]}  ResponseTime 112 ms
+2022-11-09 14:10:06,027 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,158 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,158 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:06,158 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:06,158 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"558.00"}  ResponseTime 124 ms
+2022-11-09 14:10:06,158 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,290 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,290 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
+2022-11-09 14:10:06,290 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-YBdkFjuCGgNja42CWzkH_D","CreditTransactionId":"QA_Test-l2LmgYY2DszGNTJKwMxq_C","Amount":0.0,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:10:06,290 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"558.00","OperationItems":[{"ClientId":320575,"Balance":"558.00","CurrencyId":"TND","TransactionId":"QA_Test-YBdkFjuCGgNja42CWzkH_D","BetId":"QA_Test-YBdkFjuCGgNja42CWzkH_D"}]}  ResponseTime 124 ms
+2022-11-09 14:10:06,290 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,458 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,459 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:06,459 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:06,459 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"558.00"}  ResponseTime 157 ms
+2022-11-09 14:10:06,459 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,462 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingAmount_0: Test passed
+2022-11-09 14:10:06,607 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,608 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:06,608 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:06,608 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"558.00"}  ResponseTime 127 ms
+2022-11-09 14:10:06,608 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,742 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,742 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:06,742 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-GcOkFLT5SQneLrs85mTz_C","BetState":1,"Amount":1.0}
+2022-11-09 14:10:06,742 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"557.00","OperationItems":[{"ClientId":320575,"Balance":"557.00","CurrencyId":"TND","TransactionId":"QA_Test-GcOkFLT5SQneLrs85mTz_C","BetId":"QA_Test-GcOkFLT5SQneLrs85mTz_C"}]}  ResponseTime 125 ms
+2022-11-09 14:10:06,743 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,870 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,870 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:06,870 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:06,870 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"557.00"}  ResponseTime 116 ms
+2022-11-09 14:10:06,870 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,999 [main] INFO ApiIntegration - 
+2022-11-09 14:10:06,999 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
+2022-11-09 14:10:06,999 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-O7jyg0fZOb2tdSErffyC_D","CreditTransactionId":"QA_Test-GcOkFLT5SQneLrs85mTz_C","Amount":-1.0,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:10:06,999 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 119 ms
+2022-11-09 14:10:06,999 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,122 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,122 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:07,123 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:07,123 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"557.00"}  ResponseTime 116 ms
+2022-11-09 14:10:07,123 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,126 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
+2022-11-09 14:10:07,246 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,247 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:07,247 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:07,247 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"557.00"}  ResponseTime 112 ms
+2022-11-09 14:10:07,247 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,376 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,377 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:07,377 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-Gdoqe7LCmYoaPvkSjOz6_C","BetState":1,"Amount":1.0}
+2022-11-09 14:10:07,377 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"556.00","OperationItems":[{"ClientId":320575,"Balance":"556.00","CurrencyId":"TND","TransactionId":"QA_Test-Gdoqe7LCmYoaPvkSjOz6_C","BetId":"QA_Test-Gdoqe7LCmYoaPvkSjOz6_C"}]}  ResponseTime 122 ms
+2022-11-09 14:10:07,377 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,495 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,495 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:07,495 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:07,495 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"556.00"}  ResponseTime 113 ms
+2022-11-09 14:10:07,495 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,619 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,620 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
+2022-11-09 14:10:07,620 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-H1Tfe4o9lKJAmlq5gyzB_D","CreditTransactionId":"QA_Test-Gdoqe7LCmYoaPvkSjOz6_C","Amount":-1.5,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:10:07,620 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 119 ms
+2022-11-09 14:10:07,620 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,745 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,745 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:07,745 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:07,746 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"556.00"}  ResponseTime 115 ms
+2022-11-09 14:10:07,746 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,754 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
+2022-11-09 14:10:07,871 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,871 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:07,871 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:07,871 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"556.00"}  ResponseTime 109 ms
+2022-11-09 14:10:07,871 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,995 [main] INFO ApiIntegration - 
+2022-11-09 14:10:07,995 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:07,995 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-eUxzFE9amC4hM21uI73b_C","BetState":1,"Amount":1.0}
+2022-11-09 14:10:07,995 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"555.00","OperationItems":[{"ClientId":320575,"Balance":"555.00","CurrencyId":"TND","TransactionId":"QA_Test-eUxzFE9amC4hM21uI73b_C","BetId":"QA_Test-eUxzFE9amC4hM21uI73b_C"}]}  ResponseTime 118 ms
+2022-11-09 14:10:07,995 [main] INFO ApiIntegration - 
+2022-11-09 14:10:08,124 [main] INFO ApiIntegration - 
+2022-11-09 14:10:08,124 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:08,125 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:08,125 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"555.00"}  ResponseTime 122 ms
+2022-11-09 14:10:08,125 [main] INFO ApiIntegration - 
+2022-11-09 14:10:08,254 [main] INFO ApiIntegration - 
+2022-11-09 14:10:08,255 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
+2022-11-09 14:10:08,255 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-W8soSIR5QGOgTpI33Pfs_D","CreditTransactionId":"QA_Test-eUxzFE9amC4hM21uI73b_C","Amount":-1.05,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:10:08,255 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 117 ms
+2022-11-09 14:10:08,255 [main] INFO ApiIntegration - 
+2022-11-09 14:10:08,374 [main] INFO ApiIntegration - 
+2022-11-09 14:10:08,374 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:08,374 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:08,374 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"555.00"}  ResponseTime 113 ms
+2022-11-09 14:10:08,375 [main] INFO ApiIntegration - 
+2022-11-09 14:10:08,378 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
+2022-11-09 14:10:08,505 [main] INFO ApiIntegration - 
+2022-11-09 14:10:08,506 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:08,506 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:08,506 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"555.00"}  ResponseTime 118 ms
+2022-11-09 14:10:08,506 [main] INFO ApiIntegration - 
+2022-11-09 14:10:08,629 [main] INFO ApiIntegration - 
+2022-11-09 14:10:08,629 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:08,629 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-uhNJtiPlDX978fkSU58l_C","BetState":1,"Amount":1.0}
+2022-11-09 14:10:08,629 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"554.00","OperationItems":[{"ClientId":320575,"Balance":"554.00","CurrencyId":"TND","TransactionId":"QA_Test-uhNJtiPlDX978fkSU58l_C","BetId":"QA_Test-uhNJtiPlDX978fkSU58l_C"}]}  ResponseTime 117 ms
+2022-11-09 14:10:08,629 [main] INFO ApiIntegration - 
+2022-11-09 14:10:08,754 [main] INFO ApiIntegration - 
+2022-11-09 14:10:08,755 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:08,755 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:08,755 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"554.00"}  ResponseTime 119 ms
+2022-11-09 14:10:08,755 [main] INFO ApiIntegration - 
+2022-11-09 14:10:08,879 [main] INFO ApiIntegration - 
+2022-11-09 14:10:08,880 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Debit
+2022-11-09 14:10:08,880 [main] INFO ApiIntegration - DebitAPI:  RequestBody{"ClientId":"320575","CurrencyId":"TND","GameId":54001,"TransactionId":"QA_Test-LZ7LdHp8hx6m2gD9ulU8_D","CreditTransactionId":"QA_Test-uhNJtiPlDX978fkSU58l_C","Amount":-1.005,"BetState":2,"OperationTypeId":1,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:10:08,880 [main] INFO ApiIntegration - DebitAPI:  ResponseBody{"ResponseCode":21,"Description":"Invalid request params"}  ResponseTime 115 ms
+2022-11-09 14:10:08,880 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,025 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,025 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:09,025 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:09,025 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"554.00"}  ResponseTime 129 ms
+2022-11-09 14:10:09,025 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,028 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
+2022-11-09 14:10:09,166 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,166 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:09,166 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:09,166 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"554.00"}  ResponseTime 123 ms
+2022-11-09 14:10:09,167 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,167 [main] INFO ApiIntegration - Balance Before Credit:554.0
+2022-11-09 14:10:09,288 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,288 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:09,288 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-LMUFWkYSV1Elg9SAgqDb_C","BetState":1,"Amount":1.0}
+2022-11-09 14:10:09,288 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"553.00","OperationItems":[{"ClientId":320575,"Balance":"553.00","CurrencyId":"TND","TransactionId":"QA_Test-LMUFWkYSV1Elg9SAgqDb_C","BetId":"QA_Test-LMUFWkYSV1Elg9SAgqDb_C"}]}  ResponseTime 114 ms
+2022-11-09 14:10:09,288 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,422 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,423 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:09,423 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:09,423 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"553.00"}  ResponseTime 124 ms
+2022-11-09 14:10:09,423 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,423 [main] INFO ApiIntegration - Balance After Credit:553.0
+2022-11-09 14:10:09,545 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,545 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
+2022-11-09 14:10:09,545 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-LMUFWkYSV1Elg9SAgqDb_C","TransactionId":"QA_Test-gk9c70mGf1hZVF15Ormi_R","OperationTypeId":15,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d_Error"}
+2022-11-09 14:10:09,545 [main] INFO ApiIntegration - RollBackAPI:  ResponseBodyUnable to open file!  ResponseTime 111 ms
+2022-11-09 14:10:09,546 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,550 [main] ERROR ApiIntegration - RollBackAPIValidateResponseWithInvalidToken Test failed
+2022-11-09 14:10:09,676 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,677 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:09,677 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:09,677 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"553.00"}  ResponseTime 115 ms
+2022-11-09 14:10:09,677 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,678 [main] INFO ApiIntegration - Balance Before RollBack:553.0
+2022-11-09 14:10:09,807 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,808 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
+2022-11-09 14:10:09,808 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-UTXMwETft96X7eFegGQU_C","TransactionId":"QA_Test-GPGO5WPiatsa74epkoLO_R","OperationTypeId":15,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:10:09,808 [main] INFO ApiIntegration - RollBackAPI:  ResponseBodyUnable to open file!  ResponseTime 118 ms
+2022-11-09 14:10:09,808 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,813 [main] ERROR ApiIntegration - RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit Test failed
+2022-11-09 14:10:09,942 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,942 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:09,942 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:09,942 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"553.00"}  ResponseTime 117 ms
+2022-11-09 14:10:09,942 [main] INFO ApiIntegration - 
+2022-11-09 14:10:09,942 [main] INFO ApiIntegration - Balance Before Credit:553.0
+2022-11-09 14:10:10,066 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,066 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:10,066 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-ShiRmlelSPh5rRrj7lx6_C","BetState":1,"Amount":1.0}
+2022-11-09 14:10:10,066 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"552.00","OperationItems":[{"ClientId":320575,"Balance":"552.00","CurrencyId":"TND","TransactionId":"QA_Test-ShiRmlelSPh5rRrj7lx6_C","BetId":"QA_Test-ShiRmlelSPh5rRrj7lx6_C"}]}  ResponseTime 116 ms
+2022-11-09 14:10:10,066 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,210 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,210 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:10,211 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:10,211 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"552.00"}  ResponseTime 115 ms
+2022-11-09 14:10:10,211 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,211 [main] INFO ApiIntegration - Balance After Credit:552.0
+2022-11-09 14:10:10,327 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,327 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
+2022-11-09 14:10:10,327 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-ShiRmlelSPh5rRrj7lx6_C","TransactionId":"QA_Test-Gm1X1NQ9Sp4Lz8HpwcGn_R","OperationTypeId":15,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:10:10,327 [main] INFO ApiIntegration - RollBackAPI:  ResponseBodyUnable to open file!  ResponseTime 111 ms
+2022-11-09 14:10:10,327 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,441 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,441 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:10,441 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:10,442 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"552.00"}  ResponseTime 108 ms
+2022-11-09 14:10:10,442 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,442 [main] INFO ApiIntegration - Balance After RollBack_1:552.0
+2022-11-09 14:10:10,567 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,568 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
+2022-11-09 14:10:10,568 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-ShiRmlelSPh5rRrj7lx6_C","TransactionId":"QA_Test-Wy0J4AWfSldoiZ6Dqvjw_R","OperationTypeId":4,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:10:10,568 [main] INFO ApiIntegration - RollBackAPI:  ResponseBodyUnable to open file!  ResponseTime 113 ms
+2022-11-09 14:10:10,568 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,574 [main] ERROR ApiIntegration - RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice Test failed
+2022-11-09 14:10:10,691 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,691 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:10,691 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:10,691 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"552.00"}  ResponseTime 110 ms
+2022-11-09 14:10:10,692 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,692 [main] INFO ApiIntegration - Balance Before Credit_1:552.0
+2022-11-09 14:10:10,824 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,824 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:10,824 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-kX2FGl5LqghuhnwQZovt_C","BetState":1,"Amount":1.0}
+2022-11-09 14:10:10,825 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"551.00","OperationItems":[{"ClientId":320575,"Balance":"551.00","CurrencyId":"TND","TransactionId":"QA_Test-kX2FGl5LqghuhnwQZovt_C","BetId":"QA_Test-kX2FGl5LqghuhnwQZovt_C"}]}  ResponseTime 122 ms
+2022-11-09 14:10:10,825 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,954 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,954 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:10,954 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:10,955 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"551.00"}  ResponseTime 112 ms
+2022-11-09 14:10:10,955 [main] INFO ApiIntegration - 
+2022-11-09 14:10:10,956 [main] INFO ApiIntegration - Balance After Credit_1:551.0
+2022-11-09 14:10:11,092 [main] INFO ApiIntegration - 
+2022-11-09 14:10:11,092 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Credit
+2022-11-09 14:10:11,092 [main] INFO ApiIntegration - CreditAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND","GameId":54001,"OperationTypeId":1,"TransactionId":"QA_Test-DP1Hj8SdjgZxBDVI5bUa_C","BetState":1,"Amount":1.0}
+2022-11-09 14:10:11,092 [main] INFO ApiIntegration - CreditAPI:  ResponseBody{"ResponseCode":"0","Description":"","balance":"550.00","OperationItems":[{"ClientId":320575,"Balance":"550.00","CurrencyId":"TND","TransactionId":"QA_Test-DP1Hj8SdjgZxBDVI5bUa_C","BetId":"QA_Test-DP1Hj8SdjgZxBDVI5bUa_C"}]}  ResponseTime 124 ms
+2022-11-09 14:10:11,092 [main] INFO ApiIntegration - 
+2022-11-09 14:10:11,211 [main] INFO ApiIntegration - 
+2022-11-09 14:10:11,211 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:11,211 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:11,211 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"550.00"}  ResponseTime 112 ms
+2022-11-09 14:10:11,211 [main] INFO ApiIntegration - 
+2022-11-09 14:10:11,211 [main] INFO ApiIntegration - Balance After Credit_2:550.0
+2022-11-09 14:10:11,332 [main] INFO ApiIntegration - 
+2022-11-09 14:10:11,333 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
+2022-11-09 14:10:11,333 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-kX2FGl5LqghuhnwQZovt_C","TransactionId":"QA_Test-trm8RXFYwEDfacZJqQVl_R","OperationTypeId":15,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:10:11,333 [main] INFO ApiIntegration - RollBackAPI:  ResponseBodyUnable to open file!  ResponseTime 115 ms
+2022-11-09 14:10:11,333 [main] INFO ApiIntegration - 
+2022-11-09 14:10:11,465 [main] INFO ApiIntegration - 
+2022-11-09 14:10:11,465 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/GetBalance
+2022-11-09 14:10:11,465 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody{"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d","CurrencyId":"TND"}
+2022-11-09 14:10:11,465 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody{"ResponseCode":0,"Description":null,"CurrencyId":"TND","AvailableBalance":"550.00"}  ResponseTime 123 ms
+2022-11-09 14:10:11,465 [main] INFO ApiIntegration - 
+2022-11-09 14:10:11,466 [main] INFO ApiIntegration - Balance After RollBack_1:550.0
+2022-11-09 14:10:11,595 [main] INFO ApiIntegration - 
+2022-11-09 14:10:11,595 [main] INFO ApiIntegration - https://gobet.tn/iapi/iq/Rollback
+2022-11-09 14:10:11,595 [main] INFO ApiIntegration - RollBackAPI:  RequestBody{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-DP1Hj8SdjgZxBDVI5bUa_C","TransactionId":"QA_Test-trm8RXFYwEDfacZJqQVl_R","OperationTypeId":4,"Token":"MzIwNTc1fDE2NjcyOTAzMzc\u003d"}
+2022-11-09 14:10:11,596 [main] INFO ApiIntegration - RollBackAPI:  ResponseBodyUnable to open file!  ResponseTime 117 ms
+2022-11-09 14:10:11,596 [main] INFO ApiIntegration - 
+2022-11-09 14:10:11,607 [main] ERROR ApiIntegration - RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice Test failed
+2022-11-09 14:10:11,657 [main] INFO ApiIntegration - API Integration Automation Test: Test execution finished
+2022-11-09 14:10:11,661 [main] INFO ApiIntegration - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2022-11-09 14:10:11,661 [main] INFO ApiIntegration - 
+2022-11-09 14:10:11,661 [main] INFO ApiIntegration - 
+2022-11-09 14:10:11,662 [main] INFO ApiIntegration - 

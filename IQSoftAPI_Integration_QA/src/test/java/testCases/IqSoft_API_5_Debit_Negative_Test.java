@@ -109,7 +109,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         softAssert.assertEquals(statusCod, 200, "StatusCod: " + statusCod);
-        softAssert.assertNotEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 0,
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 0,
                 "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
 //        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "error login",
 //                "Error Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
