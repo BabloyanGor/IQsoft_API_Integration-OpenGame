@@ -14,6 +14,7 @@ import org.json.JSONObject;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class CreateUsers  extends BaseTest{
@@ -42,6 +43,12 @@ public class CreateUsers  extends BaseTest{
             generateVarablesForNewJson.setClientIdentifier(jsonObjectBody.get("UserName").toString());
             DataTest.add(gson.toJson(generateVarablesForNewJson));
         }
+
+
+            FileWriter fw = new FileWriter("out.txt");
+            fw.write(String.valueOf(DataTest));
+            fw.close();
+
 
 
 
