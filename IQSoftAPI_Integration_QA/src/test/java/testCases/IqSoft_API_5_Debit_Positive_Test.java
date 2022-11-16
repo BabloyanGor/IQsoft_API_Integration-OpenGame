@@ -21,7 +21,7 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest {
     int statusCod;
     double beforeDebit;
     double afterDebit;
-
+    int operationTypeIdDebit = 1;
     @BeforeClass
     public void setUp() throws UnirestException, IOException {
         HttpResponse<String> responseGetBalanceBeforeDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -30,7 +30,7 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest {
         Unirest.shutdown();
 
         HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitValidTransactionID,
-                creditValidTransactionID, betAmountDebitConfig, 2, 4, AuthorizationTokenVar);
+                creditValidTransactionID, betAmountDebitConfig, 2, operationTypeIdDebit, AuthorizationTokenVar);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -91,8 +91,8 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest {
 
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getResponseCode(), 0,
                 "ResponseCode: " + iqSoft_05_apiVariables_debit_response.getResponseCode());
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "null",
-                "Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
+//        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getDescription(), "null",
+//                "Description: " + iqSoft_05_apiVariables_debit_response.getDescription());
         softAssert.assertNotEquals(iqSoft_05_apiVariables_debit_response.getBetId(), "null",
                 "BetID: " + iqSoft_05_apiVariables_debit_response.getBetId());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getClientId(), iqSoft_05_apiVariables_debit_request.getClientId(),
@@ -112,7 +112,7 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest {
 
         }
         if (balanceAfterSplit != null && balanceAfterSplit.length()>2){
-            softAssert.assertTrue(false, "Balance after . has more then 2 symbols");
+            softAssert.fail("Balance after . has more then 2 symbols");
         }
         else {
             softAssert.assertTrue(true);

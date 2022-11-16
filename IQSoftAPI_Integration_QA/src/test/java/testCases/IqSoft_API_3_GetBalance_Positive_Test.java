@@ -55,8 +55,8 @@ public class IqSoft_API_3_GetBalance_Positive_Test extends BaseTest{
                 "CurrencyIdRequest: " + iqSoft_03_apiVariables_getBalance_response.getCurrencyId() + "VS CurrencyIdResponse: " + iqSoft_03_apiVariables_getBalance_request.getCurrencyId());
         softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getResponseCode(), 0,
                 "ResponseCode : " + iqSoft_03_apiVariables_getBalance_response.getResponseCode());
-        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getDescription(), "null",
-                "Description: " + iqSoft_03_apiVariables_getBalance_response.getDescription());
+//        softAssert.assertEquals(iqSoft_03_apiVariables_getBalance_response.getDescription(), "null",
+//                "Description: " + iqSoft_03_apiVariables_getBalance_response.getDescription());
 
         boolean balanceHigherOREqualZero = iqSoft_03_apiVariables_getBalance_response.getAvailableBalance() >= 0;
         softAssert.assertEquals(balanceHigherOREqualZero, true);
@@ -71,7 +71,7 @@ public class IqSoft_API_3_GetBalance_Positive_Test extends BaseTest{
 
         }
         if (balanceAfterSplit != null && balanceAfterSplit.length()>2){
-            softAssert.assertTrue(false, "Balance after . has more then 2 symbols");
+            softAssert.fail( "Balance after . has more then 2 symbols");
         }
         else {
             softAssert.assertTrue(true);

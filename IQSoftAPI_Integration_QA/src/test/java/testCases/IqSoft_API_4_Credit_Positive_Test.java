@@ -20,7 +20,7 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
     double beforeCredit;
     double afterCredit;
     int statusCod;
-
+    int operationTypeIdCredit = 1;
 
     @BeforeClass
     public void setUp() throws UnirestException, IOException {
@@ -31,7 +31,7 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
         Unirest.shutdown();
 
 
-        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1,
+        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
                 creditValidTransactionID, betAmountCreditConfig, 1);
         Unirest.shutdown();
         statusCod = responseCredit.getStatus();
@@ -75,18 +75,18 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
 
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getResponseCode(), 0,
                 "ResponseCode: " + iqSoft_04_apiVariables_credit_response.getResponseCode());
-        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "null",
-                "Description: " + iqSoft_04_apiVariables_credit_response.getDescription());
+//        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getDescription(), "null",
+//                "Description: " + iqSoft_04_apiVariables_credit_response.getDescription());
         softAssert.assertNotEquals(iqSoft_04_apiVariables_credit_response.getBetId(), "null",
                 "BetId: " + iqSoft_04_apiVariables_credit_response.getBetId());
-        softAssert.assertEquals(betAmountCreditConfig, beforeCredit - afterCredit,
-                "betAmountCreditConfig =  beforeCredit-afterCredit" + betAmountCreditConfig + "=" + beforeCredit + "-" + afterCredit);
+        softAssert.assertEquals(beforeCredit - afterCredit, betAmountCreditConfig ,
+                "betAmountCreditConfig =  beforeCredit-afterCredit " + betAmountCreditConfig + "=" + beforeCredit + " - " + afterCredit);
         softAssert.assertNotEquals(iqSoft_04_apiVariables_credit_response.getClientId(), null,
                 "ClientId: " + iqSoft_04_apiVariables_credit_response.getClientId());
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getCurrencyId(), currencyIDConfig,
-                "ResponseCurrencyId = CurrencyIDConfig" + iqSoft_04_apiVariables_credit_response.getCurrencyId() + "   " + currencyIDConfig);
+                "ResponseCurrencyId = CurrencyIDConfig " + iqSoft_04_apiVariables_credit_response.getCurrencyId() + "   " + currencyIDConfig);
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getCurrencyId().length(), 3,
-                "CurrencyIdLength =" + iqSoft_04_apiVariables_credit_response.getCurrencyId().length());
+                "CurrencyIdLength = " + iqSoft_04_apiVariables_credit_response.getCurrencyId().length());
 
         boolean balanceHigherOREqualZero = iqSoft_03_apiVariables_getBalance_response.getAvailableBalance() >= 0;
         softAssert.assertEquals(balanceHigherOREqualZero, true);
@@ -101,7 +101,7 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
 
         }
         if (balanceAfterSplit != null && balanceAfterSplit.length()>2){
-            softAssert.assertTrue(false, "Balance after . has more then 2 symbols");
+            softAssert.fail( "Balance after . has more then 2 symbols");
         }
         else {
             softAssert.assertTrue(true);

@@ -53,7 +53,7 @@ public class IqSoft_API_6_RollBackCreditWithDebit_Positive_Test extends BaseTest
         logger.info("Balance After Debit:" + afterDebit);
 
 
-        HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, CreditTransactionID, randomRollBackTransactionID(), AuthorizationTokenVar, 4);
+        HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, CreditTransactionID, randomRollBackTransactionID(), AuthorizationTokenVar, 1);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -85,8 +85,8 @@ public class IqSoft_API_6_RollBackCreditWithDebit_Positive_Test extends BaseTest
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(iqSoft_06_apiVariables_rollBack_response.getResponseCode(), 0,
                 "ResponseCode: " + iqSoft_06_apiVariables_rollBack_response.getResponseCode());
-        softAssert.assertEquals(iqSoft_06_apiVariables_rollBack_response.getDescription(), "null",
-                "Description: " + iqSoft_06_apiVariables_rollBack_response.getDescription());
+//        softAssert.assertEquals(iqSoft_06_apiVariables_rollBack_response.getDescription(), "null",
+//                "Description: " + iqSoft_06_apiVariables_rollBack_response.getDescription());
         softAssert.assertAll();
     }
 

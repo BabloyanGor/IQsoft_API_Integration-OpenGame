@@ -24,6 +24,8 @@ public class IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test extends BaseT
 
     String CreditTransactionID = randomCreditTransactionID();
     String DebitTransactionID = randomDebitTransactionID();
+    int operationTypeIdCredit = 3;
+    int operationTypeIdRollBackCredit = 15;
 
     @BeforeClass
     public void setUp() throws UnirestException, IOException {
@@ -34,7 +36,7 @@ public class IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test extends BaseT
         logger.info("Balance Before Credit:" + beforeAll);
 
 
-        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 1, CreditTransactionID, betAmountCreditConfig, 1);
+        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit, CreditTransactionID, betAmountCreditConfig, 1);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -43,7 +45,7 @@ public class IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test extends BaseT
         Unirest.shutdown();
         logger.info("Balance After Credit:" + afterCredit);
 
-        HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, CreditTransactionID, randomRollBackTransactionID(), AuthorizationTokenVar, 4);
+        HttpResponse<String> response = rollBackAPI(userNameConfig, gameIdConfig, CreditTransactionID, randomRollBackTransactionID(), AuthorizationTokenVar, operationTypeIdRollBackCredit);
         Unirest.shutdown();
         statusCod = response.getStatus();
         jsonObjectBody = new JSONObject(response.getBody());
@@ -75,8 +77,8 @@ public class IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test extends BaseT
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(iqSoft_06_apiVariables_rollBack_response.getResponseCode(), 0,
                 "ResponseCode: " + iqSoft_06_apiVariables_rollBack_response.getResponseCode());
-        softAssert.assertEquals(iqSoft_06_apiVariables_rollBack_response.getDescription(), "null",
-                "Description: " + iqSoft_06_apiVariables_rollBack_response.getDescription());
+//        softAssert.assertEquals(iqSoft_06_apiVariables_rollBack_response.getDescription(), "null",
+//                "Description: " + iqSoft_06_apiVariables_rollBack_response.getDescription());
         softAssert.assertAll();
     }
 

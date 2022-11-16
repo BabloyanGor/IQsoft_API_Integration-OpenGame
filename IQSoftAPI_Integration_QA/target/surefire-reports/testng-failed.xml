@@ -8,65 +8,101 @@
     <classes>
       <class name="testCases.IqSoft_API_5_Debit_Negative_Test">
         <methods>
+          <include name="DebitAPIValidateResponseUsingInvalidAmount" invocation-numbers="0 1 2 3"/>
           <include name="tearDownSuite"/>
+          <include name="DebitAPIValidateResponseWithInvalidToken"/>
           <include name="DebitAPIValidateResponseUsingInvalidProductID"/>
+          <include name="DebitAPIValidateResponseUsingTransactionIDTwice"/>
           <include name="DebitAPIValidateResponseUsingInvalidCreditTransactionID"/>
           <include name="setupSuite"/>
         </methods>
       </class> <!-- testCases.IqSoft_API_5_Debit_Negative_Test -->
-      <class name="testCases.IqSoft_API_3_GetBalance_Negative_Test">
-        <methods>
-          <include name="GetBalanceAPIValidateResponseWithInvalidCurrencyID"/>
-          <include name="GetBalanceAPIValidateResponseWithOtherCurrencyID"/>
-          <include name="tearDownSuite"/>
-          <include name="GetBalanceAPIValidateResponseWithExpiredToken"/>
-          <include name="setupSuite"/>
-        </methods>
-      </class> <!-- testCases.IqSoft_API_3_GetBalance_Negative_Test -->
       <class name="testCases.IqSoft_API_6_RollBack_Negative_Test">
         <methods>
           <include name="RollBackAPIValidateResponseUsingInvalidProductID"/>
           <include name="RollBackAPIValidateResponseWithInvalidToken"/>
-          <include name="RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice"/>
           <include name="tearDownSuite"/>
           <include name="setupSuite"/>
         </methods>
       </class> <!-- testCases.IqSoft_API_6_RollBack_Negative_Test -->
-      <class name="testCases.IqSoft_API_1_OpenGame_Positive_Test">
-        <methods>
-          <include name="setUpTestCase"/>
-          <include name="OpenGameAPIValidatePositiveResponse"/>
-          <include name="tearDownSuite"/>
-          <include name="OpenGameAPIValidateStatusCod"/>
-          <include name="setupSuite"/>
-        </methods>
-      </class> <!-- testCases.IqSoft_API_1_OpenGame_Positive_Test -->
       <class name="testCases.IqSoft_API_4_Credit_Negative_Test">
         <methods>
+          <include name="CreditAPIValidateResponseWithInvalidToken"/>
           <include name="tearDownSuite"/>
           <include name="CreditAPIValidateResponseWithExpiredToken"/>
           <include name="CreditAPIValidateResponseWithInvalidProductID"/>
+          <include name="CreditAPIValidateResponseUsingAmountHigherThenBalance"/>
           <include name="setupSuite"/>
-          <include name="CreditAPIValidateResponseWithInvalidAmount" invocation-numbers="0"/>
+          <include name="CreditAPIValidateResponseWithInvalidAmount" invocation-numbers="0 1 2 3 4"/>
         </methods>
       </class> <!-- testCases.IqSoft_API_4_Credit_Negative_Test -->
+      <class name="testCases.IqSoft_API_3_GetBalance_Negative_Test">
+        <methods>
+          <include name="GetBalanceAPIValidateResponseWithInvalidCurrencyID"/>
+          <include name="tearDownSuite"/>
+          <include name="GetBalanceAPIValidateResponseWithOtherCurrencyID"/>
+          <include name="GetBalanceAPIValidateResponseWithInvalidToken"/>
+          <include name="GetBalanceAPIValidateResponseWithExpiredToken"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- testCases.IqSoft_API_3_GetBalance_Negative_Test -->
       <class name="testCases.IqSoft_API_2_Authorization_Negative_Test">
         <methods>
           <include name="AuthorizationAPIValidateResponseWithInvalidProductID"/>
           <include name="tearDownSuite"/>
+          <include name="AuthorizationAPIValidateResponseWithInvalidToken"/>
           <include name="AuthorizationAPIValidateResponseWithExpiredToken"/>
           <include name="setupSuite"/>
         </methods>
       </class> <!-- testCases.IqSoft_API_2_Authorization_Negative_Test -->
-      <class name="testCases.IqSoft_API_1_OpenGame_Negative_Test">
+      <class name="testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test">
         <methods>
-          <include name="OpenGameAPIValidateResponseWithExpiredToken"/>
-          <include name="OpenGameAPIValidateResponseWithInvalidPartnerID"/>
           <include name="tearDownSuite"/>
-          <include name="OpenGameAPIValidateResponseWithInvalidDomain"/>
+          <include name="RollBackAPIValidatePositiveResponse"/>
+          <include name="RollBackAPIValidateStatusCod"/>
+          <include name="RollBackAPIValidatePositiveResponseBalanceCorrection"/>
+          <include name="setupSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.IqSoft_API_6_RollBackCreditWithDebit_Positive_Test -->
+      <class name="testCases.IqSoft_API_6_RollBackDebit_Positive_Test">
+        <methods>
+          <include name="RollBackAPIValidatePositiveResponse"/>
+          <include name="RollBackAPIValidateStatusCod"/>
+          <include name="tearDownSuite"/>
+          <include name="setUp"/>
+          <include name="RollBackAPIValidatePositiveResponseBalanceCorrection"/>
           <include name="setupSuite"/>
         </methods>
-      </class> <!-- testCases.IqSoft_API_1_OpenGame_Negative_Test -->
+      </class> <!-- testCases.IqSoft_API_6_RollBackDebit_Positive_Test -->
+      <class name="testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test">
+        <methods>
+          <include name="RollBackAPIValidatePositiveResponse"/>
+          <include name="RollBackAPIValidateStatusCod"/>
+          <include name="tearDownSuite"/>
+          <include name="setUp"/>
+          <include name="RollBackAPIValidatePositiveResponseBalanceCorrection"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test -->
+      <class name="testCases.IqSoft_API_5_Debit_Positive_Test">
+        <methods>
+          <include name="DebitAPIValidatePositiveResponse"/>
+          <include name="tearDownSuite"/>
+          <include name="setUp"/>
+          <include name="setupSuite"/>
+          <include name="DebitAPIValidateStatusCod"/>
+        </methods>
+      </class> <!-- testCases.IqSoft_API_5_Debit_Positive_Test -->
+      <class name="testCases.IqSoft_API_4_Credit_Positive_Test">
+        <methods>
+          <include name="CreditAPIValidateStatusCod"/>
+          <include name="tearDownSuite"/>
+          <include name="CreditAPIValidatePositiveResponse"/>
+          <include name="setupSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.IqSoft_API_4_Credit_Positive_Test -->
     </classes>
   </test> <!-- API Integration Automation Test(failed) -->
 </suite> <!-- Failed suite [IQsoft API Integration] -->

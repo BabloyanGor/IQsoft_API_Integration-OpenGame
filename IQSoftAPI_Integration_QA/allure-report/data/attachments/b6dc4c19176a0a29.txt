@@ -1,1 +1,0 @@
-{"UserName":"rassem1155","GameId":54001,"RollbackTransactionId":"QA_Test-VmjrGLpPCjCpzp1NNd5D_C","TransactionId":"QA_Test-EsQKmWIXz4hbQ8wQ6FU6_R","OperationTypeId":4,"Token":"NDIwfDE2NjY5NTgyNTE"}

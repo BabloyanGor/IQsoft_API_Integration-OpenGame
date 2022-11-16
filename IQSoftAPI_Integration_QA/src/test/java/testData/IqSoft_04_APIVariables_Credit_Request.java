@@ -2,7 +2,6 @@ package testData;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import org.apache.commons.lang3.RandomStringUtils;
 
 public class IqSoft_04_APIVariables_Credit_Request {
 

@@ -1,0 +1,1 @@
+{"ResponseCode":"0","Description":"","balance":"554.00","OperationItems":[{"ClientId":320575,"Balance":"554.00","CurrencyId":"TND","TransactionId":"QA_Test-uhNJtiPlDX978fkSU58l_C","BetId":"QA_Test-uhNJtiPlDX978fkSU58l_C"}]}
