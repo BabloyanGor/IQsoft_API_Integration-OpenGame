@@ -28,7 +28,9 @@ public class CreateUsers  extends BaseTest{
     @Severity(SeverityLevel.BLOCKER)
     public void CreateUsers() throws UnirestException, IOException {
         JsonArray DataTest = new JsonArray();
-        for (int k=1; k<3; k++){
+        int err =0;
+        for (int k=1; k<5; k++){
+
             Gson gson = new Gson();
             HttpResponse<String> response = createUsers();
             Unirest.shutdown();
@@ -41,18 +43,26 @@ public class CreateUsers  extends BaseTest{
             genereteUsersResponce.setEmail(jsonObjectBody.get("EmailOrMobile").toString());
 
             generateVarablesForNewJson.setClientIdentifier(jsonObjectBody.get("UserName").toString());
-            DataTest.add(gson.toJson(generateVarablesForNewJson));
+            if (genereteUsersResponce.getResponseCode() == 0){
+                DataTest.add(gson.toJson(generateVarablesForNewJson));
+            }
+            else{
+                logger.info( "ResponseCod " + genereteUsersResponce.getResponseCode() + "  UserName "+genereteUsersResponce.getUserName() + "  Email "+ genereteUsersResponce.getEmail());
+                err++;
+            }
+            if (err==10){
+                break;
+            }
+            w++;
+
         }
 
 
-            FileWriter fw = new FileWriter("out.txt");
+            FileWriter fw = new FileWriter("JsonForEncrypting.txt");
             fw.write(String.valueOf(DataTest));
             fw.close();
 
-
-
-
-        System.out.println("This is Object that need to be added to exel   "+DataTest);
+//        System.out.println("This is Object that need to be added to exel   "+DataTest);
 
 
 

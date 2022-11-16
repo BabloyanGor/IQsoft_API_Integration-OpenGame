@@ -1,1 +1,0 @@
-{"ResponseCode":21,"Description":"Transaction is already processed"}
