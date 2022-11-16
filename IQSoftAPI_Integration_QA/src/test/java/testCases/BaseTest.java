@@ -291,5 +291,40 @@ public class BaseTest {
     }
 
 
+    GenerateUsersVariables generateUsersVariables = new GenerateUsersVariables();
+    GenereteUsersResponce genereteUsersResponce = new GenereteUsersResponce();
+
+    GenerateVarablesForNewJson generateVarablesForNewJson = new GenerateVarablesForNewJson();
+    public HttpResponse<String> createUsers() throws UnirestException {  //if type = 1 one time else IDArrayList size
+        Gson gson = new Gson();
+        Unirest.setTimeouts(0, 0);
+
+
+        int w = 1;
+        generateUsersVariables.setEmail("qatest54131"+w+"@mail.com");
+        generateUsersVariables.setUserName("QA" + w);
+        generateUsersVariables.setMobileNumber("64665411"+w);
+
+
+        String registerBody = gson.toJson(generateUsersVariables);
+        String url = "https://websitewebapi.craftbetstage.com/1/api/Main/RegisterClient";
+
+        long start = System.currentTimeMillis();
+        HttpResponse<String> createUserResponse = Unirest.post(url)
+                .header("Content-Type", "application/json")
+                .body(registerBody)
+                .asString();
+        long end = System.currentTimeMillis();
+
+        logger.info("RollBackAPI:  Url:  " + url + "        RequestBody   " + registerBody);
+        logger.info("");
+        logger.info("RollBackAPI:    ResponseTime  " + (end - start) + "ms        ResponseBody   "+ createUserResponse.getBody());
+        logger.info("");
+
+
+        return createUserResponse;
+    }
+
+
 }
 
