@@ -29,7 +29,7 @@ public class CreateUsers  extends BaseTest{
     public void CreateUsers() throws UnirestException, IOException {
         JsonArray DataTest = new JsonArray();
         int err =0;
-        for (int k=1; k<5; k++){
+        for (int k=0; k<=1000; k++){
 
             Gson gson = new Gson();
             HttpResponse<String> response = createUsers();
@@ -47,10 +47,10 @@ public class CreateUsers  extends BaseTest{
                 DataTest.add(gson.toJson(generateVarablesForNewJson));
             }
             else{
-                logger.info( "ResponseCod " + genereteUsersResponce.getResponseCode() + "  UserName "+genereteUsersResponce.getUserName() + "  Email "+ genereteUsersResponce.getEmail());
+               // logger.info(k+ "  ResponseCod " + genereteUsersResponce.getResponseCode() + "  UserName "+genereteUsersResponce.getUserName() + "  Email "+ genereteUsersResponce.getEmail());
                 err++;
             }
-            if (err==10){
+            if (err==10000){
                 break;
             }
             w++;
@@ -58,7 +58,7 @@ public class CreateUsers  extends BaseTest{
         }
 
 
-            FileWriter fw = new FileWriter("JsonForEncrypting.txt");
+            FileWriter fw = new FileWriter("JsonForEncryptingUsers.txt");
             fw.write(String.valueOf(DataTest));
             fw.close();
 

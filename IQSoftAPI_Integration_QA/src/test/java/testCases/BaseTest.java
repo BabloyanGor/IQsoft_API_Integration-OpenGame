@@ -301,9 +301,9 @@ public class BaseTest {
 
 
 
-        generateUsersVariables.setEmail("qatest00"+w+"@mail.com");
-        generateUsersVariables.setUserName("Qa" + w);
-        generateUsersVariables.setMobileNumber("7777"+w);
+        generateUsersVariables.setEmail("qatest"+w+"@mail.com");
+        generateUsersVariables.setUserName("QaTestUser" + w);
+        generateUsersVariables.setMobileNumber("3333"+w);
 
 
         String registerBody = gson.toJson(generateUsersVariables);
