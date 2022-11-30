@@ -180,7 +180,7 @@ public class BaseTest {
 
 
     public HttpResponse<String> creditAPI(String AuthorizationToken, String CurrencyID, int GameID, int OperationTypeId,
-                                          String TransactionId, double Amount, int BetState) throws UnirestException {
+                                          String TransactionId, double Amount ) throws UnirestException {
 
         // OperationTypeId  3_Bet, 4_Win, 15_BetRollBack,  17_WinRollBack
         // BetStates  2_Won, 3_Lost, 4_Returned
@@ -194,7 +194,7 @@ public class BaseTest {
         iqSoft_04_apiVariables_credit_request.setOperationTypeId(OperationTypeId);
         iqSoft_04_apiVariables_credit_request.setTransactionId(TransactionId);
         iqSoft_04_apiVariables_credit_request.setAmount(Amount);
-        iqSoft_04_apiVariables_credit_request.setBetState(BetState);
+//        iqSoft_04_apiVariables_credit_request.setBetState(BetState);
 
         String CreditRequestBody = gson.toJson(iqSoft_04_apiVariables_credit_request);
         String url = callbackUrl + "/Credit";
@@ -259,14 +259,14 @@ public class BaseTest {
     }
 
     public HttpResponse<String> rollBackAPI(String UserName, int GameId, String RollbackTransactionId, String TransactionId,
-                                            String AuthorizationToken, int OperationTypeId) throws UnirestException {  //if type = 1 one time else IDArrayList size
+                                             int OperationTypeId) throws UnirestException {  //if type = 1 one time else IDArrayList size
         Gson gson = new Gson();
         Unirest.setTimeouts(0, 0);
         iqSoft_06_apiVariables_rollBack_request.setUserName(UserName);
         iqSoft_06_apiVariables_rollBack_request.setGameId(GameId);
         iqSoft_06_apiVariables_rollBack_request.setRollbackTransactionId(RollbackTransactionId);
         iqSoft_06_apiVariables_rollBack_request.setTransactionId(TransactionId);
-        iqSoft_06_apiVariables_rollBack_request.setToken(AuthorizationToken);
+//        iqSoft_06_apiVariables_rollBack_request.setToken(AuthorizationToken);
         iqSoft_06_apiVariables_rollBack_request.setOperationTypeId(OperationTypeId);
 
         String RollBackRequestBody = gson.toJson(iqSoft_06_apiVariables_rollBack_request);
@@ -291,39 +291,45 @@ public class BaseTest {
     }
 
 
-    GenerateUsersVariables generateUsersVariables = new GenerateUsersVariables();
-    GenereteUsersResponce genereteUsersResponce = new GenereteUsersResponce();
-    GenerateVarablesForNewJson generateVarablesForNewJson = new GenerateVarablesForNewJson();
-    public int w = 1;
-    public HttpResponse<String> createUsers() throws UnirestException {  //if type = 1 one time else IDArrayList size
-        Gson gson = new Gson();
-        Unirest.setTimeouts(0, 0);
 
 
 
-        generateUsersVariables.setEmail("qatest"+w+"@mail.com");
-        generateUsersVariables.setUserName("QaTestUser" + w);
-        generateUsersVariables.setMobileNumber("3333"+w);
 
 
-        String registerBody = gson.toJson(generateUsersVariables);
-        String url = "https://websitewebapi.craftbetstage.com/1/api/Main/RegisterClient";
 
-//        long start = System.currentTimeMillis();
-        HttpResponse<String> createUserResponse = Unirest.post(url)
-                .header("Content-Type", "application/json")
-                .body(registerBody)
-                .asString();
-//        long end = System.currentTimeMillis();
-
-//        logger.info("RollBackAPI:  Url:  " + url + "        RequestBody   " + registerBody);
-//        logger.info("");
-//        logger.info("RollBackAPI:    ResponseTime  " + (end - start) + "ms        ResponseBody   "+ createUserResponse.getBody());
-//        logger.info("");
-
-
-        return createUserResponse;
-    }
+//    GenerateUsersVariables generateUsersVariables = new GenerateUsersVariables();
+//    GenereteUsersResponce genereteUsersResponce = new GenereteUsersResponce();
+//    GenerateVarablesForNewJson generateVarablesForNewJson = new GenerateVarablesForNewJson();
+//    public int w = 15546;
+//    public HttpResponse<String> createUsers() throws UnirestException {  //if type = 1 one time else IDArrayList size
+//        Gson gson = new Gson();
+//        Unirest.setTimeouts(0, 0);
+//
+//
+//
+//        generateUsersVariables.setEmail("testuser"+w+"@mail.com");
+//        generateUsersVariables.setUserName("testuser" + w);
+//        generateUsersVariables.setMobileNumber("1200"+w);
+//
+//
+//        String registerBody = gson.toJson(generateUsersVariables);
+//        String url = "https://websitewebapi.craftbetstage.com/1/api/Main/RegisterClient";
+//
+////        long start = System.currentTimeMillis();
+//        HttpResponse<String> createUserResponse = Unirest.post(url)
+//                .header("Content-Type", "application/json")
+//                .body(registerBody)
+//                .asString();
+////        long end = System.currentTimeMillis();
+//
+////        logger.info("RollBackAPI:  Url:  " + url + "        RequestBody   " + registerBody);
+////        logger.info("");
+////        logger.info("RollBackAPI:    ResponseTime  " + (end - start) + "ms        ResponseBody   "+ createUserResponse.getBody());
+////        logger.info("");
+//
+//
+//        return createUserResponse;
+//    }
 
 
 }

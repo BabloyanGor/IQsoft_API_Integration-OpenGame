@@ -32,7 +32,7 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
 
 
         HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
-                creditValidTransactionID, betAmountCreditConfig, 1);
+                creditValidTransactionID, betAmountCreditConfig);
         Unirest.shutdown();
         statusCod = responseCredit.getStatus();
         jsonObjectBody = new JSONObject(responseCredit.getBody());

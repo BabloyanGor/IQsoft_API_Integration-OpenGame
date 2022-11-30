@@ -1,0 +1,1 @@
+{"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","Gender":"1","ClientId":"gagnant365::1008","LastName":"","UserName":"gagnant365::1008","BirthDate":"2000-01-01","FirstName":"","CurrencyId":"TND","Description":null,"ResponseCode":0}

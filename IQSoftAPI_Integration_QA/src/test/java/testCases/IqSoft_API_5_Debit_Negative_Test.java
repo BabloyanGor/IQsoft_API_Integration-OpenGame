@@ -35,7 +35,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
-                creditTransactionID, betAmountCreditConfig, 1);
+                creditTransactionID, betAmountCreditConfig);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -85,7 +85,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
-                creditTransactionID, betAmountCreditConfig, 1);
+                creditTransactionID, betAmountCreditConfig);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -190,7 +190,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
-                creditTransactionID1, betAmountCreditConfig, 1);
+                creditTransactionID1, betAmountCreditConfig);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterCredit1 = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -199,7 +199,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
-                creditTransactionID2, betAmountCreditConfig, 1);
+                creditTransactionID2, betAmountCreditConfig);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterCredit2 = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -300,7 +300,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
-                creditTransactionID, betAmountCreditConfig, 1);
+                creditTransactionID, betAmountCreditConfig);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
@@ -352,7 +352,7 @@ public class IqSoft_API_5_Debit_Negative_Test extends BaseTest {
         Unirest.shutdown();
 
         creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
-                creditTransactionID, betAmountCreditConfig, 1);
+                creditTransactionID, betAmountCreditConfig);
         Unirest.shutdown();
 
         HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
