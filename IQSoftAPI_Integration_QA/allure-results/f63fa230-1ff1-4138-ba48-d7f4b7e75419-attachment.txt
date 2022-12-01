@@ -1,1 +1,0 @@
-{"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-VYHAHGlRFBO8tiGYNlfx_C","TransactionId":"QA_Test-M2Be1mQrIC8f6wQeH9Ix_R","OperationTypeId":15}

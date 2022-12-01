@@ -285,7 +285,7 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
     @DataProvider(name = "invalidAmountData")
     Object[][] AmountInvalidData() {
         Double[][] arr = {
-                {0.0},
+//                {0.0},
                 {-1.0},
                 {-1.5},
                 {-1.05},

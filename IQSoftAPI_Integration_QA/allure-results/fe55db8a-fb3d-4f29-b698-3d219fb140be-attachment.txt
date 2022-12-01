@@ -1,1 +1,0 @@
-{"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-3b8i8cm7g241CFrFrZ34_C","BetState":0,"Amount":1.0}
