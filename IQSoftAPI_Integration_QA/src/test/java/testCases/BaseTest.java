@@ -26,18 +26,23 @@ public class BaseTest {
     public String openGameURL = "https://production.iqsoftllc.com/" + partnerIdConfig + "/api/Integration/OpenGame";
     public String callbackUrl = readConfig.getCallbackUrl();
     public String domainConfig = readConfig.getDomain();
-    public String clientIdConfig = readConfig.getClientId();
-    public String userNameConfig = readConfig.getUserName();
+//    public String clientIdConfig = readConfig.getClientId();
+//    public String userNameConfig = readConfig.getUserName();
 
     public int gameIdConfig = readConfig.getGameIdID();
     public double betAmountCreditConfig = readConfig.getBetAmountCredit();
     public double betAmountDebitConfig = readConfig.getBetAmountDebit();
 
-    public String currencyIDConfig = readConfig.CurrencyId();
+//    public String currencyIDConfig = readConfig.CurrencyId();
     public String sessionTokenConfig = readConfig.getSessionToken();
     public String expiredSessionTokenConfig = readConfig.getExpiredSessionToken();
 
+
+
     public static String AuthorizationTokenVar;
+    public static String AuthorizationClientId;
+    public static String AuthorizationUserName;
+    public static String AuthorizationCurrencyId;
     public final String languageIdConst = "en";
     public final boolean isForMobileConst = false;
 

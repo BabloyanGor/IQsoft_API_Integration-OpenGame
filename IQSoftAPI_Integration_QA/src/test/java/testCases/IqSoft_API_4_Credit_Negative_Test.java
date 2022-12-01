@@ -25,12 +25,12 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
     public void CreditAPIValidateResponseWithExpiredToken() throws UnirestException, IOException {
         SoftAssert softAssert = new SoftAssert();
 
-        HttpResponse<String> responseGetBalanceBeforeCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> responseGetBalanceBeforeCredit = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         jsonObjectBody = new JSONObject(responseGetBalanceBeforeCredit.getBody());
         double amountBeforeCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        HttpResponse<String> responseCredit = creditAPI(expiredSessionTokenConfig, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
+        HttpResponse<String> responseCredit = creditAPI(expiredSessionTokenConfig, AuthorizationCurrencyId, gameIdConfig, operationTypeIdCredit,
                 randomCreditTransactionID(), betAmountCreditConfig);
         Unirest.shutdown();
         statusCod = responseCredit.getStatus();
@@ -44,7 +44,7 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
         iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
 
 
-        HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit.getBody());
         double amountAfterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
@@ -67,12 +67,12 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
     public void CreditAPIValidateResponseWithInvalidToken() throws UnirestException, IOException {
         SoftAssert softAssert = new SoftAssert();
 
-        HttpResponse<String> responseGetBalanceBeforeCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> responseGetBalanceBeforeCredit = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         jsonObjectBody = new JSONObject(responseGetBalanceBeforeCredit.getBody());
         double amountBeforeCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar + "_Error", currencyIDConfig, gameIdConfig, operationTypeIdCredit,
+        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar + "_Error", AuthorizationCurrencyId, gameIdConfig, operationTypeIdCredit,
                 randomCreditTransactionID(), betAmountCreditConfig);
         Unirest.shutdown();
         statusCod = responseCredit.getStatus();
@@ -86,7 +86,7 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
 //        iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
 
 
-        HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit.getBody());
         double amountAfterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
@@ -152,20 +152,20 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
         String creditTransactionID = randomCreditTransactionID();
         SoftAssert softAssert = new SoftAssert();
 
-        HttpResponse<String> responseGetBalanceBeforeCredit1 = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> responseGetBalanceBeforeCredit1 = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         jsonObjectBody = new JSONObject(responseGetBalanceBeforeCredit1.getBody());
         double amountBeforeCredit1 = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, 3,
+        creditAPI(AuthorizationTokenVar, AuthorizationCurrencyId, gameIdConfig, 3,
                 creditTransactionID, betAmountCreditConfig);
         Unirest.shutdown();
 
-        HttpResponse<String> responseGetBalanceBeforeCredit2 = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> responseGetBalanceBeforeCredit2 = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         jsonObjectBody = new JSONObject(responseGetBalanceBeforeCredit2.getBody());
         double amountBeforeCredit2 = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
 
-        HttpResponse<String> responseCredit2 = creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
+        HttpResponse<String> responseCredit2 = creditAPI(AuthorizationTokenVar, AuthorizationCurrencyId, gameIdConfig, operationTypeIdCredit,
                 creditTransactionID, betAmountCreditConfig);
         Unirest.shutdown();
         statusCod = responseCredit2.getStatus();
@@ -175,7 +175,7 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
 //        iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
 
 
-        HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit.getBody());
         double amountAfterCredit3 = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
@@ -201,12 +201,12 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
     public void CreditAPIValidateResponseUsingAmountHigherThenBalance() throws UnirestException, IOException {
         SoftAssert softAssert = new SoftAssert();
 
-        HttpResponse<String> responseGetBalanceBeforeCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> responseGetBalanceBeforeCredit = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         jsonObjectBody = new JSONObject(responseGetBalanceBeforeCredit.getBody());
         double amountBeforeCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
+        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, AuthorizationCurrencyId, gameIdConfig, operationTypeIdCredit,
                 randomCreditTransactionID(), amountBeforeCredit + 10);
         Unirest.shutdown();
         statusCod = responseCredit.getStatus();
@@ -220,7 +220,7 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
 //        iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
 
 
-        HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit.getBody());
         double amountAfterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
@@ -246,12 +246,12 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
 
         SoftAssert softAssert = new SoftAssert();
 
-        HttpResponse<String> responseGetBalanceBeforeCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> responseGetBalanceBeforeCredit = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         jsonObjectBody = new JSONObject(responseGetBalanceBeforeCredit.getBody());
         double amountBeforeCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
+        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, AuthorizationCurrencyId, gameIdConfig, operationTypeIdCredit,
                 randomCreditTransactionID(), errAmount);
         Unirest.shutdown();
         statusCod = responseCredit.getStatus();
@@ -264,7 +264,7 @@ public class IqSoft_API_4_Credit_Negative_Test extends BaseTest {
         iqSoft_04_apiVariables_credit_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
 //        iqSoft_04_apiVariables_credit_response.setDescription(jsonObjectBody.get("Description").toString());
 
-        HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> responseGetBalanceAfterCredit = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         jsonObjectBody = new JSONObject(responseGetBalanceAfterCredit.getBody());
         double amountAfterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();

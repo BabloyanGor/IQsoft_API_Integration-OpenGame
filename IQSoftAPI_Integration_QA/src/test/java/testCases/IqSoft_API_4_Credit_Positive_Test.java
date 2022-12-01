@@ -25,13 +25,13 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
     @BeforeClass
     public void setUp() throws UnirestException, IOException {
 
-        HttpResponse<String> responseGetBalanceBefore = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> responseGetBalanceBefore = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         jsonObjectBody = new JSONObject(responseGetBalanceBefore.getBody());
         beforeCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
 
-        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, currencyIDConfig, gameIdConfig, operationTypeIdCredit,
+        HttpResponse<String> responseCredit = creditAPI(AuthorizationTokenVar, AuthorizationCurrencyId, gameIdConfig, operationTypeIdCredit,
                 creditValidTransactionID, betAmountCreditConfig);
         Unirest.shutdown();
         statusCod = responseCredit.getStatus();
@@ -52,7 +52,7 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
             iqSoft_04_apiVariables_credit_response.setCurrencyId(jsonObjectGame.get("CurrencyId").toString());
         }
 
-        HttpResponse<String> responseGetBalanceAfter = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> responseGetBalanceAfter = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         jsonObjectBody = new JSONObject(responseGetBalanceAfter.getBody());
         afterCredit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
@@ -83,8 +83,8 @@ public class IqSoft_API_4_Credit_Positive_Test extends BaseTest {
                 "betAmountCreditConfig =  beforeCredit-afterCredit " + betAmountCreditConfig + "=" + beforeCredit + " - " + afterCredit);
         softAssert.assertNotEquals(iqSoft_04_apiVariables_credit_response.getClientId(), null,
                 "ClientId: " + iqSoft_04_apiVariables_credit_response.getClientId());
-        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getCurrencyId(), currencyIDConfig,
-                "ResponseCurrencyId = CurrencyIDConfig " + iqSoft_04_apiVariables_credit_response.getCurrencyId() + "   " + currencyIDConfig);
+        softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getCurrencyId(), AuthorizationCurrencyId,
+                "ResponseCurrencyId = CurrencyIDConfig " + iqSoft_04_apiVariables_credit_response.getCurrencyId() + "   " + AuthorizationCurrencyId);
         softAssert.assertEquals(iqSoft_04_apiVariables_credit_response.getCurrencyId().length(), 3,
                 "CurrencyIdLength = " + iqSoft_04_apiVariables_credit_response.getCurrencyId().length());
 

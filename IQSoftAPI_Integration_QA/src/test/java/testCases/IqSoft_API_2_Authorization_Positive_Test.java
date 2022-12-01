@@ -40,6 +40,9 @@ public class IqSoft_API_2_Authorization_Positive_Test extends BaseTest {
         iqSoft_02_apisVariables_authorization_response.setResponseCode(Integer.parseInt(jsonObjectBody.get("ResponseCode").toString()));
 
         AuthorizationTokenVar = iqSoft_02_apisVariables_authorization_response.getToken();
+        AuthorizationClientId = iqSoft_02_apisVariables_authorization_response.getClientId();
+        AuthorizationUserName = iqSoft_02_apisVariables_authorization_response.getUserName();
+        AuthorizationCurrencyId = iqSoft_02_apisVariables_authorization_response.getCurrencyId();
     }
 
 

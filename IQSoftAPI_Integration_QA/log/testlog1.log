@@ -8988,3 +8988,1369 @@
 2022-12-01 13:18:27,336 [main] INFO ApiIntegration - 
 2022-12-01 13:18:27,336 [main] INFO ApiIntegration - 
 2022-12-01 13:18:27,336 [main] INFO ApiIntegration - 
+2022-12-01 14:35:26,634 [main] INFO ApiIntegration - API Integration Automation Test: Test execution starts
+2022-12-01 14:35:28,507 [main] INFO ApiIntegration - 
+2022-12-01 14:35:28,507 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Authorization
+2022-12-01 14:35:28,508 [main] INFO ApiIntegration - AuthorizationAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","ProductId":54434}
+2022-12-01 14:35:28,508 [main] INFO ApiIntegration - AuthorizationAPI:  ResponseBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","Gender":"1","ClientId":"gagnant365::1008","LastName":"","UserName":"gagnant365::1008","BirthDate":"2000-01-01","FirstName":"","CurrencyId":"TND","Description":null,"ResponseCode":0}  ResponseTime 1007 ms
+2022-12-01 14:35:28,508 [main] INFO ApiIntegration - 
+2022-12-01 14:35:28,596 [main] INFO ApiIntegration - Authorization API Status Cod is Equal: 200
+2022-12-01 14:35:28,733 [main] INFO ApiIntegration - AuthorizationAPIValidateStatusCod: Test passed
+2022-12-01 14:35:28,752 [main] INFO ApiIntegration - AuthorizationAPIValidatePositiveResponse: Test passed
+2022-12-01 14:35:29,212 [main] INFO ApiIntegration - 
+2022-12-01 14:35:29,212 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:29,212 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:29,212 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":115.0}  ResponseTime 448 ms
+2022-12-01 14:35:29,212 [main] INFO ApiIntegration - 
+2022-12-01 14:35:29,217 [main] INFO ApiIntegration - GetBalance API Status Cod is Equal: 200
+2022-12-01 14:35:29,221 [main] INFO ApiIntegration - GetBalanceAPIValidateStatusCod: Test passed
+2022-12-01 14:35:29,231 [main] INFO ApiIntegration - GetBalanceAPIValidatePositiveResponse: Test passed
+2022-12-01 14:35:29,693 [main] INFO ApiIntegration - 
+2022-12-01 14:35:29,693 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:29,694 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:29,694 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":115.0}  ResponseTime 452 ms
+2022-12-01 14:35:29,694 [main] INFO ApiIntegration - 
+2022-12-01 14:35:29,894 [main] INFO ApiIntegration - 
+2022-12-01 14:35:29,895 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:29,895 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-KYjvfIidtkC3iXzVZfa1_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:29,895 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":662,"Balance":114.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 192 ms
+2022-12-01 14:35:29,895 [main] INFO ApiIntegration - 
+2022-12-01 14:35:30,088 [main] INFO ApiIntegration - 
+2022-12-01 14:35:30,089 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:30,089 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:30,089 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":114.0}  ResponseTime 177 ms
+2022-12-01 14:35:30,090 [main] INFO ApiIntegration - 
+2022-12-01 14:35:30,097 [main] INFO ApiIntegration - Credit API Status Cod is Equal: 200
+2022-12-01 14:35:30,104 [main] INFO ApiIntegration - CreditAPIValidateStatusCod: Test passed
+2022-12-01 14:35:30,114 [main] INFO ApiIntegration - CreditAPIValidatePositiveResponse: Test passed
+2022-12-01 14:35:30,596 [main] INFO ApiIntegration - 
+2022-12-01 14:35:30,596 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:30,597 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:30,597 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":114.0}  ResponseTime 448 ms
+2022-12-01 14:35:30,597 [main] INFO ApiIntegration - 
+2022-12-01 14:35:30,781 [main] INFO ApiIntegration - 
+2022-12-01 14:35:30,781 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:35:30,781 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-TC3hkARIwR8p5iyylgUc_D","CreditTransactionId":"QA_Test-KYjvfIidtkC3iXzVZfa1_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:35:30,781 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":664,"Balance":119.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 175 ms
+2022-12-01 14:35:30,781 [main] INFO ApiIntegration - 
+2022-12-01 14:35:30,971 [main] INFO ApiIntegration - 
+2022-12-01 14:35:30,971 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:30,971 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:30,972 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 181 ms
+2022-12-01 14:35:30,972 [main] INFO ApiIntegration - 
+2022-12-01 14:35:30,974 [main] INFO ApiIntegration - Debit API Status Cod is Equal: 200
+2022-12-01 14:35:30,977 [main] INFO ApiIntegration - DebitAPIValidateStatusCod: Test passed
+2022-12-01 14:35:30,984 [main] INFO ApiIntegration - DebitAPIValidatePositiveResponse: Test passed
+2022-12-01 14:35:31,187 [main] INFO ApiIntegration - 
+2022-12-01 14:35:31,187 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:31,189 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:31,190 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 192 ms
+2022-12-01 14:35:31,190 [main] INFO ApiIntegration - 
+2022-12-01 14:35:31,191 [main] INFO ApiIntegration - Balance Before Credit:119.0
+2022-12-01 14:35:31,444 [main] INFO ApiIntegration - 
+2022-12-01 14:35:31,445 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:31,445 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-HvgmM1fkdyRShTeKUgVQ_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:31,445 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":665,"Balance":118.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 227 ms
+2022-12-01 14:35:31,445 [main] INFO ApiIntegration - 
+2022-12-01 14:35:31,614 [main] INFO ApiIntegration - 
+2022-12-01 14:35:31,614 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:31,615 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:31,615 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":118.0}  ResponseTime 164 ms
+2022-12-01 14:35:31,615 [main] INFO ApiIntegration - 
+2022-12-01 14:35:31,615 [main] INFO ApiIntegration - Balance After Credit:118.0
+2022-12-01 14:35:31,804 [main] INFO ApiIntegration - 
+2022-12-01 14:35:31,804 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:35:31,804 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-JQwrSQLtI6BpRnsdtkS1_D","CreditTransactionId":"QA_Test-HvgmM1fkdyRShTeKUgVQ_C","Amount":5.0,"BetState":2,"OperationTypeId":4,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:35:31,806 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":667,"Balance":123.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 179 ms
+2022-12-01 14:35:31,806 [main] INFO ApiIntegration - 
+2022-12-01 14:35:32,018 [main] INFO ApiIntegration - 
+2022-12-01 14:35:32,018 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:32,018 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:32,018 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":123.0}  ResponseTime 192 ms
+2022-12-01 14:35:32,018 [main] INFO ApiIntegration - 
+2022-12-01 14:35:32,019 [main] INFO ApiIntegration - Balance After Debit:123.0
+2022-12-01 14:35:32,213 [main] INFO ApiIntegration - 
+2022-12-01 14:35:32,213 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:35:32,213 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-HvgmM1fkdyRShTeKUgVQ_C","TransactionId":"QA_Test-wupTPsy7mUFohRdFjVsS_R","OperationTypeId":1}
+2022-12-01 14:35:32,213 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 184 ms
+2022-12-01 14:35:32,213 [main] INFO ApiIntegration - 
+2022-12-01 14:35:32,396 [main] INFO ApiIntegration - 
+2022-12-01 14:35:32,396 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:32,396 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:32,396 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 174 ms
+2022-12-01 14:35:32,396 [main] INFO ApiIntegration - 
+2022-12-01 14:35:32,397 [main] INFO ApiIntegration - Balance After RollBackCredit:119.0
+2022-12-01 14:35:32,399 [main] INFO ApiIntegration - RollBackCredit API Status Cod is Equal: 200
+2022-12-01 14:35:32,401 [main] INFO ApiIntegration - RollBackAPIValidateStatusCod: Test passed
+2022-12-01 14:35:32,408 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponse: Test passed
+2022-12-01 14:35:32,412 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponseBalanceCorrection: Test passed
+2022-12-01 14:35:32,593 [main] INFO ApiIntegration - 
+2022-12-01 14:35:32,593 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:32,594 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:32,594 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 165 ms
+2022-12-01 14:35:32,595 [main] INFO ApiIntegration - 
+2022-12-01 14:35:32,596 [main] INFO ApiIntegration - Balance Before Credit:119.0
+2022-12-01 14:35:32,780 [main] INFO ApiIntegration - 
+2022-12-01 14:35:32,780 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:32,780 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":3,"TransactionId":"QA_Test-mxHSYEjr76twmVXKWUxO_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:32,780 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":669,"Balance":118.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 172 ms
+2022-12-01 14:35:32,780 [main] INFO ApiIntegration - 
+2022-12-01 14:35:32,961 [main] INFO ApiIntegration - 
+2022-12-01 14:35:32,961 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:32,961 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:32,961 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":118.0}  ResponseTime 172 ms
+2022-12-01 14:35:32,961 [main] INFO ApiIntegration - 
+2022-12-01 14:35:32,962 [main] INFO ApiIntegration - Balance After Credit:118.0
+2022-12-01 14:35:33,188 [main] INFO ApiIntegration - 
+2022-12-01 14:35:33,189 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:35:33,189 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-mxHSYEjr76twmVXKWUxO_C","TransactionId":"QA_Test-BItMcBOSJP5voWp7Tkfm_R","OperationTypeId":15}
+2022-12-01 14:35:33,189 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 169 ms
+2022-12-01 14:35:33,189 [main] INFO ApiIntegration - 
+2022-12-01 14:35:33,365 [main] INFO ApiIntegration - 
+2022-12-01 14:35:33,365 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:33,365 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:33,365 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 170 ms
+2022-12-01 14:35:33,365 [main] INFO ApiIntegration - 
+2022-12-01 14:35:33,366 [main] INFO ApiIntegration - Balance After RollBackCredit:119.0
+2022-12-01 14:35:33,370 [main] INFO ApiIntegration - RollBackCredit API Status Cod is Equal: 200
+2022-12-01 14:35:33,374 [main] INFO ApiIntegration - RollBackAPIValidateStatusCod: Test passed
+2022-12-01 14:35:33,380 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponse: Test passed
+2022-12-01 14:35:33,386 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponseBalanceCorrection: Test passed
+2022-12-01 14:35:33,559 [main] INFO ApiIntegration - 
+2022-12-01 14:35:33,560 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:33,560 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:33,560 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 165 ms
+2022-12-01 14:35:33,560 [main] INFO ApiIntegration - 
+2022-12-01 14:35:33,560 [main] INFO ApiIntegration - Balance Before Credit:119.0
+2022-12-01 14:35:33,735 [main] INFO ApiIntegration - 
+2022-12-01 14:35:33,735 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:33,735 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":3,"TransactionId":"QA_Test-oTOPoGA5pwK4s4YNuBcv_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:33,735 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":671,"Balance":118.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 169 ms
+2022-12-01 14:35:33,735 [main] INFO ApiIntegration - 
+2022-12-01 14:35:33,908 [main] INFO ApiIntegration - 
+2022-12-01 14:35:33,908 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:33,908 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:33,908 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":118.0}  ResponseTime 164 ms
+2022-12-01 14:35:33,908 [main] INFO ApiIntegration - 
+2022-12-01 14:35:33,909 [main] INFO ApiIntegration - Balance After Credit:118.0
+2022-12-01 14:35:34,089 [main] INFO ApiIntegration - 
+2022-12-01 14:35:34,089 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:35:34,089 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-QAEykqWUTbbsVjBAIPdy_D","CreditTransactionId":"QA_Test-oTOPoGA5pwK4s4YNuBcv_C","Amount":5.0,"BetState":2,"OperationTypeId":4,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:35:34,089 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":673,"Balance":123.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 172 ms
+2022-12-01 14:35:34,089 [main] INFO ApiIntegration - 
+2022-12-01 14:35:34,261 [main] INFO ApiIntegration - 
+2022-12-01 14:35:34,261 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:34,261 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:34,261 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":123.0}  ResponseTime 165 ms
+2022-12-01 14:35:34,261 [main] INFO ApiIntegration - 
+2022-12-01 14:35:34,262 [main] INFO ApiIntegration - Balance After Debit:123.0
+2022-12-01 14:35:34,441 [main] INFO ApiIntegration - 
+2022-12-01 14:35:34,441 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:35:34,441 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-QAEykqWUTbbsVjBAIPdy_D","TransactionId":"QA_Test-NSj3009L9PM9PEwMPYpo_R","OperationTypeId":17}
+2022-12-01 14:35:34,441 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 172 ms
+2022-12-01 14:35:34,441 [main] INFO ApiIntegration - 
+2022-12-01 14:35:34,607 [main] INFO ApiIntegration - 
+2022-12-01 14:35:34,607 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:34,607 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:34,608 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":118.0}  ResponseTime 159 ms
+2022-12-01 14:35:34,608 [main] INFO ApiIntegration - 
+2022-12-01 14:35:34,608 [main] INFO ApiIntegration - Balance After RollBackDebit:118.0
+2022-12-01 14:35:34,611 [main] INFO ApiIntegration - RollBack API Status Cod is Equal: 200
+2022-12-01 14:35:34,613 [main] INFO ApiIntegration - RollBackAPIValidateStatusCod: Test passed
+2022-12-01 14:35:34,621 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponse: Test passed
+2022-12-01 14:35:34,626 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponseBalanceCorrection: Test passed
+2022-12-01 14:35:34,814 [main] INFO ApiIntegration - 
+2022-12-01 14:35:34,814 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Authorization
+2022-12-01 14:35:34,814 [main] INFO ApiIntegration - AuthorizationAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a81","ProductId":54434}
+2022-12-01 14:35:34,814 [main] INFO ApiIntegration - AuthorizationAPI:  ResponseBody  {"Description":"error login","ResponseCode":22}  ResponseTime 178 ms
+2022-12-01 14:35:34,814 [main] INFO ApiIntegration - 
+2022-12-01 14:35:34,815 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
+2022-12-01 14:35:34,820 [main] INFO ApiIntegration - AuthorizationAPIValidateResponseWithExpiredToken: Test passed
+2022-12-01 14:35:34,998 [main] INFO ApiIntegration - 
+2022-12-01 14:35:34,998 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Authorization
+2022-12-01 14:35:34,998 [main] INFO ApiIntegration - AuthorizationAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a81","ProductId":54434}
+2022-12-01 14:35:34,999 [main] INFO ApiIntegration - AuthorizationAPI:  ResponseBody  {"Description":"error login","ResponseCode":22}  ResponseTime 167 ms
+2022-12-01 14:35:34,999 [main] INFO ApiIntegration - 
+2022-12-01 14:35:34,999 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
+2022-12-01 14:35:35,002 [main] INFO ApiIntegration - AuthorizationAPIValidateResponseWithInvalidToken: Test passed
+2022-12-01 14:35:35,178 [main] INFO ApiIntegration - 
+2022-12-01 14:35:35,178 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:35,178 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a81","CurrencyId":"TND"}
+2022-12-01 14:35:35,178 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"Description":"error login","ResponseCode":22}  ResponseTime 166 ms
+2022-12-01 14:35:35,178 [main] INFO ApiIntegration - 
+2022-12-01 14:35:35,179 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
+2022-12-01 14:35:35,181 [main] INFO ApiIntegration - GetBalanceAPIValidateResponseWithExpiredToken: Test passed
+2022-12-01 14:35:35,367 [main] INFO ApiIntegration - 
+2022-12-01 14:35:35,367 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:35,367 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a81","CurrencyId":"TND"}
+2022-12-01 14:35:35,367 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"Description":"error login","ResponseCode":22}  ResponseTime 177 ms
+2022-12-01 14:35:35,367 [main] INFO ApiIntegration - 
+2022-12-01 14:35:35,367 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
+2022-12-01 14:35:35,370 [main] INFO ApiIntegration - GetBalanceAPIValidateResponseWithInvalidToken: Test passed
+2022-12-01 14:35:35,550 [main] INFO ApiIntegration - 
+2022-12-01 14:35:35,550 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:35,550 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND1"}
+2022-12-01 14:35:35,550 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"Description":"WrongCurrencyId","ResponseCode":109}  ResponseTime 172 ms
+2022-12-01 14:35:35,550 [main] INFO ApiIntegration - 
+2022-12-01 14:35:35,551 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
+2022-12-01 14:35:35,556 [main] INFO ApiIntegration - GetBalanceAPIValidateResponseWithInvalidCurrencyID: Test passed
+2022-12-01 14:35:35,724 [main] INFO ApiIntegration - 
+2022-12-01 14:35:35,724 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:35,724 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"USD"}
+2022-12-01 14:35:35,724 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"Description":"WrongCurrencyId","ResponseCode":109}  ResponseTime 162 ms
+2022-12-01 14:35:35,724 [main] INFO ApiIntegration - 
+2022-12-01 14:35:35,725 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
+2022-12-01 14:35:35,734 [main] ERROR ApiIntegration - GetBalanceAPIValidateResponseWithOtherCurrencyID Test failed
+2022-12-01 14:35:35,911 [main] INFO ApiIntegration - 
+2022-12-01 14:35:35,911 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:35,911 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:35,911 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":118.0}  ResponseTime 166 ms
+2022-12-01 14:35:35,911 [main] INFO ApiIntegration - 
+2022-12-01 14:35:36,092 [main] INFO ApiIntegration - 
+2022-12-01 14:35:36,093 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:36,093 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a81","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-xYofyHWuTNsEHaujcxPe_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:36,093 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":"error login","ResponseCode":22}  ResponseTime 175 ms
+2022-12-01 14:35:36,093 [main] INFO ApiIntegration - 
+2022-12-01 14:35:36,271 [main] INFO ApiIntegration - 
+2022-12-01 14:35:36,272 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:36,272 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:36,272 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":118.0}  ResponseTime 172 ms
+2022-12-01 14:35:36,272 [main] INFO ApiIntegration - 
+2022-12-01 14:35:36,277 [main] INFO ApiIntegration - CreditAPIValidateResponseWithExpiredToken: Test passed
+2022-12-01 14:35:36,454 [main] INFO ApiIntegration - 
+2022-12-01 14:35:36,454 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:36,454 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:36,454 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":118.0}  ResponseTime 168 ms
+2022-12-01 14:35:36,454 [main] INFO ApiIntegration - 
+2022-12-01 14:35:36,627 [main] INFO ApiIntegration - 
+2022-12-01 14:35:36,628 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:36,628 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8_Error","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-GJsJtgsJMPKa2WjkDX7r_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:36,628 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":"error login","ResponseCode":22}  ResponseTime 164 ms
+2022-12-01 14:35:36,628 [main] INFO ApiIntegration - 
+2022-12-01 14:35:36,799 [main] INFO ApiIntegration - 
+2022-12-01 14:35:36,800 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:36,800 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:36,800 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":118.0}  ResponseTime 166 ms
+2022-12-01 14:35:36,800 [main] INFO ApiIntegration - 
+2022-12-01 14:35:36,802 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidToken: Test passed
+2022-12-01 14:35:36,974 [main] INFO ApiIntegration - 
+2022-12-01 14:35:36,974 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:36,974 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:36,974 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":118.0}  ResponseTime 163 ms
+2022-12-01 14:35:36,974 [main] INFO ApiIntegration - 
+2022-12-01 14:35:37,153 [main] INFO ApiIntegration - 
+2022-12-01 14:35:37,154 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:37,154 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":3,"TransactionId":"QA_Test-qkv72J1S8FbTRtTDQp74_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:37,155 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":675,"Balance":117.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 168 ms
+2022-12-01 14:35:37,155 [main] INFO ApiIntegration - 
+2022-12-01 14:35:37,341 [main] INFO ApiIntegration - 
+2022-12-01 14:35:37,341 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:37,341 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:37,341 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 171 ms
+2022-12-01 14:35:37,342 [main] INFO ApiIntegration - 
+2022-12-01 14:35:37,519 [main] INFO ApiIntegration - 
+2022-12-01 14:35:37,520 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:37,520 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-qkv72J1S8FbTRtTDQp74_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:37,520 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":675,"Balance":117.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 170 ms
+2022-12-01 14:35:37,520 [main] INFO ApiIntegration - 
+2022-12-01 14:35:37,687 [main] INFO ApiIntegration - 
+2022-12-01 14:35:37,687 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:37,687 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:37,687 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 161 ms
+2022-12-01 14:35:37,687 [main] INFO ApiIntegration - 
+2022-12-01 14:35:37,697 [main] INFO ApiIntegration - CreditAPIValidateResponseUsingTransactionIDTwice: Test passed
+2022-12-01 14:35:37,886 [main] INFO ApiIntegration - 
+2022-12-01 14:35:37,887 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:37,887 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:37,887 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 178 ms
+2022-12-01 14:35:37,887 [main] INFO ApiIntegration - 
+2022-12-01 14:35:38,057 [main] INFO ApiIntegration - 
+2022-12-01 14:35:38,057 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:38,057 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-XYzy78uHovThJwZE9ITd_C","BetState":0,"Amount":127.0}
+2022-12-01 14:35:38,058 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":"balance less then bet Amount","ResponseCode":63}  ResponseTime 162 ms
+2022-12-01 14:35:38,058 [main] INFO ApiIntegration - 
+2022-12-01 14:35:38,237 [main] INFO ApiIntegration - 
+2022-12-01 14:35:38,237 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:38,237 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:38,237 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 169 ms
+2022-12-01 14:35:38,237 [main] INFO ApiIntegration - 
+2022-12-01 14:35:38,240 [main] INFO ApiIntegration - CreditAPIValidateResponseUsingAmountHigherThenBalance: Test passed
+2022-12-01 14:35:38,420 [main] INFO ApiIntegration - 
+2022-12-01 14:35:38,420 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:38,420 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:38,420 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 168 ms
+2022-12-01 14:35:38,420 [main] INFO ApiIntegration - 
+2022-12-01 14:35:38,593 [main] INFO ApiIntegration - 
+2022-12-01 14:35:38,593 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:38,593 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-WmE37qz98LWsyVm3nnTz_C","BetState":0,"Amount":-1.0}
+2022-12-01 14:35:38,594 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 164 ms
+2022-12-01 14:35:38,594 [main] INFO ApiIntegration - 
+2022-12-01 14:35:38,771 [main] INFO ApiIntegration - 
+2022-12-01 14:35:38,771 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:38,771 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:38,771 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 167 ms
+2022-12-01 14:35:38,771 [main] INFO ApiIntegration - 
+2022-12-01 14:35:38,779 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
+2022-12-01 14:35:38,951 [main] INFO ApiIntegration - 
+2022-12-01 14:35:38,951 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:38,951 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:38,951 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 163 ms
+2022-12-01 14:35:38,951 [main] INFO ApiIntegration - 
+2022-12-01 14:35:39,130 [main] INFO ApiIntegration - 
+2022-12-01 14:35:39,130 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:39,130 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-dggARmViHnCVEnfyw9EH_C","BetState":0,"Amount":-1.5}
+2022-12-01 14:35:39,130 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 173 ms
+2022-12-01 14:35:39,130 [main] INFO ApiIntegration - 
+2022-12-01 14:35:39,313 [main] INFO ApiIntegration - 
+2022-12-01 14:35:39,313 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:39,313 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:39,313 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 171 ms
+2022-12-01 14:35:39,313 [main] INFO ApiIntegration - 
+2022-12-01 14:35:39,316 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
+2022-12-01 14:35:39,490 [main] INFO ApiIntegration - 
+2022-12-01 14:35:39,490 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:39,491 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:39,491 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 164 ms
+2022-12-01 14:35:39,491 [main] INFO ApiIntegration - 
+2022-12-01 14:35:39,663 [main] INFO ApiIntegration - 
+2022-12-01 14:35:39,664 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:39,664 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-XQ05Tpb3FxoT5ie9dT8V_C","BetState":0,"Amount":-1.05}
+2022-12-01 14:35:39,665 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 162 ms
+2022-12-01 14:35:39,665 [main] INFO ApiIntegration - 
+2022-12-01 14:35:39,845 [main] INFO ApiIntegration - 
+2022-12-01 14:35:39,845 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:39,845 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:39,845 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 164 ms
+2022-12-01 14:35:39,845 [main] INFO ApiIntegration - 
+2022-12-01 14:35:39,851 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
+2022-12-01 14:35:40,035 [main] INFO ApiIntegration - 
+2022-12-01 14:35:40,035 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:40,035 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:40,036 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 167 ms
+2022-12-01 14:35:40,036 [main] INFO ApiIntegration - 
+2022-12-01 14:35:40,219 [main] INFO ApiIntegration - 
+2022-12-01 14:35:40,219 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:40,219 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-dTKxF1jaIhlSf3949Ave_C","BetState":0,"Amount":-1.005}
+2022-12-01 14:35:40,219 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 166 ms
+2022-12-01 14:35:40,219 [main] INFO ApiIntegration - 
+2022-12-01 14:35:40,389 [main] INFO ApiIntegration - 
+2022-12-01 14:35:40,390 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:40,390 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:40,390 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 164 ms
+2022-12-01 14:35:40,390 [main] INFO ApiIntegration - 
+2022-12-01 14:35:40,395 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
+2022-12-01 14:35:40,603 [main] INFO ApiIntegration - 
+2022-12-01 14:35:40,603 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:40,603 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:40,603 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 198 ms
+2022-12-01 14:35:40,603 [main] INFO ApiIntegration - 
+2022-12-01 14:35:40,789 [main] INFO ApiIntegration - 
+2022-12-01 14:35:40,789 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:40,789 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-cq4bOPVTcAuFxGJwIQe9_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:40,790 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":678,"Balance":116.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 171 ms
+2022-12-01 14:35:40,790 [main] INFO ApiIntegration - 
+2022-12-01 14:35:40,974 [main] INFO ApiIntegration - 
+2022-12-01 14:35:40,974 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:40,974 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:40,974 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":116.0}  ResponseTime 178 ms
+2022-12-01 14:35:40,974 [main] INFO ApiIntegration - 
+2022-12-01 14:35:41,174 [main] INFO ApiIntegration - 
+2022-12-01 14:35:41,174 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:35:41,174 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-pkztwa2ConWcux93D6y8_D","CreditTransactionId":"QA_Test-cq4bOPVTcAuFxGJwIQe9_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a81"}
+2022-12-01 14:35:41,174 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":680,"Balance":121.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 188 ms
+2022-12-01 14:35:41,174 [main] INFO ApiIntegration - 
+2022-12-01 14:35:41,356 [main] INFO ApiIntegration - 
+2022-12-01 14:35:41,356 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:41,356 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:41,356 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 176 ms
+2022-12-01 14:35:41,356 [main] INFO ApiIntegration - 
+2022-12-01 14:35:41,361 [main] INFO ApiIntegration - DebitAPIValidateResponseWithExpiredToken: Test passed
+2022-12-01 14:35:41,528 [main] INFO ApiIntegration - 
+2022-12-01 14:35:41,528 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:41,528 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:41,529 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 159 ms
+2022-12-01 14:35:41,529 [main] INFO ApiIntegration - 
+2022-12-01 14:35:41,711 [main] INFO ApiIntegration - 
+2022-12-01 14:35:41,711 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:41,711 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-k55yBeKnchtrKfhXdC0o_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:41,711 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":681,"Balance":120.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 166 ms
+2022-12-01 14:35:41,711 [main] INFO ApiIntegration - 
+2022-12-01 14:35:41,907 [main] INFO ApiIntegration - 
+2022-12-01 14:35:41,907 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:41,907 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:41,907 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 188 ms
+2022-12-01 14:35:41,907 [main] INFO ApiIntegration - 
+2022-12-01 14:35:42,079 [main] INFO ApiIntegration - 
+2022-12-01 14:35:42,079 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:42,080 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-1YgfHWgxjaGXGQ5sGb05_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:42,080 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":682,"Balance":119.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 165 ms
+2022-12-01 14:35:42,080 [main] INFO ApiIntegration - 
+2022-12-01 14:35:42,262 [main] INFO ApiIntegration - 
+2022-12-01 14:35:42,262 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:42,263 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:42,263 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 168 ms
+2022-12-01 14:35:42,263 [main] INFO ApiIntegration - 
+2022-12-01 14:35:42,458 [main] INFO ApiIntegration - 
+2022-12-01 14:35:42,458 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:35:42,459 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-kYLif5uMlFpsNH1kWE3W_D","CreditTransactionId":"QA_Test-k55yBeKnchtrKfhXdC0o_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:35:42,459 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":684,"Balance":124.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 177 ms
+2022-12-01 14:35:42,459 [main] INFO ApiIntegration - 
+2022-12-01 14:35:42,652 [main] INFO ApiIntegration - 
+2022-12-01 14:35:42,652 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:42,653 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:42,653 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":124.0}  ResponseTime 181 ms
+2022-12-01 14:35:42,653 [main] INFO ApiIntegration - 
+2022-12-01 14:35:42,849 [main] INFO ApiIntegration - 
+2022-12-01 14:35:42,849 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:35:42,849 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-kYLif5uMlFpsNH1kWE3W_D","CreditTransactionId":"QA_Test-1YgfHWgxjaGXGQ5sGb05_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:35:42,849 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":684,"Balance":124.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 170 ms
+2022-12-01 14:35:42,850 [main] INFO ApiIntegration - 
+2022-12-01 14:35:43,027 [main] INFO ApiIntegration - 
+2022-12-01 14:35:43,027 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:43,027 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:43,027 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":124.0}  ResponseTime 171 ms
+2022-12-01 14:35:43,027 [main] INFO ApiIntegration - 
+2022-12-01 14:35:43,031 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingTransactionIDTwice: Test passed
+2022-12-01 14:35:43,219 [main] INFO ApiIntegration - 
+2022-12-01 14:35:43,220 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:43,220 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:43,220 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":124.0}  ResponseTime 170 ms
+2022-12-01 14:35:43,220 [main] INFO ApiIntegration - 
+2022-12-01 14:35:43,407 [main] INFO ApiIntegration - 
+2022-12-01 14:35:43,407 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:35:43,407 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-Rc87Fj09jU2i5AHnZMVO_D","CreditTransactionId":"QA_Test-U1UE1bwaskr7Uvw8IOo4_C_ErrorID","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:35:43,407 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":"CanNotConnectCreditAndDebit","ResponseCode":"50"}  ResponseTime 171 ms
+2022-12-01 14:35:43,407 [main] INFO ApiIntegration - 
+2022-12-01 14:35:43,587 [main] INFO ApiIntegration - 
+2022-12-01 14:35:43,587 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:43,587 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:43,587 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":124.0}  ResponseTime 168 ms
+2022-12-01 14:35:43,588 [main] INFO ApiIntegration - 
+2022-12-01 14:35:43,596 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidCreditTransactionID: Test passed
+2022-12-01 14:35:43,773 [main] INFO ApiIntegration - 
+2022-12-01 14:35:43,773 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:43,773 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:43,773 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":124.0}  ResponseTime 165 ms
+2022-12-01 14:35:43,773 [main] INFO ApiIntegration - 
+2022-12-01 14:35:43,985 [main] INFO ApiIntegration - 
+2022-12-01 14:35:43,985 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:43,985 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-zm6gsEyY9J2pz1zW0EWD_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:43,985 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":688,"Balance":123.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 167 ms
+2022-12-01 14:35:43,985 [main] INFO ApiIntegration - 
+2022-12-01 14:35:44,170 [main] INFO ApiIntegration - 
+2022-12-01 14:35:44,171 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:44,171 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:44,171 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":123.0}  ResponseTime 177 ms
+2022-12-01 14:35:44,171 [main] INFO ApiIntegration - 
+2022-12-01 14:35:44,356 [main] INFO ApiIntegration - 
+2022-12-01 14:35:44,356 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:35:44,356 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-gHYmDjZGnJ2FI7yE4hR1_D","CreditTransactionId":"QA_Test-zm6gsEyY9J2pz1zW0EWD_C","Amount":0.0,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:35:44,356 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":690,"Balance":123.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 179 ms
+2022-12-01 14:35:44,356 [main] INFO ApiIntegration - 
+2022-12-01 14:35:44,565 [main] INFO ApiIntegration - 
+2022-12-01 14:35:44,565 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:44,565 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:44,565 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":123.0}  ResponseTime 162 ms
+2022-12-01 14:35:44,565 [main] INFO ApiIntegration - 
+2022-12-01 14:35:44,568 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingAmount_0: Test passed
+2022-12-01 14:35:44,749 [main] INFO ApiIntegration - 
+2022-12-01 14:35:44,749 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:44,749 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:44,749 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":123.0}  ResponseTime 166 ms
+2022-12-01 14:35:44,749 [main] INFO ApiIntegration - 
+2022-12-01 14:35:44,924 [main] INFO ApiIntegration - 
+2022-12-01 14:35:44,924 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:44,924 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-7UPkhDMSElMYsKxsI0oD_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:44,924 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":691,"Balance":122.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 168 ms
+2022-12-01 14:35:44,924 [main] INFO ApiIntegration - 
+2022-12-01 14:35:45,093 [main] INFO ApiIntegration - 
+2022-12-01 14:35:45,093 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:45,093 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:45,093 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 163 ms
+2022-12-01 14:35:45,093 [main] INFO ApiIntegration - 
+2022-12-01 14:35:45,264 [main] INFO ApiIntegration - 
+2022-12-01 14:35:45,264 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:35:45,264 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-QfRqoKjDsXn0ft31zVvm_D","CreditTransactionId":"QA_Test-7UPkhDMSElMYsKxsI0oD_C","Amount":-1.0,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:35:45,264 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 161 ms
+2022-12-01 14:35:45,264 [main] INFO ApiIntegration - 
+2022-12-01 14:35:45,441 [main] INFO ApiIntegration - 
+2022-12-01 14:35:45,441 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:45,441 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:45,441 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 170 ms
+2022-12-01 14:35:45,441 [main] INFO ApiIntegration - 
+2022-12-01 14:35:45,446 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
+2022-12-01 14:35:45,640 [main] INFO ApiIntegration - 
+2022-12-01 14:35:45,641 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:45,641 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:45,641 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 186 ms
+2022-12-01 14:35:45,641 [main] INFO ApiIntegration - 
+2022-12-01 14:35:45,873 [main] INFO ApiIntegration - 
+2022-12-01 14:35:45,873 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:45,873 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-j49c80JRwnGvU42dofHs_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:45,873 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":692,"Balance":121.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 222 ms
+2022-12-01 14:35:45,873 [main] INFO ApiIntegration - 
+2022-12-01 14:35:46,114 [main] INFO ApiIntegration - 
+2022-12-01 14:35:46,115 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:46,115 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:46,115 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 236 ms
+2022-12-01 14:35:46,115 [main] INFO ApiIntegration - 
+2022-12-01 14:35:47,316 [main] INFO ApiIntegration - 
+2022-12-01 14:35:47,317 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:35:47,317 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-0eKNk0cwCIREKV7cmjmZ_D","CreditTransactionId":"QA_Test-j49c80JRwnGvU42dofHs_C","Amount":-1.5,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:35:47,317 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 1187 ms
+2022-12-01 14:35:47,318 [main] INFO ApiIntegration - 
+2022-12-01 14:35:47,504 [main] INFO ApiIntegration - 
+2022-12-01 14:35:47,504 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:47,504 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:47,504 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 172 ms
+2022-12-01 14:35:47,504 [main] INFO ApiIntegration - 
+2022-12-01 14:35:47,508 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
+2022-12-01 14:35:47,683 [main] INFO ApiIntegration - 
+2022-12-01 14:35:47,683 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:47,683 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:47,684 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 163 ms
+2022-12-01 14:35:47,684 [main] INFO ApiIntegration - 
+2022-12-01 14:35:47,867 [main] INFO ApiIntegration - 
+2022-12-01 14:35:47,868 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:47,868 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-JUV6y3IQZwsun5f1M7Yc_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:47,868 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":693,"Balance":120.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 169 ms
+2022-12-01 14:35:47,868 [main] INFO ApiIntegration - 
+2022-12-01 14:35:48,042 [main] INFO ApiIntegration - 
+2022-12-01 14:35:48,042 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:48,042 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:48,042 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 163 ms
+2022-12-01 14:35:48,042 [main] INFO ApiIntegration - 
+2022-12-01 14:35:48,216 [main] INFO ApiIntegration - 
+2022-12-01 14:35:48,217 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:35:48,217 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-4w9yhitro9G2N5igFcYM_D","CreditTransactionId":"QA_Test-JUV6y3IQZwsun5f1M7Yc_C","Amount":-1.05,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:35:48,217 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 166 ms
+2022-12-01 14:35:48,217 [main] INFO ApiIntegration - 
+2022-12-01 14:35:48,389 [main] INFO ApiIntegration - 
+2022-12-01 14:35:48,389 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:48,389 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:48,389 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 163 ms
+2022-12-01 14:35:48,389 [main] INFO ApiIntegration - 
+2022-12-01 14:35:48,395 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
+2022-12-01 14:35:48,564 [main] INFO ApiIntegration - 
+2022-12-01 14:35:48,564 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:48,564 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:48,564 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 162 ms
+2022-12-01 14:35:48,564 [main] INFO ApiIntegration - 
+2022-12-01 14:35:48,740 [main] INFO ApiIntegration - 
+2022-12-01 14:35:48,741 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:48,741 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-U6AJm7wBQY5shP5v1rDF_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:48,741 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":694,"Balance":119.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 170 ms
+2022-12-01 14:35:48,741 [main] INFO ApiIntegration - 
+2022-12-01 14:35:48,910 [main] INFO ApiIntegration - 
+2022-12-01 14:35:48,910 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:48,910 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:48,910 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 162 ms
+2022-12-01 14:35:48,910 [main] INFO ApiIntegration - 
+2022-12-01 14:35:49,084 [main] INFO ApiIntegration - 
+2022-12-01 14:35:49,084 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:35:49,084 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-60MCWGYN5tJebHehlfZs_D","CreditTransactionId":"QA_Test-U6AJm7wBQY5shP5v1rDF_C","Amount":-1.005,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:35:49,084 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 164 ms
+2022-12-01 14:35:49,084 [main] INFO ApiIntegration - 
+2022-12-01 14:35:49,254 [main] INFO ApiIntegration - 
+2022-12-01 14:35:49,254 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:49,254 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:49,254 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 162 ms
+2022-12-01 14:35:49,254 [main] INFO ApiIntegration - 
+2022-12-01 14:35:49,275 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
+2022-12-01 14:35:49,442 [main] INFO ApiIntegration - 
+2022-12-01 14:35:49,442 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:49,442 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:49,442 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 159 ms
+2022-12-01 14:35:49,442 [main] INFO ApiIntegration - 
+2022-12-01 14:35:49,443 [main] INFO ApiIntegration - Balance Before RollBack:119.0
+2022-12-01 14:35:49,629 [main] INFO ApiIntegration - 
+2022-12-01 14:35:49,629 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:35:49,629 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-ay63OXHQIPYa3UASLhCN_C","TransactionId":"QA_Test-y4uXAA5LIBkNRAygWwZo_R","OperationTypeId":15}
+2022-12-01 14:35:49,629 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 179 ms
+2022-12-01 14:35:49,629 [main] INFO ApiIntegration - 
+2022-12-01 14:35:49,796 [main] INFO ApiIntegration - 
+2022-12-01 14:35:49,796 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:49,797 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:49,797 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 162 ms
+2022-12-01 14:35:49,797 [main] INFO ApiIntegration - 
+2022-12-01 14:35:49,797 [main] INFO ApiIntegration - Balance After RollBack:119.0
+2022-12-01 14:35:49,804 [main] INFO ApiIntegration - RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit: Test passed
+2022-12-01 14:35:49,975 [main] INFO ApiIntegration - 
+2022-12-01 14:35:49,975 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:49,975 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:49,975 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 163 ms
+2022-12-01 14:35:49,975 [main] INFO ApiIntegration - 
+2022-12-01 14:35:49,975 [main] INFO ApiIntegration - Balance Before Credit:119.0
+2022-12-01 14:35:50,145 [main] INFO ApiIntegration - 
+2022-12-01 14:35:50,145 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:50,145 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-U14cz8F4xFejduDZaKVK_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:50,145 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":695,"Balance":118.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 164 ms
+2022-12-01 14:35:50,145 [main] INFO ApiIntegration - 
+2022-12-01 14:35:50,397 [main] INFO ApiIntegration - 
+2022-12-01 14:35:50,397 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:50,397 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:50,397 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":118.0}  ResponseTime 174 ms
+2022-12-01 14:35:50,397 [main] INFO ApiIntegration - 
+2022-12-01 14:35:50,397 [main] INFO ApiIntegration - Balance After Credit:118.0
+2022-12-01 14:35:50,570 [main] INFO ApiIntegration - 
+2022-12-01 14:35:50,570 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:35:50,570 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-U14cz8F4xFejduDZaKVK_C","TransactionId":"QA_Test-moIXXUc09VqwcHXkIyTh_R","OperationTypeId":15}
+2022-12-01 14:35:50,570 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 165 ms
+2022-12-01 14:35:50,570 [main] INFO ApiIntegration - 
+2022-12-01 14:35:50,743 [main] INFO ApiIntegration - 
+2022-12-01 14:35:50,743 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:50,743 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:50,743 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 164 ms
+2022-12-01 14:35:50,743 [main] INFO ApiIntegration - 
+2022-12-01 14:35:50,744 [main] INFO ApiIntegration - Balance After RollBack_1:119.0
+2022-12-01 14:35:50,917 [main] INFO ApiIntegration - 
+2022-12-01 14:35:50,917 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:35:50,917 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-U14cz8F4xFejduDZaKVK_C","TransactionId":"QA_Test-1KIMb5fG8HPOzmrg22Ub_R","OperationTypeId":4}
+2022-12-01 14:35:50,918 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 163 ms
+2022-12-01 14:35:50,918 [main] INFO ApiIntegration - 
+2022-12-01 14:35:51,096 [main] INFO ApiIntegration - 
+2022-12-01 14:35:51,096 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:51,096 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:51,096 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 164 ms
+2022-12-01 14:35:51,096 [main] INFO ApiIntegration - 
+2022-12-01 14:35:51,096 [main] INFO ApiIntegration - Balance After RollBack_2::119.0
+2022-12-01 14:35:51,099 [main] INFO ApiIntegration - RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice: Test passed
+2022-12-01 14:35:51,268 [main] INFO ApiIntegration - 
+2022-12-01 14:35:51,269 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:51,269 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:51,269 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 161 ms
+2022-12-01 14:35:51,269 [main] INFO ApiIntegration - 
+2022-12-01 14:35:51,270 [main] INFO ApiIntegration - Balance Before Credit_1:119.0
+2022-12-01 14:35:51,450 [main] INFO ApiIntegration - 
+2022-12-01 14:35:51,450 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:51,450 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-WGOfhQ75c4mLhPCad3sX_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:51,450 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":697,"Balance":118.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 172 ms
+2022-12-01 14:35:51,450 [main] INFO ApiIntegration - 
+2022-12-01 14:35:51,617 [main] INFO ApiIntegration - 
+2022-12-01 14:35:51,617 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:51,617 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:51,617 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":118.0}  ResponseTime 160 ms
+2022-12-01 14:35:51,617 [main] INFO ApiIntegration - 
+2022-12-01 14:35:51,618 [main] INFO ApiIntegration - Balance After Credit_1:118.0
+2022-12-01 14:35:51,797 [main] INFO ApiIntegration - 
+2022-12-01 14:35:51,797 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:35:51,797 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-6159VBIpH8FdLmO3tb3w_C","BetState":0,"Amount":1.0}
+2022-12-01 14:35:51,798 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":698,"Balance":117.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 174 ms
+2022-12-01 14:35:51,798 [main] INFO ApiIntegration - 
+2022-12-01 14:35:51,971 [main] INFO ApiIntegration - 
+2022-12-01 14:35:51,971 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:51,971 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:51,972 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 164 ms
+2022-12-01 14:35:51,972 [main] INFO ApiIntegration - 
+2022-12-01 14:35:51,972 [main] INFO ApiIntegration - Balance After Credit_2:117.0
+2022-12-01 14:35:52,156 [main] INFO ApiIntegration - 
+2022-12-01 14:35:52,156 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:35:52,156 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-WGOfhQ75c4mLhPCad3sX_C","TransactionId":"QA_Test-PNPtIrpHisXL9Ixq4v1U_R","OperationTypeId":15}
+2022-12-01 14:35:52,156 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 172 ms
+2022-12-01 14:35:52,156 [main] INFO ApiIntegration - 
+2022-12-01 14:35:52,326 [main] INFO ApiIntegration - 
+2022-12-01 14:35:52,326 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:52,326 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:52,326 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":118.0}  ResponseTime 161 ms
+2022-12-01 14:35:52,326 [main] INFO ApiIntegration - 
+2022-12-01 14:35:52,327 [main] INFO ApiIntegration - Balance After RollBack_1:118.0
+2022-12-01 14:35:52,503 [main] INFO ApiIntegration - 
+2022-12-01 14:35:52,503 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:35:52,503 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-6159VBIpH8FdLmO3tb3w_C","TransactionId":"QA_Test-PNPtIrpHisXL9Ixq4v1U_R","OperationTypeId":4}
+2022-12-01 14:35:52,503 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 163 ms
+2022-12-01 14:35:52,503 [main] INFO ApiIntegration - 
+2022-12-01 14:35:52,688 [main] INFO ApiIntegration - 
+2022-12-01 14:35:52,688 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:35:52,688 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:35:52,688 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":118.0}  ResponseTime 169 ms
+2022-12-01 14:35:52,688 [main] INFO ApiIntegration - 
+2022-12-01 14:35:52,689 [main] INFO ApiIntegration - Balance After RollBack_2:118.0
+2022-12-01 14:35:52,693 [main] INFO ApiIntegration - RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice: Test passed
+2022-12-01 14:35:52,713 [main] INFO ApiIntegration - API Integration Automation Test: Test execution finished
+2022-12-01 14:35:52,716 [main] INFO ApiIntegration - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2022-12-01 14:35:52,717 [main] INFO ApiIntegration - 
+2022-12-01 14:35:52,717 [main] INFO ApiIntegration - 
+2022-12-01 14:35:52,717 [main] INFO ApiIntegration - 
+2022-12-01 14:46:59,221 [main] INFO ApiIntegration - API Integration Automation Test: Test execution starts
+2022-12-01 14:47:00,736 [main] INFO ApiIntegration - 
+2022-12-01 14:47:00,737 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Authorization
+2022-12-01 14:47:00,737 [main] INFO ApiIntegration - AuthorizationAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","ProductId":54434}
+2022-12-01 14:47:00,737 [main] INFO ApiIntegration - AuthorizationAPI:  ResponseBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","Gender":"1","ClientId":"gagnant365::1008","LastName":"","UserName":"gagnant365::1008","BirthDate":"2000-01-01","FirstName":"","CurrencyId":"TND","Description":null,"ResponseCode":0}  ResponseTime 1022 ms
+2022-12-01 14:47:00,737 [main] INFO ApiIntegration - 
+2022-12-01 14:47:00,811 [main] INFO ApiIntegration - Authorization API Status Cod is Equal: 200
+2022-12-01 14:47:00,919 [main] INFO ApiIntegration - AuthorizationAPIValidateStatusCod: Test passed
+2022-12-01 14:47:00,938 [main] INFO ApiIntegration - AuthorizationAPIValidatePositiveResponse: Test passed
+2022-12-01 14:47:01,411 [main] INFO ApiIntegration - 
+2022-12-01 14:47:01,411 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:01,411 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:01,412 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":118.0}  ResponseTime 465 ms
+2022-12-01 14:47:01,412 [main] INFO ApiIntegration - 
+2022-12-01 14:47:01,415 [main] INFO ApiIntegration - GetBalance API Status Cod is Equal: 200
+2022-12-01 14:47:01,417 [main] INFO ApiIntegration - GetBalanceAPIValidateStatusCod: Test passed
+2022-12-01 14:47:01,427 [main] INFO ApiIntegration - GetBalanceAPIValidatePositiveResponse: Test passed
+2022-12-01 14:47:01,897 [main] INFO ApiIntegration - 
+2022-12-01 14:47:01,898 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:01,898 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:01,898 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":118.0}  ResponseTime 455 ms
+2022-12-01 14:47:01,898 [main] INFO ApiIntegration - 
+2022-12-01 14:47:02,384 [main] INFO ApiIntegration - 
+2022-12-01 14:47:02,384 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:02,384 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-yHabWc8hTkrxPWLDsWxP_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:02,385 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":701,"Balance":117.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 476 ms
+2022-12-01 14:47:02,385 [main] INFO ApiIntegration - 
+2022-12-01 14:47:02,572 [main] INFO ApiIntegration - 
+2022-12-01 14:47:02,573 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:02,574 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:02,574 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 174 ms
+2022-12-01 14:47:02,575 [main] INFO ApiIntegration - 
+2022-12-01 14:47:02,583 [main] INFO ApiIntegration - Credit API Status Cod is Equal: 200
+2022-12-01 14:47:02,590 [main] INFO ApiIntegration - CreditAPIValidateStatusCod: Test passed
+2022-12-01 14:47:02,601 [main] INFO ApiIntegration - CreditAPIValidatePositiveResponse: Test passed
+2022-12-01 14:47:02,788 [main] INFO ApiIntegration - 
+2022-12-01 14:47:02,788 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:02,788 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:02,789 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":117.0}  ResponseTime 176 ms
+2022-12-01 14:47:02,789 [main] INFO ApiIntegration - 
+2022-12-01 14:47:02,984 [main] INFO ApiIntegration - 
+2022-12-01 14:47:02,984 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:47:02,984 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-RRos7zcC3vAucfm2mglj_D","CreditTransactionId":"QA_Test-yHabWc8hTkrxPWLDsWxP_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:47:02,984 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":703,"Balance":122.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 186 ms
+2022-12-01 14:47:02,984 [main] INFO ApiIntegration - 
+2022-12-01 14:47:03,161 [main] INFO ApiIntegration - 
+2022-12-01 14:47:03,161 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:03,161 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:03,161 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 170 ms
+2022-12-01 14:47:03,161 [main] INFO ApiIntegration - 
+2022-12-01 14:47:03,163 [main] INFO ApiIntegration - Debit API Status Cod is Equal: 200
+2022-12-01 14:47:03,171 [main] INFO ApiIntegration - DebitAPIValidateStatusCod: Test passed
+2022-12-01 14:47:03,176 [main] INFO ApiIntegration - DebitAPIValidatePositiveResponse: Test passed
+2022-12-01 14:47:03,357 [main] INFO ApiIntegration - 
+2022-12-01 14:47:03,357 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:03,357 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:03,357 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 174 ms
+2022-12-01 14:47:03,357 [main] INFO ApiIntegration - 
+2022-12-01 14:47:03,357 [main] INFO ApiIntegration - Balance Before Credit:122.0
+2022-12-01 14:47:03,545 [main] INFO ApiIntegration - 
+2022-12-01 14:47:03,545 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:03,545 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-wRQ75XcLVgEsWdoiVHI4_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:03,545 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":704,"Balance":121.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 180 ms
+2022-12-01 14:47:03,546 [main] INFO ApiIntegration - 
+2022-12-01 14:47:03,741 [main] INFO ApiIntegration - 
+2022-12-01 14:47:03,741 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:03,741 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:03,741 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 187 ms
+2022-12-01 14:47:03,742 [main] INFO ApiIntegration - 
+2022-12-01 14:47:03,742 [main] INFO ApiIntegration - Balance After Credit:121.0
+2022-12-01 14:47:03,946 [main] INFO ApiIntegration - 
+2022-12-01 14:47:03,946 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:47:03,946 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-qwC4VwJEjm5w2FKUQ4Sb_D","CreditTransactionId":"QA_Test-wRQ75XcLVgEsWdoiVHI4_C","Amount":5.0,"BetState":2,"OperationTypeId":4,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:47:03,946 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":706,"Balance":126.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 199 ms
+2022-12-01 14:47:03,947 [main] INFO ApiIntegration - 
+2022-12-01 14:47:04,130 [main] INFO ApiIntegration - 
+2022-12-01 14:47:04,130 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:04,130 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:04,130 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":126.0}  ResponseTime 175 ms
+2022-12-01 14:47:04,131 [main] INFO ApiIntegration - 
+2022-12-01 14:47:04,131 [main] INFO ApiIntegration - Balance After Debit:126.0
+2022-12-01 14:47:04,313 [main] INFO ApiIntegration - 
+2022-12-01 14:47:04,313 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:47:04,313 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-wRQ75XcLVgEsWdoiVHI4_C","TransactionId":"QA_Test-qKLll76leHKHKftwqdBP_R","OperationTypeId":1}
+2022-12-01 14:47:04,313 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 176 ms
+2022-12-01 14:47:04,313 [main] INFO ApiIntegration - 
+2022-12-01 14:47:04,494 [main] INFO ApiIntegration - 
+2022-12-01 14:47:04,495 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:04,495 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:04,495 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 166 ms
+2022-12-01 14:47:04,496 [main] INFO ApiIntegration - 
+2022-12-01 14:47:04,497 [main] INFO ApiIntegration - Balance After RollBackCredit:122.0
+2022-12-01 14:47:04,504 [main] INFO ApiIntegration - RollBackCredit API Status Cod is Equal: 200
+2022-12-01 14:47:04,509 [main] INFO ApiIntegration - RollBackAPIValidateStatusCod: Test passed
+2022-12-01 14:47:04,517 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponse: Test passed
+2022-12-01 14:47:04,522 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponseBalanceCorrection: Test passed
+2022-12-01 14:47:04,705 [main] INFO ApiIntegration - 
+2022-12-01 14:47:04,705 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:04,705 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:04,705 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 170 ms
+2022-12-01 14:47:04,705 [main] INFO ApiIntegration - 
+2022-12-01 14:47:04,706 [main] INFO ApiIntegration - Balance Before Credit:122.0
+2022-12-01 14:47:04,883 [main] INFO ApiIntegration - 
+2022-12-01 14:47:04,884 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:04,884 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":3,"TransactionId":"QA_Test-XYabn3DcEHiUfQAuGThu_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:04,884 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":708,"Balance":121.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 171 ms
+2022-12-01 14:47:04,884 [main] INFO ApiIntegration - 
+2022-12-01 14:47:05,122 [main] INFO ApiIntegration - 
+2022-12-01 14:47:05,122 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:05,123 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:05,123 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 170 ms
+2022-12-01 14:47:05,123 [main] INFO ApiIntegration - 
+2022-12-01 14:47:05,125 [main] INFO ApiIntegration - Balance After Credit:121.0
+2022-12-01 14:47:05,335 [main] INFO ApiIntegration - 
+2022-12-01 14:47:05,336 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:47:05,336 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-XYabn3DcEHiUfQAuGThu_C","TransactionId":"QA_Test-JBczv3KJJVL2PqAcYPLN_R","OperationTypeId":15}
+2022-12-01 14:47:05,336 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 187 ms
+2022-12-01 14:47:05,337 [main] INFO ApiIntegration - 
+2022-12-01 14:47:05,512 [main] INFO ApiIntegration - 
+2022-12-01 14:47:05,512 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:05,512 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:05,512 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 165 ms
+2022-12-01 14:47:05,512 [main] INFO ApiIntegration - 
+2022-12-01 14:47:05,513 [main] INFO ApiIntegration - Balance After RollBackCredit:122.0
+2022-12-01 14:47:05,515 [main] INFO ApiIntegration - RollBackCredit API Status Cod is Equal: 200
+2022-12-01 14:47:05,520 [main] INFO ApiIntegration - RollBackAPIValidateStatusCod: Test passed
+2022-12-01 14:47:05,525 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponse: Test passed
+2022-12-01 14:47:05,529 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponseBalanceCorrection: Test passed
+2022-12-01 14:47:05,709 [main] INFO ApiIntegration - 
+2022-12-01 14:47:05,709 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:05,709 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:05,710 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 172 ms
+2022-12-01 14:47:05,710 [main] INFO ApiIntegration - 
+2022-12-01 14:47:05,710 [main] INFO ApiIntegration - Balance Before Credit:122.0
+2022-12-01 14:47:05,899 [main] INFO ApiIntegration - 
+2022-12-01 14:47:05,899 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:05,900 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":3,"TransactionId":"QA_Test-oQEd86qJSPYOdjRyRCw4_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:05,900 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":710,"Balance":121.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 176 ms
+2022-12-01 14:47:05,900 [main] INFO ApiIntegration - 
+2022-12-01 14:47:06,087 [main] INFO ApiIntegration - 
+2022-12-01 14:47:06,088 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:06,088 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:06,088 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 180 ms
+2022-12-01 14:47:06,088 [main] INFO ApiIntegration - 
+2022-12-01 14:47:06,089 [main] INFO ApiIntegration - Balance After Credit:121.0
+2022-12-01 14:47:06,290 [main] INFO ApiIntegration - 
+2022-12-01 14:47:06,290 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:47:06,290 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-Wxe4XfA1LacEMo6AdgLh_D","CreditTransactionId":"QA_Test-oQEd86qJSPYOdjRyRCw4_C","Amount":5.0,"BetState":2,"OperationTypeId":4,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:47:06,290 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":712,"Balance":126.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 186 ms
+2022-12-01 14:47:06,291 [main] INFO ApiIntegration - 
+2022-12-01 14:47:06,488 [main] INFO ApiIntegration - 
+2022-12-01 14:47:06,488 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:06,489 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:06,489 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":126.0}  ResponseTime 179 ms
+2022-12-01 14:47:06,489 [main] INFO ApiIntegration - 
+2022-12-01 14:47:06,491 [main] INFO ApiIntegration - Balance After Debit:126.0
+2022-12-01 14:47:06,680 [main] INFO ApiIntegration - 
+2022-12-01 14:47:06,680 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:47:06,681 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-Wxe4XfA1LacEMo6AdgLh_D","TransactionId":"QA_Test-EQ9wgHmeEzaG8kicqwgo_R","OperationTypeId":17}
+2022-12-01 14:47:06,681 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 181 ms
+2022-12-01 14:47:06,681 [main] INFO ApiIntegration - 
+2022-12-01 14:47:06,862 [main] INFO ApiIntegration - 
+2022-12-01 14:47:06,862 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:06,862 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:06,862 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 175 ms
+2022-12-01 14:47:06,862 [main] INFO ApiIntegration - 
+2022-12-01 14:47:06,863 [main] INFO ApiIntegration - Balance After RollBackDebit:121.0
+2022-12-01 14:47:06,865 [main] INFO ApiIntegration - RollBack API Status Cod is Equal: 200
+2022-12-01 14:47:06,871 [main] INFO ApiIntegration - RollBackAPIValidateStatusCod: Test passed
+2022-12-01 14:47:06,880 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponse: Test passed
+2022-12-01 14:47:06,886 [main] INFO ApiIntegration - RollBackAPIValidatePositiveResponseBalanceCorrection: Test passed
+2022-12-01 14:47:07,080 [main] INFO ApiIntegration - 
+2022-12-01 14:47:07,081 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Authorization
+2022-12-01 14:47:07,081 [main] INFO ApiIntegration - AuthorizationAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a81","ProductId":54434}
+2022-12-01 14:47:07,082 [main] INFO ApiIntegration - AuthorizationAPI:  ResponseBody  {"Description":"error login","ResponseCode":22}  ResponseTime 178 ms
+2022-12-01 14:47:07,082 [main] INFO ApiIntegration - 
+2022-12-01 14:47:07,083 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
+2022-12-01 14:47:07,095 [main] INFO ApiIntegration - AuthorizationAPIValidateResponseWithExpiredToken: Test passed
+2022-12-01 14:47:07,287 [main] INFO ApiIntegration - 
+2022-12-01 14:47:07,287 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Authorization
+2022-12-01 14:47:07,287 [main] INFO ApiIntegration - AuthorizationAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a81","ProductId":54434}
+2022-12-01 14:47:07,287 [main] INFO ApiIntegration - AuthorizationAPI:  ResponseBody  {"Description":"error login","ResponseCode":22}  ResponseTime 177 ms
+2022-12-01 14:47:07,287 [main] INFO ApiIntegration - 
+2022-12-01 14:47:07,288 [main] INFO ApiIntegration - Authorization API Response Status cod : 200
+2022-12-01 14:47:07,290 [main] INFO ApiIntegration - AuthorizationAPIValidateResponseWithInvalidToken: Test passed
+2022-12-01 14:47:07,462 [main] INFO ApiIntegration - 
+2022-12-01 14:47:07,462 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:07,462 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a81","CurrencyId":"TND"}
+2022-12-01 14:47:07,462 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"Description":"error login","ResponseCode":22}  ResponseTime 164 ms
+2022-12-01 14:47:07,462 [main] INFO ApiIntegration - 
+2022-12-01 14:47:07,462 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
+2022-12-01 14:47:07,467 [main] INFO ApiIntegration - GetBalanceAPIValidateResponseWithExpiredToken: Test passed
+2022-12-01 14:47:07,649 [main] INFO ApiIntegration - 
+2022-12-01 14:47:07,649 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:07,649 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a81","CurrencyId":"TND"}
+2022-12-01 14:47:07,649 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"Description":"error login","ResponseCode":22}  ResponseTime 171 ms
+2022-12-01 14:47:07,649 [main] INFO ApiIntegration - 
+2022-12-01 14:47:07,650 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
+2022-12-01 14:47:07,653 [main] INFO ApiIntegration - GetBalanceAPIValidateResponseWithInvalidToken: Test passed
+2022-12-01 14:47:07,842 [main] INFO ApiIntegration - 
+2022-12-01 14:47:07,842 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:07,842 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND1"}
+2022-12-01 14:47:07,842 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"Description":"WrongCurrencyId","ResponseCode":109}  ResponseTime 177 ms
+2022-12-01 14:47:07,842 [main] INFO ApiIntegration - 
+2022-12-01 14:47:07,842 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
+2022-12-01 14:47:07,846 [main] INFO ApiIntegration - GetBalanceAPIValidateResponseWithInvalidCurrencyID: Test passed
+2022-12-01 14:47:08,022 [main] INFO ApiIntegration - 
+2022-12-01 14:47:08,023 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:08,023 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"USD"}
+2022-12-01 14:47:08,023 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"Description":"WrongCurrencyId","ResponseCode":109}  ResponseTime 166 ms
+2022-12-01 14:47:08,023 [main] INFO ApiIntegration - 
+2022-12-01 14:47:08,023 [main] INFO ApiIntegration -  GetBalance API Status Cod is Equal: 200
+2022-12-01 14:47:08,034 [main] ERROR ApiIntegration - GetBalanceAPIValidateResponseWithOtherCurrencyID Test failed
+2022-12-01 14:47:08,235 [main] INFO ApiIntegration - 
+2022-12-01 14:47:08,236 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:08,236 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:08,236 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 190 ms
+2022-12-01 14:47:08,236 [main] INFO ApiIntegration - 
+2022-12-01 14:47:08,418 [main] INFO ApiIntegration - 
+2022-12-01 14:47:08,418 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:08,419 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a81","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-fBXOFqAtoqogQsxFs7Nd_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:08,419 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":"error login","ResponseCode":22}  ResponseTime 169 ms
+2022-12-01 14:47:08,419 [main] INFO ApiIntegration - 
+2022-12-01 14:47:08,624 [main] INFO ApiIntegration - 
+2022-12-01 14:47:08,625 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:08,625 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:08,625 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 187 ms
+2022-12-01 14:47:08,625 [main] INFO ApiIntegration - 
+2022-12-01 14:47:08,636 [main] INFO ApiIntegration - CreditAPIValidateResponseWithExpiredToken: Test passed
+2022-12-01 14:47:08,814 [main] INFO ApiIntegration - 
+2022-12-01 14:47:08,814 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:08,815 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:08,815 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 167 ms
+2022-12-01 14:47:08,815 [main] INFO ApiIntegration - 
+2022-12-01 14:47:09,067 [main] INFO ApiIntegration - 
+2022-12-01 14:47:09,068 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:09,068 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8_Error","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-AyjYcK2pfJsY8SankKGE_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:09,069 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":"error login","ResponseCode":22}  ResponseTime 180 ms
+2022-12-01 14:47:09,069 [main] INFO ApiIntegration - 
+2022-12-01 14:47:09,263 [main] INFO ApiIntegration - 
+2022-12-01 14:47:09,264 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:09,264 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:09,264 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 174 ms
+2022-12-01 14:47:09,264 [main] INFO ApiIntegration - 
+2022-12-01 14:47:09,267 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidToken: Test passed
+2022-12-01 14:47:09,460 [main] INFO ApiIntegration - 
+2022-12-01 14:47:09,460 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:09,460 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:09,461 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 176 ms
+2022-12-01 14:47:09,461 [main] INFO ApiIntegration - 
+2022-12-01 14:47:09,645 [main] INFO ApiIntegration - 
+2022-12-01 14:47:09,645 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:09,645 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":3,"TransactionId":"QA_Test-tJ7XyqZyAB90HH5CTsXt_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:09,645 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":714,"Balance":120.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 169 ms
+2022-12-01 14:47:09,645 [main] INFO ApiIntegration - 
+2022-12-01 14:47:09,821 [main] INFO ApiIntegration - 
+2022-12-01 14:47:09,821 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:09,822 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:09,822 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 163 ms
+2022-12-01 14:47:09,822 [main] INFO ApiIntegration - 
+2022-12-01 14:47:10,015 [main] INFO ApiIntegration - 
+2022-12-01 14:47:10,015 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:10,016 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-tJ7XyqZyAB90HH5CTsXt_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:10,016 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":714,"Balance":120.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 177 ms
+2022-12-01 14:47:10,016 [main] INFO ApiIntegration - 
+2022-12-01 14:47:10,197 [main] INFO ApiIntegration - 
+2022-12-01 14:47:10,198 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:10,198 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:10,198 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 170 ms
+2022-12-01 14:47:10,198 [main] INFO ApiIntegration - 
+2022-12-01 14:47:10,211 [main] INFO ApiIntegration - CreditAPIValidateResponseUsingTransactionIDTwice: Test passed
+2022-12-01 14:47:10,406 [main] INFO ApiIntegration - 
+2022-12-01 14:47:10,407 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:10,407 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:10,407 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 181 ms
+2022-12-01 14:47:10,407 [main] INFO ApiIntegration - 
+2022-12-01 14:47:10,594 [main] INFO ApiIntegration - 
+2022-12-01 14:47:10,594 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:10,594 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-nnx6NXYZ3OE5FDywXgJ3_C","BetState":0,"Amount":130.0}
+2022-12-01 14:47:10,594 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":"balance less then bet Amount","ResponseCode":63}  ResponseTime 169 ms
+2022-12-01 14:47:10,594 [main] INFO ApiIntegration - 
+2022-12-01 14:47:10,777 [main] INFO ApiIntegration - 
+2022-12-01 14:47:10,777 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:10,778 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:10,778 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 171 ms
+2022-12-01 14:47:10,778 [main] INFO ApiIntegration - 
+2022-12-01 14:47:10,782 [main] INFO ApiIntegration - CreditAPIValidateResponseUsingAmountHigherThenBalance: Test passed
+2022-12-01 14:47:10,961 [main] INFO ApiIntegration - 
+2022-12-01 14:47:10,961 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:10,961 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:10,961 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 166 ms
+2022-12-01 14:47:10,961 [main] INFO ApiIntegration - 
+2022-12-01 14:47:11,142 [main] INFO ApiIntegration - 
+2022-12-01 14:47:11,143 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:11,143 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-7xzncSk7eAbq3AyVFAxr_C","BetState":0,"Amount":-1.0}
+2022-12-01 14:47:11,143 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 171 ms
+2022-12-01 14:47:11,143 [main] INFO ApiIntegration - 
+2022-12-01 14:47:11,324 [main] INFO ApiIntegration - 
+2022-12-01 14:47:11,324 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:11,324 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:11,324 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 170 ms
+2022-12-01 14:47:11,324 [main] INFO ApiIntegration - 
+2022-12-01 14:47:11,327 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
+2022-12-01 14:47:11,513 [main] INFO ApiIntegration - 
+2022-12-01 14:47:11,513 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:11,513 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:11,513 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 179 ms
+2022-12-01 14:47:11,513 [main] INFO ApiIntegration - 
+2022-12-01 14:47:11,699 [main] INFO ApiIntegration - 
+2022-12-01 14:47:11,699 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:11,699 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-05QdTeYdZccuH9wa57se_C","BetState":0,"Amount":-1.5}
+2022-12-01 14:47:11,699 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 176 ms
+2022-12-01 14:47:11,699 [main] INFO ApiIntegration - 
+2022-12-01 14:47:11,873 [main] INFO ApiIntegration - 
+2022-12-01 14:47:11,873 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:11,873 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:11,873 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 166 ms
+2022-12-01 14:47:11,873 [main] INFO ApiIntegration - 
+2022-12-01 14:47:11,876 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
+2022-12-01 14:47:12,059 [main] INFO ApiIntegration - 
+2022-12-01 14:47:12,059 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:12,059 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:12,059 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 171 ms
+2022-12-01 14:47:12,059 [main] INFO ApiIntegration - 
+2022-12-01 14:47:12,237 [main] INFO ApiIntegration - 
+2022-12-01 14:47:12,238 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:12,239 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-KRPDIWTkN5KkPvwbKewX_C","BetState":0,"Amount":-1.05}
+2022-12-01 14:47:12,239 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 165 ms
+2022-12-01 14:47:12,239 [main] INFO ApiIntegration - 
+2022-12-01 14:47:12,429 [main] INFO ApiIntegration - 
+2022-12-01 14:47:12,429 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:12,429 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:12,429 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 172 ms
+2022-12-01 14:47:12,429 [main] INFO ApiIntegration - 
+2022-12-01 14:47:12,432 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
+2022-12-01 14:47:12,604 [main] INFO ApiIntegration - 
+2022-12-01 14:47:12,604 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:12,604 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:12,604 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 161 ms
+2022-12-01 14:47:12,604 [main] INFO ApiIntegration - 
+2022-12-01 14:47:12,776 [main] INFO ApiIntegration - 
+2022-12-01 14:47:12,776 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:12,776 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-4lWUQFrt1yh7TeBW6wHU_C","BetState":0,"Amount":-1.005}
+2022-12-01 14:47:12,776 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 166 ms
+2022-12-01 14:47:12,776 [main] INFO ApiIntegration - 
+2022-12-01 14:47:12,945 [main] INFO ApiIntegration - 
+2022-12-01 14:47:12,946 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:12,946 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:12,946 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 163 ms
+2022-12-01 14:47:12,946 [main] INFO ApiIntegration - 
+2022-12-01 14:47:12,951 [main] INFO ApiIntegration - CreditAPIValidateResponseWithInvalidAmount: Test passed
+2022-12-01 14:47:13,129 [main] INFO ApiIntegration - 
+2022-12-01 14:47:13,129 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:13,129 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:13,129 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 169 ms
+2022-12-01 14:47:13,129 [main] INFO ApiIntegration - 
+2022-12-01 14:47:13,329 [main] INFO ApiIntegration - 
+2022-12-01 14:47:13,329 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:13,329 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-TvVOOJEzzOYGHnq7NodV_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:13,329 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":717,"Balance":119.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 179 ms
+2022-12-01 14:47:13,329 [main] INFO ApiIntegration - 
+2022-12-01 14:47:13,512 [main] INFO ApiIntegration - 
+2022-12-01 14:47:13,512 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:13,512 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:13,512 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":119.0}  ResponseTime 173 ms
+2022-12-01 14:47:13,512 [main] INFO ApiIntegration - 
+2022-12-01 14:47:13,693 [main] INFO ApiIntegration - 
+2022-12-01 14:47:13,693 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:47:13,693 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-xphAGkFzbkAIzfZS9f0E_D","CreditTransactionId":"QA_Test-TvVOOJEzzOYGHnq7NodV_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a81"}
+2022-12-01 14:47:13,693 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":719,"Balance":124.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 170 ms
+2022-12-01 14:47:13,693 [main] INFO ApiIntegration - 
+2022-12-01 14:47:13,872 [main] INFO ApiIntegration - 
+2022-12-01 14:47:13,872 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:13,873 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:13,873 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":124.0}  ResponseTime 170 ms
+2022-12-01 14:47:13,873 [main] INFO ApiIntegration - 
+2022-12-01 14:47:13,887 [main] INFO ApiIntegration - DebitAPIValidateResponseWithExpiredToken: Test passed
+2022-12-01 14:47:14,060 [main] INFO ApiIntegration - 
+2022-12-01 14:47:14,060 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:14,060 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:14,060 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":124.0}  ResponseTime 165 ms
+2022-12-01 14:47:14,060 [main] INFO ApiIntegration - 
+2022-12-01 14:47:14,242 [main] INFO ApiIntegration - 
+2022-12-01 14:47:14,242 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:14,242 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-HtbG0D5JbHlQKXyQnBy5_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:14,242 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":720,"Balance":123.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 170 ms
+2022-12-01 14:47:14,242 [main] INFO ApiIntegration - 
+2022-12-01 14:47:14,422 [main] INFO ApiIntegration - 
+2022-12-01 14:47:14,422 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:14,423 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:14,423 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":123.0}  ResponseTime 170 ms
+2022-12-01 14:47:14,423 [main] INFO ApiIntegration - 
+2022-12-01 14:47:14,615 [main] INFO ApiIntegration - 
+2022-12-01 14:47:14,615 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:14,615 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-5hBXMo9EGo6BIjI8fJII_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:14,616 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":721,"Balance":122.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 175 ms
+2022-12-01 14:47:14,616 [main] INFO ApiIntegration - 
+2022-12-01 14:47:14,796 [main] INFO ApiIntegration - 
+2022-12-01 14:47:14,796 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:14,796 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:14,796 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 168 ms
+2022-12-01 14:47:14,797 [main] INFO ApiIntegration - 
+2022-12-01 14:47:14,983 [main] INFO ApiIntegration - 
+2022-12-01 14:47:14,984 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:47:14,984 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-Datl0OWXxSGcLSCOEOQv_D","CreditTransactionId":"QA_Test-HtbG0D5JbHlQKXyQnBy5_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:47:14,984 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":723,"Balance":127.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 174 ms
+2022-12-01 14:47:14,984 [main] INFO ApiIntegration - 
+2022-12-01 14:47:15,178 [main] INFO ApiIntegration - 
+2022-12-01 14:47:15,178 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:15,178 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:15,178 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":127.0}  ResponseTime 177 ms
+2022-12-01 14:47:15,178 [main] INFO ApiIntegration - 
+2022-12-01 14:47:15,371 [main] INFO ApiIntegration - 
+2022-12-01 14:47:15,371 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:47:15,371 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-Datl0OWXxSGcLSCOEOQv_D","CreditTransactionId":"QA_Test-5hBXMo9EGo6BIjI8fJII_C","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:47:15,371 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":723,"Balance":127.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 187 ms
+2022-12-01 14:47:15,371 [main] INFO ApiIntegration - 
+2022-12-01 14:47:15,553 [main] INFO ApiIntegration - 
+2022-12-01 14:47:15,554 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:15,554 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:15,554 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":127.0}  ResponseTime 173 ms
+2022-12-01 14:47:15,554 [main] INFO ApiIntegration - 
+2022-12-01 14:47:15,557 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingTransactionIDTwice: Test passed
+2022-12-01 14:47:15,751 [main] INFO ApiIntegration - 
+2022-12-01 14:47:15,751 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:15,752 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:15,752 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":127.0}  ResponseTime 182 ms
+2022-12-01 14:47:15,752 [main] INFO ApiIntegration - 
+2022-12-01 14:47:15,954 [main] INFO ApiIntegration - 
+2022-12-01 14:47:15,954 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:47:15,954 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-mVYEaaa5OUx11xyLkDFW_D","CreditTransactionId":"QA_Test-B4jFAR0fxz0bllQmKN2h_C_ErrorID","Amount":5.0,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:47:15,954 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":"CanNotConnectCreditAndDebit","ResponseCode":"50"}  ResponseTime 181 ms
+2022-12-01 14:47:15,954 [main] INFO ApiIntegration - 
+2022-12-01 14:47:16,131 [main] INFO ApiIntegration - 
+2022-12-01 14:47:16,132 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:16,132 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:16,132 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":127.0}  ResponseTime 172 ms
+2022-12-01 14:47:16,132 [main] INFO ApiIntegration - 
+2022-12-01 14:47:16,134 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidCreditTransactionID: Test passed
+2022-12-01 14:47:16,310 [main] INFO ApiIntegration - 
+2022-12-01 14:47:16,310 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:16,310 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:16,310 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":127.0}  ResponseTime 166 ms
+2022-12-01 14:47:16,310 [main] INFO ApiIntegration - 
+2022-12-01 14:47:16,494 [main] INFO ApiIntegration - 
+2022-12-01 14:47:16,494 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:16,494 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-86lZEfCNNB4YbMs3ajBY_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:16,494 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":727,"Balance":126.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 177 ms
+2022-12-01 14:47:16,494 [main] INFO ApiIntegration - 
+2022-12-01 14:47:16,683 [main] INFO ApiIntegration - 
+2022-12-01 14:47:16,683 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:16,683 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:16,683 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":126.0}  ResponseTime 178 ms
+2022-12-01 14:47:16,683 [main] INFO ApiIntegration - 
+2022-12-01 14:47:16,869 [main] INFO ApiIntegration - 
+2022-12-01 14:47:16,870 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:47:16,870 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-xqFodAjJIOuOg6ajrgeg_D","CreditTransactionId":"QA_Test-86lZEfCNNB4YbMs3ajBY_C","Amount":0.0,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:47:16,870 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":null,"ResponseCode":"0","OperationItems":[{"BetId":729,"Balance":126.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 176 ms
+2022-12-01 14:47:16,870 [main] INFO ApiIntegration - 
+2022-12-01 14:47:17,056 [main] INFO ApiIntegration - 
+2022-12-01 14:47:17,056 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:17,056 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:17,056 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":126.0}  ResponseTime 175 ms
+2022-12-01 14:47:17,057 [main] INFO ApiIntegration - 
+2022-12-01 14:47:17,059 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingAmount_0: Test passed
+2022-12-01 14:47:17,234 [main] INFO ApiIntegration - 
+2022-12-01 14:47:17,234 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:17,234 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:17,235 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":126.0}  ResponseTime 166 ms
+2022-12-01 14:47:17,235 [main] INFO ApiIntegration - 
+2022-12-01 14:47:17,410 [main] INFO ApiIntegration - 
+2022-12-01 14:47:17,410 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:17,411 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-Rgno1Xzli4NUYUSCcJ0T_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:17,411 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":730,"Balance":125.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 170 ms
+2022-12-01 14:47:17,411 [main] INFO ApiIntegration - 
+2022-12-01 14:47:17,600 [main] INFO ApiIntegration - 
+2022-12-01 14:47:17,600 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:17,601 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:17,601 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":125.0}  ResponseTime 175 ms
+2022-12-01 14:47:17,601 [main] INFO ApiIntegration - 
+2022-12-01 14:47:17,786 [main] INFO ApiIntegration - 
+2022-12-01 14:47:17,786 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:47:17,786 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-lOYzyNQH5hhCAhbk1hlP_D","CreditTransactionId":"QA_Test-Rgno1Xzli4NUYUSCcJ0T_C","Amount":-1.0,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:47:17,786 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 167 ms
+2022-12-01 14:47:17,786 [main] INFO ApiIntegration - 
+2022-12-01 14:47:17,967 [main] INFO ApiIntegration - 
+2022-12-01 14:47:17,967 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:17,967 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:17,967 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":125.0}  ResponseTime 170 ms
+2022-12-01 14:47:17,967 [main] INFO ApiIntegration - 
+2022-12-01 14:47:17,971 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
+2022-12-01 14:47:18,152 [main] INFO ApiIntegration - 
+2022-12-01 14:47:18,152 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:18,152 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:18,152 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":125.0}  ResponseTime 174 ms
+2022-12-01 14:47:18,152 [main] INFO ApiIntegration - 
+2022-12-01 14:47:18,337 [main] INFO ApiIntegration - 
+2022-12-01 14:47:18,338 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:18,338 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-54w768AFAyEx04uEYfzd_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:18,338 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":731,"Balance":124.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 175 ms
+2022-12-01 14:47:18,338 [main] INFO ApiIntegration - 
+2022-12-01 14:47:18,578 [main] INFO ApiIntegration - 
+2022-12-01 14:47:18,578 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:18,578 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:18,578 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":124.0}  ResponseTime 167 ms
+2022-12-01 14:47:18,578 [main] INFO ApiIntegration - 
+2022-12-01 14:47:18,757 [main] INFO ApiIntegration - 
+2022-12-01 14:47:18,757 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:47:18,757 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-3GETbQZciTyNdQ4EWslU_D","CreditTransactionId":"QA_Test-54w768AFAyEx04uEYfzd_C","Amount":-1.5,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:47:18,758 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 169 ms
+2022-12-01 14:47:18,758 [main] INFO ApiIntegration - 
+2022-12-01 14:47:18,945 [main] INFO ApiIntegration - 
+2022-12-01 14:47:18,946 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:18,946 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:18,946 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":124.0}  ResponseTime 174 ms
+2022-12-01 14:47:18,946 [main] INFO ApiIntegration - 
+2022-12-01 14:47:18,949 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
+2022-12-01 14:47:19,131 [main] INFO ApiIntegration - 
+2022-12-01 14:47:19,132 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:19,132 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:19,132 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":124.0}  ResponseTime 168 ms
+2022-12-01 14:47:19,132 [main] INFO ApiIntegration - 
+2022-12-01 14:47:19,311 [main] INFO ApiIntegration - 
+2022-12-01 14:47:19,311 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:19,311 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-v7p7bdLvIx7S43u4jZjm_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:19,311 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":732,"Balance":123.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 175 ms
+2022-12-01 14:47:19,311 [main] INFO ApiIntegration - 
+2022-12-01 14:47:19,498 [main] INFO ApiIntegration - 
+2022-12-01 14:47:19,498 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:19,499 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:19,499 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":123.0}  ResponseTime 178 ms
+2022-12-01 14:47:19,499 [main] INFO ApiIntegration - 
+2022-12-01 14:47:19,675 [main] INFO ApiIntegration - 
+2022-12-01 14:47:19,676 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:47:19,676 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-eSXMkzBf9WP5r537SAVZ_D","CreditTransactionId":"QA_Test-v7p7bdLvIx7S43u4jZjm_C","Amount":-1.05,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:47:19,676 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 166 ms
+2022-12-01 14:47:19,676 [main] INFO ApiIntegration - 
+2022-12-01 14:47:19,877 [main] INFO ApiIntegration - 
+2022-12-01 14:47:19,877 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:19,877 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:19,877 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":123.0}  ResponseTime 182 ms
+2022-12-01 14:47:19,877 [main] INFO ApiIntegration - 
+2022-12-01 14:47:19,880 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
+2022-12-01 14:47:20,071 [main] INFO ApiIntegration - 
+2022-12-01 14:47:20,071 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:20,071 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:20,071 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":123.0}  ResponseTime 183 ms
+2022-12-01 14:47:20,071 [main] INFO ApiIntegration - 
+2022-12-01 14:47:20,254 [main] INFO ApiIntegration - 
+2022-12-01 14:47:20,255 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:20,255 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-6S7lNzRJpJpyPGadRKnX_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:20,255 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":733,"Balance":122.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 173 ms
+2022-12-01 14:47:20,255 [main] INFO ApiIntegration - 
+2022-12-01 14:47:20,450 [main] INFO ApiIntegration - 
+2022-12-01 14:47:20,450 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:20,450 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:20,450 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 174 ms
+2022-12-01 14:47:20,450 [main] INFO ApiIntegration - 
+2022-12-01 14:47:20,688 [main] INFO ApiIntegration - 
+2022-12-01 14:47:20,688 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Debit
+2022-12-01 14:47:20,688 [main] INFO ApiIntegration - DebitAPI:  RequestBody  {"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-y1cQklIfK3dlmvbdDmih_D","CreditTransactionId":"QA_Test-6S7lNzRJpJpyPGadRKnX_C","Amount":-1.005,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}
+2022-12-01 14:47:20,688 [main] INFO ApiIntegration - DebitAPI:  ResponseBody  {"Description":"WrongOperationAmount","ResponseCode":39}  ResponseTime 174 ms
+2022-12-01 14:47:20,688 [main] INFO ApiIntegration - 
+2022-12-01 14:47:20,860 [main] INFO ApiIntegration - 
+2022-12-01 14:47:20,860 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:20,860 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:20,860 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 166 ms
+2022-12-01 14:47:20,861 [main] INFO ApiIntegration - 
+2022-12-01 14:47:20,863 [main] INFO ApiIntegration - DebitAPIValidateResponseUsingInvalidAmount: Test passed
+2022-12-01 14:47:21,049 [main] INFO ApiIntegration - 
+2022-12-01 14:47:21,049 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:21,050 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:21,050 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 172 ms
+2022-12-01 14:47:21,050 [main] INFO ApiIntegration - 
+2022-12-01 14:47:21,051 [main] INFO ApiIntegration - Balance Before RollBack:122.0
+2022-12-01 14:47:21,237 [main] INFO ApiIntegration - 
+2022-12-01 14:47:21,238 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:47:21,238 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-UMeUIFwWgQHnTNfFPPiM_C","TransactionId":"QA_Test-vw95KgjNS5iRvmL4mAlz_R","OperationTypeId":15}
+2022-12-01 14:47:21,238 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 173 ms
+2022-12-01 14:47:21,238 [main] INFO ApiIntegration - 
+2022-12-01 14:47:21,421 [main] INFO ApiIntegration - 
+2022-12-01 14:47:21,421 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:21,422 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:21,422 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 170 ms
+2022-12-01 14:47:21,422 [main] INFO ApiIntegration - 
+2022-12-01 14:47:21,422 [main] INFO ApiIntegration - Balance After RollBack:122.0
+2022-12-01 14:47:21,424 [main] INFO ApiIntegration - RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit: Test passed
+2022-12-01 14:47:21,601 [main] INFO ApiIntegration - 
+2022-12-01 14:47:21,602 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:21,602 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:21,602 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 169 ms
+2022-12-01 14:47:21,602 [main] INFO ApiIntegration - 
+2022-12-01 14:47:21,602 [main] INFO ApiIntegration - Balance Before Credit:122.0
+2022-12-01 14:47:21,775 [main] INFO ApiIntegration - 
+2022-12-01 14:47:21,775 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:21,775 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-uiFVDuqUWY5p9KeJx0UH_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:21,776 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":734,"Balance":121.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 166 ms
+2022-12-01 14:47:21,776 [main] INFO ApiIntegration - 
+2022-12-01 14:47:21,961 [main] INFO ApiIntegration - 
+2022-12-01 14:47:21,961 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:21,961 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:21,961 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 178 ms
+2022-12-01 14:47:21,961 [main] INFO ApiIntegration - 
+2022-12-01 14:47:21,962 [main] INFO ApiIntegration - Balance After Credit:121.0
+2022-12-01 14:47:22,146 [main] INFO ApiIntegration - 
+2022-12-01 14:47:22,146 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:47:22,146 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-uiFVDuqUWY5p9KeJx0UH_C","TransactionId":"QA_Test-BOGL9szeRmwXcEvg9mQ5_R","OperationTypeId":15}
+2022-12-01 14:47:22,146 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 179 ms
+2022-12-01 14:47:22,146 [main] INFO ApiIntegration - 
+2022-12-01 14:47:22,414 [main] INFO ApiIntegration - 
+2022-12-01 14:47:22,414 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:22,414 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:22,414 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 165 ms
+2022-12-01 14:47:22,415 [main] INFO ApiIntegration - 
+2022-12-01 14:47:22,415 [main] INFO ApiIntegration - Balance After RollBack_1:122.0
+2022-12-01 14:47:22,594 [main] INFO ApiIntegration - 
+2022-12-01 14:47:22,594 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:47:22,594 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-uiFVDuqUWY5p9KeJx0UH_C","TransactionId":"QA_Test-8KLMxN7F2vK52ekW8UrB_R","OperationTypeId":4}
+2022-12-01 14:47:22,594 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 172 ms
+2022-12-01 14:47:22,595 [main] INFO ApiIntegration - 
+2022-12-01 14:47:22,773 [main] INFO ApiIntegration - 
+2022-12-01 14:47:22,773 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:22,773 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:22,773 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 173 ms
+2022-12-01 14:47:22,773 [main] INFO ApiIntegration - 
+2022-12-01 14:47:22,773 [main] INFO ApiIntegration - Balance After RollBack_2::122.0
+2022-12-01 14:47:22,776 [main] INFO ApiIntegration - RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice: Test passed
+2022-12-01 14:47:22,954 [main] INFO ApiIntegration - 
+2022-12-01 14:47:22,954 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:22,954 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:22,954 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":122.0}  ResponseTime 167 ms
+2022-12-01 14:47:22,954 [main] INFO ApiIntegration - 
+2022-12-01 14:47:22,955 [main] INFO ApiIntegration - Balance Before Credit_1:122.0
+2022-12-01 14:47:23,134 [main] INFO ApiIntegration - 
+2022-12-01 14:47:23,135 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:23,135 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-lBqhURE8ywVryNFhnJLM_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:23,135 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":736,"Balance":121.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 170 ms
+2022-12-01 14:47:23,136 [main] INFO ApiIntegration - 
+2022-12-01 14:47:23,324 [main] INFO ApiIntegration - 
+2022-12-01 14:47:23,325 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:23,325 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:23,325 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 170 ms
+2022-12-01 14:47:23,325 [main] INFO ApiIntegration - 
+2022-12-01 14:47:23,325 [main] INFO ApiIntegration - Balance After Credit_1:121.0
+2022-12-01 14:47:23,504 [main] INFO ApiIntegration - 
+2022-12-01 14:47:23,505 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Credit
+2022-12-01 14:47:23,505 [main] INFO ApiIntegration - CreditAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND","GameId":54434,"OperationTypeId":1,"TransactionId":"QA_Test-smuscOJkSyPUl3RpGOMc_C","BetState":0,"Amount":1.0}
+2022-12-01 14:47:23,505 [main] INFO ApiIntegration - CreditAPI:  ResponseBody  {"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":737,"Balance":120.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}  ResponseTime 168 ms
+2022-12-01 14:47:23,505 [main] INFO ApiIntegration - 
+2022-12-01 14:47:23,690 [main] INFO ApiIntegration - 
+2022-12-01 14:47:23,690 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:23,690 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:23,690 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":120.0}  ResponseTime 169 ms
+2022-12-01 14:47:23,690 [main] INFO ApiIntegration - 
+2022-12-01 14:47:23,691 [main] INFO ApiIntegration - Balance After Credit_2:120.0
+2022-12-01 14:47:23,868 [main] INFO ApiIntegration - 
+2022-12-01 14:47:23,868 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:47:23,869 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-lBqhURE8ywVryNFhnJLM_C","TransactionId":"QA_Test-wLc0AnxXrhUHXtWqiVXW_R","OperationTypeId":15}
+2022-12-01 14:47:23,869 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 171 ms
+2022-12-01 14:47:23,869 [main] INFO ApiIntegration - 
+2022-12-01 14:47:24,045 [main] INFO ApiIntegration - 
+2022-12-01 14:47:24,045 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:24,045 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:24,046 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 169 ms
+2022-12-01 14:47:24,046 [main] INFO ApiIntegration - 
+2022-12-01 14:47:24,046 [main] INFO ApiIntegration - Balance After RollBack_1:121.0
+2022-12-01 14:47:24,225 [main] INFO ApiIntegration - 
+2022-12-01 14:47:24,225 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/Rollback
+2022-12-01 14:47:24,225 [main] INFO ApiIntegration - RollBackAPI:  RequestBody  {"UserName":"gagnant365::1008","GameId":54434,"RollbackTransactionId":"QA_Test-smuscOJkSyPUl3RpGOMc_C","TransactionId":"QA_Test-wLc0AnxXrhUHXtWqiVXW_R","OperationTypeId":4}
+2022-12-01 14:47:24,225 [main] INFO ApiIntegration - RollBackAPI:  ResponseBody  {"Description":null,"ResponseCode":0}  ResponseTime 172 ms
+2022-12-01 14:47:24,225 [main] INFO ApiIntegration - 
+2022-12-01 14:47:24,405 [main] INFO ApiIntegration - 
+2022-12-01 14:47:24,405 [main] INFO ApiIntegration - https://casino.gagnant365.com/api/endpoint/GetBalance
+2022-12-01 14:47:24,405 [main] INFO ApiIntegration - GetBalanceAPI:  RequestBody  {"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8","CurrencyId":"TND"}
+2022-12-01 14:47:24,405 [main] INFO ApiIntegration - GetBalanceAPI:  ResponseBody  {"CurrencyId":"TND","Description":null,"ResponseCode":0,"AvailableBalance":121.0}  ResponseTime 174 ms
+2022-12-01 14:47:24,405 [main] INFO ApiIntegration - 
+2022-12-01 14:47:24,406 [main] INFO ApiIntegration - Balance After RollBack_2:121.0
+2022-12-01 14:47:24,410 [main] INFO ApiIntegration - RollBackAPIValidateResponseUsingSameRollBackTransactionIDTwice: Test passed
+2022-12-01 14:47:24,429 [main] INFO ApiIntegration - API Integration Automation Test: Test execution finished
+2022-12-01 14:47:24,433 [main] INFO ApiIntegration - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Test Suite finished  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+2022-12-01 14:47:24,433 [main] INFO ApiIntegration - 
+2022-12-01 14:47:24,433 [main] INFO ApiIntegration - 
+2022-12-01 14:47:24,433 [main] INFO ApiIntegration - 

@@ -21,7 +21,7 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
     @Description("Verify GetBalance API_s response with Expired Token")
     @Severity(SeverityLevel.BLOCKER)
     public void GetBalanceAPIValidateResponseWithExpiredToken() throws UnirestException, IOException {
-        HttpResponse<String> response = getBalanceAPI(expiredSessionTokenConfig, currencyIDConfig);
+        HttpResponse<String> response = getBalanceAPI(expiredSessionTokenConfig, AuthorizationCurrencyId);
         Unirest.shutdown();
         statusCod = response.getStatus();
         logger.info(" GetBalance API Status Cod is Equal: " + statusCod);
@@ -45,7 +45,7 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
     @Description("Verify GetBalance API_s response with invalid Token")
     @Severity(SeverityLevel.BLOCKER)
     public void GetBalanceAPIValidateResponseWithInvalidToken() throws UnirestException, IOException {
-        HttpResponse<String> response = getBalanceAPI(AuthorizationTokenVar + "1", currencyIDConfig);
+        HttpResponse<String> response = getBalanceAPI(AuthorizationTokenVar + "1", AuthorizationCurrencyId);
         Unirest.shutdown();
         statusCod = response.getStatus();
         logger.info(" GetBalance API Status Cod is Equal: " + statusCod);
@@ -69,7 +69,7 @@ public class IqSoft_API_3_GetBalance_Negative_Test extends BaseTest {
     @Description("Verify GetBalance API_s response with invalid CurrencyID")
     @Severity(SeverityLevel.BLOCKER)
     public void GetBalanceAPIValidateResponseWithInvalidCurrencyID() throws UnirestException, IOException {
-        HttpResponse<String> response = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig + "1");
+        HttpResponse<String> response = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId + "1");
         Unirest.shutdown();
         statusCod = response.getStatus();
         logger.info(" GetBalance API Status Cod is Equal: " + statusCod);

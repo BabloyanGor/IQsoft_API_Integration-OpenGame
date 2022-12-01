@@ -36,12 +36,12 @@ public class ReadConfig {
     public int getPartnerID() {
         return Integer.parseInt(pro.getProperty("PartnerId"));
     }
-    public String getClientId() {
-        return pro.getProperty("ClientId");
-    }
-    public String getUserName() {
-        return pro.getProperty("UserName");
-    }
+//    public String getClientId() {
+//        return pro.getProperty("ClientId");
+//    }
+//    public String getUserName() {
+//        return pro.getProperty("UserName");
+//    }
 
 
     public int getGameIdID() {
@@ -53,9 +53,9 @@ public class ReadConfig {
     public double getBetAmountDebit() {
         return Double.parseDouble(pro.getProperty("BetAmountDebit"));
     }
-    public String CurrencyId() {
-        return pro.getProperty("CurrencyId");
-    }
+//    public String CurrencyId() {
+//        return pro.getProperty("CurrencyId");
+//    }
     public String getSessionToken() {
         return pro.getProperty("SessionToken");
     }

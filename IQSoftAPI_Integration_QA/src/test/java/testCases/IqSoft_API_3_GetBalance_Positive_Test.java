@@ -22,7 +22,7 @@ public class IqSoft_API_3_GetBalance_Positive_Test extends BaseTest{
     @BeforeClass
     public void setUp() throws UnirestException, IOException {
 
-        HttpResponse<String> getBalanceResponse = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> getBalanceResponse = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         Unirest.shutdown();
         statusCod = getBalanceResponse.getStatus();
         jsonObjectBody = new JSONObject(getBalanceResponse.getBody());

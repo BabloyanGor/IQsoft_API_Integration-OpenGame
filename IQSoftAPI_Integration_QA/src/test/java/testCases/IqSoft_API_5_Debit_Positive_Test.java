@@ -24,12 +24,12 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest {
     int operationTypeIdDebit = 1;
     @BeforeClass
     public void setUp() throws UnirestException, IOException {
-        HttpResponse<String> responseGetBalanceBeforeDebit = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> responseGetBalanceBeforeDebit = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         jsonObjectBody = new JSONObject(responseGetBalanceBeforeDebit.getBody());
         beforeDebit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
 
-        HttpResponse<String> response = debitAPI(clientIdConfig, currencyIDConfig, gameIdConfig, debitValidTransactionID,
+        HttpResponse<String> response = debitAPI(AuthorizationClientId, AuthorizationCurrencyId, gameIdConfig, debitValidTransactionID,
                 creditValidTransactionID, betAmountDebitConfig, 2, operationTypeIdDebit, AuthorizationTokenVar);
         Unirest.shutdown();
         statusCod = response.getStatus();
@@ -66,7 +66,7 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest {
 //        iqSoft_05_apiVariables_debit_response.setCurrencyId(jsonObjectOperationItems.get("CurrencyId").toString());
 //        logger.info("Debit API Response CurrencyId : " + iqSoft_05_apiVariables_debit_response.getCurrencyId());
 
-        HttpResponse<String> responseGetBalanceAfter = getBalanceAPI(AuthorizationTokenVar, currencyIDConfig);
+        HttpResponse<String> responseGetBalanceAfter = getBalanceAPI(AuthorizationTokenVar, AuthorizationCurrencyId);
         jsonObjectBody = new JSONObject(responseGetBalanceAfter.getBody());
         afterDebit = Double.parseDouble(jsonObjectBody.get("AvailableBalance").toString());
         Unirest.shutdown();
@@ -97,8 +97,8 @@ public class IqSoft_API_5_Debit_Positive_Test extends BaseTest {
                 "BetID: " + iqSoft_05_apiVariables_debit_response.getBetId());
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getClientId(), iqSoft_05_apiVariables_debit_request.getClientId(),
                 "Response ClientId: " + iqSoft_05_apiVariables_debit_response.getClientId() + " = RequestClientId: " + iqSoft_05_apiVariables_debit_request.getClientId());
-        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getCurrencyId(), currencyIDConfig,
-                "CurrencyId: " + iqSoft_05_apiVariables_debit_response.getCurrencyId() + " = currencyIDConfig: " + currencyIDConfig);
+        softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getCurrencyId(), AuthorizationCurrencyId,
+                "CurrencyId: " + iqSoft_05_apiVariables_debit_response.getCurrencyId() + " = currencyIDConfig: " + AuthorizationCurrencyId);
         softAssert.assertEquals(iqSoft_05_apiVariables_debit_response.getCurrencyId().length(), 3,
                 "CurrencyId Length: " + iqSoft_05_apiVariables_debit_response.getCurrencyId());
         softAssert.assertEquals(betAmountDebitConfig, afterDebit - beforeDebit);
