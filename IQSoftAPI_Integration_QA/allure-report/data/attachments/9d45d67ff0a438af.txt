@@ -1,0 +1,1 @@
+{"ClientId":"gagnant365::1008","CurrencyId":"TND","GameId":54434,"TransactionId":"QA_Test-P9ZGdZ2BfslL12oOO0zu_D","CreditTransactionId":"QA_Test-phCZ9yZwrLwxhxBzN4gD_C","Amount":-1.005,"BetState":2,"OperationTypeId":1,"Token":"gagnant365::78e5a96a-7084-11ed-a57c-ecb1d7ae60a8"}

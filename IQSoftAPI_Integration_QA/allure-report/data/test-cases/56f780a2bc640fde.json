@@ -1,0 +1,201 @@
+{
+  "uid" : "56f780a2bc640fde",
+  "name" : "DebitAPIValidateResponseUsingInvalidAmount",
+  "fullName" : "testCases.IqSoft_API_5_Debit_Negative_Test.DebitAPIValidateResponseUsingInvalidAmount",
+  "historyId" : "3235f64a2a311e7a1d0b72f79830a428",
+  "time" : {
+    "start" : 1669960834030,
+    "stop" : 1669960834894,
+    "duration" : 864
+  },
+  "description" : "Verify Debit API_s response using Invalid Amount",
+  "descriptionHtml" : "<p>Verify Debit API_s response using Invalid Amount</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1669960815611,
+      "stop" : 1669960815718,
+      "duration" : 107
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify Debit API_s response using Invalid Amount",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e31421866594e48c",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "e31421866594e48c.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "8e889a6c71409d0f",
+      "name" : "GetBalanceAPI:  ResponseTime  168ms        ResponseBody",
+      "source" : "8e889a6c71409d0f.txt",
+      "type" : "text/plain",
+      "size" : 81
+    }, {
+      "uid" : "601dd41272d6d5e3",
+      "name" : "CreditAPI:  Url:  https://casino.gagnant365.com/api/endpoint/Credit        RequestBody",
+      "source" : "601dd41272d6d5e3.txt",
+      "type" : "text/plain",
+      "size" : 189
+    }, {
+      "uid" : "4cccf188154a464b",
+      "name" : "CreditAPI:  ResponseTime  165ms        ResponseBody",
+      "source" : "4cccf188154a464b.txt",
+      "type" : "text/plain",
+      "size" : 135
+    }, {
+      "uid" : "e0116d6570014b58",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "e0116d6570014b58.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "d2dbf4f032094863",
+      "name" : "GetBalanceAPI:  ResponseTime  169ms        ResponseBody",
+      "source" : "d2dbf4f032094863.txt",
+      "type" : "text/plain",
+      "size" : 81
+    }, {
+      "uid" : "db1a9ae749ad563f",
+      "name" : "DebitAPI  Url:  https://casino.gagnant365.com/api/endpoint/Debit        RequestBody",
+      "source" : "db1a9ae749ad563f.txt",
+      "type" : "text/plain",
+      "size" : 275
+    }, {
+      "uid" : "d12a0dc89b5dd073",
+      "name" : "DebitAPI    ResponseTime  161ms        ResponseBody",
+      "source" : "d12a0dc89b5dd073.txt",
+      "type" : "text/plain",
+      "size" : 56
+    }, {
+      "uid" : "a942d3e8e163e4a9",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "a942d3e8e163e4a9.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "1abc60fa9eaee818",
+      "name" : "GetBalanceAPI:  ResponseTime  170ms        ResponseBody",
+      "source" : "1abc60fa9eaee818.txt",
+      "type" : "text/plain",
+      "size" : 81
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1669960840958,
+      "stop" : 1669960840959,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_5_Debit_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_5_Debit_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "DebitAPIValidateResponseUsingInvalidAmount"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_5_Debit_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "13712@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "-1.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "2bf617642aae7462",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669891637062,
+        "stop" : 1669891637968,
+        "duration" : 906
+      }
+    }, {
+      "uid" : "ed5617e431b0e741",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669890944571,
+        "stop" : 1669890945442,
+        "duration" : 871
+      }
+    }, {
+      "uid" : "349f9cb03ea29ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669886300234,
+        "stop" : 1669886301131,
+        "duration" : 897
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "56f780a2bc640fde.json",
+  "parameterValues" : [ "-1.0" ]
+}

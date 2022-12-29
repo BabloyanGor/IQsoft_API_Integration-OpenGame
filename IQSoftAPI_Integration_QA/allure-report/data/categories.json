@@ -1,0 +1,30 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "JSONObject[\"AvailableBalance\"] not found.",
+      "children" : [ {
+        "name" : "GetBalanceAPIValidateResponseWithOtherCurrencyID",
+        "uid" : "6444aaa892ab3dd9",
+        "parentUid" : "55e7cbf3abb682577ec5c0f2c4a9e8dd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1669960824489,
+          "stop" : 1669960824669,
+          "duration" : 180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "55e7cbf3abb682577ec5c0f2c4a9e8dd"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

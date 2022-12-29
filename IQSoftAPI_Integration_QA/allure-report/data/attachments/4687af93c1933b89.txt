@@ -1,0 +1,1 @@
+{"Description":"CanNotConnectCreditAndDebit","ResponseCode":"50"}

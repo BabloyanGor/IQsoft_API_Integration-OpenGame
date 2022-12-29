@@ -1,0 +1,196 @@
+{
+  "uid" : "ff62fe6b989275d2",
+  "name" : "RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice",
+  "fullName" : "testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice",
+  "historyId" : "a16f9262f26e494b988852dbe6e39187",
+  "time" : {
+    "start" : 1669891641426,
+    "stop" : 1669891642774,
+    "duration" : 1348
+  },
+  "description" : "Verify RollBack API_s response using Same RollBackTransactionID twice ",
+  "descriptionHtml" : "<p>Verify RollBack API_s response using Same RollBackTransactionID twice</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1669891619115,
+      "stop" : 1669891619196,
+      "duration" : 81
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify RollBack API_s response using Same RollBackTransactionID twice ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4dddb16d4a90e6ad",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "4dddb16d4a90e6ad.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "677db21f91528079",
+      "name" : "GetBalanceAPI:  ResponseTime  169ms        ResponseBody",
+      "source" : "677db21f91528079.txt",
+      "type" : "text/plain",
+      "size" : 81
+    }, {
+      "uid" : "7a879db74718190d",
+      "name" : "CreditAPI:  Url:  https://casino.gagnant365.com/api/endpoint/Credit        RequestBody",
+      "source" : "7a879db74718190d.txt",
+      "type" : "text/plain",
+      "size" : 189
+    }, {
+      "uid" : "b3045dffc687c76d",
+      "name" : "CreditAPI:  ResponseTime  166ms        ResponseBody",
+      "source" : "b3045dffc687c76d.txt",
+      "type" : "text/plain",
+      "size" : 135
+    }, {
+      "uid" : "dfa3f7778a3629fc",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "dfa3f7778a3629fc.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "25582a721e9371f",
+      "name" : "GetBalanceAPI:  ResponseTime  178ms        ResponseBody",
+      "source" : "25582a721e9371f.txt",
+      "type" : "text/plain",
+      "size" : 81
+    }, {
+      "uid" : "152f94a42458a644",
+      "name" : "RollBackAPI:  Url:  https://casino.gagnant365.com/api/endpoint/Rollback        RequestBody",
+      "source" : "152f94a42458a644.txt",
+      "type" : "text/plain",
+      "size" : 173
+    }, {
+      "uid" : "d9d4f63d57e86170",
+      "name" : "RollBackAPI:    ResponseTime  179ms        ResponseBody",
+      "source" : "d9d4f63d57e86170.txt",
+      "type" : "text/plain",
+      "size" : 37
+    }, {
+      "uid" : "4c9f1e8f4e09b6b4",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "4c9f1e8f4e09b6b4.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "9f7680d3f178f651",
+      "name" : "GetBalanceAPI:  ResponseTime  165ms        ResponseBody",
+      "source" : "9f7680d3f178f651.txt",
+      "type" : "text/plain",
+      "size" : 81
+    }, {
+      "uid" : "347ede7e8cd21ee3",
+      "name" : "RollBackAPI:  Url:  https://casino.gagnant365.com/api/endpoint/Rollback        RequestBody",
+      "source" : "347ede7e8cd21ee3.txt",
+      "type" : "text/plain",
+      "size" : 172
+    }, {
+      "uid" : "441edc35848fa2f",
+      "name" : "RollBackAPI:    ResponseTime  172ms        ResponseBody",
+      "source" : "441edc35848fa2f.txt",
+      "type" : "text/plain",
+      "size" : 37
+    }, {
+      "uid" : "eb482f982f1ccf37",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "eb482f982f1ccf37.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "261c4d3c816d6909",
+      "name" : "GetBalanceAPI:  ResponseTime  173ms        ResponseBody",
+      "source" : "261c4d3c816d6909.txt",
+      "type" : "text/plain",
+      "size" : 81
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 14,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1669891644432,
+      "stop" : 1669891644433,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_6_RollBack_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_6_RollBack_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "RollBackAPIValidateResponseUsingSameCreditTransactionIDTwice"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_6_RollBack_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "148@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ff62fe6b989275d2.json",
+  "parameterValues" : [ ]
+}
