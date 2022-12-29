@@ -1,0 +1,124 @@
+{
+  "uid" : "141f02f0b987e98",
+  "name" : "AuthorizationAPIValidateResponseWithExpiredToken",
+  "fullName" : "testCases.IqSoft_API_2_Authorization_Negative_Test.AuthorizationAPIValidateResponseWithExpiredToken",
+  "historyId" : "7be0af38f1459508ac9409c19cdc10d0",
+  "time" : {
+    "start" : 1669891626889,
+    "stop" : 1669891627087,
+    "duration" : 198
+  },
+  "description" : "Verify Authorization API_s response with Expired Token",
+  "descriptionHtml" : "<p>Verify Authorization API_s response with Expired Token</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1669891619115,
+      "stop" : 1669891619196,
+      "duration" : 81
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify Authorization API_s response with Expired Token",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ab7f519a272abfb8",
+      "name" : "AuthorizationAPI:  Url  https://casino.gagnant365.com/api/endpoint/Authorization        RequestBody",
+      "source" : "ab7f519a272abfb8.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "c6a6ea8a8c57ede8",
+      "name" : "AuthorizationAPI:  ResponseTime  178ms        ResponseBody",
+      "source" : "c6a6ea8a8c57ede8.txt",
+      "type" : "text/plain",
+      "size" : 47
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1669891644432,
+      "stop" : 1669891644433,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_2_Authorization_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_2_Authorization_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "AuthorizationAPIValidateResponseWithExpiredToken"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_2_Authorization_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "148@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "141f02f0b987e98.json",
+  "parameterValues" : [ ]
+}

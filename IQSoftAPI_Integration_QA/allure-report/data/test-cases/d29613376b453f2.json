@@ -1,0 +1,155 @@
+{
+  "uid" : "d29613376b453f2",
+  "name" : "AuthorizationAPIValidateStatusCod",
+  "fullName" : "testCases.IqSoft_API_2_Authorization_Positive_Test.AuthorizationAPIValidateStatusCod",
+  "historyId" : "93a6a1e896094fcedc2c825c503d2fde",
+  "time" : {
+    "start" : 1669960817505,
+    "stop" : 1669960817515,
+    "duration" : 10
+  },
+  "description" : "Verify Authorization API_s Response Status Cod equals to 200",
+  "descriptionHtml" : "<p>Verify Authorization API_s Response Status Cod equals to 200</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1669960815611,
+      "stop" : 1669960815718,
+      "duration" : 107
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1669960815801,
+      "stop" : 1669960817434,
+      "duration" : 1633
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ff249fa535002078",
+      "name" : "AuthorizationAPI:  Url  https://casino.gagnant365.com/api/endpoint/Authorization        RequestBody",
+      "source" : "ff249fa535002078.txt",
+      "type" : "text/plain",
+      "size" : 78
+    }, {
+      "uid" : "e0fa66d8bfd6f651",
+      "name" : "AuthorizationAPI:  ResponseTime  1026ms        ResponseBody",
+      "source" : "e0fa66d8bfd6f651.txt",
+      "type" : "text/plain",
+      "size" : 242
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1669960840958,
+      "stop" : 1669960840959,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_2_Authorization_Positive_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_2_Authorization_Positive_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "AuthorizationAPIValidateStatusCod"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_2_Authorization_Positive_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "13712@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "860da6b56e53305d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669891620810,
+        "stop" : 1669891620818,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "8a7254827ff4b896",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669890928595,
+        "stop" : 1669890928604,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "c90f94ca4a48619a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669886284395,
+        "stop" : 1669886284402,
+        "duration" : 7
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d29613376b453f2.json",
+  "parameterValues" : [ ]
+}

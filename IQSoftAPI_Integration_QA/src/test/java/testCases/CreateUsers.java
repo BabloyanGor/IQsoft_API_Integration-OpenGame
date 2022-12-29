@@ -1,25 +1,63 @@
-//package testCases;
-//
-//import com.google.gson.Gson;
-//import com.google.gson.JsonArray;
-//import com.google.gson.JsonObject;
-//import com.google.gson.JsonParser;
-//import com.mashape.unirest.http.HttpResponse;
-//import com.mashape.unirest.http.Unirest;
-//import com.mashape.unirest.http.exceptions.UnirestException;
-//import io.qameta.allure.Description;
-//import io.qameta.allure.Severity;
-//import io.qameta.allure.SeverityLevel;
-//import org.json.JSONObject;
-//import org.testng.annotations.Test;
-//import org.testng.asserts.SoftAssert;
-//
-//import java.io.FileWriter;
-//import java.io.IOException;
-//
-//public class CreateUsers extends BaseTest {
-//
-//
+package testCases;
+
+
+import org.testng.annotations.Test;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class CreateUsers extends BaseTest {
+
+    //Default separator
+    char SEPARATOR = ',';
+    //get path of csv file (creates new one if its not exists)
+    String csvFile = "";
+    // for example '/User/Downloads/blabla.csv'
+    String[] params = {"1112"};
+
+
+    FileWriter fileWriter = new FileWriter(csvFile, true);
+
+    public CreateUsers() throws IOException {
+    }
+
+
+    //function write line in csv
+    public void writeLine(FileWriter writer, String[] params, char separator) throws IOException {
+        boolean firstParam = true;
+        StringBuilder stringBuilder = new StringBuilder();
+        String param = "";
+        for (int i = 0; i < params.length; i++) {
+            //get param
+            param = params[i];
+            //log.info(param);
+            //if the first param in the line, separator is not needed
+            if (!firstParam) {
+                stringBuilder.append(separator);
+            }
+            //Add param to line
+            stringBuilder.append(param);
+            firstParam = false;
+        }
+        //prepare file to next line
+        stringBuilder.append("\n");
+        //add to file the line
+        //log.info(stringBuilder.toString());
+        writer.append(stringBuilder.toString());
+    }
+    //proper close to
+
+
+
+    @Test
+    public void test() throws IOException {
+        writeLine(fileWriter, params, SEPARATOR);
+        fileWriter.flush();
+        fileWriter.close();
+    }
+
+
 //    JSONObject jsonObjectBody;
 //    int statusCod;
 //
@@ -79,6 +117,6 @@
 //
 //
 //    }
-//
-//
-//}
+
+
+}

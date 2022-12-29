@@ -1,0 +1,151 @@
+{
+  "uid" : "d4d0456ea3f011e9",
+  "name" : "CreditAPIValidateResponseWithInvalidAmount",
+  "fullName" : "testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithInvalidAmount",
+  "historyId" : "ef0781f2acd147b7c22eacbbc1b61a94",
+  "time" : {
+    "start" : 1669890939318,
+    "stop" : 1669890939846,
+    "duration" : 528
+  },
+  "description" : "Verify Credit API_s response with invalid Amount",
+  "descriptionHtml" : "<p>Verify Credit API_s response with invalid Amount</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1669890926485,
+      "stop" : 1669890926598,
+      "duration" : 113
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify Credit API_s response with invalid Amount",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "52c16b69814cfc1a",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "52c16b69814cfc1a.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "79a0413f74ccaa46",
+      "name" : "GetBalanceAPI:  ResponseTime  164ms        ResponseBody",
+      "source" : "79a0413f74ccaa46.txt",
+      "type" : "text/plain",
+      "size" : 81
+    }, {
+      "uid" : "f23d19a67a81e11a",
+      "name" : "CreditAPI:  Url:  https://casino.gagnant365.com/api/endpoint/Credit        RequestBody",
+      "source" : "f23d19a67a81e11a.txt",
+      "type" : "text/plain",
+      "size" : 191
+    }, {
+      "uid" : "f1e0ead92b71c8c6",
+      "name" : "CreditAPI:  ResponseTime  162ms        ResponseBody",
+      "source" : "f1e0ead92b71c8c6.txt",
+      "type" : "text/plain",
+      "size" : 56
+    }, {
+      "uid" : "8eff17fd6a23a941",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "8eff17fd6a23a941.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "bbdbd224e0d356db",
+      "name" : "GetBalanceAPI:  ResponseTime  164ms        ResponseBody",
+      "source" : "bbdbd224e0d356db.txt",
+      "type" : "text/plain",
+      "size" : 81
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1669890952716,
+      "stop" : 1669890952717,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "CreditAPIValidateResponseWithInvalidAmount"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "14516@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "-1.05"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d4d0456ea3f011e9.json",
+  "parameterValues" : [ "-1.05" ]
+}

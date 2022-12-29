@@ -1,0 +1,174 @@
+{
+  "uid" : "2ce2c4a16ecdb98d",
+  "name" : "CreditAPIValidateResponseWithExpiredToken",
+  "fullName" : "testCases.IqSoft_API_4_Credit_Negative_Test.CreditAPIValidateResponseWithExpiredToken",
+  "historyId" : "af7f128b0732a7a827f0dd43f9edaad",
+  "time" : {
+    "start" : 1669960824684,
+    "stop" : 1669960825228,
+    "duration" : 544
+  },
+  "description" : "Verify Credit API_s response with Expired Token",
+  "descriptionHtml" : "<p>Verify Credit API_s response with Expired Token</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1669960815611,
+      "stop" : 1669960815718,
+      "duration" : 107
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify Credit API_s response with Expired Token",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "bd3dc089adafc6e",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "bd3dc089adafc6e.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "f740eb713a1755dd",
+      "name" : "GetBalanceAPI:  ResponseTime  175ms        ResponseBody",
+      "source" : "f740eb713a1755dd.txt",
+      "type" : "text/plain",
+      "size" : 81
+    }, {
+      "uid" : "eb90466cbfca63ec",
+      "name" : "CreditAPI:  Url:  https://casino.gagnant365.com/api/endpoint/Credit        RequestBody",
+      "source" : "eb90466cbfca63ec.txt",
+      "type" : "text/plain",
+      "size" : 190
+    }, {
+      "uid" : "a16f275ad09447d4",
+      "name" : "CreditAPI:  ResponseTime  173ms        ResponseBody",
+      "source" : "a16f275ad09447d4.txt",
+      "type" : "text/plain",
+      "size" : 47
+    }, {
+      "uid" : "afd36216dc11dc0",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "afd36216dc11dc0.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "c9b312eb8c6180c8",
+      "name" : "GetBalanceAPI:  ResponseTime  167ms        ResponseBody",
+      "source" : "c9b312eb8c6180c8.txt",
+      "type" : "text/plain",
+      "size" : 81
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1669960840958,
+      "stop" : 1669960840959,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "CreditAPIValidateResponseWithExpiredToken"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_4_Credit_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "13712@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "bca47492c524ce70",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669891628037,
+        "stop" : 1669891628627,
+        "duration" : 590
+      }
+    }, {
+      "uid" : "4f01db2684eacc94",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669890935736,
+        "stop" : 1669890936273,
+        "duration" : 537
+      }
+    }, {
+      "uid" : "642e16fdca92a983",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669886291560,
+        "stop" : 1669886292136,
+        "duration" : 576
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2ce2c4a16ecdb98d.json",
+  "parameterValues" : [ ]
+}

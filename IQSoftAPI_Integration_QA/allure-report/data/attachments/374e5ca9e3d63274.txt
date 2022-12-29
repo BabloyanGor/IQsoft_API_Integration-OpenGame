@@ -1,0 +1,1 @@
+{"Description":null,"ResponseCode":0,"OperationItems":[{"BetId":693,"Balance":120.0,"ClientId":"gagnant365::1008","CurrencyId":"TND"}]}

@@ -1,0 +1,148 @@
+{
+  "uid" : "5a95e9bc89532ec1",
+  "name" : "RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit",
+  "fullName" : "testCases.IqSoft_API_6_RollBack_Negative_Test.RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit",
+  "historyId" : "95931095539f395ca0c1a1aff73c90d",
+  "time" : {
+    "start" : 1669886303872,
+    "stop" : 1669886304418,
+    "duration" : 546
+  },
+  "description" : "Verify RollBack API_s response with Invalid TransactionID",
+  "descriptionHtml" : "<p>Verify RollBack API_s response with Invalid TransactionID</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1669886282946,
+      "stop" : 1669886283028,
+      "duration" : 82
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify RollBack API_s response with Invalid TransactionID",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "97e412698ec4dfe5",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "97e412698ec4dfe5.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "fca8e09a4486ba4e",
+      "name" : "GetBalanceAPI:  ResponseTime  163ms        ResponseBody",
+      "source" : "fca8e09a4486ba4e.txt",
+      "type" : "text/plain",
+      "size" : 81
+    }, {
+      "uid" : "86b1d0c6cf375ad9",
+      "name" : "RollBackAPI:  Url:  https://casino.gagnant365.com/api/endpoint/Rollback        RequestBody",
+      "source" : "86b1d0c6cf375ad9.txt",
+      "type" : "text/plain",
+      "size" : 173
+    }, {
+      "uid" : "79451647010519a",
+      "name" : "RollBackAPI:    ResponseTime  168ms        ResponseBody",
+      "source" : "79451647010519a.txt",
+      "type" : "text/plain",
+      "size" : 37
+    }, {
+      "uid" : "ac23d8a0ba5baf27",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "ac23d8a0ba5baf27.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "78ae4c013384e72d",
+      "name" : "GetBalanceAPI:  ResponseTime  170ms        ResponseBody",
+      "source" : "78ae4c013384e72d.txt",
+      "type" : "text/plain",
+      "size" : 81
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1669886307336,
+      "stop" : 1669886307337,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_6_RollBack_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_6_RollBack_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "RollBackAPIValidateResponseUsingSameTransactionIDForRollBackAndCredit"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_6_RollBack_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "2976@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5a95e9bc89532ec1.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,129 @@
+{
+  "uid" : "8a7254827ff4b896",
+  "name" : "AuthorizationAPIValidateStatusCod",
+  "fullName" : "testCases.IqSoft_API_2_Authorization_Positive_Test.AuthorizationAPIValidateStatusCod",
+  "historyId" : "93a6a1e896094fcedc2c825c503d2fde",
+  "time" : {
+    "start" : 1669890928595,
+    "stop" : 1669890928604,
+    "duration" : 9
+  },
+  "description" : "Verify Authorization API_s Response Status Cod equals to 200",
+  "descriptionHtml" : "<p>Verify Authorization API_s Response Status Cod equals to 200</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1669890926485,
+      "stop" : 1669890926598,
+      "duration" : 113
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1669890926740,
+      "stop" : 1669890928520,
+      "duration" : 1780
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ea2146e7dfbe3c25",
+      "name" : "AuthorizationAPI:  Url  https://casino.gagnant365.com/api/endpoint/Authorization        RequestBody",
+      "source" : "ea2146e7dfbe3c25.txt",
+      "type" : "text/plain",
+      "size" : 78
+    }, {
+      "uid" : "644c5f638d4965c",
+      "name" : "AuthorizationAPI:  ResponseTime  1007ms        ResponseBody",
+      "source" : "644c5f638d4965c.txt",
+      "type" : "text/plain",
+      "size" : 242
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1669890952716,
+      "stop" : 1669890952717,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_2_Authorization_Positive_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_2_Authorization_Positive_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "AuthorizationAPIValidateStatusCod"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_2_Authorization_Positive_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "14516@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8a7254827ff4b896.json",
+  "parameterValues" : [ ]
+}

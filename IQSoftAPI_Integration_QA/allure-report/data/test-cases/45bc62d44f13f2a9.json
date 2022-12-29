@@ -1,0 +1,153 @@
+{
+  "uid" : "45bc62d44f13f2a9",
+  "name" : "DebitAPIValidateStatusCod",
+  "fullName" : "testCases.IqSoft_API_5_Debit_Positive_Test.DebitAPIValidateStatusCod",
+  "historyId" : "a5e4ac79575e09609045a20bac7fded5",
+  "time" : {
+    "start" : 1669890930974,
+    "stop" : 1669890930975,
+    "duration" : 1
+  },
+  "description" : "Verify Debit API_s Response Status Cod equals to 200",
+  "descriptionHtml" : "<p>Verify Debit API_s Response Status Cod equals to 200</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1669890926485,
+      "stop" : 1669890926598,
+      "duration" : 113
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1669890930115,
+      "stop" : 1669890930972,
+      "duration" : 857
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "679fa414c6b67f89",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "679fa414c6b67f89.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "817c26d746fe3851",
+      "name" : "GetBalanceAPI:  ResponseTime  448ms        ResponseBody",
+      "source" : "817c26d746fe3851.txt",
+      "type" : "text/plain",
+      "size" : 81
+    }, {
+      "uid" : "ebf5275f18bbc313",
+      "name" : "DebitAPI  Url:  https://casino.gagnant365.com/api/endpoint/Debit        RequestBody",
+      "source" : "ebf5275f18bbc313.txt",
+      "type" : "text/plain",
+      "size" : 274
+    }, {
+      "uid" : "75873301b7363b6f",
+      "name" : "DebitAPI    ResponseTime  175ms        ResponseBody",
+      "source" : "75873301b7363b6f.txt",
+      "type" : "text/plain",
+      "size" : 137
+    }, {
+      "uid" : "eaef606315427cc8",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "eaef606315427cc8.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "b3687b9d5b8469c3",
+      "name" : "GetBalanceAPI:  ResponseTime  181ms        ResponseBody",
+      "source" : "b3687b9d5b8469c3.txt",
+      "type" : "text/plain",
+      "size" : 81
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1669890952716,
+      "stop" : 1669890952717,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_5_Debit_Positive_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_5_Debit_Positive_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "DebitAPIValidateStatusCod"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_5_Debit_Positive_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "14516@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "45bc62d44f13f2a9.json",
+  "parameterValues" : [ ]
+}

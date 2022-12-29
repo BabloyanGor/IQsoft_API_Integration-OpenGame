@@ -1,0 +1,124 @@
+{
+  "uid" : "e8b4adf8926ec37c",
+  "name" : "GetBalanceAPIValidateResponseWithInvalidCurrencyID",
+  "fullName" : "testCases.IqSoft_API_3_GetBalance_Negative_Test.GetBalanceAPIValidateResponseWithInvalidCurrencyID",
+  "historyId" : "b30c7e55db3fafad6216b5da1ee83e67",
+  "time" : {
+    "start" : 1669891627656,
+    "stop" : 1669891627843,
+    "duration" : 187
+  },
+  "description" : "Verify GetBalance API_s response with invalid CurrencyID",
+  "descriptionHtml" : "<p>Verify GetBalance API_s response with invalid CurrencyID</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1669891619115,
+      "stop" : 1669891619196,
+      "duration" : 81
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify GetBalance API_s response with invalid CurrencyID",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "407a96f71122d8",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "407a96f71122d8.txt",
+      "type" : "text/plain",
+      "size" : 80
+    }, {
+      "uid" : "9a299d1e9b68ff4a",
+      "name" : "GetBalanceAPI:  ResponseTime  177ms        ResponseBody",
+      "source" : "9a299d1e9b68ff4a.txt",
+      "type" : "text/plain",
+      "size" : 52
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1669891644432,
+      "stop" : 1669891644433,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_3_GetBalance_Negative_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_3_GetBalance_Negative_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "GetBalanceAPIValidateResponseWithInvalidCurrencyID"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_3_GetBalance_Negative_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "148@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e8b4adf8926ec37c.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,203 @@
+{
+  "uid" : "9e78ad691d5cbad6",
+  "name" : "RollBackAPIValidateStatusCod",
+  "fullName" : "testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test.RollBackAPIValidateStatusCod",
+  "historyId" : "f90bd0f80bce2714765ed9274241862",
+  "time" : {
+    "start" : 1669960822197,
+    "stop" : 1669960822198,
+    "duration" : 1
+  },
+  "description" : "Verify RollBackCredit API_s Response Status Cod equals to 200",
+  "descriptionHtml" : "<p>Verify RollBackCredit API_s Response Status Cod equals to 200</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupSuite",
+    "time" : {
+      "start" : 1669960815611,
+      "stop" : 1669960815718,
+      "duration" : 107
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1669960821215,
+      "stop" : 1669960822191,
+      "duration" : 976
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "971cae7d035527da",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "971cae7d035527da.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "80d0f6c3f376ded7",
+      "name" : "GetBalanceAPI:  ResponseTime  173ms        ResponseBody",
+      "source" : "80d0f6c3f376ded7.txt",
+      "type" : "text/plain",
+      "size" : 81
+    }, {
+      "uid" : "3ec1ba492d39a7f7",
+      "name" : "CreditAPI:  Url:  https://casino.gagnant365.com/api/endpoint/Credit        RequestBody",
+      "source" : "3ec1ba492d39a7f7.txt",
+      "type" : "text/plain",
+      "size" : 189
+    }, {
+      "uid" : "5ae5101acd7342ff",
+      "name" : "CreditAPI:  ResponseTime  206ms        ResponseBody",
+      "source" : "5ae5101acd7342ff.txt",
+      "type" : "text/plain",
+      "size" : 135
+    }, {
+      "uid" : "5df1d522054927c5",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "5df1d522054927c5.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "7b52e6b4b33d2f5c",
+      "name" : "GetBalanceAPI:  ResponseTime  169ms        ResponseBody",
+      "source" : "7b52e6b4b33d2f5c.txt",
+      "type" : "text/plain",
+      "size" : 81
+    }, {
+      "uid" : "ecb0ff539874c",
+      "name" : "RollBackAPI:  Url:  https://casino.gagnant365.com/api/endpoint/Rollback        RequestBody",
+      "source" : "ecb0ff539874c.txt",
+      "type" : "text/plain",
+      "size" : 173
+    }, {
+      "uid" : "b71e967c4e929a66",
+      "name" : "RollBackAPI:    ResponseTime  178ms        ResponseBody",
+      "source" : "b71e967c4e929a66.txt",
+      "type" : "text/plain",
+      "size" : 37
+    }, {
+      "uid" : "7182cd8eef601c78",
+      "name" : "GetBalanceAPI:  Url:  https://casino.gagnant365.com/api/endpoint/GetBalance        RequestBody",
+      "source" : "7182cd8eef601c78.txt",
+      "type" : "text/plain",
+      "size" : 79
+    }, {
+      "uid" : "a6b680258d664426",
+      "name" : "GetBalanceAPI:  ResponseTime  171ms        ResponseBody",
+      "source" : "a6b680258d664426.txt",
+      "type" : "text/plain",
+      "size" : 81
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownSuite",
+    "time" : {
+      "start" : 1669960840958,
+      "stop" : 1669960840959,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "RollBackAPIValidateStatusCod"
+  }, {
+    "name" : "parentSuite",
+    "value" : "IQsoft API Integration"
+  }, {
+    "name" : "suite",
+    "value" : "API Integration Automation Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testCases.IqSoft_API_6_RollBackCreditWithoutDebit_Positive_Test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PO3T4V3"
+  }, {
+    "name" : "thread",
+    "value" : "13712@DESKTOP-PO3T4V3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "ef17502c78be481d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669891625515,
+        "stop" : 1669891625516,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "197de92ba9f95725",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669890933369,
+        "stop" : 1669890933371,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "46e898389f02a0b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1669886289007,
+        "stop" : 1669886289007,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9e78ad691d5cbad6.json",
+  "parameterValues" : [ ]
+}
